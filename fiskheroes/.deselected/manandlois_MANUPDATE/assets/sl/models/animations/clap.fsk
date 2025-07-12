@@ -1,0 +1,6 @@
+{leftArm_rotX} @ {data} -> {head.rotX} - 1.5
+{leftArm_rotY} @ {data} -> {head.rotY} + 0.55
+{leftArm_rotZ} @ {data} -> {head.rotZ}
+{rightArm_rotX} @ {data} -> {head.rotX} - 1.5
+{rightArm_rotY} @ {data} -> {head.rotY} - 0.55
+{rightArm_rotZ} @ {data} -> {head.rotZ}

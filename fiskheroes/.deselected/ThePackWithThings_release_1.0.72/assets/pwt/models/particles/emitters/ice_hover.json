@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+      "type": "ICICLE_BREAK",
+      "amount": 10,
+      "offset": [0.0, -2.2, 0.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.7, 0.0, 0.7],
+      "randMotion": [0.2, 0.0, 0.2],
+      "mirror": "!firstPerson",
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

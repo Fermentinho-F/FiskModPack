@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "The Butcher",
+    "icon": {
+      "texture":  "swhp:textures/items/heroes/revan_0.png"
+    }
+  },
+  "requirements": ["swhp:swhpdownload", "swhp:revan"],
+  "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "exist": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Succumb to the Dark Side - Kill an Innocent and Defenseless Wolf as Revan"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_KILLING",
+          "entity": "ENTITY_KILLED"
+          },
+        "check": "player.getWornChestplate().suitType() == 'swhp:revan' && player.isWearingFullSuit() && (entity.getEntityName() == 'Wolf')"
+      }
+    }
+  }
+}

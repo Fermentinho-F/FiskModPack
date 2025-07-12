@@ -1,0 +1,17 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{data} = sin(pi(1 - {data}))^2
+
+{anim1} = curve min(animate2({data}, 2, 0, 0.5, 0), 1)
+{anim2} = curve min(animate2({data}, 1, 0.5, 0.5, 0), 1)
+
+{rightArm_rotX} @ {anim1} -> 45'
+{rightArm_rotY} += 45'*{anim1}
+{rightArm_rotZ} += 0'*{anim1}
+
+{rightArm_rotX} @ {anim2} -> -115'
+{rightArm_rotY} -= 65'*{anim2}
+{rightArm_rotZ} += 45'*{anim2}
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data}), 0)

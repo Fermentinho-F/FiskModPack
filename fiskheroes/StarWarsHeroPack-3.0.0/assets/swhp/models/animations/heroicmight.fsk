@@ -1,0 +1,22 @@
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+{body_rotX} @ {data} -> 0.2
+{head_rotX} @ {data} -> 0.8
+
+{rightArm_rotX} @ {data} -> 0.5
+{rightArm_rotY} @ {data} -> 0.5
+{rightArm_rotZ} @ {data} -> 1.5
+
+{leftArm_rotX} @ {data} -> 0.5
+{leftArm_rotY} @ {data} -> -0.5
+{leftArm_rotZ} @ {data} -> -1.5
+
+{rightLeg_rotZ} @ {data} -> 0.2
+{rightLeg_rotX} @ {data} -> -0.15
+{leftLeg_rotZ} @ {data} -> -0.2
+{leftLeg_rotX} @ {data} -> -0.15
+
+out "firstPerson" (true)
+out "rotate" (180{data}, 1, 0, 0)
+out "rotate" (45{data}, 0, 0, 1)

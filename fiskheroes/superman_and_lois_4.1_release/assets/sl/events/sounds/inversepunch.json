@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.inversepunch",
+  "volume": 1.0,
+  "fadeOut": 20
+}

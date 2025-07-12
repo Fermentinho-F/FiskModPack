@@ -1,0 +1,6 @@
+{
+  "sound": "fiskheroes:modifier.cryocharge",
+  "volume": 1.0,
+  "pitch": "0.5 + Math.random()",
+  "loop": false
+}

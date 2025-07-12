@@ -1,0 +1,15 @@
+{data_0} = curve {data_0}
+{data_1} = curve{data_1}
+{rightArm_rotX} @ {data_0} -> {head_rotX} - pi / 2
+{rightArm_rotY} @ {data_0} -'> {head_rotY}
+{rightArm_rotZ} @ {data_0} -> {head_rotZ}
+
+{data_1} = sin(pi{data_1})
+
+{rightArm_posZ} @ {data_1} -> 1
+
+out "firstPerson" (true)
+out "rotate" (56{data_0}, 0, 1, 0)
+out "rotate" (20{data_0}, 1, 0, 0)
+out "rotate" (-30{data_0}, 0, 0, 1)
+out "translate" (0.06{data_0}, -0.15{data_0}-0.02{data_1}, -0.5{data_0})

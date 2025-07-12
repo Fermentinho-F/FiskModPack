@@ -1,0 +1,70 @@
+{
+  "name": "Lexo Sut Power Core",
+  "modifiers": {
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "COSMIC": 1.0
+        }
+      },
+      "range": 24.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mysterio_beam_start",
+        "SHOOT_STOP": "fiskheroes:mysterio_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:mysterio_beam_loop"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.21,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1.5,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:manta_flight_enable", "fiskheroes:manta_flight_loop"],
+        "BOOST": "fiskheroes:manta_boost"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:repulsor_blast"
+      }
+    },
+    "fiskheroes:sentry_mode": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:metal_skin": {
+    }
+  }
+}

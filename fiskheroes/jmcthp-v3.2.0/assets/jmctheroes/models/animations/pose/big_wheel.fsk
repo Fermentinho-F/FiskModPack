@@ -1,0 +1,34 @@
+
+{root_rotX} = 0.5{data_0}
+
+{data_1} = curve {data_1}
+{data_1} = sin(pi(1 - {data_1}))
+
+{RightArm_rotZ} += 2'{data_1}
+{LeftArm_rotZ} += 2'{data_1}
+
+{data_2} = curve {data_2}
+
+{anim0} = curve min(animate2({data_2}, 2, 0, 0.5, 0.0), 1)
+{anim1} = curve min(animate2({data_2}, 2, 0.3, 0.3, 0.0), 1)
+{anim2} = curve min(animate2({data_2}, 2, 0.5, 0.5, 0.0), 1)
+{anim3} = curve min(animate2({data_2}, 2, 0.75, 0.25, 0.0), 1)
+
+{RightArm_rotX} @ {anim0} -> min(-({pitch})', 180')
+{RightArm_rotZ} @ {anim0} -'> max(-({bodyYaw} - {yaw})', 5')
+
+{LeftArm_rotX} @ {anim0} -> min(({pitch})', 180')
+{LeftArm_rotZ} @ {anim0} -'> max(({bodyYaw} - {yaw})', -5')
+
+{RightCap1_rotY} @ {anim0} -> -125'
+{RightCap2_rotY} @ {anim0} -> 125'
+{RightGun_posX} @ {anim1} -> 6
+{RightGun2_posY} @ {anim2} -> -2.5
+{RightBarrel1_posY} @ {anim3} -> -4
+{RightBarrel2_posY} @ {anim3} -> -2.5
+{LeftCap1_rotY} @ {anim0} -> -125'
+{LeftCap2_rotY} @ {anim0} -> 125'
+{LeftGun_posX} @ {anim1} -> 6
+{LeftGun2_posY} @ {anim2} -> -2.5
+{LeftBarrel1_posY} @ {anim3} -> -4
+{LeftBarrel2_posY} @ {anim3} -> -2.5

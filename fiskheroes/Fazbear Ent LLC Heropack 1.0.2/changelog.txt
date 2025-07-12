@@ -1,0 +1,11 @@
+The Fazbear Ent. LLC Heropack 1.0.2
+
+-----------------------------------------------------------------------------------------
+
+Bug fixes
+
+-Fixed Golden Freddy not being obtainable in survival
+
+Changes
+
+-Golden Freddy will now be given as his movie alt if gotten with Freddy's movie alt

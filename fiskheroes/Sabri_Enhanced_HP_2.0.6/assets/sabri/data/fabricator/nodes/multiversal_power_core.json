@@ -1,0 +1,19 @@
+{
+    "display": {
+      "name": {
+        "translate": "Multiversal Power Core"
+      },
+      "icon": {
+        "texture": "sabri:textures/gui/nodes/multiversal_power_core.png"
+      }
+    },
+    "requirements": [ 
+      "sabri:sehp",
+      "fiskheroes:teleportation"
+    ],
+    "price": {
+      "TUTRIDIUM": 6,
+      "XP_LEVELS": 30
+    }
+  }
+  

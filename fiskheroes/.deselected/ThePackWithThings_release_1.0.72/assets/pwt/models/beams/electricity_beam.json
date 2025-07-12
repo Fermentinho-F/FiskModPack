@@ -1,0 +1,58 @@
+{
+  "aspects": [
+	{
+      "type": "LIGHTNING",
+      "opacity": {
+		"start":0.29,
+		"end":0.3
+	  },
+      "scale": 1.7,
+      "amount": 3,
+      "segments": {
+        "min": 4,
+        "spacing": 3.5
+      },
+      "intensity": 2.3,
+      "changeRate": 1.2,
+      "bounds": [1.25, 1.25],
+      "core": {
+        "color": "0x1c00f3",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 1.5,
+        "spread": 0.8,
+        "dropoff": 2.0,
+        "quality": 0.8,
+        "scaleToSize": true
+      }
+    },
+	{
+      "type": "LIGHTNING",
+      "opacity": {
+		"start":0.39,
+		"end":0.4
+	  },
+      "scale": 0.3,
+      "amount": 3,
+      "segments": {
+        "min": 4,
+        "spacing": 2.5
+      },
+      "intensity": 1.5,
+      "changeRate": 1.0,
+      "bounds": [1.0, 1.0],
+      "core": {
+        "color": "0xFFFFFF",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 1.5,
+        "spread": 0.7,
+        "dropoff": 2.0,
+        "quality": 0.8,
+        "scaleToSize": true
+      }
+    }
+  ]
+}

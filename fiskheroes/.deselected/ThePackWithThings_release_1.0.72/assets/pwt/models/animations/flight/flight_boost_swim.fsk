@@ -1,0 +1,29 @@
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{x1} = curve (sin(pi(1 - {data_5}))^2.5)*{data_1}
+{x2} = sin(pi*curve min(animate({data_5}, 0.7, 0.3), 1))*{data_1}
+{data_5} = sin(8pi{data_5})*{data_1}
+
+
+{head_rotX} -= 10'{data_1}
+{rightArm_rotX} += 8'{data_1} + 0.5abs({x}) - 165'{x1}
+{rightArm_rotY} += 18'{data_1} + 90'{x2}
+{rightArm_rotZ} += 12'{data_1} 
+
+{leftArm_rotX} += 8'{data_1} + 0.5abs({x}) - 165'{x1}
+{leftArm_rotY} -= 18'{data_1} + 90'{x2}
+{leftArm_rotZ} -= 12'{data_1}
+
+{rightLeg_rotX} += 15'{data_1} + 0.3{x} + 30'{data_5}
+{rightLeg_rotY} += 2'{data_1}
+{rightLeg_rotZ} += 3'{data_1}
+{leftLeg_rotX} += 15'{data_1} - 0.3{x} - 30'{data_5}
+{leftLeg_rotY} -= 2'{data_1}
+{leftLeg_rotZ} -= 3'{data_1}
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)

@@ -1,0 +1,29 @@
+{
+  "name": "Asgardian Physiology",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.0]
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|explosion": {
+      "damageType": "EXPLOSION",
+      "factor": 0.5
+    }
+  }
+}

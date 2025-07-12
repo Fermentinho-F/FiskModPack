@@ -1,0 +1,15 @@
+{
+  "suit": "jmctheroes:ultimate_ultron",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:ultron_prime",
+    "fiskheroes:vision",
+    "fiskheroes:tier8_9",
+    "fiskheroes:vibranium",
+    "fiskheroes:stark",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3"
+  ]
+}

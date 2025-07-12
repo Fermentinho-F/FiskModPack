@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:moon_knight",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee2",
+    "fiskheroes:traversal",
+    "fiskheroes:defense2",
+    "fiskheroes:object_manipulation"
+  ]
+}

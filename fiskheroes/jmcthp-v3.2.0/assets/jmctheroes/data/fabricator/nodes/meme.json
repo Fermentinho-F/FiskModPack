@@ -1,0 +1,37 @@
+{
+  "display": {
+    "hideUntilAvailable": true,
+    "name": {
+      "translate": "The JMemeCT Universe"
+    },
+    "description": {
+      "translate": "Welcome to the world of fun mate -JMCT and Mango"
+    },
+    "icon": {
+      "texture": "fiskheroes:textures/items/compound_bow_broken.png"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp"
+  ],
+  "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 9
+  },
+  "criteria": {
+    "creeper": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill the Wither"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'WitherBoss'"
+      }
+    }
+  }
+}

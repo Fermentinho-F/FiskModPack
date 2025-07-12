@@ -1,0 +1,100 @@
+{
+  "name": "Spidersuit 2099",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_shoot_raimi",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 96.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_raimi"
+      }
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:panther_claws_enable",
+        "DISABLE": "fiskheroes:panther_claws_disable"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 13,
+          "uses": 8,
+          "dissolveTime": 120,
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        },
+        "fiskheroes:rapid_webs": {
+          "cooldown": 30,
+          "uses": 1,
+          "quantity": 5,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 0.5,
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        }
+      }
+    },
+    "fiskheroes:gliding": {
+      "gliding": {
+        "speed": 1.3,
+        "lift": 1.5,
+        "gravity": 1.25,
+        "stall": 1.0
+      },
+      "isPowered": false,
+      "isControlled": false,
+      "canJumpActivate": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.75,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:web_wings_open", "fiskheroes:gliding"],
+        "DISABLE": "fiskheroes:web_wings_close"
+      }
+    }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "particles": [
+    {
+      "condition": "entity.getData('tmf:dyn/levelUp') != 0 && entity.getData('tmf:dyn/levelUp') != 1",
+      "type": "minecraft:happyVillager",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          0,
+          1,
+          0
+        ],
+        "fp": [
+          0,
+          0,
+          0
+        ]
+      },
+      "motion": [
+        0.0,
+        -0.35,
+        0.0
+      ],
+      "randOffset": [
+        1,
+        0.2,
+        1
+      ],
+      "randMotion": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && entity.getData('fiskheroes:dyn/superhero_landing_timer') != 0",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 3,
+      "randOffset": [
+        1.5,
+        1.0,
+        1.5
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && entity.getData('fiskheroes:dyn/superhero_landing_timer') != 0",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 1,
+      "randOffset": [
+        0.6,
+        0.4,
+        0.6
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 0.4 && entity.getData('tmf:dyn/pt_3') > 0.24",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 1,
+      "randOffset": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 0.6 && entity.getData('tmf:dyn/pt_3') > 0.64",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 1,
+      "randOffset": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 0.2 && entity.getData('tmf:dyn/pt_3') > 0.14",
+      "type": "BIG_SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "randOffset": [
+        1.5,
+        0.0,
+        0.05
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "randMotion": [
+        0.15,
+        0.2,
+        0.15
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && entity.getData('fiskheroes:beam_charge') != 0",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 4,
+      "randOffset": [
+        3.0,
+        5.0,
+        3.0
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 0.2 && entity.getData('tmf:dyn/pt_3') > 0.42",
+      "type": "BIG_SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "randOffset": [
+        1.5,
+        0.1,
+        0.05
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "randMotion": [
+        0.3,
+        0.2,
+        0.3
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 16 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 0.2 && entity.getData('tmf:dyn/pt_3') > 0.70",
+      "type": "BIG_SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "randOffset": [
+        1.5,
+        0.2,
+        0.05
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "randMotion": [
+        0.5,
+        0.3,
+        0.5
+      ]
+    },
+
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 17 && entity.getData('tmf:dyn/p_1') && !entity.getData('tmf:dyn/p_3')",
+      "type": "minecraft:blockcrack_3_0",
+      "anchor": "body",
+      "amount": 10,
+      "offset": [
+        0,
+        20.5,
+        0
+      ],
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.4,
+        0.1,
+        1.0
+      ],
+      "randMotion": [
+        0.1,
+        0.1,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 17 && entity.getData('tmf:dyn/p_1') && !entity.getData('tmf:dyn/p_3')",
+      "type": "minecraft:blockcrack_1_0",
+      "anchor": "body",
+      "amount": 4,
+      "offset": [
+        0,
+        20.5,
+        0
+      ],
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.4,
+        0.1,
+        1.0
+      ],
+      "randMotion": [
+        0.1,
+        0.1,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 17 && entity.getData('tmf:dyn/p_1') && !entity.getData('tmf:dyn/p_3')",
+      "type": "minecraft:blockcrack_3_2",
+      "anchor": "body",
+      "amount": 7,
+      "offset": [
+          0,
+          20.5,
+          0
+        ],
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.4,
+        0.1,
+        1.0
+      ],
+      "randMotion": [
+        0.1,
+        0.1,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 17 && entity.getData('tmf:dyn/p_1') && entity.getData('tmf:dyn/pt_3') != 1 && entity.getData('tmf:dyn/pt_3') != 0",
+      "type": "minecraft:happyVillager",
+      "anchor": "body",
+      "amount": 3,
+      "offset": [
+          0,
+          20.5,
+          0
+        ],
+      "motion": [
+        0.0,
+        0.0,
+        0.4
+      ],
+      "randOffset": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "randMotion": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "lockFPYaw": false
+    },
+
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 19 && entity.getData('tmf:dyn/pt_1') != 0 && entity.getData('tmf:dyn/pt_1') != 1",
+      "type": "minecraft:depthsuspend",
+      "amount": 20,
+      "offset": [
+        0.0,
+        1.1,
+        0.0
+      ],
+      "randOffset": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 19 && entity.getData('tmf:dyn/pt_1') != 0 && entity.getData('tmf:dyn/pt_1') != 1",
+      "type": "ENERGY_SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "randOffset": [
+        0.5,
+        0.3,
+        0.5
+      ],
+      "motion": [
+        0.65,
+        0.63,
+        0.49
+      ],
+      "randMotion": [
+        0.05,
+        0.025,
+        0
+      ]
+    },
+
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 25 && entity.getData('tmf:dyn/pt_1') == 1",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          2.0,
+          22.0,
+          -4.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "lockFPYaw": true
+    }
+  ]
+}

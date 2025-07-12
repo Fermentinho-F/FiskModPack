@@ -1,0 +1,15 @@
+{
+  "name": "Grogu",
+  "modifiers": {
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [1.0, 0, 0.4]
+      ],
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": ["swhp:grogu_summon", "swhp:grogu_pod", "swhp:grogu_laugh"],
+        "DISABLE": "swhp:grogu_pod"
+      }
+    }
+  }
+}

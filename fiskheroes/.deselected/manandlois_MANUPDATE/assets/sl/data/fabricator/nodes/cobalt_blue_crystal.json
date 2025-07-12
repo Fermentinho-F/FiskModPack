@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Cobalt Blue Crystal"
+    },
+    "icon": {
+      "texture": "sl:textures/gui/nodes/cobalt_blue_crystal.png"
+    }
+  },
+  "requirements": [
+    "sl:nsf"
+  ],
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 20
+  }
+}

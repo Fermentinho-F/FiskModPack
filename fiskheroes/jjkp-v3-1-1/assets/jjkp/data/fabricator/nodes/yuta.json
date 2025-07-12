@@ -1,0 +1,12 @@
+{
+  "suit": "jjkp:yuta",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "jjkp:jujutsu_sorcerer",
+    "jjkp:rika"
+  ]
+}

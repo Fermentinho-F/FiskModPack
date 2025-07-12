@@ -1,0 +1,9 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;data_2 - walking/running(higher motion input + faster loop) + jumping
+
+{movement} = cos({limbSwing} * 0.2 + pi) * {limbSwingAmount}
+
+{tail_main_rotX} -= {movement}
+{tail1_rotX} += {movement}
+{tail2_rotX} += 0.7{movement}
+{tail3_rotX} += 0.5{movement}

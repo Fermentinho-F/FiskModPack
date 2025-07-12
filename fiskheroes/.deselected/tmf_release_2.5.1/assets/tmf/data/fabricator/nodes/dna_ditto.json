@@ -1,0 +1,26 @@
+{
+  "suit": "tmf:dna_ditto_23",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample. Duplicating is my thing. Nobody (other than the small screaming dude) gets to copy me!"
+  },
+  "criteria": {
+    "creeper": {
+      "trigger": "fiskheroes:player_killed",
+      "minSuccessCount": 5,
+      "description": {
+        "translate": "Get Split into Pieces by an Explosion"
+      },
+      "condition": {
+        "variables": {
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "damage.isExplosion()"
+      }
+    }
+  }
+}

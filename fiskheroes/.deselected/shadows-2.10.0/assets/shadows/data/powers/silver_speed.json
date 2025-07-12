@@ -1,0 +1,71 @@
+{
+  "name": "Silver Light",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": [],
+        "SPRINT": [],
+        "STOP": []
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": true,
+      "soundEvents": {
+        "ENABLE": "shadows:silver_speed/phase"
+      }
+    },
+    "fiskheroes:cooldown|phase": {
+      "cooldown": {
+        "toggleData": "fiskheroes:intangible",
+        "cooldownData": "shadows:dyn/1float_interp_reset",
+        "duration": 10,
+        "recovery": 100
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.1
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "BLUNT": 1.0
+        }
+      },
+      "range": 0,
+      "radius": 0.5
+    },
+    "fiskheroes:cooldown|charged_jump": {
+      "cooldown": {
+        "toggleData": "entity.getData('shadows:dyn/2boolean_reset')",
+        "cooldownData": "shadows:dyn/2float_interp_reset",
+        "duration": 50,
+        "recovery": 1
+      }
+    }
+  },
+  "hud": [{
+      "type": "PROGRESS",
+      "texture": "shadows:textures/gui/bars/custom/silver_speed/bar.png",
+      "data": "entity.getData('shadows:dyn/2float_interp_reset') == 0 ? 0 : Math.max(1 - entity.getInterpolatedData('shadows:dyn/2float_interp_reset'), 0.0000000001)"
+    }
+  ]
+}

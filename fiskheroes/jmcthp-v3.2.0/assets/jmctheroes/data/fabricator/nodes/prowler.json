@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:prowler",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:spider_miles",
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal2",
+    "fiskheroes:melee2"
+  ]
+}

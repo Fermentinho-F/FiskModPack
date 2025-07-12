@@ -1,0 +1,27 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{data}= {data_0}
+
+
+{maskTop_posZ} @ {data} -> -1
+{maskTop_rotX} @ {data} -> -75.65'
+
+{maskTop_overlay_posZ} @ {data} -> -1
+{maskTop_overlay_rotX} @ {data} -> -75.65'
+
+{mask_sideR_posZ} @ {data} -> -3.2
+{mask_sideR_rotY} @ {data} -> 75.65'
+
+{mask_sideR_overlay_posZ} @ {data} -> -3.2
+{mask_sideR_overlay_rotY} @ {data} -> 75.65'
+
+{mask_sideL_posZ} @ {data} -> -3.2
+{mask_sideL_rotY} @ {data} -> -75.65'
+
+{mask_sideL_overlay_posZ} @ {data} -> -3.2
+{mask_sideL_overlay_rotY} @ {data} -> -75.65'
+
+{maskBot_posZ} @ {data} -> -2.1
+{maskBot_rotX} @ {data} -> 75.65'
+
+{maskBot_overlay_posZ} @ {data} -> -2.1
+{maskBot_overlay_rotX} @ {data} -> 75.65'

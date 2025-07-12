@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.electro.beam.stop.light",
+  "volume": 0.7,
+  "pitch": "0.8 + Math.random() * 0.1"
+}

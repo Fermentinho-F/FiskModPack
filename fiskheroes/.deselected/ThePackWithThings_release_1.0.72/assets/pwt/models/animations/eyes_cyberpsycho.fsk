@@ -1,0 +1,14 @@
+{data_0} = {data_0}
+{data_1} = {data_1}
+
+{eyeL_posX} -= 0.75{data_1}sin(4pi{data_0})
+{eyeL_posY} += 0.75sin({data_1}6pi{data_0})
+
+{eyeL_overlay_posX} -= 0.75{data_1}sin(4pi{data_0})
+{eyeL_overlay_posY} += 0.75sin({data_1}6pi{data_0})
+
+{eyeR_posX} -= 0.75{data_1}sin(4pi{data_0})
+{eyeR_posY} -= 0.75sin({data_1}6pi{data_0})
+
+{eyeR_overlay_posX} -= 0.75{data_1}sin(4pi{data_0})
+{eyeR_overlay_posY} -= 0.75sin({data_1}6pi{data_0})

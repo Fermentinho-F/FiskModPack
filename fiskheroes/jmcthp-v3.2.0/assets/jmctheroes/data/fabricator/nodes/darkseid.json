@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:darkseid",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier10",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:flight"
+  ]
+}

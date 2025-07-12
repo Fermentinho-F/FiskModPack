@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:xs",
+  "display": {
+  "description": "She is in the pack because I think her logo looks cool."
+  },
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap1",
+    "fiskheroes:speed_force",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

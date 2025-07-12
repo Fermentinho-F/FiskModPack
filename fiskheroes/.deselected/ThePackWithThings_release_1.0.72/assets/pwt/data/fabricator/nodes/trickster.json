@@ -1,0 +1,15 @@
+{
+    "suit": "pwt:trickster_aftermath",
+    "requirements": [
+        "fiskheroes:tier6_7",
+        "fiskheroes:flight",
+		"fiskheroes:teleportation",
+        "fiskheroes:defense2",
+        "fiskheroes:ranged2",
+		"pwt:interdimensional_magic",
+		"fiskheroes:object_manipulation"
+    ],
+    "display": {
+    "description": "New kind of magic"
+    }
+}

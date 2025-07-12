@@ -1,0 +1,40 @@
+{
+  "particles": [
+    {
+      "condition": "(entity.getData('tmf:dyn/transformation') && entity.getData('tmf:dyn/transformation_timer') != 1) || (!entity.getData('tmf:dyn/transformation') && entity.getData('tmf:dyn/transformation_timer') != 0 && entity.getWornChestplate().nbt().getString('HeroType') == 'tmf:omni_recal')",
+      "type": "QUANTUM_PARTICLE",
+      "amount": 10,
+      "offset": [0.0, 0.5, 0.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randMotion": [0.2, 0.2, 0.2]
+    },
+    {
+      "condition": "(entity.getData('tmf:dyn/transformation') && entity.getData('tmf:dyn/transformation_timer') != 1) || (!entity.getData('tmf:dyn/transformation') && entity.getData('tmf:dyn/transformation_timer') != 0 && entity.getWornChestplate().nbt().getString('HeroType') == 'tmf:omni_recal')",
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 10,
+      "offset": [0.0, 0.5, 0.0],
+      "motion": [0.37, 0.87, 0.29],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+    {
+      "condition": "!entity.getData('tmf:dyn/transformation') && entity.getData('tmf:dyn/transformation_timer') != 0 && entity.getWornChestplate().nbt().getString('HeroType') != 'tmf:omni_recal'",
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 10,
+      "offset": [0.0, 0.5, 0.0],
+      "motion": [0.9, 0.31, 0.23],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/tamper') && entity.getData('tmf:dyn/tamper_timer') > 0.65 && entity.getData('tmf:dyn/tamper_timer') <0.7",
+      "type": "BULLET_SPARK",
+      "amount": 1,
+      "anchor": "leftArm",
+      "offset": [0.2, 0.8, 0.0],
+      "motion": [0.1, 0, 0],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

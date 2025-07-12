@@ -1,0 +1,84 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim0} = curve min(animate2({data}, 1, 0.0, 0.3, 1), 1)
+{anim1} = curve min(animate2({data}, 2, 0.3, 0.3, 1), 1)
+{anim2} = curve min(animate2({data}, 3, 0.5, 0.5, 1), 1)
+
+{anim0} *= 1 - {anim2}
+{anim1} *= 1 - {anim2}
+
+{head_rotX} @ {anim0} -> -40'
+{head_posX} += 1*{anim0}
+{head_rotY} += 15'*{anim0}
+{head_posY} += 0.9*{anim0}
+{head_posZ} += 3*{anim0}
+
+{body_rotX} @ {anim0} -> -20'
+{body_rotY} += 10'*{anim0}
+{body_posX} += 1*{anim0}
+{body_posY} += 0.9*{anim0}
+{body_posZ} += 3*{anim0}
+
+{rightArm_rotX} @ {anim0} -> -25'
+{rightArm_rotY} += 10'*{anim0}
+{rightArm_rotZ} += 20'*{anim0}
+{rightArm_posX} += 0.75*{anim0}
+{rightArm_posY} += 0.9*{anim0}
+{rightArm_posZ} += 3.5*{anim0}
+
+{leftArm_rotX} @ {anim0} -> -25'
+{leftArm_rotY} += 10'*{anim0}
+{leftArm_rotZ} -= 25'*{anim0}
+{leftArm_posX} += 0.75*{anim0}
+{leftArm_posY} += 0.9*{anim0}
+{leftArm_posZ} += 1.5*{anim0}
+
+{rightLeg_rotX} += 10'*{anim0}
+{rightLeg_rotY} += 10'*{anim0}
+{rightLeg_rotZ} += 10'*{anim0}
+{rightLeg_posX} += 0.25*{anim0}
+{rightLeg_posZ} -= 0.5*{anim0}
+
+{leftLeg_rotX} += 10'*{anim0}
+{leftLeg_rotY} += 10'*{anim0}
+{leftLeg_rotZ} -= 10'*{anim0}
+{leftLeg_posX} += 0.75*{anim0}
+{leftLeg_posZ} -= 1*{anim0}
+
+{head_rotX} @ {anim1} -> 40'
+{head_posX} -= 1*{anim1}
+{head_rotY} -= 15'*{anim1}
+{head_posY} -= 0.9*{anim1}
+{head_posZ} -= 3*{anim1}
+
+{body_rotX} @ {anim1} -> 10'
+{body_rotY} -= 10'*{anim1}
+{body_posX} -= 1*{anim1}
+{body_posY} -= 0.9*{anim1}
+{body_posZ} -= 3*{anim1}
+
+{rightArm_rotX} @ {anim1} -> -25'
+{rightArm_rotY} -= 10'*{anim1}
+{rightArm_rotZ} += 20'*{anim1}
+{rightArm_posX} -= 0.75*{anim1}
+{rightArm_posY} -= 0.9*{anim1}
+{rightArm_posZ} -= 3.5*{anim1}
+
+{leftArm_rotX} @ {anim1} -> -25'
+{leftArm_rotY} -= 10'*{anim1}
+{leftArm_rotZ} -= 25'*{anim1}
+{leftArm_posX} -= 0.75*{anim1}
+{leftArm_posY} -= 0.9*{anim1}
+{leftArm_posZ} -= 1.5*{anim1}
+
+{rightLeg_rotX} -= 20'*{anim1}
+{rightLeg_rotY} -= 10'*{anim1}
+{rightLeg_rotZ} += 10'*{anim1}
+{rightLeg_posX} -= 0.75*{anim1}
+{rightLeg_posZ} += 1*{anim1}
+
+{leftLeg_rotX} -= 20'*{anim1}
+{leftLeg_rotY} -= 10'*{anim1}
+{leftLeg_rotZ} -= 10'*{anim1}
+{leftLeg_posX} -= 0.75*{anim1}
+{leftLeg_posZ} += 1.5*{anim1}

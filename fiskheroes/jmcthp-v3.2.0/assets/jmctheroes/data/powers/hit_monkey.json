@@ -1,0 +1,8 @@
+{
+  "name": "Macaque Physiology",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.2]
+    }
+  }
+}

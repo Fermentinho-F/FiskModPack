@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:naruto_og",
+  "requirements": [
+    "tmhp:kyuubi",
+    "elseworld:ap8_9",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "tmhp:heropack2"
+  ]
+}

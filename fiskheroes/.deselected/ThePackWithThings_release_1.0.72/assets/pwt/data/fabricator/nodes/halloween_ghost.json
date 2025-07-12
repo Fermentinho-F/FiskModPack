@@ -1,0 +1,6 @@
+{
+  "suit": "pwt:halloween_ghost",
+  "requirements": [
+    "pwt:halloween"
+  ]
+}

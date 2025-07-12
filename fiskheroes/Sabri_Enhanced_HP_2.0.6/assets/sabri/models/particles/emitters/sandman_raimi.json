@@ -1,0 +1,47 @@
+{
+  "particles": [
+    {
+      "condition": "entity.getData('sabri:dyn/hammer_timer') > 0 && entity.getData('sabri:dyn/hammer_timer') < 1 || entity.getData('fiskheroes:blade_timer') > 0 && entity.getData('fiskheroes:blade_timer') < 1 || entity.getData('sabri:dyn/mace_timer') > 0 && entity.getData('sabri:dyn/mace_timer') < 1 || (entity.getData('fiskheroes:blade') || entity.getData('sabri:dyn/sand') || entity.getData('fiskheroes:scale') > 1 && !entity.getData('fiskheroes:shadowform')) && entity.isPunching()",
+      "type": "ENERGY_SMOKE",
+      "anchor": "rightArm",
+      "amount": 2,
+      "offset": {
+        "tp": [1.0, 9.0, 0.0],
+        "fp": [8.0, 8.0, 0.0]
+      },
+      "motion": [0.85, 0.81, 0.65],
+      "randOffset": [0.1, 0.2, 0.1],
+      "randMotion": [0.05, 0.1, 0.05],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:moving') && entity.getData('sabri:dyn/sand') > 0 && !entity.getData('fiskheroes:shadowform')",
+      "type": "ENERGY_SMOKE",
+      "anchor": "rightLeg",
+      "amount": 2,
+      "offset": {
+        "tp": [ 0.0, 12.0, 0.0 ],
+        "fp": [ 3.0, 24.0, 0.0 ]
+      },
+      "motion": [0.85, 0.81, 0.65],
+      "randOffset": [0.1, 0.1, 0.1],
+      "randMotion": [0.05, 0.1, 0.05],
+      "mirror": true,
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('fiskheroes:shadowform') && entity.getInterpolatedData('sabri:dyn/drought_timer') == 0",
+      "maxDistance": 256,
+      "type": "ENERGY_SMOKE",
+      "amount": {
+        "tp": 18,
+        "fp": 5
+      },
+      "offset": [0.0, 1.6, 0.0],
+      "randOffset": [0.6, 0.6, 0.6],
+      "motion": [0.85, 0.81, 0.65],
+      "randMotion": [0.05, 0.1, 0.05],
+      "mirror": false
+    }
+  ]
+}

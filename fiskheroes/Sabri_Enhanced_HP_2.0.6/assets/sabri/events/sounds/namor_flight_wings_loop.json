@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.namor.wings.flight_loop",
+  "override": "sabri:funcs/namor_flight_wings_loop",
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 15
+}

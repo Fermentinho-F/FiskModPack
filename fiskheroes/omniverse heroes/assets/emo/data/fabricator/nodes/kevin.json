@@ -1,0 +1,12 @@
+{
+  "suit": "emo:kevin",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "emo:cadmus"
+  ]
+}

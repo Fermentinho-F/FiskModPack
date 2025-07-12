@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "sabri:black_panther_kinetic",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "sabri:xor/black_panther_kinetic_<TIMER>"
+      }
+    ],
+    "out": "sabri:generated/black_panther_kinetic_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(45 * entity.getInterpolatedData('sabri:dyn/vibranium_nanite_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 45
+      }
+    }
+  },
+  "isDynamic": true
+}

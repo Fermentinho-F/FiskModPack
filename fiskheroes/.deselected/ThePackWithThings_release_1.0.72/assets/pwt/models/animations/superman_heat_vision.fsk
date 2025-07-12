@@ -1,0 +1,24 @@
+{data} = curve {data}
+{head_posZ} @ {data} -> -0.6
+
+
+
+{body_rotX} @ {data} -> 5'
+
+
+{rightArm_rotX} @ {data} -> 25'
+{rightArm_rotY} @ {data} -> -15'
+{rightArm_rotZ} @ {data} -> 20'
+
+{leftArm_rotX} @ {data} -> 25'
+{leftArm_rotY} @ {data} -> 15'
+{leftArm_rotZ} @ {data} -> -20'
+
+{rightLeg_posY} @ {data} -> 12
+{rightLeg_posZ} @ {data} -> 1
+{leftLeg_posY} @ {data} -> 12
+{leftLeg_posZ} @ {data} -> 1
+
+
+
+out "firstPerson" (true)

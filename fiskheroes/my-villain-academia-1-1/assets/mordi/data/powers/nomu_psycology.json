@@ -1,0 +1,33 @@
+{
+  "name": "Nomu Mutate Physiology",
+  "modifiers": {
+
+	"fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "EXPLOSION": 2.5
+        }
+      },
+      "radius": 4.0,
+      "knockback": 2.5,
+      "cooldownTime": 80
+    },
+	"fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.4]
+    },
+	"fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.hvcharge",
+  "volume": 1.0,
+  "pitch": "1.2 - Math.random() * 0.3",
+  "fadeIn": 10
+}

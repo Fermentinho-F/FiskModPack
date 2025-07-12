@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+      "maxDistance": 256,
+      "type": "FLAME_BALL",
+      "anchor": "head",
+      "amount": 25,
+      "offset": [0.0, 0.0, 0.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.05, 0.0, 0.05],
+      "randMotion": [-0.15, -0.15, -0.15],
+      "lockFPYaw": true
+    }
+  ]
+}

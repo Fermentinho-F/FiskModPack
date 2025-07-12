@@ -1,0 +1,21 @@
+{data_0} = curve {data_0}
+;{data_1} = curve {data_1}
+
+{Gun1RotX_rotX} @ {data_0} -> -90' + max(-({pitch})', -15')
+{Gun3RotX_rotX} @ {data_0} -> -90' + max(-({pitch})', -15')
+
+{Gun1RotY_rotY} @ {data_0} -'> min(({bodyYaw} - {yaw})', 30')
+{Gun2RotY_rotY} @ {data_0} -'> min(({bodyYaw} - {yaw})', 30')
+{Gun3RotY_rotY} @ {data_0} -'> min(({bodyYaw} - {yaw})', 30')
+
+{slide1_posX} @ {data_0} -'> clamp(-({bodyYaw} - {yaw})', -0.75, 0.4)*3.5
+{slide2_posX} @ {data_0} -'> clamp(-({bodyYaw} - {yaw})', -0.75, 0.4)*3.5
+{slide3_posX} @ {data_0} -'> clamp(-({bodyYaw} - {yaw})', -0.75, 0.4)*3.5
+
+{Gun1RotZ_rotY} += 360'{data_1}
+{GunBase2_rotZ} += 360'{data_1}
+
+{data_0} = (1 - {data_0})
+
+{Gun1RotX_rotX} += 50'{data_0}
+{Gun3RotX_rotX} += 50'{data_0}

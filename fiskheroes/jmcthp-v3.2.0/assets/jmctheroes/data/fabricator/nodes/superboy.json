@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:superboy",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier8_9",
+    "jmctheroes:krypton",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3"
+  ]
+}

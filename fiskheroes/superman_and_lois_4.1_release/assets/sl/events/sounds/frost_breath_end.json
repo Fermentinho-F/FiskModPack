@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.freeze_breath_2_end",
+  "volume": 1.0,
+  "fadeIn": 4
+}

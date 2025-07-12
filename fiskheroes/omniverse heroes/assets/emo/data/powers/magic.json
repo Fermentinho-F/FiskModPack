@@ -1,0 +1,110 @@
+{
+  "name": "Magical Powers",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "ws",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": 1.0
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 0.9,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": 1.0
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "aw",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "ww",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "ada",
+          "cooldown": 12,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.20,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:sentry_mode": {
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "FIRE": 9.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 60,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    },
+    "fiskheroes:blade": {
+    }
+  }
+}

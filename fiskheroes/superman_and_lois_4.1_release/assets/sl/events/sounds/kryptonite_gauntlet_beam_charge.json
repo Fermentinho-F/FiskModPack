@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.kryptonite_gauntlet_charge",
+  "condition": "fiskheroes:beam_charging",
+  "pitch": "0.9 + Math.random() * 0.2",
+  "fadeOut": 5
+}

@@ -1,0 +1,332 @@
+{
+  "class.assassin.slash": {
+    "category": "player",
+    "sounds": [
+      "class/assassin/slash1",
+      "class/assassin/slash2",
+      "class/assassin/slash3",
+      "class/assassin/slash4"
+    ]
+  },
+  "class.infantry.armor.break": {
+    "category": "player",
+    "sounds": [
+      "class/infantry/armor_break"
+    ]
+  },
+  "class.infantry.armor.disable": {
+    "category": "player",
+    "sounds": [
+      "class/infantry/armor_disable"
+    ]
+  },
+  "class.infantry.armor.enable": {
+    "category": "player",
+    "sounds": [
+      "class/infantry/armor_enable"
+    ]
+  },
+  "class.scout.leap": {
+    "category": "player",
+    "sounds": [
+      "class/scout/leap1",
+      "class/scout/leap2",
+      "class/scout/leap3"
+    ]
+  },
+  "class.scout.leap.energy": {
+    "category": "player",
+    "sounds": [
+      "class/scout/leap_energy"
+    ]
+  },
+  "explode": {
+    "category": "ambient",
+    "sounds": [
+      "explode1",
+      "explode2",
+      "explode3",
+      "explode4"
+    ]
+  },
+  "johnwick": {
+    "category": "master",
+    "sounds": [
+      "john_wick"
+    ]
+  },
+  "loadout.click": {
+    "category": "master",
+    "sounds": [
+      "loadout/click"
+    ]
+  },
+  "loadout.close": {
+    "category": "master",
+    "sounds": [
+      "loadout/close"
+    ]
+  },
+  "loadout.hover": {
+    "category": "master",
+    "sounds": [
+      "loadout/hover"
+    ]
+  },
+  "loadout.open": {
+    "category": "master",
+    "sounds": [
+      "loadout/open"
+    ]
+  },
+  "match.defeat": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "match/defeat",
+        "stream": true
+      }
+    ]
+  },
+  "match.draw": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "match/draw",
+        "stream": true
+      }
+    ]
+  },
+  "match.start": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "match/start",
+        "stream": true
+      }
+    ]
+  },
+  "match.victory": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "match/victory",
+        "stream": true
+      }
+    ]
+  },
+  "point.ambient.loop.blue": {
+    "category": "ambient",
+    "sounds": [
+      "point/ambient_loop_blue"
+    ]
+  },
+  "point.ambient.loop.red": {
+    "category": "ambient",
+    "sounds": [
+      "point/ambient_loop_red"
+    ]
+  },
+  "point.capture": {
+    "category": "ambient",
+    "sounds": [
+      "point/capture1",
+      "point/capture2"
+    ]
+  },
+  "point.contest": {
+    "category": "ambient",
+    "sounds": [
+      "point/contest"
+    ]
+  },
+  "point.enter": {
+    "category": "player",
+    "sounds": [
+      "point/enter"
+    ]
+  },
+  "point.exit": {
+    "category": "player",
+    "sounds": [
+      "point/exit"
+    ]
+  },
+  "weapon.automatic.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/automatic/shoot1",
+      "weapon/automatic/shoot2",
+      "weapon/automatic/shoot3",
+      "weapon/automatic/shoot4"
+    ]
+  },
+  "weapon.automatic.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/automatic/start"
+    ]
+  },
+  "weapon.automatic.start.loop": {
+    "category": "player",
+    "sounds": [
+      "weapon/automatic/start_loop"
+    ]
+  },
+  "weapon.automatic.stop": {
+    "category": "player",
+    "sounds": [
+      "weapon/automatic/stop"
+    ]
+  },
+  "weapon.mortar.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/mortar/shoot1",
+      "weapon/mortar/shoot2",
+      "weapon/mortar/shoot3"
+    ]
+  },
+  "weapon.pistol.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/pistol/shoot1",
+      "weapon/pistol/shoot2",
+      "weapon/pistol/shoot3",
+      "weapon/pistol/shoot4"
+    ]
+  },
+  "weapon.railgun.charged": {
+    "category": "player",
+    "sounds": [
+      "weapon/railgun/charged"
+    ]
+  },
+  "weapon.railgun.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/railgun/shoot"
+    ]
+  },
+  "weapon.railgun.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/railgun/start"
+    ]
+  },
+  "weapon.railgun.start.loop": {
+    "category": "player",
+    "sounds": [
+      "weapon/railgun/start_loop"
+    ]
+  },
+  "weapon.rifle.scope.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/rifle/scope_start"
+    ]
+  },
+  "weapon.rifle.scope.stop": {
+    "category": "player",
+    "sounds": [
+      "weapon/rifle/scope_stop"
+    ]
+  },
+  "weapon.rifle.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/rifle/shoot1",
+      "weapon/rifle/shoot2",
+      "weapon/rifle/shoot3",
+      "weapon/rifle/shoot4",
+      "weapon/rifle/shoot5"
+    ]
+  },
+  "weapon.rocketlauncher.scope.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/rocket_launcher/scope_start"
+    ]
+  },
+  "weapon.rocketlauncher.scope.stop": {
+    "category": "player",
+    "sounds": [
+      "weapon/rocket_launcher/scope_stop"
+    ]
+  },
+  "weapon.rocketlauncher.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/rocket_launcher/shoot1",
+      "weapon/rocket_launcher/shoot2"
+    ]
+  },
+  "weapon.scatterblaster.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/scatter_blaster/shoot1",
+      "weapon/scatter_blaster/shoot2",
+      "weapon/scatter_blaster/shoot3"
+    ]
+  },
+  "weapon.shotgun.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/shotgun/shoot1",
+      "weapon/shotgun/shoot2",
+      "weapon/shotgun/shoot3",
+      "weapon/shotgun/shoot4"
+    ]
+  },
+  "weapon.sniper.scope.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/sniper/scope_start"
+    ]
+  },
+  "weapon.sniper.scope.stop": {
+    "category": "player",
+    "sounds": [
+      "weapon/sniper/scope_stop"
+    ]
+  },
+  "weapon.sniper.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/sniper/shoot1",
+      "weapon/sniper/shoot2",
+      "weapon/sniper/shoot3"
+    ]
+  },
+  "weapon.teslagun.charged": {
+    "category": "player",
+    "sounds": [
+      "weapon/tesla_gun/charged"
+    ]
+  },
+  "weapon.teslagun.shoot": {
+    "category": "player",
+    "sounds": [
+      "weapon/tesla_gun/shoot1",
+      "weapon/tesla_gun/shoot2"
+    ]
+  },
+  "weapon.teslagun.start": {
+    "category": "player",
+    "sounds": [
+      "weapon/tesla_gun/start"
+    ]
+  },
+  "weapon.teslagun.start.loop": {
+    "category": "player",
+    "sounds": [
+      "weapon/tesla_gun/start_loop"
+    ]
+  },
+  "weapon.teslagun.started": {
+    "category": "player",
+    "sounds": [
+      "weapon/tesla_gun/started"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "suit": "shadows:shadow",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "shadows:shadow_movement",
+    "shadows:shadow00dev"
+  ]
+}

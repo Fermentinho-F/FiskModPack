@@ -1,0 +1,10 @@
+{slide_posZ} += 1.5sin(pi{data_0})
+
+{data_1} = curve {data_1}
+{x} = sin(pi{data_1})
+
+{glock_rotX} -= 360'{data_1}
+
+{glock_posX} += 0.1{x}
+{glock_posY} -= 0.3{x}
+{glock_posZ} += 0.5{x}

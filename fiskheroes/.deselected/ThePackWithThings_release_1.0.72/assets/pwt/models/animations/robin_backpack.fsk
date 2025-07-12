@@ -1,0 +1,25 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim_0} = curve min(animate2({data}, 1.0, 0.0, 0.4, 0.4), 1)
+
+{anim_1} = curve min(animate2({data}, 0.3, 0.3, 0.2, 0.2), 1)
+{anim_2} = curve min(animate2({data}, 0.3, 0.35, 0.2, 0.2), 1)
+
+{rightArm_rotX} @ {anim_0} -> 60'
+{rightArm_rotY} @ {anim_0} -> 40'
+{rightArm_rotZ} @ {anim_0} -> 10'
+
+{leftArm_rotX} @ {anim_0} -> 55'
+{leftArm_rotY} @ {anim_0} -> -45'
+{leftArm_rotZ} @ {anim_0} -> -10'
+
+{rightArm_rotX} += 10'{anim_1}
+{rightArm_rotZ} -= 5'{anim_1}
+{rightArm_posY} -= {anim_1}
+
+{leftArm_rotX} += 10'{anim_2}
+{leftArm_rotZ} -= 5'{anim_2}
+{leftArm_posY} -= {anim_2}
+
+out "firstPerson" (true)
+out "translate" (0, -{anim_0}, 0)

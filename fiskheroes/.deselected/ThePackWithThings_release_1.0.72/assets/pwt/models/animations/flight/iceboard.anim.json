@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "pwt:flight/iceboard_hover",
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Mutated Physiology",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.1]
+    },
+	  "fiskheroes:leaping|sprint": {
+      "leapAmount": [1.4, 0.3],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.75
+    },
+    "fiskheroes:damage_resistance|sharp": {
+      "damageType": "SHARP",
+      "factor": 0.75
+    },
+    "fiskheroes:damage_resistance|shuriken": {
+      "damageType": "SHURIKEN",
+      "factor": 0.9
+    }
+  }
+}

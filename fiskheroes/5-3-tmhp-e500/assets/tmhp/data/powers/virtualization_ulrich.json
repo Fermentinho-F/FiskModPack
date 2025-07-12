@@ -1,0 +1,27 @@
+{
+  "name": "Virtualization:Ulrich Stern",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 600,
+          "quantity": 2
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flicker_loop_comics",
+        "MOVE": ["fiskheroes:super_speed_move_loop_comics", "fiskheroes:super_speed_move_loop_barry_test"],
+        "SPRINT": "fiskheroes:super_speed_sprint_comics",
+        "STOP": "fiskheroes:super_speed_stop_comics"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "particles": {
+    "texture": "pack:textures/sand.png",
+    "motion": 0.4,
+    "speed": 0.1,
+    "fade": 25,
+    "density": 20,
+    "differ": 1,
+    "opacity": 1.0,
+    "scale": 0.7
+  }
+}

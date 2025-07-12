@@ -1,0 +1,33 @@
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+{pitch} = atan2({motY}, {horVel})
+{data} = curve {data}
+
+{m} = curve(clamp(-{motY}, 0, 2) / 2)
+{mhor} = curve(clamp(sqrt({motX}^2 + {motZ}^2), -2	, 2) / 2)
+{x} = {data}curve clamp(-{motY}, 0, 1)
+
+{head_rotX} @ {x} -> min(-0.3{pitch}, 90')
+
+{rightArm_rotX} @ {x} -> 0.2 + 0.2{m} + 0.8{mhor}
+{rightArm_rotY} @ {x} -> -0.07 - 0.1{m}
+{rightArm_rotZ} @ {m} -> 2.2 + 0.8*sin({x}*pi) 
+{leftArm_rotX} @ {x} -> 0.21 - 0.1{m} + 0.8{mhor}
+{leftArm_rotY} @ {x} -> -0.03 - 0.2{m}
+{leftArm_rotZ} @ {m} -> -1.89 - 0.8*sin({x}*pi) 
+
+{rightLeg_rotX} @ {x} -> 0.96
+{rightLeg_rotY} @ {x} -> 0.17
+{rightLeg_rotZ} @ {x} -> -0.052
+{leftLeg_rotX} @ {x} -> 0.26
+{leftLeg_rotY} @ {x} -> -0.227
+{leftLeg_rotZ} @ {x} -> 0
+
+{rightLeg_posX} @ {x} -> -3
+{rightLeg_posY} @ {x} -> 9.5
+{rightLeg_posZ} @ {x} -> -5.5
+{leftLeg_posX} @ {x} -> 2.5
+{leftLeg_posY} @ {x} -> 12.5
+{leftLeg_posZ} @ {x} -> -1
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (0.2({m}{mhor}){data}({pitch} - 90') / 1', 1, 0, 0)

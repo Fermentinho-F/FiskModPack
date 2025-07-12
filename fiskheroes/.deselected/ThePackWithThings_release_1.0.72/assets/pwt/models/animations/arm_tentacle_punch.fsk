@@ -1,0 +1,3 @@
+{rightArm_rotX} -= 35' * sin(pi{data_0})
+
+{rightArm_rotZ} += 25' * sin(pi{data_0})

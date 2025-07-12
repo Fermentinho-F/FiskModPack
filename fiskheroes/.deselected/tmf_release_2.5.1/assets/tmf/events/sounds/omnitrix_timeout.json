@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:omnitrix.timeout",
+  "condition": "entity.getWornChestplate().nbt().getString('HeroType') != 'tmf:omni_recal'"
+}

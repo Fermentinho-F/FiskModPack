@@ -1,0 +1,22 @@
+{
+  "dataFormat": "CIRCLES",
+  "maxAngle": 360,
+  "shapes": [
+    [45, 0.4],
+    {
+      "data": [4, 0.4],
+      "rotation": [0, 45, 0],
+	  "rotIndex": -1
+    },
+    {
+      "data": [4, 0.27],
+      "rotation": [0, 45, 0],
+	  "rotIndex": -1
+    },
+    {
+      "data": [4, 0.27],
+      "rotation": [0, 0, 0],
+	  "rotIndex": -1
+    }
+  ]
+}

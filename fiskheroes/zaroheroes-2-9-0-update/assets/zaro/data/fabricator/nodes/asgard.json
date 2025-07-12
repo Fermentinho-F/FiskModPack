@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "Asgard",
+    "description": "Asgard",
+    "icon": {
+      "texture": "zaro:textures/gui/nodes/asgard.png"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.symbiot.blade.punch",
+  "condition": "fiskheroes:blade",
+  "fadeOut": 5,
+  "volume": 1.0,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

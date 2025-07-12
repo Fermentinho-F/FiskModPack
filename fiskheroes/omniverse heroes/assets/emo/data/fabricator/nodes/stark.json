@@ -1,0 +1,17 @@
+{
+    "suit": "emo:stark",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:iron_man",
+      "fiskheroes:stark",
+      "fiskheroes:nanites",
+      "fiskheroes:flight",
+      "fiskheroes:defense2",
+      "fiskheroes:melee2",
+      "fiskheroes:ranged3",
+      "fiskheroes:traversal",
+      "emo:copy",
+      "emo:cadmus"
+    ]
+  }
+  

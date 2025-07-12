@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": "Stealth",
+    "description": "Allows the wearer to travel without being seen.",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/stealth_upgrade.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:traversal2",
+    "tmf:tmf"
+  ],
+  "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 10
+  }
+}

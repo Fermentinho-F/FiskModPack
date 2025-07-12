@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Reverse Cursed Technique",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/reverse_cursed_technique.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jjkp"
+  ],
+    "price": {
+      "IRID_GOLD": 3,
+      "XP_LEVELS": 5
+  }
+}

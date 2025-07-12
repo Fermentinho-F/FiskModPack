@@ -1,0 +1,28 @@
+{
+    "name": "zaro heroes",
+    "description": "by zaroheroes ",
+    "domain": "zaro",
+    "packFormat": 1,
+    "watermark": "ZaroHeroes",
+    "sounds": {
+    "download": {
+      "repository": "Ponti805/Ponti805",
+      "version": 0
+    }
+     },
+    "range": {
+      "shazam": {
+        "distance": 20.0,
+        "sendToAll": "true"
+      }
+     },
+     "dataVars": {
+    "next": "BOOLEAN",
+    "next_timer": "FLOAT_INTERP"
+  },
+    "alts": {
+    "zaro:shazam": {
+      "dceu": "DCEU"
+     }
+   }
+  }

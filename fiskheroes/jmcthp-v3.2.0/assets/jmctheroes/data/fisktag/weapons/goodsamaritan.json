@@ -1,0 +1,49 @@
+{
+  "name": "The Good Samaritan",
+  "permission": "USE_REVOLVER",
+  "holdingPose": "SINGLE",
+  "cooldown": 15,
+  "damageProfile": {
+    "damage": 6.75,
+    "types": {
+      "BULLET": 1.2,
+      "MAGIC": 1.5,
+      "FIRE": 1.2
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "HEAT_TRANSFER": 20,
+      "IGNITE": 3
+    }
+  },
+  "fisktag": {
+    "sprintShootDelay": 4,
+    "sprintDelay": 6
+  },
+  "scope": {
+    "zoom": 0.45,
+    "allowHeadshots": true,
+    "damageBonus": 0.7,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.8
+  },
+  "recoil": {
+    "amount": 0.2,
+    "cameraShake": 1.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "range": 24.0,
+      "spread": 0.75,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "jmctheroes:revolver"
+  }
+}

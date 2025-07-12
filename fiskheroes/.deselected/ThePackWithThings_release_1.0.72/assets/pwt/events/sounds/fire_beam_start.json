@@ -1,0 +1,6 @@
+{
+  "sound": "pwt:suit.fire.beam.start",
+  "condition": "fiskheroes:energy_projection",
+  "fadeIn": 2,
+  "fadeOut": 5
+}

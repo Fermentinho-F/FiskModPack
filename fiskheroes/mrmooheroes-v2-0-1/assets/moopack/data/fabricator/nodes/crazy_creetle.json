@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Crazy Creetle",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/crazy_creetle.png"
+    }
+    },
+    "requirements": [
+    "moopack:stand",
+  ],
+    "price": {
+    "IRID_GOLD": 8,
+    "XP_LEVELS": 30
+  }
+}

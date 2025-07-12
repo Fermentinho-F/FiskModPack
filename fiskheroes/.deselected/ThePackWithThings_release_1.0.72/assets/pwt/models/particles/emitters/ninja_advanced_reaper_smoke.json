@@ -1,0 +1,12 @@
+{
+  "particles": [
+    {
+      "type": "SMOKE_SMALL",
+      "anchor": "rightArm",
+      "amount": 2,
+      "offset": [-1.0, 20.0, 0.0],
+      "motion": [0.0, 0.0, -0.3],
+      "mirror": false
+    }
+  ]
+}

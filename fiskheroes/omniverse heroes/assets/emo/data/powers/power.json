@@ -1,0 +1,33 @@
+{
+  "name": "Blood Demon",
+  "modifiers": {
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 3.0,
+      "cooldownTime": 40
+  },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 50.0,
+        "regeneration": 6.0,
+        "recoveryDelay": 100,
+        "cooldown": 1
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.001
+    }
+  }
+}

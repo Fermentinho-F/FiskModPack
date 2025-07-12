@@ -1,0 +1,66 @@
+{
+  "name": "Hope",
+  "modifiers": {
+    "fiskheroes:transformation|hammer": {
+      "key": "HAMMER",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "timerData": "fiskheroes:dyn/steel_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 1.0,
+              "EFFECTS": [
+                {
+                  "id": "minecraft:instant_health",
+                  "duration": 1,
+                  "amplifier": 1
+                }
+             ]
+        }
+      },
+      "chargeTime": 0.1,
+      "duration": 15,
+      "cooldownTime": 150,
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 150.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 50,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Adamantium Skeleton",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "sabri:wolverine_xmen_claws_enable",
+        "DISABLE": "sabri:wolverine_xmen_claws_disable"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "SHARP": 1.0,
+          "ADAMANTIUM": 1.0
+      }
+      },
+      "range": 2.0,
+      "radius": 1.0
+    }
+  }
+}

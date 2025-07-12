@@ -1,0 +1,25 @@
+{
+  "display": {
+    "name": {
+      "translate": "Doggy's Multiversal Heropack"
+    },
+    "icon": {
+      "texture": "dmh:textures/gui/nodes/icon.png"
+    }
+  },
+  "autoUnlock"	:	true,
+  "criteria": {
+    "stellarheroes": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Download Doggy's Multiversal Heropack"
+      },
+      "condition": {
+        "variables": {
+          "entity": "PLAYER_TICKING"
+        },
+        "check": "entity.exists()"
+      }
+    }
+  }
+}

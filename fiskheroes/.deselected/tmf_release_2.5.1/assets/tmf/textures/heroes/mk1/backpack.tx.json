@@ -1,0 +1,9 @@
+{
+  "texture": "tmf:mk1/<BACKPACK>",
+  "getters": {
+    "BACKPACK": {
+      "key": "entity.getData('tmf:dyn/transform_timer') > 0.4  ? 'backpack' : 'backpack_default'",
+      "values": ["backpack", "backpack_default"]
+    }
+  }
+}

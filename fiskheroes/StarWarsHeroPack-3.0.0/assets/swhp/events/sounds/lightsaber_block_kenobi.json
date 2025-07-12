@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:suit.kenobi.lightsaber.block",
+  "condition": "fiskheroes:shield_blocking",
+  "volume": 0.5,
+  "loop": false
+}

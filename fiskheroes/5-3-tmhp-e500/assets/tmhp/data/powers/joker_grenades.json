@@ -1,0 +1,52 @@
+{
+  "name": "Joker Grenades",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 500,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 5.0,
+        "properties": {
+              "EFFECTS": [
+                {
+                  "id": "minecraft:wither",
+                  "duration": 50,
+                  "amplifier": 5
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "duration": 250,
+                  "amplifier": 5
+                },
+                {
+                  "id": "minecraft:mining_fatigue",
+                  "duration": 150,
+                  "amplifier": 1
+                },
+                {
+                  "id": "minecraft:weakness",
+                  "duration": 350,
+                  "amplifier": 1
+                },
+                {
+                  "id": "minecraft:slowness",
+                  "duration": 50,
+                  "amplifier": 200
+                }
+             ]
+        }
+          },
+          "isInstant": false,
+          "affectsUser": false,
+          "fuseTime": 50,
+          "radius": 7.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

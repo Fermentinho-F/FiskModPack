@@ -1,0 +1,15 @@
+{
+  "suit": "jmctheroes:superior_spider_man",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:spider_man",
+    "fiskheroes:doctor_octopus",
+    "fiskheroes:tier6_7",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "suit": "emo:magic",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:magic",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "emo:cadmus"
+  ]
+}

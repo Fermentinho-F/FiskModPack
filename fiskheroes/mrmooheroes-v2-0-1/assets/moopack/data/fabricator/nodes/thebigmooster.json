@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:thebigmooster",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged3",
+    "fiskheroes:object_manipulation",
+    "moopack:superhuman_abilities"
+  ]
+}

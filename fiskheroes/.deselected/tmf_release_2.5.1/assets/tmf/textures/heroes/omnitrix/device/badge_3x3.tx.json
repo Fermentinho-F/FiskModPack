@@ -1,0 +1,23 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/device/badge_3x3_g",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      }
+    ],
+    "out": "tmf:generated/badge_3x3_<HUE>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "(entity.getData('tmf:dyn/captureMode') || (!entity.as('PLAYER').isCreativeMode() && entity.getData('tmf:dyn/transformation_timer') == 0 && entity.getData('tmf:dyn/transformation_cooldown') != 0)) ? 0 : entity.getWornChestplate().nbt().getInteger('Color') | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 30
+      }
+    }
+  },
+  "isDynamic": false
+}

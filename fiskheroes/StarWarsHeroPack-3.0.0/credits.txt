@@ -1,0 +1,13 @@
+HeroPack Creator: SymbioteSpidey
+
+Everything apart of this HeroPack (code, skins, models, textures, etc) has been created by me (SymbioteSpidey)
+Anything helped with or created by others is credited below 
+
+Special Thanks/Credits:
+FatherKhimsky - Models and Textures of Ahsoka Lightsaber and all Blasters
+Cosix101 - Skins
+Doot - Darth Revan Skin
+enderboy23314 - Darth Maul Lightsaber
+Rixtz - Grogu Model and Texture
+0fficialB00M - Helping with Item Textures and Sounds for the Final Update
+aidanangrybird - Coding Assistance (before version 3.0.0)

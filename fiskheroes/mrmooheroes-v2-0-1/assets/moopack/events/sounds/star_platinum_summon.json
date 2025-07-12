@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "moopack:star_platinum_summon",
+  "volume": 0.5,
+  "pitch": 1.0
+}

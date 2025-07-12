@@ -1,0 +1,12 @@
+{
+  "suit": "emo:john",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:sorcery",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "emo:cadmus"
+  ]
+}

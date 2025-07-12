@@ -1,0 +1,9 @@
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -> -110' + {head_rotX}
+{rightArm_rotY} @ {data} -> 50' + {head_rotY}
+{rightArm_rotZ} @ {data} -> -10' + {head_rotZ}
+
+{leftArm_rotX} @ {data} -> -110' + {head_rotX}
+{leftArm_rotY} @ {data} -> -50' + {head_rotY}
+{leftArm_rotZ} @ {data} -> 10' + {head_rotZ}

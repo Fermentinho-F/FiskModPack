@@ -1,0 +1,9 @@
+{
+  "suit": "jjkp:sorcerer_g_four",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "jjkp:jujutsu_sorcerer"
+  ]
+}

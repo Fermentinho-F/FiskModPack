@@ -1,0 +1,41 @@
+{
+    "display": {
+    "name": "Nah, I'd Win.",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/nah_id_win.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jogo"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 5
+  },
+  "criteria": {
+    "win": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Yeah, I Won. (Kill A Player)"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.exists()"
+      }
+    },
+    "achievement": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+          "translate": "Aquire A Souvenir From The End"
+      },
+      "condition": {
+          "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+          },
+          "check": "block.name() == 'minecraft:end_stone'"
+      }
+    }
+  }
+}

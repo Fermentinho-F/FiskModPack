@@ -1,0 +1,28 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+{rightArm_rotX} @ {data_0} -> -70'
+{rightArm_rotZ} @ {data_0} -> -90'
+
+{rightArm_posX} @ {data_0} -> -5.5
+{rightArm_posY} @ {data_0} -> 1
+{rightArm_posZ} @ {data_0} -> -0.5
+
+{leftArm_rotX} @ {data_0} -> -70'
+{leftArm_rotZ} @ {data_0} -> 90'
+
+{leftArm_posX} @ {data_0} -> 5.5
+{leftArm_posY} @ {data_0} -> 1
+{leftArm_posZ} @ {data_0} -> -0.5
+
+;//////////////////////////////////////////////////
+
+{black_widow_batons_posZ} @ {data_0} -> -1.75
+{black_widow_batons_rotX} @ {data_0} -> -20'
+
+{black_widow_batons_top_posZ} @ {data_1} -> -99999999999999999999
+
+
+{black_widow_bo_staff_posZ} @ {data_0} -> -1.75
+{black_widow_bo_staff_rotX} @ {data_0} -> -20'
+{black_widow_bo_staff_rotZ} @ {data_1} -> 80'sin(pi*{data_1})

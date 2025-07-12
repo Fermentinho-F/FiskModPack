@@ -1,0 +1,284 @@
+{
+  "spark": {
+    "sounds": [
+      "spark"
+    ],
+    "category": "player"
+  },
+  "gokussjtransformation": {
+    "sounds": [
+      "gokussjtransformation1",
+      "gokussjtransformation2",
+      "null"
+    ],
+    "category": "player"
+  },
+  "tp": {
+    "sounds": [
+      "tp"
+    ],
+    "category": "player"
+  },
+  "kamecharge": {
+    "sounds": [
+      "kamecharge"
+    ],
+    "category": "player"
+  },
+  "kamefondo": {
+    "sounds": [
+      "kamefondo"
+    ],
+    "category": "player"
+  },
+  "kameshoot": {
+    "sounds": [
+      "kameshoot1",
+      "kameshoot2"
+    ],
+    "category": "player"
+  },
+  "kamepose": {
+    "sounds": [
+      "kamepose"
+    ],
+    "category": "player"
+  },
+  "kame": {
+    "sounds": [
+      "kame",
+      "null"
+    ],
+    "category": "player"
+  },
+  "ha": {
+    "sounds": [
+      "ha"
+    ],
+    "category": "player"
+  },
+  "volando": {
+    "sounds": [
+      "volando"
+    ],
+    "category": "player"
+  },
+  "startvolando": {
+    "sounds": [
+      "startvolando"
+    ],
+    "category": "player"
+  },
+  "stopvolando": {
+    "sounds": [
+      "stopvolando"
+    ],
+    "category": "player"
+  },
+  "auraon": {
+    "sounds": [
+      "auraon"
+    ],
+    "category": "player"
+  },
+  "auraoff": {
+    "sounds": [
+      "auraoff"
+    ],
+    "category": "player"
+  },
+  "gokubasegrito": {
+    "sounds": [
+      "gokubasegrito1",
+      "gokubasegrito2",
+      "null"
+    ],
+    "category": "player"
+  },
+  "gokussjgrito": {
+    "sounds": [
+      "gokussjgrito1",
+      "gokussjgrito2",
+      "null"
+    ],
+    "category": "player"
+  },
+  "kiloop": {
+    "sounds": [
+      "kiloop"
+    ],
+    "category": "player"
+  },
+  "ssjoff": {
+    "sounds": [
+      "ssjoff1"
+    ],
+    "category": "player"
+  },
+  "ssjofff": {
+    "sounds": [
+      "ssjoff1"
+    ],
+    "category": "player"
+  },
+  "ssjon": {
+    "sounds": [
+      "ssjon1"
+    ],
+    "category": "player"
+  },
+  "sp": {
+    "sounds": [
+      "sp1",
+      "sp2",
+      "sp3",
+      "sp4",
+      "sp5",
+      "sp6"
+    ],
+    "category": "player"
+  },
+  "jump": {
+    "sounds": [
+      "jump1",
+      "jump2",
+      "jump3"
+    ],
+    "category": "player"
+  },
+  "punch": {
+    "sounds": [
+      "punch1",
+      "punch2",
+      "punch3",
+      "punch4",
+      "punch5",
+      "punch6"
+    ],
+    "category": "player"
+  },
+  "han": {
+    "sounds": [
+      "han"
+    ],
+    "category": "player"
+  },
+  "hann": {
+    "sounds": [
+      "hann1",
+      "hann2"
+    ],
+    "category": "player"
+  },
+  "walk": {
+    "sounds": [
+      "walk1",
+      "walk2"
+    ],
+    "category": "player"
+  },
+  "finalflash": {
+    "sounds": [
+      "finalflash"
+    ],
+    "category": "player"
+  },
+  "carga": {
+    "sounds": [
+      "carga1",
+      "carga2",
+      "carga3",
+      "carga4",
+      "carga5",
+      "carga6"
+    ],
+    "category": "player"
+  },
+  "bum": {
+    "sounds": [
+      "bum1",
+      "bum2",
+      "bum3",
+      "bum4"
+    ],
+    "category": "player"
+  },
+  "ringonn": {
+    "sounds": [
+      "ringon1",
+      "ringon2",
+      "ringon3",
+      "ringon4",
+      "ringon5",
+      "ringon6",
+      "ringon7",
+      "ringon8",
+      "ringon9",
+      "ringon10",
+      "ringon11",
+      "ringon12",
+      "ringon13"
+    ],
+    "category": "player"
+  },
+  "grab": {
+    "sounds": [
+      "grab1",
+      "grab2",
+      "grab3",
+      "grab4",
+      "grab5",
+      "grab6"
+    ],
+    "category": "player"
+  },
+  "injusticeon": {
+    "sounds": [
+      "suit1",
+      "suit2",
+      "suit3",
+      "suit4",
+      "suit5",
+      "suit6",
+      "suit7",
+      "suit8",
+      "suit9",
+      "suit10",
+      "suit11",
+      "suit12",
+      "suit13",
+      "suit14"
+    ],
+    "category": "player"
+  },
+  "yringonn": {
+    "sounds": [
+      "ringon111",
+      "ringon2",
+      "ringon3",
+      "ringon4",
+      "ringon55",
+      "ringon66",
+      "ringon77",
+      "ringon8",
+      "ringon99",
+      "ringon10",
+      "ringon11",
+      "ringon12",
+      "ringon13"
+    ],
+    "category": "player"
+  },
+  "yringofff": {
+    "sounds": [
+      "ringoff11",
+      "ringoff22",
+      "ringoff3",
+      "ringoff44",
+      "ringoff55",
+      "ringoff6",
+      "ringoff7"
+    ],
+    "category": "player"
+  }
+}

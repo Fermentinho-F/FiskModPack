@@ -1,0 +1,6 @@
+{
+  "sound": "db:kamefondo",
+  "condition": "entity.getData('fiskheroes:dyn/nanites') > 0",
+  "loop": false,
+  "volume": 0.6
+}

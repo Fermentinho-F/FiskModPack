@@ -1,0 +1,13 @@
+{
+  "display": {
+    "name": {
+      "translate": "Naruto Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/chakra.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:magic",
+    "tmhp:heropack" ]
+}

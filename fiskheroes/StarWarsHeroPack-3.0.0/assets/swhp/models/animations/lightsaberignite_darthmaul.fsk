@@ -1,0 +1,15 @@
+{data} = curve {data}
+{d} = sin(pi{data})
+
+{rightArm_rotX} @ {d} -> -2.0
+{rightArm_rotY} @ {d} -> -0.25
+{rightArm_rotZ} @ {d} -> 1.5
+
+{leftArm_rotX} @ {d} -> -1.5
+{leftArm_rotY} @ {d} -> 0.5
+
+out "firstPerson" (true)
+out "translate" (-0.35{d}, 0, 0.15{d})
+out "rotate" (-27{d}, 0, 1, 0)
+out "rotate" (-20{d}, 1, 0, 0)
+out "rotate" (-30{d}, 0, 0, 1)

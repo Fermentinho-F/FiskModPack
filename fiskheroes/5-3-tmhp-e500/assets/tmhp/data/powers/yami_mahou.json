@@ -1,0 +1,95 @@
+{
+  "name": "Dark Magic Grimoire",
+  "modifiers": {
+    "fiskheroes:transformation|grimoire": {
+      "key": "OPEN_GRIMOIRE",
+      "transformation": {
+        "toggleData": "tmhp:dyn/grimoire",
+        "timerData": "tmhp:dyn/grimoire_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "tmhp:grimoire_open"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.1, 0.3]
+    },
+    "fiskheroes:transformation|black_blade": {
+      "key": "BLACKBLADE",
+      "transformation": {
+        "toggleData": "tmhp:dyn/electrical",
+        "timerData": "tmhp:dyn/electrical_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|black_blade_cooldown": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/electrical",
+        "cooldownData": "tmhp:dyn/electrical_cooldown",
+        "duration": 500,
+        "recovery": 5.0
+      }
+    },
+    "fiskheroes:charged_beam|dimension_slash": {
+      "damageProfile": {
+        "damage": 45.0,
+        "types": {
+          "SHARP": 1.0,
+          "MAGIC": 1.0
+        }
+      },
+      "chargeTime": 50,
+      "duration": 5,
+      "cooldownTime": 25,
+      "range": 32.0,
+      "radius": 2.0,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+    "fiskheroes:charged_beam|dimension_slash_equinox": {
+      "damageProfile": {
+        "damage": 75.0,
+        "types": {
+          "SHARP": 1.0,
+          "MAGIC": 1.0
+        }
+      },
+      "chargeTime": 150,
+      "duration": 5,
+      "cooldownTime": 25,
+      "range": 128.0,
+      "radius": 5.0,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+    "fiskheroes:energy_manipulation|avidiya_slash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "SHARP": 1.0,
+          "MAGIC": 1.0
+        }
+      },
+      "isToggle": false,
+      "chargeTime": 8,
+      "range": 16.0
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "tmhp:textures/gui/firecharge.png",
+      "data": "tmhp:dyn/electrical_cooldown"
+    }
+  ]
+}

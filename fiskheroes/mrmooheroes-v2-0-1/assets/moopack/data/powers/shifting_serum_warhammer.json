@@ -1,0 +1,49 @@
+{
+  "name": "Titan Shifting Serum",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "TITAN",
+      "transformation": {
+        "toggleData": "moopack:dyn/titan",
+        "timerData": "moopack:dyn/titan_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "moopack:titan_transformation",
+        "DISABLE": "moopack:titan_transformation"
+      }
+    },
+    "fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "fiskheroes:cryo_charge"
+      }
+    },
+    "fiskheroes:damage_bonus": {
+      "amount": 3.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 5
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 10
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 100,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "fiskheroes:textures/gui/bars/cryo_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    }
+  ]
+}

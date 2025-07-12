@@ -1,0 +1,13 @@
+{
+  "suit": "db:goku",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:magic",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "db:ki_manipulation"
+  ]
+}

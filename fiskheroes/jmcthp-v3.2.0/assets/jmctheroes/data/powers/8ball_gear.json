@@ -1,0 +1,14 @@
+{
+  "name": "8-Ball's Gear",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.15,
+      "boostSpeed": 0.2,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop",
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    }
+  }
+}

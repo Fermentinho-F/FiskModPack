@@ -1,0 +1,9 @@
+{data2} = sin(pi*{data})
+
+{body_posX} @ {data} -> 500
+
+{body_posX} @ {data2} -> 500
+
+{body_posY} @ {data2} -> -100
+
+{body_posZ} @ {data} -> -500

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "pwt:toxin_chest",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/carnage_suit_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/toxin_chest_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "entity.isDisplayStand() ? 15 : Math.ceil(15 * entity.getInterpolatedData('pwt:dyn/ability_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 15
+      }
+    }
+  },
+  "isDynamic": true
+}

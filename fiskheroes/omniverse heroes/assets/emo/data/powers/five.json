@@ -1,0 +1,19 @@
+{
+  "name": "Five teleportation power",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 100.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    }
+  }
+}

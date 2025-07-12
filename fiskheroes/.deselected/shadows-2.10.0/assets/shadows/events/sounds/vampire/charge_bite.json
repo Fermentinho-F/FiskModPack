@@ -1,0 +1,9 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:vampire.hiss_chargeup",
+    "condition": "entity.getData('fiskheroes:grab_id') > -1 && !entity.world().getEntityById(entity.getData('fiskheroes:grab_id')).isUndead()",
+    "volume": 0.5,
+    "fadeIn": 10,
+    "fadeOut": 5
+  }
+  

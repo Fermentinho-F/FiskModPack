@@ -1,0 +1,9 @@
+{
+  "suit": "sl:atom_man",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:defense",
+    "fiskheroes:ranged",
+    "sl:ap2_3"
+  ]
+}

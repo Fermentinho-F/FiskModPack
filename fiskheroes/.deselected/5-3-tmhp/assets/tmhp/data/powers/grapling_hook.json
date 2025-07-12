@@ -1,0 +1,12 @@
+{
+  "name": "Grapling Hook",
+  "modifiers": {
+    "fiskheroes:web_zip": {
+      "range": 60.0,
+      "cooldownTime": 50,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    }
+  }
+}

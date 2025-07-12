@@ -1,0 +1,24 @@
+
+{
+  "aspects": [
+    {
+      "type": "LASER",
+      "opacity": 0.8,
+      "scale":0.0,
+      "spin": 1.0,
+      "pulse": {
+        "length": 0.1,
+        "size": 5000.0,
+        "frequency": 10.0
+      },
+      "core": null,
+      "bloom": {
+        "strength": 0.35,
+        "spread": 0.005,
+        "dropoff": 0.005,
+        "quality": 0.005,
+        "scaleToSize": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{data_0} = curve{data_0}
+{data_1} = curve{data_1}{data_0}
+{data_2} = curve{data_2}{data_1}
+{data_3} = {data_3}{data_2}
+{data_4} = {data_4}{data_2}
+
+;arm_open
+
+{hand_1_posY} -= 2{data_0}
+{hand_2_posY} -= {data_0}
+{hand_3_posY} -= {data_0}
+{hand_4_posY} -= {data_0}
+
+{hand_1_rotX} -= 20'{data_0}
+{hand_2_rotX} += 20'{data_0}
+{hand_3_rotX} -= 10'{data_0}
+{hand_4_rotX} += 10'{data_0}
+
+{hand_1_rotZ} += 20'{data_0}
+{hand_2_rotZ} += 20'{data_0}
+{hand_3_rotZ} -= 20'{data_0}
+{hand_4_rotZ} -= 20'{data_0}
+
+{hand_1_overlay_posY} = {hand_1_posY}
+{hand_2_overlay_posY} = {hand_2_posY}
+{hand_3_overlay_posY} = {hand_3_posY}
+{hand_4_overlay_posY} = {hand_4_posY}
+
+{hand_1_overlay_rotX} = {hand_1_rotX}
+{hand_2_overlay_rotX} = {hand_2_rotX}
+{hand_3_overlay_rotX} = {hand_3_rotX}
+{hand_4_overlay_rotX} = {hand_4_rotX}
+
+{hand_1_overlay_rotZ} = {hand_1_rotZ}
+{hand_2_overlay_rotZ} = {hand_2_rotZ}
+{hand_3_overlay_rotZ} = {hand_3_rotZ}
+{hand_4_overlay_rotZ} = {hand_4_rotZ}
+
+;barrel_slide
+
+{barrel_base_posY} += 2.6{data_1}
+
+{barrel_1_inner_posY} += 2{data_1}
+{barrel_2_inner_posY} += 2{data_1}
+{barrel_3_inner_posY} += 2{data_1}
+
+{barrel_1_posY} += 4{data_1}
+{barrel_2_posY} += 4{data_1}
+{barrel_3_posY} += 4{data_1}
+
+{barrel_base_overlay_posY} = {barrel_base_posY}
+{barrel_inner_1_posY} = {barrel_base_posY}
+
+;barrel_slide_2
+
+{barrel_1_overlay_posY} += {data_2}
+{barrel_2_overlay_posY} += {data_2}
+{barrel_3_overlay_posY} += {data_2}
+
+{barrel_1_inner_posY} += 2{data_2}
+{barrel_2_inner_posY} += 2{data_2}
+{barrel_3_inner_posY} += 2{data_2}
+
+{barrel_1_posY} += 4{data_2}
+{barrel_2_posY} += 4{data_2}
+{barrel_3_posY} += 4{data_2}
+
+
+;shooting
+
+{barrel_base_rotY} += 360'{data_3}
+
+{barrel_base_overlay_rotY} = {barrel_base_rotY}
+{barrel_inner_1_rotY} = {barrel_base_rotY}
+
+

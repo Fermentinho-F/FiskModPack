@@ -1,0 +1,50 @@
+{
+  "name": "Malevolent Kitchen",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "KITCHEN",
+      "transformation": {
+        "toggleData": "jjkp:dyn/shrine",
+        "timerData": "jjkp:dyn/shrine_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "jjkp:sukuna_domain_sound",
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "SHARP": 1.0,
+          "CURSED": 0.5,
+          "FIRE": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "radius": 40.0,
+      "knockback": 1.0,
+      "duration": 100,
+      "cooldownTime": 160
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jjkp:dyn/shrine",
+        "cooldownData": "jjkp:dyn/shrine_cooldown",
+        "duration": 250,
+        "recovery": 0.75
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/kitchen_bar.png",
+      "data": "jjkp:dyn/shrine_cooldown"
+    }
+  ]
+}

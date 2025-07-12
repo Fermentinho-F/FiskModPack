@@ -1,0 +1,16 @@
+{
+  "texture": {
+    "in": "sl:the_flash_dceu_helmet",
+    "transform": [
+      {
+        "operation": "STITCH",
+        "supply": "sl:steel_helmet"
+      },
+      {
+        "operation": "XOR",
+        "supply": "sl:steel/xor/iron_man_helmet"
+      }
+    ],
+    "out": "sl:generated/the_flash_dceu_helmet"
+  }
+}

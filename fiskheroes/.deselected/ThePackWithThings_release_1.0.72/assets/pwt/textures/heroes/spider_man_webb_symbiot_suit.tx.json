@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "pwt:spider_man_webb_symbiot",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/symbiot_webb_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/spider_man_webb_symbiot_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(52 * entity.getInterpolatedData('pwt:dyn/symbiot_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 52
+      }
+    }
+  },
+  "isDynamic": true
+}

@@ -1,0 +1,51 @@
+
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{x} = 1 - {data_0}
+
+{rightArm_rotX} = {body_rotX}
+{rightArm_rotY} = {body_rotY}
+{rightArm_rotZ} = {body_rotZ}
+{leftArm_rotX} = {body_rotX}
+{leftArm_rotY} = {body_rotY}
+{leftArm_rotZ} = {body_rotZ}
+{rightLeg_rotX} = 0
+{rightLeg_rotY} = 0
+{rightLeg_rotZ} = 0
+{leftLeg_rotX} = 0
+{leftLeg_rotY} = 0
+{leftLeg_rotZ} = 0
+{head_rotX} @ {data_1} -> -40'
+
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{hover} = {data_0}(1 - {data_1})
+
+out "pivot" (0, 0.56{hover}, 0)
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{rightArm_rotX} ={body_rotX}
+{leftArm_rotX} = {body_rotX}
+{rightLeg_rotX} = 0
+{leftLeg_rotX} = 0
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)
+
+{rightArm_rotX} = 0
+{rightArm_rotY} = 0
+{rightArm_rotZ} @ -{data_1} -> -0.5
+
+{leftArm_rotX} = 0
+{leftArm_rotY} = 0
+{leftArm_rotZ} @ {data_1} -> -0.5

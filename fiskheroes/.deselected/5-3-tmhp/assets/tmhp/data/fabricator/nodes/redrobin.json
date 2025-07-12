@@ -1,0 +1,18 @@
+{
+  "display": {
+    "name": {
+      "translate": "Red Robin"
+    },
+   "description": "\u00A7cTim Drake. The third Robin, but the first to choose it for himself. Which seems to mean he can't be anything else. He's stuck letting that identity be his entire personality... \u00A7e-\u00A7oWonder Girl",
+    "icon": {
+      "texture": "tmhp:textures/gui/red_robin.png"
+    }
+  },
+  "requirements": [
+    "tmhp:batfamily",
+    "tmhp:robin"],
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 15
+  }
+}

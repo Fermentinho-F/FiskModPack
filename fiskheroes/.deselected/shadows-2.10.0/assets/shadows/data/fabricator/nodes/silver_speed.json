@@ -1,0 +1,9 @@
+{
+  "suit": "shadows:silver_speed",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:speed_force",
+    "fiskheroes:intangibility",
+    "shadows:shadow00dev"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.hammercall",
+  "volume": 0.7,
+  "pitch": "1.1 + Math.random() * 0.3"
+}

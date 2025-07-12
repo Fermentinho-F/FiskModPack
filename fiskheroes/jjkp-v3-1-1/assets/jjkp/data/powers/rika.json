@@ -1,0 +1,55 @@
+{
+  "name": "Rika",
+  "modifiers": {
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 1.5
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "POSITIVE",
+      "factor": 5.0
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.9, 0, 0.0]
+      ],
+      "range": 10.0,
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "CURSED": 1.0,
+          "SHARP": 0.25
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 12.0,
+          "types": {
+            "SHARP": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "jjkp:rika_nani",
+        "DISABLE": [],
+        "ANCHOR": [],
+        "UNANCHOR": [],
+        "RELEASE": [],
+        "JAB_START": "jjkp:rika_slash",
+        "GRAB_START": [],
+        "STRIKE_START": [],
+        "STRIKE_CHARGED": []
+      }
+    }
+  }
+}

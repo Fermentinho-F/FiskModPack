@@ -1,0 +1,11 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{growth} = 1-{data_0}
+
+{rShoulder1_rotZ} -= 2.5{growth}'
+{rShoulder2_rotZ} -= 2.5{growth}'
+{rShoulder3_rotZ} -= 7.5{growth}'
+
+{rForearm1_rotZ} += 10{growth}'
+{rForearm2_rotZ} += 10{growth}'
+{rForearm3_rotZ} += 10{growth}'

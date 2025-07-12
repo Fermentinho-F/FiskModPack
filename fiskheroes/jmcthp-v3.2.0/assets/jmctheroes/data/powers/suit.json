@@ -1,0 +1,13 @@
+{
+  "name": "Nanotech Suit",
+  "modifiers": {
+    "fiskheroes:transformation|suit": {
+      "key": "SUIT",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/suit",
+        "timerData": "jmctheroes:dyn/suit_timer",
+        "time": 10
+      }
+    }
+  }
+}

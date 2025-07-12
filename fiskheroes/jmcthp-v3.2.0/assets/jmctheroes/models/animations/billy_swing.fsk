@@ -1,0 +1,5 @@
+
+{handle_rotX} -= -0.25*{data}
+
+{handle_posY} -= -0.75*{data}
+{handle_posZ} -= 0.2*{data}

@@ -1,0 +1,12 @@
+{
+    "suit": "sabri:doctor_doom_f4",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee",
+      "fiskheroes:defense2",
+      "fiskheroes:regeneration",
+      "sabri:sehp"
+    ]
+  }
+  

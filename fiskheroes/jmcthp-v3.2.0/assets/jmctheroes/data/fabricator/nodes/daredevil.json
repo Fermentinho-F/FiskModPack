@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:daredevil",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:traversal",
+    "fiskheroes:defense"
+  ]
+}

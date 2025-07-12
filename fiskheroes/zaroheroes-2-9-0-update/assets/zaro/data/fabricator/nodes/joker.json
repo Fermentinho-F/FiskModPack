@@ -1,0 +1,12 @@
+{
+  "suit": "zaro:joker",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:marksmanship",
+    "fiskheroes:melee2",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "zaro:zaroheroes"
+  ]
+}

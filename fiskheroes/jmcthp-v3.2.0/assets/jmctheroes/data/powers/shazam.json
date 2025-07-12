@@ -1,0 +1,103 @@
+{
+  "name": "power.fiskheroes.divine_empowerment.name",
+  "value": 21,
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop",
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+    },
+    "fiskheroes:eternium_weakness": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 14.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "range": 64.0,
+      "chainRadius": 4.5,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:lightning_cast"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "ELECTRICITY": 1.0,
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true
+        }
+      },
+      "range": 17.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:energy_projection"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SHAZAM",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/shazam",
+        "timerData": "jmctheroes:dyn/shazam_timer",
+        "time": 7
+      },
+      "soundEvents": {
+        "ENABLE": "jmctheroes:thunder",
+        "DISABLE": "jmctheroes:thunder"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/shazam",
+        "cooldownData": "jmctheroes:dyn/shazam_cooldown",
+        "duration": 12000,
+        "recovery": 2.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/binary.png",
+      "data": "jmctheroes:dyn/shazam_cooldown"
+    }
+  ]
+}

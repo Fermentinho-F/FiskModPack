@@ -1,0 +1,7 @@
+{
+  "sound": "pwt:suit.titan.beam.scream.3",
+  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+  "volume": "fiskheroes:beam_shooting_timer",
+  "pitch": "0.8 + Math.random() * 0.3",
+  "fadeOut": 100
+}

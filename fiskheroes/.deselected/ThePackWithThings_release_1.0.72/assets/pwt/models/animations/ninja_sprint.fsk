@@ -1,0 +1,34 @@
+{data} = curve({data})
+{data_1} = curve({data_1})
+{vel} = clamp(3*sqrt({motX}^2 + {motZ}^2), -110', 110')
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{head_rotX} -= 20'{data}0.5{vel}
+
+{rightArm_rotX} @ {data} -> 40'*{vel} 
+{rightArm_rotY} @ {data} -> 10'*1.5{vel}
+{rightArm_rotZ} @ {data} -> 25'*1.3{vel} + 0.08{leftLeg_rotX}
+
+{leftArm_rotX} @ {data} -> 40'*{vel} 
+{leftArm_rotY} @ {data} -> -10'*1.5{vel}
+{leftArm_rotZ} @ {data} -> -25'*1.3{vel} - 0.08{rightLeg_rotX}
+
+{rightLeg_rotX} += -17'{data}{vel}
+{leftLeg_rotX} += -17'{data}{vel}
+
+{rightLeg_posY} -=  (2sin(0.5pi({rightLeg_rotX}+17'{data}{vel}))^2)-sin(0.5pi({rightLeg_rotX}+17'{data}{vel}))
+{leftLeg_posY} -=  (2sin(0.5pi({leftLeg_rotX}+17'{data}{vel}))^2)-sin(0.5pi({leftLeg_rotX}+17'{data}{vel}))
+
+{rightLeg_posZ} -=  (sin(0.5pi({rightLeg_rotX}+17'{data}{vel}))^2)-sin(0.5pi({rightLeg_rotX}+17'{data}{vel}))
+{leftLeg_posZ} -=  (sin(0.5pi({leftLeg_rotX}+17'{data}{vel}))^2)-sin(0.5pi({leftLeg_rotX}+17'{data}{vel}))
+ 
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+out "rotate" (20{data}{vel}, -1, 0, 0)
+out "translate" (0, -0.05{data}{vel}, 0.2{data}{vel})

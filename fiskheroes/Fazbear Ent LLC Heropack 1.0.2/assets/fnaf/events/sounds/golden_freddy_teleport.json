@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fnaf:golden.freddy.teleport",
+  "volume": 3.0,
+  "pitch": "0.9 + Math.random() * 0.2"
+}

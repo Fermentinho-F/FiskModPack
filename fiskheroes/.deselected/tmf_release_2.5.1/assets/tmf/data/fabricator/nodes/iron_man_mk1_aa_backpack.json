@@ -1,0 +1,14 @@
+{
+  "suit": "tmf:iron_man_mk1_aa_backpack",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:stark",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+	  "tmf:armory",
+	  "tmf:iron_man_mk1_aa",
+    "tmf:tmf"
+  ]
+}

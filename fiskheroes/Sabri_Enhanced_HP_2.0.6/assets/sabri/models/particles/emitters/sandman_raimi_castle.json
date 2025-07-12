@@ -1,0 +1,17 @@
+{
+  "particles": [
+
+    {
+      "condition": "!firstPerson && entity.getData('sabri:dyn/sand_castle_timer') > 0 && entity.getData('sabri:dyn/sand_castle_timer') < 1",
+      "type": "ENERGY_SMOKE",
+      "anchor": "rightLeg",
+      "amount": 8,
+      "offset": [5.5, 12.0, -6.5],
+      "motion": [0.85, 0.81, 0.65],
+      "randOffset": [0.15, 0.05, 0.15],
+      "randMotion": [0.05, 0.1, 0.05],
+      "mirror": true,
+      "lockFPYaw": true
+    }
+  ]
+}

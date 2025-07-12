@@ -1,0 +1,10 @@
+{
+  "sound": "sl:main.icevision",
+  "condition": {
+    "start": "entity.getWornChestplate().nbt().getString('HeroType') !== 'sl:bizarro' && entity.getWornChestplate().nbt().getString('HeroType') !== 'sl:bizarro/pendant' && entity.getWornChestplate().nbt().getString('HeroType') !== 'sl:bizarro/normalbizarro'",
+    "continue": "entity.getData('fiskheroes:heat_vision')"
+  },
+  "volume": "fiskheroes:heat_vision_timer",
+  "loop": true,
+  "delay": 8
+}

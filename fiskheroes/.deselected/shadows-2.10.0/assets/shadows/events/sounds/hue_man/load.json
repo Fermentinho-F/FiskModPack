@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+   "sound": "shadows:hue_man.load",
+   "volume": 0.1,
+   "pitch": "0.8 + Math.random() * 0.3"
+}

@@ -1,0 +1,36 @@
+{
+  "particles": [
+    {
+	  "condition": "entity.getData('fiskheroes:shield') && entity.getData('fiskheroes:shield_blocking_timer') > 0",
+      "type": "SHORT_FLAME",
+      "amount": 70,
+      "offset": {
+        "tp": [0.0, -0.5, 1.2],
+        "fp": [0.0, -0.5, 1.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.60, 0.60, 0.06],
+      "randMotion": [0.20, 0.00, 0.20],
+      "lockFPRot": true,
+      "lockFPYaw": false
+    },
+	{
+	  "condition": "entity.getData('fiskheroes:shield') && entity.getData('fiskheroes:shield_blocking_timer') == 0",
+      "type": "SHORT_FLAME",
+      "amount": {
+        "tp": 20,
+        "fp": 10
+      },
+      "offset": {
+        "tp": [-0.4, -0.81, 0.0],
+        "fp": [-0.3, -0.3, 0.1]
+      },
+      "motion": [0.0, -0.25, 0.0],
+      "randOffset": [0.0, 0.01, 0.0],
+      "randMotion": [0.00, 0.0, 0.00],
+      
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

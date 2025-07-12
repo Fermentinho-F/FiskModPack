@@ -1,0 +1,46 @@
+{
+    "name": "Super Speed",
+    "modifiers": {
+      "fiskheroes:super_speed": {
+        "canUseTreadmill": true,
+        "soundEvents": {
+          "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "sabri:sweet_dreams_quicksilver_xmen"],
+          "SPRINT": "sabri:super_speed_sprint_quicksilver_xmen"
+        }
+      },
+      "fiskheroes:slow_motion": {
+        "soundEvents": {
+          "ENABLE": [],
+          "DISABLE": []
+        }
+      },
+      "fiskheroes:arrow_catching": {
+      },
+      "fiskheroes:regeneration": {
+        "factor": 4
+      },
+      "fiskheroes:potion_immunity": {
+        "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+      },
+      "fiskheroes:energy_projection": {
+        "damageProfile": {
+          "damage": 1.0
+        },
+        "range": 1.0,
+        "radius": 0.5
+      }
+    },
+    "hud": 
+    [
+      {
+        "type": "CHARGE",
+        "texture": "sabri:textures/gui/bars/now_playing.png",
+        "data": "entity.getData('fiskheroes:mask_open') == 1 && entity.getData('fiskheroes:speeding') && entity.getData('fiskheroes:moving') && entity.loop(160) >= 0.375 ? 1 : 0"
+      },
+      {
+        "type": "CHARGE",
+        "texture": "sabri:textures/gui/bars/sweet_dreams.png",
+        "data": "entity.getData('fiskheroes:mask_open') == 1 && entity.getData('fiskheroes:speeding') && entity.getData('fiskheroes:moving') && entity.loop(160) < 0.375 ? 1 : 0"
+      }
+    ]
+  }

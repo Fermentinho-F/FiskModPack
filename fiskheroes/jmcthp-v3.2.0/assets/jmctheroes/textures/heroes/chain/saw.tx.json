@@ -1,0 +1,13 @@
+{
+  "texture": "jmctheroes:chain/saw_<FRAME>",
+  "getters": {
+    "FRAME": {
+      "key": "entity.getData('jmctheroes:dyn/suit_animation') | 0",
+      "values": {
+        "min": 0,
+        "max": 7
+      }
+    }
+  },
+  "isDynamic": true
+}

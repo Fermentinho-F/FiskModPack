@@ -1,0 +1,13 @@
+
+{data} = curve {data}
+
+;====================================================;
+{Mask_rotX} -= 55'{data}
+{MaskO_rotX} -= 55'{data}
+
+{Mask_posY} -= 0.2{data}
+{MaskO_posY} -= 0.2{data}
+{Mask_posZ} -= 1.1{data}
+{MaskO_posZ} -= 1.1{data}
+
+;====================================================;

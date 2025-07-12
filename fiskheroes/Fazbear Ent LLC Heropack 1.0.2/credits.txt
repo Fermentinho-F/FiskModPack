@@ -1,0 +1,7 @@
+All skins, textures, data and renderer files and other assets were made/written by me, SkarMC/skarpc2 unless stated below.
+
+Thank you to the following for helping with various parts of the pack.
+
+CandyFreak2 - Help with fear damage system
+Jack'o'Joy - Help providing sounds, promotional renders
+Ergoslab - Ingame screenshots

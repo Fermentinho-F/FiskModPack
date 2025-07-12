@@ -1,0 +1,683 @@
+{
+  "name": "Inverse Kryptonian Physiology (S&L)",
+  "modifiers": {
+    "fiskheroes:transformation|hvcharge": {
+      "key": "HV_CHARGE",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "sl:dyn/heat_vision",
+        "timerData": "sl:dyn/heat_vision_charge",
+        "time": 14
+      },
+      "soundEvents": {
+        "ENABLE": "sl:hvcharge_transformation"
+      }
+    },
+    "fiskheroes:transformation|kryptoniteinhaler": {
+      "key": "KRYPTONITE",
+      "transformation": {
+        "toggleData": "sl:dyn/kryptonite",
+        "timerData": "sl:dyn/kryptonite_timer",
+        "time": 30.0
+      },
+      "soundEvents": {
+        "ENABLE": "sl:inhale"
+      }
+    },
+    "fiskheroes:transformation|hbcharge": {
+      "key": "HB_CHARGE",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "sl:dyn/heat_breath",
+        "timerData": "sl:dyn/heat_breath_charge",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "sl:hbcharge_transformation",
+        "DISABLE": "sl:heatbreathend"
+      }
+    },
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": false,
+      "minGravity": 0.0,
+      "maxGravity": 0.0,
+      "range": 0.0,
+      "radius": 0.0
+  },
+        "fiskheroes:transformation|clap": {
+            "key": "clap",
+            "transformation": {
+                "toggleData": "sl:dyn/clap",
+                "timerData": "sl:dyn/clap_timer",
+                "time": 2.0
+      }
+        },
+        "fiskheroes:transformation|sun": {
+            "key": "sun",
+            "transformation": {
+                "toggleData": "sl:dyn/sun",
+                "timerData": "sl:dyn/sun_timer",
+                "time": 15.0
+      }
+        },
+        "fiskheroes:transformation|boost2": {
+            "key": "boost2",
+            "transformation": {
+                "toggleData": "sl:dyn/sboost2",
+                "timerData": "sl:dyn/sboost2_timer",
+                "time": 10.0
+      },
+      "soundEvents": {
+        "ENABLE": "sl:sl_flight_take_off"
+      }
+        },
+        "fiskheroes:transformation|boost": {
+            "key": "boost",
+            "transformation": {
+                "toggleData": "sl:dyn/sboost",
+                "timerData": "sl:dyn/sboost_timer",
+                "time": 10.0
+      },
+      "soundEvents": {
+        "ENABLE": "sl:sl_flight_take_off"
+      }
+        },
+    "fiskheroes:transformation|sun": {
+      "key": "SUN",
+      "transformation": {
+        "toggleData": "sl:dyn/sun",
+        "timerData": "sl:dyn/sun_timer",
+        "time": 4.0
+      }
+    },
+    "fiskheroes:transformation|ABSORB": {
+      "key": "ABSORB",
+      "transformation": {
+        "toggleData": "sl:dyn/inverseabsorb",
+        "timerData": "sl:dyn/inverseabsorb_timer",
+        "time": 5.0
+      },
+      "soundEvents": {
+        "ENABLE": ["sl:bizarrotheme", "fiskheroes:lightning_cast"],
+        "DISABLE": "fiskheroes:lightning_cast"
+      }
+    },
+    "fiskheroes:cooldown|kryptoniteinhalercooldown": {
+      "cooldown": {
+        "toggleData": "sl:dyn/kryptonite_on",
+        "cooldownData": "sl:dyn/kryptonite_cooldown",
+        "duration": 800,
+        "recovery": 2.0
+      }
+    },
+    "fiskheroes:cooldown|absorb": {
+      "cooldown": {
+        "toggleData": "sl:dyn/inverseabsorb",
+        "cooldownData": "sl:dyn/inverseabsorb_cooldown",
+        "duration": 2400,
+        "recovery": 0.3
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 100.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.05
+        }
+      },
+      "chargeTime": 1024,
+      "range": 0.0
+    },
+    "fiskheroes:controlled_flight|normal": {
+      "speed": 0.1,
+      "boostSpeed": 0.21,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "sl:sl_flight_take_off",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "sl:whoosh",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+    "fiskheroes:controlled_flight|normalboosted": {
+      "speed": 0.1,
+      "boostSpeed": 0.28,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "sl:sl_flight_take_off",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "sl:whoosh",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+  "fiskheroes:controlled_flight|supercharged": {
+      "speed": 0.15,
+      "boostSpeed": 0.30,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 15,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.75,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "sl:sl_flight_take_off",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "sl:whoosh",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+  "fiskheroes:controlled_flight|superchargedboosted": {
+      "speed": 0.2,
+      "boostSpeed": 0.35,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 15,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.75,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "sl:sl_flight_take_off",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "sl:whoosh",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [2.0, 1.0],
+      "soundEvents": {
+        "LEAP": "sl:jump"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTachyons": false,
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "ENABLE": "sl:bizarro0",
+        "DISABLE": "sl:bizarro1",
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "sl:leap",
+        "STOP": "sl:super_speed_stop"
+      }
+    },
+    "fiskheroes:heat_vision|solarflare": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "COLD": 1
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 140,
+              "amplifier": 7
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "chargeTime": 20,
+      "duration": 55,
+      "cooldownTime": 40,
+      "range": 26,
+      "radius": 0.16,
+      "soundEvents": {
+        "SHOOT": ["sl:icevision", "fiskheroes:antimatter_blast_loop"],
+        "SHOOT_STOP": "sl:icevision_end"
+      }
+    },
+    "fiskheroes:heat_vision|heatvision": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "COLD": 0.8
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 100,
+              "amplifier": 4
+            },
+            {
+              "id": "minecraft:mining_fatigue",
+              "duration": 100,
+              "amplifier": 1
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "range": 26,
+      "radius": 0.16,
+      "soundEvents": {
+        "SHOOT": ["sl:icevision_alt", "sl:icevision_start", "sl:icevision"],
+        "SHOOT_STOP": "sl:icevision_end"
+      }
+    },
+    "fiskheroes:energy_projection|base": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 0.0,
+        "types": {
+          "WIND": 1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": -10,
+          "HIT_COOLDOWN": 200,
+          "ADD_KNOCKBACK": 0.0
+        }
+      },
+      "range": 0.0,
+      "radius": 0.0
+    },
+    "fiskheroes:energy_projection|superbreath_3": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          "WIND": 1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": -10,
+          "HIT_COOLDOWN": 200,
+          "ADD_KNOCKBACK": 1.0
+        }
+      },
+      "range": 20.0,
+      "radius": 0.16,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:energy_projection|superbreath_2": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 1.5,
+        "types": {
+          "WIND": 1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": -10,
+          "HIT_COOLDOWN": 200,
+          "ADD_KNOCKBACK": 0.75
+        }
+      },
+      "range": 18.0,
+      "radius": 0.16,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:energy_projection|superbreath_1": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "WIND": 1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": -10,
+          "HIT_COOLDOWN": 200,
+          "ADD_KNOCKBACK": 0.5
+        }
+      },
+      "range": 16.0,
+      "radius": 0.16,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:energy_projection|heatbreath_3": {
+      "damageProfile": {
+        "damage": 3,
+        "types": {
+          "FIRE": 0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.1,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "IGNITE": 5,
+          "REDUCE_KNOCKBACK": 0.5
+        }
+      },
+      "range": 8.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:energy_projection|heatbreath_2": {
+      "damageProfile": {
+        "damage": 2,
+        "types": {
+          "FIRE": 0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.1,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 12,
+          "IGNITE": 3,
+          "REDUCE_KNOCKBACK": 0.7
+        }
+      },
+      "range": 10.0,
+      "radius": 0.12,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:energy_projection|heatbreath_1": {
+      "damageProfile": {
+        "damage": 1.25,
+        "types": {
+          "FIRE": 0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.1,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 8,
+          "IGNITE": 2,
+          "REDUCE_KNOCKBACK": 0.7
+        }
+      },
+      "range": 12.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["sl:sl_flame_breath_loop", "sl:sl_flame_breath_start", "sl:frost_breath_loop_inverse"]
+      }
+    },
+    "fiskheroes:charged_beam|thunderclap": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 12,
+        "types": {
+          "SOUND": 0.4,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": false,
+          "HIT_COOLDOWN": 40,
+          "ADD_KNOCKBACK": 3.0
+        }
+      },
+      "chargeTime": 20,
+      "duration": 7.5,
+      "cooldownTime": 20,
+      "range": 32.0,
+      "radius": 1.0,
+      "soundEvents": {
+        "SHOOT": "sl:thunderclap"
+      }
+    },
+    "fiskheroes:charged_beam|solarblast": {
+      "damageProfile": {
+        "damage": 9,
+        "types": {
+          "ENERGY": 2.0,
+          "FIRE": -1
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 15,
+          "REDUCE_KNOCKBACK": 0.2
+        }
+      },
+      "isToggle": true,
+      "chargeTime": 65,
+      "duration": 124,
+      "cooldownTime": 90,
+      "range": 34.0,
+      "radius": 0.8,
+      "soundEvents": {
+        "SHOOT": "sl:solarflare_shoot",
+        "SHOOT_STOP": "sl:solarflare_end",
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop",
+        "CHARGE": "fiskheroes:mysterio_charged_beam_charge"
+      }
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 35.0,
+      "knockback": 1.0,
+      "duration": 80,
+      "cooldownTime": 1600
+    },
+    "fiskheroes:ground_smash|gs1": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 7.5,
+      "knockback": 1.0,
+      "cooldownTime": 1600
+    },
+    "fiskheroes:ground_smash|gs2": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 10.0,
+      "knockback": 2.0,
+      "cooldownTime": 1600
+    },
+    "fiskheroes:ground_smash|gs3": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 12.5,
+      "knockback": 2.5,
+      "cooldownTime": 1600
+    },
+    "fiskheroes:ground_smash|gs4": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 15.0,
+      "knockback": 3.0,
+      "cooldownTime": 1600
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "sl:flashtime"
+      }
+    },
+    "fiskheroes:speed_disintegration": {
+      "factor": 15
+    },
+    "fiskheroes:arrow_catching": {},
+    "fiskheroes:regeneration|regular": {
+      "factor": 2.0
+    },
+    "fiskheroes:regeneration|boosted": {
+      "factor": 3.0
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [
+        19,
+        7
+      ]
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:fire_immunity": {},
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:damage_immunity": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_resistance|kryptonite": {
+      "damageType": "KRYPTONITE",
+      "factor": 20.0
+    },
+    "fiskheroes:damage_weakness|magic": {
+      "damageType": "MAGIC",
+      "factor": 3.0
+    },
+    "fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "factor": 3.0
+    },
+    "fiskheroes:damage_weakness|xkryptonite": {
+      "damageType": "XKRYPTONITE",
+      "factor": 20.0
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 0.01
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "sl:textures/gui/bars/oxygen_bar_inverse.png",
+      "data": "if (entity.getData('sl:dyn/oxygen') > 0) {1 - entity.getData('sl:dyn/oxygen')}"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "sl:textures/gui/bars/redsun_charge.png",
+      "data": "sl:dyn/inverseabsorb_cooldown"
+    },
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:energy_projection",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    },
+    {
+      "type": "CIRCLE",
+      "color": 0xFF4600,
+      "data": "sl:dyn/heat_breath_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/intangibility.png",
+      "data": "sl:dyn/kryptonite_cooldown"
+    }
+  ]
+}

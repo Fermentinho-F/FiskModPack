@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "DNA Activators",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/dna_tube.png"
+    }
+    },
+    "requirements": [
+    "moopack:moopack",
+  ],
+    "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 10
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:diamondhead.deflect",
+  "volume": 0.4,
+  "pitch": "0.8 + 0.2 * Math.random()"
+}

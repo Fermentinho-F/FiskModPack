@@ -1,0 +1,32 @@
+{
+  "name": "Stealth Upgrade",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "tmf:dyn/stealth",
+        "timerData": "tmf:dyn/stealth_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "tmf:invisibility_start",
+        "DISABLE": "tmf:invisibility_end"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "tmf:dyn/stealth",
+        "cooldownData": "tmf:dyn/stealth_cooldown",
+        "duration": 1200,
+        "recovery": 2.5
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "tmf:textures/gui/bars/invisibility.png",
+      "data": "tmf:dyn/stealth_cooldown"
+    }
+  ]
+}

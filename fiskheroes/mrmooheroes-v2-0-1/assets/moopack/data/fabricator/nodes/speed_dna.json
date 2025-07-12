@@ -1,0 +1,8 @@
+{
+  "suit": "moopack:speed_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:speed_force",
+    "moopack:dna_activators"
+  ]
+}

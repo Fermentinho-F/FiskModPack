@@ -1,0 +1,15 @@
+{
+  "suit": "swhp:clone_jet_trooper",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:finalupdate",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal"
+  ],
+  "display": {
+  "description": "Good soldiers follow orders..."
+  }
+}

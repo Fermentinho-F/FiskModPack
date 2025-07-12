@@ -1,0 +1,28 @@
+{
+  "aspects": [
+    {
+      "type": "LIGHTNING",
+      "opacity": 0.8,
+      "scale": 0.3,
+      "amount": 8,
+      "segments": {
+        "min": 3,
+        "spacing": 5.0
+      },
+      "intensity": 1.5,
+      "changeRate": 0.8,
+      "bounds": [6.0, 6.0],
+		 "core": {
+        "color": "0x3396ff",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 1.0,
+        "spread": 7.5,
+        "dropoff": 1.5,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    }
+  ]
+}

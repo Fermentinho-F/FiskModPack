@@ -1,0 +1,199 @@
+{
+    "display": {
+    "name": "Divine Adaption",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/divine_adaption.png"
+    }
+    },
+    "requirements": [
+    "jjkp:mahoraga"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 5
+  },
+  "criteria": {
+    "creeper": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Creeper"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Creeper'"
+      }
+    },
+    "zombie": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Zombie"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Zombie'"
+      }
+    },
+    "skeleton": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Skeleton"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Skeleton'"
+      }
+    },
+    "spider": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Spider"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Spider'"
+      }
+    },
+    "villager": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Villager"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Villager'"
+      }
+    },
+    "villagergolem": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill an Iron Golem"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'VillagerGolem'"
+      }
+    },
+    "witch": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Witch"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Witch'"
+      }
+    },
+    "blaze": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Blaze"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Blaze'"
+      }
+    },
+    "silverfish": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Silverfish"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Silverfish'"
+      }
+    },
+    "enderman": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill an Enderman"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Enderman'"
+      }
+    },
+    "ghast": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Ghast"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Ghast'"
+      }
+    },
+    "wither": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Wither"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'WitherBoss'"
+      }
+    },
+    "pigzombie": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Zombie Pigman"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'PigZombie'"
+      }
+    }
+  }
+}

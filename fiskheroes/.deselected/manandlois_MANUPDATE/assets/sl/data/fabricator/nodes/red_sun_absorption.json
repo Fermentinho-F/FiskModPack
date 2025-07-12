@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "Red Sun Absorption",
+    "description": "Soar above the skies of the inverse world and absorb the radiation of the red sun",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/redsun.png"
+    }
+  },
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:location",
+      "description": "Reach Y-level 512 in the Nether",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_IN_LOCATION"
+        },
+        "check": "player.posY() >= 512 && player.world().getDimension() == -1"
+      }
+    },
+    "requirements": [
+      "sl:sl"
+    ],
+    "price": {
+      "IRID_GOLD": 2,
+      "XP_LEVELS": 15
+    }
+  }
+}

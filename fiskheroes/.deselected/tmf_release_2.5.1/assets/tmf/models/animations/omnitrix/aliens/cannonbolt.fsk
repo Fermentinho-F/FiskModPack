@@ -1,0 +1,165 @@
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{punch} = max({data_0}-{data_2},0)
+{sneak} = max({data_1}-{data_2},0)
+{curl} = {data_2}
+{idle} = sin(2pi(max({data_3}-{data_2},0)))
+{shield} = {data_5}
+
+{ball_rotX} = 0.5{data_4}
+
+{ball_rotX} += 0.2*sin(2pi{data_6})*{data_7}
+{ball_rotY} += {data_6}*360'
+{ball_rotZ} += 0.2*sin(2pi{data_6})*{data_7}
+
+{rArm_rotX} @ {shield} -'> -60'
+{rArmLower_rotX} @ {shield} -'> -80'
+{rArm_rotY} @ {shield} -'> -49.5'
+
+{lArm_rotX} @ {shield} -'> -60'
+{lArmLower_rotX} @ {shield} -'> -80'
+{lArm_rotY} @ {shield} -'> 49.5'
+;Baller=====================================================================
+
+{body_rotX} @ {curl} -'> 90'
+{body_posY} += 3{curl}
+{lower_body_rotX} @ {curl} -'> -90'
+{lower_body_posZ} -= 2{curl}
+
+{rArmShoulder_posX} @ {curl} -> -4.0
+{rArmShoulder_posY} @ {curl} -> -0.2
+{rArmShoulder_posZ} @ {curl} -> -3.0
+
+{rArmShoulder_rotZ} @ {curl} -'> -90'
+
+{lArmShoulder_posX} @ {curl} -> 4.0
+{lArmShoulder_posY} @ {curl} -> -0.2
+{lArmShoulder_posZ} @ {curl} -> -3.0
+
+{lArmShoulder_rotZ} @ {curl} -'> 90'
+
+{rArm_posX} @ {curl} -> 5
+{rArm_posY} @ {curl} -> 6
+{rArm_posZ} @ {curl} -> -1
+
+{rArm_rotX} @ {curl} -'> 42'
+{rArm_rotZ} @ {curl} -'> 9.5'
+
+{rArmLower_rotX} @ {curl} -'> -124'
+
+{lArm_posX} @ {curl} -> -5
+{lArm_posY} @ {curl} -> 6
+{lArm_posZ} @ {curl} -> -1
+
+{lArm_rotX} @ {curl} -'> 42'
+{lArm_rotZ} @ {curl} -'> -9.5'
+
+{lArmLower_rotX} @ {curl} -'> -124'
+
+{rLeg_posX} @ {curl} -> -3
+{lLeg_posX} @ {curl} -> 3
+{rLeg_posY} @ {curl} -> 12
+{lLeg_posY} @ {curl} -> 12
+{rLeg_rotX} @ {curl} -'> -86'
+{lLeg_rotX} @ {curl} -'> -86'
+
+;Wobble=====================================================================
+{body_rotZ} += 2'{idle}*{movement}
+{rArm_posY} += {idle}*{movement}
+{lArm_posY} -= {idle}*{movement}
+{rLeg_posY} += min(2{idle}*{movement},-1)
+{lLeg_posY} -= max(2{idle}*{movement},1)
+;Idle=====================================================================
+{rArm_rotZ} += 3'{idle}
+{lArm_rotZ} -= 3'{idle}
+
+;WalkSneak=====================================================================
+{lArm_rotX} -= 0.3{movement}
+{rArm_rotX} += 0.3{movement}
+
+{rLeg_rotX} -= 0.4{movement} 
+{lLeg_rotX} += 0.4{movement}
+
+{body_rotX} += 0.3{sneak} + {idle}'
+{body_posY} += {sneak}
+{rLeg_posZ} += 5{sneak}
+{lLeg_posZ} += 5{sneak}
+
+{rArm_posY} += {sneak}
+{rArm_posZ} -= {sneak}
+{lArm_posY} += {sneak}
+{lArm_posZ} -= {sneak}
+;PUNCHING=====================================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({body_rotY})+1
+{rArm_posZ} += sin({body_rotY}) * 5.0
+
+{lArm_posX} += cos({body_rotY})-1
+{lArm_posZ} += -sin({body_rotY}) * 5.0
+
+{rArm_rotY} += {body_rotY}
+{lArm_rotX} += {body_rotY}
+{lArm_rotY} += {body_rotY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {body_rotY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+;OVERLAYS=====================================================================
+
+{rArm_overlay_posX} = {rArm_posX}
+{rArm_overlay_posY} = {rArm_posY}
+{rArm_overlay_posZ} = {rArm_posZ}
+{lArm_overlay_posX} = {lArm_posX}
+{lArm_overlay_posY} = {lArm_posY}
+{lArm_overlay_posZ} = {lArm_posZ}
+
+{rArm_overlay_rotX} = {rArm_rotX}
+{rArm_overlay_rotY} = {rArm_rotY}
+{rArm_overlay_rotZ} = {rArm_rotZ}
+
+{lArm_overlay_rotX} = {lArm_rotX}
+{lArm_overlay_rotY} = {lArm_rotY}
+{lArm_overlay_rotZ} = {lArm_rotZ}
+
+{rLeg_overlay_rotX} = {rLeg_rotX}
+{lLeg_overlay_rotX} = {lLeg_rotX}
+
+{rLeg_overlay_posX} = {rLeg_posX}
+{lLeg_overlay_posX} = {lLeg_posX}
+{rLeg_overlay_posY} = {rLeg_posY}
+{lLeg_overlay_posY} = {lLeg_posY}
+{rLeg_overlay_posZ} = {rLeg_posZ}
+{lLeg_overlay_posZ} = {lLeg_posZ}
+
+{body_overlay_rotZ} = {body_rotZ}
+{body1_rotZ} = {body_rotZ}
+{body_overlay_rotX} = {body_rotX}
+{body1_rotX} = {body_rotX}
+{body_overlay_rotY} = {body_rotY}
+{body1_rotY} = {body_rotY}
+{body_overlay_posY} = {body_posY}
+{body1_posY}= {body_posY}
+
+{lower_body_overlay_rotX} = {lower_body_rotX}
+{lower_body_overlay_posZ} = {lower_body_posZ}
+
+{rArmShoulder_overlay_posX} = {rArmShoulder_posX}
+{rArmShoulder_overlay_posY} = {rArmShoulder_posY}
+{rArmShoulder_overlay_posZ} = {rArmShoulder_posZ}
+{rArmShoulder_overlay_rotZ} = {rArmShoulder_rotZ}
+{lArmShoulder_overlay_posX} = {lArmShoulder_posX}
+{lArmShoulder_overlay_posY} = {lArmShoulder_posY}
+{lArmShoulder_overlay_posZ} = {lArmShoulder_posZ}
+{lArmShoulder_overlay_rotZ} = {lArmShoulder_rotZ}
+
+{rArmLower_overlay_rotX} = {rArmLower_rotX}
+{lArmLower_overlay_rotX} = {lArmLower_rotX}

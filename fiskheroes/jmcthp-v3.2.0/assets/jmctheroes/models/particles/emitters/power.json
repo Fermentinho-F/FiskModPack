@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+      "type": "ETERNIUM_AURA",
+      "anchor": "body",
+      "amount": 2,
+      "motion": [0.75, 0.75, 0.75],
+      "randOffset": [0.25, 0.25, 0.25]
+    }
+  ]
+}

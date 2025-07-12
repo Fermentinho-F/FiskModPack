@@ -1,0 +1,33 @@
+{
+  "name": "Special: Shatterpoint",
+  "modifiers": {
+    "fiskheroes:charged_beam|shatterpoint": {
+      "damageProfile": {
+        "damage": 6.5,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.5,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "chargeTime": 10,
+      "duration": 10,
+      "cooldownTime": 120,
+      "range": 10.0,
+      "radius": 10.0,
+      "soundEvents": {
+        "CHARGE": "swhp:shatterpoint_charge",
+        "SHOOT": "swhp:shatterpoint"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

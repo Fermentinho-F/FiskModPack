@@ -1,0 +1,54 @@
+{
+  "name": "Anti-Matter Energy Absorption Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"],
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:water_breathing": {
+    }
+  }
+}

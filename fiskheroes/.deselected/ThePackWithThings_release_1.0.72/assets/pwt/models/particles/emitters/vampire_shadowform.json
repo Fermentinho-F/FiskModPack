@@ -1,0 +1,21 @@
+{
+  "particles": [
+
+
+	{
+      "type": "SHADOW_SMOKE",
+	  "anchor": "head",
+      "amount": 40,
+      "randOffset": [-0.7, -0.7, -0.7],
+	  "randMotion": [0.5, 0.5, 0.5]
+    },
+	{
+      "type": "minecraft:largesmoke",
+	  "anchor": "head",
+      "amount": 10,
+      "randOffset": [-0.4, -0.4, -0.4],
+	  "randMotion": [0.1, 0.1, 0.1]
+    },
+	
+  ]
+}

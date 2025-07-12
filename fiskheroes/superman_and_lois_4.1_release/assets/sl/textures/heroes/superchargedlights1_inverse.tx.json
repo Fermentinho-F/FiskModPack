@@ -1,0 +1,22 @@
+{
+    "texture": {
+      "in": "sl:supercharged_inverse",
+      "transform": [
+        {
+          "operation": "XOR",
+          "supply": "sl:xor/supercharged_inverse/supercharged_lights1_<TIMER>"
+        }
+      ],
+      "out": "sl:generated/supercharged_inverse/supercharged_lights1_<TIMER>"
+    },
+    "getters": {
+      "TIMER": {
+        "key": "Math.ceil( 47.0* entity.getInterpolatedData('sl:dyn/light')) | 0",
+        "values": {
+          "min": 0,
+          "max": 47
+        }
+      }
+    },
+    "isDynamic": true
+  }

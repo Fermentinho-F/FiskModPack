@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:the_flash_isue40",
+  "display": {
+  "description": "\u00A76Life is locomotion... if you're not moving, you're not living. But there comes a time when you've got to stop running \u00A7laway \u00A76from things... and you've got to start running \u00A7ltowards \u00A76something, you've got to forge ahead. Keep moving. Even if your path isn't lit... trust that you'll find your way."
+  },
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee2",
+    "elseworld:ap8_9",
+    "fiskheroes:speed_force",
+    "tmhp:the_flash",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,718 @@
+{
+    "crossbow.shooting": {
+        "category": "player",
+        "sounds": [
+            "crossbow/shoot1",
+            "crossbow/shoot2",
+            "crossbow/shoot3"
+        ]
+    },
+    "pistol.reload": {
+        "category": "player",
+        "sounds": [
+            "guns/pistol_reload"
+        ]
+    },
+    "p220st.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/sigsauer_p220st"
+        ]
+    },
+    "m1911.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/m1911"
+        ]
+    },
+    "sw.mp9.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/sw_mp9"
+        ]
+    },
+    "scorpion.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/scorpion"
+        ]
+    },
+    "rhino.60ds.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/rhino_60ds"
+        ]
+    },
+    "m4a1.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/m4a1"
+        ]
+    },
+    "grenade.launcher.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/grenade_launcher"
+        ]
+    },
+    "m249.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/m249_saw"
+        ]
+    },
+    "p90.shooting": {
+        "category": "player",
+        "sounds": [
+            "guns/p90"
+        ]
+    },
+
+
+
+    "dm.a": {
+        "category": "player",
+        "sounds": [
+            "d_m_a"
+        ]
+    },
+    "dm.d": {
+        "category": "player",
+        "sounds": [
+            "d_m_d"
+        ]
+    },
+    "scan.zone.swipe": {
+        "category": "player",
+        "sounds": [
+            "scan_zone_swipe"
+        ]
+    },
+    "scan.zone.cycle": {
+        "category": "player",
+        "sounds": [
+            "scan_zone_cycle"
+        ]
+    },
+    "data.drive.copy": {
+        "category": "player",
+        "sounds": [
+            "data_drive_copy"
+        ]
+    },
+    "data.drive.paste": {
+        "category": "player",
+        "sounds": [
+            "data_drive_paste"
+        ]
+    },
+    "data.drive.delete": {
+        "category": "player",
+        "sounds": [
+            "data_drive_delete"
+        ]
+    },
+    "robin.bostaff.unfold": {
+        "category": "player",
+        "sounds": [
+            "robin/bostaff_shield_unfold"
+        ]
+    },
+    "robin.bostaff.fold": {
+        "category": "player",
+        "sounds": [
+            "robin/bostaff_shield_fold"
+        ]
+    },
+    "explosive.gel.shooting": {
+        "category": "player",
+        "sounds": [
+            "explosive_gel"
+        ]
+    },
+
+
+
+    "grapple.shoot": {
+        "category": "player",
+        "sounds": [
+            "grapple_shoot_1",
+            "grapple_shoot_2"
+        ]
+    },
+    "grapple.stress.loop": {
+        "category": "player",
+        "sounds": [
+            "grapple_stress_loop"
+        ]
+    },
+
+
+
+    "black.bolt.comics.chargeup": {
+        "category": "player",
+        "sounds": [
+            "black_bolt_comics/chargeup"
+        ]
+    },
+    "black.bolt.comics.shooting": {
+        "category": "player",
+        "sounds": [
+            "black_bolt_comics/shooting"
+        ]
+    },
+
+
+
+    "bloodsport.chest.gun.shoot": {
+        "category": "player",
+        "sounds": [
+            "bloodsport/chest_gun_shoot"
+        ]
+    },
+    "bloodsport.rifle.shoot": {
+        "category": "player",
+        "sounds": [
+            "bloodsport/rifle_shoot"
+        ]
+    },
+    "bloodsport.rifle.upgrade.shoot": {
+        "category": "player",
+        "sounds": [
+            "bloodsport/rifle_upgrade_shoot"
+        ]
+    },
+    "bloodsport.rifle.upgrade3.shoot": {
+        "category": "player",
+        "sounds": [
+            "bloodsport/rifle_upgrade3_shoot"
+        ]
+    },
+    "bloodsport.tiny.gun.shoot": {
+        "category": "player",
+        "sounds": [
+            "bloodsport/tiny_gun_shoot"
+        ]
+    },
+
+	"deadpool.xmen.origins.chargeup": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/chargeup"
+        ]
+    },
+    "deadpool.xmen.origins.shooting": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/shooting"
+        ]
+    },
+	"deadpool.xmen.origins.loop": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/loop"
+        ]
+    },
+    "deadpool.xmen.origins.stop": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/stop"
+        ]
+    },
+	"deadpool.xmen.origins.blade.enable": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/blade_enable"
+        ]
+    },
+	"deadpool.xmen.origins.blade.disable": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/blade_disable"
+        ]
+    },
+	"deadpool.xmen.origins.teleport": {
+        "category": "player",
+        "sounds": [
+            "deadpool_xmen_origins/teleport"
+        ]
+    },
+
+    "electro.beam.loop": {
+        "category": "player",
+        "sounds": [
+            "electro/beam_loop"
+        ]
+    },
+    "electro.beam.music.loop": {
+        "category": "player",
+        "sounds": [{
+                "name": "electro/beam_music_loop1",
+                "stream": true
+            }, {
+                "name": "electro/beam_music_loop2",
+                "stream": true
+            }
+        ]
+    },
+    "electro.energyform.disable": {
+        "category": "player",
+        "sounds": [
+            "electro/energyform_disable"
+        ]
+    },
+    "electro.energyform.enable": {
+        "category": "player",
+        "sounds": [
+            "electro/energyform_enable"
+        ]
+    },
+    "electro.energyform.loop": {
+        "category": "player",
+        "sounds": [
+            "electro/energyform_loop"
+        ]
+    },
+    "electro.energyform.music.disable": {
+        "category": "player",
+        "sounds": [
+            "electro/energyform_music_disable"
+        ]
+    },
+    "electro.energyform.music.loop": {
+        "category": "player",
+        "sounds": [
+            "electro/energyform_music_loop"
+        ]
+    },
+    "electro.teleport": {
+        "category": "player",
+        "sounds": [
+            "electro/teleport"
+        ]
+    },
+    "electro.teleport.music": {
+        "category": "player",
+        "sounds": [
+            "electro/teleport_music"
+        ]
+    },
+
+
+
+    "five.teleport": {
+        "category": "player",
+        "sounds": [
+            "five/teleport"
+        ]
+    },
+
+
+
+    "ghost.intangibility.disable": {
+        "category": "player",
+        "sounds": [
+            "ghost/intangibility_disable"
+        ]
+    },
+    "ghost.intangibility.enable": {
+        "category": "player",
+        "sounds": [
+            "ghost/intangibility_enable"
+        ]
+    },
+    "ghost.invisibility.disable": {
+        "category": "player",
+        "sounds": [
+            "ghost/intangibility_disable"
+        ]
+    },
+    "ghost.invisibility.enable": {
+        "category": "player",
+        "sounds": [
+            "ghost/invisibility_enable"
+        ]
+    },
+    "ghost.idle.loop": {
+        "category": "player",
+        "sounds": [
+            "ghost/idle_loop"
+        ]
+    },
+
+
+
+    "miles.venom.boost": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/venom_boost1",
+            "spider_man_miles/venom_boost2",
+            "spider_man_miles/venom_boost3",
+            "spider_man_miles/venom_boost4"
+        ]
+    },
+    "miles.venom.charge": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/venom_charge"
+        ]
+    },
+    "miles.venom.punch": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/venom_punch1",
+            "spider_man_miles/venom_punch2",
+            "spider_man_miles/venom_punch3",
+            "spider_man_miles/venom_punch4"
+        ]
+    },
+    "miles.outburst.chargeup": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/venom_burst_chargeup"
+        ]
+    },
+    "miles.outburst.shooting": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/venom_burst_shoot"
+        ]
+    },
+    "web.miles.ps5.shoot": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/ps5_shoot1",
+            "spider_man_miles/ps5_shoot2",
+            "spider_man_miles/ps5_shoot3",
+            "spider_man_miles/ps5_shoot4",
+            "spider_man_miles/ps5_shoot5",
+            "spider_man_miles/ps5_shoot6",
+            "spider_man_miles/ps5_shoot7"
+        ]
+    },
+    "web.miles.sv.shoot": {
+        "category": "player",
+        "sounds": [
+            "spider_man_miles/sv_shoot1"
+        ]
+    },
+
+
+
+    "soldier.boy.chargeup": {
+        "category": "player",
+        "sounds": [
+            "soldier_boy/chargeup"
+        ]
+    },
+    "soldier.boy.shooting": {
+        "category": "player",
+        "sounds": [
+            "soldier_boy/shooting"
+        ]
+    },
+    "soldier.boy.stop": {
+        "category": "player",
+        "sounds": [
+            "soldier_boy/stop"
+        ]
+    },
+
+
+
+    "wanda.aim": {
+        "category": "player",
+        "sounds": [
+            "wanda/aim"
+        ]
+    },
+    "wanda.flight.start": {
+        "category": "player",
+        "sounds": [
+            "wanda/flight_start"
+        ]
+    },
+    "wanda.flight.loop1": {
+        "category": "player",
+        "sounds": [
+            "wanda/flight_loop1"
+        ]
+    },
+    "wanda.flight.loop2": {
+        "category": "player",
+        "sounds": [
+            "wanda/flight_loop2"
+        ]
+    },
+    "wanda.landing": {
+        "category": "player",
+        "sounds": [
+            "wanda/landing"
+        ]
+    },
+    "wanda.shield": {
+        "category": "player",
+        "sounds": [
+            "wanda/shield"
+        ]
+    },
+    "wanda.shooting": {
+        "category": "player",
+        "sounds": [
+            "wanda/shooting"
+        ]
+    },
+    "wanda.stop": {
+        "category": "player",
+        "sounds": [
+            "wanda/stop"
+        ]
+    },
+    "wanda.telekinesis.grab": {
+        "category": "player",
+        "sounds": [
+            "wanda/telekinesis_grab"
+        ]
+    },
+    "wanda.telekinesis.loop": {
+        "category": "player",
+        "sounds": [
+            "wanda/telekinesis_loop"
+        ]
+    },
+    "wanda.throw": {
+        "category": "player",
+        "sounds": [
+            "wanda/throw"
+        ]
+    },
+
+
+
+    "pietro.takeoff": {
+        "category": "player",
+        "sounds": [
+            "pietro/quicksilver_takeoff"
+        ]
+    },
+    "pietro.stop": {
+        "category": "player",
+        "sounds": [
+            "pietro/quicksilver_stop"
+        ]
+    },
+
+
+
+    "mosquito.flight.loop": {
+        "category": "player",
+        "sounds": [
+            "mosquito_flight_loop"
+        ]
+    },
+	"mosquito.doomslayer.music.loop": {
+        "category": "player",
+        "sounds": [
+		   "doom_slayer_music"
+        ]
+    },
+
+
+    
+    "radioactive.man.beam.shooting": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radiation_beam"
+        ]
+    },
+	"radioactive.man.outburst.chargeup": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radiation_outburst_chargeup"
+        ]
+    },
+    "radioactive.man.outburst.shooting": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radiation_outburst_explosion"
+        ]
+    },
+    "radioactive.man.shield.deflect": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radioactive_man_shield_deflect"
+        ]
+    },
+    "radioactive.man.shield.on": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radioactive_man_shield_on"
+        ]
+    },
+    "radioactive.man.shield.off": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/radioactive_man_shield_off"
+        ]
+    },
+    "radioactive.man.idle.loop": {
+        "category": "player",
+        "sounds": [
+            "radioactive_man/geiger_counter_idle"
+        ]
+    },
+
+
+
+
+    "flash.dceu.takeoff": {
+        "category": "player",
+        "sounds": [
+            "the_flash_dceu/flash_dceu_takeoff",
+            "the_flash_dceu/flash_dceu_takeoff2"
+        ]
+    },
+    "flash.dceu.takeoff.heavy": {
+        "category": "player",
+        "sounds": [
+            "the_flash_dceu/flash_dceu_takeoff_heavy"
+        ]
+    },
+    "flash.dceu.stop": {
+        "category": "player",
+        "sounds": [
+            "the_flash_dceu/flash_dceu_stop"
+        ]
+    },
+    "flash.dceu.move": {
+        "category": "player",
+        "sounds": [
+            "the_flash_dceu/flash_lightning_loop_lessbass"
+        ]
+    },
+	"cyborg.dceu.flight.enable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_flight_on"
+        ]
+    },
+	"cyborg.dceu.flight.disable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_flight_off"
+        ]
+    },
+	"cyborg.dceu.boost.start": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_flight_boost"
+        ]
+    },
+	"cyborg.dceu.arms.enable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_arms_construct"
+        ]
+    },
+	"cyborg.dceu.arms.disable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_arms_deconstruct"
+        ]
+    },
+	"cyborg.dceu.arms.punch": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_arms_punch"
+        ]
+    },
+	"cyborg.dceu.cannon.aim": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_cannon_construct"
+        ]
+    },
+	"cyborg.dceu.cannon.retract": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_cannon_deconstruct"
+        ]
+    },
+	"cyborg.dceu.cannon.static": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_cannon_loop"
+        ]
+    },
+	"cyborg.dceu.cannon.shoot": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_cannon_shoot_1",
+            "cyborg_dceu/cyborg_dceu_cannon_shoot_2"
+        ]
+    },
+	"cyborg.dceu.shield.enable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_shield_construct"
+        ]
+    },
+	"cyborg.dceu.shield.disable": {
+        "category": "player",
+        "sounds": [
+            "cyborg_dceu/cyborg_dceu_shield_deconstruct"
+        ]
+    },
+
+
+    "wonder.woman.dceu.gauntlet.chargeup": {
+        "category": "player",
+        "sounds": [
+            "wonder_woman_dceu/wonder_woman_gauntlet_chargeup"
+        ]
+    },
+    "wonder.woman.dceu.gauntlet.clash": {
+        "category": "player",
+        "sounds": [
+            "wonder_woman_dceu/wonder_woman_gauntlet_clash"
+        ]
+    },
+
+
+	"yellow.jacket.stinger.enable": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/stinger_enable"
+        ]
+    },
+    "yellow.jacket.stinger.disable": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/stinger_disable"
+        ]
+    },
+	"yellow.jacket.beam.chargeup": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/beam_chargeup"
+        ]
+    },
+	"yellow.jacket.beam.shooting": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/beam_shoot"
+        ]
+    },
+    "yellow.jacket.shrink": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/shrink"
+        ]
+    },
+    "yellow.jacket.grow": {
+        "category": "player",
+        "sounds": [
+            "yellow_jacket/grow"
+        ]
+    }
+}

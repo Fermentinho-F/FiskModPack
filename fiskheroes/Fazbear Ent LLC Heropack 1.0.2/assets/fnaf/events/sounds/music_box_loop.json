@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fnaf:music.box.loop",
+  "condition": {
+    "start": "entity.getData('fnaf:dyn/music_box_timer') < 1",
+    "continue": "fnaf:dyn/music_box"
+  },
+  "volume": 3.0,
+  "loop": true,
+  "fadeOut": 15
+}

@@ -1,0 +1,26 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{data_2} = curve {data_2}
+{anim_0} = curve min(animate2({data_1}, 1.0, 0.0, 0.4, 0.5), 1)
+
+{rightArm_rotX} @ {data_0} -> 0.1{head_rotX} - pi / 2 + 0.2
+{rightArm_rotY} @ {data_0} -'> 0.8{head_rotY} + 0.3
+{rightArm_rotZ} @ {data_0} -> 0.7{head_rotZ} + 0.5
+ 
+{leftArm_rotX} @ {data_0} -> 0.1{head_rotX} - pi / 2 + 0.2
+{leftArm_rotY} @ {data_0} -'> 0.8{head_rotY} - 0.35
+{leftArm_rotZ} @ {data_0} -> 0.7{head_rotZ} - 0.5
+
+{leftArm_rotY} += 0.7{anim_0}
+
+{rightArm_rotX} -= 0.8{data_2}
+{rightArm_rotY} -= 0.3{data_2}
+{rightArm_rotZ}  -= 0.5{data_2}
+
+
+out "firstPerson" (true)
+out "rotate" (46{data_0}, 0, 1, 0)
+out "rotate" (20{data_0} - 20{data_2}, 1, 0, 0)
+out "rotate" (-30{data_0}, 0, 0, 1)
+out "translate" (0.06{data_0}, -0.15{data_0}, -0.5{data_0})

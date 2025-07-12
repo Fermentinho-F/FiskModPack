@@ -1,0 +1,55 @@
+{
+  "name": "New Gods Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.04,
+      "boostSpeed": 0.08,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop",
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:potion_immunity": {
+        "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 20.0,
+      "knockback": 1.0,
+      "duration": 100,
+      "cooldownTime": 160
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 3.0,
+      "cooldownTime": 40
+    }
+  } 
+}

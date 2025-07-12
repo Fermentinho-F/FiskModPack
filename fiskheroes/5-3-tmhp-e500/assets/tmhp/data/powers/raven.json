@@ -1,0 +1,103 @@
+{
+  "name": "Magical Powers",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "MAGIC": 1.0,
+          "FIRE": 0.25
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_beam"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 50.0,
+        "types": {
+          "MAGIC": 1.0,
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 100
+        }
+      },
+      "chargeTime": 5,
+      "duration": 1000,
+      "cooldownTime": 1,
+      "range": 64.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+     "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.15,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 50,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

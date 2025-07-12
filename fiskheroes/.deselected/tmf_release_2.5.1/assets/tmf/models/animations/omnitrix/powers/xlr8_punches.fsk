@@ -1,0 +1,52 @@
+{punching} = 5sin(2pi{data_0})
+
+{rArm1_rotX} -= 1.4{punching}
+{rArm1_rotZ} += 0.4{punching} 
+{rArmHand1_rotX} += 0.1{punching}
+{rArmHand1_rotZ} -= 0.2{punching}
+
+{rArm2_rotX} -= 1.4{punching}
+{rArm2_rotZ} += 0.4{punching} 
+{rArmHand2_rotX} += 0.1{punching}
+{rArmHand2_rotZ} -= 0.2{punching}
+
+{rArm3_rotX} -= 1.4{punching}
+{rArm3_rotZ} += 0.4{punching} 
+{rArmHand3_rotX} += 0.1{punching}
+{rArmHand3_rotZ} -= 0.2{punching}
+
+{rArm4_rotX} -= 1.4{punching}
+{rArm4_rotZ} += 0.4{punching} 
+{rArmHand4_rotX} += 0.1{punching}
+{rArmHand4_rotZ} -= 0.2{punching}
+
+{rArm5_rotX} -= 1.4{punching}
+{rArm5_rotZ} += 0.4{punching} 
+{rArmHand5_rotX} += 0.1{punching}
+{rArmHand5_rotZ} -= 0.2{punching}
+
+
+{lArm1_rotX} -= 1.4{punching}
+{lArm1_rotZ} -= 0.4{punching} 
+{lArmHand1_rotX} += 0.1{punching}
+{lArmHand1_rotZ} += 0.2{punching}
+
+{lArm2_rotX} -= 1.4{punching}
+{lArm2_rotZ} -= 0.4{punching} 
+{lArmHand2_rotX} += 0.1{punching}
+{lArmHand2_rotZ} += 0.2{punching}
+
+{lArm3_rotX} -= 1.4{punching}
+{lArm3_rotZ} -= 0.4{punching} 
+{lArmHand3_rotX} += 0.1{punching}
+{lArmHand3_rotZ} += 0.2{punching}
+
+{lArm4_rotX} -= 1.4{punching}
+{lArm4_rotZ} -= 0.4{punching} 
+{lArmHand4_rotX} += 0.1{punching}
+{lArmHand4_rotZ} += 0.2{punching}
+
+{lArm5_rotX} -= 1.4{punching}
+{lArm5_rotZ} -= 0.4{punching} 
+{lArmHand5_rotX} += 0.1{punching}
+{lArmHand5_rotZ} += 0.2{punching}

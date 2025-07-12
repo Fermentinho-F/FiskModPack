@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "\u00A7bElseworld Guild",
+    "description": "\u00A79Welcome to Elseworld Guild.This Guild includes TheMucahid's HeroPack, PKG-TEAM, Omniverse Heroes and Superman & Lois",
+    "icon": {
+      "texture": "elseworld:textures/logo.png"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "elseworld:tmhp", "elseworld:pkg", "elseworld:cadmus", "elseworld:sl"]
+}

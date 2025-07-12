@@ -1,0 +1,65 @@
+{
+  "name": "Shape Shift",
+  "modifiers": {
+    "fiskheroes:transformation|form": {
+      "key": "CHANGE_FORM",
+      "transformation": {
+        "toggleData": "loriatpack:dyn/change_form",
+        "timerData": "loriatpack:dyn/change_form_timer",
+        "time": 7
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "TELEPATIC": 1.0
+        },
+		"properties": {
+              "EFFECTS": [
+                {
+                  "id": "minecraft:nausea",
+                  "duration": 1600,
+                  "amplifier": 3,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:weakness",
+                  "duration": 1200,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+				{
+                  "id": "minecraft:blindness",
+                  "duration": 1200,
+                  "amplifier": 1,
+                  "chance": 1
+                },
+				{
+                  "id": "minecraft:slowness",
+                  "duration": 1200,
+                  "amplifier": 5,
+                  "chance": 1
+                }
+              ]
+            }
+      },
+      "chargeTime": 30,
+      "duration": 60,
+      "cooldownTime": 4200,
+      "range": 32.0,
+      "radius": 0.2,
+	  "soundEvents": {
+        "SHOOT": "loriatpack:psionic_beam"
+      }
+    }
+   },
+  "hud": [
+    {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/martian_beam.png",
+    "data": "fiskheroes:beam_charge"
+	}
+  ]
+}
+

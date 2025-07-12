@@ -1,0 +1,33 @@
+
+{data} = curve {data}
+
+{base_posZ} @ {data} -> 1.5
+
+{1_rotX} @ {data} -> 114.78' 
+{1_rotY} @ {data} -> -5.22' 
+{1_rotZ} @ {data} -> -26.09' 
+
+{2_rotX} @ {data} -> 130.43' 
+{2_rotY} @ {data} -> 18.26' 
+{2_rotZ} @ {data} -> 15.68' 
+
+{3_rotX} @ {data} -> 140.87' 
+{3_rotY} @ {data} -> -20.87' 
+{3_rotZ} @ {data} -> -88.70' 
+
+{4_rotX} @ {data} -> 106.96' 
+{4_rotY} @ {data} -> -67.83' 
+{4_rotZ} @ {data} -> 148.70' 
+
+{5_rotX} @ {data} -> 130.43' 
+{5_rotY} @ {data} -> 7.83' 
+{5_rotZ} @ {data} -> -146.09' 
+
+{6_rotX} @ {data} -> 62.61' 
+{6_rotY} @ {data} -> 18.26' 
+{6_rotZ} @ {data} -> 00.00' 
+
+{7_rotX} @ {data} -> 143.48' 
+{7_rotY} @ {data} -> -2.61' 
+{7_rotZ} @ {data} -> 140.87' 
+

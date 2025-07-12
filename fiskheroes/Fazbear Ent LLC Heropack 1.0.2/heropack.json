@@ -1,0 +1,53 @@
+{
+  "name": "\u00A76\u00A7lFazbear Ent. LLC Heropack",
+  "description": "\u00A7rVersion:\u00A74 1.0.2\u00A7r By: \u00A7fSkar\u00A7r",
+  "watermark": "&6&lProperty of Fazbear Entertainment",
+  "domain": "fnaf",
+  "minVersion": "2.4.0",
+  "packFormat": 1,
+  "dataVars": {
+    "jumpscare": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "jumpscare_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "jumpscare_cooldown": { "type": "FLOAT", "resetWithoutSuit": false },
+    "music_box": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "music_box_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true }
+  },
+  "sounds": {
+    "download": {
+      "repository": "SkarMC/projects",
+      "version": 2
+    },
+    "range": {
+      "music_box_loop": {"distance": 32.0, "target": "ALL"},
+      "whispering_loop": {"distance": 32.0, "target": "ALL"},
+      "fnaf_jumpscare": {"distance": 24.0, "target": "ALL"},
+      "golden_freddy_jumpscare": {"distance": 24.0, "target": "ALL"}
+    }
+  },
+  "damageTypes": {
+    "FEAR": "Fear"
+  },
+  "alts": {
+    "fnaf:golden_freddy": {
+      "$DEFAULT": {
+        "soundProfile": "GOLDEN_FREDDY"
+      },
+      "movie": {
+        "name": "Blumhouse",
+        "soundProfile": "GOLDEN_FREDDY"
+      }
+    },
+    "fnaf:freddy_fazbear": {
+	    "movie": "Blumhouse"
+	  },
+    "fnaf:bonnie": {
+	    "movie": "Blumhouse"
+	  },
+    "fnaf:chica": {
+	    "movie": "Blumhouse"
+	  },
+    "fnaf:foxy": {
+	    "movie": "Blumhouse"
+	  }
+  }
+}

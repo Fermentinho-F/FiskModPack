@@ -1,0 +1,68 @@
+{
+  "name": "power.fiskheroes.divine_empowerment.name",
+  "modifiers": {
+      "fiskheroes:transformation": {
+      "key": "SHAZAM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+    "soundEvents": {
+        "ENABLE": "zaro:shazam",
+        "DISABLE": "zaro:shazam"
+    }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ENERGY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:cosmic_beam"
+      }
+    },
+"fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 80,
+      "duration": 30000,
+      "cooldownTime": 70,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

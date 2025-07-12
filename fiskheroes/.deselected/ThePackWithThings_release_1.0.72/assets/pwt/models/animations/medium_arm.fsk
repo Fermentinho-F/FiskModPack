@@ -1,0 +1,11 @@
+
+
+{biceps_rotX} @ {data_2} -> -25'
+{biceps_overlay_rotX} @ {data_2} -> -25'
+
+{hand_rotX} @ {data_2} -> -5'
+{hand_overlay_rotX} @ {data_2} -> -5'
+
+{biceps_rotX} @ {data_3} -> -20'
+{biceps_overlay_rotX} @ {data_3} -> -20'
+

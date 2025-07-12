@@ -1,0 +1,19 @@
+{
+  "name": "universe",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:water_breathing": {
+    }
+  }
+}

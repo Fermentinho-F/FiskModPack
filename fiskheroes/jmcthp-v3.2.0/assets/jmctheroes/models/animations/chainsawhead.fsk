@@ -1,0 +1,53 @@
+{anim1} = curve min(animate2({data_0}, 2, 0, 0.5, 0.05), 1)
+{anim2} = curve min(animate2({data_0}, 1, 0.5, 0.5, 0.05), 1)
+
+{headRight_rotY} @ {anim1} -> 7.5'
+{headRight_posX} -= -2*{anim2}
+{headRight_posZ} -= 0.5*{anim2}
+
+{headLeft_rotY} @ {anim1} -> -7.5'
+{headLeft_posX} -= 2*{anim2}
+{headLeft_posZ} -= 0.5*{anim2}
+
+{headRightOver_rotY} @ {anim1} -> 7.5'
+{headRightOver_posX} -= -2*{anim2}
+{headRightOver_posZ} -= 0.5*{anim2}
+
+{headLeftOver_rotY} @ {anim1} -> -7.5'
+{headLeftOver_posX} -= 2*{anim2}
+{headLeftOver_posZ} -= 0.5*{anim2}
+
+{blade_posY} += -8*{data_0}
+{blade_posZ} += -13*{data_0}
+{blade_rotY} += 15'*{data_0}
+
+{saw_posY} += -8*{data_0}
+{saw_posZ} += -13*{data_0}
+{saw_rotY} += 15'*{data_0}
+
+{head_posY} += -1*{data_0}
+{head_posZ} += -2*{data_0}
+
+{chin_posZ} += -0.65*{data_0}
+{chin_rotX} += 7.5'*{data_0}
+
+{headBack_posY} += -1*{data_0}
+{headBack_posZ} += 1*{data_0}
+
+{BackBar1_posZ} += 2.6*{data_0}
+{BackBar1_posY} += -1*{data_0}
+{BackBar2_posZ} += 2.6*{data_0}
+{BackBar3_posZ} += 2.6*{data_0}
+
+{LeftBar_posX} += 0.5*{data_0}
+{LeftBar_posY} += -5*{data_0}
+{LeftBar_posZ} += 1*{data_0}
+
+{RightBar_posX} += -0.5*{data_0}
+{RightBar_posY} += -5*{data_0}
+{RightBar_posZ} += 1*{data_0}
+
+{TopBar_posY} += -5*{data_0}
+{TopBar_posZ} += 1*{data_0}
+
+{chin_rotX} += 3.5'{data_1}

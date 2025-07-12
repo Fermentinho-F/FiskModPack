@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:blue_beetle/blue_beetle_cannon_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "(Math.ceil(12 * entity.getInterpolatedData('fiskheroes:beam_charge')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 12
+      }
+    }
+  }
+}

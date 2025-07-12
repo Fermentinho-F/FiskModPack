@@ -1,0 +1,12 @@
+{
+  "suit": "emo:rider",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:sorcery",
+    "fiskheroes:cosmic",
+    "emo:cadmus"
+  ]
+}

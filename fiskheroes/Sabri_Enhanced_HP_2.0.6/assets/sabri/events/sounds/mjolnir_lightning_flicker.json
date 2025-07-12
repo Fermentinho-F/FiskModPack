@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "entity.getData('fiskheroes:beam_shooting') == 0 && entity.getData('fiskheroes:beam_charging')",
+  "sound": "sabri:suit.thor.mjolnir.lightning.flicker_loop",
+  "fadeOut": 10
+}

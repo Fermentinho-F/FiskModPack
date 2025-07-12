@@ -1,0 +1,15 @@
+{data_0} = curve {data_0}
+
+{gunbase_rotX} @ {data_0} -> -135'
+{gunbase_rotZ} @ {data_0} -> -90'
+{gunbase_posX} @ {data_0} -> 3.5
+
+{Arm2_rotZ} @ {data_0} -> 90'
+{gunbase2_rotZ} @ {data_0} -> -180'
+{gunbase2_posY} @ {data_0} -> -3
+{gunbase2_rotX} @ {data_0} -> 90'
+{gunbase2_posZ} @ {data_0} -> 0
+
+{gunbase2_rotX} @ {data_0} -> 90' + min(({pitch})', 5')
+
+{gunbase2_rotY} @ {data_0} -'> max(({bodyYaw} - {yaw})', 5')

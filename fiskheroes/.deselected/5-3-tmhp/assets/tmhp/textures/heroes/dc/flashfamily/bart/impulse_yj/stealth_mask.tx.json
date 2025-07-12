@@ -1,0 +1,9 @@
+{
+  "texture": "tmhp:dc/flashfamily/bart/impulse_yj/stealth_mask_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.getData('fiskheroes:mask_open_timer2') > 0",
+      "values": ["true", "false"]
+    }
+  }
+}

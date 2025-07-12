@@ -1,0 +1,84 @@
+{
+  "name": "Black Canary Powers",
+    "modifiers": {
+	"fiskheroes:damage_immunity|sound": {
+      "damageType": "SOUND"
+    },
+	"fiskheroes:damage_immunity|scream": {
+      "damageType": "SCREAM"
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "SCREAM": 1.0
+        },
+        "properties": {
+         "EFFECTS": [
+					{
+					"id": "minecraft:slowness",
+					"duration": 300,
+					"amplifier": 5,
+					"chance": 1.0
+                    },
+					{
+					"id": "minecraft:nausea",
+					"duration": 300,
+					"amplifier": 2,
+					"chance": 1.0
+                    },
+					{
+					"id": "minecraft:weakness",
+					"duration": 500,
+					"amplifier": 2,
+					"chance": 1.0
+                    }
+                ]
+            }
+      },
+      "chargeTime": 20,
+      "duration": 100,
+      "cooldownTime": 1000,
+      "range": 30.0,
+      "radius": 1.5,
+      "soundEvents": {
+          "BEAM_AMBIENT": "loriatpack:canary_beam"
+      }
+    },
+	    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "SCREAM": 1.0
+        }
+      },
+      "knockback": 0.025
+    },
+	"fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "SCREAM": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "range": 25.0,
+      "radius": 0.2,
+	  "soundEvents": {
+		"SHOOT": "loriatpack:canary_wave"
+      }
+    }
+  },
+	"hud": [
+    {
+      "type": "CHARGE",
+      "texture": "loriatpack:textures/gui/bars/black_canary_beam.png",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+
+}
+

@@ -1,0 +1,38 @@
+{
+  "name": "Z-6 Rotary Blaster Cannon",
+  "permission": "USE_Z6",
+  "holdingPose": "DOUBLE",
+  "cooldown": 30,
+  "damage": 1,
+  "activation": {
+    "type": "AUTO",
+    "rate": 3,
+    "windup": 3,
+    "maxDuration": 120
+  },
+  "fisktag": {
+    "sprintShootDelay": 10,
+    "sprintDelay": 10
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "sneakingFactor": 0.7
+  },
+  "recoil": {
+    "amount": 2.0,
+    "cameraShake": 2.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 2.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "swhp:z6_shoot",
+    "START": ["swhp:z6_start", "swhp:z6_start_loop"],
+    "STOP": "swhp:z6_stop"
+  }
+}

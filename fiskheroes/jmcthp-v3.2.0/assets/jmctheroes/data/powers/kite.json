@@ -1,0 +1,13 @@
+{
+  "name": "Kite",
+  "modifiers": {
+    "fiskheroes:gliding": {
+      "isPowered": true,
+      "isControlled": false,
+      "boostSpeed": 0.05,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:gliding"
+      }
+    }
+  }
+}

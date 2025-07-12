@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.cyclops_xmen.optic_shot.shoot",
+  "pitch": "1.2 - Math.random() * 0.4"
+}

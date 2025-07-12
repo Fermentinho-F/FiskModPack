@@ -1,0 +1,7 @@
+{data} = min(sin(pi{data}) * 4, 1)
+
+{head_rotX} @ {data} -> -20'
+{head_rotY} @ {data} -> 25'
+
+{rightArm_rotX} @ {data} -> -125'
+{rightArm_rotY} @ {data} -> 10'

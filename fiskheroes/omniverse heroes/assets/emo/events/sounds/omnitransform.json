@@ -1,0 +1,5 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "emo:main.omnitransform",
+    "volume": 7
+}

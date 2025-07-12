@@ -1,0 +1,6 @@
+{
+  "sound": "loriatpack:banshee",
+  "condition": "fiskheroes:beam_shooting",
+  "pitch": "0.9 + Math.random() * 0.1",
+  "fadeOut": 15
+}

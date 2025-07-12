@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 1"
+    },
+    "description": {
+      "translate": "\u00A79Suits that can deal damage between 1-3."
+    },
+    "icon": {
+      "text": "\u00A7c1"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": true
+}

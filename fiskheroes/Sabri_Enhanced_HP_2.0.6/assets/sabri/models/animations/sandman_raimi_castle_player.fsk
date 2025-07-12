@@ -1,0 +1,5 @@
+{data} = curve {data}
+
+{x} = min(4{data}, 1)
+
+out "translate" (0, -2.2{x}, 0)

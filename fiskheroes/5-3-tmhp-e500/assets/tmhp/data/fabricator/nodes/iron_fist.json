@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:iron_fist",
+  "display": {
+  "description": "\u00A76I am the Iron Fist. I hold back the storm when nothing else can."
+  },
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap4_5",
+    "fiskheroes:melee3",
+    "tmhp:marvel",
+    "tmhp:heropack2"
+  ]
+}

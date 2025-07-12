@@ -1,0 +1,30 @@
+{
+    "display": {
+    "name": "Inter-Dimensional Magic",
+    "icon": {
+        "texture":  "minecraft:textures/items/nether_star.png"
+    }
+    },
+    "requirements": [
+		"fiskheroes:magic",
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+    "Inter-Dimensional Magic": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill the Wither in the Quantum-Realm"
+      },
+      "condition": {
+        "variables": {
+			"player": "PLAYER_KILLING",
+			"damage": "DAMAGE_SOURCE",
+			"entity": "ENTITY_KILLED"
+        },
+        "check": "(player.world().getDimension() == 2594) &&  entity.getEntityName() == 'WitherBoss' "
+      }
+    }
+  }
+}

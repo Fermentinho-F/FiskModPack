@@ -1,0 +1,10 @@
+{
+    "attributes": {
+      "DAMAGE_REDUCTION": [3, 5],
+      "PUNCH_DAMAGE": [3, 5],
+      "REACH_DISTANCE": [1, 5],
+      "FALL_RESISTANCE": [4, 5],
+      "MAX_HEALTH": [0, 5],
+      "KNOCKBACK": [1, 5]
+    }
+  }

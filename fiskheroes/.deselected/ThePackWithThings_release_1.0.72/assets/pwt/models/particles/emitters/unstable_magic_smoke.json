@@ -1,0 +1,27 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && !entity.getData('fiskheroes:hovering') && entity.getData('fiskheroes:aiming')",
+      "type": "SUBATOMIC_CHARGE",
+      "amount": 5,
+      "offset": {
+		"tp": [-6.0, -2.0, 10.0],
+        "fp": [-0.375, -0.3, 0.1]
+      },
+      "motion": [0.02, 0.07, 0.02],
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": true,
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+	{
+      "condition": "!firstPerson && !entity.getData('fiskheroes:hovering')",
+      "type": "SUBATOMIC_CHARGE",
+      "amount": 5,
+      "offset": [-0.375, -0.81, 0.0],
+      "motion": [0.02, 0.07, 0.02],
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": true
+    },
+  ]
+}

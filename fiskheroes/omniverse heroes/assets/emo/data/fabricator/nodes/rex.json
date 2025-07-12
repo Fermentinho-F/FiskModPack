@@ -1,0 +1,11 @@
+{
+  "suit": "emo:rex",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:defense2",
+    "fiskheroes:nanites",
+    "fiskheroes:melee2",
+    "fiskheroes:flight",
+    "emo:cadmus"
+  ]
+}

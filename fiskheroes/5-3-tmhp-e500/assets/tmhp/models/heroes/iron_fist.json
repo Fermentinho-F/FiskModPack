@@ -1,0 +1,16 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "tmhp:marvel/iron_fist/default/layer1",
+    "layer2": "tmhp:marvel/iron_fist/default/layer2",
+	"glow": "tmhp:marvel/iron_fist/both_hand"
+  },
+  "custom": {
+    "fiskheroes:overlay": {
+    "applicable": ["CHESTPLATE"],
+    "texture": ["null", "glow"],
+    "opacity": 1.0,
+      "data": "fiskheroes:cryo_charge"
+    }
+  }
+}

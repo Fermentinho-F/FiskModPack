@@ -1,0 +1,43 @@
+{
+  "name": "Burst Rifle",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 16,
+  "damage": 1,
+  "activation": {
+    "type": "AUTO",
+    "rate": 2,
+    "windup": 0,
+    "maxDuration": 9,
+    "spinAnimation": false,
+    "moveSlowdown": 0.6
+  },
+  "fisktag": {
+    "sprintShootDelay": 6
+  },
+  "scope": {
+    "zoom": 0.4,
+    "allowHeadshots": false
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.5
+  },
+  "recoil": {
+    "amount": 1.2,
+    "cameraShake": 2.3
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.5,
+      "speed": 24.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:rifle_shoot"
+  }
+}

@@ -1,0 +1,4 @@
+{data} = curve({data})
+{rightArm_rotX} += (60'{rightArm_rotZ}){data}
+{rightArm_rotY} += (30'{rightArm_rotY}){data}
+{rightArm_rotZ} += (70'{rightArm_rotX}){data}

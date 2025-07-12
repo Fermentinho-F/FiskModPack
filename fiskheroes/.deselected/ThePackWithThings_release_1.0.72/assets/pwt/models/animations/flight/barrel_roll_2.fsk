@@ -1,0 +1,17 @@
+{data_3} = abs({data_3})
+{x} = sin(abs({data_3})pi)
+{y} = {x}signum({data_3})'
+
+{rightArm_rotX} -= 30{y} + 10'{x}
+{leftArm_rotX} += {y}30 - 10'{x}
+{rightLeg_rotX} -= {y}10 + 10'{x}
+{leftLeg_rotX} += {y}10 - 10'{x}
+
+{rightArm_rotZ} -= 30{y} + 10'{x}
+{leftArm_rotZ} += {y}30 - 10'{x}
+{rightLeg_rotZ} -= {y}10 + 10'{x}
+{leftLeg_rotZ} += {y}10 - 10'{x}
+
+;out "rotate" (-10{x}, 1, 0, 0)
+out "rotate" (360{data_3}, 0, 1, 0)
+out "translate" (0, 0, -0.1{x})

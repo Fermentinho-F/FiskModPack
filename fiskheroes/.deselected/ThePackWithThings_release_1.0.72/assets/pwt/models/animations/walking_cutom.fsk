@@ -1,0 +1,18 @@
+{data_0} = curve {data_0}
+{limbSwingAmount} *= {data_0}
+
+{Right_held_item} = {data_0}*(1-{data_1})
+{Left_held_item} = {data_0}*(1-{data_2})
+
+
+{rightArm_rotY} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{leftArm_rotY} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+{f} = {limbSwingAmount}cos(0.6662{limbSwing} - 0.3)
+{body_rotY} -= 0.2{f}
+{rightArm_posZ} -= 0.45{f}
+{leftArm_posZ} += 0.45{f}
+
+{rightLeg_posZ} -= 0.45{f}
+{leftLeg_posZ} += 0.45{f}
+

@@ -1,0 +1,52 @@
+{
+  "name": "\u00A7n\u00A7aLt. Anderson's Kryptonite Rifle",
+  "permission": "USE_KRYPTONITE_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": false,
+  "cooldown": 16,
+  "damageProfile": {
+    "damage": 10,
+    "types": {
+      "KRYPTONITE": 0.3
+    },
+    "properties": {
+      "HIT_COOLDOWN": 1,
+      "EFFECTS": [{
+          "id": "minecraft:nausea",
+          "duration": 20,
+          "amplifier": 0
+      }]
+    }
+  },
+  "fisktag": {
+    "sprintShootDelay": 6,
+    "sprintDelay": 6
+  },
+  "scope": {
+    "zoom": 1.0,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 2.5
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.3
+  },
+  "recoil": {
+    "amount": 1.5,
+    "cameraShake": 3.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 0.75,
+      "speed": 16.0,
+      "trail": 2
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:rifle_shoot",
+    "SCOPE_START": "fisktag:rifle_scope_start",
+    "SCOPE_STOP": "fisktag:rifle_scope_stop"
+  }
+}

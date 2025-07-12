@@ -1,0 +1,10 @@
+{data} = curve {data}
+
+{rightArm_rotZ} -= -1.7sin(pi{data})
+
+{leftArm_rotZ} -= 1.7sin(pi{data})
+
+{body_rotX} -= 0.3sin(pi{data})
+{body_posZ} -= -2.3sin(pi{data})
+
+{head_posZ} -= -2.3sin(pi{data})

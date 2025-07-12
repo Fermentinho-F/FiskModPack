@@ -1,0 +1,8 @@
+{anim2} = curve min(animate2({data}, 1, 0.8, 0.2, 0.05), 1)
+
+{light_posZ} -= 225'*{anim2}
+{ring1_posZ} -= 70'*{anim2}
+{ring2_posZ} -= 156'*{anim2}
+{ring3_posZ} -= 242'*{anim2}
+{head_posZ} -= 242'*{anim2}
+

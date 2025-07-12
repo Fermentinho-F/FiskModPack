@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:suit.mandalorian.grogulaugh",
+  "volume": 0.2,
+  "delay": 20
+}

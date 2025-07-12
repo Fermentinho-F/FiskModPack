@@ -1,0 +1,89 @@
+{
+  "name": "Mandalorian Armor",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.21,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1.5,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:manta_flight_enable", "fiskheroes:manta_flight_loop"],
+        "BOOST": "fiskheroes:manta_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:metal_skin": {
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 10,
+          "uses": 9,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 20,
+          "uses": 4
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

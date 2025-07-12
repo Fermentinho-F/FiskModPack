@@ -1,0 +1,4 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},2.5,0,1,1.5)
+
+{jaw_rotX}+=-35'{animation_0}

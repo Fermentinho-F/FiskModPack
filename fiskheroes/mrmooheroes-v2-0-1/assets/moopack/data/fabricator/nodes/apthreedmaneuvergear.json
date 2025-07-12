@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:apthreedmaneuvergear",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:melee2",
+    "fiskheroes:traversal2",
+    "fiskheroes:marksmanship",
+    "moopack:odmgear",
+    "moopack:advanced_technology"
+  ]
+}

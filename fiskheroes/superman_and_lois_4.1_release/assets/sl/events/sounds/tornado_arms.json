@@ -1,0 +1,12 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.reverseflash.vibration.loop",
+  "condition": {
+    "continue": "entity.getData('fiskheroes:beam_shooting')"
+  },
+  "volume": 0.30,
+  "pitch": 0.98,
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

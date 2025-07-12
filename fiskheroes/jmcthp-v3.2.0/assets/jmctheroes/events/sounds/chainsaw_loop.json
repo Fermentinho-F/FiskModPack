@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "jmctheroes:saw.loop",
+  "condition": "entity.getData('jmctheroes:dyn/suit')",
+  "volume": 0.5,
+  "pitch": 0.7,
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

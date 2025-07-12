@@ -1,0 +1,140 @@
+{
+  "name": "Cybernetic Enhancement",
+  "modifiers": {
+	"fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+	"fiskheroes:damage_weakness|lightning": {
+      "damageType": "MAGIC",
+	  "factor": 0.3
+    },
+	  "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+	"fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.5,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,	  
+          "HEAT_TRANSFER": 50
+        }
+      },
+      "chargeTime": 20,
+      "duration": 60,
+      "cooldownTime": 100,
+      "range": 32.0,
+      "radius": 0.4,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:manta_beam_start",
+        "SHOOT_STOP": "fiskheroes:manta_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:manta_beam_loop",
+        "CHARGE": "fiskheroes:manta_beam_charge"
+      }
+    },
+	"fiskheroes:shield": {
+      "shield": {
+        "health": 350.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 100,
+        "cooldown": 300
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+   "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:iron_man_flight_roll",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive"]
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+	"fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+		  "HEAT_VISION": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 50
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 50
+        }
+      },
+      "range": 32.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk50_cannon_shoot"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    }
+  },
+  "hud": [
+    {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/cyborg_beam.png",
+    "data": "fiskheroes:beam_charge"
+	}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:ertugrul",
+  "display": {
+    "hideUntilAvailable":  true
+  },
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "tmhp:yenicheri",
+    "tmhp:other",
+    "tmhp:swordsman2",
+    "tmhp:heropack2"
+  ]
+}

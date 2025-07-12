@@ -1,0 +1,31 @@
+{data} = {data}
+{barrel_1_posY} += 1.0*{data}
+{barrel_2_posY} += 1.0*{data}
+{barrel_3_posY} += 1.0*{data}
+
+{barrel_base_posY} += 4.0*{data}
+{barrel_base_2_posY} += 4.0*{data}
+
+{hand_1_rotX} -= (pi/180) * 10.0 *{data}
+{hand_2_rotX} -= (pi/180) * 10.0 *{data}
+{hand_3_rotX} += (pi/180) * 10.0 *{data}
+{hand_4_rotX} += (pi/180) * 10.0 *{data}
+
+{hand_1_rotZ} += (pi/180) * 10.0 *{data}
+{hand_2_rotZ} -= (pi/180) * 10.0 *{data}
+{hand_3_rotZ} -= (pi/180) * 10.0 *{data}
+{hand_4_rotZ} += (pi/180) * 10.0 *{data}
+
+{hand_1_posX} += 0.5*{data}
+{hand_2_posX} -= 0.5*{data}
+{hand_3_posX} -= 0.5*{data}
+{hand_4_posX} += 0.5*{data}
+
+{hand_2_posY} += 1.4*{data}
+{hand_3_posY} += 1.4*{data}
+
+{hand_1_posZ} += 0.5*{data}
+{hand_2_posZ} += 0.5*{data}
+{hand_3_posZ} -= 0.5*{data}
+{hand_4_posZ} -=  0.5*{data}
+

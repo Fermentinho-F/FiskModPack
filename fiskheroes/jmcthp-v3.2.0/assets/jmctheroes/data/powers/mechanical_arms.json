@@ -1,0 +1,101 @@
+{
+  "name": "Upgraded Mechanical Arms",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "isToggle": true,
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "SHARP": 1.5,
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false
+        }
+      },
+      "chargeTime": 0,
+      "duration": 3,
+      "cooldownTime": 2,
+      "range": 7.5,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:ock_strike_charged"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 8.0,
+        "recoveryDelay": 20,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:ock_strike_charged"
+      }
+    },
+    "fiskheroes:cooldown|moving": {
+      "cooldown": {
+        "toggleData": "entity.isSprinting()",
+        "cooldownData": "jmctheroes:dyn/moving_timer",
+        "duration": 5,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:cooldown|jump": {
+      "cooldown": {
+        "toggleData": "!entity.isOnGround()",
+        "cooldownData": "jmctheroes:dyn/jumping",
+        "duration": 5,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:cooldown|sneaking": {
+      "cooldown": {
+        "toggleData": "entity.isSneaking()",
+        "cooldownData": "jmctheroes:dyn/sneaking_timer",
+        "duration": 5,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:cooldown|0": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:beam_shooting_timer') && entity.getData('jmctheroes:dyn/random') == 0",
+        "cooldownData": "jmctheroes:dyn/0_timer",
+        "duration": 2,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:cooldown|1": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:beam_shooting_timer') && entity.getData('jmctheroes:dyn/random') == 1",
+        "cooldownData": "jmctheroes:dyn/1_timer",
+        "duration": 2,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:cooldown|2": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:beam_shooting_timer') && entity.getData('jmctheroes:dyn/random') == 2",
+        "cooldownData": "jmctheroes:dyn/2_timer",
+        "duration": 2,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:cooldown|3": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:beam_shooting_timer') && entity.getData('jmctheroes:dyn/random') == 3",
+        "cooldownData": "jmctheroes:dyn/3_timer",
+        "duration": 2,
+        "recovery": 0.5
+      }
+    }  }
+}

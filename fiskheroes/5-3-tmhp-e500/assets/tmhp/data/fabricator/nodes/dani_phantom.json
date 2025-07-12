@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:dani_phantom",
+  "display": {
+  "description": "\u00A72Do you want to ask questions, or you wanna kick some butt?"
+  },
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap4_5",
+    "fiskheroes:melee",
+    "fiskheroes:ranged",
+    "tmhp:ghost",
+    "tmhp:heropack2"
+  ]
+}

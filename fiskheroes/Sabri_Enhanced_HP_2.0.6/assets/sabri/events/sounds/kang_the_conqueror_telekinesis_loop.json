@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.kang_the_conqueror.telekinesis.loop",
+  "condition": "entity.getData('fiskheroes:telekinesis') && entity.getData('fiskheroes:grab_id') > -1",
+  "loop": true,
+  "volume": 2.0,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

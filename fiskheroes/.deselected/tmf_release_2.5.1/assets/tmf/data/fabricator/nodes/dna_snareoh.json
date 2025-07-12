@@ -1,0 +1,41 @@
+{
+  "suit": "tmf:dna_snareoh_19",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "ete": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 1,
+      "description": {
+        "translate":  "Craft a block of Eternium"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:eternium_block'"
+      }
+    },
+    "bandage": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 32,
+      "description": {
+        "translate":  "Craft a Bandages our of Empty Maps"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:empty_map'"
+      }
+    }
+  }
+}

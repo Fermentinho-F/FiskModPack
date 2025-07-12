@@ -1,0 +1,131 @@
+{
+  "name": "Darkhold Magic",
+  "modifiers": {
+     "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:shadowchain_loop", "fiskheroes:shadowchain_start"],
+        "RELEASE": "fiskheroes:shadowchain_release"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ENERGY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:cosmic_beam"
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": 1.0
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 0.5,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": 1.0
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 1,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 60,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+    "fiskheroes:blade": {
+    }
+  },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 64.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    }
+  }

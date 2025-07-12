@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Haki"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/haki.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:melee3",
+    "tmhp:other"],
+  "price": {
+    "XP_LEVELS": 30
+  }
+}

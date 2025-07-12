@@ -1,0 +1,18 @@
+{
+  "suit": "tmhp:nightwing",
+  "display": {
+  "description": "\u00A71We fall because someone pushes us. We get up to \u00A7lpush back."
+  },
+  "requirements": [
+    "tmhp:night_wing",
+    "tmhp:teen_titans",
+    "fiskheroes:tier6_7",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged",
+    "fiskheroes:object_manipulation",
+    "tmhp:heropack2"
+  ]
+}

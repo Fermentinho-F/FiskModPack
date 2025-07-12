@@ -1,0 +1,13 @@
+{
+  "display": {
+    "name": "Kryptonian Physiology",
+    "icon": {
+      "texture": "loriatpack:textures/gui/nodes/sups_logo.png"
+    }
+  },
+  "requirements": [ ],
+  "price": {
+    "XP_LEVELS": 20,
+	"IRID_GOLD": 5
+  }
+}

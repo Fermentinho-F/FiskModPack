@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:snareOh.tentacle",
+  "volume": "0.3 + Math.random() * 0.4",
+  "pitch": "0.3 + Math.random() * 0.4"
+}

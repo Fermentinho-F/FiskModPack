@@ -1,0 +1,9 @@
+{
+  "sound": "sl:main.slhv",
+  "condition": "fiskheroes:heat_vision",
+  "volume": "fiskheroes:heat_vision",
+  "pitch": "1.2 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "fadeIn": 1,
+  "loop": true,
+  "delay": 4
+}

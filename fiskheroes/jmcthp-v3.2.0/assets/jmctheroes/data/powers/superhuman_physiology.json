@@ -1,0 +1,80 @@
+{
+  "name": "Superhuman Physiology",
+  "modifiers": {
+    "fiskheroes:cooldown|charging": {
+      "cooldown": {
+        "toggleData": "entity.isSprinting() && entity.isOnGround() && entity.getHeldItem().isEmpty()",
+        "cooldownData": "jmctheroes:dyn/1_timer",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [2.5, 0.25]
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 0.5
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 15.0,
+      "knockback": 1.5,
+      "duration": 65,
+      "cooldownTime": 230
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 13.2,
+        "types": {
+          "EXPLOSION": 1.5
+        }
+      },
+      "radius": 2.0,
+      "knockback": 2.5,
+      "cooldownTime": 35
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 15.0,
+        "regeneration": 1.0,
+        "recoveryDelay": 140,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "BLUNT": 1.0,
+          "SHARP": 0.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2
+        }
+      },
+      "range": 1.5,
+      "radius": 0.4
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "name": "Iron Man Armor",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.1,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:iron_man_flight_loop",
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 30
+        }
+      },
+      "chargeTime": 30,
+      "duration": 40,
+      "cooldownTime": 200,
+      "range": 32.0,
+      "radius": 0.25,
+      "soundEvents": {
+        "SHOOT": [ "fiskheroes:mk85_beam_start", "fiskheroes:mk85_beam_loop" ],
+        "SHOOT_STOP": "fiskheroes:mk85_beam_stop",
+        "CHARGE": "tmf:unibeam_charge"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 11.5,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "range": 32.0,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:repulsor_blast"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 60.0,
+        "regeneration": 6.0,
+        "recoveryDelay": 100,
+        "cooldown": 220
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0,
+	  "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:metal_skin": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": 0xFFA11E,
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.im_man",
+  "condition": "fiskheroes:mask_open",
+  "fadeOut": 5,
+  "volume": 1.0
+}

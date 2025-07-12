@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:heat_vision",
+  "sound": "fiskheroes:modifier.heatvision",
+  "condition": "entity.getData('shadows:dyn/1float_interp_reset') == 1",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

@@ -1,0 +1,25 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim0} = curve min(animate2({data}, 2, 0.0, 0.7, 1), 1)
+{anim2} = curve min(animate2({data}, 3, 0.7, 0.3, 1), 1)
+
+{anim0} *= 1 - {anim2}
+
+{head_rotX} @ {anim0} -> -45'
+{head_posY} += 0.9*{anim0}
+{head_posZ} += 3*{anim0}
+
+{body_rotX} @ {anim0} -> -15'
+{body_posY} += 0.9*{anim0}
+{body_posZ} += 3*{anim0}
+
+{rightArm_rotX} @ {anim0} -> -85'
+{rightArm_rotY} += 65'*{anim0}
+{rightArm_posY} += 0.9*{anim0}
+{rightArm_posZ} += 3*{anim0}
+
+{leftArm_rotX} @ {anim0} -> -75'
+{leftArm_rotY} -= 65'*{anim0}
+{leftArm_posY} += 0.9*{anim0}
+{leftArm_posZ} += 3*{anim0}
+

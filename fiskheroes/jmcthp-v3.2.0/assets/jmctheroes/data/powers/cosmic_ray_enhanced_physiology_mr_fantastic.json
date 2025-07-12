@@ -1,0 +1,42 @@
+{
+  "name": "Cosmic Ray Enhanced Physiology",
+  "modifiers": {
+    "fiskheroes:size_manipulation": {
+      "isInstant": false,
+      "minSize": 1.0,
+      "maxSize": 2.5
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [1, -0.5, 1],
+        [-1, -0.5, 1]
+      ],
+      "climbing": {
+        "speed": 0.1,
+        "range": 5,
+        "tolerance": 7,
+        "minAnchorPoints": 2,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"]
+        ]
+      },
+      "range": 7.0,
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "SHARP": 1.25,
+          "BLUNT": 0.75
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.1,
+          "HIT_COOLDOWN": 0
+        }
+      }
+    }
+  }
+}

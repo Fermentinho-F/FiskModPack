@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:lightning_comics",
+  "blur": {
+    "color": "@COLOR",
+    "opacity": 0.2
+  },
+  "constants": {
+    "COLOR": "0xC0C0C0"
+  }
+}
+

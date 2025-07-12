@@ -1,0 +1,27 @@
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+{head_posZ} @ {data} -> -20.0
+{body_posZ} @ {data} -> -20.0
+{rightArm_posZ} @ {data} -> -20.0
+{leftArm_posZ} @ {data} -> -20.0
+{rightLeg_posZ} @ {data} -> -8.0
+{leftLeg_posZ} @ {data} -> -8.0
+
+{head_rotX} @ {data} -> 0.5
+
+{body_rotX} @ {data} -> 1.5
+
+{rightArm_rotX} @ {data} -> -1.5
+{leftArm_rotX} @ {data} -> -1.5
+
+{rightLeg_posY} @ {data} -> 1.0
+{rightLeg_posZ} @ {data} -> -12.0
+{rightLeg_rotX} @ {data} -> 1.5
+{leftLeg_posY} @ {data} -> 1.0
+{leftLeg_posZ} @ {data} -> -12.0
+{leftLeg_rotX} @ {data} -> 1.5
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (360{data}, 0, 0, 1)
+out "translate" (0, -0.15{data}, 0.1{data})

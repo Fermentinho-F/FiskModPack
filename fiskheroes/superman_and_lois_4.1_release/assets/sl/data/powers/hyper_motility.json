@@ -1,0 +1,10 @@
+{
+  "name": "Hyper Motility",
+  "modifiers": {
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    }
+  }
+}

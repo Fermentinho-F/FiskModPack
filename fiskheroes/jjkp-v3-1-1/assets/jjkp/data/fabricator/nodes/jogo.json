@@ -1,0 +1,11 @@
+{
+  "suit": "jjkp:jogo",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "jjkp:curse",
+    "jjkp:domain_expansion"
+  ]
+}

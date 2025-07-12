@@ -1,0 +1,87 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{sneaking} = {data_4} 
+{idle} = sin(2pi{data_5})
+
+{movement} = 0
+
+{body_rotX} += 0.3{sneaking}
+
+;TEST=====================================================================
+{punch1} = curve {data_0}
+{punch2} = curve {data_1}
+{punch3} = curve {data_2}
+{punch4} = curve {data_3}
+
+{body_rotY} += 0.1sin(min({punch1}+{punch2}+{punch3}+{punch4}, 1) * pi * 2.0)
+{lowerArmsSwing} = 0.05sin(min({punch3}+{punch4},1) * pi * 2.0)
+{body_rotYVar} = 0.5*{body_rotY}
+
+{punch1} = (1-{data_0})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({data_0} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch2} = (1-{data_1})^3
+{punch2} = 1.0 - {punch2}
+{punch2.1} = sin({punch2} * pi)
+{punch2.2} = sin({data_1} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({rArm_rotX} - ({punch1.1} * 1.2 + {punch1.2})) + {movement}
+{rArm_rotY} += {body_rotY} * 8.0
+{rArm_rotZ} += (sin({data_0} * pi) * -0.4)
+
+{rArm_rotX} += 2{body_rotY} + 90'
+{rArm_rotY} += 2{body_rotY}
+{rArm_rotZ} += 0.05{idle} + 0.6*sin(pi*{punch3})
+
+{lArm_rotX} += ({lArm_rotX} - ({punch2.1} * 1.2 + {punch2.2})) - {movement}
+{lArm_rotY} -= {body_rotY} * 8.0
+{lArm_rotZ} -= (sin({data_1} * pi) * -0.4)
+
+{lArm_rotX} += 2{body_rotY}+ 90'
+{lArm_rotY} -= 2{body_rotY}
+{lArm_rotZ} -= 0.05{idle} + 0.6*sin(pi*{punch4})
+
+{punch3} = (1-{data_2})^3
+{punch3} = 1.0 - {punch3}
+{punch3.1} = sin({punch3} * pi)
+{punch3.2} = sin({data_2} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch4} = (1-{data_3})^3
+{punch4} = 1.0 - {punch4}
+{punch4.1} = sin({punch4} * pi)
+{punch4.2} = sin({data_3} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm2_rotX} += ({rArm2_rotX} - ({punch3.1} * 1.2 + {punch3.2})) - 0.5{movement}+ 90'
+{rArm2_rotY} += {lowerArmsSwing} * 8.0
+{rArm2_rotZ} += (sin({data_2} * pi) * -0.4)
+
+{lArm2_rotX} += ({lArm2_rotX} - ({punch4.1} * 1.2 + {punch4.2})) + 0.5{movement}+ 90'
+{lArm2_rotY} -= {lowerArmsSwing} * 8.0
+{lArm2_rotZ} -= (sin({data_3} * pi) * -0.4)
+
+{rArm2_rotZ} += 0.025{idle}
+{lArm2_rotZ} -= 0.025{idle}
+
+{charging} = {data_6}
+{shooting} = {data_7}
+
+{rArm_rotX} @ {shooting} -> - 1.2
+{rArm_rotY} @ {shooting} -> -0.7
+{lArm_rotX} @ {shooting} -> - 1.2
+{lArm_rotY} @ {shooting} -> 0.7
+
+{rArm2_rotX}  @ {shooting} -> -1.2
+{lArm2_rotX}  @ {shooting} -> -1.2
+{rArm2_rotY} @ {shooting} -> - 0.8
+{lArm2_rotY} @ {shooting} -> 0.8
+
+{rArm_rotX} @ {charging} -> 1
+{rArm_rotZ} @ {charging} -> 1
+{lArm_rotX} @ {charging} -> 1
+{lArm_rotZ} @ {charging} -> -1
+
+{rArm2_rotX}  @ {charging} -> 0.6
+{lArm2_rotX}  @ {charging} -> 0.6 
+{rArm2_rotZ} @ {charging} -> 0.8
+{lArm2_rotZ} @ {charging} -> -0.8
+

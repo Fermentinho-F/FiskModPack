@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:starfire",
+  "display": {
+  "description": "\u00A7aMy world was conquered... I'll not let that happen to this planet, too. You can't understand-- I \u00A7lwon't \u00A7alet this planet die!"
+  },
+  "requirements": [
+    "elseworld:ap4_5",
+    "fiskheroes:flight",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "tmhp:teen_titans",
+    "tmhp:heropack2"
+  ]
+}

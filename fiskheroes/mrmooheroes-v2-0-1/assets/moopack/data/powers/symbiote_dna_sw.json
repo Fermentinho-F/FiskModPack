@@ -1,0 +1,95 @@
+{
+  "name": "Symbiote DNA Activator",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "SYMBIOTE_DNA",
+      "transformation": {
+        "toggleData": "moopack:dyn/symbiote_dna_active",
+        "timerData": "moopack:dyn/symbiote_dna_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 1.5
+    },
+    "fiskheroes:water_breathing": {
+    },
+	"fiskheroes:healing_factor": {
+      "delay": 175,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:metal_skin": {
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.7, 0, 0.4],
+        [-0.7, 0, 0.4],
+        [0.65, -0.9, 0.3],
+        [-0.65, -0.9, 0.3]
+
+      ],
+      "climbing": {
+        "speed": 0.18,
+        "range": 7,
+        "tolerance": 6.5,
+        "minAnchorPoints": 6,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+		  ["BOTTOM", "RIGHT", "FRONT"],
+          ["BOTTOM", "LEFT", "FRONT"],
+          ["RIGHT", "BACK"],
+          ["LEFT", "BACK"],
+		  ["TOP","RIGHT", "BACK"],
+          ["TOP","LEFT", "BACK"],
+		  ["BOTTOM","RIGHT", "BACK"],
+          ["BOTTOM","LEFT", "BACK"]
+        ]
+      },
+      "range": 10.0,
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "SHARP": 1.0,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 12.0,
+          "types": {
+            "SHARP": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:ock_enable",
+        "DISABLE": "fiskheroes:ock_disable",
+        "ANCHOR": "fiskheroes:ock_climb",
+        "UNANCHOR": "fiskheroes:ock_unanchor",
+        "RELEASE": "fiskheroes:ock_unanchor",
+        "JAB_START": "fiskheroes:ock_jab",
+        "GRAB_START": "fiskheroes:ock_grab",
+        "STRIKE_START": "fiskheroes:ock_strike",
+        "STRIKE_CHARGED": "fiskheroes:ock_strike_charged"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "suit": "sl:onomatopoeia",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "sl:sl",
+    "sl:ap4_5"
+  ]
+}

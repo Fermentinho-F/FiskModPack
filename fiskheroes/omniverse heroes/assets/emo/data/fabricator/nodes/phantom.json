@@ -1,0 +1,10 @@
+{
+  "suit": "emo:phantom",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility",
+    "emo:alien",
+    "emo:cadmus"
+  ]
+}

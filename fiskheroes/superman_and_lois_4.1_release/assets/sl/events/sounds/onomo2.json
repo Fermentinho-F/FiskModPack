@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.onomo2",
+  "condition": "entity.getData('fiskheroes:sonic_waves')",
+  "loop": false,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

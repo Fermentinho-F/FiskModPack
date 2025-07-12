@@ -1,0 +1,7 @@
+{
+  "parent": "tmhp:iron_fist",
+  "resources": {
+    "layer1": "tmhp:marvel/iron_fist/new_avengers/layer1",
+    "layer2": "tmhp:marvel/iron_fist/new_avengers/layer2"
+  }
+}

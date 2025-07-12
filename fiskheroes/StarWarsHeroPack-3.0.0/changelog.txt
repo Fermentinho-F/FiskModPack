@@ -1,0 +1,113 @@
+Update 1.0.0 (Release)
+- Release of the Star Wars HeroPack
+- Includes Anakin Skywalker, Obi-Wan Kenobi, Mace Windu, Jedi Knight Revan, Darth Revan, and Darth Vader
+- Unique Lightsabers for Each Character
+- Unique Special Moves for Every Character (Some Special Moves may be re-used if they fit)
+- And much more...
+
+Update 1.0.1
+- Fixed Blue Lightsaber Colour
+- Made the Suits have their Lightsabers Equipped and Ignited as well as being in their blocking stances while on a holographic display stand
+
+Update 1.0.2
+- Added LICENSE.txt
+- Added changelog.txt
+
+Update 1.0.3
+- Removed LICENSE.txt
+- Added heropack-verse.txt
+
+Update 2.0.0 (May 4th Update)
+- New Suits:
+  - Darth Maul 
+  - Ahsoka
+  - The Mandalorian
+  - The Mandalorian (Beskar Armor)
+- Fixes:
+  - Fixed all Animations (They no longer break/look funky when moving)
+- Changes:
+  - Optimized/Organized the HeroPack Code into External Files
+  - New Special for Darth Revan
+  - Force Lightning now changes like actual lightning
+  - The Lightsaber's Beam moves with the Lightsaber when thrown now (Before there were glowing modelled cubes to replace the Lightsaber's beam when thrown)
+  - First person offset of Lightsaber ignite smoke effect
+  - Changed Mace Windu's Main Suit Skin
+  - And more...
+
+Update 2.0.1
+- New Alts:
+  - Anakin Skywalker (General)
+  - Obi-Wan Kenobi (General)
+  - Obi-Wan Kenobi (Ben)
+- Changes/Fixes:
+  - Fixed Darth Maul Lightsaber offset when holstered
+  - Added ability to breathe in space for Darth Vader
+  - Added ability to breathe in space for Darth Revan
+  - Added ability to breathe in space for Mandalorian (Beskar Armor)
+  - Changed Anakin Skywalker's default skin to his Revenge of the Sith (ROTS) outfit
+  - Changed Obi-Wan Kenobi's default skin to his Revenge of the Sith (ROTS) outfit
+  - Removed the "TCW" version from Anakin Skywalker
+  - Removed the "TCW" version from Obi-Wan Kenobi
+  - Reduced fall resistance of every character
+
+Update 2.0.2
+- Changes/Fixes:
+  - Fixed Single Lightsaber Holster offset
+  - Fixed Force Grab animation so that it's set to only the left arm
+  - Added a cooldown to Force Grab
+  - Added a cooldown to Force Crush
+  - Added a cooldown to Force Choke
+  - Reworked fall resistance
+
+Update 3.0.0 (Attack of the Clones) - Current Version (Final Version/Last Update)
+- New Suits:
+  - Captain Rex
+  - Commander Cody
+  - Clone Trooper (Phase I)
+  - Clone Trooper (Phase II)
+  - Clone Jet Trooper
+  - Republic Commando
+- New Weapons:
+  - Mandalorian Amban Phase-Pulse Blaster
+  - Mandalorian IB-94
+  - DC-17
+  - DC-17m
+  - DC-15S
+  - DC-15A
+  - RPS-6
+  - Z-6 Rotary Blaster Cannon
+- New Alts:
+  - Mandalorian (Darth Maul Grogu Variant)
+  - Beskar Mandalorian (Darth Maul Grogu Variant)
+  - Captain Rex (Phase II)
+  - Clone Trooper Phase I (Bomb Squad)
+  - Clone Trooper Phase I (Captain)
+  - Clone Trooper Phase I (Commander)
+  - Clone Trooper Phase I (Lieutenant)
+  - Clone Trooper Phase I (Sergeant)
+  - Clone Trooper Phase II (13th Battalion)
+  - Clone Trooper Phase II (87th Sentinal Corps)
+  - Clone Trooper Phase II (91st Mobile Recon Corps)
+  - Clone Trooper Phase II (181st Armored Division)
+  - Clone Trooper Phase II (91st Mobile Recon Corps)
+  - Clone Trooper Phase II (187th Legion)
+  - Clone Trooper Phase II (212th Battalion)
+  - Clone Trooper Phase II (327th Star Corps)
+  - Clone Trooper Phase II (332nd Compan)
+  - Clone Trooper Phase II (442nd Siege Battalion)
+  - Clone Trooper Phase II (501st Legion)
+  - Clone Trooper Phase II (Kamino Guard)
+  - Clone Trooper Phase II (Shock Corps)
+  - Clone Trooper Phase II (Wolf Pack)
+  - Clone Jet Trooper (501st Legion)
+  - Clone Jet Trooper (Phase II)
+  - Republic Commando (Atin)
+  - Republic Commando (Fixer)
+  - Republic Commando (Boss)
+  - Republic Commando (Gregor)
+  - Republic Commando (Scorch)
+  - Republic Commando (Sev)
+- Changes/Fixes:
+  - Added Baby Yoda/Grogu to The Mandalorian
+  - Fixed The Mandalorian to show as Tier 4-5 in the Suit Database
+  - Optimized certain files to decrease the size of the HeroPack

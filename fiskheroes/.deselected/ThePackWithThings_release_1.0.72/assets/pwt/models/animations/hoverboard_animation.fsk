@@ -1,0 +1,16 @@
+;{data} = sin(pi(1 - {data}))^2
+;{rightArm_rotX} @ {data} -> -2.4
+;{rightArm_rotY} *= 1 - {data}
+;{rightArm_rotZ} *= 1 - {data}
+
+{data_0} = curve (1-{data_0})
+
+{front_n_back_posX} -= 200{data_0}
+{slide_L_1_posX} -= 200{data_0}
+{slide_L_2_posX} -= 200{data_0}
+{slide_L_3_posX} -= 200{data_0}
+{slide_R_1_posX} -= 200{data_0}
+{slide_R_2_posX} -= 200{data_0}
+{slide_R_3_posX} -= 200{data_0}
+
+

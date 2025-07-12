@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.mud.puddle.disable",
+  "condition": "!entity.getData('fiskheroes:shadowform') && entity.getData('sabri:dyn/drought_timer') > 0.5",
+  "fadeOut": 5
+}

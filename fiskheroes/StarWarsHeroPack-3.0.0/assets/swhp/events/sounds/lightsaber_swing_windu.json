@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:suit.windu.lightsaber.swing",
+  "condition": "entity.getData('swhp:dyn/lightsaberignite') && entity.getHeldItem().isEmpty()",
+  "volume": 0.3
+}

@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:zoro_ats",
+  "requirements": [
+    "tmhp:zoro",
+    "fiskheroes:tier8_9",
+    "elseworld:ap8_9",
+    "tmhp:haki",
+    "tmhp:other",
+    "tmhp:swordsman3",
+    "tmhp:heropack2"
+  ]
+}

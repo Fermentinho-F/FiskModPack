@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.gun.auto.stop.2.suppressed",
+  "volume": 0.9,
+  "pitch": "0.8 + Math.random() * 0.1"
+}

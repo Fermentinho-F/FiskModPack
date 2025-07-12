@@ -1,0 +1,22 @@
+{
+    "display": {
+        "name": "Star Wars HeroPack",
+        "icon": {
+            "texture": "swhp:textures/gui/nodes/swhpdownload.png"
+        }
+    },
+    "requirements": [],
+    "autoUnlock": true,
+    "criteria": {
+	"swhp": {
+		"trigger": "fiskheroes:tick",
+		"description": "A long time ago in a galaxy far, far away....",
+	"condition": {
+		"variables": {
+			"entity": "PLAYER_TICKING"
+		},
+		"check": "entity.exists() || !entity.exists()"
+			}
+		}
+	}
+}

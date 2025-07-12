@@ -1,0 +1,10 @@
+{
+  "suit": "jjkp:toji",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:traversal2",
+    "jjkp:inventory_curse"
+  ]
+}

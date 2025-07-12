@@ -1,0 +1,14 @@
+{data_0} = curve {data_0}
+
+{rightArm_rotX} @ {data_0} -> 0'
+{rightArm_rotY} += 55'{data_0}
+{rightArm_rotZ} += 75'{data_0}
+
+{leftArm_rotX} @ {data_0} -> 0'
+{leftArm_rotY} -= 55'{data_0}
+{leftArm_rotZ} -= 75'{data_0}
+
+{data_1} = curve {data_1}
+
+{rightArm_posX} -= 0.5{data_1}
+{leftArm_posX} += 0.5{data_1}

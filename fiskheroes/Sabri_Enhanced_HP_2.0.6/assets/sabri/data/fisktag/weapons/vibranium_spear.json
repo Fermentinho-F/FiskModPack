@@ -1,0 +1,7 @@
+{
+  "name": "Vibranium Spear",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 8.0
+  }
+}

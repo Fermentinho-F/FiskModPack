@@ -1,0 +1,7 @@
+{
+  "name": "Pepsi Can",
+  "permission": "USE_PEPSI",
+  "holdingPose": "SINGLE",
+  "cooldown": 0,
+  "projectiles": null
+}

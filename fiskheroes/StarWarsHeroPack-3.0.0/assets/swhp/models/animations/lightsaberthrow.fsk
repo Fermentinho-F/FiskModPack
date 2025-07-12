@@ -1,0 +1,3 @@
+{data} = {data}
+{MainHilt_rotX} += 4.0pi*{data}
+{MainHilt_posY} += 200{data}

@@ -1,0 +1,95 @@
+{
+  "name": "Unknown Speed Force",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 1,
+          "quantity": 10
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "ELECTRICITY": 10.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flicker_loop_comics",
+        "DISABLE": [],
+        "MOVE": ["fiskheroes:super_speed_move_loop_comics", "fiskheroes:super_speed_move_loop_barry_test"],
+        "SPRINT": "fiskheroes:super_speed_sprint_comics",
+        "STOP": "fiskheroes:super_speed_stop_comics"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:slow_motion_enable_cw",
+        "DISABLE": "fiskheroes:slow_motion_disable_cw"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "COSMIC": 3.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+    "duration": 20,
+    "cooldownTime": 10,
+      "range": 52.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast",
+        "BEAM_AMBIENT": "fiskheroes:super_speed_move_loop_cw"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 1288.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

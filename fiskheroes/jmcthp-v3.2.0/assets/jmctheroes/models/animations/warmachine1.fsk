@@ -1,0 +1,6 @@
+{data} = curve {data} 
+
+{warmachinegun_rotX} @ {data} -> (({pitch}/90)' * 90)
+{warmachinegun_posY} += -5.25*{data}
+{front_rotX} @ {data} -> (({pitch}/90)' * 90)
+{front_posY} += -5.25*{data}

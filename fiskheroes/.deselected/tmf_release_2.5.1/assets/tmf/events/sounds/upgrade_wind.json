@@ -1,0 +1,9 @@
+{
+  "sound": "tmf:upgrade.wind",
+  "condition": "fiskheroes:beam_shooting",
+  "volume": "entity.getData('fiskheroes:beam_shooting_timer')",
+  "pitch": "1.0",
+  "loop": false,
+  "fadeIn": 20,
+  "fadeOut": 20
+}

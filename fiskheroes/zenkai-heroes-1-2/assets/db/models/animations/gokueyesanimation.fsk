@@ -1,0 +1,21 @@
+{eyes_time}={data}
+{eyes_0}=curve animate2({eyes_time},10,0,1,9)
+
+{ceja1_rotZ}+=-15'{eyes_0}
+{ceja1_posX}+=-0.4{eyes_0}
+{ceja1_posY}+=0.3{eyes_0}
+
+{ceja2_rotZ}+=15'{eyes_0}
+{ceja2_posX}+=0.4{eyes_0}
+{ceja2_posY}+=0.3{eyes_0}
+
+{eye3_posY}+=1{eyes_0}
+
+{eye4_posY}+=1{eyes_0}
+
+{ojo1_posX}+=-0.3{eyes_0}
+
+{ojo2_posX}+=0.3{eyes_0}
+
+{frente_posY}+=0.9{eyes_0}
+{frente_posZ}+=-0.4{eyes_0}

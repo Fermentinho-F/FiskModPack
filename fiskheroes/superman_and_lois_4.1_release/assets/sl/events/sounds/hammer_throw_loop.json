@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.whoosh",
+  "volume": 1.0,
+  "fadeOut": 10,
+  "condition": 'fiskheroes:beam_shooting',
+  "loop": true,
+  "pitch": 0.75
+}

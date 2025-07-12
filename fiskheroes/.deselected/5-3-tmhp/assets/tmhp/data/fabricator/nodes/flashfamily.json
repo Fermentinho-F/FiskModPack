@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Flash Family"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/flashfamily.png"
+    },
+    "description": "\u00A76We fight, like families do... but I love them all. No matter the mistakes they've made. And you're right... I've hurt them too many times already. I'm \u00A7ldone \u00A76with that. Never again. -\u00A7oBarry Allen"
+  },
+  "requirements": [
+    "tmhp:dc"],
+  "price": {
+    "XP_LEVELS": 30
+  }
+}

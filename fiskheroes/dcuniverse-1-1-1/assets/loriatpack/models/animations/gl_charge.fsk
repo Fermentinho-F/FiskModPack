@@ -1,0 +1,6 @@
+{data} = curve {data}
+
+{rightArm_rotZ} = -0.5{data}
+{rightArm_rotX} = -0.5{data}
+
+out "firstPerson" (true)

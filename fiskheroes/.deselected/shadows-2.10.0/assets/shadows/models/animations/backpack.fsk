@@ -1,0 +1,59 @@
+;=======================================================================================
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{x} = 30{data_0}min(1.5{vel}, 1)
+
+{x} = {data_0}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+
+;=======================================================================================
+
+{1_rotX} -= 110'{forward}
+{2_rotX} -= 50'{forward}
+{3_rotX} -= 50'{forward}
+{4_rotX} -= 12'{forward}
+{5_rotX} -= 50'{forward}
+{6_rotX} -= 90'{forward}
+
+{7_rotX} -= 30'{forward}
+{8_rotX} -= 90'{forward}
+{9_rotX} -= 90'{forward}
+{10_rotX} -= 50'{forward}
+{11_rotX} -= 90'{forward}
+{12_rotX} -= 50'{forward}
+
+{1_rotZ} -= 90'{strafe}
+{3_rotZ} -= 50'{strafe}
+{5_rotZ} -= 50'{strafe}
+{7_rotZ} -= 90'{strafe}
+{9_rotZ} -= 50'{strafe}
+{11_rotZ} -= 50'{strafe}
+
+;=======================================================================================
+
+
+{1_rotX} -= 1'{data_1}
+{2_rotX} -= 2'{data_1}
+{3_rotX} -= 1'{data_1}
+{4_rotX} -= 2'{data_1}
+{5_rotX} -= 3'{data_1}
+{6_rotX} -= 1'{data_1}
+
+{data_1} = (1 - {data_1})
+
+{7_rotX} -= 2'{data_1}
+{8_rotX} -= 3'{data_1}
+{9_rotX} -= 2'{data_1}
+{10_rotX} -= 1'{data_1}
+{11_rotX} -= 2'{data_1}
+{12_rotX} -= 3'{data_1}
+
+

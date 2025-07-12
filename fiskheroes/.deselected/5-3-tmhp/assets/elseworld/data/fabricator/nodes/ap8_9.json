@@ -1,0 +1,35 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 8-9"
+    },
+    "description": {
+      "translate": "\u00A79Suits that can deal damage between 40-99."
+    },
+    "icon": {
+      "text": "\u00A7c8-9"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "elseworld:ap6_7" ],
+  "price": {
+    "IRID_GOLD": 8,
+    "XP_LEVELS": 25 
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:achievement",
+      "ignoreRequirements": true,
+      "description": {
+        "translate": "Create a Black Hole"
+      },
+      "condition": {
+        "variables": {
+          "id": "ACHIEVEMENT_GAINED"
+        },
+        "check": "id == 'achievement.fiskheroes.blackHole'"
+      }
+    }
+  }
+}

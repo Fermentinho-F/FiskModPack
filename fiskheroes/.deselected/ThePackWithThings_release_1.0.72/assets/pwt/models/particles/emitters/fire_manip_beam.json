@@ -1,0 +1,32 @@
+{
+  "particles": [
+    {
+	  "condition": "!entity.isSneaking()",
+      "type": "SHORT_FLAME",
+      "amount": 50,
+      "offset": {
+        "tp": [-1.0, 9.5, 0.0],
+        "fp": [-8.0, 8.0, 4.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.20, 0.20, 0.01],
+      "randMotion": [0.10, 0.0, 0.10],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "entity.isSneaking()",
+      "type": "BLUE_FLAME",
+      "amount": 50,
+      "offset": {
+        "tp": [-1.0, 9.5, 0.0],
+        "fp": [-8.0, 8.0, 4.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.30, 0.30, 0.02],
+      "randMotion": [0.10, 0.0, 0.10],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "suit": "tmhp:spider_gwen",
+  "display": {
+  "description": "\u00A77You're a good cop, dad. You put on that badge and carry that gun because you know if you don't someone who shouldn't will. When I put on this mask, I only did it -- Because it freed me from responsibility. I thought I was special. And Peter Parker died because he tried to follow my example. I have to take responsibility for that. To make his death mean something. But I can't do it in a jail cell. This mask is my badge now. If I don't define what it means... monsters like this will. This is where I'm needed most."
+  },
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "tmhp:spider_man_comics",
+    "tmhp:marvel",
+    "tmhp:heropack2"
+  ]
+}

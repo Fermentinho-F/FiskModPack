@@ -1,0 +1,13 @@
+{
+    "suit": "pwt:batman_cyberpunk",
+    "requirements": [
+        "fiskheroes:tier6_7",
+		"fiskheroes:traversal",
+		"fiskheroes:defense",
+		"fiskheroes:melee2",
+		"fiskheroes:ranged2",
+		"fiskheroes:object_manipulation",
+		"fiskheroes:batman_dceu",
+		"pwt:cyberware"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.bane.venom.loop",
+  "condition": "entity.getData('pwt:dyn/powered')",
+  "pitch": "0.8 + 1.2entity.getInterpolatedData('pwt:dyn/power_cooldown')",
+  "volume": 0.7,
+  "loop": true,
+  "fadeIn": 50,
+  "fadeOut": 15
+}

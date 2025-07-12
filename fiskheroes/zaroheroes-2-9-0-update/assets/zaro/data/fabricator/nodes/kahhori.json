@@ -1,0 +1,16 @@
+{
+  "suit": "zaro:kahhori",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:speed_force",
+    "fiskheroes:traversal",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "zaro:zaroheroes"
+  ]
+}

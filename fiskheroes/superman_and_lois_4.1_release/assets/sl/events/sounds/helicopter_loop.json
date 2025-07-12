@@ -1,0 +1,12 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.helicopter_loop",
+  "condition": {
+    "continue": "entity.getData('sl:dyn/helicopter_flight')"
+  },
+  "volume": 0.70,
+  "pitch": 0.97,
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

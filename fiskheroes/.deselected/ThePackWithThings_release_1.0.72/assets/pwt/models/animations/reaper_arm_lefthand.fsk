@@ -1,0 +1,20 @@
+
+{hand_3_posX} @ {data} -> -1.4
+{hand_3_overlay_posX} @ {data} ->- 1.4
+
+{hand_3_posZ} @ {data} -> -3
+{hand_3_overlay_posZ} @ {data} -> -3
+
+{hand_3_posY} @ {data} -> 9
+{hand_3_overlay_posY} @ {data} -> 9
+
+
+
+
+
+{hand_3_rotX} @ {data} -> 25'
+{hand_3_overlay_rotX} @ {data} -> 25'
+{hand_3_rotY} @ {data} -> -35'
+{hand_3_overlay_rotY} @ {data} -> -35'
+{hand_3_rotZ} @ {data} -> -55'
+{hand_3_overlay_rotZ} @ {data} -> -55'

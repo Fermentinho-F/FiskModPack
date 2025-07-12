@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Shadow Helm",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/shadow_helmet.png"
+    }
+    },
+    "requirements": [
+    "moopack:superhuman_abilities",
+  ],
+    "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 10
+  }
+}

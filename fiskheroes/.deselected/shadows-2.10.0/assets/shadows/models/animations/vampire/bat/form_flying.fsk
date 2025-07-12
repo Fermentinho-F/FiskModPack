@@ -1,0 +1,17 @@
+{data} = curve {data}
+{data_1} = curve {data_1}
+
+{bat_rotX} = 50'
+
+{bat_posY} @ sin({data_1})  -> 4
+
+{head_rotX} = -25'
+{head_rotY} = -({bodyYaw} - {yaw})'
+
+{head_posZ} = -0.88
+
+{left_wing_rotY} = 60'
+{right_wing_rotY} = -60'
+
+{left_wing_rotY} @ {data} -> -60'
+{right_wing_rotY} @ {data} -> 60'

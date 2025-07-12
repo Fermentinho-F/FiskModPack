@@ -1,0 +1,17 @@
+{
+  "suit": "tmhp:the_flash_wally",
+  "display": {
+  "description": "\u00A7bA lot can happen in the blink of an eye. You can \u00A7llose everything. \u00A7bYour name, your reputation. But they can be replaced... by determination, strength, empathy, faith... A renewed sense of how blessed you are just to be alive. To have people who love you, care for you, but that only happens if you don't leave before the miracle. When you realize that tomorrow is a new day. That tomorrow brings hope, and hope is where we find \u00A7lredemption."
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap8_9",
+    "fiskheroes:melee3",
+    "fiskheroes:speed_force",
+    "fiskheroes:cosmic",
+    "tmhp:kid_flash",
+    "tmhp:teen_titans",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

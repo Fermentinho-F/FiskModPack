@@ -1,0 +1,11 @@
+{
+  "suit": "sabri:black_widow",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:object_manipulation",
+    "sabri:sehp"
+  ]
+}

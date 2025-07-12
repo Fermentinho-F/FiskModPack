@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.gun.auto.loop.2",
+  "condition": "fiskheroes:energy_projection",
+  "volume": "entity.getData('fiskheroes:energy_projection_timer') * 2",
+  "pitch": "0.8 + Math.random() * 0.1",
+  "loop": true,
+  "fadeOut": 50
+}

@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "\u00A7bOmniverse Heroes (Elseworlds)",
+    "description": "\u00A79Thanks for downloading Omniverse Heroes!",
+    "icon": {
+      "texture": "elseworld:textures/emo.png"
+    },
+    "isLevelable": false
+  },
+  "autoUnlock": false,
+  "requirements": ["emo:cadmus"]
+}

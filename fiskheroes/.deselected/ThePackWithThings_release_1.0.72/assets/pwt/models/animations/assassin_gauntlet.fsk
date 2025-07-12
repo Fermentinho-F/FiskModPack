@@ -1,0 +1,11 @@
+{data} = curve{data}
+
+{blades_base_posY} @ {data} -> 8
+
+{blades_base_rotZ} @ {data} -> -3'
+
+{blades_base_left_posY} @ {data} -> 8.5
+
+{blades_base_2_left_posY} @ {data} -> 8.5
+
+;{blades_base_left_rotZ} @ {data} -> 3'

@@ -1,0 +1,56 @@
+;loop
+
+{ring_1_rotX} -= 25' * sin(12pi{data_0})
+{ring_2_rotX} -= 22' * sin(10pi{data_0})
+{ring_3_rotX} -= 20' * sin(8pi{data_0})
+{ring_4_rotX} -= 18' * sin(6pi{data_0})
+{ring_5_rotX} -= 15' * sin(4pi{data_0})
+{ring_6_rotX} -= 10' * sin(2pi{data_0})
+
+{ring_1_overlay_rotX} -= 25' * sin(12pi{data_0})
+{ring_2_overlay_rotX} -= 22' * sin(10pi{data_0})
+{ring_3_overlay_rotX} -= 20' * sin(8pi{data_0})
+{ring_4_overlay_rotX} -= 18' * sin(6pi{data_0})
+{ring_5_overlay_rotX} -= 15' * sin(4pi{data_0})
+{ring_6_overlay_rotX} -= 10' * sin(2pi{data_0})
+
+{ring_1_rotY} -= 360'{data_0}
+{ring_2_rotY} -= 360'{data_0}
+{ring_3_rotY} -= 360'{data_0}
+{ring_4_rotY} -= 360'{data_0}
+{ring_5_rotY} -= 360'{data_0}
+{ring_6_rotY} -= 360'{data_0}
+
+{ring_1_overlay_rotY} -= 360'{data_0}
+{ring_2_overlay_rotY} -= 360'{data_0}
+{ring_3_overlay_rotY} -= 360'{data_0}
+{ring_4_overlay_rotY} -= 360'{data_0}
+{ring_5_overlay_rotY} -= 360'{data_0}
+{ring_6_overlay_rotY} -= 360'{data_0}
+
+
+{ring_2_posX} -= 1*sin(2pi{data_0})
+{ring_3_posX} -= 2*sin(4pi{data_0})
+{ring_4_posX} -= 3*sin(2pi{data_0})
+{ring_5_posX} -= 4*sin(4pi{data_0})
+{ring_6_posX} -= 5*sin(2pi{data_0})
+
+
+{ring_2_posZ} -= 1*sin(4pi{data_0})
+{ring_3_posZ} -= 2*sin(2pi{data_0})
+{ring_4_posZ} -= 3*sin(4pi{data_0})
+{ring_5_posZ} -= 4*sin(2pi{data_0})
+{ring_6_posZ} -= 5*sin(4pi{data_0})
+
+{ring_2_overlay_posX} -= 1*sin(2pi{data_0})
+{ring_3_overlay_posX} -= 2*sin(4pi{data_0})
+{ring_4_overlay_posX} -= 3*sin(2pi{data_0})
+{ring_5_overlay_posX} -= 4*sin(4pi{data_0})
+{ring_6_overlay_posX} -= 5*sin(2pi{data_0})
+
+
+{ring_2_overlay_posZ} -= 1*sin(4pi{data_0})
+{ring_3_overlay_posZ} -= 2*sin(2pi{data_0})
+{ring_4_overlay_posZ} -= 3*sin(4pi{data_0})
+{ring_5_overlay_posZ} -= 4*sin(2pi{data_0})
+{ring_6_overlay_posZ} -= 5*sin(4pi{data_0})

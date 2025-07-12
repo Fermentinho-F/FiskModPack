@@ -1,0 +1,182 @@
+{
+  "name": "\u00A76\u00A7lDoggy's Multiversal Heropack",
+  "description": "Heropack Made by MrDoggy5000",
+  "domain": "dmh",
+  "packFormat": 1,
+  "watermark": "&6&lDoggy's Multiversal Heropack",
+  "sounds": {
+    "download": {
+      "repository": "MrDoggy5000/DMHPSounds",
+      "version": 0
+    },
+    "range": {}
+  },
+  "dataVars": {
+    "2float_interp_reset": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "transform2": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "transform": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "transform2_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "transform_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "kinetic": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "slot": {
+      "type": "INTEGER",
+      "resetWithoutSuit": true
+    },
+    "equip_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "ignite": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "ignite_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "penance_timer": "FLOAT_INTERP",
+    "penance_duration": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "cosmic": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "cosmic_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "cosmic_penance": "BOOLEAN",
+    "cosmic_penance_cooldown": "FLOAT_INTERP",
+    "suit": "BOOLEAN",
+    "suit_timer": "FLOAT_INTERP",
+    "fire": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "fire_sound": {
+      "type": "FLOAT",
+      "resetWithoutSuit": true
+    },
+    "fire_timer": "FLOAT_INTERP"
+  },
+  "damageTypes": {
+    "GOD": "Godly Powers",
+    "ANGEL": "Angelic Powers",
+    "ARCHANGEL": "Archangelic Powers",
+    "DEMON": "Demonic Powers",
+    "THE_COLT": "The Colt"
+
+
+  },
+    "alts": {
+        "dmh:cgr": {
+            "$DEFAULT": {
+                "name": "Marvel Comics"
+            },
+            "gyro": "Gyro Alt",
+            "merged": "Merged Alt"
+        },
+        "dmh:revenant_spider": {
+            "$DEFAULT": {
+                "name": "YouTuber",
+                "maskToggleTicks": 12
+            }
+        },
+        "dmh:demon": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:angel": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:blue_marvel": {
+            "$DEFAULT": {
+                "name": "Marvel Comics"
+            }
+        },
+        "dmh:king_thanos": {
+            "$DEFAULT": {
+                "name": "Marvel Comics"
+            },
+            "endgame": "Thanos Endgame"
+        },
+        "dmh:god": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            },
+            "amara": "Merged With Darkness",
+            "mc": "Minecraft God"
+        },
+        "dmh:amara": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:jack": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:sam": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:az": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:castiel": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:michael": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            }
+        },
+        "dmh:front_man": {
+            "$DEFAULT": {
+                "name": "Squid Game",
+                "maskToggleTicks": 12
+            }
+        },
+        "dmh:dean": {
+            "$DEFAULT": {
+                "name": "Supernatural"
+            },
+            "s": "Bloody"
+        },
+        "dmh:butterstrike": {
+            "$DEFAULT": {
+                "name": "YouTuber",
+                "maskToggleTicks": 12
+            }
+        }
+    }
+}

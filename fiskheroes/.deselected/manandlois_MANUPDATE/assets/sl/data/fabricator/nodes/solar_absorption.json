@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "Solar Absorption",
+    "description": "Soar above the skies and absorb the radiation of the yellow sun",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/yellowsun.png"
+    }
+  },
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:location",
+      "description": "Reach Y-level 512 in the Overworld",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_IN_LOCATION"
+        },
+        "check": "player.posY() >= 512 && player.world().getDimension() == 0"
+      }
+    },
+    "requirements": [
+      "sl:sl"
+    ],
+    "price": {
+      "IRID_GOLD": 2,
+      "XP_LEVELS": 15
+    }
+  }
+}

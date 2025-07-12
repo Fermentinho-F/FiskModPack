@@ -1,0 +1,20 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+{f} = sin(pi{data_0})
+{f1} = sin(pi{data_1})
+
+
+{rightArm_posY} += 1{f1}
+{rightArm_posZ} += 2{f}
+
+{rightArm_rotX} -= 1.7{f}
+{rightArm_rotY} -= 0.3{f} - 0.2{f1}
+{rightArm_rotZ} -= 0.3{f1}
+
+{leftArm_posY} += 1{f1}
+{leftArm_posZ} += 2{f}
+
+{leftArm_rotX} -= 1.5{f}
+{leftArm_rotY} += 0.2{f} - 0.3{f1}
+{leftArm_rotZ} += 0.3{f1}

@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.black_widow.grapple.shoot",
+  "pitch": "0.9 + Math.random() * 0.3"
+}

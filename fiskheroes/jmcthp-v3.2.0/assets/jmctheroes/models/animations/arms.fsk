@@ -1,0 +1,9 @@
+{data} = curve {data}
+
+{rightArm_posY} += 16384*{data}
+{leftArm_posY} += 16384*{data}
+
+out "firstPerson" (true)
+out "rotate" (90{data}, 0, 1, 0)
+out "rotate" (90{data}, 1, 0, 0)
+out "rotate" (-90{data}, 0, 0, 1)

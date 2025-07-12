@@ -1,0 +1,648 @@
+{
+    "modifier.superspeed.sprint.quicksilver_xmen": {
+      "category": "player",
+      "sounds": [
+        "suit/super_speed/sprint_quicksilver_xmen"
+      ]
+    },
+    "modifier.superspeed.sweet_dreams.quicksilver_xmen": {
+      "category": "player",
+      "sounds": [
+        "suit/super_speed/sweet_dreams_quicksilver_xmen"
+      ]
+    },
+    "suit.cyclops_xmen.button_click": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/button_click"
+      ]
+    },
+    "suit.cyclops_xmen.optic_blast.start": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/optic_blast_start"
+      ]
+    },
+    "suit.cyclops_xmen.optic_blast.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/optic_blast_loop"
+      ]
+    },
+    "suit.cyclops_xmen.optic_blast.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/optic_blast_stop"
+      ]
+    },
+    "suit.cyclops_xmen.chaos_blast": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/chaos_blast"
+      ]
+    },
+    "suit.cyclops_xmen.chaos_blast.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/chaos_blast_stop"
+      ]
+    },
+    "suit.cyclops_xmen.optic_shot.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/cyclops_xmen/optic_shot_shoot"
+      ]
+    },
+    "suit.kang_the_conqueror.mask.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/mask_enable"
+      ]
+    },
+    "suit.kang_the_conqueror.mask.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/mask_disable"
+      ]
+    },
+    "suit.kang_the_conqueror.platform.summon": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/platform_summon"
+      ]
+    },
+    "suit.kang_the_conqueror.platform.unsummon": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/platform_unsummon"
+      ]
+    },
+    "suit.kang_the_conqueror.platform.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/platform_loop"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.charge": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_charge"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.ambient": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_ambient"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.blast": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_blast"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_shoot"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_loop"
+      ]
+    },
+    "suit.kang_the_conqueror.energy_proj.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/energy_proj_stop"
+      ]
+    },
+    "suit.kang_the_conqueror.telekinesis.grab": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/telekinesis_grab"
+      ]
+    },
+    "suit.kang_the_conqueror.telekinesis.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/telekinesis_loop"
+      ]
+    },
+    "suit.kang_the_conqueror.telekinesis.release": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/telekinesis_release"
+      ]
+    },
+    "suit.kang_the_conqueror.teleport": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/teleport"
+      ]
+    },
+    "suit.kang_the_conqueror.forcefield.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/forcefield_loop"
+      ]
+    },
+    "suit.kang_the_conqueror.forcefield.deflect": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/forcefield_deflect"
+      ]
+    },
+    "suit.kang_the_conqueror.forcefield.disarm": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/forcefield_disarm"
+      ]
+    },
+    "suit.kang_the_conqueror.landing": {
+      "category": "player",
+      "sounds": [
+        "suit/kang_the_conqueror/landing"
+      ]
+    },
+    "suit.wolverine_xmen.claws.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/wolverine_xmen/claws_enable"
+      ]
+    },
+    "suit.wolverine_xmen.claws.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/wolverine_xmen/claws_disable"
+      ]
+    },
+    "suit.wolverine_xmen.claws.slash": {
+      "category": "player",
+      "sounds": [
+        "suit/wolverine_xmen/slash_1",
+        "suit/wolverine_xmen/slash_2"
+      ]
+    },
+    "suit.namor.wings.flight_loop": {
+      "category": "player",
+      "sounds": [
+        "suit/namor_wings_flight_loop"
+      ]
+    },
+    "suit.black_panther.nanites.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/black_panther/nanites_enable"
+      ]
+    },
+    "suit.black_panther.nanites.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/black_panther/nanites_disable"
+      ]
+    },
+    "suit.black_panther.mask.open": {
+      "category": "player",
+      "sounds": [
+        "suit/black_panther/mask_open"
+      ]
+    },
+    "suit.black_panther.kinetic_energy_pulse": {
+      "category": "player",
+      "sounds": [
+        "suit/black_panther/kinetic_energy_pulse"
+      ]
+    },
+    "suit.black_widow.batons.connect": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/batons_connect"
+      ]
+    },
+    "suit.black_widow.batons.disconnect": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/batons_disconnect"
+      ]
+    },
+    "suit.black_widow.grapple.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/grapple_shoot"
+      ]
+    },
+    "suit.black_widow.bite.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/bite_enable"
+      ]
+    },
+    "suit.black_widow.bite.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/bite_disable"
+      ]
+    },
+    "suit.black_widow.bite.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/black_widow/bite_shoot"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.cosmic_energy.charge": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/cosmic_energy_charge"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.cosmic_energy.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/cosmic_energy_loop"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.cosmic_energy.blast": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/cosmic_energy_blast"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.surfboard.summon": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/surfboard_summon"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.surfboard.unsummon": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/surfboard_unsummon"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.surfboard.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/surfboard_loop"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.intangibility.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/intangibility_enable"
+      ]
+    },
+    "suit.silver_surfer_fantastic4.intangibility.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/silver_surfer_fantastic4/intangibility_disable"
+      ]
+    },
+    "suit.concrete_smash": {
+      "category": "player",
+      "sounds": [
+        "suit/concrete_smash"
+      ]
+    },
+    "suit.roll": {
+      "category": "player",
+      "sounds": [
+        "suit/roll"
+      ]
+    },
+    "weapon.glock_26.shoot": {
+      "category": "player",
+      "sounds": [
+        "weapon/glock_26/shoot"
+      ]
+    },
+    "suit.thor.flight.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/flight_enable"
+      ]
+    },
+    "suit.thor.flight.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/flight_disable"
+      ]
+    },
+    "suit.thor.lightning_transformation": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/lightning_transformation"
+      ]
+    },
+    "suit.thor.super_jump": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/super_jump"
+      ]
+    },
+    "suit.thor.mjolnir.spin.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/spin_loop"
+      ]
+    },
+    "suit.thor.mjolnir.throw": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/throw"
+      ]
+    },
+    "suit.thor.mjolnir.throw.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/throw_loop"
+      ]
+    },
+    "suit.thor.mjolnir.landing": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/landing"
+      ]
+    },
+    "suit.thor.mjolnir.hit": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/hit_1",
+        "suit/thor/mjolnir/hit_2",
+        "suit/thor/mjolnir/hit_3",
+        "suit/thor/mjolnir/hit_4",
+        "suit/thor/mjolnir/hit_5"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.hit": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/hit_1",
+        "suit/thor/mjolnir/lightning/hit_2",
+        "suit/thor/mjolnir/lightning/hit_3",
+        "suit/thor/mjolnir/lightning/hit_4"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.flicker_loop": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/flicker_loop"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.lightning_shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/lightning_shoot"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.charged_beam.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/charged_beam_shoot"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.charged_beam.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/charged_beam_loop"
+      ]
+    },
+    "suit.thor.mjolnir.lightning.charged_beam.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/thor/mjolnir/lightning/charged_beam_stop"
+      ]
+    },
+    "suit.sandman_raimi.construct.fist": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/construct_fist"
+      ]
+    },
+    "suit.sandman_raimi.construct.hammer": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/construct_hammer"
+      ]
+    },
+    "suit.sandman_raimi.construct.mace": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/construct_mace"
+      ]
+    },
+    "suit.sandman_raimi.hit": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/hit_1",
+        "suit/sandman_raimi/hit_2",
+        "suit/sandman_raimi/hit_3",
+        "suit/sandman_raimi/hit_4"
+      ]
+    },
+    "suit.sandman_raimi.hit.default": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/hit_5"
+      ]
+    },
+    "suit.sandman_raimi.hurt": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/hurt"
+      ]
+    },
+    "suit.sandman_raimi.giant_mode.grow": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/giant_mode_grow"
+      ]
+    },
+    "suit.sandman_raimi.giant_mode.shrink": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/giant_mode_shrink"
+      ]
+    },
+    "suit.sandman_raimi.giant_mode.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/giant_mode_loop"
+      ]
+    },
+    "suit.sandman_raimi.sand.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/sand_enable"
+      ]
+    },
+    "suit.sandman_raimi.shield.start": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/shield_start"
+      ]
+    },
+    "suit.sandman_raimi.shield.deflect": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/shield_deflect"
+      ]
+    },
+    "suit.sandman_raimi.shield.disarm": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/shield_disarm"
+      ]
+    },
+    "suit.sandman_raimi.sand.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/sand_disable"
+      ]
+    },
+    "suit.sandman_raimi.sand_cloud.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/sand_cloud_enable"
+      ]
+    },
+    "suit.sandman_raimi.sand_cloud.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/sand_cloud_loop"
+      ]
+    },
+    "suit.sandman_raimi.recharge": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/recharge"
+      ]
+    },
+    "suit.sandman_raimi.step": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/step_1",
+        "suit/sandman_raimi/step_2",
+        "suit/sandman_raimi/step_3"
+      ]
+    },
+    "suit.sandman_raimi.mud.puddle.enable": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/mud/puddle_enable"
+      ]
+    },
+    "suit.sandman_raimi.mud.puddle.disable": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/mud/puddle_disable"
+      ]
+    },
+    "suit.sandman_raimi.mud.land": {
+      "category": "player",
+      "sounds": [
+        "suit/sandman_raimi/mud/land_1",
+        "suit/sandman_raimi/mud/land_2",
+        "suit/sandman_raimi/mud/land_3",
+        "suit/sandman_raimi/mud/land_4"
+      ]
+    },
+    "suit.doctor_doom_comics.charged_beam.charge": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/charged_beam_charge"
+      ]
+    },
+    "suit.doctor_doom_comics.charged_beam.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/charged_beam_shoot"
+      ]
+    },
+    "suit.doctor_doom_comics.charged_beam.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/charged_beam_loop"
+      ]
+    },
+    "suit.doctor_doom_comics.charged_beam.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/charged_beam_stop"
+      ]
+    },
+    "suit.doctor_doom_comics.forcefield.start": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/forcefield_start"
+      ]
+    },
+    "suit.doctor_doom_comics.forcefield.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/forcefield_loop"
+      ]
+    },
+    "suit.doctor_doom_comics.forcefield.deflect": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/forcefield_deflect"
+      ]
+    },
+    "suit.doctor_doom_comics.forcefield.disarm": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/forcefield_disarm"
+      ]
+    },
+    "suit.doctor_doom_comics.telekinesis.grab": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/telekinesis_grab"
+      ]
+    },
+    "suit.doctor_doom_comics.telekinesis.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/telekinesis_loop"
+      ]
+    },
+    "suit.doctor_doom_comics.telekinesis.release": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/telekinesis_release"
+      ]
+    },
+    "suit.doctor_doom_comics.teleport": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_comics/teleport"
+      ]
+    },
+    "suit.doctor_doom_fantastic4.charged_beam.charge": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_fantastic4/charged_beam_charge"
+      ]
+    },
+    "suit.doctor_doom_fantastic4.charged_beam.shoot": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_fantastic4/charged_beam_shoot"
+      ]
+    },
+    "suit.doctor_doom_fantastic4.charged_beam.loop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_fantastic4/charged_beam_loop"
+      ]
+    },
+    "suit.doctor_doom_fantastic4.charged_beam.stop": {
+      "category": "player",
+      "sounds": [
+        "suit/doctor_doom_fantastic4/charged_beam_stop"
+      ]
+    }
+}

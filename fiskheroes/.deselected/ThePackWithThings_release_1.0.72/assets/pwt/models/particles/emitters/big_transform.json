@@ -1,0 +1,26 @@
+{
+  "particles": [
+    {
+	  "condition": "!firstPerson",
+      "type": "THICK_SMOKE",
+	  "anchor": "body",
+      "amount": 50,
+      "offset": [0.0, -0.8, -1.0],
+      "motion": [0.0, 0.1, 0.0],
+      "randOffset": [0.3, 0.2, 0.4],
+      "randMotion": [0.2, 0.1, 0.2],
+      "mirror": false
+    },
+	{
+	  "condition": "!firstPerson",
+      "type": "SHORT_FLAME",
+	  "anchor": "body",
+      "amount": 40,
+      "offset": [0.0, -0.8, -1.0],
+      "motion": [0.0, 0.1, 0.0],
+      "randOffset": [0.4, 0.2, 0.5],
+      "randMotion": [0.3, 0.4, 0.3],
+      "mirror": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Charged Jump",
+  "modifiers": {
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "entity.getData('jmctheroes:dyn/charged_jump')",
+        "cooldownData": "jmctheroes:dyn/charged_jump_timer",
+        "duration": 50,
+        "recovery": 1
+      }
+    }
+  },
+  "hud": [{
+    "type": "CHARGE",
+    "texture": "jmctheroes:textures/timers/bars/bar.png",
+    "data": "jmctheroes:dyn/charged_jump_timer"
+    }
+  ]
+}

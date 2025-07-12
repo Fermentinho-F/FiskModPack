@@ -1,0 +1,10 @@
+{data} = curve {data}
+{d} = sin(pi{data})
+{rightArm_rotX} @ {d} -> -1.4
+{rightArm_rotZ} @ {d} -> 0.5
+{rightArm_rotY} @ {d} -> -1.5
+
+out "firstPerson" (true)
+out "rotate" (60{d}, 0, -1, 0)
+out "rotate" (90{d}, -1, 0, 0)
+out "rotate" (60{d}, 0, 0, -1) 

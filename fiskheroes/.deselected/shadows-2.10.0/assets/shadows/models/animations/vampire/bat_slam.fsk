@@ -1,0 +1,17 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{1} = animate2({data_0}, 1, 0, 0.4, 0.2)
+{2} = animate2({data_0}, 0.3, 0.8, 0.15, 0.05)
+{3} = min({data_0} * 10, 1) * (1 - {data_1})
+
+{rightArm_rotX} @ {1} -> -210'
+
+{rightArm_rotX} -= 80' * {2}
+
+{rightArm_rotX} @ {data_1} -> 0
+
+out "firstPerson" (true)
+out "translate" (-0.35{3}, 0, 0.15{3})
+out "rotate" (-27{3}, 0, 1, 0)
+out "rotate" (-20{3}, 1, 0, 0)
+out "rotate" (-30{3}, 0, 0, 1)

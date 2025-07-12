@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.hammerhit",
+  "volume": 0.7,
+  "fadeOut": 20,
+  "pitch": "1.1 + Math.random() * 0.3"
+}

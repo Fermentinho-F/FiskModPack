@@ -1,0 +1,9 @@
+{
+  "suit": "sl:lois",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:ranged",
+    "sl:sl",
+    "elseworld:ap1"
+  ]
+}

@@ -1,0 +1,47 @@
+
+{head_rotX} = clamp(-{lookY} * 1.5, -1, 0.5)
+{head_rotY} = -({bodyYaw} - {yaw})'
+
+{movement} = {limbSwingAmount}cos({limbSwing})*{data_6}
+
+{rightLeg_rotX} += {movement}
+{leftLeg_rotX} -= {movement}
+
+{movement_bottom} = {limbSwingAmount}sin({limbSwing}) * 2 * {data_6}
+{rightLeg_posY} -= clamp(4 * {movement_bottom}, 0, 4)
+{leftLeg_posY} += clamp(4 * {movement_bottom}, -4, 0)
+
+{rightLegBottom_rotX} += clamp({movement_bottom}, 0, 3)
+{leftLegBottom_rotX} -= clamp({movement_bottom}, -3, 0)
+
+{movement} *= 0.3
+
+{leftArm_rotX} += max({movement}, -0.05)
+{rightArm_rotX} -= min({movement}, 0.05)
+
+{rightarmbottom_rotX} -= clamp(2 * {movement}, 0.1, 5)
+{leftarmbottom_rotX} += clamp(2 * {movement}, -5, -0.1)
+
+{movement} *= 0.8
+
+{rightArm_posZ} += 26 * {movement}
+{leftArm_posZ} -= 26 * {movement}
+
+{leftArm_rotY} += max({movement}, -0.05)
+{rightArm_rotY} += min({movement}, 0.05)
+
+{body_rotY} += {movement}
+
+{movement} = {limbSwingAmount}sin({limbSwing}2)*{data_6}
+{golem_posY} += max(4 *{movement}, 0)
+
+; idle
+{idle} = curve (sin({ticks}0.1)/200')
+
+{leftArm_rotZ} += {idle} * -0.08
+{rightArm_rotZ} += {idle} *  0.08
+
+; sneaking
+{leftLeg_rotX} -= 32.5' * {data_2}
+{leftLegBottom_rotX} += 30' * {data_2}
+{rightLeg_rotX} += 27' * {data_2}

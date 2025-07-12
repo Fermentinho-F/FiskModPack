@@ -1,0 +1,12 @@
+{
+  "suit": "emo:nova",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:flight",
+    "emo:alien",
+    "emo:cadmus"
+  ]
+}

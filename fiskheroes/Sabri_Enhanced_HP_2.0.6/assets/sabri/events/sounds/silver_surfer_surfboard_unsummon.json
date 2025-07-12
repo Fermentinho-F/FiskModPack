@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.silver_surfer_fantastic4.surfboard.unsummon",
+  "condition": "!entity.getData('fiskheroes:flying')",
+  "fadeOut": 5
+}

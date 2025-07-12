@@ -1,0 +1,28 @@
+{
+    "display": {
+    "name": "Power Of The Darkness",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/dark_powers.png"
+    }
+    },
+    "requirements": [
+    "moopack:superhuman_abilities",
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:block_broken_by_player",
+        "description": {
+            "translate": "Retrieve An Unstable Quantum Matter Block"
+        },
+        "condition": {
+            "variables": {
+            "block": "BLOCK_BEING_BROKEN"
+            },
+            "check": "block.name() == 'fiskheroes:unstable_quantum_matter' && Math.random() >=0.9"
+        }
+        }
+    }
+}

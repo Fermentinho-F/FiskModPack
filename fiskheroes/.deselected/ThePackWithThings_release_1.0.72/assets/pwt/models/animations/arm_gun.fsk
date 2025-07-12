@@ -1,0 +1,35 @@
+
+;arm_open
+{hand_1_rotY} -= 40'{data_0}
+{hand_2_rotY} += 40'{data_0}
+
+{hand_1_overlay_rotY} -= 40'{data_0}
+{hand_2_overlay_rotY} += 40'{data_0}
+
+
+
+;aiming
+
+{barrel_1_posX} -= 1{data_1}
+{barrel_1_posY} += 1{data_1}
+{barrel_2_posY} += 2{data_1}
+
+{barrel_1_mini_posX} -= 1{data_1}
+{barrel_1_mini_posY} += 1{data_1}
+{barrel_2_mini_posY} += 2{data_1}
+
+{barrel_1_overlay_posX} -= 0.5{data_1}
+{barrel_1_overlay_posY} += 1{data_1}
+{barrel_2_overlay_posY} += 2{data_1}
+
+{cannon_1_posY} += 2{data_3}
+{cannon_2_posY} += 1{data_3}
+
+{barrel_1_rotZ} += 10'{data_2}
+{barrel_2_rotZ} -= 10'{data_2}
+
+{barrel_1_mini_rotZ} += 10'{data_2}
+{barrel_2_mini_rotZ} -= 10'{data_2}
+
+{barrel_1_overlay_rotZ} += 10'{data_2}
+{barrel_2_overlay_rotZ} -= 10'{data_2}

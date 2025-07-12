@@ -1,0 +1,72 @@
+{
+  "name": "Jujutsu Kaisen Heropack",
+  "domain": "jjkp",
+  "watermark": "\u00A76\u00A7lJJKP",
+  "packFormat": 1,
+  "description": "By MrMoo",
+  "sounds": {
+    "download": {
+      "repository": "MrMoo626/moopack",
+    "version": 0
+    },
+    "range": {
+    "sukuna_domain_sound": { "distance": 32.0, "sendToAll": true },
+    "slash": { "distance": 32.0, "sendToAll": true },
+    "blade": { "distance": 32.0, "sendToAll": true },
+    "rika_slash": { "distance": 32.0, "sendToAll": true },
+    "rika_nani": { "distance": 32.0, "sendToAll": true }
+    }
+  },
+  "dataVars": {
+    "reverse": "BOOLEAN",
+    "reverse_timer": "FLOAT_INTERP",
+    "reverse_cooldown": "FLOAT",
+    "flash": "BOOLEAN",
+    "flash_timer": "FLOAT_INTERP",
+    "flash_cooldown": "FLOAT",
+    "wheel": "BOOLEAN",
+    "wheel_minus": "FLOAT",
+    "space_manip": "BOOLEAN",
+    "space_manip_timer": "FLOAT_INTERP",
+    "space_manip_cooldown": "FLOAT",
+    "shrine": "BOOLEAN",
+    "shrine_timer": "FLOAT_INTERP",
+    "shrine_cooldown": "FLOAT",
+    "limitless": "BOOLEAN",
+    "limitless_timer": "FLOAT_INTERP",
+    "limitless_cooldown": "FLOAT",
+    "sukuna": "BOOLEAN",
+    "sukuna_timer": "FLOAT_INTERP",
+    "sukuna_cooldown": "FLOAT",
+    "slash_timer": "FLOAT_INTERP",
+    "reset": {"type": "BOOLEAN", "resetWithoutSuit": true}
+  },
+  "damageTypes": {
+    "POSITIVE": "Positive Energy",
+    "CURSED": "Cursed Energy",
+    "CANCEL": "Technique Canceling"
+  },
+  "alts": {
+    "jjkp:gojo": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      },
+      "school": {
+      "name": "School",
+        "maskToggleTicks": 12
+      },
+      "movie": {
+        "name": "Movie",
+          "maskToggleTicks": 12
+      }
+    },
+    "jjkp:toji": {
+      "small_curse": {
+      "name": "Cute Lil Buggo"
+      },
+      "revived": {
+      "name": "Revived (Shibuya)"
+      }
+    }
+  }
+}

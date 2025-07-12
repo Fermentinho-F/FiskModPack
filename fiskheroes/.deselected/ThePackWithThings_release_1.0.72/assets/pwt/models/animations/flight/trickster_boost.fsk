@@ -1,0 +1,39 @@
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+
+{leftLeg_rotX} -= 10'{data_1}
+{leftLeg_rotY} += 10'{data_1}
+{leftLeg_rotZ} += 2'{data_1}
+
+{rightLeg_rotX} -= 30'{data_1}
+{rightLeg_rotY} -= 16'{data_1}
+{rightLeg_rotZ} -= 5'{data_1}
+
+{leftArm_rotX} += 20'{data_1}
+{leftArm_rotY} += 55'{data_1}
+{leftArm_rotZ} += 22'{data_1}
+
+{rightArm_rotX} += 20'{data_1}
+{rightArm_rotY} -=  55'{data_1}
+{rightArm_rotZ} -=  22'{data_1}
+
+{rightArm_rotX} += 15'{data_1} + {x}
+{rightArm_rotZ} += 10'{data_1}
+{leftArm_rotX} += 15'{data_1} - {x}
+{leftArm_rotZ} -= 10'{data_1}
+{rightLeg_rotX} += 15'{data_1} + 0.3{x}
+{leftLeg_rotX} += 15'{data_1} - 0.3{x}
+
+{rightLeg_posX} += 0.6{data_1}
+{rightLeg_posY} += 2.5{data_1}
+{rightLeg_posZ} += 4.9{data_1}
+{leftLeg_posX} -= 0.1{data_1}
+{leftLeg_posY} += 0.5{data_1}
+
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)

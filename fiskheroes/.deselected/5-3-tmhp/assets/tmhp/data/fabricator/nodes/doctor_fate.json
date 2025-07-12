@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:doctor_fate",
+  "requirements": [
+    "fiskheroes:tier10",
+    "elseworld:ap8_9",
+    "fiskheroes:sorcery",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:teleportation",
+    "tmhp:young_justice",
+    "fiskheroes:ranged2",
+    "tmhp:heropack2"
+  ]
+}

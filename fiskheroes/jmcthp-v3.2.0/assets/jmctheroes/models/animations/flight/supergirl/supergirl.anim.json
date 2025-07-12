@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "fiskheroes:flight/hover/default",
+    "jmctheroes:flight/supergirl/supergirl_boost",
+    "jmctheroes:flight/supergirl/supergirl_super_boost"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "suit": "loriatpack:wonder_woman",
+  "requirements": [	
+    "fiskheroes:tier8_9",
+	"loriatpack:dc_universe",
+	"fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+	"fiskheroes:object_manipulation"
+  ]
+}

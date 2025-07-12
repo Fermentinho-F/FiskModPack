@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+         "type": "minecraft:smoke",
+         "anchor": "body",
+         "amount": 30,
+         "offset": [4.0, 4.0, 4.0],
+         "motion": [0.1, 0.01, 0.0]
+       }
+  ]
+}

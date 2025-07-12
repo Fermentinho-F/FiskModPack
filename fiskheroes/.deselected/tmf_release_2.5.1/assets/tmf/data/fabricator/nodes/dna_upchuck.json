@@ -1,0 +1,321 @@
+{
+  "suit": "tmf:dna_upchuck_22",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample. Spoil Yourself by Consuming the Following:"
+  },
+  "criteria": {
+    "yummers1": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Apple"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:apple'"
+      }
+    },
+    "yummers2": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Mushroom Stew"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:mushroom_stew'"
+      }
+    },
+    "yummers3": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Bread"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:bread'"
+      }
+    },
+    "yummers4": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Porkchop"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:porkchop'"
+      }
+    },
+    "yummers5": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Cooked Porkchop"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:cooked_porkchop'"
+      }
+    },
+    "yummers6": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Golden Apple"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:golden_apple'"
+      }
+    },
+    "yummers7": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Any Fish"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:fish'"
+      },
+      "yummers8": {
+        "trigger": "fiskheroes:item_consumed_by_player",
+        "minSuccessCount": 1,
+        "description": {
+          "translate": "Any Cooked Fish"
+        },
+        "ignoreRequirements": false,
+        "condition": {
+          "variables": {
+            "food": "ITEM_BEING_CONSUMED"
+          },
+          "check": "food.name() == 'minecraft:cooked_fish'"
+        }
+      },
+      "yummers9": {
+        "trigger": "fiskheroes:item_consumed_by_player",
+        "minSuccessCount": 1,
+        "description": {
+          "translate": "Cookie"
+        },
+        "ignoreRequirements": false,
+        "condition": {
+          "variables": {
+            "food": "ITEM_BEING_CONSUMED"
+          },
+          "check": "food.name() == 'minecraft:cookie'"
+        }
+      },
+      "yummers10": {
+        "trigger": "fiskheroes:item_consumed_by_player",
+        "minSuccessCount": 1,
+        "description": {
+          "translate": "Melon"
+        },
+        "ignoreRequirements": false,
+        "condition": {
+          "variables": {
+            "food": "ITEM_BEING_CONSUMED"
+          },
+          "check": "food.name() == 'minecraft:melon'"
+        }
+      },
+      "yummers11": {
+        "trigger": "fiskheroes:item_consumed_by_player",
+        "minSuccessCount": 1,
+        "description": {
+          "translate": "Beef"
+        },
+        "ignoreRequirements": false,
+        "condition": {
+          "variables": {
+            "food": "ITEM_BEING_CONSUMED"
+          },
+          "check": "food.name() == 'minecraft:beef'"
+        }
+      }
+    },
+    "yummers12": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Cooked Beef"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:cooked_beef'"
+      }
+    },
+    "yummers13": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Chicken"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:chicken'"
+      }
+    },
+    "yummers14": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Cooked Chicken"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:cooked_chicken'"
+      }
+    },
+    "yummers15": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Rotten Flesh"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:rotten_flesh'"
+      }
+    },
+    "yummers16": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Spider eye"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:spider_eye'"
+      }
+    },
+    "yummers17": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Carrot"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:carrot'"
+      }
+    },
+    "yummers18": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Golden Carrot"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:golden_carrot'"
+      }
+    },
+    "yummers19": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Potato"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:potato'"
+      }
+    },
+    "yummers20": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Baked Potato"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:baked_potato'"
+      }
+    },
+    "yummers21": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Poisonous Potato"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:poisonous_potato'"
+      }
+    },
+    "yummers22": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Pumpkin Pie"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:pumpkin_pie'"
+      }
+    }
+  }
+}

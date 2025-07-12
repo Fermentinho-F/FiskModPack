@@ -1,0 +1,8 @@
+{data} = curve {data}
+
+{Neck1_rotY} @ {data} -> - -25'{head_rotY}
+{Neck1O_rotY} @ {data} -> - -30'{head_rotY}
+{Neck2_rotY} @ {data} -> - -10'{head_rotY}
+
+{Neck1_rotX} @ {data} -> {head_rotX}
+{Neck1O_rotX} @ {data} -> {head_rotX}

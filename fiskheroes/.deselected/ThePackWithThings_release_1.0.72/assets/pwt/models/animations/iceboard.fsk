@@ -1,0 +1,45 @@
+
+{data_0} = curve{data}
+
+{cube_middle_3_posY} += 1.6{data}
+{cube_middle_3_posZ} += 7{data}
+{cube_middle_1_posY} += 1.1{data}
+{cube_middle_1_posZ} -= 7{data}
+
+{cube_L_1_posX} += 7{data}
+{cube_L_1_posY} += 2.0{data}
+{cube_L_1_posZ} -= 7{data}
+{cube_L_2_posX} += 7{data}
+{cube_L_2_posY} += 1.6{data}
+{cube_L_3_posX} += 7{data}
+{cube_L_3_posY} += 2.7{data}
+{cube_L_3_posZ} += 7{data}
+
+{cube_R_1_posX} -= 7{data}
+{cube_R_1_posY} += 1.6{data}
+{cube_R_1_posZ} -= 7{data}
+{cube_R_2_posX} -= 7{data}
+{cube_R_2_posY} += 1.0{data}
+{cube_R_3_posX} -= 7{data}
+{cube_R_3_posY} += 1.4{data}
+{cube_R_3_posZ} += 7{data}
+
+
+{cube_middle_2_2_posY} -= 3{data}
+{cube_middle_3_2_posZ} += 7{data}
+{cube_middle_1_2_posZ} -= 7{data}
+
+{cube_L_1_2_posX} += 7{data}
+{cube_L_1_2_posZ} -= 7{data}
+{cube_L_2_2_posX} += 7{data}
+{cube_L_3_2_posX} += 7{data}
+{cube_L_3_2_posZ} += 7{data}
+
+{cube_R_1_2_posX} -= 7{data}
+{cube_R_1_2_posZ} -= 7{data}
+{cube_R_2_2_posX} -= 7{data}
+{cube_R_3_2_posX} -= 7{data}
+{cube_R_3_2_posZ} += 7{data}
+
+
+

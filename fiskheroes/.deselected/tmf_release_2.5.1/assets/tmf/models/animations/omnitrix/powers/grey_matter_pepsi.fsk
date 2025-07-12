@@ -1,0 +1,1 @@
+{can1_rotX} += 30'{data} + sin(pi*4*{data})'

@@ -1,0 +1,15 @@
+{
+  "particles": [
+	{
+	  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+      "type": "SMOKE_SMALL",
+	  "anchor": "head",
+      "amount": 10,
+      "offset": [0.0, 0.0, 0.0],
+      "motion": [0.0, 0.0, 3.0],
+      "randOffset": [0.2, 0.2, 0.2],
+      "randMotion": [1.5, 1.5, 1.5],
+	  "lockFPYaw": false
+    }
+  ]
+}

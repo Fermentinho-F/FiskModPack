@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmhp:dc/lanterns/green/simon_bazz/base",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "tmhp:dc/lanterns/xor/lantern_<TIMER>"
+      }
+    ],
+    "out": "tmhp:generated/dc/green_lantern/simon_bazz/<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(35 * entity.getInterpolatedData('tmhp:dyn/lantern_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 35
+      }
+    }
+  },
+  "isDynamic": true
+}

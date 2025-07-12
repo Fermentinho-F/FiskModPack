@@ -1,0 +1,38 @@
+{
+  "name": "DC-17M Blaster",
+  "permission": "USE_DC17M",
+  "holdingPose": "DOUBLE",
+  "cooldown": 8,
+  "damage": 3,
+  "fisktag": {
+    "sprintShootDelay": 6,
+    "sprintDelay": 6
+  },
+  "scope": {
+    "zoom": 1.0,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.5
+  },
+  "recoil": {
+    "amount": 1.5,
+    "cameraShake": 3.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 0.75,
+      "speed": 16.0,
+      "trail": 2
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "swhp:dc17m_shoot",
+    "SCOPE_START": "fisktag:rifle_scope_start",
+    "SCOPE_STOP": "fisktag:rifle_scope_stop"
+  }
+}

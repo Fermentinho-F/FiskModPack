@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:kid_flash_yj",
+  "display": {
+  "description": "\u00A74-I left you because you know my back story.I didn't want my best pal questioning my objectivity. \u00A7e-Dude that why best pals for."
+  },
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap1",
+    "fiskheroes:speed_force",
+    "tmhp:young_justice",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

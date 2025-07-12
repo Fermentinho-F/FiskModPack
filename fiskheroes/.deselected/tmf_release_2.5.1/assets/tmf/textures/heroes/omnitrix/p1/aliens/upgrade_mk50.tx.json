@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p1/aliens/upgrade_mk50",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_mk50_suit_<TIMER>"
+      }
+    ],
+    "out": "tmf:generated/upgrade_mk50_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('tmf:dyn/upgrade_liquified_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}

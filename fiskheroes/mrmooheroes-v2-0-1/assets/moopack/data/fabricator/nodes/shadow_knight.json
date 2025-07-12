@@ -1,0 +1,10 @@
+{
+  "suit": "moopack:shadow_knight",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "moopack:shadow_helmet"
+  ]
+}

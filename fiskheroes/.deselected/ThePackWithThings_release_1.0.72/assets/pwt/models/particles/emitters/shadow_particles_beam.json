@@ -1,0 +1,19 @@
+{
+  "particles": [
+    {
+      "type": "SHADOW_SMOKE",
+      "amount": {
+        "tp": 20
+      },
+      "offset": {
+        "tp": [-0.4, -0.81, 0.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 10.0],
+      "randMotion": [.0, 0.0, 0.0],
+      "mirror": false,
+	  "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

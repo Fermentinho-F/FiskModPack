@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 6-7"
+    },
+    "description": {
+      "translate": "\u00A79Attain a high level of mastery over your powers, unlocking advanced techniques and unleashing devastating attacks."
+    },
+    "icon": {
+      "text": "\u00A7c6-7"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "sl:ap4_5" ],
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 15 
+  },
+  "criteria": {
+    "bow": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Subatomic Battery"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:subatomic_battery'"
+      }
+    }
+  }
+}

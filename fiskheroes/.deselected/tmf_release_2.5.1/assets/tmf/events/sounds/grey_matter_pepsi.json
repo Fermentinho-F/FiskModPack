@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:grey_matter.pepsi",
+  "volume": 0.75,
+  "pitch": "1.0 - Math.random() * 0.1",
+  "fadeOut": 2
+}

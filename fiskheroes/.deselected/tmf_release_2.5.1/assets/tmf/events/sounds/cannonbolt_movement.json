@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:cannonbolt.movement",
+  "condition": "(Math.abs(entity.motionX()) + Math.abs(entity.motionZ())) != 0 && !entity.isInWater() && entity.getData('tmf:dyn/transformed') == 16",
+  "volume": "Math.min((Math.abs(entity.motionX()) + Math.abs(entity.motionZ())), 1.2)",
+  "pitch": "0.98 + 0.1 * Math.random()",
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 8
+}

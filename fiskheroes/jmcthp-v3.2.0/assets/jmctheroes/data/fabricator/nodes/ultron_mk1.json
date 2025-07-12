@@ -1,0 +1,24 @@
+{
+  "suit": "jmctheroes:ultron_mk1",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:iron_legion",
+    "fiskheroes:tier2_3",
+    "fiskheroes:stark",
+    "fiskheroes:ranged2"
+  ],
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Damage an Iron Legion Drone suit to the point of corruption"
+      },
+      "condition": {
+        "variables": {
+          "entity": "PLAYER_TICKING"
+        },
+        "check": "entity.getWornChestplate().suitType() == 'jmctheroes:iron_legion' && entity.isWearingFullSuit() && entity.getWornChestplate().damage() == entity.getWornChestplate().maxDamage() && entity.getWornBoots().damage() == entity.getWornBoots().maxDamage() && entity.getWornHelmet().damage() == entity.getWornHelmet().maxDamage() && entity.getWornLeggings().damage() == entity.getWornLeggings().maxDamage()"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Fires Of Hell ",
+  "modifiers": {
+    "fiskheroes:fireball": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "IGNITE": 3
+        }
+      },
+      "radius": 2.5,
+      "cooldownTime": 2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:fire_immunity": {
+    },
+      "fiskheroes:super_speed": {
+        "canUseTreadmill": true
+      },
+      "fiskheroes:slow_motion": {
+      },
+      "fiskheroes:arrow_catching": {
+      },
+      "fiskheroes:regeneration": {
+        "factor": 4
+      },
+      "fiskheroes:potion_immunity": {
+        "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+      }
+    }
+  }
+

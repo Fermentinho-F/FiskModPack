@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Black Flash",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/black_flash.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jjkp"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 10
+  }
+}

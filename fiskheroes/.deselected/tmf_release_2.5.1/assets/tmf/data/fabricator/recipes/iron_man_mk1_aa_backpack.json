@@ -1,0 +1,12 @@
+{
+  "items": {
+	"minecraft:stone_button": 1,
+    "minecraft:leather": 8,
+	"minecraft:dye@8": 16,
+  "fiskheroes:tutridium_gem": 38,
+	"fiskheroes:titanium_ingot": 24,
+    "fiskheroes:gold_titanium_ingot": 16,
+	"minecraft:redstone": 50,
+	"minecraft:dye@1": 14
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "suit": "emo:omen",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:ranged2",
+    "fiskheroes:traversal",
+    "emo:cadmus"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:wildvine.digging",
+  "condition": "entity.getData('tmf:dyn/p_1') && !entity.isInWater()",
+  "volume": "0.1 + Math.min(Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)), 1.0)",
+  "pitch": "0.98 + 0.1 * Math.random()",
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 8
+}

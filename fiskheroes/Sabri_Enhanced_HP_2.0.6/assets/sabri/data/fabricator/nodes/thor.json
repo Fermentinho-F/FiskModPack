@@ -1,0 +1,14 @@
+{
+    "suit": "sabri:thor",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:melee3",
+      "fiskheroes:defense2",
+      "fiskheroes:regeneration2",
+      "fiskheroes:ranged3",
+      "fiskheroes:magic",
+      "sabri:uru",
+      "sabri:sehp"
+    ]
+  }
+  

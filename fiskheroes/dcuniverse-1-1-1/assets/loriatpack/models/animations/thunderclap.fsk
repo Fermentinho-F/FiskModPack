@@ -1,0 +1,31 @@
+{data} @ {data} ->  curve {data}
+
+{rightArm_rotX} @ {data} -'> 265'
+{rightArm_rotY} @ {data} -'> -20'
+{rightArm_rotZ} @ {data} -'> 0'
+
+{leftArm_rotX} @ {data} -'> 265'
+{leftArm_rotY} @ {data} -'> 20'
+{leftArm_rotZ} @ {data} -'> 0'
+
+{body_rotX} @ {data} -> 0.3
+{body_rotY} @ {data} ->  0
+{body_rotZ} @ {data} ->  0
+
+{body_posY} @ {data} ->  2
+
+{head_posY} @ {data} ->  2
+
+{leftLeg_rotX} @ {data} ->  0
+{leftLeg_rotY} @ {data} ->  0
+{leftLeg_rotZ} @ {data} ->  0
+{leftLeg_posZ} @ {data} ->  0.5
+
+{rightLeg_rotX} @ {data} ->  0.5
+{rightLeg_rotY} @ {data} ->  0
+{rightLeg_rotZ} @ {data} ->  0.35
+{rightLeg_posZ} @ {data} ->  5
+
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})

@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:suit.maul.lightsaber.hum",
+  "condition": "entity.getData('swhp:dyn/lightsaberignite') && entity.getHeldItem().isEmpty()",
+  "loop": true,
+  "delay": 10
+}

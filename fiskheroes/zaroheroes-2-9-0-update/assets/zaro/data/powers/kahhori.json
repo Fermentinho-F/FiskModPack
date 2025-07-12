@@ -1,0 +1,28 @@
+{
+  "name": "Kahhori Physiology",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+     "MOVE": "fiskheroes:super_speed_move_loop_cw",
+    "SPRINT": "fiskheroes:super_speed_sprint_barry",
+    "STOP": "fiskheroes:super_speed_stop_barry"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

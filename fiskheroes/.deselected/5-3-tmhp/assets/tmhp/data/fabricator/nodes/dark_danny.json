@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:dark_danny",
+  "requirements": [
+    "elseworld:ap6_7",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "tmhp:danny_phantom",
+    "tmhp:ghost",
+    "tmhp:heropack2"
+  ]
+}

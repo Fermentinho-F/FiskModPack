@@ -1,0 +1,2 @@
+{data} = curve {data}
+{rightArm_posZ} += ({head_rotX} + 3) {data}

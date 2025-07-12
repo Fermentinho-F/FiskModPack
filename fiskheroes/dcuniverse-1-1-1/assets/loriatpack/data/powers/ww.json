@@ -1,0 +1,123 @@
+{
+  "name": "Amazon Physiology",
+  "modifiers": {
+	"fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+	  "factor": 0.7
+    },
+	"fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 2.5,
+      "cooldownTime": 80
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+	"fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+	"fiskheroes:damage_immunity|fire": {
+      "damageType": "FIRE"
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.15,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+      },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.8, 0.4]
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:manta_blade_enable",
+        "DISABLE": "fiskheroes:manta_blade_disable"
+      }
+    },
+      "fiskheroes:arrow_catching": {
+      },
+  "fiskheroes:shield": {
+    "shield": {
+      "health": 100.0,
+      "regeneration": 15.0,
+      "recoveryDelay": 60,
+      "cooldown": 60
+    }
+  },
+  "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 20.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:shadowchain_loop", "fiskheroes:shadowchain_start"],
+        "RELEASE": "fiskheroes:shadowchain_release"
+      }
+    },
+	 "fiskheroes:leaping|1": {
+      "leapAmount": [0.9, 0.4]
+    },
+    "fiskheroes:leaping|2": {
+      "leapAmount": [2.5, 1.4]
+      },
+	 "fiskheroes:cooldown": {
+        "cooldown": {
+          "toggleData": "entity.getData('loriatpack:dyn/leap_timer') == 1",
+          "cooldownData": "loriatpack:dyn/leap_cooldown",
+          "duration": 50,
+          "recovery": 1
+        }
+    },
+    "fiskheroes:transformation": {
+      "key": "LASSO",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+	   "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    }
+},
+"hud": [
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/wonder_woman.png",
+    "data": "loriatpack:dyn/leap_cooldown"
+  }
+]
+}

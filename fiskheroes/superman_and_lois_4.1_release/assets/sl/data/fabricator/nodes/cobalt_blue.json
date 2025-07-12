@@ -1,0 +1,10 @@
+{
+  "suit": "sl:cobalt_blue",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "sl:cobalt_blue_crystal",
+    "fiskheroes:the_flash",
+    "sl:sl",
+    "sl:ap6_7"
+  ]
+}

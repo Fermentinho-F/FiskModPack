@@ -1,0 +1,10 @@
+{
+  "suit": "emo:mando",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:ranged2",
+    "fiskheroes:flight",
+    "emo:alien",
+    "emo:cadmus"
+  ]
+}

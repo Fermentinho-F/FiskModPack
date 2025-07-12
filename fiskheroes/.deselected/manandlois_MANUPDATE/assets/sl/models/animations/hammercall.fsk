@@ -1,0 +1,32 @@
+{data} = sin(pi(1 - {data}))^2
+
+{handle_posX} @ {data} -> 200
+
+{head0_posX} @ {data} -> 200
+
+{head1_posX} @ {data} -> 200
+
+{head2_posX} @ {data} -> 200
+
+{head3_posX} @ {data} -> 200
+
+{head4_posX} @ {data} -> 200
+
+{head5_posX} @ {data} -> 200
+
+{head6_posX} @ {data} -> 200
+
+{head7_posX} @ {data} -> 200
+
+{frentehead0_posX} @ {data} -> 200
+
+{frentehead1_posX} @ {data} -> 200
+
+{shape137_posX} @ {data} -> 200
+
+{shape138_posX} @ {data} -> 200
+
+{handle1_posX} @ {data} -> 200
+
+{handle2_posX} @ {data} -> 200
+

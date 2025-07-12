@@ -1,0 +1,7 @@
+{
+  "sound": "pwt:modifier.beam.star.start.4",
+  "condition": "fiskheroes:energy_projection",
+  "volume": 3.0,
+  "fadeIn": 2,
+  "fadeOut": 5
+}

@@ -1,0 +1,7 @@
+{
+  "sound": "tmf:wildvine.thorns",
+  "volume": "1.0 * entity.getInterpolatedData('fiskheroes:beam_charge')",
+  "pitch": "1.0 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "fadeIn": 10,
+  "fadeOut": 10
+}

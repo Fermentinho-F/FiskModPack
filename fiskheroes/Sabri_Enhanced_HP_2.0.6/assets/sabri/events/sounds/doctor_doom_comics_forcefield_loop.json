@@ -1,0 +1,7 @@
+{
+  "sound": "sabri:suit.doctor_doom_comics.forcefield.loop",
+  "condition": "fiskheroes:shield_blocking",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 5
+}

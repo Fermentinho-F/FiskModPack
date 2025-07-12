@@ -1,0 +1,29 @@
+{
+  "texture": {	
+    "in": "pwt:animation/venom_eyes_<TIMER_EYE>",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/symbiot_mask_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/venom_mask_<TIMER_EYE>_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(7 * entity.getInterpolatedData('fiskheroes:mask_open_timer2')) | 0",
+      "values": {
+        "min": 1,
+        "max": 7
+      }
+    },
+	"TIMER_EYE": {
+      "key": "entity.isDisplayStand() ? entity.getInterpolatedData('pwt:dyn/cooldown_interp_2') == 1 ? 3 : 0 : (Math.ceil(3 * entity.getInterpolatedData('pwt:dyn/cooldown_interp_2')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 3
+      }
+    }
+  },
+  "isDynamic": true
+}

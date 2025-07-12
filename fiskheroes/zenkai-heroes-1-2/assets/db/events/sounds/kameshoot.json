@@ -1,0 +1,7 @@
+{
+  "sound": "db:kameshoot",
+  "loop": false,
+  "volume": 0.7,
+  "fadeOut": 50,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

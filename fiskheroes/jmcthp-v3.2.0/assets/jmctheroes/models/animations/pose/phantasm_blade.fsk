@@ -1,0 +1,42 @@
+{data} = curve {data}
+
+{anim1} = curve min(animate2({data}, 1, 0.01, 0.3, 0.0), 1)
+{anim2} = curve min(animate2({data}, 1, 0.2, 0.8, 0.0), 1)
+{anim3} = curve min(animate2({data}, 1, 0.5, 0.2, 0.0), 1)
+
+{anim1} = sin(pi(1 - {anim1}))^0.25
+
+{leftArm_rotX} @ {anim1} -> 45'
+{leftArm_rotY} -= 45'*{anim1}
+{leftArm_rotZ} += 0'*{anim1}
+
+{root_rotX} @ {anim1} -> 45'
+{root_rotY} -= 45'*{anim1}
+{root_rotZ} += 0'*{anim1}
+
+{anim2} = sin(pi(1 - {anim2}))^0.5
+
+{rightArm_rotX} @ {anim2} -> -65'
+{rightArm_rotY} -= 45'*{anim2}
+
+{leftArm_rotX} @ {anim2} -> -55'
+{leftArm_rotY} += 25'*{anim2}
+{leftArm_rotZ} += 5'*{anim2}
+
+{root_rotX} @ {anim2} -> -55'
+{root_rotY} += 25'*{anim2}
+{root_rotZ} += 5'*{anim2}
+
+{Blade_posX} @ {anim2} -> -0.5
+{Blade_posY} @ {anim2} -> 8
+{Blade_posZ} @ {anim2} -> -1
+
+{Blade_posX} @ {anim3} -> -2.5
+{Blade_posY} @ {anim3} -> 7.15
+{Blade_posZ} @ {anim3} -> -1
+{Blade_rotZ} @ {anim3} -> -75'
+
+{data} = sin(pi(1 - {data}))^2
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data}), 0)

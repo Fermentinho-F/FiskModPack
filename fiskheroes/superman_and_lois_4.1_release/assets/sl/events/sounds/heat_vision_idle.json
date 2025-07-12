@@ -1,0 +1,8 @@
+{
+  "sound": "fiskheroes:modifier.heatvision",
+  "condition": "entity.getData('fiskheroes:mask_open')",
+  "volume": "0.05 * (1 - entity.getData('fiskheroes:heat_vision'))",
+  "loop": true,
+  "pitch": "1.4",
+  "delay": 10
+}

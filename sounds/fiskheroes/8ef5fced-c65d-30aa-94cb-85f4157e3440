@@ -1,0 +1,128 @@
+{
+    "the_world_summon": {
+      "sounds": [
+        "suit/the_world_summon"
+      ],
+      "category": "player"
+    },
+    "the_world_time_stop": {
+      "sounds": [
+        "suit/the_world_time_stop"
+      ],
+      "category": "player"
+    },
+    "the_world_dissapear": {
+      "sounds": [
+        "suit/the_world_dissapear"
+      ],
+      "category": "player"
+    },
+    "star_platinum_summon": {
+      "sounds": [
+        "suit/star_platinum_summon"
+      ],
+      "category": "player"
+    },
+    "stand_summon": {
+      "sounds": [
+        "suit/stand_summon"
+      ],
+      "category": "player"
+    },
+    "the_hand_effect": {
+      "sounds": [
+        "suit/the_hand_effect"
+      ],
+      "category": "player"
+    },
+    "sharingan_activate": {
+      "sounds": [
+        "suit/sharingan_activate"
+      ],
+      "category": "player"
+    },
+    "chidori_charge": {
+      "sounds": [
+        "suit/chidori_charge"
+      ],
+      "category": "player"
+    },
+    "titan_footstep": {
+      "sounds": [
+        "suit/titan_footstep"
+      ],
+      "category": "player"
+    },
+    "titan_transformation": {
+      "sounds": [
+        "suit/titan_transformation"
+      ],
+      "category": "player"
+    },
+    "attack_roar": {
+      "sounds": [
+        "suit/attack_roar"
+      ],
+      "category": "player"
+    },
+    "rasengan": {
+      "sounds": [
+        "suit/rasengan"
+      ],
+      "category": "player"
+    },
+    "kurama_mode_transform": {
+      "sounds": [
+        "suit/kurama_mode_transform"
+      ],
+      "category": "player"
+    },
+    "sukuna_domain_sound": {
+      "sounds": [
+        "suit/sukuna_domain_sound"
+      ],
+      "category": "player"
+    },
+    "slash": {
+      "sounds": [
+        "suit/slash"
+      ],
+      "category": "player"
+    },
+    "blade": {
+      "sounds": [
+        "suit/blade"
+      ],
+      "category": "player"
+    },
+    "bone_claw": {
+      "sounds": [
+        "suit/bone_claw"
+      ],
+      "category": "player"
+    },
+    "landing": {
+      "sounds": [
+        "suit/landing"
+      ],
+      "category": "player"
+    },
+    "rika_nani": {
+      "sounds": [
+        "suit/rika_nani"
+      ],
+      "category": "player"
+    },
+    "rika_slash": {
+      "sounds": [
+        "suit/rika_slash"
+      ],
+      "category": "player"
+    },
+    "ora": {
+      "sounds": [
+        "suit/ora"
+      ],
+      "category": "player"
+    }
+}

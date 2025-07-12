@@ -1,0 +1,18 @@
+{
+    "display": {
+      "name": {
+        "translate": "Ki Manipulation"
+      },
+      "icon": {
+        "texture": "db:textures/gui/nodes/ki_manipulation.png"
+      }
+    },
+    "requirements": [ 
+      "fiskheroes:magic"
+    ],
+    "price": {
+      "TUTRIDIUM": 7,
+      "XP_LEVELS": 25
+    }
+  }
+  

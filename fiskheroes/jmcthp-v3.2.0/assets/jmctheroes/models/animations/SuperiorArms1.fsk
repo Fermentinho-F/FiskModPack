@@ -1,0 +1,273 @@
+;data_0 = moving
+;data_1 = jumping
+;data_2 = shifting
+;data_3 = right top arm hit
+;data_4 = right bottom arm hit
+;data_5 = left top arm hit
+;data_6 = left bottom arm hit
+;data_7 = running
+;data_8 = shielding
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{x} = min({vel}, 1){data_9}{d1}{d} / 2.5
+
+;====================================================;
+
+{TopRight_rotZ} += 5'{x}
+{TopRightO_rotZ} += 5'{x}
+{BottomRight_rotZ} -= 5'{x}
+{BottomRightO_rotZ} -= 5'{x}
+{TopLeft_rotZ} += 5'{x}
+{TopLeftO_rotZ} += 5'{x}
+{BottomLeft_rotZ} -= 5'{x}
+{BottomLeftO_rotZ} -= 5'{x}
+
+;====================================================;
+
+{TopRight_rotZ} -= 5'{motY}
+{TopRightO_rotZ} -= 5'{motY}
+
+{BottomRight_rotZ} += 5'{motY}
+{BottomRightO_rotZ} += 5'{motY}
+
+{TopLeft_rotZ} += 5'{motY}
+{TopLeftO_rotZ} += 5'{motY}
+
+{BottomLeft_rotZ} -= 5'{motY}
+{BottomLeftO_rotZ} -= 5'{motY}
+
+;====================================================;
+
+{TopRight_rotX} += 15'{x}
+{TopRightO_rotX} += 15'{x}
+{BottomRight_rotX} += 15'{x}
+{BottomRightO_rotX} += 15'{x}
+{TopLeft_rotX} += 15'{x}
+{TopLeftO_rotX} += 15'{x}
+{BottomLeft_rotX} += 15'{x}
+{BottomLeftO_rotX} += 15'{x}
+
+;====================================================;
+{data_0} = curve {data_0}
+
+{TopRight_rotX} -= 5'{data_0}
+{TopRightO_rotX} -= 5'{data_0}
+{TopRight2_rotX} += 15'{data_0}
+{TopRightO2_rotX} += 15'{data_0}
+{TopRight3_rotX} += 15'{data_0}
+{TopRightO3_rotX} += 15'{data_0}
+
+{BottomRight_rotX} -= 25'{data_0}
+{BottomRightO_rotX} -= 25'{data_0}
+{BottomRight1_rotX} += 25'{data_0}
+{BottomRightO1_rotX} += 25'{data_0}
+{BottomRight2_rotX} += 5'{data_0}
+{BottomRightO2_rotX} += 5'{data_0}
+{BottomRight3_rotX} += 20'{data_0}
+{BottomRightO3_rotX} += 20'{data_0}
+
+{TopLeft_rotX} -= 5'{data_0}
+{TopLeftO_rotX} -= 5'{data_0}
+{TopLeft2_rotX} += 15'{data_0}
+{TopLeftO2_rotX} += 15'{data_0}
+{TopLeft3_rotX} += 15'{data_0}
+{TopLeftO3_rotX} += 15'{data_0}
+
+{BottomLeft_rotX} -= 25'{data_0}
+{BottomLeftO_rotX} -= 25'{data_0}
+{BottomLeft1_rotX} += 25'{data_0}
+{BottomLeftO1_rotX} += 25'{data_0}
+{BottomLeft2_rotX} += 5'{data_0}
+{BottomLeftO2_rotX} += 5'{data_0}
+{BottomLeft3_rotX} += 20'{data_0}
+{BottomLeftO3_rotX} += 20'{data_0}
+
+;====================================================;
+
+{data_1} = curve {data_1}
+
+{TopRight_rotZ} += 7.5'{data_1}
+{TopRightO_rotZ} += 7.5'{data_1}
+{TopRight2_rotX} += 5'{data_1}
+{TopRightO2_rotX} += 5'{data_1}
+{TopRight3_rotX} -= 10'{data_1}
+{TopRightO3_rotX} -= 10'{data_1}
+
+{BottomRight_rotZ} += 10'{data_1}
+{BottomRightO_rotZ} += 10'{data_1}
+{BottomRight1_rotX} += 25'{data_1}
+{BottomRightO1_rotX} += 25'{data_1}
+{BottomRight2_rotX} += 5'{data_1}
+{BottomRightO2_rotX} += 5'{data_1}
+
+{TopLeft_rotZ} -= 7.5'{data_1}
+{TopLeftO_rotZ} -= 7.5'{data_1}
+{TopLeft2_rotX} += 5'{data_1}
+{TopLeftO2_rotX} += 5'{data_1}
+{TopLeft3_rotX} -= 10'{data_1}
+{TopLeftO3_rotX} -= 10'{data_1}
+
+{BottomLeft_rotZ} -= 10'{data_1}
+{BottomLeftO_rotZ} -= 10'{data_1}
+{BottomLeft1_rotX} += 25'{data_1}
+{BottomLeftO1_rotX} += 25'{data_1}
+{BottomLeft2_rotX} += 5'{data_1}
+{BottomLeftO2_rotX} += 5'{data_1}
+
+;====================================================;
+
+{data_2} = curve {data_2}
+
+{BottomRight_rotX} += 10'{data_2}
+{BottomRightO_rotX} += 10'{data_2}
+{BottomRight_rotZ} += 2.5'{data_2}
+{BottomRightO_rotZ} += 2.5'{data_2}
+{BottomRight2_rotX} += 15'{data_2}
+{BottomRightO2_rotX} += 15'{data_2}
+
+{BottomLeft_rotX} += 10'{data_2}
+{BottomLeftO_rotX} += 10'{data_2}
+{BottomLeft_rotZ} -= 2.5'{data_2}
+{BottomLeftO_rotZ} -= 2.5'{data_2}
+{BottomLeft2_rotX} += 15'{data_2}
+{BottomLeftO2_rotX} += 15'{data_2}
+
+;====================================================;
+
+{data_3} = curve {data_3}
+
+{TopRight_rotX} += 35'{data_3}
+{TopRightO_rotX} += 35'{data_3}
+{TopRight_rotZ} -= 10'{data_3}
+{TopRightO_rotZ} -= 10'{data_3}
+
+{TopRight2_rotX} += 40'{data_3}
+{TopRightO2_rotX} += 40'{data_3}
+
+{TopRight3_rotX} -= 45'{data_3}
+{TopRightO3_rotX} -= 45'{data_3}
+
+;====================================================;
+
+{data_4} = curve {data_4}
+
+{BottomRight_rotX} += 35'{data_4}
+{BottomRightO_rotX} += 35'{data_4}
+{BottomRight_rotZ} += 5'{data_4}
+{BottomRightO_rotZ} += 5'{data_4}
+
+{BottomRight2_rotX} += 25'{data_4}
+{BottomRightO2_rotX} += 25'{data_4}
+
+{BottomRight3_rotX} -= 35'{data_4}
+{BottomRightO3_rotX} -= 35'{data_4}
+
+;====================================================;
+
+{data_5} = curve {data_5}
+
+{TopLeft_rotX} += 35'{data_5}
+{TopLeftO_rotX} += 35'{data_5}
+{TopLeft_rotZ} += 10'{data_5}
+{TopLeftO_rotZ} += 10'{data_5}
+
+{TopLeft2_rotX} += 40'{data_5}
+{TopLeftO2_rotX} += 40'{data_5}
+
+{TopLeft3_rotX} -= 45'{data_5}
+{TopLeftO3_rotX} -= 45'{data_5}
+
+;====================================================;
+
+{data_6} = curve {data_6}
+
+{BottomLeft_rotX} += 35'{data_6}
+{BottomLeftO_rotX} += 35'{data_6}
+{BottomLeft_rotZ} -= 10'{data_6}
+{BottomLeftO_rotZ} -= 10'{data_6}
+
+{BottomLeft2_rotX} += 25'{data_6}
+{BottomLeftO2_rotX} += 25'{data_6}
+
+{BottomLeft3_rotX} -= 35'{data_6}
+{BottomLeftO3_rotX} -= 35'{data_6}
+
+;====================================================;
+
+{data_7} = curve {data_7}
+{data_7} = sin(pi(1 - {data_7}))^1
+
+{TopRight_rotX} += 2.5'{data_7}
+{TopRightO_rotX} += 2.5'{data_7}
+{TopRight_rotZ} += 1'{data_7}
+{TopRightO_rotZ} += 1'{data_7}
+
+{BottomRight_rotX} += 2.5'{data_7}
+{BottomRightO_rotX} += 2.5'{data_7}
+{BottomRight_rotZ} -= 1'{data_7}
+{BottomRightO_rotZ} -= 1'{data_7}
+
+{TopLeft_rotX} += 2.5'{data_7}
+{TopLeftO_rotX} += 2.5'{data_7}
+{TopLeft_rotZ} -= 1'{data_7}
+{TopLeftO_rotZ} -= 1'{data_7}
+
+{BottomLeft_rotX} += 2.5'{data_7}
+{BottomLeftO_rotX} += 2.5'{data_7}
+{BottomLeft_rotZ} += 1'{data_7}
+{BottomLeftO_rotZ} += 1'{data_7}
+
+;====================================================;
+
+{data_8} = curve {data_8}
+
+{TopRight_rotX} @ {data_8} -> 115'
+{TopRightO_rotX} @ {data_8} -> 115'
+{TopRight_rotZ} @ {data_8} -> -30'
+{TopRightO_rotZ} @ {data_8} -> -30'
+{TopRight1_rotX} @ {data_8} -> -115'
+{TopRightO1_rotX} @ {data_8} -> -115'
+{TopRight2_rotX} @ {data_8} -> 65'
+{TopRightO2_rotX} @ {data_8} -> 65'
+{TopRight3_rotX} @ {data_8} -> 85'
+{TopRightO3_rotX} @ {data_8} -> 85'
+
+{BottomRight_rotX} @ {data_8} -> 125'
+{BottomRightO_rotX} @ {data_8} -> 125'
+{BottomRight_rotZ} @ {data_8} -> -160'
+{BottomRightO_rotZ} @ {data_8} -> -160'
+{BottomRight1_rotX} @ {data_8} -> -120'
+{BottomRightO1_rotX} @ {data_8} -> -120'
+{BottomRight2_rotX} @ {data_8} -> 100'
+{BottomRightO2_rotX} @ {data_8} -> 100'
+{BottomRight3_rotX} @ {data_8} -> 60'
+{BottomRightO3_rotX} @ {data_8} -> 60'
+
+{TopLeft_rotX} @ {data_8} -> 115'
+{TopLeftO_rotX} @ {data_8} -> 115'
+{TopLeft_rotZ} @ {data_8} -> 30'
+{TopLeftO_rotZ} @ {data_8} -> 30'
+{TopLeft1_rotX} @ {data_8} -> -115'
+{TopLeftO1_rotX} @ {data_8} -> -115'
+{TopLeft2_rotX} @ {data_8} -> 65'
+{TopLeftO2_rotX} @ {data_8} -> 65'
+{TopLeft3_rotX} @ {data_8} -> 85'
+{TopLeftO3_rotX} @ {data_8} -> 85'
+
+{BottomLeft_rotX} @ {data_8} -> 125'
+{BottomLeftO_rotX} @ {data_8} -> 125'
+{BottomLeft_rotZ} @ {data_8} -> 160'
+{BottomLeftO_rotZ} @ {data_8} -> 160'
+{BottomLeft1_rotX} @ {data_8} -> -120'
+{BottomLeftO1_rotX} @ {data_8} -> -120'
+{BottomLeft2_rotX} @ {data_8} -> 100'
+{BottomLeftO2_rotX} @ {data_8} -> 100'
+{BottomLeft3_rotX} @ {data_8} -> 60'
+{BottomLeftO3_rotX} @ {data_8} -> 60'
+
+;====================================================;

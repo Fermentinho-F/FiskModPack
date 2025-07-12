@@ -1,0 +1,127 @@
+{
+  "name": "Hellfire",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 25,
+          "damageProfile": {
+            "damage": 15.0,
+            "types": {
+              "HELLFIRE": 1.0
+            },
+              "properties": {
+               "COOK_ENTITY": true,
+               "HEAT_TRANSFER": 90,
+               "IGNITE": 6,
+               "REDUCE_KNOCKBACK": 5.0
+              }
+          },
+          "whipBurn": {
+            "frequency": 5,
+            "damageProfile": {
+              "damage": 1.0,
+              "types": {
+                "HELLFIRE": 1.0
+              },
+              "properties": {
+               "REDUCE_KNOCKBACK": 5.0
+              }
+            }
+          }
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "HELLFIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 320,
+          "REDUCE_KNOCKBACK": 1.0
+        }
+      },
+      "chargeTime": 1,
+      "duration": 60,
+      "cooldownTime": 15,
+      "range": 8.0,
+      "radius": 0.8,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:fireball": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "HELLFIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 90,
+          "IGNITE": 6
+        }
+      },
+      "radius": 2.5,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "COLD",
+      "factor": 2.0
+    },
+    "fiskheroes:regeneration": {
+      "factor": 15
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 32.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:firestorm_flight_enable"
+      }
+    },
+    "fiskheroes:charged_punch": {
+      "chargeTime": 3
+    },
+    "fiskheroes:transformation": {
+      "key": "HELLFIREKATANA",
+      "transformation": {
+        "toggleData": "tmhp:dyn/electrical",
+        "timerData": "tmhp:dyn/electrical_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/electrical",
+        "cooldownData": "tmhp:dyn/electrical_cooldown",
+        "duration": 600,
+        "recovery": 1.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "tmhp:textures/gui/firecharge.png",
+      "data": "tmhp:dyn/electrical_cooldown"
+    }
+  ]
+}

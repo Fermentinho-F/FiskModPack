@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.reverseflash.vibration.on",
+  "volume": 0.6,
+  "fadeOut": 7
+}

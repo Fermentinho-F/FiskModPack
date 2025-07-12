@@ -1,0 +1,46 @@
+{data2} = 3^({data}-({data}-0.6)^4*200 -0.75)
+{data4} = 3^({data}-({data}-0.54)^4*200 -0.75)
+{data3} = 3^({data}-({data}-0.4)^4*200 -0.5)
+{data5} = 3^({data}-({data}-0.65)^4*200 -0.75)
+
+{data11} = 3^({data}-({data}-0.34)^4*200 -0.25)
+{data1} = 3^({data}-({data}-0.4)^4*200 -0.25)
+{data} = 3^({data}-({data}-0.3)^4*2000 -0.25)
+
+{rightArm_posX} -=0.5 * {data1}
+{rightArm_posY} +=0.5 * {data2}
+{rightArm_posZ} +=3.1 * {data1}
+
+{leftArm_posX} +=0.5 * {data1}
+{leftArm_posY} -=0.5 * {data2}
+{leftArm_posZ} +=2.1 * {data1}
+
+
+{rightArm_rotX} @ {data4} -> -25'
+{rightArm_rotY} @ {data5} -> 30'
+
+{leftArm_rotY} @ {data5} -> -35'
+{leftArm_rotZ} @ {data3} -> -15'
+
+{rightLeg_rotY} @ {data5} -> 10'
+{leftLeg_rotZ} @ {data5} -> -2'
+
+{body_rotX} @ {data1} -> -10'
+{body_rotY} @ {data1} -> 7'
+
+
+{body_posX} +=0.3 * {data1}
+
+{body_posZ} +=2.1 * {data1}
+
+
+
+{head_posY} +=1.5 * {data1}
+{head_posZ} +=5 * {data1}
+
+
+{head_rotX} @ {data4} -> sin(-35')
+{head_rotY} @ {data2} -> -20'
+{head_rotZ} @ {data3} -> -7'
+
+

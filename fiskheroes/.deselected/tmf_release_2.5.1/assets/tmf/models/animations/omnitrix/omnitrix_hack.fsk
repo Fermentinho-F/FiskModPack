@@ -1,0 +1,20 @@
+{data} = {data_0}
+
+{hackDevice_posX} -= 1-{data}
+
+{c1_rotZ} -= 25{data}'
+{c2_rotY} -= 25{data}'
+{c3_rotZ} += 25{data}'
+{c4_rotY} += 25{data}'
+
+{c5_rotY} += 25{data}'
+{c5_rotZ} += 25{data}'
+
+{c6_rotY} -= 25{data}'
+{c6_rotZ} += 25{data}'
+
+{c7_rotY} += 25{data}'
+{c7_rotZ} -= 25{data}'
+
+{c8_rotY} -= 25{data}'
+{c8_rotZ} -= 25{data}'

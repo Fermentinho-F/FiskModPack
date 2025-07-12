@@ -1,0 +1,26 @@
+{
+  "particles": [
+    {
+	  "condition": "entity.getData('fiskheroes:dyn/superhero_landing_ticks')>0",
+      "type": "FLAME",
+	  "anchor": "leftArm",
+      "amount": 25,
+	  "offset": {
+        "tp": [-1.0, 9.0, 0.0],
+        "fp": [-8.0, 8.0, 4.0]
+      },
+	  "randMotion": [-0.6, 0.1, -0.6]
+    },
+	{
+	  "condition": "entity.getData('fiskheroes:dyn/superhero_landing_ticks')>0",
+      "type": "minecraft:largesmoke",
+	  "anchor": "leftArm",
+      "amount": 10,
+	  "offset": {
+        "tp": [-1.0, 9.0, 0.0],
+        "fp": [-8.0, 8.0, 4.0]
+      },
+	  "randMotion": [-0.6, 0.1, -0.6]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "name": "Exo Suit",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 6.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": -1
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 5.9,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": -1
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 12,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.2,
+      "boostSpeed": 0.26,
+      "canBoost": true,
+      "canRoll": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 40.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:blade": {
+    }
+  }
+}

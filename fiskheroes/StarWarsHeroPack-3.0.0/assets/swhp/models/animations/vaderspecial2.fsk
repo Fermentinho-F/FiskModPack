@@ -1,0 +1,6 @@
+{data} = curve {data}
+{MainBlock_posZ} = -300{data}
+{MainBlock_posY} = -30 + 100{data}
+
+out "rotate" ({yaw}, 1, 0, 0)
+out "rotate" (-{pitch}, 0, 1, 0)

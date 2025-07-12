@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.kang_the_conqueror.teleport",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

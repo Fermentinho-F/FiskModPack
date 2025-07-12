@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:yuno",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap6_7",
+    "fiskheroes:flight",
+    "fiskheroes:defense",
+    "fiskheroes:ranged3",
+    "fiskheroes:melee2",
+    "fiskheroes:magic",
+    "tmhp:black_clover",
+    "tmhp:swordsman",
+    "tmhp:heropack2"
+  ]
+}

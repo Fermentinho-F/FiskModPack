@@ -1,0 +1,119 @@
+{
+    "display": {
+    "name": "Let... Him... Cook!",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/let_him_cook.png"
+    }
+    },
+    "requirements": [
+    "jjkp:sukuna"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 5
+  },
+  "criteria": {
+    "pig": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Pig"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Pig'"
+      }
+    },
+    "porkchop": {
+      "trigger": "fiskheroes:item_smelted",
+      "description": {
+        "translate": "Cook A Porkchop"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_SMELTED"
+        },
+        "check": "item.name() == 'minecraft:cooked_porkchop'"
+      }
+    },
+    "cow": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Cow"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Cow'"
+      }
+    },
+    "steak": {
+      "trigger": "fiskheroes:item_smelted",
+      "description": {
+        "translate": "Cook A Steak"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_SMELTED"
+        },
+        "check": "item.name() == 'minecraft:cooked_beef'"
+      }
+    },
+    "chicken": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Chicken"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Chicken'"
+      }
+    },
+    "nuggets": {
+      "trigger": "fiskheroes:item_smelted",
+      "description": {
+        "translate": "Cook A Chicken"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_SMELTED"
+        },
+        "check": "item.name() == 'minecraft:cooked_chicken'"
+      }
+    },
+    "potato": {
+      "trigger": "fiskheroes:item_smelted",
+      "description": {
+        "translate": "Bake A Potato"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_SMELTED"
+        },
+        "check": "item.name() == 'minecraft:baked_potato'"
+      }
+    },
+    "fish": {
+      "trigger": "fiskheroes:item_smelted",
+      "description": {
+        "translate": "Cook A Fish"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_SMELTED"
+        },
+        "check": "item.name() == 'minecraft:cooked_fished'"
+      }
+    }
+  }
+}

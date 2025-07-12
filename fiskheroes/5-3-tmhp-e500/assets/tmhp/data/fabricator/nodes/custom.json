@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Custom Heroes"
+    },
+    "icon": {
+      "text": "Custom"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

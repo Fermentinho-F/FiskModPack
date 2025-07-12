@@ -1,0 +1,81 @@
+{
+  "name": "Martian Powers",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "CAMOUFLAGE",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.15,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.1,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 50.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    }
+  }
+}

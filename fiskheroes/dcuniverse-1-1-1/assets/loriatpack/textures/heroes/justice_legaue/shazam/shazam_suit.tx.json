@@ -1,0 +1,14 @@
+{
+  "texture": "loriatpack:xor/shazam_suit_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(2 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  }
+}
+
+

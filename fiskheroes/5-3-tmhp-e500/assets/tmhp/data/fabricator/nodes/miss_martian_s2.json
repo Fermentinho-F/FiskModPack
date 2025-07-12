@@ -1,0 +1,17 @@
+{
+  "suit": "tmhp:miss_martian_s2",
+  "display": {
+  "description": "\u00A72Hello Megan!"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap1",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility",
+    "fiskheroes:melee",
+    "tmhp:miss_martian",
+    "tmhp:young_justice",
+    "tmhp:alien",
+    "tmhp:heropack2"
+  ]
+}

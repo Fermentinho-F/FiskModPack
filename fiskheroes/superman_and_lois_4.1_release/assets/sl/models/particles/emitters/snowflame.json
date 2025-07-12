@@ -1,0 +1,22 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "anchor": "head",
+      "type": "BLUE_FLAME",
+      "amount": 4,
+      "offset": [ -0.1, 0.0, 0.1 ],
+      "motion": [0.1, 0.1, -0.1],
+      "randOffset": [0.0, 0.0, 0.0],
+      "randMotion": [0.0, 0.0, 0.0],
+      "mirror": true
+    },
+    {
+      "condition": "!firstPerson",
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 1,
+      "motion": [0, 0, 255],
+      "mirror": false
+    }
+  ]
+}

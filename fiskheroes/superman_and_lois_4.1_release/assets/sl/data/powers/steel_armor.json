@@ -1,0 +1,150 @@
+{
+  "name": "Steel Armor",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTachyons": false,
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": "sl:steel_thruster_loop",
+        "SPRINT": "sl:steel_thruster_enable"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [ 1.5, 0.75 ],
+      "soundEvents": {
+        "LEAP": "sl:jump"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:iron_man_flight_roll",
+        "BOOST": "fiskheroes:iron_man_boost",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive"]
+      }
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:manta_blade_enable",
+        "DISABLE": "fiskheroes:manta_blade_disable"
+      }
+    },
+    "fiskheroes:charged_beam|propulsion": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 10,
+        "types": {
+          "SOUND": 3.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 4,
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "chargeTime": 25,
+      "duration": 8,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 2.2,
+      "soundEvents": {
+        "SHOOT": "sl:leap",
+        "SHOOT_STOP": "fiskheroes:manta_beam_stop",
+        "BEAM_AMBIENT": "sl:frost_breath_loop",
+        "CHARGE": "sl:lasercharge2"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "ENERGY": 1.0,
+          "REDSOLAR": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0,
+          "EFFECTS": [
+            {
+              "id": 7,
+              "duration": 3,
+              "amplifier": 1.0
+            },
+            {
+              "id": 6,
+              "duration": 1,
+              "amplifier": 0.5
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "range": 48.0,
+      "speed": 10.0,
+      "spread": 0.2,
+      "radius": 0.4,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "sl:shoot"
+      }
+    },
+    "fiskheroes:sentry_mode": {
+      "soundEvents": {
+        "OPEN": "fiskheroes:sentry_mode_open",
+        "CLOSE": "fiskheroes:sentry_mode_close"
+      }
+    },
+    "fiskheroes:fire_immunity": {},
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "factor": 3.0
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|fire": {
+      "damageType": "FIRE"
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:metal_skin": {},
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 0.01
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "if (!entity.getData('sl:dyn/hammer_profile') && !entity.getData('sl:dyn/steelcooldown')) {entity.getInterpolatedData('fiskheroes:beam_charge')}"
+    }
+  ]
+}

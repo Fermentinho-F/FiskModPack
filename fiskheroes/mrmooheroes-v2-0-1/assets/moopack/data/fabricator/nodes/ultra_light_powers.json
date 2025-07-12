@@ -1,0 +1,28 @@
+{
+    "display": {
+    "name": "The Ultimate Power Of The Light",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/ultra_light_powers.png"
+    }
+    },
+    "requirements": [
+    "moopack:light_powers",
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:block_broken_by_player",
+        "description": {
+            "translate": "Retrieve A Block Of Eternium"
+        },
+        "condition": {
+            "variables": {
+            "block": "BLOCK_BEING_BROKEN"
+            },
+            "check": "block.name() == 'fiskheroes:eternium_block' && Math.random() >=0.9"
+        }
+        }
+    }
+}

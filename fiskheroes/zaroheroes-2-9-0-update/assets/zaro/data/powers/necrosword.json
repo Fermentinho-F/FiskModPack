@@ -1,0 +1,100 @@
+{
+  "name": "power.fiskheroes.retractable_shield.name",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 200.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 30,
+        "cooldown": 80
+      },
+      "coverage": {
+        "yawRadius": 35.0,
+        "pitchRadius": 35.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+  "fiskheroes:shadowdome": {
+      "chargeTime": 40,
+      "duration": 1000,
+      "radius": 24.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+     },
+     "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:shadowchain_loop", "fiskheroes:shadowchain_start"],
+        "RELEASE": "fiskheroes:shadowchain_release"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ENERGY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:cosmic_beam"
+      }
+    },
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    }
+  },
+  "hud": [
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:gravity_manipulation",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

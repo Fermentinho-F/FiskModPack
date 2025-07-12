@@ -1,0 +1,90 @@
+{
+  "name": "Nature DNA Activator",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.19,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 14,
+        "speed": 0.12,
+        "drag": 0.03
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.75,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:falcon_flight_enable", "fiskheroes:falcon_flight_loop", "fiskheroes:falcon_flight_ambient_loop"],
+        "DISABLE": "fiskheroes:falcon_flight_disable",
+        "BOOST": "fiskheroes:falcon_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:falcon_flight_roll",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:falcon_flight_whoosh"]
+      }
+    },
+    "fiskheroes:controlled_flight|boosted": {
+      "speed": 0.07,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 14,
+        "speed": 0.12,
+        "drag": 0.03
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.75,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:falcon_boost_enable",
+        "DISABLE": "fiskheroes:falcon_flight_disable",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:falcon_flight_roll",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:falcon_flight_whoosh"]
+      }
+    },
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "moopack:textures/gui/bars/vulture_boost.png",
+      "data": "fiskheroes:dyn/super_boost_cooldown"
+    },
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:gravity_manipulation",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

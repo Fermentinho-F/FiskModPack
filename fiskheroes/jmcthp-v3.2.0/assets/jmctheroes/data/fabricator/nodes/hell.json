@@ -1,0 +1,35 @@
+{
+  "display": {
+    "name": {
+      "translate": "Hell"
+    },
+    "description": {
+      "translate": "Pay Hell a visit"
+    },
+    "icon": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 13
+  },
+  "criteria": {
+    "Hell": {
+      "trigger": "fiskheroes:location",
+      "description": {
+        "translate": "Feel the coldness of Hell for 30 minutes"
+      },
+      "minSuccessCount": 30,
+      "condition": {
+        "variables": {
+          "player": "PLAYER_IN_LOCATION"
+        },
+        "check": "player.ticksExisted() % 1200 == 0 && player.world().getDimension() == -1"
+      }
+    }
+  }
+}

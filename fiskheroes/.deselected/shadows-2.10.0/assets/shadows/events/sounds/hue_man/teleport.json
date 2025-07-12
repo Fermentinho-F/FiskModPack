@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+   "sound": "shadows:hue_man.teleport",
+   "condition": {
+    "start": "entity.getData('shadows:dyn/4float_interp_reset') == 0"
+  },
+   "pitch": "0.9 + Math.random() * 0.2"
+}

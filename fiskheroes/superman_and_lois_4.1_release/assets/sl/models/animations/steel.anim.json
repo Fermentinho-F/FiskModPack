@@ -1,0 +1,7 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "sl:flight/hover/steel",
+    "sl:flight/boost/steel"
+  ]
+}

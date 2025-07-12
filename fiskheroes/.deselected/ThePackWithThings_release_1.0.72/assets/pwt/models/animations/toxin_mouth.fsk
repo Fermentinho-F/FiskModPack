@@ -1,0 +1,32 @@
+;JAW
+{jaw_rotX} += (pi/180)*28.0*{data_0}
+{jaw_overlay_rotX} += (pi/180)*28.0*{data_0}
+
+{jaw_posY} += 1.0*{data_0}
+{jaw_overlay_posY} += 1.0*{data_0}
+
+{jaw_posZ} += 0.4*{data_0}
+{jaw_overlay_posZ} += 0.4*{data_0}
+
+{mouth_inside_rotX} += (pi/180)*28.0*{data_0}
+
+
+{mouth_inside_posY} += 0.9*{data_0}
+
+
+{mouth_inside_posZ} -= 1.0*{data_0}
+
+{tongue_1_rotX}  @ {data_0} -> 15' 
+{tongue_1_rotY}  @ {data_0} -> 0' 
+{tongue_2_rotY}  @ {data_0} -> 0' 
+{tongue_3_rotY}  @ {data_0} -> 0' 
+{tongue_4_rotY}  @ {data_0} -> 0' 
+
+;TONGUE_LOOP
+
+{tongue_1_rotX} = 0.35*sin(pi{data_1})
+{tongue_1_rotY} = 0.35*sin(2pi{data_1})
+{tongue_2_rotX}  = 0.2*sin(2pi{data_1})
+{tongue_2_rotY}  = 0.4*sin(4pi{data_1})
+{tongue_3_rotX}  = 0.5*sin(2pi{data_1})
+{tongue_4_rotX}  = -0.5*sin(3pi{data_1})

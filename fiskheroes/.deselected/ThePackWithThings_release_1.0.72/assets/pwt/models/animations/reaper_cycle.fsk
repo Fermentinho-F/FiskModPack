@@ -1,0 +1,49 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+
+
+{anim0} = curve min(animate2({data}, 0.5, 0.0, 0.1, 0.4), 1)
+{anim1} = curve min(animate2({data}, 0.3, 0.05, 0.1, 0.2), 1)
+{anim2} = curve min(animate2({data}, 0.6, 0.2, 0.2, 0.2), 1)
+{anim3} = curve min(animate2({data}, 0.4, 0.25, 0.1, 0.1), 1)
+{anim4} = curve min(animate2({data}, 0.2, 0.3, 0.1, 0.1), 1)
+{anim5} = curve min(animate2({data}, 0.3, 0.6, 0.1, 0.2), 1)
+
+
+{head_rotX} += 26'{anim0} 
+{head_rotY} += 18'{anim0} 
+
+{rightArm_rotX} @ {anim1} -> -65'
+{rightArm_rotY} @ {anim1} -> -33'
+{rightArm_rotZ} @ {anim1} -> -7'
+
+{leftArm_rotX} @ {anim1} -> -62'
+{leftArm_rotY} @ {anim1} -> 60'
+
+{head_rotX} -= 20'{anim2}
+{head_rotY} = 0.5sin(0.5pi{anim2})
+
+{leftArm_posY} @ {anim2} -> 1
+
+{leftArm_rotX} @ {anim2} -> 10'
+{leftArm_rotY} @ {anim2} -> 10'
+{leftArm_rotZ} @ {anim2} -> -30'
+
+{leftArm_posY} @ {anim3} -> 1
+
+{leftArm_rotX} @ {anim3} -> 45'
+{leftArm_rotY} @ {anim3} -> 7'
+{leftArm_rotZ} @ {anim3} -> 25'
+
+{leftArm_rotX} -= 0.5sin(pi{anim4})
+
+
+{head_rotX} += 26'{anim5} 
+{head_rotY} += 18'{anim5} 
+
+{rightArm_rotX} @ {anim5} -> -55'
+{rightArm_rotY} @ {anim5} -> -25'
+
+
+{leftArm_rotX} @ {anim5} -> -62'
+{leftArm_rotY} @ {anim5} -> 60'

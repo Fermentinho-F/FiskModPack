@@ -1,0 +1,41 @@
+{anim1} = 5*360'{data}
+{anim2} = 2*360'{data}
+{anim3} = 1*360'{data}
+
+{tornado1_rotY} -= {anim1}
+{tornado2_rotY} += {anim2}
+{tornado3_rotY} += {anim3}
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{x} = 45min(1.5{vel}, 1)
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+{body_rotX} += {x}clamp({forward}, -2, 2)'
+{body_rotZ} += {x}clamp({strafe}, -2, 2)'
+
+{x} = min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adz} = abs {forward}
+
+{tornado1_rotX} -= 0.3{forward}
+{tornado1_rotZ} += 0.05{adz} + 0.4{strafe}
+{tornado2_rotX} -= 0.3{forward}
+{tornado2_rotZ} += 0.05{adz} + 0.4{strafe}
+{tornado3_rotX} -= 0.3{forward}
+{tornado3_rotZ} += 0.05{adz} + 0.4{strafe}
+
+{ring1_rotX} += sin(2pi{data})0.2
+{ring1_rotZ} += sin(2pi{data})0.2
+
+{ring2_rotX} -= sin(2pi{data})0.15
+{ring2_rotZ} += sin(2pi{data})0.15
+
+{ring3_rotX} += sin(2pi{data})0.1
+{ring3_rotZ} -= sin(2pi{data})0.1

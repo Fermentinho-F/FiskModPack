@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Kryptonite Gave Me Powers"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/kryptonite.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "XP_LEVELS": 4
+  }
+}

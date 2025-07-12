@@ -1,0 +1,8 @@
+{
+  "suit": "sabri:quicksilver_xmen",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:traversal2",
+    "sabri:sehp"
+  ]
+}

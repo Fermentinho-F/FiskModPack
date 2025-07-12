@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.slhv_shoot",
+  "condition": "fiskheroes:beam_shooting",
+  "fadeOut": 5,
+  "loop": false,
+  "volume": 1.0
+}

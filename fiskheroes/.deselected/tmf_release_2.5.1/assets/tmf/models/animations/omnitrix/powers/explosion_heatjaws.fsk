@@ -1,0 +1,13 @@
+{data} = 2*sin(pi*{data})
+
+{1_rotX} @ {data} -'> -126'
+{1_rotY} @ {data} -'> -385'
+{1_rotZ} @ {data} -'> -246'
+
+{2_rotX} @ {data} -'> -231'
+{2_rotY} @ {data} -'> -265'
+{2_rotZ} @ {data} -'> -185'
+
+{3_rotX} @ {data} -'> -143'
+{3_rotY} @ {data} -'> -231'
+{3_rotZ} @ {data} -'> -243'

@@ -1,0 +1,117 @@
+{
+  "name": "Generate Tornadoes",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["shadows:tornado/flight/start", "shadows:tornado/flight/loop"],
+        "DISABLE": "shadows:tornado/flight/end"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 100,
+        "cooldown": 150
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": ["shadows:tornado/start", "shadows:tornado/shield_loop"],
+        "BLOCK_STOP": "shadows:tornado/end"
+      }
+    },
+    "fiskheroes:heat_vision|front": {
+      "damageProfile": {
+        "damage": 2.0
+      },
+      "range": 0.02,
+      "radius": 180,
+      "canDoGriefing": false
+    },
+    "fiskheroes:heat_vision|back": {
+      "damageProfile": {
+        "damage": 2.0
+      },
+      "range": -0.02,
+      "radius": 180,
+      "canDoGriefing": false
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "BLUNT": 1.0
+        }
+      },
+      "chargeTime": 10,
+      "duration": 40,
+      "cooldownTime": 10,
+      "range": 10.0,
+      "radius": 0.5,
+      "canDoGriefing": false,
+      "soundEvents": {
+        "SHOOT": "shadows:tornado/start",
+        "SHOOT_STOP": "shadows:tornado/end",
+        "BEAM_AMBIENT": "shadows:tornado/attack_loop"
+      }
+    },
+    "fiskheroes:cooldown|shield_cooldown": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:shield')",
+        "cooldownData": "shadows:dyn/tornado",
+        "duration": 200,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "TORNADO",
+      "transformation": {
+        "toggleData": "shadows:dyn/1boolean_reset",
+        "timerData": "shadows:dyn/4float_interp_reset",
+        "time": 20
+      },
+      "isToggle": false,
+      "soundEvents":{
+        "ENABLE": "shadows:tornado/loop"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "BLUNT": 1.0
+        }
+      },
+      "range": 20.0,
+      "radius": 1
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "shadows:dyn/tornado"
+    }
+  ]
+}

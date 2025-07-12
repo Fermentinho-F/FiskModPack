@@ -1,0 +1,89 @@
+{
+  "name": "Speed Force",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 1,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast"
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ENERGY": 1.0,
+          "ELECTRICITY": 0.5
+        },
+        "properties": {
+          "EFFECTS": [{
+            "id": "fiskheroes:disable_speed",
+            "duration": 100,
+            "amplifier": 3
+          },
+          {
+            "id": "minecraft:slowness",
+            "duration": 100,
+            "amplifier": 3            }
+          ],
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.25,
+          "ADD_KNOCKBACK": 4,
+          "HIT_COOLDOWN": 20
+
+        }
+      },
+      "chargeTime": 1,
+      "range":48,
+      "isToggle": true
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flicker_loop_comics",
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": "fiskheroes:super_speed_sprint_barry",
+        "STOP": "fiskheroes:super_speed_stop_barry"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:slow_motion_enable_cw",
+        "DISABLE": "fiskheroes:slow_motion_disable_cw"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

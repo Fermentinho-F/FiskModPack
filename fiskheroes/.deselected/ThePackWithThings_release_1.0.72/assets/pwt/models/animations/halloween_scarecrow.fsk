@@ -1,0 +1,82 @@
+{Right_held_item} = {data_9}
+{Left_held_item} = {data_10}
+
+{head_posY} -= 2
+
+{head_posZ} -= 2.5
+
+{body_posY} -= 4
+
+{rightArm_posY} -= 4.7
+{leftArm_posY} -= 4.7
+
+{rightArm_rotZ} += 5'*(1-{Right_held_item})
+{leftArm_rotZ} -= 5'*(1-{Left_held_item})
+
+{rightArm_posX} += 2.75
+{leftArm_posX} -= 2.75
+
+{rightLeg_posY} -= 7
+{leftLeg_posY} -= 7
+{rightLeg_posX} += 0.5
+{leftLeg_posX} -= 0.5
+
+{loop} = {data_0}*(1-{data_1})
+
+
+{head_rotX} -= 10'sin(picurve {loop})
+
+{head_rotZ} -= 5'sin(2pi{loop})
+
+{head_posY} += 0.5sin(2pi{loop})
+
+{head_posZ} += 0.5sin(2pi{loop})
+
+{rightArm_posY} -= 0.5sin(picurve {loop})*(1-{Right_held_item})
+{leftArm_posY} -= 0.5sin(picurve {loop})*(1-{Left_held_item})
+
+
+{pose} = {data_1}
+
+
+{head_rotX} @ {pose} -> -10' - 30'sin(pi{pose})
+{head_rotY} @ {pose} -'>  -10'sin(20pi{pose})
+{head_rotZ} @ {pose} -> 0
+
+{rightArm_posX} -= 2{pose}
+{leftArm_posX} += 2{pose}
+
+{rightArm_posY} += 2{pose}
+{leftArm_posY} += 2{pose}
+
+{rightArm_posZ} += 2sin(pi{pose})
+{leftArm_posZ} += 2sin(pi{pose})
+
+{rightLeg_posX} += 1.5{pose}
+{leftLeg_posX} -= 1.5{pose}
+
+{leftLeg_posY} -= 2.5sin(pi{pose})
+{leftLeg_posZ} -= 1.0sin(pi{pose})
+
+{body_rotY} @ {pose} -> 0
+
+{rightArm_rotX} @ {pose} -> -80'sin(pi{pose})
+{rightArm_rotY} @ {pose} -'> 0
+{rightArm_rotZ} @ {pose} -> 90'
+{leftArm_rotX} @ {pose} -> -80'sin(pi{pose})
+{leftArm_rotY} @ {pose} -'> 0
+{leftArm_rotZ} @ {pose} -> -90'
+{rightLeg_rotX} @ {pose} -> 0
+{rightLeg_rotX} += 30'sin(pi{pose})
+{rightLeg_rotY} @ {pose} -'> 0
+{rightLeg_rotZ} @ {pose} -> 0
+{leftLeg_rotX} @ {pose} -> 0
+{leftLeg_rotX} += 10'sin(pi{pose})
+{leftLeg_rotY} @ {pose} -'> 0
+{leftLeg_rotZ} @ {pose} -> 0
+{leftLeg_rotZ} -= 20'sin(pi{pose})
+
+
+out "pivot" (0, 0.9, 0)
+out "translate" (0.1{pose}, 0, 0)
+out "rotate" (30sin(pi{pose}), 1, 0, 0)

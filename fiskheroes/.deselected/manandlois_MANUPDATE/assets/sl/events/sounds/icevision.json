@@ -1,0 +1,8 @@
+{
+  "sound": "sl:main.icevision",
+  "condition": "fiskheroes:heat_vision",
+  "volume": "fiskheroes:heat_vision_timer",
+  "loop": true,
+  "fadeOut": 10,
+  "fadeIn": 10
+}

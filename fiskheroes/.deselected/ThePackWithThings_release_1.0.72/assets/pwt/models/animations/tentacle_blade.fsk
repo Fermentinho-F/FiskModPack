@@ -1,0 +1,8 @@
+{swing} = sin(pi{data})
+
+;{rightArm_rotX} @ 0.5 -> -pi / 5
+
+{rightArm_rotY} -= 20'{swing}
+{rightArm_rotZ} += 50'{swing}
+{rightArm_rotX} -= 15'{swing}
+

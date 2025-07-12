@@ -1,0 +1,33 @@
+{
+  "name": "Portability Upgrade",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "tmf:dyn/transformed2",
+        "timerData": "tmf:dyn/transform_timer",
+        "time": 80
+      },
+      "soundEvents": {
+        "ENABLE": "tmf:backpack",
+        "DISABLE": "tmf:backpack2"
+      }
+    },
+    "fiskheroes:cooldown|default": {
+      "cooldown": {
+        "toggleData": "tmf:dyn/transformed2",
+        "cooldownData": "tmf:dyn/transform_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:cooldown|diving": {
+      "cooldown": {
+        "toggleData": "!entity.isOnGround() && entity.getData('tmf:dyn/transform_timer') > 0 && entity.getData('tmf:dyn/transform_timer') < 1",
+        "cooldownData": "tmf:dyn/cooldown_1",
+        "duration": 40,
+        "recovery": 1.0
+      }
+    }
+  }
+}

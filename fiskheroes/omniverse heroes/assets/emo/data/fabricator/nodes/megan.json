@@ -1,0 +1,13 @@
+{
+  "suit": "emo:megan",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility",
+    "fiskheroes:traversal",
+    "fiskheroes:melee2",
+    "fiskheroes:defense",
+    "emo:alien",
+    "emo:cadmus"
+  ]
+}

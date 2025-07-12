@@ -1,0 +1,16 @@
+{
+    "display": {
+    "name": "Speed Force Variations",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/speed_force_variations.png"
+    }
+    },
+    "requirements": [
+    "fiskheroes:speed_force",
+    "moopack:moopack",
+  ],
+    "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 10
+  }
+}

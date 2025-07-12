@@ -1,0 +1,82 @@
+{data_0} = curve {data_0}
+
+;BASE_POSE
+{head_posX} += -0.5{data_0}
+{head_posY} += 11{data_0}
+{head_posZ} += -0.5{data_0}
+
+{head_rotX} += 45'{data_0}
+{head_rotY} += 0'{data_0}
+{head_rotZ} += 0'{data_0}
+
+{body_posX} += -0.5{data_0}
+{body_posY} += 11{data_0}
+{body_posZ} += -0.5{data_0}
+
+{body_rotX} += 50'{data_0}
+{body_rotY} += -13'{data_0}
+{body_rotZ} += -15'{data_0}
+
+{rightArm_posX} += 0.5{data_0}
+{rightArm_posY} += 11.5{data_0}
+{rightArm_posZ} += -1.1{data_0}
+
+{rightArm_rotX} += -3'{data_0}
+{rightArm_rotY} += -30'{data_0}
+{rightArm_rotZ} += 0{data_0}
+
+{leftArm_posX} += -0.9{data_0}
+{leftArm_posY} += 8.6{data_0}
+{leftArm_posZ} += 2.5{data_0}
+
+{leftArm_rotX} += 47'{data_0}
+{leftArm_rotY} += -5'{data_0}
+{leftArm_rotZ} += -26'{data_0}
+
+{rightLeg_posX} += -0.6{data_0}
+{rightLeg_posY} += 8{data_0}
+{rightLeg_posZ} += 4{data_0}
+
+{rightLeg_rotX} += 80'{data_0}
+{rightLeg_rotY} += -10'{data_0}
+{rightLeg_rotZ} += 0'{data_0}
+
+{leftLeg_posX} += 2.1{data_0}
+{leftLeg_posY} += 0{data_0}
+{leftLeg_posZ} += -0.8{data_0}
+
+{leftLeg_rotX} += 13'{data_0}
+{leftLeg_rotY} += -10'{data_0}
+{leftLeg_rotZ} += 0'{data_0}
+
+;LAUNCH_POSE
+
+{head_rotX} += 30'{data_1}
+
+{body_rotX} += 10'{data_1}
+
+{rightArm_posX} += -0.3{data_1}
+{rightArm_posY} += 0.8{data_1}
+{rightArm_posZ} += 1.0{data_1}
+
+{rightArm_rotZ} += -45'{data_1}
+
+{leftArm_posY} += -1.0{data_1}
+
+{leftArm_rotX} += 60'{data_1}
+{leftArm_rotY} += 10'{data_1}
+{leftArm_rotZ} += 10'{data_1}
+
+{rightLeg_posY} += -2{data_1}
+
+{rightLeg_rotX} += -10'{data_1}
+
+
+{leftLeg_posZ} += 2.4{data_1}
+
+{leftLeg_rotX} += -10'{data_1}
+{leftLeg_rotY} += -10'{data_1}
+
+
+
+

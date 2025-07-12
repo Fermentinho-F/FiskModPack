@@ -1,0 +1,13 @@
+{
+  "suit": "loriatpack:cyborg",
+  "requirements": [
+	"fiskheroes:tier6_7",
+	"loriatpack:dc_universe",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee",
+	"loriatpack:cybernetic",	
+    "fiskheroes:ranged2",
+	"fiskheroes:teleportation"
+  ]
+}

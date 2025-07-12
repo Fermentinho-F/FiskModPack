@@ -1,0 +1,16 @@
+{leftArm_posX} = 0
+
+{rightArm_posX} = 0
+{rightArm_posY} = -7
+{rightArm_posZ} = 2
+
+{rightArm_rotX} = 0.0
+{rightArm_rotY} = 0.0
+{rightArm_rotZ} = 0.0
+{leftArm_rotX} = 0.0
+{leftArm_rotY} = 0.0
+{leftArm_rotZ} = 0.0
+
+{head_rotX} = 0.0
+{head_rotY} = 0.0
+{head_rotZ} = 0.0

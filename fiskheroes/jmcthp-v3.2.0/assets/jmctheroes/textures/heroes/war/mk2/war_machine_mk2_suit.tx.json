@@ -1,0 +1,18 @@
+{
+  "texture": {
+    "in": "jmctheroes:war/mk2/war_machine_mk2_suit",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_suit_<TIMER>"
+      }
+    ],
+    "out": "jmctheroes:generated/war/mk2/war_machine_mk2_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "fiskheroes:suit_open_timer",
+      "values": [1, 2, 3, 4, 5]
+    }
+  }
+}

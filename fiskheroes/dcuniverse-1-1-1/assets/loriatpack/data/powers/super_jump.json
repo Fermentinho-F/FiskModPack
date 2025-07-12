@@ -1,0 +1,21 @@
+{
+  "name": "Super Jump",
+  "modifiers": {
+	"fiskheroes:cooldown": {
+    "cooldown": {
+      "toggleData": "entity.getData('loriatpack:dyn/jump_timer') == 1",
+      "cooldownData": "loriatpack:dyn/jump_cooldown",
+      "duration": 25,
+      "recovery": 1
+    }
+	}
+   },
+"hud": [
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/shazam_jump.png",
+    "data": "loriatpack:dyn/jump_cooldown"
+  }
+]
+}
+

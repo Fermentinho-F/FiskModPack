@@ -1,0 +1,67 @@
+{
+  "name": "Speed Force Connection",
+  "modifiers": {
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:intangible",
+        "cooldownData": "fiskheroes:dyn/intangibility_cooldown",
+        "duration": 7,
+        "recovery": 0.05
+      }
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": false
+    },
+    "fiskheroes:cooldown|lightning": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:speed_sprinting')",
+        "cooldownData": "fiskheroes:energy_charge",
+        "duration": 50,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": "fiskheroes:super_speed_sprint_barry",
+        "STOP": "fiskheroes:super_speed_stop_barry"
+      }
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:flight": {
+      "speed": 0.05
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "ELECTRICITY": 1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.45
+        }
+      },
+      "chargeTime": 600,
+      "range": 48.0,
+      "chainRadius": 5
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/invisibility2.png",
+      "data": "fiskheroes:dyn/intangibility_cooldown"
+    }
+  ]
+}

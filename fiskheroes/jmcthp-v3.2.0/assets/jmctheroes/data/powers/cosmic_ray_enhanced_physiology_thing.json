@@ -1,0 +1,42 @@
+{
+  "name": "Cosmic Ray Enhanced Physiology",
+  "modifiers": {
+    "fiskheroes:damage_immunity": {
+      "damageType": "EXPLOSION",
+      "damageType": "BULLET"
+    },
+    "fiskheroes:potion_immunity": {
+        "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [3.5, 0.2]
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 20.0,
+      "knockback": 1.0,
+      "duration": 100,
+      "cooldownTime": 160
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 3.0,
+      "cooldownTime": 40
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{x} = 30{hover}min(1.5{vel}, 1)
+
+{adz} = abs {forward}
+
+;out "rotate" (2{x}clamp({strafe}, -2, 2), 0, 0, 1)
+;out "rotate" (-{x}clamp({forward}, -0.5, 0.5), 0.1, 0, 0)
+
+;out "rotate" ( (-50{data_0}-{x}clamp({forward}, -1, 1)) , 0, 1, 0)
+
+;out "rotate" (10*{data_0}, 0, 0, 1)
+
+;{leftLeg_rotZ} -= 10'{data_0}

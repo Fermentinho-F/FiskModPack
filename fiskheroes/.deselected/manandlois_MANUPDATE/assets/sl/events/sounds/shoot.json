@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.shoot",
+  "volume": 1.05,
+  "fadeOut": 20,
+  "pitch": "0.9 + Math.random() * 0.5"
+}

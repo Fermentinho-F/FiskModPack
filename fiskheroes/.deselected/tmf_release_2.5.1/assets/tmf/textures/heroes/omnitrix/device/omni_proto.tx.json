@@ -1,0 +1,23 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/device/omni_proto_g",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      }
+    ],
+    "out": "tmf:generated/omni_proto_<HUE>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "entity.getWornChestplate().nbt().getInteger('Color') | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 30
+      }
+    }
+  },
+  "isDynamic": false
+}

@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "Batfamily"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/batfamily.png"
+    }
+  },
+  "requirements": [
+    "tmhp:dc"],
+  "price": {
+    "XP_LEVELS": 5
+  }
+}

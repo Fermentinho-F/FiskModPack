@@ -1,0 +1,7 @@
+[12:31:17][FINE][noppes.npcs.controllers.ScriptController:60] Sat Jul 12 12:31:17 BRT 2025
+[12:31:17][FINE][noppes.npcs.CustomNpcs:185] Script Engines Available:
+[12:31:20][FINE][noppes.npcs.CustomNpcs:185] Scala: .scala
+[12:33:53][FINE][noppes.npcs.controllers.LinkedNpcController:29] Loading Linked Npcs
+[12:33:53][FINE][noppes.npcs.controllers.LinkedNpcController:29] Done loading Linked Npcs
+[12:33:54][FINE][noppes.npcs.controllers.DialogController:28] Loading Dialogs
+[12:33:54][FINE][noppes.npcs.controllers.DialogController:28] Done loading Dialogs

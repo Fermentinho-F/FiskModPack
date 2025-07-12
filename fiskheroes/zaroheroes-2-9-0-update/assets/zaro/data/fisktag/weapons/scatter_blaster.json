@@ -1,0 +1,41 @@
+{
+  "name": "Scatter Blaster",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 24,
+  "damage": 2,
+  "fisktag": {
+    "sprintShootDelay": 6
+  },
+  "recoil": {
+    "amount": 1.5,
+    "cameraShake": 3.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.0,
+      "speed": 20.0
+    },
+    {
+      "type": "BEAM",
+      "spread": 0.2,
+      "speed": 20.0,
+      "offset": {
+        "yaw": 9.0
+      }
+    },
+    {
+      "type": "BEAM",
+      "spread": 0.2,
+      "speed": 20.0,
+      "offset": {
+        "yaw": -9.0
+      }
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:scatter_blaster_shoot"
+  }
+}

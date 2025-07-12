@@ -1,0 +1,8 @@
+{
+  "suit": "shadows:vampire",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "shadows:vampirism",
+    "shadows:shadow00dev"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Clone Trooper Armor (Phase I)",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 200,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 30.0,
+            "types": {
+              "EXPLOSION": 1.0
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 40,
+          "radius": 8.0
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 200,
+          "uses": 3
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "particles": [
+    
+    {
+      "condition": "!firstPerson",
+      "type": "SMOKE",
+      "amount": 1,
+      "offset": [0.0, -0.55, -0.175],
+      "motion": [0.0, -0.1, 0.0],
+      "mirror": true
+    }
+  ]
+}

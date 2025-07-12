@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "\u00A7bPKG TEAM (Elseworlds)",
+    "description": "\u00A79Thanks for downloading PKG Heropack!",
+    "icon": {
+      "texture": "elseworld:textures/pkg.png"
+    },
+    "isLevelable": false
+  },
+  "autoUnlock": false,
+  "requirements": ["pkg:pkg"]
+}

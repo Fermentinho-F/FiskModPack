@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:omnitrix.recal.alien_cycle",
+  "condition": "entity.getData('fiskheroes:gravity_manip') && entity.getWornChestplate().nbt().getString('HeroType') == 'tmf:omni_recal' && !entity.getData('tmf:dyn/transformation')",
+  "volume": 1.5,
+  "fadeOut": 5
+}

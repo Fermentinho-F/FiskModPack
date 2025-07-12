@@ -1,0 +1,90 @@
+{
+  "name": "Upgraded Web Shooters",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "fiskheroes:web_shoot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 96.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 13,
+          "uses": 8,
+          "dissolveTime": 120,
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot"
+          }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot"
+          }
+        },
+        "fiskheroes:rapid_webs": {
+          "cooldown": 30,
+          "uses": 1,
+          "quantity": 5,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 0.5,
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "SHOOT": "fiskheroes:web_shoot"
+          }
+        },
+        "fiskheroes:ricochet_web": {
+          "cooldown": 13,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot"
+          }
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:web_switch"
+      }
+    }
+  }
+}

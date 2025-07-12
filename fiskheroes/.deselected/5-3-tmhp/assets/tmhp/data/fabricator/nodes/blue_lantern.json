@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:blue_lantern",
+  "display": {
+    "description": "\u00A79In fearful day, in raging night, With strong hearts full, our souls ignite, When all seems lost in the War of Light, Look to the stars--- For hope burns bright!"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap6_7",
+    "tmhp:lantern_spectrum",
+    "tmhp:heropack2"
+  ]
+}

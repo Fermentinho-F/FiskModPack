@@ -1,0 +1,6 @@
+{data} = curve ({data} * 2)
+{rightArm_rotX} @ {data} -> -240'
+{rightArm_rotY} @ {data} -> 40'
+
+out "firstPerson" (true)
+out "translate" (0, -1{data}, 0)

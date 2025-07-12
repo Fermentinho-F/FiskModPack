@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "0": "fiskheroes:aiming",
+    "1": "fiskheroes:aiming_left"
+  },
+  "sequence": [
+    {
+      "data": { "index": 0, "range": [ 0.0, 0.5 ] },
+      "input": "0"
+    },
+    {
+      "data": { "index": 0, "range": [ 0.5, 1 ] },
+      "input": "1"
+    }
+  ]
+}

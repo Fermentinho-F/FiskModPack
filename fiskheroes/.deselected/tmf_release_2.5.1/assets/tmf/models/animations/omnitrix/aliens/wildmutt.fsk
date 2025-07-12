@@ -1,0 +1,79 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;data_0 - punch timer
+;data_1 - isPunching
+;data_2 - walking/running(higher motion input + faster loop) + jumping
+;data_3 - jumping
+;data_4 - tail/idle looper
+
+{sprint} = {data_0}
+{loop60} = {data_1}
+{sniff_base} = {data_2}
+{idle} = sin(2pi{data_3})*(1 + 2*{data_6})
+{idle2} = sin(pi{data_3})*(1 + 2*{data_6})
+{punch} = sin(pi{data_4})
+
+{sniff_1} = curve min(animate2({sniff_base}, 0.3, 0, 0.06, 0.06), 1)
+{sniff_2} = curve min(animate2({sniff_base}, 0.2, 0.035, 0.06, 0.06), 1)
+{sniff_3} = curve min(animate2({sniff_base}, 0.2, 0.115, 0.06, 0.06), 1)
+{sniff_4} = curve min(animate2({sniff_base}, 0.1, 0.07, 0.03, 0.03), 1)
+{sniff_5} = curve min(animate2({sniff_base}, 0.1, 0.09, 0.03, 0.03), 1)
+
+
+{headJaw_rotX} -= -12'{sniff_1} -2'{idle2} - 27'{punch}
+
+{head_rotX} -= {lookY} + 35'{sniff_1} + 4'{sniff_4} + 5'{sniff_5} + 9'{punch}
+{head_rotY} -= 0.6*({bodyYaw} - {yaw})' + 18'{sniff_2} - 23'{sniff_3}
+{head_rotZ} += 0.25*({bodyYaw} - {yaw})' 
+
+;===========First Half of movement animation===========
+{walking} = min({limbSwingAmount} + abs(3*{motY}*{data_6}), 1)
+{limbSwing} = {limbSwing} + {data_5}
+{movementA} = curve sqrt((cos({limbSwing} * if({sprint} == 0, 1, 0)* 0.04662 + pi))^2)
+{movementB} = curve sqrt((cos({limbSwing} * if({sprint} == 0, 1, 0)* 0.04662 + 0.5*pi))^2)
+{motion} = curve if({movementA}>{movement2}, {movementA}, {movementB})
+{movement2} = {movementA}
+
+{mot1} = curve min(animate2({motion}, 2, 0, 0.2, 0), 1)*{walking} 
+{mot2} = curve min(animate2({motion}, 2, 0.2, 0.3, 0), 1)*{walking} 
+{mot3} = curve min(animate2({motion}, 0.6, 0.14, 0.27, 0.27), 1)*{walking} 
+{mot4} = curve min(animate2({motion}, 2, 0.5, 0.17, 0), 1)*{walking} 
+{mot5} = curve min(animate2({motion}, 2, 0.67, 0.33, 0), 1)*{walking} 
+
+{armR_rotX} += -23'{mot1} -22'{mot2} +8'{mot4} +37'{mot5} + 47'* cos({limbSwing} * 0.3262)*{walking} * {sprint}
+{armR_rotY} += -15'{mot1} +28'{mot2} -13'{mot4}
+{armR_rotZ} +=  0.05{idle}
+{armR_posZ} +=  -2{mot4} +2{mot5}
+{lowerArmR_rotX} += 23'{mot2} +8'{mot4} -31'{mot5}
+{lowerArmR_rotY} += -3'{mot1} -5'{mot2} -3'{mot4} +11'{mot5}
+{lowerArmR_rotZ} += 8'{mot1} -15'{mot2} +7'{mot4}
+{armL_rotY} += -7'{mot3}
+{body_rotZ} += 7'{mot3}
+{body_lower_rotY} += -7'{mot3}
+{legL_rotX} -= 37'* cos({limbSwing} * if({sprint} == 0, 1, 2.3) * 0.2262)*{walking} 
+{legLowerL2_rotX} += 21'* cos({limbSwing} * if({sprint} == 0, 1, 2.3) * 0.2262)*{walking} 
+;===========Second Half of movement animation===========
+{movementC} = curve sqrt((cos({limbSwing} * if({sprint} == 0, 1, 0)* 0.04662 + 0.25pi))^2)
+{movementD} = curve sqrt((cos({limbSwing} * if({sprint} == 0, 1, 0)* 0.04662 + 0.75*pi))^2)
+{motion} = curve if({movementC}>{movement3}, {movementC}, {movementD})
+{movement3} = {movementC}
+
+{mot1} = curve min(animate2({motion}, 2, 0, 0.2, 0), 1)*{walking} 
+{mot2} = curve min(animate2({motion}, 2, 0.2, 0.3, 0), 1)*{walking} 
+{mot3} = curve min(animate2({motion}, 0.6, 0.14, 0.27, 0.27), 1)*{walking} 
+{mot4} = curve min(animate2({motion}, 2, 0.5, 0.17, 0), 1)*{walking} 
+{mot5} = curve min(animate2({motion}, 2, 0.67, 0.33, 0), 1)*{walking} 
+
+{armL_rotX} += -23'{mot1} -22'{mot2} +8'{mot4} +37'{mot5} + 47'* cos({limbSwing} * 0.2262)*{walking} * {sprint}
+{armL_rotY} -= -15'{mot1} +28'{mot2} -13'{mot4}
+{armL_rotZ} -=  0.05{idle}
+{armL_posZ} +=  -2{mot4} +2{mot5}
+{lowerArmL_rotX} += 23'{mot2} +8'{mot4} -31'{mot5}
+{lowerArmL_rotY} -= -3'{mot1} -5'{mot2} -3'{mot4} +11'{mot5}
+{lowerArmL_rotZ} -= 8'{mot1} -15'{mot2} +7'{mot4}
+{armR_rotY} -= -7'{mot3}
+{body_rotZ} -= 7'{mot3}
+{body_lower_rotY} += 7'{mot3}
+{legR_rotX} +=  if({sprint} == 0, 1, -1.2)* 37'* cos({limbSwing} * if({sprint} == 0, 1, 2.3) * 0.2262)*{walking}
+{legLowerR2_rotX} -= if({sprint} == 0, 1, -1.1)* 21'* cos({limbSwing} * if({sprint} == 0, 1, 2.3) * 0.2262)*{walking}
+{body_rotX} -= (0.004*{data_6}+0.005){idle} -8'sin(pi{loop60}*{sprint}*{walking}) 
+

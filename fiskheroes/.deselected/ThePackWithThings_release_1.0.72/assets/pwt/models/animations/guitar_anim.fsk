@@ -1,0 +1,9 @@
+{grip_posX} @ {data} -> 1.0
+
+{grip_posY} @ {data} -> 7.0
+{grip_posZ} @ {data} -> 0.5
+
+{grip_rotX} @ {data} -> 110'
+{grip_rotY} @ {data} -> -40'
+{grip_rotZ} @ {data} -> 20'
+

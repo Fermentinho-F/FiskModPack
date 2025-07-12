@@ -1,0 +1,22 @@
+{
+  "name": "Mutated Titan Physiology",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 3
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.7, 0.2]
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_resistance|explosion": {
+      "damageType": "EXPLOSION",
+      "factor": 0.5
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Youtuber"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/yt.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "TUTRIDIUM": 6,
+    "XP_LEVELS": 8
+  }
+}

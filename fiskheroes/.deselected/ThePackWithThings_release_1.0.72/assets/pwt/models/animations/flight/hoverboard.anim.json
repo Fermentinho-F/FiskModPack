@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "pwt:flight/header",
+    "pwt:flight/hoverboard_hover",
+    "pwt:flight/hoverboard_boost",
+	"pwt:flight/hoverboard_hover_model"
+  ]
+}

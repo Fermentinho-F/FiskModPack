@@ -1,0 +1,44 @@
+All Rights Reserved unless otherwise explicitly stated.
+
+1. Definitions.
+	This license agreement is a legal agreement between you (the "User"), and SkarMC (the "Licensor"), owner of the The Fazbear Entertainment LLC Heropack. By downloading, installing, or using The Fazbear Entertainment LLC Heropack, you agree to the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, do not download, install, or use The Fazbear Entertainment LLC Heropack.
+      	a. "Agreement" or "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by this document.
+      	b. "Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+
+2. Permissions for modpacks creators.
+	Users are allowed to use The Fazbear Entertainment LLC Heropack in public modpacks, provided that they:
+     	a. Obtain prior written permission from the Licensor.
+     	b. Give credit and provide a link to the Planet Minecraft, or CurseForge page of The Fazbear Entertainment LLC Heropack at INSERT LINK HERE or INSERT LINK HERE respectively, in an easy to find or prominent location.
+     	c. Do not modify or create derivative works of any part of The Fazbear Entertainment LLC Heropack.
+		d. At any time the Licensor may request that The Fazbear Entertainment LLC Heropack be removed from the modpack in question.
+
+3. Permissions for servers.
+	Users are allowed to use The Fazbear Entertainment LLC Heropack in public server, provided that they:
+     	a. Obtain prior written permission from the Licensor.
+     	b. Give credit and provide a link to the Planet Minecraft, or CurseForge page of The Fazbear Entertainment LLC Heropack at INSERT LINK HERE or INSERT LINK HERE respectively, in an easy to find or prominent location.
+     	c. Do not modify or create derivative works of any part of The Fazbear Entertainment LLC Heropack.
+		d. At any time the Licensor may request that The Fazbear Entertainment LLC Heropack be removed from the server in question.
+
+4. Permissions for all other individuals.
+   	Users are allowed to freely use Fazbear Entertainment LLC Heropack in singleplayer worlds without restrictions. However, you are not allowed to use the files to:
+   	a. Re-upload, steal, or copy any aspect of The Fazbear Entertainment LLC Heropack.
+   	b. Share any modified or derivative version of The Fazbear Entertainment LLC Heropack publically.
+
+5. Violations of Agreement.
+	Any violation of the terms or rules of this Agreement may result in legal action. The Licensor reserves the right to pursue any and all legal remedies against any violator of this Agreement.
+
+6. Limitation of Liability.
+	The Licensor is not responsible for any potential damage caused by The Fazbear Entertainment LLC Heropack.
+
+7. Governing law.
+	This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the User resides, without giving effect to any principles of conflicts of law.
+
+8. Version of agreement.
+	This license agreement is only applicable to the 1.0.2 release of The Fazbear Entertainment LLC Heropack. The Licensor reserves the right to change the terms and conditions of this Agreement for any subsequent version of The Fazbear Entertainment LLC Heropack.
+
+9. Contacting Licensor.
+	The Licensor can be contacted via Discord at @skarmc for any inquiries or to request permission to use The Fazbear Entertainment LLC Heropack in any of the abovementioned manners.
+
+All material belongs to their respective entities.
+Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational, or personal use tips the balance in favor of fair use. No copyright infringement intended.
+Copyright 2024 SkarMC

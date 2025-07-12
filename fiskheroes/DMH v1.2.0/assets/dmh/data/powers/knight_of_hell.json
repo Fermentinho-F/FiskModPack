@@ -1,0 +1,51 @@
+{
+  "name": "Knight Of Hell Physiology",
+  "modifiers": {
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_weakness|archangel": {
+      "damageType": "ARCHANGEL"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_weakness|colt": {
+      "damageType": "THE_COLT"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 200
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 6.0
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    }
+  }
+}
+

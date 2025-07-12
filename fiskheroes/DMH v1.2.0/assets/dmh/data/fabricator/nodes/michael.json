@@ -1,0 +1,20 @@
+{
+  "suit": "dmh:michael",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:magic",
+    "fiskheroes:flight",
+    "fiskheroes:cosmic",
+    "fiskheroes:regeneration2",
+    "fiskheroes:object_manipulation",
+    "dmh:dmhp"
+  ],
+  "price": {
+    "IRID_GOLD": 96,
+    "XP_LEVELS": 100
+  }
+}

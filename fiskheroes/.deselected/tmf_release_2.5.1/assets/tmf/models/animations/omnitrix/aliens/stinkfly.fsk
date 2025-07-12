@@ -1,0 +1,88 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{idle} = sin(2pi{data_0})
+{punch} = {data_1}
+{movement} = (cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5) * (1-{data_2})
+{flightLoop} = sin(pi{data_4})*{data_2}
+{flightBoost} = {data_3}
+{tailCharge} = {data_6}
+
+{legUpperR_rotX} += 0.3{movement} + 0.4{flightBoost} -0.3{tailCharge}
+{legUpperL_rotX} -= 0.3{movement} - 0.4{flightBoost} +0.3{tailCharge}
+{legLowerR_rotX} -= 0.3{movement} + 0.3{flightBoost} +0.2{tailCharge}
+{legLowerL_rotX} += 0.3{movement} - 0.3{flightBoost} -0.2{tailCharge}
+
+{legUpperR_rotY} += 0.3{tailCharge}
+{legUpperL_rotY} -= 0.3{tailCharge}
+{legLowerR_rotY} += 0.2{tailCharge}
+{legLowerL_rotY} -= 0.2{tailCharge}
+
+{head_rotX} -= {lookY} + {idle}' + 0.8*{flightBoost} - 0.6{tailCharge}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{rightArm_rotX} += 0.3{movement}
+{rightArm_rotZ} += 3'{idle}
+{rightArm2_rotX} += 2'{idle} + 34'{flightBoost}
+{rightArm2_posY} -= {flightBoost}
+{rightArm3_rotX} += 2'{idle}
+{rightArm3_rotZ} += 2'{idle}
+
+{leftArm_rotX} -= 0.3{movement}
+{leftArm_rotZ} -= 3'{idle}
+{leftArm2_rotX} += 2'{idle} + 34'{flightBoost}
+{leftArm2_posY} -= {flightBoost}
+{leftArm3_rotX} += 2'{idle}
+{leftArm3_rotZ} -= 2'{idle}
+
+{body_rotX} -= 0.5{tailCharge}
+{bodyLower3_rotX} += 2'{idle} - 0.2{tailCharge}
+{tail1_rotX} += {idle}' - 1.3{tailCharge}
+{tail2_rotX} += 2'{idle} - 0.6{tailCharge}
+{stinger1_rotX} += 0.6{tailCharge}
+
+{wingR_rotY} += 2'{idle} - 44'{flightLoop} - 50'{data_5}
+{wingL_rotY} -= 2'{idle} - 44'{flightLoop} - 50'{data_5}
+{wingR2_rotY} -=  20'{data_5}
+{wingL2_rotY} +=  20'{data_5}
+{wingR3_rotY} -=  30'{data_5}
+{wingL3_rotY} +=  30'{data_5}
+
+{punch1} = (1-{punch})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({punch} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rightArm_rotX} += ({rightArm_rotX} - ({punch1.1} * 1.2 + {punch1.2}))
+{rightArm_rotY} += {body_chest_rotY} * 8.0
+{rightArm_rotZ} += (sin({punch} * pi) * -0.4)
+;=================EYES======================
+{eyeRTop1_rotX} -= 3{idle}'
+{eyeRTop1_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+{eyeRTop2_rotX} -= 3{idle}'
+{eyeRTop2_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+
+{eyeRBot1_rotX} -= 3{idle}'
+{eyeRBot1_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+{eyeRBot2_rotX} -= 3{idle}'
+{eyeRBot2_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+
+{eyeLTop1_rotX} -= - 3{idle}'
+{eyeLTop1_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+{eyeLTop2_rotX} -= - 3{idle}'
+{eyeLTop2_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+
+{eyeLBot1_rotX} -= - 3{idle}'
+{eyeLBot1_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+{eyeLBot2_rotX} -= - 3{idle}'
+{eyeLBot2_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+
+;=================OVERLAYS======================
+
+{headD_rotX} = {head_rotX} 
+{headD_rotY} = {head_rotY} 
+
+{headO_rotX} = {head_rotX} 
+{headO_rotY} = {head_rotY} 
+
+{bodyD_rotX} = {body_rotX}
+{bodyO_rotX} = {body_rotX}

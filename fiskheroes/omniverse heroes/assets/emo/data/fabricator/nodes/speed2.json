@@ -1,0 +1,21 @@
+{
+  "display": {
+    "name": {
+      "translate": "Unknow Speed Force"
+    },
+    "icon": {
+      "texture": "fiskheroes:textures/gui/nodes/speed_force.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:speed_force",
+    "emo:cadmus",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3"
+  ],
+  "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 25
+  }
+}

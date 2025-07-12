@@ -1,0 +1,25 @@
+{
+  "display": {
+    "name": "Superman's Blood",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/blood.png"
+    }
+  },
+  "criteria": {
+    "bleed": {
+      "trigger": "fiskheroes:entity_hurt_by_player",
+      "description": "Deal damage as Superman or damage Superman",
+      "condition": {
+        "variables": {
+          "damage": "ENTITY_HURT",
+          "damaged": "PLAYER_ATTACKING"
+        },
+        "check": "damage.getWornChestplate().suitType() == 'sl:superman' || damaged.getWornChestplate().suitType() == 'sl:superman'"
+      }
+    }
+  },
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 15
+  }
+}

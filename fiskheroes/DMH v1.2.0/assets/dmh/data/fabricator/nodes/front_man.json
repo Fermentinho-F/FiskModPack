@@ -1,0 +1,11 @@
+{
+  "suit": "dmh:front_man",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee1",
+    "fiskheroes:ranged",
+    "fiskheroes:marksmanship",
+    "dmh:dmhp"
+  ]
+}

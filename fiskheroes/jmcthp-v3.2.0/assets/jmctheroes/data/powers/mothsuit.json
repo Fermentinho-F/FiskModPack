@@ -1,0 +1,24 @@
+{
+  "name": "Moth Suit ",
+  "modifiers": {
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:cooldown|moving": {
+      "cooldown": {
+        "toggleData": "entity.isOnGround()",
+        "cooldownData": "jmctheroes:dyn/moving_timer",
+        "duration": 5,
+        "recovery": 2.5
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.12,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["jmctheroes:moth_flight_enable", "jmctheroes:moth_flight_loop","fiskheroes:flight_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    }
+  }
+}

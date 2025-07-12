@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:warhammer_titan_shifter",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:traversal2",
+    "moopack:titan_abilities"
+  ]
+}

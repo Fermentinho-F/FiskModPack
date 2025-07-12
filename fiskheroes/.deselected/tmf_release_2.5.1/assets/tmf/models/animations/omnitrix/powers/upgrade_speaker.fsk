@@ -1,0 +1,21 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;data_0 - hv timer
+;data_1 - hv
+;data_2 - loop
+
+{hv_timer} = {data_0}
+{hv} = {data_1}
+{loop} = {data_2}
+{timer} = {hv}*{hv_timer}*sin(2*pi*{loop})
+
+{speaker1_rotY} += 5'*{timer} 
+{speaker1_rotZ} += 5'*{timer} 
+
+{speaker1.1_rotY} -= 10'*{timer} 
+{speaker1.1_rotZ} -= 10'*{timer} 
+
+{speaker2_rotY} += 5'*{timer} 
+{speaker2_rotZ} += 5'*{timer} 
+
+{speaker2.1_rotY} -= 10'*{timer} 
+{speaker2.1_rotZ} -= 10'*{timer} 

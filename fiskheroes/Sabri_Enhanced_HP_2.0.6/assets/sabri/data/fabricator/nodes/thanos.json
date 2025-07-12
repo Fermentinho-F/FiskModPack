@@ -1,0 +1,12 @@
+{
+    "suit": "sabri:thanos",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:melee3",
+      "fiskheroes:defense2",
+      "fiskheroes:regeneration",
+      "sabri:uru",
+      "sabri:sehp"
+    ]
+  }
+  

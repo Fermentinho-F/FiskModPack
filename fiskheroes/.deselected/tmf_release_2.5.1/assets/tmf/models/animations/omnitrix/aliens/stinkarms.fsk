@@ -1,0 +1,158 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{sneaking} = {data_4} 
+{idle} = sin(2pi{data_5})
+{spinning} = {data_8} 
+
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{head_rotX} -= {lookY} + 0.3{sneaking}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{body_chest_rotX} += 0.3{sneaking} 
+
+{r_leg_rotX} -= {movement} + 0.3{sneaking} 
+{l_leg_rotX} += {movement} - 0.3{sneaking}
+
+{bodyLower3_rotX} += 2'{idle}
+{tail1_rotX} += {idle}'
+{tail2_rotX} += 2'{idle}
+
+{flightLoop} = sin(pi{data_11})*{data_10}
+
+;TEST=====================================================================
+{punch1} = {data_0}
+{punch2} = {data_1}
+{punch3} = {data_2}
+{punch4} = {data_3}
+
+{charging} = {data_6}
+{shooting} = {data_7}
+
+{body_chest_rotY} += 0.05sin((sqrt({punch1}+{punch2}+0.2*({punch3}+{punch4}))) * pi * 2.0)
+{lowerArmsSwing} = 0.05sin((sqrt({punch3}+{punch4})) * pi * 2.0)
+{body_rotY} -= {body_chest_rotY}
+
+{wingR_rotY} += 2'{idle} - 44'{flightLoop} - 50'{data_9}
+{wingL_rotY} -= 2'{idle} - 44'{flightLoop} - 50'{data_9}
+{wingR2_rotY} -=  20'{data_9}
+{wingL2_rotY} +=  20'{data_9}
+{wingR3_rotY} -=  30'{data_9}
+{wingL3_rotY} +=  30'{data_9}
+
+{punch1} = (1-{data_0})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({data_0} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch2} = (1-{data_1})^3
+{punch2} = 1.0 - {punch2}
+{punch2.1} = sin({punch2} * pi)
+{punch2.2} = sin({data_1} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{r_arm_rotX} += ({r_arm_rotX} - ({punch1.1} * 1.2 + {punch1.2})) + {movement}
+{r_arm_rotY} += {body_chest_rotY} * 8.0
+{r_arm_rotZ} += (sin({data_0} * pi) * -0.4)
+
+{r_arm_rotX} += 2{body_chest_rotY} + {spinning}
+{r_arm_rotY} += 2{body_chest_rotY} 
+{r_arm_rotZ} += 0.05{idle} + 0.6*sin(pi*{punch3}) + {spinning}
+
+{l_arm_rotX} += ({l_arm_rotX} - ({punch2.1} * 1.2 + {punch2.2})) - {movement}
+{l_arm_rotY} -= {body_chest_rotY} * 8.0
+{l_arm_rotZ} -= (sin({data_1} * pi) * -0.4)
+
+{l_arm_rotX} += 2{body_chest_rotY} - {spinning}
+{l_arm_rotY} -= 2{body_chest_rotY}
+{l_arm_rotZ} -= 0.05{idle} + 0.6*sin(pi*{punch4}) + {spinning}
+
+{punch3} = (1-{data_2})^3
+{punch3} = 1.0 - {punch3}
+{punch3.1} = sin({punch3} * pi)
+{punch3.2} = sin({data_2} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch4} = (1-{data_3})^3
+{punch4} = 1.0 - {punch4}
+{punch4.1} = sin({punch4} * pi)
+{punch4.2} = sin({data_3} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{r_arm_lower_rotX} += ({r_arm_lower_rotX} - ({punch3.1} * 1.2 + {punch3.2})) - 0.5{movement} + 0.6{spinning}
+{r_arm_lower_rotY} += ({lowerArmsSwing} * 8.0)
+{r_arm_lower_rotZ} += (sin({data_2} * pi) * -0.4)
+
+{l_arm_lower_rotX} += ({l_arm_lower_rotX} - ({punch4.1} * 1.2 + {punch4.2})) + 0.5{movement} - 0.6{spinning}
+{l_arm_lower_rotY} -= ({lowerArmsSwing} * 8.0)
+{l_arm_lower_rotZ} -= (sin({data_3} * pi) * -0.4)
+
+{r_arm_lower_rotZ} += 0.025{idle} + 0.8{spinning}
+{l_arm_lower_rotZ} -= 0.025{idle} + 0.8{spinning}
+
+
+{r_arm_rotX} @ {shooting} -> - 1.2
+{r_arm_rotY} @ {shooting} -> -0.7
+{l_arm_rotX} @ {shooting} -> - 1.2
+{l_arm_rotY} @ {shooting} -> 0.7
+
+{r_arm_lower_rotX}  @ {shooting} -> -1.2
+{l_arm_lower_rotX}  @ {shooting} -> -1.2
+{r_arm_lower_rotY} @ {shooting} -> - 0.8
+{l_arm_lower_rotY} @ {shooting} -> 0.8
+
+{r_arm_rotX} @ {charging} -> 1
+{r_arm_rotZ} @ {charging} -> 1
+{l_arm_rotX} @ {charging} -> 1
+{l_arm_rotZ} @ {charging} -> -1
+
+{r_arm_lower_rotX}  @ {charging} -> 0.6
+{l_arm_lower_rotX}  @ {charging} -> 0.6 
+{r_arm_lower_rotZ} @ {charging} -> 0.8
+{l_arm_lower_rotZ} @ {charging} -> -0.8
+
+;===EYES==================================================================
+{eyeRTop1_rotX} -= 3{idle}'
+{eyeRTop1_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+{eyeRTop2_rotX} -= 3{idle}'
+{eyeRTop2_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+
+{eyeRBot1_rotX} -= 3{idle}'
+{eyeRBot1_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+{eyeRBot2_rotX} -= 3{idle}'
+{eyeRBot2_rotY} -= 0.2*({bodyYaw} - {yaw})' + 3{idle}'
+
+{eyeLTop1_rotX} -= - 3{idle}'
+{eyeLTop1_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+{eyeLTop2_rotX} -= - 3{idle}'
+{eyeLTop2_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+
+{eyeLBot1_rotX} -= - 3{idle}'
+{eyeLBot1_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+{eyeLBot2_rotX} -= - 3{idle}'
+{eyeLBot2_rotY} -= 0.2*({bodyYaw} - {yaw})' - 3{idle}'
+;OVERLAYS=====================================================================
+{body_chestO_rotX} = {body_chest_rotX}
+{body_chestO_rotY} = {body_chest_rotY}
+{body_chestO_posY} = {body_chest_posY}
+{bodyO_rotX} = {body_rotX}
+{bodyO_rotY} = {body_rotY}
+{headO_rotX} = {head_rotX}
+{headO_rotY} =  {head_rotY} 
+
+{r_armO_rotX} = {r_arm_rotX}
+{r_armO_rotY} = {r_arm_rotY}
+{r_armO_rotZ} = {r_arm_rotZ}
+{l_armO_rotX} = {l_arm_rotX}
+{l_armO_rotY} = {l_arm_rotY}
+{l_armO_rotZ} = {l_arm_rotZ}
+{r_arm_lowerO_rotX} = {r_arm_lower_rotX}
+{r_arm_lowerO_rotY} = {r_arm_lower_rotY}
+{r_arm_lowerO_rotZ} = {r_arm_lower_rotZ}
+{l_arm_lowerO_rotX} = {l_arm_lower_rotX}
+{l_arm_lowerO_rotY} = {l_arm_lower_rotY}
+{l_arm_lowerO_rotZ} = {l_arm_lower_rotZ}
+{r_legO_rotX} = {r_leg_rotX}
+{l_legO_rotX} = {l_leg_rotX}
+
+{body_chest1_rotX} = {body_chest_rotX}
+{body_chest1_rotY} = {body_chest_rotY}
+{body_chest1_posY} = {body_chest_posY}
+{head1_rotX} = {head_rotX}
+{head1_rotY} = {head_rotY}
+{head1_rotZ} = {head_rotZ}

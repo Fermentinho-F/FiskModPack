@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:phantasm",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:batman_comics",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:object_manipulation"
+  ]
+}

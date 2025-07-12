@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmhp:main.sharingan",
+  "volume": 0.8
+}

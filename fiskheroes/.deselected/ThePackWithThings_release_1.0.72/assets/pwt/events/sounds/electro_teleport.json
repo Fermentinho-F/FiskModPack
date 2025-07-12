@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.electro.teleport",
+  "volume": 1.0,
+  "pitch": "0.9 + Math.random() * 0.2"
+}

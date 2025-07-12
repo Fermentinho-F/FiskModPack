@@ -1,0 +1,14 @@
+{
+  "suit": "swhp:commander_cody",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:finalupdate",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration"
+  ],
+  "display": {
+  "description": "We make our own decisions. Our own choices. And we have to live with them too."
+  }
+}

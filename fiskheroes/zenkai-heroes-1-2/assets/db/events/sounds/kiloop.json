@@ -1,0 +1,8 @@
+{
+  "sound": "db:kiloop",
+  "condition": "entity.getData('fiskheroes:aiming') > 0",
+  "volume": 1.0,
+  "fadeIn": 10,
+  "fadeOut": 5,
+  "loop": true
+}

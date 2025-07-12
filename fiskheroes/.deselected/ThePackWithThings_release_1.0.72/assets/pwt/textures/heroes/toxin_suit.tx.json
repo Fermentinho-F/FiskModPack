@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "pwt:toxin_red",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/symbiot_suit_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/toxin_red_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(12 * entity.getInterpolatedData('pwt:dyn/symbiot_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 12
+      }
+    }
+  },
+  "isDynamic": true
+}

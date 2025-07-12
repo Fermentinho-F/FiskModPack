@@ -1,0 +1,468 @@
+; Extension animation
+
+
+; Rotation offset for reduced repetitiveness
+{data_1} = 45'{data_1}
+
+{root_rotY} = {data_1}
+
+
+; Open the claws for grabbing
+{claw1_1_posY} -= 4{data_2}
+{claw1_1_2_posY} -= 4{data_2}
+
+{claw1_2_posY} -= 4{data_2}
+{claw1_2_posZ} += 0.6{data_2}
+
+{claw1_2_2_posY} -= 4{data_2}
+
+{claw1_3_posY} -= 4{data_2}
+
+{claw1_3_2_posY} -= 5{data_2}
+
+{claw1_4_posY} -= 3{data_2}
+{claw1_4_posZ} += 1.6{data_2}
+
+
+{claw2_1_rotX} -= 19'{data_2}
+{claw2_1_rotZ} -= 97'{data_2}
+
+{claw2_1_2_rotZ} -= 1.5'{data_2}
+
+{claw2_2_rotZ} -= 13'{data_2}
+
+{claw2_2_2_rotZ} += 13'{data_2}
+
+{claw2_2_3_rotZ} += 30'{data_2}
+{claw2_2_3_rotY} -= 90'{data_2}
+
+{claw2_2_4_rotX} += 5'{data_2}
+
+{claw2_2_5_rotX} += 20'{data_2}
+
+{claw2_2_6_rotX} += 30'{data_2}
+
+{claw2_2_7_rotX} += 30'{data_2}
+
+
+
+{claw3_1_rotX} -= 13'{data_2}
+{claw3_1_rotZ} += 97'{data_2}
+
+{claw3_1_2_rotZ} += 1.5'{data_2}
+
+{claw3_2_rotZ} += 13'{data_2}
+
+{claw3_2_2_rotZ} -= 13'{data_2}
+
+{claw3_2_3_rotZ} -= 30'{data_2}
+{claw3_2_3_rotY} += 90'{data_2}
+
+{claw3_2_4_rotX} += 5'{data_2}
+
+{claw3_2_5_rotX} += 20'{data_2}
+
+{claw3_2_6_rotX} += 30'{data_2}
+
+{claw3_2_7_rotX} += 30'{data_2}
+
+
+
+
+{claw4_1_rotX} -= 105'{data_2}
+
+{claw4_1_2_rotX} -= 24'{data_2}
+
+{claw4_2_rotX} += 10'{data_2}
+
+{claw4_2_2_rotX} += 25'{data_2}
+
+{claw4_2_3_rotX} += 20'{data_2}
+
+{claw4_2_4_rotX} += 13'{data_2}
+
+{claw4_2_5_rotX} += 28'{data_2}
+
+{claw4_2_6_rotX} += 26'{data_2}
+
+{claw4_2_7_rotX} += 13'{data_2}
+
+
+
+{claw5_1_rotX} += 53'{data_2}
+{claw5_1_rotY} += 35'{data_2}
+{claw5_1_rotZ} += 5'{data_2}
+
+{claw5_1_2_rotX} += 22'{data_2}
+
+{claw5_1_3_rotX} += 20'{data_2}
+
+{claw5_1_4_rotX} += 20'{data_2}
+
+{claw5_1_5_rotX} += 5'{data_2}
+
+{claw5_1_6_rotX} -= 25'{data_2}
+
+{claw5_1_7_rotX} -= 28'{data_2}
+
+{claw5_1_8_rotX} -= 28'{data_2}
+
+{claw5_1_9_rotX} -= 10'{data_2}
+
+{claw5_1_10_rotX} -= 23'{data_2}
+
+{claw5_1_11_rotX} -= 20'{data_2}
+
+{claw5_1_12_rotX} -= 10'{data_2}
+
+
+
+{claw6_1_rotX} += 48'{data_2}
+{claw6_1_rotY} -= 40'{data_2}
+{claw6_1_rotZ} -= 5'{data_2}
+
+{claw6_1_2_rotX} += 22'{data_2}
+
+{claw6_1_3_rotX} += 20'{data_2}
+
+{claw6_1_4_rotX} += 20'{data_2}
+
+{claw6_1_5_rotX} += 5'{data_2}
+
+{claw6_1_6_rotX} -= 25'{data_2}
+
+{claw6_1_7_rotX} -= 28'{data_2}
+
+{claw6_1_8_rotX} -= 28'{data_2}
+
+{claw6_1_9_rotX} -= 10'{data_2}
+
+{claw6_1_10_rotX} -= 23'{data_2}
+
+{claw6_1_11_rotX} -= 20'{data_2}
+
+{claw6_1_12_rotX} -= 10'{data_2}
+
+; Fine tuning for open claw state
+
+
+; Blade for strike animation
+
+{claw1_1_posY} += 4{data_3}
+{claw1_1_2_posY} += 4{data_3}
+
+{claw1_2_posY} += 4{data_3}
+{claw1_2_posZ} -= 0.6{data_3}
+
+{claw1_2_2_posY} += 4{data_3}
+
+{claw1_3_posY} += 4{data_3}
+
+{claw1_3_2_posY} += 5{data_3}
+
+{claw1_4_posY} += 3{data_3}
+{claw1_4_posZ} -= 1.6{data_3}
+
+
+
+{claw1_1_rotX} -= 26'{data_3}
+{claw1_2_2_rotX} += 10'{data_3}
+{claw1_3_rotX} += 11'{data_3}
+
+{claw2_1_rotX} += 9'{data_3}
+{claw2_1_rotZ} += 112'{data_3}
+{claw2_1_2_rotZ} += 1.5'{data_3}
+{claw2_2_rotX} -= 7'{data_3}
+{claw2_2_rotZ} += 13'{data_3}
+{claw2_2_2_rotX} -= 7'{data_3}
+{claw2_2_2_rotZ} -= 20'{data_3}
+{claw2_2_3_rotX} -= 5'{data_3}
+{claw2_2_3_rotY} += 90'{data_3}
+{claw2_2_3_rotZ} -= 30'{data_3}
+{claw2_2_4_rotX} += 3'{data_3}
+{claw2_2_5_rotX} -= 10'{data_3}
+{claw2_2_6_rotX} -= 15'{data_3}
+{claw2_2_7_rotX} -= 34'{data_3}
+
+
+{claw3_1_rotX} += 3'{data_3}
+{claw3_1_rotZ} -=105'{data_3}
+{claw3_1_2_rotX} -= 5'{data_3}
+{claw3_1_2_rotZ} -= 11.5'{data_3}
+{claw3_2_rotX} -= 5'{data_3}
+{claw3_2_rotZ} -= 13'{data_3}
+{claw3_2_2_rotX} -= 5'{data_3}
+{claw3_2_2_rotZ} += 23'{data_3}
+{claw3_2_3_rotX} -= 5'{data_3}
+{claw3_2_3_rotY} -= 90'{data_3}
+{claw3_2_3_rotZ} += 28'{data_3}
+{claw3_2_4_rotX} += 10'{data_3}
+{claw3_2_4_rotZ} += 7'{data_3}
+{claw3_2_5_rotX} -= 13'{data_3}
+{claw3_2_6_rotX} -= 27'{data_3}
+{claw3_2_7_rotX} -= 48'{data_3}
+
+
+{claw4_1_rotX} += 110'{data_3}
+{claw4_1_2_rotX} += 12'{data_3}
+{claw4_2_rotX} -= 26'{data_3}
+{claw4_2_2_rotX} -= 30'{data_3}
+{claw4_2_3_rotX} -= 10'{data_3}
+{claw4_2_4_rotX} += 3'{data_3}
+{claw4_2_5_rotX} -= 20'{data_3}
+{claw4_2_6_rotX} -= 33'{data_3}
+{claw4_2_7_rotX} -= 15'{data_3}
+
+
+{claw5_1_rotX} -= 63'{data_3}
+{claw5_1_rotY} -= 37.61'{data_3}
+{claw5_1_2_rotX} -= 27'{data_3}
+{claw5_1_3_rotX} -= 30'{data_3}
+{claw5_1_4_rotX} -= 25'{data_3}
+{claw5_1_5_rotX} -= 5'{data_3}
+{claw5_1_6_rotX} -= 3'{data_3}
+{claw5_1_6_rotY} -= 5'{data_3}
+{claw5_1_7_rotX} += 28'{data_3}
+{claw5_1_8_rotX} += 49'{data_3}
+{claw5_1_9_rotX} += 25'{data_3}
+{claw5_1_10_rotX} += 8'{data_3}
+{claw5_1_10_rotZ} -= 5'{data_3}
+{claw5_1_11_rotX} += 35'{data_3}
+{claw5_1_12_rotX} += 20'{data_3}
+{claw5_1_13_rotZ} += 1'{data_3}
+
+
+
+
+
+{claw6_1_rotX} -= 68'{data_3}
+{claw6_1_rotY} += 40'{data_3}
+{claw6_1_rotZ} += 5'{data_3}
+{claw6_1_2_rotX} -= 22'{data_3}
+{claw6_1_3_rotX} -= 20'{data_3}
+{claw6_1_4_rotX} -= 31'{data_3}
+{claw6_1_5_rotX} -= 15'{data_3}
+{claw6_1_5_rotY} += 8'{data_3}
+{claw6_1_6_rotX} += 25'{data_3}
+{claw6_1_7_rotX} += 28'{data_3}
+{claw6_1_8_rotX} += 33'{data_3}
+{claw6_1_8_rotZ} += 5'{data_3}
+{claw6_1_9_rotX} += 10'{data_3}
+{claw6_1_10_rotX} += 41'{data_3}
+{claw6_1_11_rotX} += 7'{data_3}
+{claw6_1_12_rotX} += 36'{data_3}
+{claw6_1_12_rotZ} -= 2'{data_3}
+{claw6_1_13_rotZ} += 5'{data_3}
+
+
+;loop
+
+
+{claw1_1_rotX} -= 15' * sin(2pi{data_4})
+{claw1_1_rotY} += 18' * sin(pi{data_4})
+{claw1_1_rotZ} += 5' * sin(3pi{data_4})
+
+{claw1_1_2_rotX} -= 7' * sin(3pi{data_4})
+{claw1_1_2_rotY} += 5' * sin(4pi{data_4})
+{claw1_1_2_rotZ} -= 6' * sin(pi{data_4})
+
+{claw1_2_rotX} -= 10' * sin(pi{data_4})
+{claw1_2_rotY} -= 7' * sin(4pi{data_4})
+{claw1_2_rotZ} -= 10' * sin(2pi{data_4})
+
+{claw1_2_2_rotX} -= 6' * sin(4pi{data_4})
+
+{claw1_3_rotX} += 30' * sin(2pi{data_4})
+{claw1_3_rotY} -= 5' * sin(3pi{data_4})
+{claw1_3_rotZ} += 8' * sin(5pi{data_4})
+
+{claw1_3_2_rotX} += 8' * sin(pi{data_4})
+
+{claw1_4_rotX} += 7' * sin(4pi{data_4})
+{claw1_4_rotY} -= 5' * sin(3pi{data_4})
+{claw1_4_rotZ} -= 16' * sin(pi{data_4})
+
+
+{claw2_1_rotX} += 15' * sin(pi{data_4})
+{claw2_1_rotZ} -= 20' * sin(4pi{data_4})
+
+{claw2_1_2_rotX} += 10' * sin(pi{data_4})
+{claw2_1_2_rotZ} -= 8' * sin(3pi{data_4})
+
+{claw2_2_rotX} += 9' * sin(2pi{data_4})
+{claw2_2_rotZ} -= 8' * sin(2pi{data_4})
+
+{claw2_2_2_rotX} += 13' * sin(3pi{data_4})
+{claw2_2_2_rotZ} += 8' * sin(3pi{data_4})
+
+{claw2_2_3_rotX} -= 14' * sin(pi{data_4})
+{claw2_2_3_rotZ} += 10' * sin(pi{data_4})
+
+{claw2_2_4_rotX} -= 10' * sin(2pi{data_4})
+{claw2_2_4_rotZ} += 8' * sin(4pi{data_4})
+
+{claw2_2_5_rotX} -= 7' * sin(pi{data_4})
+{claw2_2_5_rotZ} += 12' * sin(3pi{data_4})
+
+{claw2_2_6_rotX} += 12' * sin(2pi{data_4})
+{claw2_2_6_rotZ} -= 13' * sin(2pi{data_4})
+
+{claw2_2_7_rotX} += 7' * sin(2pi{data_4})
+{claw2_2_7_rotZ} -= 16' * sin(pi{data_4})
+
+
+
+{claw3_1_rotX} -= 15' * sin(3pi{data_4})
+{claw3_1_rotZ} -= 3' * sin(4pi{data_4})
+
+{claw3_1_2_rotX} += 5' * sin(2pi{data_4})
+{claw3_1_2_rotZ} -= 8' * sin(3pi{data_4})
+
+{claw3_2_rotX} += 2' * sin(2pi{data_4})
+{claw3_2_rotZ} -= 12' * sin(2pi{data_4})
+
+{claw3_2_2_rotX} += 7' * sin(pi{data_4})
+{claw3_2_2_rotZ} += 4' * sin(3pi{data_4})
+
+{claw3_2_3_rotX} += 20' * sin(3pi{data_4})
+{claw3_2_3_rotZ} += 9' * sin(pi{data_4})
+
+{claw3_2_4_rotX} += 17' * sin(3pi{data_4})
+{claw3_2_4_rotY} += 13' * sin(pi{data_4})
+{claw3_2_4_rotZ} += 14' * sin(4pi{data_4})
+
+{claw3_2_5_rotX} += 12' * sin(2pi{data_4})
+{claw3_2_5_rotY} += 13' * sin(2pi{data_4})
+{claw3_2_5_rotZ} += 7' * sin(3pi{data_4})
+
+{claw3_2_6_rotX} -= 10' * sin(pi{data_4})
+{claw3_2_6_rotY} += 15' * sin(pi{data_4})
+{claw3_2_6_rotZ} -= 8' * sin(2pi{data_4})
+
+{claw3_2_7_rotX} -= 12' * sin(2pi{data_4})
+{claw3_2_7_rotZ} -= 20' * sin(pi{data_4})
+
+
+
+{claw4_1_rotX} -= 7' * sin(0.5pi{data_4})
+{claw4_1_rotZ} -= 17' * sin(pi{data_4})
+
+{claw4_1_2_rotX} -= 9' * sin(3pi{data_4})
+{claw4_1_2_rotY} -= 7' * sin(pi{data_4})
+{claw4_1_2_rotZ} += 10' * sin(pi{data_4})
+
+{claw4_2_rotX} -= 12' * sin(3pi{data_4})
+{claw4_2_rotZ} += 6' * sin(2pi{data_4})
+
+{claw4_2_2_rotX} += 10' * sin(3pi{data_4})
+{claw4_2_2_rotY} -= 8' * sin(2pi{data_4})
+{claw4_2_2_rotZ} += 4' * sin(pi{data_4})
+
+{claw4_2_3_rotX} += 9' * sin(2pi{data_4})
+{claw4_2_3_rotZ} += 3' * sin(3pi{data_4})
+
+{claw4_2_4_rotX} += 13' * sin(3pi{data_4})
+{claw4_2_4_rotY} += 10' * sin(pi{data_4})
+{claw4_2_4_rotZ} += 7' * sin(2pi{data_4})
+
+{claw4_2_5_rotX} += 18' * sin(pi{data_4})
+{claw4_2_5_rotY} += 12' * sin(3pi{data_4})
+{claw4_2_5_rotZ} += 11' * sin(pi{data_4})
+
+{claw4_2_6_rotX} += 12' * sin(3pi{data_4})
+{claw4_2_6_rotZ} += 14' * sin(2pi{data_4})
+
+
+
+{claw5_1_rotX} += 7' * sin(0.5pi{data_4})
+{claw5_1_rotZ} -= 4' * sin(pi{data_4})
+
+{claw5_1_2_rotX} += 9' * sin(pi{data_4})
+{claw5_1_2_rotY} -= 7' * sin(2pi{data_4})
+{claw5_1_2_rotZ} += 9' * sin(2pi{data_4})
+
+{claw5_1_3_rotX} += 14' * sin(2pi{data_4})
+{claw5_1_3_rotZ} += 8' * sin(pi{data_4})
+
+{claw5_1_4_rotX} -= 8' * sin(2pi{data_4})
+{claw5_1_4_rotY} -= 4' * sin(pi{data_4})
+{claw5_1_4_rotZ} += 6' * sin(pi{data_4})
+
+{claw5_1_5_rotX} -= 9' * sin(2pi{data_4})
+{claw5_1_5_rotZ} += 6' * sin(4pi{data_4})
+
+{claw5_1_6_rotX} -= 13' * sin(2pi{data_4})
+{claw5_1_6_rotY} += 7' * sin(3pi{data_4})
+{claw5_1_6_rotZ} += 10' * sin(pi{data_4})
+
+{claw5_1_7_rotX} -= 9' * sin(pi{data_4})
+{claw5_1_7_rotY} += 7' * sin(2pi{data_4})
+{claw5_1_7_rotZ} += 8' * sin(3pi{data_4})
+
+{claw5_1_8_rotX} -= 7' * sin(pi{data_4})
+{claw5_1_8_rotZ} += 6' * sin(2pi{data_4})
+
+{claw5_1_9_rotX} -= 5' * sin(2pi{data_4})
+{claw5_1_9_rotY} += 7' * sin(3pi{data_4})
+
+{claw5_1_10_rotX} -= 4' * sin(2pi{data_4})
+{claw5_1_10_rotZ} += 5' * sin(3pi{data_4})
+
+{claw5_1_11_rotX} -= 5' * sin(pi{data_4})
+{claw5_1_11_rotZ} += 6' * sin(3pi{data_4})
+
+{claw5_1_12_rotX} -= 5' * sin(3pi{data_4})
+{claw5_1_12_rotY} -= 3' * sin(2pi{data_4})
+{claw5_1_12_rotZ} += 4' * sin(pi{data_4})
+
+
+{claw6_1_rotX} += 7' * sin(pi{data_4})
+{claw6_1_rotZ} += 16' * sin(4pi{data_4})
+
+{claw6_1_2_rotX} += 6' * sin(pi{data_4})
+{claw6_1_2_rotZ} += 8' * sin(3pi{data_4})
+
+{claw6_1_3_rotX} += 8' * sin(2pi{data_4})
+{claw6_1_3_rotZ} += 8' * sin(2pi{data_4})
+
+{claw6_1_4_rotX} += 9' * sin(3pi{data_4})
+{claw6_1_4_rotZ} -= 7' * sin(3pi{data_4})
+
+{claw6_1_5_rotX} -= 12' * sin(pi{data_4})
+{claw6_1_5_rotZ} -= 9' * sin(pi{data_4})
+
+{claw6_1_6_rotX} -= 8' * sin(2pi{data_4})
+{claw6_1_6_rotZ} -= 6' * sin(4pi{data_4})
+
+{claw6_1_7_rotX} -= 7' * sin(pi{data_4})
+{claw6_1_7_rotZ} -= 7' * sin(3pi{data_4})
+
+{claw6_1_8_rotX} += 6' * sin(2pi{data_4})
+{claw6_1_8_rotZ} += 8' * sin(2pi{data_4})
+
+{claw6_1_9_rotX} += 5' * sin(2pi{data_4})
+{claw6_1_9_rotZ} += 9' * sin(pi{data_4})
+
+{claw6_1_10_rotX} += 7' * sin(pi{data_4})
+{claw6_1_10_rotZ} += 8' * sin(3pi{data_4})
+
+{claw6_1_11_rotX} += 9' * sin(2pi{data_4})
+{claw6_1_11_rotZ} += 9' * sin(2pi{data_4})
+
+{claw6_1_12_rotX} -= 9' * sin(2pi{data_4})
+{claw6_1_12_rotZ} -= 10' * sin(4pi{data_4})
+
+
+;Anchor
+{claw1_2_posY} += 3{data_5}
+
+{claw1_2_2_posY} += 2{data_5}
+
+{claw1_3_posY} += 3{data_5}
+
+{claw1_3_2_posY} += 2{data_5}
+
+{claw1_4_posY} += 1{data_5}
+{claw1_4_posZ} += 1.6{data_5}
+
+{claw1_4_posZ} -= 3.6{data_5}

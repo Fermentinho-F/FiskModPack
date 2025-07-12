@@ -1,0 +1,10 @@
+{
+  "suit": "loriatpack:hawkman",
+  "requirements": [
+	"fiskheroes:tier6_7",
+	"loriatpack:dc_universe",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+	"fiskheroes:flight"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "suit": "sabri:silver_surfer_f4",
+    "requirements": [
+      "fiskheroes:tier10",
+      "fiskheroes:intangibility",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee3",
+      "fiskheroes:defense2",
+      "sabri:cosmic_surfboard",
+      "sabri:sehp"
+    ]
+  }
+  

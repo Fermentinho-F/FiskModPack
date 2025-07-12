@@ -1,0 +1,9 @@
+{
+  "suit": "jmctheroes:killer_moth",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier2_3",
+    "fiskheroes:marksmanship",
+    "fiskheroes:flight"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "sound": "fiskheroes:modifier.repulsor.charge",
+  "condition": "fiskheroes:heat_vision",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

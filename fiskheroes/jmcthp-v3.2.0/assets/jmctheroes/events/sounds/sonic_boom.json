@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "jmctheroes:sonic.boom",
+  "condition": "entity.isSprinting() && entity.getData('fiskheroes:flying')",
+  "pitch": 0.8,
+  "volume": 0.8,
+  "fadeIn": 3,
+  "fadeOut": 10
+}

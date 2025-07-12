@@ -1,0 +1,23 @@
+{vel} = sqrt({motX}^2 + {motZ}^2) + (0.3{motY})^2
+{vel} = 1 - curve min(1.5{vel}, 1)
+{wobble2} = {data_0}sin(2pi{data_1})
+{data_0} = {vel}curve({data_0})
+{data_1} = 0.2{data_0}sin(2pi{data_1})
+
+{head_rotX} -= 3.5'{data_0} - 5'{data_0}
+
+{x} = {data_0} + {data_1}
+{leftLeg_rotX} -= 15'{wobble2}
+{leftLeg_rotY} -= 5'{data_0}
+
+{rightLeg_rotX} += 15'{wobble2}
+{rightLeg_rotY} -= 8'{data_0}
+
+{rightArm_rotX} -= 5'({wobble2} + 0.75{data_0})
+{rightArm_rotZ} += 3'{x} + 5'{wobble2}
+{leftArm_rotX} -= 5'({wobble2} + 0.75{data_0})
+{leftArm_rotY} -= 2'{data_0}
+{leftArm_rotZ} -= 4'{x} + 5'{wobble2}
+
+out "pivot" (0, 0.56, 0)
+out "rotate" (-3.5{data_0} + 5{data_1}, 1, 0, 0)

@@ -1,0 +1,24 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "type": "minecraft:reddust",
+      "anchor": "body",
+      "amount": 10,
+      "offset": [-0.5, 9, -0.5],
+      "randOffset": [0.5, 1.1, 0.5],
+      "motion": [-1, -1, -1],
+      "mirror": false
+    },
+    {
+      "condition": "firstPerson",
+      "type": "minecraft:reddust",
+      "anchor": "body",
+      "amount": 5,
+      "offset": [-0.5, 9, -0.5],
+      "randOffset": [0.5, 1.1, 0.5],
+      "motion": [-1, -1, -1],
+      "mirror": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Phantasm Gear",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "BLADE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/equip",
+        "timerData": "jmctheroes:dyn/equip_timer",
+        "time": 30
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "jmctheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 190,
+          "uses": 3
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Cursed Spirit",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/curse.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jjkp"
+  ],
+    "price": {
+      "IRID_GOLD": 1,
+      "XP_LEVELS": 3
+  }
+}

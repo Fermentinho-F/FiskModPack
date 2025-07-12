@@ -1,0 +1,2 @@
+{neck_rotY} @ {data} -> ({head_rotX} - pi / 2) * 0.9
+{face_rotY} @ {data} -> {head_rotX} 

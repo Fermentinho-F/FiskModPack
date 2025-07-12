@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.forcefield.trickster.loop",
+  "condition": "fiskheroes:shield_blocking",
+  "volume": 0.9,
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

@@ -1,0 +1,21 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p2/aliens/anim/zs_skayr_<MODEL>",
+    "transform": [
+      {
+        "operation": "OR",
+        "supply": "tmf:omnitrix/p2/aliens/zs_skayr_tentacles"
+      }
+    ],
+    "out": "tmf:omnitrix/p2/aliens/zs_skayr_badged_<MODEL>"
+  },
+  "getters": {
+    "MODEL": {
+      "key": "Math.ceil(15*(Math.min(1, 2*entity.getInterpolatedData('tmf:dyn/pt_3')))) | 0",
+      "values": {
+        "min": 0,
+        "max": 15
+      }
+    }
+  }
+}

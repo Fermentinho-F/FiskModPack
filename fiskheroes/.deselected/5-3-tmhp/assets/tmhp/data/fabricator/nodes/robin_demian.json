@@ -1,0 +1,16 @@
+{
+  "suit": "tmhp:robin_demian",
+  "requirements": [
+    "tmhp:robin",
+    "tmhp:teen_titans",
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "tmhp:swordsman2",
+    "tmhp:heropack2"
+  ]
+}

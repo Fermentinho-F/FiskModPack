@@ -1,0 +1,259 @@
+{data_0} = curve {data_0}
+
+{mot01} = curve min(animate2({data_0}, 1, 0.0, 0.05, 0.05), 1)
+{mot02} = curve min(animate2({data_0}, 2, 0.05, 0.05, 0.05), 1)
+{mot03} = curve min(animate2({data_0}, 2, 0.1, 0.05, 0.05), 1)
+{mot04} = curve min(animate2({data_0}, 2, 0.15, 0.05, 0.05), 1)
+{mot05} = curve min(animate2({data_0}, 2, 0.2, 0.05, 0.05), 1)
+{mot06} = curve min(animate2({data_0}, 2, 0.25, 0.05, 0.05), 1)
+{mot07} = curve min(animate2({data_0}, 2, 0.3, 0.05, 0.05), 1)
+{mot08} = curve min(animate2({data_0}, 2, 0.35, 0.05, 0.05), 1)
+{mot09} = curve min(animate2({data_0}, 2, 0.4, 0.05, 0.05), 1)
+{mot10} = curve min(animate2({data_0}, 2, 0.45, 0.05, 0.05), 1)
+{mot11} = curve min(animate2({data_0}, 2, 0.5, 0.05, 0.05), 1)
+{mot12} = curve min(animate2({data_0}, 2, 0.55, 0.05, 0.05), 1)
+{mot13} = curve min(animate2({data_0}, 2, 0.6, 0.15, 0.05), 1)
+{mot14} = curve min(animate2({data_0}, 2, 0.65, 0.05, 0.05), 1)
+{mot15} = curve min(animate2({data_0}, 2, 0.7, 0.05, 0.05), 1)
+{mot16} = curve min(animate2({data_0}, 2, 0.75, 0.05, 0.05), 1)
+{mot17} = curve min(animate2({data_0}, 2, 0.8, 0.05, 0.05), 1)
+{mot18} = curve min(animate2({data_0}, 2, 0.85, 0.05, 0.05), 1)
+{mot19} = curve min(animate2({data_0}, 2, 0.9, 0.05, 0.05), 1)
+{mot20} = curve min(animate2({data_0}, 2, 0.95, 0.05, 0.05), 1)
+
+{head_rotX} @ {mot01} -> 0'
+{head_rotY} @ {mot01} -> 0'
+{head_rotZ} @ {mot01} -> 0'
+{rightArm_rotX} @ {mot01} -> 0'
+{rightArm_rotY} @ {mot01} -> 0'
+{rightArm_rotZ} @ {mot01} -> 0'
+{leftArm_rotX} @ {mot01} -> 0'
+{leftArm_rotY} @ {mot01} -> 0'
+{leftArm_rotZ} @ {mot01} -> 0'
+;{rightLeg_rotX} @ {mot01} -> 0'
+;{rightLeg_rotY} @ {mot01} -> 0'
+;{rightLeg_rotZ} @ {mot01} -> 0'
+;{leftLeg_rotX} @ {mot01} -> 0'
+;{leftLeg_rotY} @ {mot01} -> 0'
+;{leftLeg_rotZ} @ {mot01} -> 0'
+
+{head_rotX} += 10'{mot01}
+{head_rotY} += 20'{mot01}
+{rightArm_rotX} += 30'{mot01}
+{rightArm_rotY} += 30'{mot01}
+
+{head_rotY} -= 20'{mot02}
+{rightArm_rotX} -= 95'{mot02}
+{rightArm_rotY} -= 60'{mot02}
+{rightArm_rotZ} += 20'{mot02}
+{leftArm_rotX} -= 75'{mot02}
+{leftArm_rotY} += 20'{mot02}
+{leftArm_rotZ} -= 25'{mot02}
+
+{head_rotY} -= 7.5'{mot03}
+{rightArm_rotX} -= 5'{mot03}
+{leftArm_rotX} += 5'{mot03}
+
+{head_rotY} += 15'{mot04}
+{rightArm_rotX} += 12'{mot04}
+{leftArm_rotX} -= 12'{mot04}
+
+{head_rotY} -= 15'{mot05}
+{rightArm_rotZ} -= 5'{mot05}
+{leftArm_rotX} += 5'{mot05}
+
+{head_rotY} += 15'{mot06}
+{rightArm_rotX} -= 10'{mot06}
+{rightArm_rotZ} += 5'{mot06}
+{leftArm_rotY} -= 5'{mot06}
+{leftArm_rotZ} -= 15'{mot06}
+
+{head_rotY} -= 15'{mot07}
+{rightArm_rotX} -= 10'{mot07}
+{rightArm_rotY} += 7'{mot07}
+{rightArm_rotZ} += 5'{mot07}
+{leftArm_rotX} -= 10'{mot07}
+{leftArm_rotY} += 1'{mot07}
+{leftArm_rotZ} -= 10'{mot07}
+
+{head_rotY} += 15'{mot08}
+{rightArm_rotX} += 10'{mot08}
+{rightArm_rotY} -= 10'{mot08}
+{rightArm_rotZ} -= 5'{mot08}
+{leftArm_rotX} -= 7.5'{mot08}
+
+{head_rotY} -= 15'{mot09}
+{rightArm_rotX} -= 15'{mot09}
+{rightArm_rotY} += 10'{mot09}
+{leftArm_rotX} += 17.5'{mot09}
+{leftArm_rotZ} += 10'{mot09}
+
+{head_rotY} += 15'{mot10}
+{rightArm_rotX} -= 10'{mot10}
+{rightArm_rotY} += 2'{mot10}
+{leftArm_rotX} += 17.5'{mot10}
+{leftArm_rotY} -= 10'{mot10}
+{leftArm_rotZ} += 35'{mot10}
+
+{head_rotY} -= 15'{mot11}
+{rightArm_rotX} += 15'{mot11}
+{leftArm_rotX} -= 25'{mot11}
+{leftArm_rotY} += 10'{mot11}
+{leftArm_rotZ} -= 25'{mot11}
+
+{head_rotY} += 15'{mot12}
+{rightArm_rotX} -= 7.5'{mot12}
+{leftArm_rotX} -= 15'{mot12}
+{leftArm_rotY} -= 2'{mot12}
+{leftArm_rotZ} -= 35'{mot12}
+
+{head_rotX} -= 20'{mot13}
+{head_rotY} += 10'{mot13}
+{rightArm_rotX} -= 30'{mot13}
+{rightArm_rotY} += 25'{mot13}
+{rightArm_rotZ} -= 55'{mot13}
+
+{leftArm_rotX} += 24.5'{mot13}
+{leftArm_rotY} += 6'{mot13}
+{leftArm_rotZ} += 40'{mot13}
+{leftArm_rotX} += 75'{mot13}
+{leftArm_rotY} -= 20'{mot13}
+{leftArm_rotZ} += 25'{mot13}
+
+{head_rotX} += 20'{mot19}
+{head_rotY} += 2.5'{mot19}
+{rightArm_rotX} += 145.5'{mot19}
+{rightArm_rotY} += 26'{mot19}
+{rightArm_rotZ} += 35'{mot19}
+
+{rightArm2_rotX} @ {mot01} -> 30'
+{rightArm2_rotY} @ {mot01} -> 30'
+{rightArm2_rotX} @ {mot02} -> -75'
+{rightArm2_rotY} @ {mot02} -> -30'
+{rightArm2_rotZ} @ {mot02} -> 20'
+{rightArm2_posX} @ {mot02} -> -2
+{cube_rotZ} @ {mot02} -> -15'
+{rightArm2_rotX} @ {mot13} -> -115'
+{rightArm2_rotY} @ {mot13} -> -7.75'
+{rightArm2_rotZ} @ {mot13} -> -45'
+{rightArm2_posX} @ {mot13} -> -5
+{cube_posY} @ {mot13} -> 19
+{cube_rotX} @ {mot13} -> -45'
+{cube_rotY} @ {mot13} -> -55'
+{cube_rotZ} @ {mot13} -> -65'
+{cube_posX} @ {mot13} -> 0
+{rightArm2_rotX} @ {mot19} -> 30'
+{rightArm2_rotY} @ {mot19} -> 30'
+{rightArm2_rotZ} @ {mot19} -> 0'
+{rightArm2_rotX} @ {mot20} -> 0'
+{rightArm2_rotY} @ {mot20} -> 0'
+
+{mot03} = (1 - {mot03})
+{mot04} = (1 - {mot04})
+{mot05} = (1 - {mot05})
+{mot06} = (1 - {mot06})
+{mot07} = (1 - {mot07})
+{mot08} = (1 - {mot08})
+{mot09} = (1 - {mot09})
+{mot10} = (1 - {mot10})
+{mot11} = (1 - {mot11})
+{mot12} = (1 - {mot12})
+{mot13} = (1 - {mot13})
+
+{root0_rotY} -= 90'{mot13}
+
+{SubRoot1_rotX} -= 90'{mot12}
+{P16_rotZ} -= 90'{mot12}
+{P13_rotZ} -= 90'{mot12}
+{P10_rotZ} -= 90'{mot12}
+{P25_rotZ} -= 90'{mot12}
+{P22_rotZ} -= 90'{mot12}
+{P19_rotZ} -= 90'{mot12}
+
+{P19_rotX} += 90'{mot11}
+{P26_rotY} -= 90'{mot11}
+{P27_rotY} -= 90'{mot11}
+{P10_rotX} += 90'{mot11}
+{P3_rotZ} -= 90'{mot11}
+{P24_rotY} -= 90'{mot11}
+{P23_rotY} -= 90'{mot11}
+{P21_rotY} -= 90'{mot11}
+{P20_rotY} -= 90'{mot11}
+
+{P24_rotX} += 90'{mot10}
+{P11_rotZ} += 90'{mot10}
+{SubRoot2_rotX} += 90'{mot10}
+{P14_rotZ} += 90'{mot10}
+{P17_rotZ} += 90'{mot10}
+{P23_rotZ} += 90'{mot10}
+{P10_rotZ} += 90'{mot10}
+
+{P21_rotY} += 90'{mot09}
+{P20_rotY} += 90'{mot09}
+{P3_rotZ} += 90'{mot09}
+{P10_rotY} += 90'{mot09}
+{P17_rotX} += 90'{mot09}
+{P4_rotZ} -= 90'{mot09}
+{P27_rotY} += 90'{mot09}
+{P26_rotY} += 90'{mot09}
+{P19_rotX} -= 90'{mot09}
+
+{P24_rotZ} -= 90'{mot08}
+{P11_rotZ} -= 90'{mot08}
+{P6_rotX} -= 90'{mot08}
+{P23_rotZ} -= 90'{mot08}
+{P14_rotZ} -= 90'{mot08}
+{P5_rotX} -= 90'{mot08}
+{P20_rotZ} -= 90'{mot08}
+{P17_rotZ} -= 90'{mot08}
+{P26_rotZ} -= 90'{mot08}
+
+{P3_rotY} += 90'{mot07}
+{P24_rotY} += 90'{mot07}
+{P21_rotX} += 90'{mot07}
+{P2_rotY} += 90'{mot07}
+{P11_rotX} += 90'{mot07}
+{P12_rotX} += 90'{mot07}
+{P1_rotY} += 90'{mot07}
+{P6_rotY} -= 90'{mot07}
+{P9_rotZ} -= 90'{mot07}
+
+{P1_rotZ} += 90'{mot06}
+{P2_rotZ} += 90'{mot06}
+{P3_rotZ} += 90'{mot06}
+{P4_rotZ} -= 90'{mot06}
+{P23_rotY} += 90'{mot06}
+{P10_rotY} += 90'{mot06}
+{P19_rotX} -= 90'{mot06}
+{P20_rotX} -= 90'{mot06}
+{P27_rotY} += 90'{mot06}
+
+{P1_rotY} += 90'{mot05}
+{P2_rotY} += 90'{mot05}
+{P3_rotY} += 90'{mot05}
+{P24_rotZ} -= 90'{mot05}
+{P15_rotZ} -= 90'{mot05}
+{P18_rotZ} -= 90'{mot05}
+{P21_rotZ} -= 90'{mot05}
+{P8_rotX} -= 90'{mot05}
+{P7_rotX} -= 90'{mot05}
+
+{P6_rotX} += 90'{mot04}
+{P13_rotX} += 90'{mot04}
+{P22_rotX} += 90'{mot04}
+{P17_rotY} -= 90'{mot04}
+{P14_rotY} -= 90'{mot04}
+{P11_rotY} -= 90'{mot04}
+{P2_rotZ} -= 90'{mot04}
+{P15_rotX} += 90'{mot04}
+{P8_rotY} -= 90'{mot04}
+
+{P9_rotZ} += 90'{mot03}
+{P12_rotX} -= 90'{mot03}
+{P7_rotZ} += 90'{mot03}
+{P8_rotZ} += 90'{mot03}
+{P15_rotY} -= 90'{mot03}
+{P2_rotY} -= 90'{mot03}
+{P19_rotY} -= 90'{mot03}
+{P4_rotY} -= 90'{mot03}
+{P21_rotY} -= 90'{mot03}

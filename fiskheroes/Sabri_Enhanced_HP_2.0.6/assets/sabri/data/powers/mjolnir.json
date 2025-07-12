@@ -1,0 +1,92 @@
+{
+    "name": "Mjolnir",
+    "modifiers": {
+      "fiskheroes:controlled_flight": {
+        "speed": 0.05,
+        "boostSpeed": 0.25,
+        "canBoost": true,
+        "collision": {
+          "blocks": {
+            "stopFlying": true,
+            "takeDamage": false
+          },
+          "entities": {
+            "stopFlying": false,
+            "dealDamage": true
+          }
+        },
+        "knockback": 0.4,
+        "soundEvents": {
+          "ENABLE": ["fiskheroes:flight_loop"],
+          "DISABLE": "sabri:thor_flight_disable",
+          "BOOST": ["sabri:thor_flight_enable", "sabri:mjolnir_throw", "fiskheroes:flight_boost"],
+          "IMPACT_BLOCK": ["sabri:mjolnir_hit", "sabri:mjolnir_lightning_hit"],
+          "IMPACT_ENTITY": ["sabri:mjolnir_hit", "sabri:mjolnir_lightning_hit"]
+        }
+      },
+      "fiskheroes:regeneration|mjolnir": {
+        "factor": 4
+      },
+      "fiskheroes:transformation": {
+        "key": "SPIN_MJOLNIR",
+        "isToggle": false,
+        "transformation": {
+          "toggleData": "sabri:dyn/aiming",
+          "timerData": "sabri:dyn/aiming_timer",
+          "time": 20
+        },
+        "soundEvents": {
+          "ENABLE": "sabri:mjolnir_spin_loop"
+        }
+      },
+      "fiskheroes:charged_beam": {
+        "damageProfile": {
+          "damage": 7.0,
+          "types": {
+            "ELECTRICITY": 1.0,
+            "MAGIC": 0.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20,
+            "LIGHTNING_STRIKE": 1.0
+          }
+        },
+        "chargeTime": 20,
+        "duration": 40,
+        "cooldownTime": 40,
+        "range": 32.0,
+        "radius": 0.5,
+        "soundEvents": {
+          "CHARGE": "sabri:mjolnir_lightning_flicker",
+          "SHOOT": "sabri:mjolnir_lightning_charged_beam_shoot",
+          "BEAM_AMBIENT": "sabri:mjolnir_lightning_charged_beam_loop",
+          "SHOOT_STOP": "sabri:mjolnir_lightning_charged_beam_stop"
+        }
+      },
+      "fiskheroes:leaping|leap": {
+        "leapAmount": [1.5, 0.7],
+        "soundEvents": {
+          "LEAP": "sabri:thor_super_leap"
+        }
+      }
+    },
+    "hud": [
+      {
+        "type": "CHARGE",
+        "texture": "sabri:textures/gui/bars/jump_charge.png",
+        "data": "entity.getData('fiskheroes:flying') && entity.isSprinting() ? 0 : entity.getInterpolatedData('sabri:dyn/aiming_timer')"
+      },
+      {
+        "type": "CIRCLE",
+        "color": "fiskheroes:charged_beam",
+        "data": "fiskheroes:beam_charge"
+      },
+      {
+        "type": "CIRCLE",
+        "color": "0x00AAF6",
+        "data": "sabri:dyn/mjolnir_leap_cooldown"
+      }
+    ]
+  }
+  

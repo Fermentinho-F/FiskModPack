@@ -1,0 +1,10 @@
+{data} = curve {data}
+{head_rotX} @ {data} -> clamp({head_rotX} - 0.5, -1.8, 0)
+
+{data} *= 1.125
+
+{first_posY} = -8
+{second_posY} = 8
+
+{first_posY} += 8 * {data}
+{second_posY} -= 8 * {data}

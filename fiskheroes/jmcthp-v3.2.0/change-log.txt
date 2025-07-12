@@ -1,0 +1,58 @@
+V.3.2.0
+
+New Suit: 8 Ball
+New Suit: Iron Legion Drone
+New Suit: Ultron Mark 1
+New Suit: Ultron Prime
+New Suit: Ultimate Ultron
+New Suit: M.O.D.O.K. (Comics)
+New Suit: Spider-Man Noir
+New Suit: War Machine Mark 1
+New Suit: Big Wheel (Comics)
+
+New Suit: Bizarro (Outlaws)
+New Suit: Red Hood (Outlaws)
+New Suit: General Zod (DCEU)
+New Suit: Phantasm (BTAS)
+
+New Suit: Hellboy (Comics)
+
+New Alt: Chainsaw Man - Shirtless
+
+New Weapon: Cue Stick
+New Weapon: Excalibur
+New Weapon: The Good Samaritan
+New Weapon: Noir's Luger P08
+New Weapon: War Hammer
+
+Removed: Artemis
+Removed: Hulk
+Removed: Quicksilver
+Removed: Thor
+Removed: Thor Stormbreaker
+Removed: Tigress
+Removed: Everything regarding the Infinity Stones (They will return soon)
+
+Removed: Superior Spider-Man - Superior Ock alt
+
+Spider-Man Noir is now it's own suit and not just an alt
+Charged running attacks were changed
+Reworked War Machine suits
+Reworked Doctor Fate completely
+Reworked Superior Spider-Man completely
+Kryptonians and Viltrumites now have Super Speed
+Slightly reworked Venom (bigger rework in the future)
+Removed Batman's Rebreather bar
+Changed the War Machine Skins and models
+Changed the main Spider-Man skin
+Changed Superior Spider-Man's skin
+Changed Chainsaw Man's bar icons and its visuals
+Changed how the infinity stones work
+Added night Vision to Arkham Knight
+Fixed Scarlet Spider's Crawling animation moving the player forward too much
+Fixed Darkseid's Omega Beams not having a white core
+Fixed Chainsaw Man's Charged Attack working inconsistently
+Fixed Allen the Alien's Tremor ability not working
+Fixed Immortal's Tremor ability not working
+Increased Rhino's speed when ramming
+Reworked some nodes and suit recipes

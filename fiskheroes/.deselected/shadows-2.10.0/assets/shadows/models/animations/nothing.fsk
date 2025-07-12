@@ -1,0 +1,16 @@
+{rightLeg_rotX} = 0
+{rightLeg_rotY} = 0
+{rightLeg_rotZ} = 0
+
+{leftLeg_rotX} = 0
+{leftLeg_rotY} = 0
+{leftLeg_rotZ} = 0
+
+
+{rightArm_rotX} = {body_rotX}
+{rightArm_rotY} = {body_rotY}
+{rightArm_rotZ} = {body_rotZ}
+
+{leftArm_rotX} = {body_rotX}
+{leftArm_rotY} = {body_rotY}
+{leftArm_rotZ} = {body_rotZ}

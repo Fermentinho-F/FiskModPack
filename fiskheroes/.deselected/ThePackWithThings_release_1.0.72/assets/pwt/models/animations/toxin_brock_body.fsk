@@ -1,0 +1,28 @@
+;BODY
+{head_posY} @ {data_0} -> -1.0
+{headwear_posY} @ {data_0} -> -1.0
+{head_posZ} @ {data_0} -> -4.0
+{headwear_posZ} @ {data_0} -> -4.0
+
+
+
+{rightArm_posX} @ {data_0} -> -7.5 
+{leftArm_posX} @ {data_0} -> 7.5
+
+{rightArm_posY} @ {data_0} -> 0.0
+{leftArm_posY} @ {data_0} -> 0.0
+
+{rightArm_posZ} @ {data_0} -> -2.0 
+{leftArm_posZ} @ {data_0} -> -2.0
+
+{rightLeg_posX} @ {data_0} -> -2.65
+{leftLeg_posX} @ {data_0} -> 2.65
+
+;MASK
+
+{head_posY} += 1.0 * {data_1}
+{headwear_posY} += 1.0 * {data_1}
+
+{head_posZ} -= 2.0 * {data_1}
+{headwear_posZ} -= 2.0 * {data_1}
+

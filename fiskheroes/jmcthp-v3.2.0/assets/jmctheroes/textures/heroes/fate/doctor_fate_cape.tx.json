@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "jmctheroes:fate/dr_fate_cape",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "jmctheroes:xor/cape/cape_<TIMER>"
+      }
+    ],
+    "out": "jmctheroes:generated/fate/dr_fate_cape_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "(entity.is('DISPLAY') || entity.as('DISPLAY').getDisplayType === 'BOOK_PREVIEW') ? 60 : (Math.ceil(60 * entity.getInterpolatedData('jmctheroes:dyn/fate_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 60
+      }
+    }
+  },
+  "isDynamic": true
+}

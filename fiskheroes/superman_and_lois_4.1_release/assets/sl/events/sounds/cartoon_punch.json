@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.cartoon_punch",
+  "volume": 0.6,
+  "fadeOut": 20,
+  "pitch": "1.0 + Math.random() * 0.4"
+}

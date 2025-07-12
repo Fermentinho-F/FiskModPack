@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:illumination",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "moopack:light_powers"
+  ]
+}

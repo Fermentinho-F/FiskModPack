@@ -1,0 +1,42 @@
+; Extension animation
+{root_posY} += 3{data_0}
+
+
+; Rotation offset for reduced repetitiveness
+{data_1} = 45'{data_1}
+
+
+
+
+; Open the claws for grabbing
+{spike1_posY} -=2{data_2}*(1-{data_3})
+{spike1_2_posY} -=2{data_2}*(1-{data_3})
+{spike_1_3_posY} -=1.5{data_2}*(1-{data_3})
+
+{spike1_rotX} -=20'{data_2}*(1-{data_3})
+{spike1_2_rotX} -=10'{data_2}*(1-{data_3})
+{spike_1_3_rotX} +=20'{data_2}*(1-{data_3})
+
+; Fine tuning for open claw state
+
+; Blade for strike animation
+{root_rotX} -= 5'{data_3}
+{spike1_rotX} -= 17'{data_3}
+{spike1_2_rotX} -= 17'{data_3}
+{spike_1_3_rotX} += 35'{data_3}
+{spike_1_3_1_rotX} += 10'{data_3}
+
+;loop
+{data_4} = {data_4}*(1-{data_2})
+
+{spike1_rotX} -= 15' * sin(2pi{data_4})
+{spike1_rotY} += 18' * sin(pi{data_4})
+{spike1_rotZ} -= 5' * sin(3pi{data_4})
+
+{spike1_2_rotX} -= 13' * sin(4pi{data_4})
+{spike1_2_rotY} -= 15' * sin(2pi{data_4})
+{spike1_2_rotZ} += 13' * sin(3pi{data_4})
+
+{spike1_3_rotY} += 28' * sin(pi{data_4})
+{spike1_3_rotY} += 7' * sin(4pi{data_4})
+{spike1_3_rotZ} -= 10' * sin(2pi{data_4})

@@ -1,0 +1,103 @@
+{
+  "name": "The Force",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [0.45, 0.45],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": false
+      },
+      "range": 7.5,
+      "soundEvents": {
+        "GRAB": ["swhp:forcegrab", "swhp:forcegrab_loop"]
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:telekinesis",
+        "cooldownData": "swhp:dyn/forcecrush_cooldown",
+        "duration": 100,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:charged_beam|forcepush": {
+      "damageProfile": {
+        "damage": 1.5,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.5,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "chargeTime": 30,
+      "duration": 15,
+      "cooldownTime": 40,
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "CHARGE": "swhp:forcepush_sith_charge",
+        "SHOOT": "swhp:forcepush_sith"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 0.5,
+        "types": {
+          "THORNS": 0.1
+        },
+        "properties": {
+		"EFFECTS": [
+          {
+              "id": "minecraft:slowness",
+              "duration": 20,
+              "amplifier": 2,
+              "chance": 0.25
+          },
+          {
+              "id": "minecraft:weakness",
+              "duration": 20,
+              "amplifier": 2,
+              "chance": 0.25
+          },
+          {
+              "id": "minecraft:blindness",
+              "duration": 20,
+              "amplifier": 2,
+              "chance": 0.25
+          }
+      ]
+        }
+      },
+      "range": 7.5,
+      "radius": 0.1
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+        "type": "PROGRESS",
+        "texture": "swhp:textures/gui/bars/grey_cooldown.png",
+        "data": "swhp:dyn/forcecrush_cooldown"
+    }
+  ]
+}

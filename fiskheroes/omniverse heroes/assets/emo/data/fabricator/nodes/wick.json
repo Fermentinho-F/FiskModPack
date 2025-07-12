@@ -1,0 +1,9 @@
+{
+  "suit": "emo:wick",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:defense",
+    "fiskheroes:marksmanship",
+    "emo:cadmus"
+  ]
+}

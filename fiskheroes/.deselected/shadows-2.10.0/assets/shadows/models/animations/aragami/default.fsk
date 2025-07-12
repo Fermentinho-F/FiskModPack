@@ -1,0 +1,2 @@
+{data} = curve {data}
+{rightArm_rotZ} @ {data} -> 0.32

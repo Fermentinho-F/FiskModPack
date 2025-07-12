@@ -1,0 +1,95 @@
+{
+  "name": "Kahhori Physiology",
+  "modifiers": {
+ "fiskheroes:shield": {
+      "shield": {
+        "health": 200.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+     "fiskheroes:transformation": {
+      "key": "NEXT",
+      "transformation": {
+        "toggleData": "zaro:dyn/next",
+        "timerData": "zaro:dyn/next_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+  },
+"fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 80,
+      "duration": 30000,
+      "cooldownTime": 70,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+      }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}
+
+

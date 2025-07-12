@@ -1,0 +1,33 @@
+{
+    "suit": "pwt:toxin",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:traversal2",
+        "fiskheroes:defense2",
+        "fiskheroes:melee3",
+        "fiskheroes:ranged2",
+		"fiskheroes:regeneration2",
+		"fiskheroes:object_manipulation",
+        "pwt:symbiotic_life_form",
+		"pwt:carnage"
+    ],
+    "display": {
+    "description": "... It's In The Genes."
+    },
+	"criteria": {
+    "F*** 12": {
+      "trigger": "fiskheroes:entity_hurt_by_player",
+      "description": {
+        "translate": "F*** 12"
+      },
+      "condition": {
+        "variables": {
+			"player": "PLAYER_ATTACKING",
+			"damage": "DAMAGE_SOURCE",
+			"entity": "ENTITY_HURT"
+        },
+        "check": "player.getWornChestplate().nbt().getString('HeroType') == 'pwt:carnage' && player.getData('pwt:dyn/symbiot') && (entity.getEntityName() == 'Chicken' || entity.getEntityName() == 'Pig') && damage.isMelee()"
+      }
+    }
+  }
+}

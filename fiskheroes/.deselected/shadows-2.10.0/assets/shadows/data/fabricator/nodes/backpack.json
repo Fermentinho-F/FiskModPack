@@ -1,0 +1,7 @@
+{
+  "suit": "shadows:backpack",
+  "requirements": [
+    "fiskheroes:tier1",
+    "shadows:shadow00dev"
+  ]
+}

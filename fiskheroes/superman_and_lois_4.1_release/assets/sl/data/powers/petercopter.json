@@ -1,0 +1,32 @@
+{
+  "name": "Peter-Copter",
+  "modifiers": {
+    "fiskheroes:flight": {
+      "speed": 0.01
+    },
+    "fiskheroes:transformation|petercoptertransformation": {
+      "key": "PETER_COPTER",
+      "isToggle": true,
+      "transformation": {
+        "toggleData": "sl:dyn/petercopter",
+        "timerData": "sl:dyn/petercopter_timer",
+        "time": 60
+      },
+      "soundEvents": {
+        "ENABLE": "sl:to_the_petercopter"
+      }
+    },
+    "fiskheroes:transformation|flight": {
+      "key": "FLIGHT_KEY",
+      "isToggle": true,
+      "transformation": {
+        "toggleData": "sl:dyn/helicopter_flight",
+        "timerData": "sl:dyn/helicopter_flight_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "sl:helicopter_loop"
+      }
+    }
+  }
+}

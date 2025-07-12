@@ -1,0 +1,20 @@
+{
+  "name": "Bio Elctricity",
+  "modifiers": {
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "ENERGY": 1.0,
+          "ELECTRICITY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.05
+        }
+      },
+      "chargeTime": 25,
+      "range": 48.0
+    }
+  }
+}

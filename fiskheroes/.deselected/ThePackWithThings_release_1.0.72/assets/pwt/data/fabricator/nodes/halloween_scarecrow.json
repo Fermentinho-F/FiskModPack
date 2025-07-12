@@ -1,0 +1,6 @@
+{
+  "suit": "pwt:halloween_scarecrow",
+  "requirements": [
+    "pwt:halloween"
+  ]
+}

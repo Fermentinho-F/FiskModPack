@@ -1,0 +1,25 @@
+{jaw_rotX} @ {data_0} -> 15'
+
+{head_posY}+=1{data_0}
+{head_posZ}+=-4{data_0}
+
+{body_rotX}+=20'{data_0}
+{body_posY}+=1{data_0}
+{body_posZ}+=-4{data_0}
+
+{rightArm_rotX}+=-81.0761'{data_0}
+{rightArm_rotY}+=29.6415'{data_0}
+{rightArm_rotZ}+=30.3534'{data_0}
+{rightArm_posZ}+=-4{data_0}
+
+{leftArm_rotX}+=-81.0761496038'{data_0}
+{leftArm_rotY}+=-29.6414973712'{data_0}
+{leftArm_rotZ}+=-30.3534344071'{data_0}
+{leftArm_posZ}+=-4{data_0}
+
+;=======================================================================================
+
+{ear2_rotY} @ {data_1} -> -40'
+{ear1_rotY} @ {data_1} -> 40'
+{bone2_rotY} @ {data_1} -> -60'
+{bone3_rotY} @ {data_1} -> 60'

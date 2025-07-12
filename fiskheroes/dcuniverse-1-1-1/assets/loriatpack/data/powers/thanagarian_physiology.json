@@ -1,0 +1,69 @@
+{
+    "name": "Thanagarian Physiology",
+   "modifiers": {
+	   "fiskheroes:damage_immunity|telepat": {
+      "damageType": "TELEPATIC"
+    },
+	"fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 2.5,
+      "cooldownTime": 80
+    },
+	    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+	  "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "MAGIC": 1.0,
+          "ELECTRICITY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.05
+        }
+      },
+      "chargeTime": 15,
+      "range": 4.0
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    },
+	"fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+	  "barrelRoll": {
+        "duration": 14,
+        "speed": 0.12,
+        "drag": 0.03
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "loriatpack:flap_wings"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    }
+  }
+}

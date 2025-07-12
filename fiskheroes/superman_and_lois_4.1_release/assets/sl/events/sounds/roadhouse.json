@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.roadhouse",
+  "volume": 1.0
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Reverse Cursed Technique",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "REVERSE",
+      "transformation": {
+        "toggleData": "jjkp:dyn/reverse",
+        "timerData": "jjkp:dyn/reverse_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jjkp:dyn/reverse",
+        "cooldownData": "jjkp:dyn/reverse_cooldown",
+        "duration": 10,
+        "recovery": 0.05
+      }
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 0,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/reverse_cursed_technique_bar.png",
+      "data": "jjkp:dyn/reverse_cooldown"
+    }
+  ]
+}

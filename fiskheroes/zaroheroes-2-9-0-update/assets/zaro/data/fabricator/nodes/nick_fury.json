@@ -1,0 +1,13 @@
+{
+  "suit": "zaro:nick_fury",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:ranged2",
+    "fiskheroes:traversal",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee2",
+    "zaro:zaroheroes"
+  ]
+}

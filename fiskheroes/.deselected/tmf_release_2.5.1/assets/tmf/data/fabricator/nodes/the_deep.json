@@ -1,0 +1,15 @@
+{
+  "suit": "tmf:the_deep",
+  "display": {
+    "description": "\u00A7cRequires \u00A76\u00A7lUnconventional Heropack"
+  },
+  "requirements": [
+    "unconventional:compound_v",
+    "unconventional:uhp",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:tier6_7",
+    "fiskheroes:traversal2",
+    "tmf:tmf"
+  ]
+}

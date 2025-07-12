@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:invisible_woman",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee",
+    "fiskheroes:traversal",
+    "fiskheroes:defense2"
+  ]
+}

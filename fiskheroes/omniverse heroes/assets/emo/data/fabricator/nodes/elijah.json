@@ -1,0 +1,11 @@
+{
+  "suit": "emo:elijah",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "emo:originals",
+    "emo:cadmus"
+  ],
+    "display": {
+    "description": "I always keep my word"
+    }
+}

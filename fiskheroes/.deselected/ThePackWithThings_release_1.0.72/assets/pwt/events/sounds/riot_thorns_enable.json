@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.riot.symbiot.thorns.enable",
+  "condition": "entity.getData('pwt:dyn/ability')",
+  "pitch": "0.9 + Math.random() * 0.2"
+}

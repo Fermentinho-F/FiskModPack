@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:odd",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap2_3",
+    "fiskheroes:ranged",
+    "fiskheroes:defense",
+    "tmhp:lyoko",
+    "tmhp:heropack2"
+  ]
+}

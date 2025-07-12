@@ -1,0 +1,4 @@
+{data} = sin(pi(1 - {data}))^2
+{rightArm_rotX} @ {data} -> -2.4
+{rightArm_rotY} *= 1 - {data}
+{rightArm_rotZ} *= 1 - {data}

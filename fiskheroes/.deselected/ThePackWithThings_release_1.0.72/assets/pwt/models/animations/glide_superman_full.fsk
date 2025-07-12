@@ -1,0 +1,101 @@
+
+{data} = curve {data}
+
+
+
+;CLASSIC
+{rightArm_rotX} @ {data_0} -> ({head_rotX} - pi / 2) -5'
+{rightArm_rotY} @ {data_0} -> {head_rotY} + 90'
+{rightArm_rotZ} @ {data_0} -> {head_rotZ} +30'
+
+{leftArm_rotX} @ {data_0} -> ({head_rotX} - pi / 2) -5'
+{leftArm_rotY} @ {data_0} -> {head_rotY} - 90'
+{leftArm_rotZ} @ {data_0} -> {head_rotZ} -30'
+
+{rightArm_posX} @ {data_0} -> -6
+{rightArm_posY} @ {data_0} -> 2
+{rightArm_posZ} @ {data_0} -> -1
+
+{leftArm_posX} @ {data_0} -> 6
+{leftArm_posY} @ {data_0} -> 2
+{leftArm_posZ} @ {data_0} -> -1
+
+
+{rightLeg_rotX} @ {data_0} -> 30' -15'
+{rightLeg_rotY} @ {data_0} -> 16' + (-{head_rotY}/5) 
+{rightLeg_rotZ} @ {data_0} -> 5'
+{leftLeg_rotX} @ {data_0} -> 20' -15'
+{leftLeg_rotY} @ {data_0} -> -10'+ (-{head_rotY}/2) 
+{leftLeg_rotZ} @ {data_0} -> 2'
+
+{rightLeg_posX} @ {data_0} -> -2.0
+{rightLeg_posY} @ {data_0} -> 8.1
+{rightLeg_posZ} @ {data_0} -> -7.1
+{leftLeg_posX} @ {data_0} -> 2
+{leftLeg_posY} @ {data_0} -> 11.2
+{leftLeg_posZ} @ {data_0} -> -3.0
+
+{body_rotX} @ {data_0} -> -15'
+
+;NORMAL
+{rightArm_rotX} @ {data_1} -> ({head_rotX} - pi / 2) -5'
+{rightArm_rotY} @ {data_1} -> {head_rotY} + 90'
+{rightArm_rotZ} @ {data_1} -> {head_rotZ} +30'
+
+
+{leftArm_rotX} @ {data_1} -> 10' - (-{head_rotY}/10)
+{leftArm_rotY} @ {data_1} -> -20' + (-{head_rotY})
+{leftArm_rotZ} @ {data_1} -> -20' 
+
+{rightArm_posX} @ {data_1} -> -6
+{rightArm_posY} @ {data_1} -> 2
+{rightArm_posZ} @ {data_1} -> -1
+
+
+{rightLeg_rotX} @ {data_1} -> 30' -15'
+{rightLeg_rotY} @ {data_1} -> 16' + (-{head_rotY}/5) 
+{rightLeg_rotZ} @ {data_1} -> 5'
+{leftLeg_rotX} @ {data_1} -> 20' -15'
+{leftLeg_rotY} @ {data_1} -> -10'+ (-{head_rotY}/2) 
+{leftLeg_rotZ} @ {data_1} -> 2'
+
+{rightLeg_posX} @ {data_1} -> -2.0
+{rightLeg_posY} @ {data_1} -> 8.1
+{rightLeg_posZ} @ {data_1} -> -7.1
+{leftLeg_posX} @ {data_1} -> 2
+{leftLeg_posY} @ {data_1} -> 11.2
+{leftLeg_posZ} @ {data_1} -> -3.0
+
+{body_rotX} @ {data_1} -> -15'
+
+;FAST
+{rightArm_rotX} @ {data_2} -> -15' 
+{rightArm_rotY} @ {data_2} -> 130' + (-{head_rotY}) 
+{rightArm_rotZ} @ {data_2} -> 15'  - (-{head_rotY}/10)
+
+{leftArm_rotX} @ {data_2} -> -15' 
+{leftArm_rotY} @ {data_2} -> - 130' + (-{head_rotY})
+{leftArm_rotZ} @ {data_2} -> -15' - (-{head_rotY}/10)
+
+
+
+{rightArm_posX} @ {data_2} -> -6
+{rightArm_posZ} @ {data_2} -> 0
+
+{leftArm_posX} @ {data_2} -> 6
+
+{rightLeg_rotX} @ {data_2} -> 30' -15'
+{rightLeg_rotY} @ {data_2} -> 16' + (-{head_rotY}/5) 
+{rightLeg_rotZ} @ {data_2} -> 5'
+{leftLeg_rotX} @ {data_2} -> 20' -15'
+{leftLeg_rotY} @ {data_2} -> -10'+ (-{head_rotY}/2) 
+{leftLeg_rotZ} @ {data_2} -> 2'
+
+{rightLeg_posX} @ {data_2} -> -2.0
+{rightLeg_posY} @ {data_2} -> 8.1  
+{rightLeg_posZ} @ {data_2} -> -7.1
+{leftLeg_posX} @ {data_2} -> 2
+{leftLeg_posY} @ {data_2} -> 11.2 
+{leftLeg_posZ} @ {data_2} -> -3.0
+
+{body_rotX} @ {data_2} -> -10'

@@ -1,0 +1,24 @@
+{body_rotX} @ {data} -> 0
+{body_rotY} @ {data} -> 0
+{body_rotZ} @ {data} -> 0
+{head_posY} @ {data} -> 0
+{rightArm_rotX} @ max({data} - {data_1}, 0) -> 0
+{rightArm_rotY} @ max({data} - {data_1}, 0) -> 0
+{leftArm_rotX} @ {data} -> 0
+{leftArm_rotY} @ {data} -> 0
+{rightLeg_rotX} @ {data} -> 0
+{leftLeg_rotX} @ {data} -> 0
+{rightLeg_posY} @ {data} -> 12
+{leftLeg_posY} @ {data} -> 12
+
+{rightLeg_posZ} @ {data} -> 0
+{leftLeg_posZ} @ {data} -> 0
+
+{rightArm_posX} @ {data} -> -5
+{rightArm_posY} @ {data} -> 2
+{rightArm_posZ} @ {data} -> 0
+
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 2
+{leftArm_posZ} @ {data} -> 0
+

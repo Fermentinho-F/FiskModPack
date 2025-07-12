@@ -1,0 +1,1899 @@
+{
+  "ambient.flight": {
+    "category": "ambient",
+    "sounds": [
+      "ambient/flight_loop"
+    ]
+  },
+  "batfish.click": {
+    "category": "master",
+    "sounds": [
+      "batfish/button_click"
+    ]
+  },
+  "batfish.coin": {
+    "category": "master",
+    "sounds": [
+      "batfish/coin_pickup"
+    ]
+  },
+  "batfish.death": {
+    "category": "master",
+    "sounds": [
+      "batfish/death"
+    ]
+  },
+  "batfish.explode": {
+    "category": "master",
+    "sounds": [
+      "batfish/explode1",
+      "batfish/explode2",
+      "batfish/explode3",
+      "batfish/explode4"
+    ]
+  },
+  "batfish.pop": {
+    "category": "master",
+    "sounds": [
+      "batfish/pop"
+    ]
+  },
+  "batfish.scream": {
+    "category": "master",
+    "sounds": [
+      "batfish/scream"
+    ]
+  },
+  "batfish.title": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "batfish/title",
+        "stream": true
+      }
+    ]
+  },
+  "batfish.whistle": {
+    "category": "master",
+    "sounds": [
+      "batfish/whistle"
+    ]
+  },
+  "batfish.woodbreak": {
+    "category": "master",
+    "sounds": [
+      "batfish/woodbreak"
+    ]
+  },
+  "batfish.world": {
+    "category": "master",
+    "sounds": [
+      "batfish/world"
+    ]
+  },
+  "block.bulletpress.press": {
+    "category": "block",
+    "sounds": [
+      "block/bullet_press/press"
+    ]
+  },
+  "block.nexussoil.ignite": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "minecraft:mob/ghast/fireball4",
+        "pitch": 1.1
+      }
+    ]
+  },
+  "block.pizza.dig": {
+    "category": "block",
+    "sounds": [
+      "block/pizza/dig1",
+      "block/pizza/dig2",
+      "block/pizza/dig3",
+      "block/pizza/dig4"
+    ]
+  },
+  "block.pizza.step": {
+    "category": "block",
+    "sounds": [
+      "block/pizza/step1",
+      "block/pizza/step2",
+      "block/pizza/step3",
+      "block/pizza/step4",
+      "block/pizza/step5",
+      "block/pizza/step6"
+    ]
+  },
+  "block.pizzabox.close": {
+    "category": "block",
+    "sounds": [
+      "block/pizza_box/close"
+    ]
+  },
+  "block.pizzabox.open": {
+    "category": "block",
+    "sounds": [
+      "block/pizza_box/open"
+    ]
+  },
+  "block.suitaugmentor.invest": {
+    "category": "block",
+    "sounds": [
+      "block/suit_augmentor/invest"
+    ]
+  },
+  "block.suitaugmentor.unlock": {
+    "category": "block",
+    "sounds": [
+      "block/suit_augmentor/unlock"
+    ]
+  },
+  "block.suitaugmentor.whoosh": {
+    "category": "block",
+    "sounds": [
+      "block/suit_augmentor/whoosh"
+    ]
+  },
+  "block.suitdatabase.unlock": {
+    "category": "block",
+    "sounds": [
+      "block/suit_database/unlock"
+    ]
+  },
+  "block.suitfabricator.print": {
+    "category": "block",
+    "sounds": [
+      "block/suit_fabricator/print_loop"
+    ]
+  },
+  "entity.arrow.grapple.disconnect": {
+    "category": "master",
+    "sounds": [
+      "minecraft:mob/sheep/shear"
+    ]
+  },
+  "entity.arrow.pufferfish.flop": {
+    "category": "master",
+    "sounds": [
+      "entity/arrow/pufferfish/flop1",
+      "entity/arrow/pufferfish/flop2",
+      "entity/arrow/pufferfish/flop3",
+      "entity/arrow/pufferfish/flop4"
+    ]
+  },
+  "entity.arrow.pufferfish.primed": {
+    "category": "master",
+    "sounds": [
+      "minecraft:random/fuse"
+    ]
+  },
+  "entity.arrow.vine.snap": {
+    "category": "master",
+    "sounds": [
+      "minecraft:mob/sheep/shear"
+    ]
+  },
+  "entity.fireball.explode": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "minecraft:random/explode1",
+        "pitch": 0.9
+      },
+      {
+        "name": "minecraft:random/explode2",
+        "pitch": 0.9
+      },
+      {
+        "name": "minecraft:random/explode3",
+        "pitch": 0.9
+      },
+      {
+        "name": "minecraft:random/explode4",
+        "pitch": 0.9
+      }
+    ]
+  },
+  "entity.freezegrenade.freeze": {
+    "category": "master",
+    "sounds": [
+      "suit/cryo_charge"
+    ]
+  },
+  "entity.icicle.impact": {
+    "category": "master",
+    "sounds": [
+      "minecraft:random/glass1",
+      "minecraft:random/glass2",
+      "minecraft:random/glass3"
+    ]
+  },
+  "entity.smokebomb.fizz": {
+    "category": "master",
+    "sounds": [
+      "entity/smoke_bomb/fizz"
+    ]
+  },
+  "entity.web.bounce": {
+    "category": "master",
+    "sounds": [
+      "entity/web/bounce"
+    ]
+  },
+  "entity.webrope.cut": {
+    "category": "master",
+    "sounds": [
+      "minecraft:mob/sheep/shear"
+    ]
+  },
+  "item.battery.absorb": {
+    "category": "block",
+    "sounds": [
+      "item/battery/absorb"
+    ]
+  },
+  "item.battery.attach": {
+    "category": "player",
+    "sounds": [
+      "item/battery/attach"
+    ]
+  },
+  "item.battery.detach": {
+    "category": "player",
+    "sounds": [
+      "item/battery/detach"
+    ]
+  },
+  "item.battery.on": {
+    "category": "block",
+    "sounds": [
+      "item/battery/on"
+    ]
+  },
+  "item.bow.shoot": {
+    "category": "player",
+    "sounds": [
+      "item/bow/shoot1",
+      "item/bow/shoot2",
+      "item/bow/shoot3"
+    ]
+  },
+  "item.chronosrifle.shoot": {
+    "category": "player",
+    "sounds": [
+      "item/laser_gun/shoot"
+    ]
+  },
+  "item.coldgun.aim": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/aim1",
+      "item/cold_gun/aim2",
+      "item/cold_gun/aim3"
+    ]
+  },
+  "item.coldgun.beam.loop": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/beam_loop"
+    ]
+  },
+  "item.coldgun.beam.start": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/beam_start"
+    ]
+  },
+  "item.coldgun.beam.stop": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/beam_stop"
+    ]
+  },
+  "item.coldgun.grenade": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/grenade1",
+      "item/cold_gun/grenade2"
+    ]
+  },
+  "item.coldgun.static": {
+    "category": "player",
+    "sounds": [
+      "item/cold_gun/static"
+    ]
+  },
+  "item.gun.beretta.shoot": {
+    "category": "player",
+    "sounds": [
+      "item/gun/beretta/shoot1",
+      "item/gun/beretta/shoot2",
+      "item/gun/beretta/shoot3",
+      "item/gun/beretta/shoot4"
+    ]
+  },
+  "item.gun.beretta.switch": {
+    "category": "player",
+    "sounds": [
+      "item/gun/beretta/switch"
+    ]
+  },
+  "item.gun.click": {
+    "category": "player",
+    "sounds": [
+      "item/gun/click"
+    ]
+  },
+  "item.gun.deagle.shoot": {
+    "category": "player",
+    "sounds": [
+      "item/gun/deagle/shoot1",
+      "item/gun/deagle/shoot2"
+    ]
+  },
+  "item.gun.reload": {
+    "category": "player",
+    "sounds": [
+      "item/gun/reload"
+    ]
+  },
+  "item.gun.reload.dual": {
+    "category": "player",
+    "sounds": [
+      "item/gun/reload_dual"
+    ]
+  },
+  "item.ripsgun.shoot": {
+    "category": "player",
+    "sounds": [
+      "item/laser_gun/shoot"
+    ]
+  },
+  "item.shield.hit": {
+    "category": "master",
+    "sounds": [
+      "item/shield/hit"
+    ]
+  },
+  "item.shield.throw": {
+    "category": "player",
+    "sounds": [
+      "item/shield/throw"
+    ]
+  },
+  "mob.cactus.step": {
+    "category": "neutral",
+    "sounds": [
+      "minecraft:mob/irongolem/walk1",
+      "minecraft:mob/irongolem/walk2",
+      "minecraft:mob/irongolem/walk3",
+      "minecraft:mob/irongolem/walk4"
+    ]
+  },
+  "mob.creetle.death": {
+    "category": "hostile",
+    "sounds": [
+      "mob/creetle/death1",
+      "mob/creetle/death2",
+      "mob/creetle/death3"
+    ]
+  },
+  "mob.creetle.fly": {
+    "category": "hostile",
+    "sounds": [
+      "mob/creetle/fly"
+    ]
+  },
+  "mob.creetle.fly.bosnia": {
+    "category": "hostile",
+    "sounds": [
+      "mob/creetle/fly_bosnia"
+    ]
+  },
+  "mob.creetle.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "mob/creetle/hurt1",
+      "mob/creetle/hurt2",
+      "mob/creetle/hurt3"
+    ]
+  },
+  "mob.creetle.say": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "mob/creetle/say",
+        "pitch": 0.8
+      },
+      {
+        "name": "mob/creetle/say",
+        "pitch": 1.1
+      },
+      {
+        "name": "mob/creetle/say"
+      }
+    ]
+  },
+  "mob.creetle.step": {
+    "category": "hostile",
+    "sounds": [
+      "mob/creetle/step1",
+      "mob/creetle/step2",
+      "mob/creetle/step3"
+    ]
+  },
+  "mob.illusiondrone.shoot": {
+    "category": "hostile",
+    "sounds": [
+      "mob/illusion_drone/shoot"
+    ]
+  },
+  "mob.ironman.hurt": {
+    "category": "neutral",
+    "sounds": [
+      "minecraft:mob/zombie/metal1",
+      "minecraft:mob/zombie/metal2",
+      "minecraft:mob/zombie/metal3"
+    ]
+  },
+  "modifier.beam.antimatter": {
+    "category": "player",
+    "sounds": [
+      "suit/antimatter_beam_loop"
+    ]
+  },
+  "modifier.beam.cosmic": {
+    "category": "player",
+    "sounds": [
+      "suit/cosmic_beam_loop"
+    ]
+  },
+  "modifier.chargedbeam": {
+    "category": "player",
+    "sounds": [
+      "suit/charged_beam_loop"
+    ]
+  },
+  "modifier.cryocharge": {
+    "category": "player",
+    "sounds": [
+      "suit/cryo_charge"
+    ]
+  },
+  "modifier.equipment.grenade.throw": {
+    "category": "player",
+    "sounds": [
+      "suit/equipment/grenade_throw"
+    ]
+  },
+  "modifier.equipment.switch": {
+    "category": "player",
+    "sounds": [
+      "suit/equipment/switch1",
+      "suit/equipment/switch2",
+      "suit/equipment/switch3",
+      "suit/equipment/switch4",
+      "suit/equipment/switch5",
+      "suit/equipment/switch6"
+    ]
+  },
+  "modifier.fireball": {
+    "category": "player",
+    "sounds": [
+      "suit/fireball/shoot1",
+      "suit/fireball/shoot2",
+      "suit/fireball/shoot3"
+    ]
+  },
+  "modifier.flight.boost": {
+    "category": "player",
+    "sounds": [
+      "suit/flight/boost1",
+      "suit/flight/boost2",
+      "suit/flight/boost3",
+      "suit/flight/boost4"
+    ]
+  },
+  "modifier.flight.boost.super": {
+    "category": "player",
+    "sounds": [
+      "suit/flight/boost_super"
+    ]
+  },
+  "modifier.flight.cape.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/flight/cape_loop"
+    ]
+  },
+  "modifier.flight.impact.block": {
+    "category": "player",
+    "sounds": [
+      "suit/flight/impact_block"
+    ]
+  },
+  "modifier.flight.impact.entity": {
+    "category": "player",
+    "sounds": [
+      "suit/flight/impact_entity1",
+      "suit/flight/impact_entity2",
+      "suit/flight/impact_entity3",
+      "suit/flight/impact_entity4"
+    ]
+  },
+  "modifier.gliding.cape.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/cape/disable1",
+      "suit/cape/disable2"
+    ]
+  },
+  "modifier.gliding.cape.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/cape/enable1",
+      "suit/cape/enable2"
+    ]
+  },
+  "modifier.gliding.webwings.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/web_wings/disable"
+    ]
+  },
+  "modifier.gliding.webwings.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/web_wings/enable"
+    ]
+  },
+  "modifier.gravitymanip.switch": {
+    "category": "player",
+    "sounds": [
+      "suit/gravity_manipulation/switch"
+    ]
+  },
+  "modifier.gravitymanip.wave": {
+    "category": "player",
+    "sounds": [
+      "suit/gravity_manipulation/wave"
+    ]
+  },
+  "modifier.healingfactor.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/healing_factor_loop"
+    ]
+  },
+  "modifier.heatvision": {
+    "category": "player",
+    "sounds": [
+      "suit/heat_vision_loop"
+    ]
+  },
+  "modifier.lightning": {
+    "category": "player",
+    "sounds": [
+      "suit/lightning_cast"
+    ]
+  },
+  "modifier.repulsor.blast": {
+    "category": "player",
+    "sounds": [
+      "suit/repulsor/blast"
+    ]
+  },
+  "modifier.repulsor.charge": {
+    "category": "player",
+    "sounds": [
+      "suit/repulsor/charge"
+    ]
+  },
+  "modifier.repulsor.powerdown": {
+    "category": "player",
+    "sounds": [
+      "suit/repulsor/powerdown"
+    ]
+  },
+  "modifier.sentrymode.close": {
+    "category": "neutral",
+    "sounds": [
+      "suit/sentry_mode/close"
+    ]
+  },
+  "modifier.sentrymode.open": {
+    "category": "neutral",
+    "sounds": [
+      "suit/sentry_mode/open"
+    ]
+  },
+  "modifier.shadowchain.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowchain/loop"
+    ]
+  },
+  "modifier.shadowchain.release": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowchain/release"
+    ]
+  },
+  "modifier.shadowchain.start": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowchain/start"
+    ]
+  },
+  "modifier.shadowdome.cast.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowdome/cast_loop"
+    ]
+  },
+  "modifier.shadowdome.dissolve": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowdome/dissolve"
+    ]
+  },
+  "modifier.shadowdome.form": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowdome/form"
+    ]
+  },
+  "modifier.shadowdome.form.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowdome/form_loop"
+    ]
+  },
+  "modifier.shadowform.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowform/disable"
+    ]
+  },
+  "modifier.shadowform.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowform/enable"
+    ]
+  },
+  "modifier.shadowform.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/shadowform/loop"
+    ]
+  },
+  "modifier.shield.disarm": {
+    "category": "player",
+    "sounds": [
+      "suit/shield_disarm"
+    ]
+  },
+  "modifier.slowmotion.disable.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/slow_motion/disable_comics"
+    ]
+  },
+  "modifier.slowmotion.disable.cw": {
+    "category": "player",
+    "sounds": [
+      "suit/slow_motion/disable_cw1",
+      "suit/slow_motion/disable_cw2"
+    ]
+  },
+  "modifier.slowmotion.enable.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/slow_motion/enable_comics"
+    ]
+  },
+  "modifier.slowmotion.enable.cw": {
+    "category": "player",
+    "sounds": [
+      "suit/slow_motion/enable_cw1",
+      "suit/slow_motion/enable_cw2",
+      "suit/slow_motion/enable_cw3",
+      "suit/slow_motion/enable_cw4",
+      "suit/slow_motion/enable_cw5",
+      "suit/slow_motion/enable_cw6"
+    ]
+  },
+  "modifier.spell.cast": {
+    "category": "player",
+    "sounds": [
+      "suit/spell_cast"
+    ]
+  },
+  "modifier.spell.fail": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/fizz",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "modifier.superspeed.flicker.loop.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/flicker_loop_comics"
+    ]
+  },
+  "modifier.superspeed.flicker.loop.v9": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/flicker_loop_v9"
+    ]
+  },
+  "modifier.superspeed.flicker.loop.zoom.pink": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/flicker_loop_zoom_pink"
+    ]
+  },
+  "modifier.superspeed.move.loop.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/move_loop_comics"
+    ]
+  },
+  "modifier.superspeed.move.loop.cw": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/move_loop_cw"
+    ]
+  },
+  "modifier.superspeed.move.loop.savitar": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/move_loop_savitar"
+    ]
+  },
+  "modifier.superspeed.move.loop.savitar.rgb": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/move_loop_savitar_rgb"
+    ]
+  },
+  "modifier.superspeed.move.loop.zoom.pink": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/move_loop_zoom_pink"
+    ]
+  },
+  "modifier.superspeed.negative.roar": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/negative_roar1",
+      "suit/super_speed/negative_roar2"
+    ]
+  },
+  "modifier.superspeed.sprint.barry": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_barry1",
+      "suit/super_speed/sprint_barry10",
+      "suit/super_speed/sprint_barry11",
+      "suit/super_speed/sprint_barry12",
+      "suit/super_speed/sprint_barry2",
+      "suit/super_speed/sprint_barry3",
+      "suit/super_speed/sprint_barry4",
+      "suit/super_speed/sprint_barry5",
+      "suit/super_speed/sprint_barry6",
+      "suit/super_speed/sprint_barry7",
+      "suit/super_speed/sprint_barry8",
+      "suit/super_speed/sprint_barry9"
+    ]
+  },
+  "modifier.superspeed.sprint.barry.test": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_barry_test1",
+      "suit/super_speed/sprint_barry_test2",
+      "suit/super_speed/sprint_barry_test3",
+      "suit/super_speed/sprint_barry_test4",
+      "suit/super_speed/sprint_barry_test5",
+      "suit/super_speed/sprint_barry_test6"
+    ]
+  },
+  "modifier.superspeed.sprint.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_comics1",
+      "suit/super_speed/sprint_comics2",
+      "suit/super_speed/sprint_comics3",
+      "suit/super_speed/sprint_comics4",
+      "suit/super_speed/sprint_comics5"
+    ]
+  },
+  "modifier.superspeed.sprint.jay": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_jay1",
+      "suit/super_speed/sprint_jay3",
+      "suit/super_speed/sprint_jay4",
+      "suit/super_speed/sprint_jay5"
+    ]
+  },
+  "modifier.superspeed.sprint.negative": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_negative1",
+      "suit/super_speed/sprint_negative2",
+      "suit/super_speed/sprint_negative3",
+      "suit/super_speed/sprint_negative4",
+      "suit/super_speed/sprint_negative5",
+      "suit/super_speed/sprint_negative6"
+    ]
+  },
+  "modifier.superspeed.sprint.savitar": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_savitar1",
+      "suit/super_speed/sprint_savitar10",
+      "suit/super_speed/sprint_savitar2",
+      "suit/super_speed/sprint_savitar3",
+      "suit/super_speed/sprint_savitar4",
+      "suit/super_speed/sprint_savitar5",
+      "suit/super_speed/sprint_savitar6",
+      "suit/super_speed/sprint_savitar7",
+      "suit/super_speed/sprint_savitar8",
+      "suit/super_speed/sprint_savitar9"
+    ]
+  },
+  "modifier.superspeed.sprint.savitar.noise": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_savitar_noise1",
+      "suit/super_speed/sprint_savitar_noise2",
+      "suit/super_speed/sprint_savitar_noise3",
+      "suit/super_speed/sprint_savitar_noise4"
+    ]
+  },
+  "modifier.superspeed.sprint.trajectory": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_trajectory1",
+      "suit/super_speed/sprint_trajectory2",
+      "suit/super_speed/sprint_trajectory3",
+      "suit/super_speed/sprint_trajectory4",
+      "suit/super_speed/sprint_trajectory5"
+    ]
+  },
+  "modifier.superspeed.sprint.wally": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_wally1",
+      "suit/super_speed/sprint_wally2",
+      "suit/super_speed/sprint_wally3",
+      "suit/super_speed/sprint_wally4",
+      "suit/super_speed/sprint_wally5",
+      "suit/super_speed/sprint_wally6",
+      "suit/super_speed/sprint_wally7",
+      "suit/super_speed/sprint_wally8"
+    ]
+  },
+  "modifier.superspeed.sprint.zoom.death": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_zoom_death1",
+      "suit/super_speed/sprint_zoom_death2"
+    ]
+  },
+  "modifier.superspeed.sprint.zoom.death.noise": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_zoom_death_noise1",
+      "suit/super_speed/sprint_zoom_death_noise2",
+      "suit/super_speed/sprint_zoom_death_noise3"
+    ]
+  },
+  "modifier.superspeed.sprint.zoom.pink": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_zoom_pink"
+    ]
+  },
+  "modifier.superspeed.stop.barry": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_barry1",
+      "suit/super_speed/sprint_barry10",
+      "suit/super_speed/sprint_barry11",
+      "suit/super_speed/sprint_barry12",
+      "suit/super_speed/sprint_barry2",
+      "suit/super_speed/sprint_barry3",
+      "suit/super_speed/sprint_barry4",
+      "suit/super_speed/sprint_barry5",
+      "suit/super_speed/sprint_barry6",
+      "suit/super_speed/sprint_barry8",
+      "suit/super_speed/sprint_barry9",
+      "suit/super_speed/stop_barry1",
+      "suit/super_speed/stop_barry2",
+      "suit/super_speed/stop_barry3",
+      "suit/super_speed/stop_barry4",
+      "suit/super_speed/stop_barry5"
+    ]
+  },
+  "modifier.superspeed.stop.barry.test": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/stop_barry_test1",
+      "suit/super_speed/stop_barry_test2"
+    ]
+  },
+  "modifier.superspeed.stop.comics": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/stop_comics1",
+      "suit/super_speed/stop_comics2",
+      "suit/super_speed/stop_comics3"
+    ]
+  },
+  "modifier.superspeed.stop.jay": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_jay1",
+      "suit/super_speed/sprint_jay2",
+      "suit/super_speed/sprint_jay3",
+      "suit/super_speed/sprint_jay4",
+      "suit/super_speed/sprint_jay5"
+    ]
+  },
+  "modifier.superspeed.stop.negative": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_negative1",
+      "suit/super_speed/sprint_negative2",
+      "suit/super_speed/sprint_negative3",
+      "suit/super_speed/sprint_negative4",
+      "suit/super_speed/sprint_negative5",
+      "suit/super_speed/sprint_negative6"
+    ]
+  },
+  "modifier.superspeed.stop.zoom.death.roar": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/stop_zoom_death_roar1",
+      "suit/super_speed/stop_zoom_death_roar10",
+      "suit/super_speed/stop_zoom_death_roar11",
+      "suit/super_speed/stop_zoom_death_roar12",
+      "suit/super_speed/stop_zoom_death_roar13",
+      "suit/super_speed/stop_zoom_death_roar14",
+      "suit/super_speed/stop_zoom_death_roar2",
+      "suit/super_speed/stop_zoom_death_roar3",
+      "suit/super_speed/stop_zoom_death_roar4",
+      "suit/super_speed/stop_zoom_death_roar5",
+      "suit/super_speed/stop_zoom_death_roar6",
+      "suit/super_speed/stop_zoom_death_roar7",
+      "suit/super_speed/stop_zoom_death_roar8",
+      "suit/super_speed/stop_zoom_death_roar9"
+    ]
+  },
+  "modifier.superspeed.stop.zoom.pink": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/stop_zoom_pink"
+    ]
+  },
+  "modifier.superspeed.v9.sprint": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_v9_1",
+      "suit/super_speed/sprint_v9_2",
+      "suit/super_speed/sprint_v9_3",
+      "suit/super_speed/sprint_v9_4",
+      "suit/super_speed/sprint_v9_5",
+      "suit/super_speed/sprint_v9_6",
+      "suit/super_speed/sprint_v9_7"
+    ]
+  },
+  "modifier.superspeed.v9.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/super_speed/sprint_v9_1",
+      "suit/super_speed/sprint_v9_2",
+      "suit/super_speed/sprint_v9_5",
+      "suit/super_speed/sprint_v9_7"
+    ]
+  },
+  "modifier.telekinesis.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/telekinesis/loop"
+    ]
+  },
+  "modifier.telekinesis.start": {
+    "category": "player",
+    "sounds": [
+      "suit/telekinesis/start"
+    ]
+  },
+  "modifier.teleportation.breach": {
+    "category": "player",
+    "sounds": [
+      "suit/teleportation/breach"
+    ]
+  },
+  "modifier.teleportation.glow": {
+    "category": "player",
+    "sounds": [
+      "suit/teleportation/glow"
+    ]
+  },
+  "modifier.web.ps4.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/web/ps4/shoot1",
+      "suit/web/ps4/shoot2",
+      "suit/web/ps4/shoot3"
+    ]
+  },
+  "modifier.web.raimi.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/web/raimi/shoot1",
+      "suit/web/raimi/shoot2",
+      "suit/web/raimi/shoot3"
+    ]
+  },
+  "modifier.web.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/web/shoot1",
+      "suit/web/shoot2",
+      "suit/web/shoot3"
+    ]
+  },
+  "modifier.web.switch": {
+    "category": "player",
+    "sounds": [
+      "suit/web/switch"
+    ]
+  },
+  "modifier.web.webb.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/web/webb/shoot1",
+      "suit/web/webb/shoot2"
+    ]
+  },
+  "modifier.webswinging.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/web/swinging/disable"
+    ]
+  },
+  "modifier.webswinging.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/web/swinging/enable"
+    ]
+  },
+  "modifier.webswinging.stress": {
+    "category": "player",
+    "sounds": [
+      "suit/web/swinging/stress_loop"
+    ]
+  },
+  "modifier.webswinging.whoosh": {
+    "category": "player",
+    "sounds": [
+      "suit/web/swinging/whoosh1",
+      "suit/web/swinging/whoosh2",
+      "suit/web/swinging/whoosh3",
+      "suit/web/swinging/whoosh4",
+      "suit/web/swinging/whoosh5",
+      "suit/web/swinging/whoosh6",
+      "suit/web/swinging/whoosh7",
+      "suit/web/swinging/whoosh8",
+      "suit/web/swinging/whoosh9"
+    ]
+  },
+  "random.batfish": {
+    "category": "block",
+    "sounds": [
+      "random/batfish"
+    ]
+  },
+  "random.fire.off": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:random/fizz",
+        "pitch": 0.8
+      }
+    ]
+  },
+  "random.fire.on": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "minecraft:mob/ghast/fireball4",
+        "pitch": 1.2
+      }
+    ]
+  },
+  "random.spider": {
+    "category": "player",
+    "sounds": [
+      "random/spider"
+    ]
+  },
+  "suit.agentliberty.blade.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/agent_liberty/blade_disable"
+    ]
+  },
+  "suit.agentliberty.blade.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/agent_liberty/blade_enable"
+    ]
+  },
+  "suit.antimonitor.blast.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/blast_loop"
+    ]
+  },
+  "suit.antimonitor.blast.start": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/blast_start"
+    ]
+  },
+  "suit.antimonitor.forcefield": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/forcefield"
+    ]
+  },
+  "suit.antimonitor.forcefield.deflect": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/forcefield_deflect"
+    ]
+  },
+  "suit.antimonitor.grow": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/grow1",
+      "suit/anti_monitor/grow2",
+      "suit/anti_monitor/grow3",
+      "suit/anti_monitor/grow4"
+    ]
+  },
+  "suit.antimonitor.grow.antimatter": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/grow_antimatter"
+    ]
+  },
+  "suit.antimonitor.grow.roar": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/grow_roar"
+    ]
+  },
+  "suit.antimonitor.grow.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/grow_stop"
+    ]
+  },
+  "suit.antimonitor.land": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/land"
+    ]
+  },
+  "suit.antimonitor.punch": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/punch"
+    ]
+  },
+  "suit.antimonitor.shadowform.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/shadowform_disable"
+    ]
+  },
+  "suit.antimonitor.shadowform.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/shadowform_enable"
+    ]
+  },
+  "suit.antimonitor.shrink": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/shrink"
+    ]
+  },
+  "suit.antimonitor.walk": {
+    "category": "player",
+    "sounds": [
+      "suit/anti_monitor/walk"
+    ]
+  },
+  "suit.atom.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/atom/boost_loop"
+    ]
+  },
+  "suit.atom.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/atom/boost_start"
+    ]
+  },
+  "suit.atom.grow": {
+    "category": "player",
+    "sounds": [
+      "suit/atom/grow"
+    ]
+  },
+  "suit.atom.shrink": {
+    "category": "player",
+    "sounds": [
+      "suit/atom/shrink"
+    ]
+  },
+  "suit.blacklightning.boost.loop1": {
+    "category": "player",
+    "sounds": [
+      "suit/black_lightning/boost_loop1"
+    ]
+  },
+  "suit.blacklightning.boost.loop2": {
+    "category": "player",
+    "sounds": [
+      "suit/black_lightning/boost_loop2"
+    ]
+  },
+  "suit.blacklightning.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/black_lightning/boost_start"
+    ]
+  },
+  "suit.blacklightning.flight.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/black_lightning/flight_enable"
+    ]
+  },
+  "suit.blacklightning.lightning": {
+    "category": "player",
+    "sounds": [
+      "suit/black_lightning/lightning_cast1",
+      "suit/black_lightning/lightning_cast2",
+      "suit/black_lightning/lightning_cast3",
+      "suit/black_lightning/lightning_cast4"
+    ]
+  },
+  "suit.bullet.deflect": {
+    "category": "player",
+    "sounds": [
+      "suit/bullet_deflect/deflect1",
+      "suit/bullet_deflect/deflect2",
+      "suit/bullet_deflect/deflect3",
+      "suit/bullet_deflect/deflect4",
+      "suit/bullet_deflect/deflect5"
+    ]
+  },
+  "suit.capsam.boost.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/cap_sam/boost_enable"
+    ]
+  },
+  "suit.capsam.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/cap_sam/boost_loop"
+    ]
+  },
+  "suit.capsam.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/cap_sam/boost_start1",
+      "suit/cap_sam/boost_start2",
+      "suit/cap_sam/boost_start3"
+    ]
+  },
+  "suit.cowl.toggle": {
+    "category": "player",
+    "sounds": [
+      "suit/cowl_toggle1",
+      "suit/cowl_toggle2"
+    ]
+  },
+  "suit.falcon.boost.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/boost_enable"
+    ]
+  },
+  "suit.falcon.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/boost_loop"
+    ]
+  },
+  "suit.falcon.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/boost_start1",
+      "suit/falcon/boost_start2",
+      "suit/falcon/boost_start3"
+    ]
+  },
+  "suit.falcon.flight.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/flight_disable"
+    ]
+  },
+  "suit.falcon.flight.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/flight_enable"
+    ]
+  },
+  "suit.falcon.flight.roll": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/flight_roll"
+    ]
+  },
+  "suit.falcon.shield.block.start": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/shield_block_start"
+    ]
+  },
+  "suit.falcon.shield.block.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/shield_block_stop"
+    ]
+  },
+  "suit.falcon.shield.deflect": {
+    "category": "player",
+    "sounds": [
+      "suit/falcon/shield_deflect"
+    ]
+  },
+  "suit.firestorm.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/firestorm/boost_loop"
+    ]
+  },
+  "suit.firestorm.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/firestorm/boost_start"
+    ]
+  },
+  "suit.firestorm.flame.off": {
+    "category": "player",
+    "sounds": [
+      "suit/firestorm/flame_off"
+    ]
+  },
+  "suit.firestorm.flame.on": {
+    "category": "player",
+    "sounds": [
+      "suit/firestorm/flame_on"
+    ]
+  },
+  "suit.firestorm.flight.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/firestorm/flight_enable"
+    ]
+  },
+  "suit.ironman.beam.charge": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/beam/charge"
+    ]
+  },
+  "suit.ironman.beam.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/beam/loop"
+    ]
+  },
+  "suit.ironman.beam.start": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/beam/start"
+    ]
+  },
+  "suit.ironman.beam.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/beam/stop"
+    ]
+  },
+  "suit.ironman.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/boost_loop"
+    ]
+  },
+  "suit.ironman.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/boost_start"
+    ]
+  },
+  "suit.ironman.flight.dive": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/dive"
+    ]
+  },
+  "suit.ironman.flight.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/flight_enable"
+    ]
+  },
+  "suit.ironman.flight.roll": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/roll"
+    ]
+  },
+  "suit.ironman.landing": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/landing1",
+      "suit/iron_man/landing2",
+      "suit/iron_man/landing3"
+    ]
+  },
+  "suit.ironman.maskclose": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/mask_close"
+    ]
+  },
+  "suit.ironman.maskopen": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/mask_open"
+    ]
+  },
+  "suit.ironman.mk46.maskclose": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/mk46_mask_close"
+    ]
+  },
+  "suit.ironman.mk46.maskopen": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/mk46_mask_open"
+    ]
+  },
+  "suit.ironman.nanotech.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/disable"
+    ]
+  },
+  "suit.ironman.nanotech.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/enable"
+    ]
+  },
+  "suit.ironman.nanotech.maskclose": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mask_close"
+    ]
+  },
+  "suit.ironman.nanotech.maskopen": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mask_open"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.blade.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/weapon_disable"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.blade.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/weapon_enable"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.cannon.aim": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk50_cannon_aim_start"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.cannon.retract": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk50_cannon_aim_stop"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.cannon.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk50_cannon_shoot"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.cannon.static": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk50_cannon_aim_static"
+    ]
+  },
+  "suit.ironman.nanotech.mk50.shield.disable": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "suit/iron_man/nanotech/weapon_disable",
+        "pitch": 0.72
+      }
+    ]
+  },
+  "suit.ironman.nanotech.mk50.shield.enable": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "suit/iron_man/nanotech/weapon_enable",
+        "pitch": 0.72
+      }
+    ]
+  },
+  "suit.ironman.nanotech.mk85.shield.block.start": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk85_shield_block_start"
+    ]
+  },
+  "suit.ironman.nanotech.mk85.shield.block.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk85_shield_block_stop"
+    ]
+  },
+  "suit.ironman.nanotech.mk85.shield.deflect": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk85_shield_deflect"
+    ]
+  },
+  "suit.ironman.nanotech.mk85.shield.disable": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "suit/iron_man/nanotech/mk85_shield_enable",
+        "pitch": 0.72
+      }
+    ]
+  },
+  "suit.ironman.nanotech.mk85.shield.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/nanotech/mk85_shield_enable"
+    ]
+  },
+  "suit.ironman.walk": {
+    "category": "player",
+    "sounds": [
+      "suit/iron_man/walk"
+    ]
+  },
+  "suit.manta.beam.charge": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/beam_charge"
+    ]
+  },
+  "suit.manta.beam.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/beam_loop"
+    ]
+  },
+  "suit.manta.beam.start": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/beam_start"
+    ]
+  },
+  "suit.manta.beam.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/beam_stop"
+    ]
+  },
+  "suit.manta.blade.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/blade_disable"
+    ]
+  },
+  "suit.manta.blade.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/blade_enable"
+    ]
+  },
+  "suit.manta.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/boost_loop"
+    ]
+  },
+  "suit.manta.boost.start": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/boost_start"
+    ]
+  },
+  "suit.manta.walk": {
+    "category": "player",
+    "sounds": [
+      "suit/manta/walk"
+    ]
+  },
+  "suit.mysterio.beam.aim": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/beam_aim"
+    ]
+  },
+  "suit.mysterio.beam.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/beam_loop"
+    ]
+  },
+  "suit.mysterio.beam.start": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/beam_start"
+    ]
+  },
+  "suit.mysterio.beam.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/beam_stop"
+    ]
+  },
+  "suit.mysterio.boost.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/boost_enable"
+    ]
+  },
+  "suit.mysterio.boost.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/boost_loop"
+    ]
+  },
+  "suit.mysterio.chargedbeam.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/charged_beam_loop"
+    ]
+  },
+  "suit.mysterio.chargedbeam.start": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/charged_beam_start"
+    ]
+  },
+  "suit.mysterio.chargedbeam.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/charged_beam_stop"
+    ]
+  },
+  "suit.mysterio.maskclose": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/mask_close"
+    ]
+  },
+  "suit.mysterio.maskopen": {
+    "category": "player",
+    "sounds": [
+      "suit/mysterio/mask_open"
+    ]
+  },
+  "suit.ock.climb": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/climb1",
+      "suit/doc_ock/climb2",
+      "suit/doc_ock/climb3"
+    ]
+  },
+  "suit.ock.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/disable"
+    ]
+  },
+  "suit.ock.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/enable"
+    ]
+  },
+  "suit.ock.grab": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/grab_start"
+    ]
+  },
+  "suit.ock.jab": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/jab_start"
+    ]
+  },
+  "suit.ock.strike": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/strike_start"
+    ]
+  },
+  "suit.ock.strike.blade": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/strike_charged"
+    ]
+  },
+  "suit.ock.unanchor": {
+    "category": "player",
+    "sounds": [
+      "suit/doc_ock/unanchor"
+    ]
+  },
+  "suit.panther.claws.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/black_panther/claws_disable"
+    ]
+  },
+  "suit.panther.claws.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/black_panther/claws_enable"
+    ]
+  },
+  "suit.pym.grow": {
+    "category": "player",
+    "sounds": [
+      "suit/pym/grow"
+    ]
+  },
+  "suit.pym.grow.giant": {
+    "category": "player",
+    "sounds": [
+      "suit/pym/grow_giant"
+    ]
+  },
+  "suit.pym.shrink": {
+    "category": "player",
+    "sounds": [
+      "suit/pym/shrink"
+    ]
+  },
+  "suit.reverseflash.vibration.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/reverse_flash/vibration_loop"
+    ]
+  },
+  "suit.reverseflash.vibration.on": {
+    "category": "player",
+    "sounds": [
+      "suit/reverse_flash/vibration_on"
+    ]
+  },
+  "suit.savitar.spike.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/savitar/spike_disable"
+    ]
+  },
+  "suit.savitar.spike.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/savitar/spike_enable"
+    ]
+  },
+  "suit.savitar.sprint": {
+    "category": "player",
+    "sounds": [
+      "suit/savitar/sprint"
+    ]
+  },
+  "suit.savitar.walk": {
+    "category": "player",
+    "sounds": [
+      "suit/savitar/walk1",
+      "suit/savitar/walk2",
+      "suit/savitar/walk3",
+      "suit/savitar/walk4"
+    ]
+  },
+  "suit.vision.intangibility.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/intangibility_disable"
+    ]
+  },
+  "suit.vision.intangibility.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/intangibility_enable"
+    ]
+  },
+  "suit.vision.mindstone.charge": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/mind_stone_charge"
+    ]
+  },
+  "suit.vision.mindstone.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/mind_stone_loop"
+    ]
+  },
+  "suit.vision.mindstone.start": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/mind_stone_start"
+    ]
+  },
+  "suit.vision.mindstone.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/vision/mind_stone_stop"
+    ]
+  },
+  "suit.zoom.vibration.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/zoom/vibration_loop"
+    ]
+  },
+  "suit.zoom.vibration.on": {
+    "category": "player",
+    "sounds": [
+      "suit/zoom/vibration_on"
+    ]
+  }
+}

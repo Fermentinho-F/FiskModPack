@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmhp:main.lightsaber_loop",
+  "condition": "entity.getData('fiskheroes:shield')",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5,
+  "volume": 0.2
+}

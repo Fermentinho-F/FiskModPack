@@ -1,0 +1,16 @@
+{
+    "suit": "sabri:kang_the_conqueror",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:object_manipulation",
+      "fiskheroes:flight",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee",
+      "fiskheroes:defense3",
+      "fiskheroes:nanites",
+      "fiskheroes:teleportation",
+      "sabri:multiversal_power_core",
+      "sabri:sehp"
+    ]
+  }
+  

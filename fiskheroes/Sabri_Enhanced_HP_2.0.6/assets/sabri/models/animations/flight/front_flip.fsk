@@ -1,0 +1,15 @@
+{x} = min({vel}, 1){data}{d1}{d} / 2.5
+{data} = sin(pi(1 - {data}))^3
+
+{rightLeg_rotX} @ {data} -> {body_rotX}
+{rightLeg_rotY} @ {data} -> {body_rotY}
+{rightLeg_rotZ} @ {data} -> {body_rotZ}
+
+{leftLeg_rotX} @ {data} -> {body_rotX}
+{leftLeg_rotY} @ {data} -> {body_rotY}
+{leftLeg_rotZ} @ {data} -> {body_rotZ}
+
+{d} *= {data} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "pivot" (0, 0.5, 0)
+out "rotate" (-360{x}, -1, 0, 0)

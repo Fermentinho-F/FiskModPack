@@ -1,0 +1,12 @@
+{
+  "suit": "jjkp:jogoat",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:melee3",
+    "fiskheroes:defense3",
+    "fiskheroes:flight",
+    "fiskheroes:teleportation",
+    "jjkp:nah_id_win",
+    "jjkp:black_flash"
+  ]
+}

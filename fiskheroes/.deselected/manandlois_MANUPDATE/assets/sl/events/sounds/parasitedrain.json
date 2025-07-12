@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.parasitedrain",
+  "volume": 2.0,
+  "loop": true,
+  "condition": "fiskheroes:energy_projection",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

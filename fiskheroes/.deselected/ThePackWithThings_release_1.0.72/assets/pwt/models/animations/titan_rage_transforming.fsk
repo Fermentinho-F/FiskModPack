@@ -1,0 +1,41 @@
+{head_posX} @ {data} -> 0
+{head_posY} @ {data} -> -1
+{head_posZ} @ {data} -> -1.5
+{head_rotX} @ {data} -> 30' + 3'*sin({data}*300)
+{head_rotY} @ {data} -> 0' + 3'*sin({data}*30)
+{head_rotZ} @ {data} -> 0'
+
+{body_posX} @ {data} -> 0
+{body_posY} @ {data} -> 1.0
+{body_posZ} @ {data} -> 3.5
+{body_rotX} @ {data} -> -15' + 1'*sin({data}*300)
+{body_rotY} @ {data} -> 0'
+{body_rotZ} @ {data} -> 0
+
+{rightArm_posX} @ {data} -> -7.5
+{rightArm_posY} @ {data} -> 4.0
+{rightArm_posZ} @ {data} -> -1.0
+{rightArm_rotX} @ {data} -> -160' + 2'*sin({data}*300)
+{rightArm_rotY} @ {data} -> -37' + 2'*sin({data}*300)
+{rightArm_rotZ} @ {data} -> 0
+
+{leftArm_posX} @ {data} -> 7.5
+{leftArm_posY} @ {data} -> 4.0
+{leftArm_posZ} @ {data} -> -1.0
+{leftArm_rotX} @ {data} -> -158' + 2'*sin({data}*300)
+{leftArm_rotY} @ {data} -> 40' - 2'*sin({data}*300)
+{leftArm_rotZ} @ {data} -> 0
+
+{rightLeg_posX} @ {data} -> -2.5
+{rightLeg_posY} @ {data} -> 12.2
+{rightLeg_posZ} @ {data} -> 0
+{rightLeg_rotX} @ {data} -> 0'
+{rightLeg_rotY} @ {data} -> 10' - 3'*sin({data}*300)
+{rightLeg_rotZ} @ {data} -> 5'
+
+{leftLeg_posX} @ {data} -> 2.5
+{leftLeg_posY} @ {data} -> 12.2
+{leftLeg_posZ} @ {data} -> 0
+{leftLeg_rotX} @ {data} -> 0'
+{leftLeg_rotY} @ {data} -> -10' + 3'*sin({data}*300)
+{leftLeg_rotZ} @ {data} -> -5'

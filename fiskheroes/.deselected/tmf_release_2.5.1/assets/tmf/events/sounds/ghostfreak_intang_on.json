@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:ghostfreak.intang.on",
+  "volume": 0.75,
+  "fadeOut": 5
+}

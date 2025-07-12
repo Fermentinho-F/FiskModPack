@@ -1,0 +1,10 @@
+{
+  "suit": "shadows:tornado",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged",
+    "fiskheroes:flight",
+    "shadows:shadow00dev"
+  ]
+}

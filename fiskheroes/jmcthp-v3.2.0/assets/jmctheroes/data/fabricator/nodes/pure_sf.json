@@ -1,0 +1,21 @@
+{
+  "display": {
+    "name": {
+      "translate": "Pure Speedforce"
+    },
+    "icon": {
+      "texture": "jmctheroes:textures/nodes/pure_sf.png"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:speed_force",
+    "fiskheroes:ranged2"
+  ],
+  "price": {
+    "IRID_GOLD": 9,
+    "XP_LEVELS": 30
+  }
+}

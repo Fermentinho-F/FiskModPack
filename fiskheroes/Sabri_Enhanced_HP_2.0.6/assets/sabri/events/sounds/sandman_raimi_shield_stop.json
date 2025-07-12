@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.giant_mode.shrink",
+  "condition": "!entity.getData('sabri:dyn/sand_castle') && entity.getData('sabri:dyn/sand_castle_timer') > 0",
+  "fadeIn": 5,
+  "fadeOut": 10
+}

@@ -1,0 +1,124 @@
+{
+  "name": "Lord of Order",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 20,
+          "quantity": 3
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 20,
+          "pushPower": 20.0,
+          "damageProfile": {
+            "damage": 0.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 10,
+          "duration": 400,
+          "range": 32.0
+        }
+      },
+      "soundEvents": {
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SUIT",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 32.0
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 14.0,
+        "types": {
+          "MAGIC": 1.0
+        }
+      },
+      "chargeTime": 10,
+      "duration": 50,
+      "cooldownTime": 15,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+     "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.15,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 16.0
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 90.0,
+        "types": {
+          "MAGIC": 1.0,
+          "ENERGY": 0.8,
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 1.0
+        }
+      },
+      "chargeTime": 75,
+      "range": 48.0
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 500.0,
+        "regeneration": 50.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    }
+  }
+}

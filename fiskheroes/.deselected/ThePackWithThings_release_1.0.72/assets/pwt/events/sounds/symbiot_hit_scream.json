@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.symbiot.hit.scream",
+  "condition": "entity.getData('pwt:dyn/symbiot')",
+  "volume": "0.5 + Math.random() * 0.2",
+  "pitch": "0.6 + Math.random() * 0.2"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Water Breathing",
+  "modifiers": {
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:flight": {
+      "speed": 0.1
+    }
+  }
+}

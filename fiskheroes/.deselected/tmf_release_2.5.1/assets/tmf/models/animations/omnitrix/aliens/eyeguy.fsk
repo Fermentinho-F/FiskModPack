@@ -1,0 +1,132 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{punch} = {data_0}*(1-{aiming})*(1-{outburst})
+{sneak} = {data_1}*(1-{outburst})
+{idle} = sin(pi{data_2})
+{jump} = {data_3}
+{aiming} = {data_5}*(1-{outburst})
+{outburst} = {data_6}
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{bigEyeStem_posZ} -= {data_4}
+
+{bigEye_posZ} -= 3{data_7}
+{bigEyeStem_posZ} -= 4{data_7}
+
+{data_7} = 0.3{data_7}
+{bigEye_rotX} -= {lookY}{data_7}
+{bigEye_rotY} -= (0.7*({bodyYaw} - {yaw})'){data_7}
+
+{bigEyeStem_rotX} -= {lookY}{data_7}
+{bigEyeStem_rotY} -= (0.7*({bodyYaw} - {yaw})'){data_7}
+
+{rightArm_rotX} += -32{data_7}' 
+{rightArm_rotZ} += 12{data_7}'
+
+{leftArm_rotX} += -30{data_7}'
+{leftArm_rotZ} -= 13{data_7}'
+
+;WalkingAnim==========================================================
+    {movement} = cos({limbSwing} * 0.6662 + pi) * {limbSwingAmount}*(1-{outburst})
+    {rightLeg_rotX} -= {movement}
+    {leftLeg_rotX} += {movement} 
+
+    {rightArm_rotX} += {movement}
+    {leftArm_rotX} -= {movement}
+
+;Aiming==========================================================
+{rightArm_rotX} @ {aiming} -> -92'
+{rightArm_rotZ} += 35sin(pi{aiming})' + 12{aiming}'
+
+{leftArm_rotX} @ {aiming} -> -90'
+{leftArm_rotZ} -= 32sin(pi{aiming})' + 13{aiming}'
+;Jump==========================================================
+{x} = curve {jump}
+{jump} = sin(pi(1 - {jump}))^2
+
+{body_rotX} += 360*{x}'
+
+{head_posY} += {jump}
+{head_posZ} -= {jump}
+{head_rotX} @ {jump} -> 60'
+{rightArm_rotX} @ {jump} -> -55'
+{rightArm_rotY} @ {jump} -'> -30'
+{rightArm_rotZ} @ {jump} -> -7'
+{leftArm_rotX} @ {jump} -> -65'
+{leftArm_rotY} @ {jump} -'> 40'
+{leftArm_rotZ} @ {jump} -> -20'
+
+{rightLeg_posX} @ {jump} -> -2.25
+{rightLeg_posY} @ {jump} -> 3.5
+{rightLeg_posZ} @ {jump} -> -1.5
+{rightLeg_rotX} @ {jump} -> -30'
+{rightLeg_rotZ} @ {jump} -> -2'
+{leftLeg_posX} @ {jump} -> 2.25
+{leftLeg_posY} @ {jump} -> 2.5
+{leftLeg_posZ} @ {jump} -> -1.5
+{leftLeg_rotX} @ {jump} -> -30'
+{leftLeg_rotZ} @ {jump} -> 5'
+
+
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{lowerBody_rotY} = -sin(sqrt({f6}) * pi * 2.0) * 0.1
+{head_rotY} -= sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rightArm_posX} += -cos({brY})+1
+{rightArm_posZ} += sin({brY}) * 5.0
+
+{leftArm_posX} += cos({brY})-1
+{leftArm_posZ} += -sin({brY}) * 5.0
+
+{rightArm_rotY} += {brY}
+{leftArm_rotX} += {brY}
+{leftArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rightArm_rotX} = ({rightArm_rotX} - ({f7} * 1.2 + {f8}))
+{rightArm_rotY} += {brY} * 2.0
+{rightArm_rotZ} = sin({punch} * pi) * -0.4
+
+{rightArm_rotZ} += 0.05{idle}
+{leftArm_rotZ} -= 0.05{idle}
+;Sneak==========================================================
+{body_posY} += 2{sneak}
+
+{head_rotX} -= 0.5{sneak}
+{body_rotX} += 0.5{sneak}
+{lowerBody_rotX} -= 0.25{sneak}
+
+{rightArm_rotX} -= 0.2{sneak} 
+{leftArm_rotX} -= 0.2{sneak} 
+{rightLeg_rotX} -= 0.25{sneak}
+{leftLeg_rotX} -= 0.25{sneak}
+{rightLeg_posY} -= {sneak}
+{leftLeg_posY} -= {sneak}
+
+;Outburst==========================================================
+
+{rightArm_rotX} @ {outburst} -> -32'
+{rightArm_rotZ} @ {outburst} -> 22'
+
+{leftArm_rotX} @ {outburst} -> -34'
+{leftArm_rotZ} @ {outburst} -> -23'
+
+{rightLeg_rotX} @ {outburst} -> 34'
+{rightLeg_rotZ} @ {outburst} -> -13'
+{rightLeg_posX} -= 2{outburst}
+{rightLeg_posY} -= 6{outburst}
+{rightLeg_posZ} @ {outburst} -> -9
+
+{leftLeg_rotX} @ {outburst} -> 8'
+{leftLeg_rotZ} += 3{outburst}'
+{leftLeg_posY} -= {outburst}
+{leftLeg_posZ} -= {outburst}

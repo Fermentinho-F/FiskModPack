@@ -1,0 +1,44 @@
+{
+  "name": "Special Child Physiology",
+  "modifiers": {
+    "fiskheroes:damage_weakness|archangel": {
+      "damageType": "ARCHANGEL"
+    },
+    "fiskheroes:damage_weakness|angel": {
+      "damageType": "ANGEL"
+    },
+    "fiskheroes:damage_weakness|colt": {
+      "damageType": "THE_COLT"
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 800
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 6.0
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    }
+  }
+}
+

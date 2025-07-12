@@ -1,0 +1,83 @@
+{
+  "name": "Pochita's Heart",
+  "modifiers": {
+    "fiskheroes:cooldown|charging": {
+      "cooldown": {
+        "toggleData": "entity.getData('jmctheroes:dyn/suit_timer') == 1 && entity.isSprinting() && entity.isOnGround() && entity.getHeldItem().isEmpty()",
+        "cooldownData": "jmctheroes:dyn/1_timer",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "BLADE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/suit",
+        "timerData": "jmctheroes:dyn/suit_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": ["jmctheroes:chainsaw_rev", "jmctheroes:chainsaw_enable", "jmctheroes:chainsaw_loop"]
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/suit",
+        "cooldownData": "jmctheroes:dyn/suit_cooldown",
+        "duration": 6000,
+        "recovery": 3.0
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 15.0,
+        "regeneration": 1.0,
+        "recoveryDelay": 140,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false
+    },
+    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 85,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "BLUNT": 1.0,
+          "SHARP": 0.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2
+        }
+      },
+      "range": 1.5,
+      "radius": 0.4
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/blood.png",
+      "data": "entity.getData('jmctheroes:dyn/suit_cooldown') == 1 ? 0.001 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.9 && entity.getData('jmctheroes:dyn/suit_cooldown') < 1.0 ? 0.1 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.8 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.9 ? 0.2 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.7 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.8 ? 0.3 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.6 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.7 ? 0.4 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.5 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.6 ? 0.5 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.4 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.5 ? 0.6 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.3 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.4 ? 0.7 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.2 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.3 ? 0.8 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.1 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.2 ? 0.9 : 1.0"
+    }
+  ]
+}

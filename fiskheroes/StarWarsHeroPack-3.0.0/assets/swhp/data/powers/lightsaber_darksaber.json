@@ -1,0 +1,56 @@
+{
+  "name": "Darksaber",
+  "modifiers": {
+    "fiskheroes:transformation|lightsaber": {
+        "key": "LIGHTSABER",
+        "transformation": {
+        "toggleData": "swhp:dyn/lightsaber",
+        "timerData": "swhp:dyn/lightsaber_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "swhp:lightsaber_unholster",
+        "DISABLE": "swhp:lightsaber_holster"
+      }
+    },
+    "fiskheroes:transformation|lightsaberignite": {
+        "key": "LIGHTSABERIGNITE",
+        "transformation": {
+        "toggleData": "swhp:dyn/lightsaberignite",
+        "timerData": "swhp:dyn/lightsaberignite_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": ["swhp:darksaber_ignite", "swhp:darksaber_hum"],
+        "DISABLE": "swhp:darksaber_retract"
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 40.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 60,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 35.0,
+        "pitchRadius": 60.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.1,
+      "soundEvents": {
+        "DEFLECT": "swhp:lightsaber_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

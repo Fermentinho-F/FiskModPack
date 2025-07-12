@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+   "sound": "shadows:mage.flight",
+   "override": "fiskheroes:funcs/atom_flight_loop",
+   "volume": 0.5,
+   "loop": true,
+   "fadeIn": 5,
+   "fadeOut": 10
+}

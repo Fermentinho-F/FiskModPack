@@ -1,0 +1,22 @@
+{x} = curve {data}
+{data} = sin(pi(1 - {data}))^4
+
+
+{data} = curve {data}
+
+
+{head_rotX} += 1.2{data}
+{rightArm_rotX} @ {data} -> -0.6 
+{rightArm_rotY} @ {data} -> -0.5
+{rightArm_rotZ} @ {data} -> -0.6
+{leftArm_rotX} @ {data} -> -0.8
+{leftArm_rotY} @ {data} -> 0.4
+{leftArm_rotZ} @ {data} -> 0.5
+
+{rightLeg_rotX} -= 0.4{data}
+{rightLeg_rotZ} -= 0.4{data}
+{leftLeg_rotX} -= 0.6{data}
+{leftLeg_rotZ} += 0.4{data}
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (pi{data}/1', 0, 1, 0)

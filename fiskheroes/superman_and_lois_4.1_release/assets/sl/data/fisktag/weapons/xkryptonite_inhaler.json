@@ -1,0 +1,12 @@
+{
+  "name": "X-Kryptonite Inhaler",
+  "permission": "LOCKED",
+  "holdingPose": "SINGLE",
+  "isHidden": false,
+  "cooldown": 0,
+  "projectiles": null,
+  "recoil": {
+    "amount": 0,
+    "cameraShake": 0
+  }
+}

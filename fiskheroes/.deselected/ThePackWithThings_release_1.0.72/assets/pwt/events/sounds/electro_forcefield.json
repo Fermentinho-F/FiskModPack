@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.electro.beam.loop.light",
+  "condition": "fiskheroes:shield_blocking",
+  "volume": 0.9,
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

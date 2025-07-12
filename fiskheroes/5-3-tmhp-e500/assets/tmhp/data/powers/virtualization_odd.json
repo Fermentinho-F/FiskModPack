@@ -1,0 +1,62 @@
+{
+  "name": "Virtualization:Odd Della Robia",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.0,
+      "boostSpeed": 0.8,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["fisktag:scout_leap", "fisktag:scout_leap_energy", "fisktag:scout_leap_whoosh"]
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 30.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 100,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 1.0,
+      "isToggle": false,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    },
+    "fiskheroes:energy_bolt": {
+      "damageProfile": {
+        "damage": 1.5,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "isExplosive": false,
+      "cooldownTime": 3,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:energy_blast"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fisktag:dyn/leap_cooldown"
+    }
+  ]
+}

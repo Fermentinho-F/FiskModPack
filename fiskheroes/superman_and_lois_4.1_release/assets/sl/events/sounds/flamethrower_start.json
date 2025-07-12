@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.flamestart",
+  "volume": 1.0,
+  "loop": false,
+  "condition": "fiskheroes:aiming",
+  "fadeOut": 5
+}

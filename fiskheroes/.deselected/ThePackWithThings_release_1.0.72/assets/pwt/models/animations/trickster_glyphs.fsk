@@ -1,0 +1,46 @@
+{data_0} = curve{data_0}
+{data_1} = curve{data_1}
+{data_2} = curve{data_2}
+{data_3} = curve{data_3}
+{data_4} = curve{data_4}
+
+{data_6} = curve{data_6}
+{data_7} = curve{data_7}
+{data_8} = curve{data_8}
+
+{center_rotY} = {data_5}'
+{center_rotY} += 450'{data_0}
+
+{glyph_5_posY} -= 2sin({data_1})
+{glyph_1_posY} -= 2sin({data_4})
+{glyph_6_posY} -= 2sin({data_2})
+{glyph_4_posY} -= 2sin({data_3})
+{glyph_7_posY} -= 2sin({data_1})
+{glyph_2_posY} -= 2sin({data_4})
+{glyph_8_posY} -= 2sin({data_2})
+{glyph_3_posY} -= 2sin({data_3})
+
+{glyph_1_posX} -= 0.1sin({data_2})
+{glyph_4_posZ} -= 0.1sin({data_1})
+{glyph_2_posX} -= 0.1sin({data_2})
+{glyph_3_posZ} -= 0.1sin({data_1})
+
+{glyph_5_posX} += 0.1sin({data_3})
+{glyph_5_posZ} += 0.1sin({data_3})
+{glyph_6_posX} += 0.1sin({data_4})
+{glyph_6_posZ} -= 0.1sin({data_4})
+{glyph_7_posX} -= 0.1sin({data_3})
+{glyph_7_posZ} -= 0.1sin({data_3})
+{glyph_8_posX} -= 0.1sin({data_4})
+{glyph_8_posZ} += 0.1sin({data_4})
+
+
+{glyph_2_posY} -= 3{data_6}
+{glyph_2_rotY} -= 720'{data_6}
+{glyph_5_posY} -= 3{data_7}
+{glyph_5_rotY} -= 720'{data_7}
+{glyph_6_posY} -= 3{data_8}
+{glyph_6_rotY} -= 720'{data_8}
+
+{glyph_4_posY} -= 3{data_9}
+{glyph_4_rotY} -= 720'{data_9}

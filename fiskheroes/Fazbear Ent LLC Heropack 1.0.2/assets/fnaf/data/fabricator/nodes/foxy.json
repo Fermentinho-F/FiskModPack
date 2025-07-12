@@ -1,0 +1,10 @@
+{
+  "suit": "fnaf:foxy",
+  "requirements": [
+    "fnaf:animatronics",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee2",
+    "fiskheroes:defense",
+    "fiskheroes:ranged"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Super Regeneration",
+  "modifiers": {
+    "fiskheroes:healing_factor": {
+      "delay": 300,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  }
+}

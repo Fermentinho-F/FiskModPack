@@ -1,0 +1,6 @@
+{WingL_rotY} += sin(2pi{data}) * 0.45
+{WingR_rotY} += sin(2pi{data}) * 0.45
+
+
+
+

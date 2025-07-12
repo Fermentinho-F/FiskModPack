@@ -1,0 +1,13 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim0} = curve min(animate2({data}, 1.0, 0.0, 0.1, 0.2), 1)
+{anim1} = curve min(animate2({data}, 0.7, 0.1, 0.1, 0.4), 1)
+
+{rightArm_rotX} @ {anim0} -> -57'
+{rightArm_rotY} @ {anim0} -'> -52'
+{rightArm_rotZ} @ {anim0} -> 25'
+
+{leftArm_rotX} @ {anim0} -> -39'
+{leftArm_rotY} @ {anim0} -> 65'
+
+{leftArm_rotX} -= 30'{anim1}

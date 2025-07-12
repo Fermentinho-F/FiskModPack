@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:kid_flash",
+  "display": {
+  "description": "\u00A7eKeystone is under the protection of a man who can throw haymakers like \u00A7lmachine-gun fire... \u00A7ewho can create cyclones with a wave of his \u00A7larm... \u00A7ewho can outrun \u00A7lgravity. \u00A7eKeystone is \u00A7lmy \u00A7ecity."
+  },
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap1",
+    "fiskheroes:melee",
+    "fiskheroes:speed_force",
+    "tmhp:teen_titans",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

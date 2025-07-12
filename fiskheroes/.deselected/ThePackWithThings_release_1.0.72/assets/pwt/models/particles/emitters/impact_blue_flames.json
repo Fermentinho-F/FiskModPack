@@ -1,0 +1,23 @@
+{
+  "particles": [
+	{
+      "type": "BLUE_FLAME",
+      "amount": 60,
+      "randOffset": [2.5, 2.5, -0.2],
+	  "randMotion": [0.9, 1.1, -0.4]
+    },
+	{
+      "type": "SHADOW_SMOKE",
+      "amount": 40,
+      "randOffset": [2.7, 2.7, -0.2],
+	  "randMotion": [1.1, 1.5, -0.2]
+    },
+	{
+      "type": "minecraft:largesmoke",
+      "amount": 10,
+      "randOffset": [2.7, 2.7, -0.2],
+	  "randMotion": [0.3, 0.3, -0.1]
+    },
+	
+  ]
+}

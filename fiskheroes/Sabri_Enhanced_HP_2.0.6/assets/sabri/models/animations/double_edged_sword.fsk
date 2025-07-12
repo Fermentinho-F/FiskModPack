@@ -1,0 +1,4 @@
+{data_0} = curve {data_0}
+
+{double_edged_sword_rotX} += 360'{data_1}floor(1.25{data_0})
+{double_edged_sword_rotY} += 90'{data_0}

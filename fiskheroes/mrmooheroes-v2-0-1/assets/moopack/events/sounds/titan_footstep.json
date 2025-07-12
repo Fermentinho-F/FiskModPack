@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "moopack:titan_footstep",
+  "volume": 0.5,
+  "pitch": 1.0,
+  "condition": "moopack:dyn/titan"
+}

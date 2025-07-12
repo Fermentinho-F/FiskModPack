@@ -1,0 +1,29 @@
+{
+  "suit": "tmhp:scorpion",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap6_7",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee2",
+    "fiskheroes:regeneration2",
+    "tmhp:swordsman2",
+    "tmhp:games",
+    "tmhp:heropack2"
+  ],
+  "criteria": {
+    "ore": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Broke a Nether Brick"
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'minecraft:nether_brick'"
+      }
+    }
+  }
+}

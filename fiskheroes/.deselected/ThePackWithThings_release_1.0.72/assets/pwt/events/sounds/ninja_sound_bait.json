@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.antimonitor.walk",
+  "volume": 0.5,
+  "pitch": "1.2 - Math.random() * 0.3",
+  "fadeOut": 20
+}

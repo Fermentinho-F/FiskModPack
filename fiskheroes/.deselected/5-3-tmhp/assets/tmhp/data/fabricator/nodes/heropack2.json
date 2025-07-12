@@ -1,0 +1,10 @@
+{
+  "display": {
+    "name": "TheMucahid Heropack(All Chracters)",
+    "description": "Welcome to one of the most random add...You think I will say Addon-Pack aren't you :)",
+    "icon": {
+      "texture": "tmhp:textures/gui/heropack.png"
+    }
+  },
+  "autoUnlock": true
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Cosmic Ray Enhanced Physiology",
+  "modifiers": {
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 200.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "INVIS",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/invis",
+        "timerData": "jmctheroes:dyn/invis_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/invis",
+        "cooldownData": "jmctheroes:dyn/invis_cooldown",
+        "duration": 6500,
+        "recovery": 5.0
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/invisibility.png",
+      "data": "jmctheroes:dyn/invis_cooldown"
+    }
+  ]
+}

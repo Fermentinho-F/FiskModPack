@@ -1,0 +1,147 @@
+{
+  "name": "Great Magic",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 8.0,
+        "recoveryDelay": 10,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:mk85_shield_deflect"
+      }
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 140
+        }
+      },
+      "range": 32.0,
+      "radius": 0.0
+    },
+    "fiskheroes:cooldown|heat_vision_sound": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:heat_vision')",
+        "cooldownData": "shadows:dyn/2float_reset",
+        "duration": 1,
+        "recovery": 1
+      },
+      "soundEvents": {
+        "START": "shadows:mage/heat_vision"
+      }
+    },
+    "fiskheroes:transformation|charged": {
+      "transformation": {
+        "toggleData": "shadows:dyn/3boolean_reset",
+        "timerData": "shadows:dyn/1float_interp_reset",
+        "time": 80
+      },
+      "isToggle": false
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.12,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": "shadows:mage/flight"
+      }
+    },
+    "fiskheroes:invisibility": {},
+    "fiskheroes:telekinesis|normal": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      }
+    },
+    "fiskheroes:telekinesis|mobs": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": false,
+        "projectiles": false,
+        "inanimates": false
+      }
+    }
+  },
+  "hud": [{
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Emtpy.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 0 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Shield.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 1 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Charged Beam.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 2 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Movement.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 3 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Invisible.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 4 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Telekinesis.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 5 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/Tracker.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 6 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/ShowHealth.png",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 7 ? 1 : 0"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/custom/mage/cooldown.png",
+      "data": "entity.getData('shadows:dyn/spell_cooldown') && entity.getData('shadows:dyn/1float_reset') == 0? entity.getInterpolatedData('shadows:dyn/spell_cooldown_timer_visual') : 0"
+    }, {
+      "type": "CIRCLE",
+      "color": "fiskheroes:heat_vision",
+      "data": "entity.getData('shadows:dyn/1integer_reset') == 2 ? entity.getInterpolatedData('shadows:dyn/1float_interp_reset') : 0"
+    }, {
+      "type": "PROGRESS",
+      "texture": "shadows:textures/gui/bars/custom/mage/health/bar.png",
+      "data": "entity.getData('shadows:dyn/4float_reset') <= 20 ? entity.getData('shadows:dyn/3float_reset') :  0"
+    }, {
+      "type": "PROGRESS",
+      "texture": "shadows:textures/gui/bars/custom/mage/health/above.png",
+      "data": "entity.getData('shadows:dyn/4float_reset') > 20 ? entity.getData('shadows:dyn/3float_reset') : 0"
+    }
+
+  ]
+}

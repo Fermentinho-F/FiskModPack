@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:superman_god",
+  "display": {
+    "hideUntilAvailable":  true
+  },
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:krypton",
+    "jmctheroes:meme"
+  ]
+}

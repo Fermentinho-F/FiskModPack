@@ -1,0 +1,10 @@
+{
+    "display": {
+      "name": "shadow00dev",
+      "icon": {
+        "texture": "shadows:textures/icon.png"
+      }
+    },
+    "autoUnlock": true
+  }
+  

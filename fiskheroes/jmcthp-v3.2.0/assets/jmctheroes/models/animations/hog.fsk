@@ -1,0 +1,10 @@
+{leftArm_posX} += 1*{data}
+{rightArm_posX} -= 1*{data}
+
+{leftLeg_posY} += 2.5*{data}
+{rightLeg_posY} += 2.5*{data}
+
+out "firstPerson" (true)
+out "translate" (0, -0.2{data}, 0)
+out "translate" (-0.05{data}, 0, 0)
+out "translate" (0, 0, -0.05{data})

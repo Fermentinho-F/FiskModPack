@@ -1,0 +1,11 @@
+{
+  "name": "Kryptonite Knife",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:manta_blade_enable",
+        "DISABLE": "fiskheroes:manta_blade_disable"
+      }
+    }
+  }
+}

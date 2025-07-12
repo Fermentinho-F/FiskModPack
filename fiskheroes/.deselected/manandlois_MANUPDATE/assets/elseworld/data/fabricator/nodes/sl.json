@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "\u00A7bSuperman & Lois (Elseworlds)",
+    "description": "\u00A79Thanks for downloading Superman & Lois Heropack!",
+    "icon": {
+      "texture": "elseworld:textures/sl.png"
+    },
+    "isLevelable": false
+  },
+  "autoUnlock": false,
+  "requirements": ["sl:sl"]
+}

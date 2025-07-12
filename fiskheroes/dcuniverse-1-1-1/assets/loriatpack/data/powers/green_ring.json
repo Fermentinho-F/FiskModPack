@@ -1,0 +1,241 @@
+{
+  "name": "Power Of Ring",
+  "modifiers": {
+	  "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 1.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+	"fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+	"fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:transformation|ring": {
+      "key": "RING",
+      "transformation": {
+        "toggleData": "loriatpack:dyn/ring_active",
+        "timerData": "loriatpack:dyn/ring_timer",
+        "time": 19
+      }
+  },
+  "fiskheroes:transformation|switch": {
+      "key": "SWITCH",
+      "transformation": {
+      "toggleData": "loriatpack:dyn/switch_turn",
+      "timerData": "loriatpack:dyn/switch_timer",
+      "time": 6
+      }
+    },
+  "fiskheroes:transformation|reloading": {
+    "key": "RELOAD_RING",
+    "transformation": {
+      "toggleData": "loriatpack:dyn/ring_reload",
+      "timerData": "loriatpack:dyn/ring_reload_timer",
+      "time": 15
+    }
+	},
+	"fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 25.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+	"fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 50
+        }
+      },
+      "range": 25.0,
+      "radius": 0.2,
+	  "soundEvents": {
+		"SHOOT": "loriatpack:laser_gun"
+      }
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    },
+      "fiskheroes:controlled_flight": {
+        "speed": 0.15,
+        "boostSpeed": 0.3,
+        "canBoost": true,
+        "collision": {
+          "blocks": {
+            "stopFlying": false,
+            "takeDamage": false
+          },
+          "entities": {
+            "stopFlying": false,
+            "dealDamage": true
+          }
+        },
+        "knockback": 0.4,
+		"soundEvents": {
+      "ENABLE": "fiskheroes:flight_loop",
+      "BOOST": "fiskheroes:flight_boost"
+    }
+      },
+        "fiskheroes:tentacles": {
+      "tentacles": [
+        [-0.5, -1.0, 5.0],
+		[0.5, 0.5, 5.0],
+		[0.0, 0.0, 5.0]
+      ],
+      "range": 20.0,
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+	  "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 15.0,
+          "types": {
+            "BLUNT": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true
+    },
+          "fiskheroes:charged_beam": {
+            "damageProfile": {
+              "damage": 9.0,
+              "types": {
+                "COSMIC": 1.0
+              },
+              "properties": {
+                "COOK_ENTITY": false,
+                "HEAT_TRANSFER": 0
+              }
+            },
+            "chargeTime": 1,
+            "duration": 100,
+            "cooldownTime": 40,
+            "range": 32.0,
+            "radius": 0.2,
+			"soundEvents": {
+          "BEAM_AMBIENT": "loriatpack:lantern_beam"
+      }
+            },
+			"fiskheroes:water_breathing": {
+    },
+            "fiskheroes:repulsor_blast": {
+              "damageProfile": {
+                "damage": 12.0,
+                "types": {
+                  "COSMIC": 1.0
+                },
+                "properties": {
+                  "ADD_KNOCKBACK": 1.0,
+                  "HIT_COOLDOWN": 0.0
+                }
+              },
+              "range": 48.0,
+              "speed": 20.0,
+              "spread": 0.0,
+              "radius": 0.1,
+              "cooldownTime": 20,
+			  "soundEvents": {
+        "SHOOT": "loriatpack:lantern_aim"
+      }
+              },
+              "fiskheroes:shield": {
+                "shield": {
+                  "health": 500.0,
+                  "regeneration": 15.0,
+                  "recoveryDelay": 100,
+                  "cooldown": 240
+                },
+                "coverage": {
+                  "yawRadius": 180.0,
+                  "pitchRadius": 180.0,
+                  "yawOffset": 0.0,
+                  "pitchOffset": 0.0
+                },
+                "knockback": 0.0,
+                "isToggle": false,
+				"soundEvents": {
+				"BLOCK_START": "fiskheroes:anti_forcefield",
+				"DEFLECT": "fiskheroes:anti_forcefield_deflect"
+				}				
+              },
+              "fiskheroes:cooldown|active": {
+                "cooldown": {
+                  "toggleData": "loriatpack:dyn/ring_active",
+                  "cooldownData": "loriatpack:dyn/ring_cooldown",
+                  "duration": 30000,
+                  "recovery": 0
+                }
+              },
+              "fiskheroes:cooldown|reload": {
+                "cooldown": {
+                  "toggleData": "entity.getData('loriatpack:dyn/ring_reload')",
+                  "cooldownData": "loriatpack:dyn/ring_reload_cooldown",
+                  "duration": 200,
+                  "recovery": 1
+                }
+              }
+              },
+            "hud": [
+              {
+                "type": "PROGRESS",
+                "texture": "loriatpack:textures/gui/bars/green_ring.png",
+                "data": "loriatpack:dyn/ring_cooldown"
+              },
+              {
+                "type": "CHARGE",
+                "texture": "loriatpack:textures/gui/bars/green_lantern_reload.png",
+                "data": "loriatpack:dyn/ring_reload_cooldown"
+              },
+			  {
+				"type": "CHARGE",
+				"texture": "loriatpack:textures/gui/bars/green_lantern_reload.png",
+				"data": "fiskheroes:beam_charge"
+				}
+	]
+}
+        
+      
+     
+    
+
+  
+  
+
+  
+  
+
+

@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "sl:dyn/inverseabsorb",
+  "sound": "sl:main.kid_danger_transform",
+  "condition": {
+    "start": "entity.getWornChestplate().suitType() == 'sl:kid_danger'",
+    "continue": "entity.isWearingFullSuit() && (entity.getWornChestplate().suitType() == 'sl:kid_danger')"
+  },
+  "fadeOut": 5,
+  "delay": 10
+}

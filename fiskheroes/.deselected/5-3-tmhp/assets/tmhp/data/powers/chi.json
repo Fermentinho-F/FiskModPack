@@ -1,0 +1,39 @@
+{
+  "name": "Chi Focusing",
+  "modifiers": {
+    "fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "fiskheroes:cryo_charge"
+      }
+    },
+    "fiskheroes:damage_bonus": {
+      "amount": 10.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 3
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.1, 0.1]
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 10.0,
+      "knockback": 1.0,
+      "duration": 50,
+      "cooldownTime": 10
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "tmhp:textures/gui/chi_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    }
+  ]
+}

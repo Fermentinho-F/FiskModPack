@@ -1,0 +1,60 @@
+{data} = curve {data}
+
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{1data} = 0.5tanh(18{data}-5)+0.5
+{2data} = 0.5tanh(18{data}-15)+0.5
+{3data} = 0.5tanh(18{data}-20)+0.5
+
+{anim_0} = curve min(animate2({data}, 2.0, 0, 0.0, 0.7), 1)
+{anim_1} = curve min(animate2({data}, 10.0, 0, 0.7, 2), 1)
+
+{rightArm_rotX} @ {anim_0} -> -140'
+{rightArm_rotY} @ {anim_0} -> -17'
+{rightArm_rotZ} @ {anim_0} -> 109'
+
+{rightArm_rotX} @ {anim_1} -> 20'
+{rightArm_rotY} @ {anim_1} -> -10'
+{rightArm_rotZ} @ {anim_1} -> 100'
+
+
+{leftArm_rotX} @ {anim_0} -> -30'
+{leftArm_rotY} += {data} * 15'
+
+{leftArm_rotX} @ {anim_1} -> 30'
+
+{body_rotX} += {data} * 15'
+
+{leftLeg_rotX} += {data} * 13'
+{leftLeg_rotY} -= {data} * 30'
+
+{rightLeg_rotX} += {data} * 40'
+
+{body_posZ} -= {data} * 11
+
+{head_posZ} -= {data} * 11
+
+{leftLeg_posX} += {data} * 1
+{leftLeg_posY} -= {data} * 1.5
+
+{rightLeg_posZ} -= {data} * 8
+{leftLeg_posZ} -= {data} * 12
+
+{leftArm_posZ} -= {data} * 10.5
+
+{rightArm_posZ} -= {data} * 10.5
+
+
+
+{rightArm_posY} += {data} * 0.5
+{leftArm_posY} += {data} * 0.5
+
+{body_posY} += {data} * 0.5
+{head_posY} += {data} * 0.5
+{rightLeg_posY} += {data} * 0.5
+{leftLeg_posY} += {data} * 0.5
+
+out "firstPerson" (true)
+out "translate" (-0.4{data}, -0.3{data}, -0.15{data})
+out "rotate" (-20{data}, 1, 0, 0)
+out "rotate" (-35{data}, 0, 0, 1)

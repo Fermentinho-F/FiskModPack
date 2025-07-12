@@ -1,0 +1,14 @@
+{
+  "suit": "zaro:daredevil",
+  "requirements": [
+    "fiskheroes:tier4_5",
+     "fiskheroes:traversal",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "zaro:zaroheroes"
+  ]
+}

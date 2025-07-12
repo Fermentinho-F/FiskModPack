@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:yenicheri",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:archery",
+    "tmhp:other",
+    "tmhp:swordsman",
+    "tmhp:heropack2"
+  ]
+}

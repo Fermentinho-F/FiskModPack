@@ -1,0 +1,10 @@
+{
+  "suit": "emo:firestorm_matrix",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:flight",
+    "fiskheroes:ranged2",
+    "elseworld:ap2_3",
+    "emo:cadmus"
+  ]
+}

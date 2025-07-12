@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:green_lantern",
+  "display": {
+    "description": "\u00A7aIn brightest day, in blackest night, No evil shall escape my sight Let those who worship evil's might, Beware my power, Green Lantern's light!"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap8_9",
+    "tmhp:lantern_spectrum",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "pwt:flight/header",
+    "pwt:flight/flight_dash"
+  ]
+}

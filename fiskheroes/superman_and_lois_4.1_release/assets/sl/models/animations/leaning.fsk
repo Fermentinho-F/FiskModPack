@@ -1,0 +1,22 @@
+{leftArm_posZ} @ {data} -> - 1.0
+{rightArm_posZ} @ {data} -> - 1.0
+
+{head_posZ} @ {data} -> -1.0
+
+{head_posY} @ {data} -> 1.0
+
+{body_posY} @ {data} -> 0.5
+{body_posZ} @ {data} -> -1.5
+{body_rotX} @ {data} -'> 15'
+
+{rightLeg_posX} -= 0.0{data}
+{rightLeg_posY} += 0.5{data}
+{rightLeg_posZ} += 1.0{data}
+{rightLeg_rotX} += 30'{data}
+{rightLeg_rotZ} += 3'{data}
+
+{leftLeg_posX} += 0.5{data}
+{leftLeg_posY} += 0.5{data}
+{leftLeg_posZ} += 0.0{data}
+{leftLeg_rotX} -= 15'{data}
+{leftLeg_rotZ} -= 4'{data}

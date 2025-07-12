@@ -1,0 +1,21 @@
+{
+  "texture": {
+    "in": "shadows:vampire/half_oni_mask_teeth",
+    "transform": [
+      {
+        "operation": "ADD",
+        "supply": "shadows:vampire/half_oni_mask/<COLOR>"
+      }
+    ],
+    "out": "shadows:generated/vampire_half_oni_mask_color_<COLOR>"
+  },
+  "getters": {
+    "COLOR": {
+      "key": "entity.getWornHelmet().nbt().getByte('color')",
+      "values": {
+        "min": 0,
+        "max": 16
+      }
+    }
+  }
+}

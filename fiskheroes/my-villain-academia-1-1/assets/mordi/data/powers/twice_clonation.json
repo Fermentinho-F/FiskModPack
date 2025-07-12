@@ -1,0 +1,15 @@
+{
+  "name": "Twice Clonation",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+       
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 600,
+          "quantity": 9
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "suit": "loriatpack:green_lantern",
+  "requirements": [
+    "fiskheroes:tier8_9",
+	"fiskheroes:defense3",
+    "fiskheroes:flight",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+	"loriatpack:grenn_lantern_corp",
+	"loriatpack:dc_universe",
+	"fiskheroes:object_manipulation"
+  ]
+}

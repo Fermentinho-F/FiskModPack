@@ -1,0 +1,20 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{data_0} = (1 - {data_0})
+
+{anim0} = curve min(animate2({data_0}, 2, 0, 0.5, 0.0), 1)
+{anim1} = curve min(animate2({data_0}, 2, 0.4, 0.6, 0.0), 1)
+
+{gun_posX} @ {anim0} -> 6
+{gun_posY} @ {anim1} -> -1.75
+{gun_posZ} @ {anim1} -> 4
+{gunbase_rotX} @ {anim1} -> 10'
+{gunbase_posY} @ {anim1} -> 1.75
+{gunbase_posZ} @ {anim1} -> -0.25
+
+{arm_rotX} @ {anim1} -> -75'
+{arm_rotY} @ {anim0} -> 60'
+
+{gunbase_rotX} @ {data_1} -> 90' + min(({pitch})', 5')
+
+{gunbase_rotY} @ {data_1} -'> min(-({bodyYaw} - {yaw})', 5')

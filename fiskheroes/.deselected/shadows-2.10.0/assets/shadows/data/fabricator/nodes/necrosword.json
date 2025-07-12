@@ -1,0 +1,19 @@
+{
+  "display": {
+    "description": "(Marvel)"
+  },
+  "suit": "shadows:necrosword",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:spiderverse",
+    "shadows:symbiotejar",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:defense2",
+    "fiskheroes:cosmic",
+    "shadows:shadow00dev"
+  ]
+}

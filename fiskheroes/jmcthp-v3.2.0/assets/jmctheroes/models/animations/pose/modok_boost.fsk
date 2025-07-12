@@ -1,0 +1,39 @@
+{data_0} = curve {data_0}
+
+{rightLeg_rotX} += 12.5'*{data_0}
+{rightLeg_rotY} -= 3'*{data_0}
+{rightLeg_posX} += 0.2*{data_0}
+
+{leftLeg_rotX} += 12.5'*{data_0}
+{leftLeg_rotY} += 3'*{data_0}
+{leftLeg_posX} -= 0.2*{data_0}
+
+{rightArm_rotZ} += 3.75'{data_0}
+{leftArm_rotZ} -= 3.75'{data_0}
+;-------------------------------------------;
+
+{data_1} = curve {data_1}
+
+{rightLeg_rotX} += 12.5'*{data_1}
+{rightLeg_rotY} -= 2'*{data_1}
+{rightLeg_posX} += 0.1*{data_1}
+
+{leftLeg_rotX} += 12.5'*{data_1}
+{leftLeg_rotY} += 2'*{data_1}
+{leftLeg_posX} -= 0.1*{data_1}
+
+;-------------------------------------------;
+
+{data_2} = curve {data_2}
+
+{Head_posY} -= 1.7{data_2}
+
+{Head_rotX} @ {data_2} -> 7.5'
+
+{rightLeg_rotX} -= 17.5'*{data_2}
+{rightLeg_posY} -= 0.05*{data_2}
+{rightLeg_posZ} -= 0.1*{data_2}
+
+{leftLeg_rotX} -= 17.5'*{data_2}
+{leftLeg_posY} -= 0.05*{data_2}
+{leftLeg_posZ} -= 0.1*{data_2}

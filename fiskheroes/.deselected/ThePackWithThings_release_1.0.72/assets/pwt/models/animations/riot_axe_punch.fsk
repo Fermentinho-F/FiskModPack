@@ -1,0 +1,8 @@
+{data} = curve {data}
+
+{rightArm_rotX} -= 15'{data}
+{rightArm_rotZ} += 85'{data}
+
+{leftArm_rotX} @ {data} -> {rightArm_rotX}
+{leftArm_rotY} @ {data} -> -{rightArm_rotY}
+{leftArm_rotZ} @ {data} -> -{rightArm_rotZ}

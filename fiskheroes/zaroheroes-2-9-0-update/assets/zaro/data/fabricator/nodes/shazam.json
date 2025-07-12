@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "Shazam",
+    "description": "Shazam logo",
+    "icon": {
+      "texture": "zaro:textures/gui/nodes/shazam.png"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ ]
+}

@@ -1,0 +1,17 @@
+{
+  "suit": "tmhp:red_robin",
+  "display": {
+  "description": "\u00A7cTim Drake. The third Robin, but the first to choose it for himself. Which seems to mean he can't be anything else. He's stuck letting that identity be his entire personality... \u00A7e-\u00A7oWonder Girl"
+  },
+  "requirements": [
+    "tmhp:redrobin",
+    "fiskheroes:tier6_7",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "tmhp:heropack2"
+  ]
+}

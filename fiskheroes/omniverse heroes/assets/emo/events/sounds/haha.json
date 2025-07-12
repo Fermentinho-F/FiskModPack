@@ -1,0 +1,7 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "emo:main.haha",
+    "condition": "entity.getData('fiskheroes:mask_open')",
+    "fadeIn": 6,
+  "fadeOut": 6
+}

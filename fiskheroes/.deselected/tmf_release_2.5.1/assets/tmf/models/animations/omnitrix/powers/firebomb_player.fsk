@@ -1,0 +1,50 @@
+{reset} = 1 - curve min(animate2({data_1}, 0.6, 0.9, 0.1, 0), 1)
+{anim1} = curve min(animate2({data_1}, 0.6, 0.5, 0.2, 0), 1) *{reset}
+{anim2} = curve min(animate2({data_1}, 0.6, 0.85, 0.04, 0), 1) *{reset}
+
+{head_rotX} @ {anim1} -> -10'
+{head_rotY} @ {anim1} -> 0
+{body_posZ} @ {anim1} -> 0
+
+{leftArm_rotX} @ {anim1} -> -170'
+{leftArm_rotY} @ {anim1} -> -7'
+{leftArm_rotZ} @ {anim1} -> -13'
+
+{rightArm_rotX} @ {anim1} -> -185'
+{rightArm_rotY} @ {anim1} -> 7'
+{rightArm_rotZ} @ {anim1} -> 13'
+
+{rightArm_posX} @ {anim1} -> -5
+{leftArm_posX} @ {anim1} -> 5
+{rightArm_posY} @ {anim1} -> 2 - {data_0}
+{leftArm_posY} @ {anim1} -> - {data_0}
+{rightArm_posZ} @ {anim1} -> 0
+{leftArm_posZ} @ {anim1} -> 0
+
+{body_rotX} @ {anim1} -> 0
+{body_rotY} @ {anim1} -> 0
+{body_rotZ} @ {anim1} -> 0
+
+{body_posY} @ {anim1} -> 0 - {data_0}
+
+{rightLeg_rotX} @ {anim1} -> 0
+{rightLeg_rotY} @ {anim1} -> 4'
+{rightLeg_rotZ} @ {anim1} -> 7'
+
+{leftLeg_rotX} @ {anim1} -> 0
+{leftLeg_rotY} @ {anim1} -> 3'
+{leftLeg_rotZ} @ {anim1} -> -9'
+
+{rightLeg_posY} @ {anim1} -> 12 - {data_0}
+{leftLeg_posY} @ {anim1} -> 12 - {data_0}
+{rightLeg_posZ} @ {anim1} -> 0
+{leftLeg_posZ} @ {anim1} -> 0
+
+
+{leftArm_rotX} @ {anim2} -> -78'
+{leftArm_rotY} @ {anim2} -> -4'
+{leftArm_rotZ} @ {anim2} -> -7'
+
+{rightArm_rotX} @ {anim2} -> -84'
+{rightArm_rotY} @ {anim2} -> 3'
+{rightArm_rotZ} @ {anim2} -> 6'

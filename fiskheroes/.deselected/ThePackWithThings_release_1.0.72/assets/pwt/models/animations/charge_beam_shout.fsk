@@ -1,0 +1,21 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+{head_rotX} -= 40'{data_0}
+
+{rightArm_rotX} -= 20'{data_0}
+{rightArm_rotY} -= 15'{data_0}
+{rightArm_rotZ} += 30'{data_0}
+
+{leftArm_rotX} -= 20'{data_0}
+{leftArm_rotY} += 15'{data_0}
+{leftArm_rotZ} -= 30'{data_0}
+
+{head_rotX} += 40'{data_1}
+{head_posY} += 2{data_1}
+{head_posZ} -= 2{data_1}
+
+{rightArm_rotX} += 50'{data_1}
+{rightArm_rotZ} -= 15'{data_0}
+{leftArm_rotX} += 50'{data_1}
+{leftArm_rotZ} += 15'{data_0}

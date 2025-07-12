@@ -1,0 +1,12 @@
+{
+  "suit": "dmh:god",
+  "requirements": [
+    "dmh:all",
+    "fiskheroes:tier10",
+    "dmh:dmhp"
+  ],
+  "price": {
+    "IRID_GOLD": 192,
+    "XP_LEVELS": 200
+  }
+}

@@ -1,0 +1,43 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+;body====================================
+{eye1_posZ} += animate2({data_0}, 0.05, 0.43, 0, 0)
+{eye2_posZ} += animate2({data_0}, 0.05, 0.1, 0, 0)
+
+{eye3_posZ} -= animate2({data_0}, 0.05, 0.55, 0, 0)
+{eye4_posZ} -= animate2({data_0}, 0.05, 0.37, 0, 0)
+{eye5_posZ} -= animate2({data_0}, 0.05, 0.11, 0, 0)
+{eye6_posZ} -= animate2({data_0}, 0.05, 0.31, 0, 0)
+{eye7_posZ} -= animate2({data_0}, 0.05, 0.22, 0, 0)
+{eye8_posZ} -= animate2({data_0}, 0.05, 0.58, 0, 0)
+
+{eye9_posY} += animate2({data_0}, 0.05, 0.79, 0, 0)
+
+{eye10_posX} -= animate2({data_0}, 0.05, 0.93, 0, 0)
+
+;rArm====================================
+{eye11_posX} += animate2({data_0}, 0.05, 0.78, 0, 0)
+{eye12_posX} += animate2({data_0}, 0.05, 0.51, 0, 0)
+{eye13_posX} += animate2({data_0}, 0.05, 0.94, 0, 0)
+{eye14_posX} += animate2({data_0}, 0.05, 0.23, 0, 0)
+
+{eye15_posZ} += animate2({data_0}, 0.05, 0.72, 0, 0)
+{eye16_posZ} -= animate2({data_0}, 0.05, 0.37, 0, 0)
+
+{eye17_posY} += animate2({data_0}, 0.05, 0.52, 0, 0)
+{eye18_posY} += animate2({data_0}, 0.05, 0.69, 0, 0)
+
+;lArm====================================
+{eye19_posX} -= animate2({data_0}, 0.05, 0.57, 0, 0)
+{eye19_posZ} -= animate2({data_0}, 0.05, 0.57, 0, 0)
+
+{eye20_posX} -= animate2({data_0}, 0.05, 0.22, 0, 0)
+{eye21_posX} -= animate2({data_0}, 0.05, 0.02, 0, 0)
+{eye22_posX} -= animate2({data_0}, 0.05, 0.13, 0, 0)
+
+{eye23_posY} += animate2({data_0}, 0.05, 0.38, 0, 0)
+
+{eye24_posZ} += animate2({data_0}, 0.05, 0.87, 0, 0)
+
+{eye25_posZ} -= animate2({data_0}, 0.05, 0.77, 0, 0)
+{eye26_posZ} -= animate2({data_0}, 0.05, 0.1, 0, 0)

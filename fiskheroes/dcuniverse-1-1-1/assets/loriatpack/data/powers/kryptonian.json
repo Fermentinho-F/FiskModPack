@@ -1,0 +1,159 @@
+{
+  "name": "Kryptonian Physiology",
+  "modifiers": {
+	  "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 1.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+	  "fiskheroes:regeneration": {
+      "factor": 5
+    },
+     "fiskheroes:transformation|switch": {
+      "key": "SWITCH",
+      "transformation": {
+      "toggleData": "loriatpack:dyn/switch_turn",
+      "timerData": "loriatpack:dyn/switch_timer",
+      "time": 6
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+	"fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 10.0,
+      "knockback": 2.5,
+      "cooldownTime": 120
+    },
+  "fiskheroes:controlled_flight": {
+    "speed": 0.15,
+    "boostSpeed": 0.25,
+    "canBoost": true,
+    "collision": {
+      "blocks": {
+        "stopFlying": false,
+        "takeDamage": false
+      },
+      "entities": {
+        "stopFlying": false,
+        "dealDamage": true
+      }
+    },
+    "knockback": 0.4,
+    "soundEvents": {
+      "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+      "BOOST": "fiskheroes:flight_boost"
+    }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+	  "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+	"fiskheroes:damage_immunity|fire": {
+      "damageType": "FIRE"
+    },
+	"fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+	"fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_weakness|kryptonite": {
+      "damageType": "KRYPTONITE",
+	  "factor": 1.0
+    },
+	"fiskheroes:damage_weakness|magic": {
+      "damageType": "MAGIC",
+	  "factor": 0.3
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "HEAT_VISION": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 140
+        }
+      },
+      "range": 32.0,
+      "radius": 0.5,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "COLD": 1.0
+        }
+      },
+      "range": 25.0,
+      "radius": 0.1,
+	  "soundEvents": {
+		"SHOOT": "loriatpack:iceman_beam2"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLODE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "chargeTime": 12,
+      "duration": 35,
+      "cooldownTime": 200,
+      "range": 32.0,
+      "radius": 120.4,
+	  "soundEvents": {
+        "BEAM_AMBIENT": "loriatpack:super_clap"
+      }
+    },
+	"fiskheroes:cooldown": {
+    "cooldown": {
+      "toggleData": "entity.getData('loriatpack:dyn/jump_timer') == 1",
+      "cooldownData": "loriatpack:dyn/jump_cooldown",
+      "duration": 25,
+      "recovery": 1
+    }
+	}
+  },
+"hud": [
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/superman_jump.png",
+    "data": "loriatpack:dyn/jump_cooldown"
+  },
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/sups_beam.png",
+    "data": "fiskheroes:beam_charge"
+  }
+]
+}
+

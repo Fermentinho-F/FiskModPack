@@ -1,0 +1,31 @@
+{data_0} = curve {data}
+{data_1} = curve {data_1}
+{data_1_2} = (1-curve {data_1})
+
+{head_posZ} -= 0.5{data}
+{headwear_posZ} -= 0.5{data}
+
+
+{head_posY} += 4.3{data}+ {data_1_2}
+{headwear_posY} += 4.3{data}+ {data_1_2}
+
+{rightArm_posX} += 1.4{data}
+{leftArm_posX} -= 1.4{data}
+
+{rightLeg_posX} += 0.6{data}
+{leftLeg_posX} -= 0.6{data}
+
+{body_posY} += 3.3{data} + {data_1_2}
+
+{rightArm_posY} += 3.3{data} + {data_1_2}
+{leftArm_posY} += 3.3{data} + {data_1_2}
+
+{rightArm_rotZ} += 22'{data} - 6'{data_1}
+{leftArm_rotZ} -= 22'{data} - 6'{data_1}
+
+{rightLeg_rotZ} += 10'{data} - 10'{data_1}
+{leftLeg_rotZ} -= 10'{data}  - 10'{data_1}
+
+
+{rightLeg_posZ} -= 1.5{data_1_2}
+{leftLeg_posZ} -= 1.5{data_1_2}

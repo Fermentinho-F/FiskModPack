@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.step",
+  "condition": "entity.getData('sabri:dyn/sand')",
+  "pitch": "1.0 + Math.random() * 0.2",
+  "fadeOut": 5
+}

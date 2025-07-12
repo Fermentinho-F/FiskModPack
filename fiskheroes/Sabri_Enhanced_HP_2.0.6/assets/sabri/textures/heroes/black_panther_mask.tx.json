@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "sabri:black_panther_suit",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "sabri:xor/black_panther_mask_<TIMER>"
+      }
+    ],
+    "out": "sabri:generated/black_panther_mask_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "(entity.getInterpolatedData('fiskheroes:mask_open_timer2') < 2 / 3 ? Math.ceil(18 * entity.getInterpolatedData('fiskheroes:mask_open_timer2')) * 1.5 : 18) | 0",
+      "values": {
+        "min": 1,
+        "max": 18
+      }
+    }
+  },
+  "isDynamic": true
+}

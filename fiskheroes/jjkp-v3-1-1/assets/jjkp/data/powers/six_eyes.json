@@ -1,0 +1,31 @@
+{
+  "name": "Six Eyes",
+  "modifiers": {
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|cold": {
+      "damageType": "COLD",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|explosion": {
+      "damageType": "EXPLOSION",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.5
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    }
+  }
+}

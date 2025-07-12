@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Copy Kryptonian Physiology"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/copy.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "TUTRIDIUM": 8,
+    "XP_LEVELS": 10
+  }
+}

@@ -1,0 +1,3 @@
+{head_model_rotX} @ {data} -> -0.3
+{head_model_posY} @ {data} -> 18
+{head_model_posZ} @ {data} -> -0.3

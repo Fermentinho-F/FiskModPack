@@ -1,0 +1,36 @@
+{
+  "display": {
+    "name": {
+      "translate": "Earth? Not Urath?"
+    },
+    "description": {
+      "translate": "-What's the plan in the meantime?                      -Finish high school I guess."
+    },
+    "icon": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:invincible"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 13
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Travel to the moon"
+      },
+      "ignoreRequirements": true,
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.world().getDimension() == 2595"
+      }
+    }
+  }
+}

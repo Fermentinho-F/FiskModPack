@@ -1,0 +1,17 @@
+{
+  "suit": "sl:superman",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:kryptonian_physiology",
+    "sl:sl",
+    "elseworld:ap8_9"
+  ],
+  "display": {
+    "description": "Man Of Steel"
+  }
+}

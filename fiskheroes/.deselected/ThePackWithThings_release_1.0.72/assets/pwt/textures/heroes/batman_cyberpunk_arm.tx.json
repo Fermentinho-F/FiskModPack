@@ -1,0 +1,9 @@
+{
+  "texture": "pwt:silverhand_arm_cannon_<ON>",
+  "getters": {
+    "ON": {
+      "key": "entity.getInterpolatedData('fiskheroes:dyn/nanite_timer') > 0.18",
+      "values": ["true", "false"]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "name": {
+      "translate": "Test"
+    },
+    "description": {
+      "translate": "Test Description"
+    },
+    "icon": {
+      "text": "TEST"
+    }
+  },
+  "price": {},
+  "requirements": [
+  ],
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:tick",
+      "description": "Test",
+      "condition": {
+        "variables": {
+          "entity": "PLAYER_TICKING"
+        },
+        "check": "entity.getUUID() == '94cb9c5a-8d02-44ef-9370-c91f1c3a9263' || entity.getUUID() == '45e42b7f-44cf-4423-ab08-4a594bb86ba2';"
+      }
+    }
+  }
+}
+  

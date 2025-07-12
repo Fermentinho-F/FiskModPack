@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.savitar.walk",
+  "volume": 0.1,
+  "pitch": "1.0 + Math.random() * 0.2",
+  "fadeOut": 5
+}

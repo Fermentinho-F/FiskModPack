@@ -1,0 +1,18 @@
+{
+  "suit": "dmh:sam",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged",
+    "fiskheroes:magic",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:marksmanship",
+    "dmh:dmhp"
+  ],
+  "price": {
+    "IRID_GOLD": 26,
+    "XP_LEVELS": 24
+  }
+}

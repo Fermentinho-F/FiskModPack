@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:heatblast.cold_beam.start",
+  "volume": "0.65*entity.getInterpolatedData('fiskheroes:beam_shooting_timer')",
+  "pitch": "1.1 - Math.random() * 0.1",
+  "fadeOut": 5
+}

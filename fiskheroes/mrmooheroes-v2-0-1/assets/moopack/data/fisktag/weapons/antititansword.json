@@ -1,0 +1,13 @@
+{
+  "name": "Anti Titan Swords",
+  "permission": "USE_SWORD",
+  "holdingPose": "DUAL",
+  "cooldown": 0,
+  "projectiles": null,
+"damageProfile": {
+  "damage": 5.5,
+  "types": {
+    "SHARP": 1.0
+      }
+    }
+  }

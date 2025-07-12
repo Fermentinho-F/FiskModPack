@@ -1,0 +1,29 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{flamethrower0} = curve min(animate2({data_0}, 1.1, 0.0, 0.3, 0), 1)
+{flamethrower1} = curve min(animate2({data_0}, 1, 0.2, 0.4, 0), 1)
+{flamethrower2} = curve min(animate2({data_0}, 1, 0.4, 0.4, 0), 1)
+{flamethrower3} = curve min(animate2({data_0}, 1.1, 0.6, 0.4, 0), 1)
+
+{movement} = 0.1*cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+{idle} = sin(2pi{data_1})
+{door} = {data_2}
+
+
+{door_rotY} @ ({flamethrower0}+{door}) -> 140' + 5'{idle}
+{flamethrower_base_posZ} @ {flamethrower1} -> -5.5
+{flamethrower_1_posZ} @ {flamethrower1} -> -6
+{flamethrower_2_posZ} @ {flamethrower2} -> -4
+
+{gas_canister_1_posZ} @ {flamethrower3} -> -7
+{gas_canister_2_posZ} @ {flamethrower3} -> -7
+
+
+{leg1_rotY} += 20'{idle}*{movement}
+{leg1_rotZ} -= 12'{idle}*{movement}
+{leg2_rotY} -= 20'{idle}*{movement}
+{leg2_rotZ} += 12'{idle}*{movement}
+{wheel1_rotX} -= 12'{idle}*{movement}
+
+{base_rotY} -= 7'{idle}*{movement}
+{base_top_rotY} += 20'{idle}*{movement}
+{base_bot_rotY} += 12'{idle}*{movement}

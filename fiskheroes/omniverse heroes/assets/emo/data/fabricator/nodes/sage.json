@@ -1,0 +1,10 @@
+{
+  "suit": "emo:sage",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:regeneration",
+    "fiskheroes:melee",
+    "fiskheroes:ranged",
+    "emo:cadmus"
+  ]
+}

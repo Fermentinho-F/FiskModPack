@@ -1,0 +1,33 @@
+{
+    "main.joker": {
+    "sounds": [
+      "joker"
+    ],
+    "category": "player"
+    },
+     "main.shazam": {
+      "sounds": [
+      "shazam"
+    ],
+    "category": "player"
+     },
+      "main.adam_shazam": {
+      "sounds": [
+      "adam_shazam"
+    ],
+    "category": "player"
+     },
+      "main.red_transform": {
+      "sounds": [
+      "red_transform"
+    ],
+    "category": "player"
+      },
+      "main.red_roar": {
+      "sounds": [
+      "red_roar"
+    ],
+    "category": "player"
+     }
+    }
+   

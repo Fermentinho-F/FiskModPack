@@ -1,0 +1,296 @@
+{
+  "particles": [
+       {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.26 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 65.0, -35.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.28 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 60.0, -35.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+      {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.3 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 55.0, -36.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.32 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 50.0, -36.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+     {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.34 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 45.0, -37.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.36 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 40.0, -37.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.38 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 35.0, -38.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.4 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 30.0, -38.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.42 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 25.0, -39.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.44 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 20.0, -39.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.46 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 15.0, -40.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+    {
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.48 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 10.0, -40.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.50 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 5.0, -40.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.52 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 0.0, -39.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.54 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -5.0, -39.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.56 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -10.0, -38.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.58 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -15.0, -38.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.6 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -20.0, -37.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.62 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -25.0, -37.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.64 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -30.0, -36.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.66 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -35.0, -36.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.68 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -40.0, -35.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "!firstPerson && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') > 0.7 && entity.getInterpolatedData('fiskheroes:beam_shooting_timer') < 0.9",
+      "type": "SHADOW_SMOKE",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, -45.0, -35.0],
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.0, 0.0, 1.0],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": false,
+      "lockFPYaw": true
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Spider-Punk's Guitar",
+  "modifiers": {
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:charged_beam": {
+      "isToggle": true,
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "SOUND": 8.0,
+          "SOUND_BLAST": 4.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 10
+        }
+      },
+      "chargeTime": 15,
+      "duration": 5,
+      "cooldownTime": 10,
+      "range": 32.0,
+      "radius": 20.0,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:rock",
+        "CHARGE": "fiskheroes:web_swinging_whoosh"
+      }
+    }
+  }
+}

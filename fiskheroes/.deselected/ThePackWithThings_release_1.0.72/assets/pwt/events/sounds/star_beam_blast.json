@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:modifier.beam.star.start.4",
+  "volume": 2.0,
+  "pitch": "1.0 / (Math.random() * 0.3 + 0.7)"
+}

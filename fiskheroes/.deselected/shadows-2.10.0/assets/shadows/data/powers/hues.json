@@ -1,0 +1,133 @@
+{
+    "name": "Hues",
+    "modifiers": {
+      "fiskheroes:energy_projection": {
+        "damageProfile": {
+          "damage": 2.0,
+          "types": {
+            "ENERGY": 1.0,
+            "FIRE": 0.25
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 80
+          }
+        },
+        "range": 10.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "BEAM_AMBIENT": "fiskheroes:energy_projection"
+        }
+      },
+      "fiskheroes:repulsor_blast": {
+        "damageProfile": {
+          "damage": 3,
+          "types": {
+            "ENERGY": 1.0
+          },
+          "properties": {
+            "ADD_KNOCKBACK": 1.0,
+            "HIT_COOLDOWN": 0.0
+          }
+        },
+        "range": 48.0,
+        "speed": 20.0,
+        "spread": 0.0,
+        "radius": 0.0,
+        "cooldownTime": 30,
+        "soundEvents": {
+          "SHOOT": "shadows:hue_man/shoot"
+        }
+      },
+      "fiskheroes:teleportation": {
+        "canReachMoon": true,
+        "range": 15.0
+      },
+      "fiskheroes:shape_shifting|x_y_z_teleport": {},
+      "fiskheroes:size_manipulation|quantum_realm_travel": {},
+      "fiskheroes:transformation|quantum_realm_particle_fix": {
+        "transformation": {
+          "toggleData": "shadows:dyn/1boolean_reset",
+          "timerData": "shadows:dyn/1float_reset",
+          "time": 10
+        }
+      },
+      "fiskheroes:telekinesis|teleport_on_entity": {
+        "telekinesis": {
+          "crushMelons": false,
+          "crushThrowables": false,
+          "squeezeChickens": false,
+          "explodeCreepers": false,
+          "destroyInanimates": false
+        },
+        "canGrab": {
+          "mobs": true,
+          "items": false,
+          "projectiles": false,
+          "inanimates": false
+        },
+        "range": 50.0
+      },
+      "fiskheroes:transformation|teleport_on_entity_aiming": {
+        "key": "_AIM",
+        "transformation": {
+          "toggleData": "shadows:dyn/2boolean_reset",
+          "timerData": "shadows:dyn/1float_interp_reset",
+          "time": 5
+        },
+        "isToggle": false
+      },
+      "fiskheroes:healing_factor|save_load_health": {
+        "delay": 0
+      },
+      "fiskheroes:transformation|save_sound": {
+        "key": "Func_SAVE",
+        "transformation": {
+          "toggleData": "shadows:dyn/3boolean_reset",
+          "timerData": "shadows:dyn/2float_interp_reset",
+          "time": 1
+        },
+        "soundEvents": {
+          "ENABLE": "shadows:hue_man/save"
+        }
+      },
+      "fiskheroes:transformation|load_sound": {
+        "key": "Func_LOAD",
+        "transformation": {
+          "toggleData": "shadows:dyn/4boolean_reset",
+          "timerData": "shadows:dyn/3float_interp_reset",
+          "time": 5
+        },
+        "soundEvents": {
+          "ENABLE": "shadows:hue_man/load"
+        }
+      },
+      "fiskheroes:cooldown|play_teleport_sound": {
+        "cooldown": {
+          "toggleData": "entity.getData('fiskheroes:teleport_delay') > 0 && entity.getData('fiskheroes:teleport_delay') < 2 && !entity.getData('shadows:dyn/4boolean_reset') && !entity.getData('shadows:dyn/1boolean_reset')",
+          "cooldownData": "shadows:dyn/4float_interp_reset",
+          "duration": 2,
+          "recovery": 1
+        },
+        "soundEvents": {
+          "START": "shadows:hue_man/teleport"
+        }
+      },
+      "fiskheroes:cooldown|hues": {
+        "cooldown": {
+          "toggleData": "false",
+          "cooldownData": "shadows:dyn/recall_cooldown",
+          "duration": 100,
+          "recovery": 1
+        }
+      }
+    },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "shadows:dyn/reload_cooldown"
+    }
+  ]
+  }
+  

@@ -1,0 +1,86 @@
+{
+  "name": "Lightsaber",
+  "modifiers": {
+    "fiskheroes:transformation|lightsaber": {
+        "key": "LIGHTSABER",
+        "transformation": {
+        "toggleData": "swhp:dyn/lightsaber",
+        "timerData": "swhp:dyn/lightsaber_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "swhp:lightsaber_unholster",
+        "DISABLE": "swhp:lightsaber_holster"
+      }
+    },
+    "fiskheroes:transformation|lightsaberignite": {
+        "key": "LIGHTSABERIGNITE",
+        "transformation": {
+        "toggleData": "swhp:dyn/lightsaberignite",
+        "timerData": "swhp:dyn/lightsaberignite_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": ["swhp:lightsaber_ignite_windu", "swhp:lightsaber_hum_windu"],
+        "DISABLE": "swhp:lightsaber_retract_windu"
+      }
+    },
+    "fiskheroes:transformation|lightsaberthrowanimation": {
+        "key": "LIGHTSABERTHROWANIMATION",
+        "isToggle": false,
+        "transformation": {
+        "toggleData": "swhp:dyn/lightsaberthrowanimation",
+        "timerData": "swhp:dyn/lightsaberthrowanimation_timer",
+        "time": 15
+      }
+    },
+    "fiskheroes:charged_beam|lightsaberthrow": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "chargeTime": 0,
+      "duration": 15,
+      "cooldownTime": 10,
+      "range": 30.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "swhp:lightsaber_throw"
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 40.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 60,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 35.0,
+        "pitchRadius": 60.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.1,
+      "soundEvents": {
+        "ENABLE": "swhp:lightsaber_block_windu",
+        "DEFLECT": "swhp:lightsaber_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

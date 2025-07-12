@@ -1,0 +1,33 @@
+{
+  "name": "Hollow Purple",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "CURSED": 0.5,
+          "POSITIVE": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 40,
+      "duration": 20,
+      "cooldownTime": 100,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

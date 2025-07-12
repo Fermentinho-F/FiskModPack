@@ -1,0 +1,14 @@
+{
+  "suit": "swhp:captain_rex",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:finalupdate",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration"
+  ],
+  "display": {
+  "description": "I Used to Believe That Being a Good Soldier Meant Doing Everything They Told You. That’s How They Engineered Us. But We’re Not Droids. We’re Not Programmed. You Have to Learn to Make Your Own Decisions."
+  }
+}

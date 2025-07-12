@@ -1,0 +1,23 @@
+{
+  "name": "Twilight Sword",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:agent_liberty_blade_enable",
+        "DISABLE": ["fiskheroes:agent_liberty_blade_disable", "dmh:king_thanos/flame_off"]
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "IGNITE",
+      "transformation": {
+        "toggleData": "dmh:dyn/ignite",
+        "timerData": "dmh:dyn/ignite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flame_on",
+        "DISABLE": "fiskheroes:flame_off"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Black Flash",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "BLACK_FLASH",
+      "transformation": {
+        "toggleData": "jjkp:dyn/flash",
+        "timerData": "jjkp:dyn/flash_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jjkp:dyn/flash",
+        "cooldownData": "jjkp:dyn/flash_cooldown",
+        "duration": 7.5,
+        "recovery": 0.25
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/reverse_cursed_technique_bar.png",
+      "data": "jjkp:dyn/flash_cooldown"
+    }
+  ]
+}

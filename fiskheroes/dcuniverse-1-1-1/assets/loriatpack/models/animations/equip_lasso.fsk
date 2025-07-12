@@ -1,0 +1,3 @@
+{rightArm_rotZ} -= 0.05pi*sin(pi{data})
+
+

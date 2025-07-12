@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:anakin_skywalker",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "tmhp:swordsman2",
+    "tmhp:other",
+    "tmhp:heropack2"
+  ]
+}

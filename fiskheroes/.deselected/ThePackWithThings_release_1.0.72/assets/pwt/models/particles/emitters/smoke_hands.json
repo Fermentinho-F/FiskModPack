@@ -1,0 +1,29 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && !entity.getData('fiskheroes:hovering') && entity.getData('fiskheroes:aiming')",
+      "type": "SMOKE",
+	  "anchor": "rightArm",
+      "amount": 5,
+      "offset": {
+        "tp": [1.0, 7.0, 0.0],
+        "fp": [8.0, 8.0, 0.0]
+      },
+      "motion": [0.02, 0.07, 0.02],
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": true,
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+	{
+      "condition": "!firstPerson && !entity.getData('fiskheroes:hovering')",
+      "type": "SMOKE",
+	  "anchor": "rightArm",
+      "amount": 5,
+      "offset": [1.0, 7.0, 0.0],
+      "motion": [0.02, 0.07, 0.02],
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": true
+    },
+  ]
+}

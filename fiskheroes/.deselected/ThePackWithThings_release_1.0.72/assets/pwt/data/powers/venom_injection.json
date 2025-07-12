@@ -1,0 +1,48 @@
+{
+  "name": "Venom Injection",
+  "modifiers": {
+	"fiskheroes:transformation|venom": {
+	"isToggle": false,
+	"key": "VENOM",
+      "transformation": {
+        "toggleData": "pwt:dyn/powered",
+        "timerData": "pwt:dyn/power_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": ["pwt:bane_venom_inject", "pwt:bane_venom_loop"]
+      }
+    },
+    "fiskheroes:cooldown|venom_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/powered",
+        "cooldownData": "pwt:dyn/power_cooldown",
+        "duration": 500,
+        "recovery": 0.2
+      }
+    },
+	"fiskheroes:damage_bonus": {
+      "amount": 3.0,
+      "damageBonus": {
+        "data": "pwt:dyn/charge",
+        "uses": 20
+      }
+    },
+	"fiskheroes:regeneration": {
+      "factor": 4
+    },
+	"fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison"]
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.17]
+    }
+  },
+  "hud": [
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/steroids_bar.png",
+      "data": "pwt:dyn/power_cooldown"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{rightArm_rotX} += -120'*{data_0}
+{rightArm_rotZ} += 60'*{data_0}
+
+{leftArm_rotX} += -110'*{data_0}
+{leftArm_rotZ} += -50'*{data_0}
+
+{head_rotX} -= 20'{data_0}
+
+out "translate" (0, 0, 0.1{data_0})
+out "rotate" (-25{data_0}, 1, 0, 0)
+
+{data_1} = curve {data_1}*{data_0}
+{data_1} = sin(pi{data_1})
+
+{rightArm_rotX} @ {data_1} -> 0.7
+{rightArm_rotY} @ {data_1} -> 0
+{rightArm_rotZ} @ {data_1} -> 0.5
+
+{rightArm_rotX} += 42'*{data_1}
+
+{leftArm_rotX} @ {data_1} -> 0.2
+{leftArm_rotY} @ {data_1} -> 0
+{leftArm_rotZ} @ {data_1} -> -0.5
+
+{leftArm_rotX} += 75'*{data_1}
+
+{data_2} = curve {data_2}*{data_0}
+{data_2} = sin(pi{data_2})
+
+{rightArm_rotX} @ {data_2} -> -2.5
+{rightArm_rotY} @ {data_2} -> 0
+{rightArm_rotZ} @ {data_2} -> 0.5
+
+{leftArm_rotX} @ {data_2} -> -2
+{leftArm_rotY} @ {data_2} -> 0
+{leftArm_rotZ} @ {data_2} -> -0.5

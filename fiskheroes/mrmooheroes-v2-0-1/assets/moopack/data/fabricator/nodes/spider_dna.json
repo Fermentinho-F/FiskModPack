@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:spider_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:spiderverse",
+    "moopack:dna_activators"
+  ]
+}

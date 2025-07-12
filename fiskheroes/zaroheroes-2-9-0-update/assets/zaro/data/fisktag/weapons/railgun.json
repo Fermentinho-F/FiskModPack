@@ -1,0 +1,47 @@
+{
+  "name": "Railgun",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 16,
+  "damage": 4,
+  "activation": {
+    "type": "CHARGED",
+    "minTime": 6,
+    "maxTime": 30,
+    "moveSlowdown": 0.0
+  },
+  "fisktag": {
+    "sprintShootDelay": 5
+  },
+  "scope": {
+    "zoom": 0.5,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.5
+  },
+  "recoil": {
+    "amount": 2.0,
+    "cameraShake": 5.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.0,
+      "range": 256.0,
+      "speed": 256.0,
+      "trail": 10,
+      "hitRadius": 0.2,
+      "piercing": true
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:railgun_shoot",
+    "START": ["fisktag:railgun_start", "fisktag:railgun_start_loop"],
+    "CHARGED": "fisktag:railgun_charged"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "suit": "emo:pariah",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:cosmic",
+    "elseworld:ap4_5",
+    "emo:cadmus"
+  ]
+}

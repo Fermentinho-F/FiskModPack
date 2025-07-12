@@ -1,0 +1,48 @@
+
+{data_0} = curve {data_0}
+
+out "rotate" (-45{data_0}, 0, 0)
+
+{head_posY} @ {data_0} -> 0
+
+{body_rotX} @ {data_0} -> 0'
+{body_rotY} @ {data_0} -> 0'
+{body_rotZ} @ {data_0} -> 0'
+
+{body_posX} @ {data_0} -> 0
+{body_posY} @ {data_0} -> 0
+{body_posZ} @ {data_0} -> 0
+
+{rightArm_rotX} @ {data_0} -> 0'
+{leftArm_rotX} @ {data_0} -> 0'
+
+{rightLeg_rotX} @ {data_0} -> -57.5'
+{rightLeg_rotY} @ {data_0} -> 12'
+{rightLeg_rotZ} @ {data_0} -> 0'
+
+{rightLeg_posX} @ {data_0} -> -2
+{rightLeg_posY} @ {data_0} -> 12
+{rightLeg_posZ} @ {data_0} -> -0.5
+
+{leftLeg_rotX} @ {data_0} -> -57.5'
+{leftLeg_rotY} @ {data_0} -> -12'
+{leftLeg_rotZ} @ {data_0} -> 0'
+
+{leftLeg_posX} @ {data_0} -> 2
+{leftLeg_posY} @ {data_0} -> 12
+{leftLeg_posZ} @ {data_0} -> -0.5
+
+{head_posY} -= 20{data_0}
+{body_posY} -= 20{data_0}
+{rightArm_posY} -= 20{data_0}
+{leftArm_posY} -= 20{data_0}
+{rightLeg_posY} -= 21{data_0}
+{leftLeg_posY} -= 21{data_0}
+
+{rightArm_rotX} -= 65'{data_0}
+{rightArm_rotY} += 15'{data_0}
+{leftArm_rotX} -= 65'{data_0}
+{leftArm_rotY} -= 15'{data_0}
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data_0}), 0)

@@ -1,0 +1,87 @@
+{
+  "name": "Skill Learning Program",
+  "modifiers": {
+	"fiskheroes:transformation": {
+      "key": "func_SKILL",
+      "transformation": {
+        "toggleData": "pwt:dyn/toggle_1",
+        "timerData": "pwt:dyn/hacking_timer",
+        "time": 0
+      },
+      "soundEvents": {
+        "ENABLE": ["pwt:batman_cyberpunk_download_on", "pwt:batman_cyberpunk_download_timer", "pwt:batman_cyberpunk_download_end"]
+      }
+    },
+	"fiskheroes:cooldown|cooldown_archery": {
+      "cooldown": {
+        "toggleData": "entity.getWornChestplate().nbt().getBoolean('ARCHERY')",
+        "cooldownData": "pwt:dyn/archery_cooldown",
+        "duration": 40,
+        "recovery": 4
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_combat": {
+      "cooldown": {
+        "toggleData": "entity.getWornChestplate().nbt().getBoolean('COMBAT')",
+        "cooldownData": "pwt:dyn/combat_cooldown",
+        "duration": 40,
+        "recovery": 4
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_gun": {
+      "cooldown": {
+        "toggleData": "entity.getWornChestplate().nbt().getBoolean('GUN')",
+        "cooldownData": "pwt:dyn/gun_cooldown",
+        "duration": 40,
+        "recovery": 4
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_acrobatics": {
+      "cooldown": {
+        "toggleData": "entity.getWornChestplate().nbt().getBoolean('ACROBATICS')",
+        "cooldownData": "pwt:dyn/acrobatics_cooldown",
+        "duration": 40,
+        "recovery": 4
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+    "fiskheroes:archery": {
+    },
+	"fiskheroes:leaping": {
+      "leapAmount": [0.7, 0.2]
+    }
+  },
+  "hud": [
+	{
+      "type": "CHARGE",
+      "texture": "pwt:textures/gui/bars/archery_bar.png",
+      "data": "pwt:dyn/archery_cooldown"
+    },
+	{
+      "type": "CHARGE",
+      "texture": "pwt:textures/gui/bars/combat_bar.png",
+      "data": "pwt:dyn/combat_cooldown"
+    },
+	{
+      "type": "CHARGE",
+      "texture": "pwt:textures/gui/bars/gun_bar.png",
+      "data": "pwt:dyn/gun_cooldown"
+    },
+	{
+      "type": "CHARGE",
+      "texture": "pwt:textures/gui/bars/acrobatics_bar.png",
+      "data": "pwt:dyn/acrobatics_cooldown"
+    }
+  ]
+}

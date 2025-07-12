@@ -1,0 +1,13 @@
+{
+    "suit": "sabri:wolverine_xmen",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:melee2",
+      "fiskheroes:defense2",
+      "fiskheroes:regeneration2",
+      "fiskheroes:traversal",
+      "sabri:adamantium",
+      "sabri:sehp"
+    ]
+  }
+  

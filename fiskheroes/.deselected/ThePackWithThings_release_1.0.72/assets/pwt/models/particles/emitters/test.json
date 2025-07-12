@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+      "type": "FREEZE_SMOKE",
+      "amount": 3,
+      "offset": [0.0, -1.5, 0.0],
+      "motion": [0.0, 0.03, 0.0],
+      "randOffset": [0.1, 0.0, 0.1],
+      "randMotion": [0.2, 0.0, 0.2],
+      "mirror": "!firstPerson",
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

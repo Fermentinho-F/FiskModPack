@@ -1,0 +1,76 @@
+{
+  "name": "Unfinished Super Soldier Serum",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "EQUIP",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/equip",
+        "timerData": "jmctheroes:dyn/equip_timer",
+        "time": 7.5
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:repulsor_blast|normal": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "BULLET": 1.0
+        }
+      },
+      "isExplosive": false,
+      "range": 20.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:gunshot"
+      }
+    },
+    "fiskheroes:repulsor_blast|energy": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "ENERGY": 1.2
+        }
+      },
+      "isExplosive": true,
+      "range": 32.0,
+      "cooldownTime": 17,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk50_cannon_shoot"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.0]
+    },
+    "fiskheroes:shield_throwing": {
+      "cooldownTime": 40,
+      "soundEvents": {
+        "THROW": "fiskheroes:shield_throw"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0x00A5FF",
+      "data": "jmctheroes:dyn/space_timer"
+    }
+  ]
+}

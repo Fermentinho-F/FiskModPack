@@ -1,0 +1,22 @@
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -> {head.rotX} - 1.7
+{rightArm_rotY} @ {data} -> {head.rotY} + 1.1
+{rightArm_rotZ} @ {data} -> {head.rotZ}
+
+{leftArm_rotX} @ {data} -> {head.rotX} - 0.3
+{leftArm_rotY} @ {data} -> {head.rotY} - 0.7
+{leftArm_rotZ} @ {data} -> {head.rotZ}
+
+{leftLeg_rotX} @ {data} -> {head.rotX} + 0.15
+{rightLeg_rotX} @ {data} -> {head.rotX} - 0.20
+
+{leftLeg_rotZ} @ {data} -> {head.rotX} - 0.15
+{rightLeg_rotZ} @ {data} -> {head.rotX} + 0.25
+
+{head_rotX} @ {data} -> {head.rotX} - 0.10
+
+{head_rotY} @ {data} -> {head.rotY} + 0.50
+
+out "translate" (0, 0, 0.2{data})
+out "rotate" (-3{data}, 1, 0, -15{data})

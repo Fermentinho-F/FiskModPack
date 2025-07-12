@@ -1,0 +1,85 @@
+{anim1} = curve min(animate2({data_0}, 2, 0, 0.5, 0.05), 1)
+{anim2} = curve min(animate2({data_0}, 1, 0.5, 0.5, 0.05), 1)
+
+{blade_posZ} += -17*{anim1}
+
+{handle_posZ} += 4*{anim1}
+{handle_posZ} += 2*{anim2}
+
+{head_posY} += -1*{data_0}
+{head_posZ} += -1*{data_0}
+
+{chin_posZ} += -0.65*{data_0}
+{chin_rotX} += 7.5'*{data_0}
+
+{chin1_posZ} += -4.65*{data_0}
+
+{headBack_rotX} -= 15'*{data_0}
+{headBack_posY} += -1*{data_0}
+{headBack_posZ} += 1*{data_0}
+
+{hat_posY} += -2.7*{data_0}
+{hat_posZ} += -0.5*{data_0}
+
+{hatOver_posY} += -2.7*{data_0}
+{hatOver_posZ} += -0.5*{data_0}
+
+{hat1_posZ} += 2.0*{data_0}
+
+{headTopRight_rotX} @ {anim1} -> -15'
+{headTopRight_posX} += 1*{anim1}
+{headTopRight_posY} -= 1*{anim1}
+{headTopRight_rotX} @ {anim2} -> 0'
+{headTopRight_posY} += 0.5*{anim2}
+
+{headTopLeft_rotX} @ {anim1} -> -15'
+{headTopLeft_posX} -= 1*{anim1}
+{headTopLeft_posY} -= 1*{anim1}
+{headTopLeft_rotX} @ {anim2} -> 0'
+{headTopLeft_posY} += 0.5*{anim2}
+
+{headBottomRight_rotX} @ {anim1} -> 15'
+{headBottomRight_posX} += 1*{anim1}
+{headBottomRight_posY} -= 1*{anim1}
+{headBottomRight_posZ} -= -1*{anim2}
+{headBottomRight_rotX} @ {anim2} -> -0'
+{headBottomRight_posY} += 0.5*{anim2}
+{headBottomRight_posZ} -= 1*{anim2}
+
+{headBottomLeft_rotX} @ {anim1} -> 15'
+{headBottomLeft_posX} -= 1*{anim1}
+{headBottomLeft_posY} -= 1*{anim1}
+{headBottomLeft_posZ} -= -1*{anim2}
+{headBottomLeft_rotX} @ {anim2} -> -0'
+{headBottomLeft_posY} += 0.5*{anim2}
+{headBottomLeft_posZ} -= 1*{anim2}
+
+{headTopRightOver_rotX} @ {anim1} -> -15'
+{headTopRightOver_posX} += 1*{anim1}
+{headTopRightOver_posY} -= 1*{anim1}
+{headTopRightOver_rotX} @ {anim2} -> 0'
+{headTopRightOver_posY} += 0.5*{anim2}
+
+{headTopLeftOver_rotX} @ {anim1} -> -15'
+{headTopLeftOver_posX} -= 1*{anim1}
+{headTopLeftOver_posY} -= 1*{anim1}
+{headTopLeftOver_rotX} @ {anim2} -> 0'
+{headTopLeftOver_posY} += 0.5*{anim2}
+
+{headBottomRightOver_rotX} @ {anim1} -> 15'
+{headBottomRightOver_posX} += 1*{anim1}
+{headBottomRightOver_posY} -= 1*{anim1}
+{headBottomRightOver_posZ} -= -1*{anim2}
+{headBottomRightOver_rotX} @ {anim2} -> -0'
+{headBottomRightOver_posY} += 0.5*{anim2}
+{headBottomRightOver_posZ} -= 1*{anim2}
+
+{headBottomLeftOver_rotX} @ {anim1} -> 15'
+{headBottomLeftOver_posX} -= 1*{anim1}
+{headBottomLeftOver_posY} -= 1*{anim1}
+{headBottomLeftOver_posZ} -= -1*{anim2}
+{headBottomLeftOver_rotX} @ {anim2} -> -0'
+{headBottomLeftOver_posY} += 0.5*{anim2}
+{headBottomLeftOver_posZ} -= 1*{anim2}
+
+{chin_rotX} += 5.0'{data_1}

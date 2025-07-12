@@ -1,0 +1,15 @@
+{data} = curve {data} 
+
+{warmachinegun_rotX} @ {data} -> 0
+{warmachinegun_posY} += -5.5*{data}
+{warmachinegun_posZ} -= 1*{data}
+
+	  {front_rotX} @ {data} -> 0
+	  {front_posY} += -5.5*{data}
+	  {front_posZ} -= 1*{data}
+
+{warmachinegun_rotX} @ {data} ->  min({pitch}', 5')
+{warmachinegun_rotY} @ {data} -'> min(-({bodyYaw} - {yaw})', -5')
+
+	  {front_rotX} @ {data} ->  min({pitch}', 5')
+	  {front_rotY} @ {data} -'> min(-({bodyYaw} - {yaw})', -5')

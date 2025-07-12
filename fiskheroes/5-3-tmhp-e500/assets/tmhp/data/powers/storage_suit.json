@@ -1,0 +1,47 @@
+{
+  "name": "Storage Suit",
+  "modifiers": {
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:flying",
+        "cooldownData": "fiskheroes:dyn/super_boost_cooldown",
+        "duration": 100,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 60.0,
+      "cooldownTime": 50,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.15,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0.01,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop",
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/falcon_boost.png",
+      "data": "fiskheroes:dyn/super_boost_cooldown"
+    }
+  ]
+}

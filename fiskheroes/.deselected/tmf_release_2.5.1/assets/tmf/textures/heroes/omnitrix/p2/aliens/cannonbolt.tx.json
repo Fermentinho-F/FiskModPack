@@ -1,0 +1,14 @@
+{
+  "texture": "tmf:omnitrix/p2/aliens/anim/cannonbolt_<MODEL>",
+
+  "getters": {
+    "MODEL": {
+      "key": "Math.ceil(20 * entity.getInterpolatedData('tmf:dyn/pt_1')) | 0",
+      "values": {
+        "min": 0,
+        "max": 20
+      }
+    }
+  },
+  "isDynamic": true
+}

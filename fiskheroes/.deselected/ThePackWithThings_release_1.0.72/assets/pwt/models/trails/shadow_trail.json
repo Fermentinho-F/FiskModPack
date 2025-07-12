@@ -1,0 +1,32 @@
+{
+  "fade": 0,
+  "lightning": {
+    "color": "0xCE2400",
+    "density": 6,
+    "differ": 0.435,
+    "opacity": 0.0
+  },
+  "particles": {
+    "texture": "dfiskpack:textures/shadow.png",
+    "motion": 0.1,
+    "speed": 0.9,
+    "fade": 40,
+    "density": 0.9,
+    "differ": 1.5,
+    "opacity": 1,
+    "scale": 0.08
+  },
+  "blur": {
+    "color": 0xB72E2E,
+    "opacity": 0.4
+  },
+  "flicker": {
+  "color": 0xCE2400,
+  "density": 0,
+  "frequency": 0.0,
+  "length": 0.0,
+  "spread": 0.0,
+  "opacity": 0.0,
+  "confined": "true"
+  }
+}

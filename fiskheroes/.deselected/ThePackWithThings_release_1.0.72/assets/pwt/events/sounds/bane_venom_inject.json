@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.bane.venom.inject",
+  "condition": "entity.getData('pwt:dyn/powered')",
+  "volume": 1.5,
+  "fadeOut": 15
+}

@@ -1,0 +1,82 @@
+{
+  "name": "power.fiskheroes.martian_physiology.name",
+  "modifiers": {
+	  "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 1.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+	 "fiskheroes:healing_factor": {
+      "delay": 80,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+	  "factor": 1.0
+    },
+	"fiskheroes:damage_weakness|flame": {
+      "damageType": "FLAME",
+	  "factor": 1.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.3]
+    },
+    "fiskheroes:shape_shifting": {
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": false
+    },
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+  "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "HEAT_VISION": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 140
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    }
+}
+}

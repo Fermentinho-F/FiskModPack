@@ -1,0 +1,2 @@
+out "translate" (0, 1{data}, -0.5{data})
+out "rotate" (90{data}, 1, 0, 0)

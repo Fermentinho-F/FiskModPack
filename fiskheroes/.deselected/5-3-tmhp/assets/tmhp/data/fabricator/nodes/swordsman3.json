@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "Swordsman III"
+    },
+    "description": {
+      "translate": "Superior Sword skills."
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/swordsman3.png"
+    }
+  },
+  "requirements": [
+    "tmhp:swordsman2"
+  ],
+  "price": {
+    "IRID_GOLD": 8,
+    "XP_LEVELS": 25
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Diamond Sword"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_sword'"
+      }
+    }
+  }
+}

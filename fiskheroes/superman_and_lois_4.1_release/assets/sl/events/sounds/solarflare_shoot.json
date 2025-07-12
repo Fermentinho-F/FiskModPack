@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.solarflare_shoot",
+  "condition": "fiskheroes:beam_shooting",
+  "loop": true,
+  "volume": 1.2
+}

@@ -1,0 +1,9 @@
+{
+  "suit": "emo:spider",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:spider_man_webb",
+    "fiskheroes:nanites",
+    "emo:cadmus"
+  ]
+}

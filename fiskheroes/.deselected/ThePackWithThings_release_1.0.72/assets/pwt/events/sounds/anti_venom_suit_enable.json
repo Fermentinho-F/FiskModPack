@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.antivenom.symbiot.enable",
+  "condition": "entity.getData('pwt:dyn/symbiot')"
+}

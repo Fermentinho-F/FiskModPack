@@ -1,0 +1,26 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "type": "FIREWORK_BACKGROUND",
+	  "anchor": "body",
+      "amount": 1,
+      "offset": [0.0, -2.0, -16.0],
+	  "randOffset": [0.0, 0.0, 0.0],
+      "motion": [1.0, 1.0, 1.0],
+	  
+      "mirror": false
+    },
+	{
+      "condition": "firstPerson",
+      "type": "FIREWORK_BACKGROUND",
+	  "anchor": "head",
+      "amount": 1,
+      "offset": [0.0, 4.0, -18.0],
+	  "randOffset": [0.0, 0.0, 0.0],
+      "motion": [1.0, 1.0, 1.0],
+	  "lockFPYaw": true,
+      "mirror": false
+    }
+  ]
+}

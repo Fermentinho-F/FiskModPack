@@ -1,0 +1,14 @@
+{
+    "display": {
+    "name": "MrMoo Heroes Heropack",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/moopack.png"
+    }
+    },
+    "requirements": [
+
+  ],
+    "price": {
+
+  }
+}

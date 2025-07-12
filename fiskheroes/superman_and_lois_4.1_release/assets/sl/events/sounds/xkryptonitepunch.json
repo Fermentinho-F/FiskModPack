@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.toughpunch",
+  "volume": 0.8,
+  "fadeOut": 20,
+  "condition": "entity.getData('sl:dyn/xkryptonite')",
+  "pitch": "1.1 + Math.random() * 0.3"
+}

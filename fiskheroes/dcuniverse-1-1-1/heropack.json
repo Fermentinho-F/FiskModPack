@@ -1,0 +1,159 @@
+{
+  "name": "DCUniverse",
+  "watermark": "DCUniverse",
+  "domain": "loriatpack",
+  "packFormat": 1,
+  "description": "DCUniverse",
+  "sounds": {
+    "download": {
+      "repository": "Tagged-Imp/TGheroes",
+      "version": 0
+    },
+	"range": {
+	"flap_wings":{ "distance": 32.0, "sendToAll": true},
+	"water_beam":{ "distance": 32.0, "sendToAll": true},
+	"water_flight":{ "distance": 32.0, "sendToAll": true},
+	"shazam_big":{ "distance": 32.0, "sendToAll": true},
+	"shazam_kid":{ "distance": 32.0, "sendToAll": true},
+	"super_clap":{ "distance": 32.0, "sendToAll": true}	,
+	"electro_beam":{ "distance": 32.0, "sendToAll": true},
+	"electro_blast":{ "distance": 32.0, "sendToAll": true},
+	"electro_charge":{ "distance": 32.0, "sendToAll": true},
+	"electro_flight":{ "distance": 32.0, "sendToAll": true},
+	"electro_lightning":{ "distance": 32.0, "sendToAll": true},
+	"lightning_spell":{ "distance": 32.0, "sendToAll": true},
+	"lightning_spell2":{ "distance": 32.0, "sendToAll": true},
+	"laser_gun":{ "distance": 32.0, "sendToAll": true},
+	"banshee":{ "distance": 48.0, "sendToAll": true },
+	
+	"arm_vortex":{ "distance": 32.0, "sendToAll": true},
+	"canary_beam":{ "distance": 64.0, "sendToAll": true},
+	"canary_wave":{ "distance": 64.0, "sendToAll": true},
+	"flash_punch":{ "distance": 32.0, "sendToAll": true},
+	"grapling_gun":{ "distance": 32.0, "sendToAll": true},
+	"lantern_aim":{ "distance": 32.0, "sendToAll": true},
+	"lantern_beam":{ "distance": 32.0, "sendToAll": true},
+	"night_vivsion":{ "target": "ONLY_SELF" },
+	"shazam_lightning":{ "distance": 32.0, "sendToAll": true},
+	"water_vortex":{ "distance": 32.0, "sendToAll": true}
+	}
+  }, 
+  "damageTypes": {
+  "KRYPTONITE": "Kryptonite",
+  "LIGHTNING": "Lightning",
+  "TELEPATIC": "Telepathy",
+  "EXPLODE": "Explode",
+  "FLAME": "Flame",
+  "SCREAM": "Scream",
+  "HEAT_VISION": "Heat Vision"
+},
+  "dataVars": {
+    "pulse": "BOOLEAN",
+    "pulse_timer": "FLOAT_INTERP",
+    "pulse_cooldown": "FLOAT",
+    "vortex_active": "BOOLEAN",
+    "vortex_timer": "FLOAT_INTERP",
+    "jump_timer": "FLOAT_INTERP",
+    "jump_cooldown": "FLOAT",
+	"leap_timer": "FLOAT_INTERP",
+    "leap_cooldown": "FLOAT",
+    "vortex_cooldown": "FLOAT",
+    "speed_active": "BOOLEAN",
+    "ring_active": "BOOLEAN",
+    "ring_timer": "FLOAT_INTERP",
+    "ring_cooldown": "FLOAT",
+    "ring_reload": "BOOLEAN",
+    "ring_reload_timer": "FLOAT_INTERP",
+    "ring_reload_cooldown": "FLOAT",
+    "thunderclap_cooldown": "FLOAT",
+    "wall_run": "BOOLEAN",
+    "electro_timer": "FLOAT_INTERP",
+    "electro": "BOOLEAN",
+    "kryptonite_timer": "FLOAT_INTERP",
+    "kryptonite": "BOOLEAN",
+    "night_vision": "BOOLEAN",
+    "night_timer": "FLOAT_INTERP",
+    "rebreather": "BOOLEAN",
+    "rebreather_timer": "FLOAT_INTERP",
+    "rebreather_anim": "FLOAT_INTERP",
+    "grappling": "BOOLEAN",
+    "grappling_timer": "FLOAT_INTERP",
+    "punch_int": "FLOAT_INTERP",
+    "charge": "BOOLEAN",
+    "charge_timer": "FLOAT_INTERP",
+    "charge_cooldown": "FLOAT",
+    "speed_exp_timer": "FLOAT_INTERP",
+    "speed_exp": { "type": "FLOAT", "resetWithoutSuit": false },
+    "hood_glide": "BOOLEAN",
+    "hood_glide_timer": "FLOAT_INTERP",
+    "dart_choose": "FLOAT",
+    "darts": "BOOLEAN",
+    "darts_timer": "FLOAT_INTERP",
+    "charge_kinetic": "BOOLEAN",
+    "charge_kinetic_cooldown": "FLOAT",
+    "charge_kinetic_timer": "FLOAT_INTERP",
+    "batarang_basic": "FLOAT_INTERP",
+    "batarang_fire": "FLOAT_INTERP",
+    "batarang_electro": "FLOAT_INTERP",
+    "batarang_type": "FLOAT",
+    "change_form": "BOOLEAN",
+    "change_form_timer": "FLOAT_INTERP",
+    "martian_form": "BOOLEAN",
+    "martian_form_timer": "FLOAT",
+    "human_form": "BOOLEAN",
+    "human_form_timer": "FLOAT",
+    "true_form": "BOOLEAN",
+    "true_form_timer": "FLOAT",
+    "mask_open_timer": "FLOAT_INTERP",
+    "inAir": "FLOAT",
+    "phase_cooldown": "FLOAT_INTERP",
+
+    "rarm_timer": "FLOAT",
+
+    "playlist": "FLOAT",
+
+	"switch_turn": "BOOLEAN",
+	"switch_timer": "FLOAT_INTERP",
+	
+	"invis": "BOOLEAN",
+	"invis_timer": "FLOAT_INTERP"
+  },
+  "alts": {
+	"loriatpack:green_arrow": {
+    "clas": "Classic",
+	"rebirth": "Rebirth"
+  },
+  "loriatpack:flash": {
+    "new52": "New52",
+	"justice_lords": "Justice Lords",
+	"justice_lords2": "Justice Lords Alternative"
+  },
+  "loriatpack:batman": {
+    "first": "First Appearance",
+    "classic": "Classic",
+    "blue": "Blue Suit",
+    "rebirth": "Rebirth",
+    "gaslight": "Gotham by Gaslight",
+    "jl3k": "JL3000",
+	"justice_lords": "Justice Lords"
+  },
+  "loriatpack:green_lantern": {
+    "justice_lords": "Justice Lords"
+  },
+  "loriatpack:martian_manhunter": {
+    "justice_lords": "Justice Lords"
+  }, 
+  "loriatpack:hawkgirl": {
+    "justice_lords": "Justice Lords"
+  },
+  "loriatpack:wonder_woman": {
+  "new_52": "New52",
+  "justice_lords": "Justice Lords"
+  },
+"loriatpack:superman": {
+  "black": "Black Suit",
+  "clas": "Classic",
+  "justice_lords": "Justice Lords"
+}
+}
+}

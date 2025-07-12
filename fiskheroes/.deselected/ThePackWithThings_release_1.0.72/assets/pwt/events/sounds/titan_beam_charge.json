@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.titan.beam.start",
+  "volume": 0.9,
+  "pitch": "0.7 + Math.random() * 0.2",
+  "condition": "entity.getData('fiskheroes:beam_charging') && !entity.getData('fiskheroes:beam_shooting')",
+  "fadeOut": 5
+}

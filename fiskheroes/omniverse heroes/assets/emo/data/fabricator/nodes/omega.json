@@ -1,0 +1,18 @@
+{
+  "display": {
+    "name": {
+      "translate": "Omega 1 Nanite"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/omega.png"
+    }
+  },
+  "requirements": [ 
+    "fiskheroes:nanites",
+    "emo:cadmus"
+  ],
+  "price": {
+    "IRID_GOLD": 9,
+    "XP_LEVELS": 25
+  }
+}

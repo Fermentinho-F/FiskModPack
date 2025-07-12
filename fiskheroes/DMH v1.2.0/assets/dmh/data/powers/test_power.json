@@ -1,0 +1,263 @@
+{
+    "name": "Test",
+  "modifiers": {
+    "fiskheroes:size_manipulation": {
+      "isInstant": true,
+      "minSize": 0.0525,
+      "maxSize": 1.0,
+      "soundEvents": {
+        "SHRINK": "fiskheroes:atom_shrink",
+        "GROW": "fiskheroes:atom_grow"
+      }
+    },
+    "fiskheroes:shape_shifting|item_giver": {},
+    "fiskheroes:transformation": {
+      "key": "TRANSFORM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_enable",
+        "DISABLE": "fiskheroes:mk50_disable"
+      }
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [ 1.4, 0.5, 0.2 ],
+        [ -1.6, 1.0, 0.1 ],
+
+        [ 1.5, -1.2, 0.3 ],
+        [ -1.5, -1.2, 0.3 ],
+
+        [ 0.7, 1.7, 0.5 ],
+        [ -0.8, 1.3, 0.5 ]
+      ],
+      "climbing": {
+        "speed": 0.15,
+        "range": 8,
+        "tolerance": 9,
+        "minAnchorPoints": 2,
+        "anchorPointZones": [
+          [ "TOP", "RIGHT", "FRONT" ],
+          [ "TOP", "LEFT", "FRONT" ],
+          [ "BOTTOM", "RIGHT", "BACK" ],
+          [ "BOTTOM", "LEFT", "BACK" ],
+          [ "TOP", "BOTTOM", "RIGHT", "BACK", "FRONT" ],
+          [ "TOP", "BOTTOM", "LEFT", "BACK", "FRONT" ]
+        ]
+      },
+      "range": 8.0,
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "SHARP": 0.5,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0,
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 120,
+              "amplifier": 0,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 17.0,
+          "types": {
+            "SHARP": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:ock_enable",
+        "DISABLE": "fiskheroes:ock_disable",
+        "ANCHOR": "fiskheroes:ock_climb",
+        "UNANCHOR": "fiskheroes:ock_unanchor",
+        "RELEASE": "fiskheroes:ock_unanchor",
+        "JAB_START": "fiskheroes:ock_jab",
+        "GRAB_START": "fiskheroes:ock_grab",
+        "STRIKE_START": "fiskheroes:ock_strike",
+        "STRIKE_CHARGED": "fiskheroes:ock_strike_charged"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.22,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": [ "fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop" ],
+        "BOOST": "fiskheroes:iron_man_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:iron_man_flight_roll",
+        "DIVE": [ "fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive" ]
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 500.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:repulsor_blast"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 50.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.25
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 1,
+              "amplifier": 0,
+              "chance": 0
+            }
+          ]
+        }
+      },
+      "chargeTime": 20,
+      "duration": 80,
+      "cooldownTime": 20,
+      "range": 32.0,
+      "radius": 0.6,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk85_beam_start",
+        "SHOOT_STOP": "fiskheroes:mk85_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:mk85_beam_loop",
+        "CHARGE": "fiskheroes:mk85_beam_charge"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 80.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 60,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 35.0,
+        "pitchRadius": 60.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk85_shield_enable",
+        "DISABLE": "fiskheroes:mk85_shield_disable",
+        "BLOCK_START": "fiskheroes:mk85_shield_block_start",
+        "BLOCK_STOP": "fiskheroes:mk85_shield_block_stop",
+        "DEFLECT": "fiskheroes:mk85_shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 1.5
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:metal_skin": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": "fiskheroes:super_speed_sprint_wally",
+        "STOP": "fiskheroes:super_speed_stop_wally"
+      }
+    },
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 0.025,
+      "canBreakGlass": true
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.25
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:energy_projection"
+      }
+    }
+  },
+    "hud": [
+        {
+          "type": "CIRCLE",
+          "color": "fiskheroes:charged_beam",
+          "data": "fiskheroes:beam_charge"
+        }
+      ]
+  }
+  

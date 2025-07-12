@@ -1,0 +1,16 @@
+{
+  "suit": "zaro:he_who_remains",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+     "fiskheroes:teleportation",
+    "fiskheroes:melee3",
+    "zaro:zaroheroes"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Banana Physiology",
+  "modifiers": {
+    "fiskheroes:size_manipulation|giant": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 5.0,
+      "soundEvents": {
+        "SHRINK": "fiskheroes:pym_shrink",
+        "GROW": "fiskheroes:pym_grow_giant"
+      }
+    },
+    "fiskheroes:transformation": {
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/giant_mode",
+        "timerData": "fiskheroes:dyn/giant_mode_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/giant_mode",
+        "cooldownData": "fiskheroes:dyn/giant_mode_cooldown",
+        "duration": 2400,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "BULLET": 1.0
+        }
+      },
+      "chargeTime": 20,
+      "duration": 40,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 0.2,
+      "canDoGriefing": false,
+      "soundEvents": {
+        "CHARGE": "fiskheroes:mysterio_charged_beam_charge",
+        "SHOOT": "fiskheroes:mysterio_charged_beam_start",
+        "SHOOT_STOP": ["fiskheroes:mysterio_charged_beam_stop1", "fiskheroes:mysterio_charged_beam_stop2"],
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+      }
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 140
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "fiskheroes:web_shoot",
+        "RELEASE": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"],
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"],
+        "IMPACT": "fiskheroes:flight_impact_entity"
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/giant_mode.png",
+      "data": "fiskheroes:dyn/giant_mode_cooldown"
+    }
+  ]
+}

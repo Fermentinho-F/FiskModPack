@@ -1,0 +1,16 @@
+{flap_time}={data_0}{data_1}{data_2}
+{flap_0}=curve animate2({flap_time},1,0,0.5,0.5)
+
+{wing_last_rotY}+=-52.5'{flap_0}
+{wing_last_posX}+=-4.5065324781{flap_0}
+{wing_last_posY}+=0.009831302{flap_0}
+{wing_last_posZ}+=2.9480617987{flap_0}
+
+{wing_middle_rotY}+=25'{flap_0}
+
+{wing_last2_rotY}+=55'{flap_0}
+{wing_last2_posX}+=4.5065{flap_0}
+{wing_last2_posY}+=-0.0098{flap_0}
+{wing_last2_posZ}+=2.9480617987{flap_0}
+
+{wing_middle2_rotY}+=-25'{flap_0}

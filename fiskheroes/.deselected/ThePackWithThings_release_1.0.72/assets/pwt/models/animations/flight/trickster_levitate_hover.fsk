@@ -1,0 +1,36 @@
+{x} = 30{hover}min(1.5{vel}, 1)
+
+{vertical} = {motY}
+
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{vertical} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{head_rotX} -= 30'clamp({forward}, -2, 2)
+{rightArm_rotX} -= -0.4{forward} + 0.1{strafe} + 20'{data_0}
+{rightArm_rotY} += 55'{data_0} - 0.5{adz}
+{rightArm_rotZ} += 0.1{adz}  + 25'{data_0} + 0.4{strafe} -0.5{vertical}
+{leftArm_rotX} -= -0.4{forward} - 0.1{strafe} + 20'{data_0}
+{leftArm_rotY} -= 55'{data_0} - 0.5{adz}
+{leftArm_rotZ} -= 0.1{adz}  + 25'{data_0} - 0.4{strafe} -0.5{vertical}
+
+{rightLeg_rotX} += 0.2{forward} + 30'{data_0}
+{rightLeg_rotY} += 16'{data_0} - 0.175{adz}
+{rightLeg_rotZ} += 0.05{adz} + 0.4{strafe} + 5'{data_0}
+{leftLeg_rotX} += 0.3{forward} + 10'{data_0}
+{leftLeg_rotY} -= 10'{data_0} - 0.175{adz}
+{leftLeg_rotZ} -= 0.05{adz} - 0.4{strafe} + 2'{data_0}
+
+{rightLeg_posX} -= 0.6{data_0} - 0.9{adz}
+{rightLeg_posY} -= 2.5{data_0} - 1.1{adz}
+{rightLeg_posZ} -= 4.9{data_0} - 0.9{adz}
+{leftLeg_posX} += 0.1{data_0}
+{leftLeg_posY} -= 0.5{data_0}
+{leftLeg_posZ} += 0{data_0}

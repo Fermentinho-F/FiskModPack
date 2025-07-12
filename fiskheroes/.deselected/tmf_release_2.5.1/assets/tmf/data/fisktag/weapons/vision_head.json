@@ -1,0 +1,7 @@
+{
+  "name": "Vision's Head",
+  "permission": "USE_VISION",
+  "holdingPose": "SINGLE",
+  "cooldown": 0,
+  "projectiles": null
+}

@@ -1,0 +1,21 @@
+{data_0} = {data_0}
+
+{data_1} = sin(pi(1 - {data_1}))^2
+
+{data_2} = {data_2}
+
+{peia_head_rotZ} @ {data_0} -> 10
+
+{peia_head_overlay_rotZ} @ {data_0} -> -10
+
+{peia_head_overlay_posZ} @ {data_1} -> -1
+
+{peia_head_overlay_posZ} @ {data_2} -> -2
+
+{peia_head_posZ} @ {data_2} -> -2.5
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "pwt:riot_thorns",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/models/riot_thorns_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/riot_thorns_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(11 * entity.getInterpolatedData('pwt:dyn/ability_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 11
+      }
+    }
+  },
+  "isDynamic": true
+}

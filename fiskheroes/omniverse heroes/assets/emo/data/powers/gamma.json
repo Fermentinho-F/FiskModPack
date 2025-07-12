@@ -1,0 +1,80 @@
+{
+  "name": "Gamma Energy",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9,
+        "types": {
+          "ENERGY": 2.0,
+          "FIRE": -1
+        },
+        "properties": {
+          "EFFECTS": [{
+              "id": "minecraft:slowness",
+              "duration": 100,
+              "amplifier": 3
+            }
+          ],
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "chargeTime": 9,
+      "duration": 5,
+      "cooldownTime": 10,
+      "range": 20.0,
+      "radius": 4.5
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "SOUND",
+      "factor": 2.0
+    },
+      "fiskheroes:earthquake": {
+        "damageProfile": {
+          "damage": 1.0,
+          "types": {
+            "EXPLOSION": 1.0
+          }
+        },
+        "radius": 20.0,
+        "knockback": 1.0,
+        "duration": 100,
+        "cooldownTime": 160
+      },
+      "fiskheroes:ground_smash": {
+        "damageProfile": {
+          "damage": 15.0,
+          "types": {
+            "EXPLOSION": 1.0
+          }
+        },
+        "radius": 3.0,
+        "knockback": 3.0,
+        "cooldownTime": 40
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison"]
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [2.0, 1.5]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:eternium_weakness": {
+      "radius": 3.0,
+      "duration": 120
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

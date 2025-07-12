@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:lantern/green/green_lantern_wall_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "Math.ceil(8 * entity.getInterpolatedData('fiskheroes:shield_blocking_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 8
+      }
+    }
+  }
+}

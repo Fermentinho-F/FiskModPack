@@ -1,0 +1,126 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 5/31/25 2:53 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: tconstruct/library/weaponry/ProjectileWeapon
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:544)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:208)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:878)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: java.lang.NoClassDefFoundError: tconstruct/library/weaponry/ProjectileWeapon
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at cpw.mods.fml.common.ProxyInjector.inject(ProxyInjector.java:42)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:512)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:513)
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: tconstruct.library.weaponry.ProjectileWeapon
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 36 more
+Caused by: java.lang.NoClassDefFoundError: tconstruct/library/tools/ToolCore
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182)
+	... 38 more
+Caused by: java.lang.ClassNotFoundException: tconstruct.library.tools.ToolCore
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:101)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 729392152 bytes (695 MB) / 1313341440 bytes (1252 MB) up to 7456948224 bytes (7111 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx8000m -Xms256m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_E7 32 mods loaded, 32 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UC	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UC	fiskheroescore{2.4.0} [Fisk's Superheroes Core] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UC	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UC	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UC	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UC	xaerominimap_core{1.7.10-1.0} [XaeroMinimapCore] (minecraft.jar) 
+	UC	xaeroworldmap_core{1.7.10-1.0} [XaeroWorldMapCore] (minecraft.jar) 
+	UC	aiimprovements{0.0.1.8} [AI Improvements] (AIImprovements-1.7.10-0.0.1b8.jar) 
+	UC	armourersWorkshop{1.7.10-0.48.5} [Armourer's Workshop] (Armourers-Workshop-1.7.10-0.48.5.jar) 
+	UC	cosmeticarmorreworked{1.7.10-v7} [CosmeticArmorReworked] (CosmeticArmorReworked-1.7.10-v7.jar) 
+	UC	customnpcs{1.7.10d} [CustomNpcs] (CustomNPCs_1.7.10d(29oct17).jar) 
+	UC	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UE	TConstruct{1.7.10-1.8.8.build988} [Tinkers' Construct] (TConstruct-1.7.10-1.8.8.jar) 
+	UC	dimensionalPockets{1.0.5} [Dimensional Pockets] (DimensionalPockets-1.7.10-1.0.5-universal.jar) 
+	UC	fiskheroes{2.4.0} [Fisk's Superheroes] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UC	fisktag{3.0} [FiskTag] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UC	FpsReducer{mc1.7.10-1.10.3} [FPS Reducer] (FpsReducer-mc1.7.10-1.10.3.jar) 
+	UC	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UC	ironbackpacks{1.7.10-1.2.20} [Iron Backpacks] (IronBackpacks-1.7.10-1.2.20.jar) 
+	UC	RadixCore{2.1.3} [RadixCore] (RadixCore-1.7.10-2.1.3-universal.jar) 
+	UC	MCA{1.7.10-5.2.2} [Minecraft Comes Alive] (MCA-1.7.10-5.2.2-portugues.jar) 
+	UC	testdummy{1.0} [MmmMmmMmmMmm] (MmmMmmMmmMmm-1.7.10-1.9.jar) 
+	UC	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UC	cfm{3.4.7} [§9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) 
+	UC	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	UC	starwarsmod{1.3.7} [Parzi's Star Wars Mod] (Parzi's Star Wars Mod v1.3.7.jar) 
+	UC	svm{1.7.10-2.1.0} [Saracalia's Vehicle Mod] (SVM-1.7.10-2.1.0.jar) 
+	UC	TwilightForest{2.4.3} [The Twilight Forest] (TwilightForest-2.4.3.jar) 
+	UC	worldedit{6.1.1} [WorldEdit] (worldedit-forge-mc1.7.10-6.1.1-dist.jar) 
+	UC	XaeroMinimap{21.10.44} [Xaero's Minimap] (Xaeros_Minimap_21.10.44_Forge_1.7.10.jar) 
+	UC	XaeroWorldMap{1.14.1.33} [Xaero's World Map] (XaerosWorldMap_1.14.1.33_Forge_1.7.10.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 566.03' Renderer: 'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	TConstruct Environment: Environment healthy.
+	OptiFine Version: OptiFine_1.7.10_HD_U_E7
+	Render Distance Chunks: 16
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 566.03
+	OpenGlRenderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 4

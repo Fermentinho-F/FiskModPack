@@ -1,0 +1,17 @@
+{data} = 2*sin(pi*{data})
+
+{ring1_rotX} @ {data} -'> -126'
+{ring1_rotY} @ {data} -'> -385'
+{ring1_rotZ} @ {data} -'> -246'
+
+{ring2_rotX} @ {data} -'> -231'
+{ring2_rotY} @ {data} -'> -265'
+{ring2_rotZ} @ {data} -'> -185'
+
+{firebomb_rotX} @ {data} -'> -10'
+{firebomb_rotY} @ {data} -'> -13'
+{firebomb_rotZ} @ {data} -'> -23'
+
+{firebomb_overlay_rotX} @ {data} -'> -10'
+{firebomb_overlay_rotY} @ {data} -'> -13'
+{firebomb_overlay_rotZ} @ {data} -'> -23'

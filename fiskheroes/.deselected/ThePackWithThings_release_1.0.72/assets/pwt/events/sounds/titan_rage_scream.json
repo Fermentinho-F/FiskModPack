@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.titan.beam.scream.3",
+  "condition": "entity.getData('pwt:dyn/rage')",
+  "volume": "Math.min(0.1 + (entity.getData('fiskheroes:scale') - 1) * 0.35, 2.0) / 2",
+  "pitch": "1",
+  "delay" : 60,
+  "fadeOut": 10
+}

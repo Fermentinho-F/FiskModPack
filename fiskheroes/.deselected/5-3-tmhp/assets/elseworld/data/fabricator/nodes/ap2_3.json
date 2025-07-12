@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 2-3"
+    },
+    "description": {
+      "translate": "\u00A79Suits that can deal damage between 4-9."
+    },
+    "icon": {
+      "text": "\u00A7c2-3"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "elseworld:ap1" ],
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 10
+  },
+  "criteria": {
+    "bow": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft an Electromagnet Attachment"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:electromagnet_attachment'"
+      }
+    }
+  }
+}

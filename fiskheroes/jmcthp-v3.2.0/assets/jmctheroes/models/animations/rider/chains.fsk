@@ -1,0 +1,49 @@
+{data_0} = curve{data_0}
+{data_0} = (1 - {data_0})
+
+{Chain_posY} @ {data_0} -> -0.5
+{Chain1_posY} @ {data_0} -> 1
+{Chain2_posY} @ {data_0} -> 2
+{Chain3_posY} @ {data_0} -> 2
+{Chain4_posY} @ {data_0} -> 2
+
+{data_1} = curve{data_1}
+{f1} = {data_1}
+{f1} = 1.0 - {data_1}
+{f1} *= {f1}
+{f1} *= {f1}
+{f1} = 1.0 - {f1}
+{f2} = sin({f1} * pi)
+
+{Chain_posY} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+{Chain_rotX} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+{Chain1_rotX} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+{Chain2_rotX} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+{Chain3_rotX} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+{Chain4_rotX} += sin(sqrt({f2}) * pi * 2.0) * 0.2
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+{x} = 30{data_2}min(1.5{vel}, 1)
+{x} = {data_2}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+
+
+{Chain_posY} -= -1*{forward} *8
+{Chain_rotX} -= -15'*{forward} *8
+{Chain1_rotX} -= -12.5'*{forward} *8
+{Chain2_rotX} -= -10'*{forward} *8
+{Chain3_rotX} -= -6.5'*{forward} *8
+{Chain4_rotX} -= -5'*{forward} *8
+
+{Chain_rotX} -= 5'*{strafe} *8
+{Chain1_rotY} -= 6.5'*{strafe} *8
+{Chain2_rotY} -= -10'*{strafe} *8
+{Chain3_rotY} -= -12.5'*{strafe} *8
+{Chain4_rotY} -= 15'*{strafe} *8
+

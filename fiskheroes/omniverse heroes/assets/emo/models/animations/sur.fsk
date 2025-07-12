@@ -1,0 +1,19 @@
+{rightArm_rotX} = -1.1
+{rightArm_rotY} = 0.2
+{rightArm_rotZ} = 0.5
+{rightArm_posZ} = -1.0
+
+{leftArm_rotX} = -1.1
+{leftArm_rotY} = -0.2
+{leftArm_rotZ} = -0.5
+{leftArm_posZ} = -1.0
+
+{rightLeg_rotX} = -1.0
+{rightLeg_rotZ} = 0.0
+{rightLeg_rotY} = 0.1
+
+{leftLeg_rotX} = -1.0
+{leftLeg_rotZ} = 0.0
+{leftLeg_rotY} = -0.1
+
+{body_rotX} = 0.0

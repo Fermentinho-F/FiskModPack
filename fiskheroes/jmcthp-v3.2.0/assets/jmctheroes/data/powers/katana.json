@@ -1,0 +1,76 @@
+{
+  "name": "Katana Devil Phisiology",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "BLADE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/suit",
+        "timerData": "jmctheroes:dyn/suit_timer",
+        "time": 20
+      },
+      "soundEvents": {
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/suit",
+        "cooldownData": "jmctheroes:dyn/suit_cooldown",
+        "duration": 6000,
+        "recovery": 3.0
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "SHARP": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 0
+        }
+      },
+      "range": 3.0,
+      "radius": 2,
+      "soundEvents": {
+        "BEAM_AMBIENT": ["jmctheroes:dash"]
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.05
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 2
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 85,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:cooldown|dash": {
+      "cooldown": {
+        "toggleData": "entity.isSneaking() && entity.getHeldItem().isEmpty() && entity.getData('jmctheroes:dyn/suit_timer') == 1",
+        "cooldownData": "jmctheroes:dyn/dash_timer",
+        "duration": 50,
+        "recovery": 5
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/dash.png",
+      "data": "jmctheroes:dyn/dash_timer"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/blood.png",
+      "data": "entity.getData('jmctheroes:dyn/suit_cooldown') == 1 ? 0.001 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.9 && entity.getData('jmctheroes:dyn/suit_cooldown') < 1.0 ? 0.1 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.8 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.9 ? 0.2 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.7 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.8 ? 0.3 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.6 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.7 ? 0.4 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.5 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.6 ? 0.5 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.4 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.5 ? 0.6 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.3 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.4 ? 0.7 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.2 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.3 ? 0.8 : entity.getData('jmctheroes:dyn/suit_cooldown') >= 0.1 && entity.getData('jmctheroes:dyn/suit_cooldown') < 0.2 ? 0.9 : 1.0"
+    }
+  ]
+}

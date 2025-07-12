@@ -1,0 +1,22 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "type": "SMOKE_SMALL",
+      "anchor": "body",
+      "amount": 2,
+      "offset": [ 4.7, 13.0, 0 ],
+      "motion": [ 0.0, -0.075, 0.0 ],
+      "mirror": true
+    },
+    {
+      "condition": "!firstPerson && entity.isSprinting()",
+      "type": "SMOKE",
+      "anchor": "body",
+      "amount": 2,
+      "offset": [ 4.7, 13.0, 0 ],
+      "motion": [ 0.0, -0.075, 0.0 ],
+      "mirror": true
+    }
+  ]
+}

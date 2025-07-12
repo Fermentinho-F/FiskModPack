@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.wolverine_xmen.claws.disable",
+  "volume": 1.1
+}

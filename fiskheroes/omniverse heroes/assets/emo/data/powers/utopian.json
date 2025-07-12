@@ -1,0 +1,119 @@
+{
+  "name": "Utopian Powers",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 140
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:heat_vision"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.3]
+  },
+      "fiskheroes:earthquake": {
+        "damageProfile": {
+          "damage": 4.0,
+          "types": {
+            "EXPLOSION": 5.0
+          }
+        },
+        "radius": 20.0,
+        "knockback": 1.0,
+        "duration": 100,
+        "cooldownTime": 160
+      },
+      "fiskheroes:ground_smash": {
+        "damageProfile": {
+          "damage": 13.0,
+          "types": {
+            "EXPLOSION": 1.0
+          }
+        },
+        "radius": 3.0,
+        "knockback": 3.0,
+        "cooldownTime": 40
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9,
+        "types": {
+          "ENERGY": 2.0,
+          "FIRE": -1
+        },
+        "properties": {
+          "EFFECTS": [{
+              "id": "minecraft:slowness",
+              "duration": 100,
+              "amplifier": 3
+            }
+          ]
+        }
+      },
+      "chargeTime": 9,
+      "duration": 5,
+      "cooldownTime": 10,
+      "range": 20.0,
+      "radius": 4.5
+    },
+    "fiskheroes:eternium_weakness": {
+      "radius": 3.0,
+      "duration": 120
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}
+

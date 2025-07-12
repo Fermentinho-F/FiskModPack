@@ -1,0 +1,13 @@
+{
+  "suit": "dmh:cgr",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:magic",
+    "fiskheroes:cosmic",
+    "dmh:dmhp"
+  ]
+}

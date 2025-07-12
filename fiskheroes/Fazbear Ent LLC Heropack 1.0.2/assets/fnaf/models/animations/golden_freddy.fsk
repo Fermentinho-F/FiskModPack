@@ -1,0 +1,37 @@
+{head_rotX} = 0'
+{head_rotY} = 0'
+{head_rotZ} = -40'
+{head_posY} = 11.5
+{head_posZ} = -1.5
+
+{body_rotX} = -5'
+{body_rotY} = 0'
+{body_rotZ} = 0'
+{body_posY} = 11.5
+
+{rightArm_rotX} = -20'
+{rightArm_rotY} = 67.5'
+{rightArm_rotZ} = -7.5'
+{rightArm_posY} = 13.5
+
+{leftArm_rotX} = -7.5'
+{leftArm_rotY} = -67.5'
+{leftArm_rotZ} = 0'
+{leftArm_posY} = 13.5
+
+{rightLeg_rotX} = -20'
+{rightLeg_rotY} = 0'
+{rightLeg_rotZ} = 5'
+{rightLeg_posX} = -2.25
+{rightLeg_posY} = 12.5
+{rightLeg_posZ} = -4
+
+{leftLeg_rotX} = -20'
+{leftLeg_rotZ} = 0'
+{leftLeg_rotZ} = -5'
+{leftLeg_posX} = 2.25
+{leftLeg_posY} = 12.5
+{leftLeg_posZ} = -4
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data}), 0)

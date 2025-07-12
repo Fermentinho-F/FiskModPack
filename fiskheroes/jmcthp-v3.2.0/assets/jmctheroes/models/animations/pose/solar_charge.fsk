@@ -1,0 +1,22 @@
+{data} = curve {data}
+
+{head_rotX} += -15'{data}
+
+{rightArm_posX} -= 1{data}
+{rightArm_rotY} @ {data} -> 117.5'
+{rightArm_rotZ} @ {data} -> 72.5'
+
+{leftArm_posX} += 1{data}
+{leftArm_rotY} @ {data} -> -117.5'
+{leftArm_rotZ} @ {data} -> -72.5'
+
+{rightLeg_rotX} @ {data} -> 17.5'
+{rightLeg_rotY} @ {data} -> 5.5'
+
+{rightLeg_posX} @ {data} -> -2.5
+{rightLeg_posY} @ {data} -> 10
+{rightLeg_posZ} @ {data} -> -2.5
+
+{leftLeg_rotX} @ {data} -> 0
+{leftLeg_rotY} @ {data} -> -5.5'
+{leftLeg_rotZ} @ {data} -> 0

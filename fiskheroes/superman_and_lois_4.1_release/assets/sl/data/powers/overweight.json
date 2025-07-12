@@ -1,0 +1,24 @@
+{
+  "name": "Overweight",
+  "modifiers": {
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:gravity_manipulation",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "suit": "jmctheroes:red_death",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:the_flash",
+    "fiskheroes:batman_dceu",
+    "jmctheroes:flash",
+    "fiskheroes:speed_force",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2"
+  ]
+}

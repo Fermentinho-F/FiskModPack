@@ -1,0 +1,35 @@
+{
+  "name": "Original Vampir",
+  "modifiers": {
+        "fiskheroes:super_speed": {
+      "canUseTreadmill": true
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 18
+    },
+    "fiskheroes:transformation|sword": {
+      "key": "VAMPIRE",
+      "transformation": {
+        "toggleData": "emo:dyn/sword",
+        "timerData": "emo:dyn/sword_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:transformation|el": {
+      "key": "HYBRID",
+      "transformation": {
+        "toggleData": "emo:dyn/el",
+        "timerData": "emo:dyn/el_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

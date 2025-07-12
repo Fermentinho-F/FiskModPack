@@ -1,0 +1,144 @@
+;{anim} = curve animate2({data}, length, delay, turn on time, turn off time)
+{punch} = {data_0}*(1-{landing})
+{sneak} = {data_1}*(1-{stomp})*(1-{landing})
+{idle} = sin(2pi{data_2})
+{stomp} = {data_4}
+{stomp3} = {data_5}
+{landing} = {data_6}*(1-{stomp})
+{sprinting} = {data_7}*(1-{stomp})*(1-{landing})
+{beamCharge} = {data_8}*(1-{landing})
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+;BeamCharge==========================================================
+{rightArm_posX} -= 3{beamCharge}
+{rightArm_posY} += {beamCharge}
+{leftArm_posX} += 3{beamCharge}
+{leftArm_posY} += {beamCharge}
+
+{rightArm_rotX} -= 68{beamCharge}'
+{rightArm_rotY} -= 52{beamCharge}'
+{rightArm_rotZ} -= 46{beamCharge}'
+
+{leftArm_rotX} -= 63{beamCharge}'
+{leftArm_rotY} += 56{beamCharge}'
+{leftArm_rotZ} += 49{beamCharge}'
+;Landing==========================================================
+{body_posY} += 20{landing}
+
+{body_rotX} += 47.5{landing}'
+{lowerBody_rotX} -= 42.5{landing}'
+
+{rightArm_rotX} -= 75{landing}'
+{rightArm_rotY} -= 17{landing}'
+{rightArm_rotZ} += 58{landing}'
+
+{leftArm_rotX} += 35{landing}'
+{leftArm_rotY} -= 7{landing}'
+{leftArm_rotZ} -= 28{landing}'
+
+{rightLeg_posX} -= 3{landing}
+{rightLeg_posY} -= 12{landing}
+{rightLeg_posZ} -= 6{landing}
+
+{leftLeg_posX} += 2{landing}
+{leftLeg_posY} -= 15{landing}
+{leftLeg_posZ} -= 6{landing}
+
+{rightLeg_rotX} += 16{landing}'
+{rightLeg_rotY} += 24{landing}'
+{rightLeg_rotZ} += 6{landing}'
+
+{leftLeg_rotX} += 9{landing}'
+{leftLeg_rotY} -= 17{landing}'
+{leftLeg_rotZ} += 2{landing}'
+;Stomp==========================================================
+{stomp1} = curve animate2({stomp}, 2, 0, 0.8, 0)
+{stomp2} = curve animate2({stomp}, 2, 0.8, 0.2, 0)
+
+{body_rotX} += 20{stomp1}'-20{stomp2}'
+{lowerBody_rotX} -= 20{stomp1}'-20{stomp2}'
+
+{rightLeg_rotX} -= 10{stomp1}'
+{rightLeg_posY} -= 16{stomp1}-16{stomp2}
+{rightLeg_posZ} -= 6{stomp1}-3{stomp2}
+
+{rightArm_rotX} -= 20{stomp1}'-40{stomp2}'
+{leftArm_rotX} -= 20{stomp1}'-40{stomp2}'
+    ;StompBack==========================================================
+    {stomp3} = curve animate2({stomp3}, 2, 0, 0.4, 0)
+    {rightLeg_rotX} -= 10{stomp3}'
+    {rightLeg_posZ} -= 3{stomp3}
+
+    {rightArm_rotX} += 20{stomp3}'
+    {leftArm_rotX} += 20{stomp3}'
+
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rightArm_posX} += -cos({brY})+1
+{rightArm_posZ} += sin({brY}) * 5.0
+
+{leftArm_posX} += cos({brY})-1
+{leftArm_posZ} += -sin({brY}) * 5.0
+
+{rightArm_rotY} += {brY}
+{leftArm_rotX} += {brY}
+{leftArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rightArm_rotX} = ({rightArm_rotX} - ({f7} * 1.2 + {f8}))
+{rightArm_rotY} += {brY} * 2.0
+{rightArm_rotZ} = sin({punch} * pi) * -0.4
+
+;Sneak==========================================================
+{body_posY} += 2{sneak}
+
+{head_rotX} -= 0.5{sneak}
+{body_rotX} += 0.5{sneak}
+{rightArm_rotX} -= 0.2{sneak}
+{leftArm_rotX} -= 0.2{sneak}
+{rightLeg_rotX} -= 0.5{sneak}
+{leftLeg_rotX} -= 0.5{sneak}
+
+;Idle==========================================================
+{rightArm_rotZ} += {idle}3'
+{leftArm_rotZ} -= {idle}3'
+
+{body_rotX} += sin(pi{data_2})5'
+{lowerBody_rotX} -= sin(pi{data_2})5'
+{head_rotX} -= sin(pi{data_2})5'
+;WalkingAnim==========================================================
+    {movement} = cos({limbSwing} * 0.6662 + pi) * {limbSwingAmount}*{data_3}*0.065
+    {rightLeg_rotX} -= {movement}
+    {leftLeg_rotX} += {movement} 
+
+    {rightArm_rotX} += {movement}
+    {leftArm_rotX} -= {movement}
+
+
+    ;Sprint
+    {body_rotX} += 5{sprinting}'
+    {sprinting} = curve {sprinting}
+    {limbSwingAmount} *= 6{sprinting}
+    {rightArm_rotZ} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+    {leftArm_rotZ} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+    {rightArm_rotX} += 0.5{limbSwingAmount}cos(0.6662{limbSwing} + pi)
+    {leftArm_rotX} += 0.5{limbSwingAmount}cos(0.6662{limbSwing})
+
+    {f} = {limbSwingAmount}cos(0.6662{limbSwing} - 0.3)
+    {body_rotY} -= 0.2{f}
+    {rightArm_posZ} -= 1.75{f}
+    {leftArm_posZ} += 1.75{f}
+
+    {head_rotX} -= 10'{sprinting}
+    {rightLeg_rotX} -= 3'{sprinting}
+    {leftLeg_rotX} -= 3'{sprinting}

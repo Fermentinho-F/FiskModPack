@@ -1,0 +1,40 @@
+{
+  "name": "Titan Shifting Serum",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "TITAN",
+      "transformation": {
+        "toggleData": "moopack:dyn/titan",
+        "timerData": "moopack:dyn/titan_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "moopack:titan_transformation",
+        "DISABLE": "moopack:titan_transformation"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.0]
+    },
+    "fiskheroes:web_zip": {
+      "range": 5.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 10
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 100,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  }
+}

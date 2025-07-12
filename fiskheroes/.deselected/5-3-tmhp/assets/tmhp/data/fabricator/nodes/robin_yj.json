@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:robin_yj",
+  "requirements": [
+    "tmhp:robin",
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "tmhp:young_justice",
+    "tmhp:heropack2"
+  ]
+}

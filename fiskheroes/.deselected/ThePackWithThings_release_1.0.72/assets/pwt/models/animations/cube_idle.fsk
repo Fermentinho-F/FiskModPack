@@ -1,0 +1,4 @@
+{cube_posY} -= 10{data_2}
+{cube_rotY}  @ {data_0} -> -360'
+{cube_posY} -= 10{data_1}
+

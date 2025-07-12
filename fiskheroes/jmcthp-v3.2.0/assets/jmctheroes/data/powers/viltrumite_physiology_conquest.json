@@ -1,0 +1,145 @@
+{
+  "name": "Viltrumite Physiology (Conquest)",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.9,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:controlled_flight|boosted": {
+      "speed": 0.1,
+      "boostSpeed": 0.3,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1.2,
+      "soundEvents": {
+        "ENABLE": ["jmctheroes:sonic_boom", "fiskheroes:mysterio_boost_enable"]
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "radius": 0.5,
+      "factor": 3.0,
+      "duration": 60
+    },
+    "fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "radius": 6.0,
+      "factor": 8.0,
+      "duration": 100
+    },
+    "fiskheroes:damage_weakness|sound_blast": {
+      "damageType": "SOUND_BLAST",
+      "radius": 2.0,
+      "factor": 4.0,
+      "duration": 30
+    },
+    "fiskheroes:damage_resistance|explosion": {
+      "factor": 0.6,
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "factor": 0.6,
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_resistance|blunt": {
+      "factor": 0.6,
+      "damageType": "BLUNT"
+    },
+    "fiskheroes:damage_resistance|sharp": {
+      "factor": 0.6,
+      "damageType": "SHARP"
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "factor": 0.6,
+      "damageType": "FIRE"
+    },
+    "fiskheroes:damage_resistance|cold": {
+      "factor": 5,
+      "damageType": "COLD"
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 1
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 500,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 20.0,
+      "knockback": 1.0,
+      "duration": 100,
+      "cooldownTime": 160
+    },
+    "fiskheroes:cooldown|sneaking": {
+      "cooldown": {
+        "toggleData": "entity.isOnGround() && entity.isSneaking() && entity.getHeldItem().isEmpty() && !entity.getData('fiskheroes:moving')",
+        "cooldownData": "jmctheroes:dyn/sneaking_timer",
+        "duration": 35,
+        "recovery": 5
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/bar.png",
+      "data": "jmctheroes:dyn/sneaking_timer"
+    }
+  ] 
+}

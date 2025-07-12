@@ -1,0 +1,5 @@
+{data} = curve {data}
+
+{wheel_center1_rotX} += 2pi*{data}
+
+{wheel_center2_rotX} += 2pi*{data}

@@ -1,0 +1,64 @@
+{
+  "name": "\u00A75\u00A7lZenkai Heroes",
+  "domain": "db",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "kaynerz/dragonball",
+      "version": 0
+      },
+      "range":{
+        "xof":{ "distance": 0.0, "sendToAll": false }
+      }
+    },
+  "dataVars": {
+    "glow": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "glow_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "glow_cooldown": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "ki": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "ki_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "ki_cooldown": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "hair": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "hair_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "hair_cooldown": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "ssjrecharge": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "ssjrecharge_timer": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "ssjrecharge_cooldown": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "hideUntilAvailable":  true,
+    "name": "I'm no hero",
+    "description": "Being a hero isn't for everyone, maybe try an alternative carreer path?"
+  },
+  "suit": "tmf:not_hero_time",
+  "requirements": [
+    "tmf:prototype_mastery",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "criteria": {
+    "prototype": {
+      "trigger": "fiskheroes:tick",
+      "minSuccessCount": 72000,
+      "description": {
+        "translate": "Don't use omnitrix for an extended period of time"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.getWornChestplate().nbt().getString('HeroType') != 'tmf:omnitrix' && player.ticksExisted() % 20 == 0"
+      }
+    }
+  }
+}

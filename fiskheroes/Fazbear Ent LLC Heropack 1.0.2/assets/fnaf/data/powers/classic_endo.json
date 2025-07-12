@@ -1,0 +1,56 @@
+{
+  "name": "Classic Endoskeleton",
+  "modifiers": {
+    "fiskheroes:transformation|jumpscare": {
+      "key": "JUMPSCARE",
+      "transformation": {
+        "toggleData": "fnaf:dyn/jumpscare",
+        "timerData": "fnaf:dyn/jumpscare_timer",
+        "time": 3
+      },
+      "soundEvents": {
+        "ENABLE": ["fnaf:fnaf_jumpscare", "fnaf:joint"],
+        "DISABLE": "fnaf:joint"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fnaf:dyn/jumpscare",
+        "cooldownData": "fnaf:dyn/jumpscare_cooldown",
+        "duration": 100,
+        "recovery": 0.2
+      }
+    },
+    "fiskheroes:damage_weakness|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 2.0
+    },
+    "fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "factor": 2.0
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "FEAR"
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [
+        "minecraft:nausea",
+        "minecraft:poison",
+        "minecraft:wither"
+      ]
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "fnaf:textures/gui/bars/jumpscare_bar.png",
+      "data": "entity.getData('fnaf:dyn/jumpscare_cooldown') > 0 ? 1 - entity.getData('fnaf:dyn/jumpscare_cooldown') : entity.getData('fnaf:dyn/jumpscare_cooldown') == 1 ? 0 : null"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "fnaf:textures/gui/bars/jumpscare_text.png",
+      "data": "fnaf:dyn/jumpscare_cooldown"
+    }
+  ]
+}

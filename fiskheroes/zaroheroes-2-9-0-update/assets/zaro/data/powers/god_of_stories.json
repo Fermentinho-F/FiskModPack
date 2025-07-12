@@ -1,0 +1,166 @@
+{
+  "name": "God Of Stories",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 200.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+     "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": 1.0
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 0.5,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": 1.0
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 1,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+     "fiskheroes:transformation": {
+      "key": "NEXT",
+      "transformation": {
+        "toggleData": "zaro:dyn/next",
+        "timerData": "zaro:dyn/next_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:shadowdome": {
+      "chargeTime": 40,
+      "duration": 1200,
+      "radius": 24.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+    }
+  },
+  "fiskheroes:charged_beam": {
+    "damageProfile": {
+      "damage": 8.0,
+      "types": {
+        "MAGIC": 1.0
+      },
+      "properties": {
+        "COOK_ENTITY": true,
+        "HEAT_TRANSFER": 20
+      }
+    },
+    "chargeTime": 80,
+    "duration": 30000,
+    "cooldownTime": 70,
+    "range": 32.0,
+    "radius": 0.1,
+    "soundEvents": {
+      "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+    }
+  },
+  "fiskheroes:regeneration": {
+    "factor": 2
+  },
+  "fiskheroes:potion_immunity": {
+    "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+  }
+}

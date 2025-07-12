@@ -1,0 +1,18 @@
+{data} = curve {data}
+{tail1_rotZ} += sin(2pi{data}) * 0.1
+
+{tail2_rotZ} -= sin(2pi{data}) * 0.1
+
+{tail3_rotZ} += sin(2pi{data}) * 0.1
+
+{tail1_rotX} += sin(2pi{data}) * 0.1
+
+{tail2_rotX} -= sin(2pi{data}) * 0.1
+
+{tail3_rotX} += sin(2pi{data}) * 0.1
+
+{tail1_rotY} += sin(2pi{data}) * 0.1
+
+{tail2_rotY} -= sin(2pi{data}) * 0.1
+
+{tail3_rotY} += sin(2pi{data}) * 0.1

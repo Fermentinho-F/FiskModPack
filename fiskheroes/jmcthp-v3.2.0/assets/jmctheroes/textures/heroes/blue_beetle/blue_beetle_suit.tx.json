@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:blue_beetle/bb_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(16 * entity.getInterpolatedData('jmctheroes:dyn/beetle_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 16
+      }
+    }
+  }
+}

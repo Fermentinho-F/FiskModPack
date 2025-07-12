@@ -1,0 +1,17 @@
+{
+  "suit": "emo:bf",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:sorcery",
+    "fiskheroes:cosmic",
+    "fiskheroes:teleportation",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "emo:cadmus"
+  ],
+    "display": {
+    "description": "Lord Of Order And Power Of Hope"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "texture": "tmf:omnitrix/p2/aliens/anim/snare_oh_<MODEL>",
+  "getters": {
+    "MODEL": {
+      "key": "Math.ceil(18*Math.min(3*entity.getInterpolatedData('tmf:dyn/pt_1'), 1)) | 0",
+      "values": {
+        "min": 0,
+        "max": 18
+      }
+    }
+  }
+}
+

@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fnaf:golden.freddy.jumpscare",
+  "condition": "fnaf:dyn/jumpscare",
+  "volume": 0.3,
+  "fadeOut": 15
+}

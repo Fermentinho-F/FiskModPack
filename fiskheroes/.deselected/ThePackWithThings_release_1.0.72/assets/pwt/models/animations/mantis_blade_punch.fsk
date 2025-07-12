@@ -1,0 +1,2 @@
+{rightArm_rotZ} @ {data} -> -3{rightArm_rotZ}
+{rightArm_rotY} @ {data} -> -2{rightArm_rotY}

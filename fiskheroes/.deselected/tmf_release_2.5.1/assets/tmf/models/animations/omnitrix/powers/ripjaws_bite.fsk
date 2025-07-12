@@ -1,0 +1,35 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)'
+
+;CHARGE
+{head_posZ} @ {data_0} -> 3
+{body_posZ} @ {data_0} -> 3
+{rightArm_posZ} @ {data_0} -> 3
+{leftArm_posZ} @ {data_0} -> 3
+{head_posY} @ {data_0} -> 1
+{body_posY} @ {data_0} -> 1
+{rightArm_posY} @ {data_0} -> 3
+{leftArm_posY} @ {data_0} -> 3
+
+{head_rotX} @ {data_0} -'> -pi/6
+{body_rotX} @ {data_0} -'> -pi/14
+{rightArm_rotX} @ {data_0} -'> pi/8
+{rightArm_rotY} @ {data_0} -'> pi/19
+{leftArm_rotX} @ {data_0} -'> pi/9
+{leftArm_rotY} @ {data_0} -'> -pi/19.5
+
+;BITE
+{head_posZ} @ {data_1} -> -2
+{body_posZ} @ {data_1} -> -2
+{rightArm_posX} @ {data_1} -> -2
+{leftArm_posZ} @ {data_1} -> -2
+{head_posY} @ {data_1} -> 1
+{body_posY} @ {data_1} -> 1
+{rightArm_posY} @ {data_1} -> 3
+{leftArm_posY} @ {data_1} -> 3
+
+{head_rotX} @ {data_1} -'> pi/9
+{body_rotX} @ {data_1} -'> pi/14
+{rightArm_rotX} @ {data_1} -'> -pi/4
+{rightArm_rotY} @ {data_1} -'> 70'
+{leftArm_rotX} @ {data_1} -'> -pi/4.5
+{leftArm_rotY} @ {data_1} -'> -70'

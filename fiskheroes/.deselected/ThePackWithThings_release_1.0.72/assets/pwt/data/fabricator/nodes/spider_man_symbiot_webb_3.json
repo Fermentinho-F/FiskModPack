@@ -1,0 +1,29 @@
+{
+    "suit": "pwt:spider_man_symbiot_webb_3",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:traversal2",
+        "fiskheroes:defense2",
+        "fiskheroes:melee2",
+        "fiskheroes:ranged2",
+		"fiskheroes:regeneration2",
+		"fiskheroes:object_manipulation",
+		"pwt:spider_man_symbiot_webb",
+		"fiskheroes:spiderverse",
+        "pwt:symbiotic_life_form"
+    ],
+  "criteria": {
+    "Give Up Control": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Keep The Symbiote"
+      },
+      "condition": {
+        "variables": {
+			"player": "PLAYER_TICKING"
+        },
+        "check": "player.getWornChestplate().nbt().getString('HeroType') == 'pwt:spider_man_symbiot_webb' && player.getData('pwt:dyn/symbiot') && player.getData('pwt:dyn/cooldown_1') == 1"
+      }
+    }
+  }
+}

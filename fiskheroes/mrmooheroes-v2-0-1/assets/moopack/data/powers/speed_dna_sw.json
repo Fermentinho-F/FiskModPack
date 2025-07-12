@@ -1,0 +1,34 @@
+{
+  "name": "Speed DNA Activator",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "SPEED_DNA",
+      "transformation": {
+        "toggleData": "moopack:dyn/speed_dna_active",
+        "timerData": "moopack:dyn/speed_dna_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": "fiskheroes:super_speed_sprint_wally",
+        "STOP": "fiskheroes:super_speed_stop_wally"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:slow_motion_enable_cw",
+        "DISABLE": "fiskheroes:slow_motion_disable_cw"
+      }
+    }
+  }
+}

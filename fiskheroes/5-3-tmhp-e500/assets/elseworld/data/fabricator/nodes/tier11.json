@@ -1,0 +1,33 @@
+{
+  "display": {
+    "name": {
+      "translate": "Group 6"
+    },
+    "description": {
+      "translate": "Tier 10 but super overpowered"
+    },
+    "icon": {
+      "text": "11"
+    },
+    "isLevelable": true
+  },
+  "requirements": [ ],
+  "price": {
+    "IRID_GOLD": 12,
+    "XP_LEVELS": 35
+  },
+  "criteria": {
+    "tier": {
+      "trigger": "fiskheroes:suit_tier",
+      "description": {
+        "translate": "Unlock a Tier 10 suit"
+      },
+      "condition": {
+        "variables": {
+          "max": "MAX_TIER_UNLOCKED"
+        },
+        "check": "max >= 10"
+      }
+    }
+  }
+}

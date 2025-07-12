@@ -1,0 +1,15 @@
+{
+  "suit": "jjkp:gojo",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense3",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:flight",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:teleportation",
+    "jjkp:jujutsu_sorcerer",
+    "jjkp:domain_expansion",
+    "jjkp:reverse_cursed_technique"
+  ]
+}

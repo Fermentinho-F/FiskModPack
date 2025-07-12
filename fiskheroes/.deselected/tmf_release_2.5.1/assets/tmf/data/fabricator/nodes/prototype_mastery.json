@@ -1,0 +1,40 @@
+{
+  "display": {
+    "hideUntilAvailable":  true,
+    "name": "Master The Prototype Omnitrix",
+    "description": "Unlock all secrets of the Prototype Omnitrix. This node does nothing new, just think of it as receiving a star sticker for being a good sport",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/prototype_mastery.png"
+    }
+  },
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf",
+    "tmf:dna_blitzwolfer",
+    "tmf:dna_cannonbolt",
+    "tmf:dna_ditto",
+    "tmf:dna_eyeguy",
+    "tmf:dna_frankenstrike",
+    "tmf:dna_snareoh",
+    "tmf:dna_upchuck",
+    "tmf:dna_waybig",
+    "tmf:dna_wildvine"
+  ],
+  "criteria": {
+    "prototype": {
+      "trigger": "fiskheroes:tick",
+      "minSuccessCount": 72000,
+      "description": {
+        "translate": "Wear the omnitrix for given number of seconds to master all its functions. (total of one hour)"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.getWornChestplate().nbt().getString('HeroType') == 'tmf:omnitrix' && player.ticksExisted() % 20 == 0"
+      }
+    }
+  }
+}

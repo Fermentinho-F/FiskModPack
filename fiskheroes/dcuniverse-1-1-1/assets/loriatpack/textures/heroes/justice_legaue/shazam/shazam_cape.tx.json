@@ -1,0 +1,12 @@
+{
+  "texture": "loriatpack:justice_legaue/shazam/shazam_cape_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "entity.isDisplayStand() ? 5 : (Math.ceil(5 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p1/lights/upgrade_waves",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      }
+    ],
+    "out": "tmf:omnitrix/p1/lights/upgrade_waves_<HUE>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "(entity.getWornChestplate().nbt().getInteger('Color')) | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 30
+      }
+    }
+  }
+}

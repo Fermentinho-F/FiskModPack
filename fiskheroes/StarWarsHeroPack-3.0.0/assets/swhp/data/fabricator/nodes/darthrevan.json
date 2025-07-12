@@ -1,0 +1,18 @@
+{
+  "suit": "swhp:darthrevan",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:revan",
+    "swhp:darthrevan_requirement",
+    "fiskheroes:tier8_9",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal",
+    "fiskheroes:object_manipulation"
+  ],
+  "display": {
+  "description": "The Butcher"
+  }
+}

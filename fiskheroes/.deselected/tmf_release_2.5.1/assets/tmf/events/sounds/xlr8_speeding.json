@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:xlr8.speeding",
+  "condition": "entity.getData('fiskheroes:speeding') && !entity.isInWater()",
+  "volume": 0.6,
+  "pitch": "0.8 + 0.2 * Math.random()"
+}

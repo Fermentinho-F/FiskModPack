@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:danny_phantom",
+  "display": {
+  "description": "\u00A72I'm going ghost!"
+  },
+  "requirements": [
+    "elseworld:ap6_7",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "tmhp:ghost",
+    "tmhp:heropack2"
+  ]
+}

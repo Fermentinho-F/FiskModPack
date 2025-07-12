@@ -1,0 +1,61 @@
+{
+  "name": "Eradicator Device",
+  "modifiers": {
+    "fiskheroes:energy_projection|eradicator_beam": {
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "range": 24.0,
+      "radius": 0.1,
+      "canDoGriefing": false,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mysterio_beam_start",
+        "SHOOT_STOP": "fiskheroes:mysterio_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:mysterio_beam_loop"
+      }
+    },
+    "fiskheroes:transformation|ERADICATOR": {
+      "key": "ERADICATOR",
+      "transformation": {
+        "toggleData": "sl:dyn/eradicator",
+        "timerData": "sl:dyn/eradicator_timer",
+        "time": 6.0
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:lightning_cast",
+        "DISABLE": "fiskheroes:lightning_cast"
+      }
+    },
+    "fiskheroes:cooldown|eradicator": {
+      "cooldown": {
+        "toggleData": "sl:dyn/eradicator",
+        "cooldownData": "sl:dyn/eradicator_cooldown",
+        "duration": 2000,
+        "recovery": 0.55
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 4.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": true,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  }
+}

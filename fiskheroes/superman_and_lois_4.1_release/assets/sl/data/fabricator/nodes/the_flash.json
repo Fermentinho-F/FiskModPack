@@ -1,0 +1,10 @@
+{
+  "suit": "sl:the_flash_dceu",
+  "requirements": [
+    "sl:sl",
+    "fiskheroes:tier4_5",
+    "fiskheroes:speed_force",
+    "fiskheroes:intangibility",
+    "sl:ap4_5"
+  ]
+}

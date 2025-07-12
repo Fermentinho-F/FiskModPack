@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.to_the_petercopter",
+  "volume": 1.0
+}

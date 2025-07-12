@@ -1,0 +1,46 @@
+{
+  "name": "Compound V (The Deep)",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.06,
+      "boostSpeed": 0.18,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0.2
+    },
+    "fiskheroes:damage_resistance|cold": {
+      "damageType": "COLD",
+      "factor": 0.6
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.15, 0.05]
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:transformation": {
+      "key": "CAMOUFLAGE",
+      "transformation": {
+        "toggleData": "tmf:dyn/stealth",
+        "timerData": "tmf:dyn/stealth_timer",
+        "time": 45
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "tmf:dyn/stealth",
+        "cooldownData": "tmf:dyn/stealth_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Dual Glock 26s",
+  "permission": "USE_GUN",
+  "holdingPose": "DUAL",
+  "cooldown": 4,
+  "damageProfile": {
+    "damage": 3.5,
+    "properties": {
+      "HIT_COOLDOWN": 0
+    },
+    "types": {
+      "BULLET": 1.0
+    }
+  },
+  "scope": {
+    "zoom": 0.45,
+    "damageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.8
+  },
+  "recoil": {
+    "amount": 0.1,
+    "cameraShake": 1.5
+  },
+  "ammo": {
+    "amount": 16,
+    "reloadTime": 16
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 0.75,
+      "speed": 2400.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "sabri:glock_26_shoot"
+  }
+}

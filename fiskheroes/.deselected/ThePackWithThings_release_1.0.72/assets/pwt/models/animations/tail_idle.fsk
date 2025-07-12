@@ -1,0 +1,3 @@
+{data} = sin(pi(1 - {data}))
+{tail1_rotX} += 0.1*{data}
+

@@ -1,0 +1,37 @@
+// Dome Stuff
+
+var domeId = entity.getData("fiskheroes:lightsout_id");
+var dome = entity.world().getEntityById(domeId);
+
+if (dome.exists()) {
+    var contained = dome.as("SHADOWDOME").getContainedEntities();
+
+    for (var i = 0; i < contained.size(); ++i) {
+        var inside = contained.get(i);
+        if (inside.getUUID() === entity.getUUID()) {
+            for (var j = 0; j < contained.size(); ++j) {
+                var inner = contained.get(j);
+                if (inner.getUUID() !== entity.getUUID() && entity.getData("sl:dyn/playsound") && inner.isPlayer()) {
+                    entity.playSound("sl:main.superhearingsound", 1, 1.0);
+                    manager.setData(entity, "sl:dyn/playsound", false);
+                    manager.setString(item1.nbt(), "Detectedplayer", inner.getName());
+                    manager.setData(entity, "sl:dyn/printchat", true);
+                }
+            }
+            return true;
+        }
+    }
+}
+
+if (entity.getData("sl:dyn/printchat") && PackLoader.getSide() == "CLIENT" && entity.isWearingFullSuit()) {
+    PackLoader.printChat("§k\u00A7b superhearing\u00A7r\u00A7b " + item1.nbt().getString("Detectedplayer") + " located\u00A7k\u00A7b superhearing\u00A7r");
+    manager.setData(entity, "sl:dyn/printchat", false);
+}
+
+if (!entity.getData("fiskheroes:lightsout") && !entity.getData("sl:dyn/wasdomeused")) {
+    manager.setData(entity, "fiskheroes:lightsout", true);
+    manager.setData(entity, "sl:dyn/wasdomeused", true);
+    manager.setData(entity, "sl:dyn/dometimer", 0);
+    manager.setData(entity, "sl:dyn/playsound", true);
+}
+// Dome stuff

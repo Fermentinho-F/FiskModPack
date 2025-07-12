@@ -1,0 +1,41 @@
+{data2} = 3^({data}-({data}-0.6)^4*200 -0.75)
+{data4} = 3^({data}-({data}-0.54)^4*200 -0.75)
+{data3} = 3^({data}-({data}-0.4)^4*200 -0.5)
+{data5} = 3^({data}-({data}-0.65)^4*200 -0.75)
+
+{data11} = 3^({data}-({data}-0.34)^4*200 -0.25)
+{data1} = 3^({data}-({data}-0.4)^4*200 -0.25)
+{data} = 3^({data}-({data}-0.3)^4*2000 -0.25)
+
+{rightArm_posX} -=1 * {data2}
+{rightArm_posY} +=1 * {data2}
+{rightArm_posZ} +=5 * {data1}
+
+{leftArm_posX} -=1 * {data2}
+{leftArm_posY} +=1 * {data2}
+{leftArm_posZ} +=5 * {data1}
+
+{rightArm_rotX} @ {data3} -> -180'
+{rightArm_rotY} @ {data3} -> -30'
+{rightArm_rotZ} @ {data4} -> 30'
+
+{leftArm_rotX} @ {data3} -> -180'
+{leftArm_rotY} @ {data4} -> 40'
+{leftArm_rotZ} @ {data2} -> -20'
+
+{body_rotX} @ {data3} -> -25'
+{body_rotY} @ {data2} -> -10'
+
+{body_posX} -=1 * {data2}
+{body_posY} +=1 * {data3}
+{body_posZ} +=5 * {data3}
+
+
+{head_posX} -=1 * {data2}
+{head_posY} +=1.2 * {data3}
+{head_posZ} +=5 * {data3}
+
+
+{head_rotX} @ {data11} -> -45'
+{head_rotY} @ {data4} -> -20'
+{head_rotZ} @ {data3} -> 30'

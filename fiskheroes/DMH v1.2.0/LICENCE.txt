@@ -1,0 +1,35 @@
+LICENSE AGREEMENT FOR DMH
+
+This license agreement (the "Agreement") is a legal agreement between you (the "Licensee"), and  (the "Licensor"), The Licensor. The Licensor is a Minecraft player with the UUID '45e42b7f-44cf-4423-ab08-4a594bb86ba2' and the owner of DMH, a Heropack that adds more suits to the Minecraft mod "Fisk's Superheroes Mod". By downloading, installing, or using DMH, you agree to be bound by the terms and conditions of this Agreement. If you do not agree to the terms and conditions of this Agreement, do not download, install, or use DMH.
+
+PERMISSION FOR MODPACK CREATORS
+Modpack creators are granted a non-transferable, non-sublicensable, and non-exclusive license to use DMH in their modpacks, provided that they:
+a. Obtain prior written permission from the Licensor.
+b. Give credit to the Licensor in the modpack and in a prominent position, such as a modpack page, Discord announcement, etc.
+c. Do not modify any part of DMH.
+
+PERMISSION FOR SERVERS
+Servers are granted a non-transferable, non-sublicensable, and non-exclusive license to use DMH in their servers, provided that they:
+a. Obtain prior written permission from the Licensor.
+b. Give credit to the Licensor in the server and in a prominent position, such as Discord announcement, server spawn, server's MOTD, etc.
+c. Do not modify any part of DMH.
+
+PERMISSION FOR ALL OTHER INDIVIDUALS
+All other individuals are granted a non-transferable, non-sublicensable, and non-exclusive license to use DMH for private and personal use. All other individuals are not permitted to:
+a. Re-upload, steal, or copy any aspect of DMH.
+b. Share any modified version of DMH.
+
+VIOLATIONS OF LICENSE AGREEMENT
+Any violation of the terms or rules of this Agreement may result in legal action. The Licensor reserves the right to pursue any and all legal remedies against any violator of this Agreement.
+
+LIMITATION OF LIABILITY
+The Licensor is not responsible for any potential damage caused by DMH.
+
+GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the user resides, without giving effect to any principles of conflicts of law.
+
+VERSION OF AGREEMENT
+This license agreement is only applicable to DMH (the heropack by MrDoggy5000) The Licensor reserves the right to change the terms and conditions of this Agreement for any subsequent version of DMH.
+
+CONTACTING LICENSOR
+The Licensor can be contacted via Discord at MrDoggy5000 for any inquiries or to request permission to use DMH.

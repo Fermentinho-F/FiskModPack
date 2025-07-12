@@ -1,0 +1,10 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "fiskheroes:modifier.superspeed.sprint.barry.test",
+    "condition": "dmh:dyn/ignite",
+    "delay": 10,
+    "volume": 1,
+    "pitch": 1,
+    "fadeOut": 5
+  }
+  

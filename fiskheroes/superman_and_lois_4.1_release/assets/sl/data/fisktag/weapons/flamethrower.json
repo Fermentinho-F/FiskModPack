@@ -1,0 +1,12 @@
+{
+  "name": "Atom-Man's Flamethrower",
+  "permission": "USE_FLAMETHROWER",
+  "holdingPose": "DOUBLE",
+  "isHidden": false,
+  "cooldown": 0,
+  "projectiles": null,
+  "recoil": {
+    "amount": 0,
+    "cameraShake": 0
+  }
+}

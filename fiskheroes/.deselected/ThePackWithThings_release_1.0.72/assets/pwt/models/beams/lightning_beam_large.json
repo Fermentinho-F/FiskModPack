@@ -1,0 +1,53 @@
+{
+  "aspects": [
+    {
+      "type": "LIGHTNING",
+      "opacity": 0.8,
+      "scale": 0.2,
+      "amount": 3,
+      "segments": {
+        "min": 3,
+        "spacing": 1.5
+      },
+      "intensity": 0.7,
+      "changeRate": 0.5,
+      "bounds": [0.7, 0.7],
+      "core": {
+        "color": "0xffffff",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 0.5,
+        "spread": 4.0,
+        "dropoff": 1.0,
+        "quality": 1.0,
+        "scaleToSize": true
+      }
+    },
+    {
+      "type": "LIGHTNING",
+      "opacity": 0.7,
+      "scale": 0.1,
+      "amount": 5,
+      "segments": {
+        "min": 3,
+        "spacing": 2.5
+      },
+      "intensity": 1.0,
+      "changeRate": 0.7,
+      "bounds":  null,
+      "core": {
+        "color": "0xffffff",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 0.5,
+        "spread": 5.0,
+        "dropoff": 2.0,
+        "quality": 1.0,
+        "scaleToSize": true
+      }
+    }
+  ]
+}
+

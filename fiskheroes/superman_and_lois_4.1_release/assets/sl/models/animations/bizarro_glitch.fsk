@@ -1,0 +1,6 @@
+{data_1} = {data_1}
+{head_posZ} -= 0.86{data_1}
+{head_posY} += 0.5{data_1}
+{head_rotY} += 0.5{data_1}
+{head_rotX} += 0.5{data_1}
+{head_rotZ} += 0.5{data_1}

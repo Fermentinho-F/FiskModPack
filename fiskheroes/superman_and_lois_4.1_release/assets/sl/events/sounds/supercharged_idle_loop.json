@@ -1,0 +1,13 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.supercharged_idle_loop",
+  "condition": {
+    "start": "entity.getWornChestplate().suitType() == 'sl:superman_supercharged' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/black' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/og' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/s1' || entity.getWornChestplate().suitType() == 'sl:talrho_supercharged'",
+    "continue": "entity.isWearingFullSuit() && (entity.getWornChestplate().suitType() == 'sl:superman_supercharged' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/black' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/og' || entity.getWornChestplate().suitType() == 'sl:superman_supercharged/s1' || entity.getWornChestplate().suitType() == 'sl:talrho_supercharged')"
+  },
+  "volume": "1",
+  "pitch": "1.2 - Math.random() * 0.4",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

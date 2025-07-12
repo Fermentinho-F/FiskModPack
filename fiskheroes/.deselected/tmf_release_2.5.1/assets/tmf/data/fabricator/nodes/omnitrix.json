@@ -1,0 +1,19 @@
+{
+  "suit": "tmf:omnitrix",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:size_manipulation",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility",
+	  "tmf:omnitrix_dna_samples",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "And Then There Were Ten"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Upgraded Web Shooters",
+  "modifiers": {
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": "fiskheroes:web_swinging_whoosh"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_shoot_raimi",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 96.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_raimi"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 18,
+          "uses": 12,
+          "dissolveTime": 120
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 3,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        }
+      },
+      "soundEvents": {
+        "USE": "fiskheroes:web_shoot_raimi"
+      }
+    }
+  }
+}

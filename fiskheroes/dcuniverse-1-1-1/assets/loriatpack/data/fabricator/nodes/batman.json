@@ -1,0 +1,12 @@
+{
+  "suit": "loriatpack:batman",
+  "requirements": [
+    "fiskheroes:tier6_7",
+	"loriatpack:dc_universe",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation"
+  ]
+}

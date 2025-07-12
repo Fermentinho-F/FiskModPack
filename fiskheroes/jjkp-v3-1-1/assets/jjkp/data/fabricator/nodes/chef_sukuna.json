@@ -1,0 +1,9 @@
+{
+  "suit": "jjkp:chef_sukuna",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:melee3",
+    "fiskheroes:defense3",
+    "jjkp:let_him_cook"
+  ]
+}

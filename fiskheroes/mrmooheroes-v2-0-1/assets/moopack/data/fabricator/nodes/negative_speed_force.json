@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Negative Speed Force",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/negative_speed_force.png"
+    }
+    },
+    "requirements": [
+    "moopack:speed_force_variations",
+  ],
+    "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 25
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "power.fiskheroes.divine_empowerment.name",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [0.75, 0.3]
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 0.5
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu",
+        "STOP": "jmctheroes:prowler_stop"
+      }
+    },
+    "fiskheroes:cooldown|moving": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:moving')",
+        "cooldownData": "jmctheroes:dyn/moving_timer",
+        "duration": 20,
+        "recovery": 5
+      }
+    }
+  }
+}

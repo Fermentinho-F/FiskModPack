@@ -1,0 +1,86 @@
+{
+  "name": "Kryptonite Ammunition",
+  "modifiers": {
+    "fiskheroes:charged_beam|kryptonite_gauntlets": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "KRYPTONITE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "EFFECTS": [
+            {
+              "id": "minecraft:nausea",
+              "duration": 20,
+              "amplifier": 0
+            }
+          ]
+        }
+      },
+      "chargeTime": 30,
+      "duration": 400,
+      "cooldownTime": 25,
+      "range": 32.0,
+      "radius": 0.5,
+      "soundEvents": {
+        "CHARGE": "sl:kryptonite_gauntlet_beam_charge",
+        "SHOOT": "fiskheroes:mysterio_charged_beam_start",
+        "SHOOT_STOP": [
+          "fiskheroes:mysterio_charged_beam_stop1",
+          "fiskheroes:mysterio_charged_beam_stop2"
+        ],
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+      }
+    },
+    "fiskheroes:repulsor_blast|sneaking": {
+      "damageProfile": {
+        "damage": 14.0,
+        "types": {
+          "KRYPTONITE": 5.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "EFFECTS": [
+            {
+              "id": "minecraft:nausea",
+              "duration": 20,
+              "amplifier": 0
+            }
+          ]
+        }
+      },
+      "isExplosive": true,
+      "range": 80.0,
+      "cooldownTime": 17,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk50_cannon_shoot"
+      }
+    },
+    "fiskheroes:repulsor_blast|normal": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "KRYPTONITE": 5.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "EFFECTS": [
+            {
+              "id": "minecraft:nausea",
+              "duration": 20,
+              "amplifier": 0
+            }
+          ]
+        }
+      },
+      "isExplosive": true,
+      "range": 64.0,
+      "cooldownTime": 17,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk50_cannon_shoot"
+      }
+    }
+  }
+}

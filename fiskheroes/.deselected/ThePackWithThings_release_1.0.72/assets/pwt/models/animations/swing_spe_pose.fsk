@@ -1,0 +1,52 @@
+{m} = clamp(-{motY}, -120', 120')
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+
+
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+{pitch} = atan2({motY}, {horVel})
+
+
+{x} = {data}curve clamp(-{motY}, 0, 1)
+
+{body_rotX} @ {data} -> 15'
+{body_rotY} @ {data} -> -15'
+
+{rightArm_rotX} @ {data} -> -35'
+{rightArm_rotY} @ {data} -> -30'
+{rightArm_rotZ} @ {data} -> -20'
+
+{rightArm_posZ} @ {data} -> -2
+
+{leftArm_rotX} @ {data} -> 50'
+{leftArm_rotY} @ {data} -> 15'
+{leftArm_rotZ} @ {data} -> -30'
+
+
+{rightLeg_rotY} @ {data} -> 25'
+{rightLeg_rotZ} @ {data} -> -5'
+
+{leftLeg_rotY} @ {data} -> -25'
+{leftLeg_rotZ} @ {data} -> 8'
+
+
+{leftLeg_posY} @ {data} -> 10.5
+{leftLeg_posZ} @ {data} -> 0.9
+
+
+{rightLeg_posY} @ {data} -> 8.5
+{rightLeg_posZ} @ {data} -> -2
+
+{data} *= {vel}
+
+
+
+{rightLeg_rotX} @ {data} -> 30'+ {m}
+
+{rightArm_rotX} @ {data} -> -35'+ {m}
+{leftArm_rotX} @ {data} -> 50'+ {m}
+
+{leftLeg_rotX} @ {data} -> 30' + {m}
+
+{rightLeg_posX} @ {data} -> -4.5 -{m}
+
+{leftLeg_posX} @ {data} -> 3 -{m}

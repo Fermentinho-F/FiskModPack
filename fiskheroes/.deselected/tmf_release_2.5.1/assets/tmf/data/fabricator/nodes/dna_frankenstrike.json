@@ -1,0 +1,55 @@
+{
+  "suit": "tmf:dna_frankenstrike_20",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "ete": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 1,
+      "description": {
+        "translate":  "Craft a block of Eternium"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:eternium_block'"
+      }
+    },
+    "repear": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 16,
+      "description": {
+        "translate": "Craft some Redstone Repeaters"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:repeater'"
+      }
+    },
+    "yummers": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 32,
+      "description": {
+        "translate": "Eat samples of Rotten Flash"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:rotten_flesh'"
+      }
+    }
+  }
+}

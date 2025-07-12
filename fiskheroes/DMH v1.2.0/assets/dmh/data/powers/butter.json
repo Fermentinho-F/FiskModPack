@@ -1,0 +1,87 @@
+{
+  "name": "Butter Manipulation",
+  "modifiers": {
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:antimatter_beam"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+      "duration": 20,
+      "cooldownTime": 20,
+      "range": 32.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 8.0,
+        "recoveryDelay": 20,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_shield_enable",
+        "DISABLE": "fiskheroes:mk50_shield_disable",
+        "DEFLECT": "fiskheroes:shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "DISABLE": "fiskheroes:shadowform_disable",
+        "ENABLE": ["fiskheroes:shadowform_enable", "fiskheroes:shadowform_loop"]
+      }
+    },
+    "fiskheroes:transformation|suit": {
+      "key": "SUIT",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_enable",
+        "DISABLE": "fiskheroes:mk50_disable"
+      }
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 40
+    }
+  }
+}

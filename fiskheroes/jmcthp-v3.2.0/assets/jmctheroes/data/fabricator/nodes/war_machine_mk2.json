@@ -1,0 +1,13 @@
+{
+  "suit": "jmctheroes:war_machine_mk2",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:war_machine_mk1",
+    "fiskheroes:iron_man",
+    "fiskheroes:tier6_7",
+    "fiskheroes:stark",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:weapon.z6.shoot",
+  "volume": 0.8,
+  "pitch": "1.15 - Math.random() * 0.35"
+}

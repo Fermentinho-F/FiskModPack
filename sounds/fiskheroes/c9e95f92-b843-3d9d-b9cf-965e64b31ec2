@@ -1,0 +1,497 @@
+{
+  "null": {
+    "sounds": [
+      "null"
+    ],
+    "category": "player"
+  },
+  "mask.on": {
+    "sounds": [
+      "fnaf/mask_on"
+    ],
+    "category": "player"
+  },
+  "mask.off": {
+    "sounds": [
+      "fnaf/mask_off"
+    ],
+    "category": "player"
+  },
+  "mask.loop": {
+    "sounds": [
+      "fnaf/mask_loop"
+    ],
+    "category": "player"
+  },
+  "fnaf.jumpscare": {
+    "sounds": [
+      "fnaf/fnaf_jumpscare"
+    ],
+    "category": "player"
+  },
+  "fnaf2.jumpscare": {
+    "sounds": [
+      "fnaf/fnaf2_jumpscare"
+    ],
+    "category": "player"
+  },
+  "golden.freddy.jumpscare": {
+    "sounds": [
+      "fnaf/golden_freddy_jumpscare"
+    ],
+    "category": "player"
+  },
+  "golden.freddy.glitch": {
+    "sounds": [
+      "fnaf/golden_freddy_glitch"
+    ],
+    "category": "player"
+  },
+  "golden.freddy.teleport": {
+    "sounds": [
+      "fnaf/golden_freddy_teleport"
+    ],
+    "category": "player"
+  },
+  "golden.freddy.telekinesis.loop": {
+    "sounds": [
+      "fnaf/golden_freddy_telekinesis_loop"
+    ],
+    "category": "player"
+  },
+  "foxy.step": {
+    "sounds": [
+      "fnaf/foxy_step"
+    ],
+    "category": "player"
+  },
+  "freddy.step": {
+    "sounds": [
+      "fnaf/freddy_step"
+    ],
+    "category": "player"
+  },
+  "toy.freddy.step": {
+    "sounds": [
+      "fnaf/toy_freddy_step"
+    ],
+    "category": "player"
+  },
+  "bonnie.step": {
+    "sounds": [
+      "fnaf/bonnie_step"
+    ],
+    "category": "player"
+  },
+  "chica.step": {
+    "sounds": [
+      "fnaf/chica_step"
+    ],
+    "category": "player"
+  },
+  "note.a4.f4": {
+    "sounds": [
+      "fnaf/notes/a4_f4"
+    ],
+    "category": "player"
+  },
+  "note.d3": {
+    "sounds": [
+      "fnaf/notes/d3"
+    ],
+    "category": "player"
+  },
+  "note.a2": {
+    "sounds": [
+      "fnaf/notes/a2"
+    ],
+    "category": "player"
+  },
+  "note.c3": {
+    "sounds": [
+      "fnaf/notes/c3"
+    ],
+    "category": "player"
+  },
+  "note.f3": {
+    "sounds": [
+      "fnaf/notes/f3"
+    ],
+    "category": "player"
+  },
+  "note.g4.d4": {
+    "sounds": [
+      "fnaf/notes/g4_d4"
+    ],
+    "category": "player"
+  },
+  "note.g4.e4": {
+    "sounds": [
+      "fnaf/notes/g4_e4"
+    ],
+    "category": "player"
+  },
+  "note.g3": {
+    "sounds": [
+      "fnaf/notes/g3"
+    ],
+    "category": "player"
+  },
+  "note.e3": {
+    "sounds": [
+      "fnaf/notes/e3"
+    ],
+    "category": "player"
+  },
+  "joint": {
+    "sounds": [
+      "fnaf/joint"
+    ],
+    "category": "player"
+  },
+  "freddy.laugh.1": {
+    "sounds": [
+      "fnaf/freddy_laugh_1"
+    ],
+    "category": "player"
+  },
+  "freddy.laugh.2": {
+    "sounds": [
+      "fnaf/freddy_laugh_2"
+    ],
+    "category": "player"
+  },
+  "freddy.laugh.3": {
+    "sounds": [
+      "fnaf/freddy_laugh_3"
+    ],
+    "category": "player"
+  },
+  "golden.freddy.laugh": {
+    "sounds": [
+      "fnaf/golden_freddy_laugh"
+    ],
+    "category": "player"
+  },
+  "groan.1": {
+    "sounds": [
+      "fnaf/groan_1"
+    ],
+    "category": "player"
+  },
+  "groan.2": {
+    "sounds": [
+      "fnaf/groan_2"
+    ],
+    "category": "player"
+  },
+  "groan.3": {
+    "sounds": [
+      "fnaf/groan_3"
+    ],
+    "category": "player"
+  },
+  "foxy.sing.1": {
+    "sounds": [
+      "fnaf/foxy_song_1"
+    ],
+    "category": "player"
+  },
+  "foxy.sing.2": {
+    "sounds": [
+      "fnaf/foxy_song_2"
+    ],
+    "category": "player"
+  },
+  "foxy.sing.3": {
+    "sounds": [
+      "fnaf/foxy_song_3"
+    ],
+    "category": "player"
+  },
+  "whispering.loop": {
+    "sounds": [
+      "fnaf/whispering"
+    ],
+    "category": "player"
+  },
+  "music.box.loop": {
+    "sounds": [
+      "fnaf/music_box"
+    ],
+    "category": "player"
+  },
+  "goblin.mask.open": {
+	"sounds" : [
+	  "green_goblin/goblin_mask_open"
+	],
+	"category": "player"
+  },
+  "goblin.mask.close": {
+	"sounds" : [
+	  "green_goblin/goblin_mask_close"
+	],
+	"category": "player"
+  },
+  "pumpkin.bomb.throw": {
+	"sounds" : [
+	  "green_goblin/pumpkin_bomb_throw"
+	],
+	"category": "player"
+  },
+  "razor.bats.throw": {
+	"sounds" : [
+	  "green_goblin/razor_bats_throw"
+	],
+	"category": "player"
+  },
+  "spider.sense": {
+	"sounds" : [
+	  "spider_sense"
+	],
+	"category": "player"
+  },
+  "bells.loop": {
+    "sounds": [
+      "sleigh_bells"
+    ],
+    "category": "player"
+  },
+  "creetle.loop": {
+    "sounds": [
+      "creetle_loop"
+    ],
+    "category": "player"
+  },
+  "beetle.flight.loop": {
+    "sounds": [
+      "beetle_flight_loop"
+    ],
+    "category": "player"
+  },
+  "beetle.blade.enable": {
+    "sounds": [
+      "beetle_blade_enable"
+    ],
+    "category": "player"
+  },
+  "beetle.blade.disable": {
+    "sounds": [
+      "beetle_blade_disable"
+    ],
+    "category": "player"
+  },
+  "buster.sword.enable": {
+    "sounds": [
+      "buster_sword_enable"
+    ],
+    "category": "player"
+  },
+  "buster.sword.crackle": {
+    "sounds": [
+      "buster_sword_crackle"
+    ],
+    "category": "player"
+  },
+  "scarab.enable": {
+    "sounds": [
+      "scarab_enable"
+    ],
+    "category": "player"
+  },
+  "beetle.flight.start": {
+    "sounds": [
+      "beetle_flight_start"
+    ],
+    "category": "player"
+  },
+  "beetle.aim.start": {
+    "sounds": [
+      "beetle_aim_start"
+    ],
+    "category": "player"
+  },
+  "beetle.aim.crackle": {
+    "sounds": [
+      "beetle_aim_crackle"
+    ],
+    "category": "player"
+  },
+  "beetle.shoot": {
+    "sounds": [
+      "beetle_shoot"
+    ],
+    "category": "player"
+  },
+  "beetle.mask": {
+    "sounds": [
+      "beetle_mask"
+    ],
+    "category": "player"
+  },
+  "chainsaw.loop": {
+    "sounds": [
+      "chainsaw_loop"
+    ],
+    "category": "player"
+  },
+  "chainsaw.start": {
+    "sounds": [
+      "chainsaw_start"
+    ],
+    "category": "player"
+  },
+  "chainsaw.hit": {
+    "sounds": [
+      "chainsaw_hit"
+    ],
+    "category": "player"
+  },
+  "slam": {
+    "sounds": [
+      "slam"
+    ],
+    "category": "player"
+  },
+  "minigun.startup": {
+    "sounds": [
+      "minigun_start"
+    ],
+    "category": "player"
+  },
+  "minigun.winddown": {
+    "sounds": [
+      "minigun_wind_stop"
+    ],
+    "category": "player"
+  },
+  "minigun.windup": {
+    "sounds": [
+      "minigun_wind_start"
+    ],
+    "category": "player"
+  },
+  "minigun.spinloop": {
+    "sounds": [
+      "minigun_spin_loop"
+    ],
+    "category": "player"
+  },
+  "minigun.loop": {
+    "sounds": [
+      "minigun_loop"
+    ],
+    "category": "player"
+  },
+  "aura.loop": {
+    "sounds": [
+      "halo_aura"
+    ],
+    "category": "player"
+  },
+  "freeze.breath.loop": {
+    "sounds": [
+      "freeze_breath_loop"
+    ],
+    "category": "player"
+  },
+  "heat.breath.loop": {
+    "sounds": [
+      "heat_breath_loop"
+    ],
+    "category": "player"
+  },
+  "shotgun.aim": {
+    "sounds": [
+      "shotgun_aim"
+    ],
+    "category": "player"
+  },
+  "shotgun.shoot": {
+    "sounds": [
+      "shotgun_shoot"
+    ],
+    "category": "player"
+  },
+  "skates.walk": {
+    "sounds": [
+      "skates"
+    ],
+    "category": "player"
+  },
+  "zero.to.hero": {
+    "sounds": [
+	  {
+      "name": "zero_to_hero",
+	  "stream": true
+	  }
+    ],
+    "category": "player"
+  },
+  "supergirl.start": {
+    "sounds": [
+      "supergirl_start"
+    ],
+    "category": "player"
+  },
+  "supergirl.loop": {
+    "sounds": [
+      "supergirl_loop"
+    ],
+    "category": "player"
+  },
+  "supergirl.stop": {
+    "sounds": [
+      "supergirl_stop"
+    ],
+    "category": "player"
+  },
+  "supergirl.charge": {
+    "sounds": [
+      "supergirl_charge"
+    ],
+    "category": "player"
+  },
+  "spit": {
+    "sounds": [
+      "spit"
+    ],
+    "category": "player"
+  },
+  "breath.charge": {
+    "sounds": [
+      "breath_charge"
+    ],
+    "category": "player"
+  },
+  "revolver.reload": {
+    "sounds": [
+      "revolver_reload"
+    ],
+    "category": "player"
+  },
+  "revolver.shoot": {
+    "sounds": [
+      "revolver_shoot"
+    ],
+    "category": "player"
+  },
+  "night.vision.on": {
+    "sounds": [
+      "night_vision_on"
+    ],
+    "category": "player"
+  },
+  "night.vision.off": {
+    "sounds": [
+      "night_vision_off"
+    ],
+    "category": "player"
+  },
+  "lasso.shoot": {
+	"sounds": [
+	  "lasso_shoot"
+	],
+    "category": "player"
+  }
+}

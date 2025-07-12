@@ -1,0 +1,141 @@
+{
+    "name": "Odin Force",
+    "modifiers": {
+      "fiskheroes:charged_beam": {
+        "damageProfile": {
+          "damage": 9.0,
+          "types": {
+            "COSMIC": 1.0,
+            "ENERGY": 0.5,
+            "MAGIC": 1.0
+          }
+        },
+        "chargeTime": 9,
+        "duration": 20000,
+        "cooldownTime": 9,
+        "range": 36.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "CHARGE": "fiskheroes:mysterio_charged_beam_charge",
+          "SHOOT": "fiskheroes:mysterio_charged_beam_start",
+          "SHOOT_STOP": ["fiskheroes:mysterio_charged_beam_stop1", "fiskheroes:mysterio_charged_beam_stop2"],
+          "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+        }
+      },
+      "fiskheroes:telekinesis": {
+        "telekinesis": {
+          "crushMelons": true,
+          "crushThrowables": true,
+          "squeezeChickens": true,
+          "explodeCreepers": true,
+          "destroyInanimates": true
+        },
+        "canGrab": {
+          "mobs": true,
+          "items": true,
+          "projectiles": true,
+          "inanimates": true
+        },
+        "range": 42.0,
+        "soundEvents": {
+          "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+        }
+      },
+      "fiskheroes:teleportation": {
+        "canReachMoon": true,
+        "range": 128.0,
+        "soundEvents": {
+          "TELEPORT": "fiskheroes:breach"
+        }
+      },
+      "fiskheroes:shield": {
+        "shield": {
+          "health": 20000.0,
+          "regeneration": 15.0,
+          "recoveryDelay": 100,
+          "cooldown": 2
+        },
+        "coverage": {
+          "yawRadius": 180.0,
+          "pitchRadius": 180.0,
+          "yawOffset": 0.0,
+          "pitchOffset": 0.0
+        },
+        "knockback": 0.0,
+        "soundEvents": {
+          "BLOCK_START": "fiskheroes:anti_forcefield",
+          "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+        }
+      },
+      "fiskheroes:spellcasting": {
+        "spells": {
+          "fiskheroes:whip": {
+            "sequence": "",
+            "cooldown": 5,
+            "damageProfile": {
+              "damage": 6.0,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": -1
+              }
+            },
+            "whipBurn": {
+              "frequency": 20,
+              "damageProfile": {
+                "damage": 5.9,
+                "types": {
+                  "MAGIC": 1.0,
+                  "FIRE": -1
+                },
+                "properties": {
+                  "REDUCE_KNOCKBACK": 1.0
+                }
+              }
+            }
+          },
+          "fiskheroes:atmospheric": {
+            "sequence": "",
+            "cooldown": 2,
+            "pushPower": 1.0,
+            "damageProfile": {
+              "damage": 2.0,
+              "types": {
+                "MAGIC": 1.0
+              }
+            }
+          },
+          "fiskheroes:earth_swallowing": {
+            "sequence": "",
+            "cooldown": 8,
+            "range": 48.0,
+            "radius": 6.0,
+            "damageProfile": {
+              "damage": 14.0,
+              "types": {
+                "MAGIC": 1.0
+              }
+            }
+          },
+          "fiskheroes:duplication": {
+            "sequence": "",
+            "cooldown": 12,
+            "quantity": 5
+          }
+        },
+        "soundEvents": {
+          "CAST": "fiskheroes:spell_cast",
+          "CAST_FAIL": "fiskheroes:spell_fail"
+        }
+      },
+      "fiskheroes:projectile_immunity": {
+      },
+      "fiskheroes:leaping": {
+        "leapAmount": [1.5, 0.3]
+      },
+      "fiskheroes:fire_immunity": {
+      },
+      "fiskheroes:water_breathing": {
+      }
+    }
+  }
+  

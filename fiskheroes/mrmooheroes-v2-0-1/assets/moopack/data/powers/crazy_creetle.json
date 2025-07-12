@@ -1,0 +1,167 @@
+{
+  "name": "Crazy Creetle's Power",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "moopack:stand_summon",
+        "DISABLE": "moopack:the_world_dissapear"
+      }
+    },
+
+"fiskheroes:cooldown|shadow": {
+      "cooldown": {
+        "toggleData": "fiskheroes:shadowform",
+        "cooldownData": "fiskheroes:dyn/shadowform_cooldown",
+        "duration": 200,
+        "recovery": 0.5
+      }
+    },
+
+    "fiskheroes:cooldown|nanite": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "cooldownData": "fiskheroes:dyn/nanite_cooldown",
+        "duration": 6000,
+        "recovery": 3.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "fiskheroes:mk50_disable"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.05,
+      "boostSpeed": 0.1,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": [],
+        "BOOST": "fiskheroes:flight_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": [],
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:manta_blade_enable",
+        "DISABLE": "fiskheroes:manta_blade_disable"
+      }
+    },
+
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": "fiskheroes:super_speed_sprint_barry",
+        "STOP": "fiskheroes:super_speed_stop_barry"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "moopack:the_world_time_stop",
+        "DISABLE": "moopack:the_world_time_stop"
+      }
+    },
+
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "moopack:the_hand_effect"
+      }
+    },
+
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "DISABLE": "fiskheroes:anti_shadowform_disable",
+        "ENABLE": ["fiskheroes:anti_shadowform_enable", "fiskheroes:anti_shadowform_loop"]
+      }
+    },
+
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:antimatter_beam"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+      "duration": 20,
+      "cooldownTime": 20,
+      "range": 32.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+
+    "fiskheroes:regeneration": {
+      "factor": 8
+    },
+    "fiskheroes:metal_skin": {
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/nanite_transformation.png",
+      "data": "fiskheroes:dyn/nanite_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+      "data": "fiskheroes:dyn/shadowform_cooldown"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "suit": "sl:anderson",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:sl",
+    "sl:xkryptonite",
+    "sl:kryptonite",
+    "sl:ap6_7"
+  ]
+}

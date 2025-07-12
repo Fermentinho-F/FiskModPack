@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.toughpunch",
+  "volume": "0.8 - entity.getData('sl:dyn/kryptonite_sickness_timer')",
+  "fadeOut": 20,
+  "pitch": "0.9 + Math.random() * 0.4",
+  "condition": "!entity.getData('sl:dyn/blue_kryptonite')"
+}

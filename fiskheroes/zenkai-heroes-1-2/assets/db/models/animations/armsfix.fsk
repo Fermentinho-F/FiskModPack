@@ -1,0 +1,7 @@
+out "firstPerson" (true)
+out "translate" (-1000.6{data}, -0.2{data}, 0)
+out "rotate" (70{data}, 0, 100000, 0)
+out "rotate" (-80{data}, 0, 0, 100000)
+
+
+

@@ -1,0 +1,102 @@
+{
+  "name": "Symbiote Physiology",
+  "modifiers": {
+    "fiskheroes:size_manipulation": {
+      "isInstant": false,
+      "minSize": 1.25,
+      "maxSize": 1.75
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 80,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+    "fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "radius": 4.0,
+      "factor": 15.0,
+      "duration": 70
+    },
+    "fiskheroes:damage_weakness|sound_blast": {
+      "damageType": "SOUND_BLAST",
+      "radius": 2.0,
+      "factor": 8.0,
+      "duration": 30
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "jmctheroes:symbiote_blade"
+      }
+    },
+    "fiskheroes:shield": {
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_shoot_raimi",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 96.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_raimi"
+      }
+    },
+    "fiskheroes:cooldown|punching": {
+      "cooldown": {
+        "toggleData": "entity.getHeldItem().isEmpty() && entity.getData('fiskheroes:blade') && entity.isPunching()",
+        "cooldownData": "jmctheroes:dyn/hit_timer",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SYMBIOTE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/symbiote",
+        "timerData": "jmctheroes:dyn/symbiote_timer",
+        "time": 17
+      },
+      "soundEvents": {
+        "ENABLE": "jmctheroes:symbiote_transformation",
+        "DISABLE": "jmctheroes:symbiote_transformation"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/symbiote",
+        "cooldownData": "jmctheroes:dyn/symbiote_cooldown",
+        "duration": 12500,
+        "recovery": 5.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/venom.png",
+      "data": "if (entity.getData('jmctheroes:dyn/symbiote') == true) {1 - entity.getData('jmctheroes:dyn/symbiote_cooldown')}"
+    }
+  ]
+}

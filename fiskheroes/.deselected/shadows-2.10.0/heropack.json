@@ -1,0 +1,102 @@
+{
+  "name": "\u00A78\u00A7n\u00A7lShadows\u00A7r",
+  "description": "Version \u00A7f2.10.0",
+  "domain": "shadows",
+  "packFormat": 1,
+  "minVersion": "2.4.0",
+  "sounds": {
+    "download": {
+      "repository": "shadow00dev/ShadowsSounds",
+      "version": 3
+    }
+  },
+  "dataVars": {
+    "jump": "BOOLEAN",
+    "double_jump": "BOOLEAN",
+    "jump_timer": "FLOAT_INTERP",
+    "jump_animation": "FLOAT_INTERP",
+    "choose_jump_animation": "INTEGER",
+
+    "forced_sentry": "BOOLEAN",
+    "forced_sentry_timer": "FLOAT_INTERP",
+    "dome_forced_sentry_timer": "FLOAT_INTERP",
+    "dome_forced_sentry_cooldown": "BOOLEAN",
+
+    "teleport_on_entity": "BOOLEAN",
+    "teleport_on_entity_timer": "FLOAT",
+
+    "spell_used_cooldown": {"type": "INTEGER", "resetOnDeath": false},
+    "spell_cooldown": {"type": "BOOLEAN", "resetOnDeath": false},
+    "spell_cooldown_timer": {"type": "FLOAT", "resetOnDeath": false},
+    "spell_cooldown_timer_visual": {"type": "FLOAT_INTERP", "resetOnDeath": false},
+
+    "stamina": "FLOAT",
+    "stamina_out": "BOOLEAN",
+    "blood_smoke_cooldown": "FLOAT",
+    "shadow_pull": "BOOLEAN",
+    "shadow_pull_timer": "FLOAT",
+    "wraith": "FLOAT",
+    "warp_strike": "BOOLEAN",
+    "warp_strike_timer": "FLOAT",
+
+    "holy": "FLOAT_INTERP",
+    "reload": "BOOLEAN",
+    "reload_cooldown": "FLOAT",
+    "recall_cooldown": "FLOAT",
+    "tornado": {"type": "FLOAT", "resetWithoutSuit": true},
+
+    "1boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "2boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "3boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "4boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "5boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "6boolean_reset": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "1float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "2float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "3float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "4float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "5float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "6float_reset": {"type": "FLOAT", "resetWithoutSuit": true},
+    "1float_interp_reset": {"type": "FLOAT_INTERP", "resetWithoutSuit": true},
+    "2float_interp_reset": {"type": "FLOAT_INTERP", "resetWithoutSuit": true},
+    "3float_interp_reset": {"type": "FLOAT_INTERP", "resetWithoutSuit": true},
+    "4float_interp_reset": {"type": "FLOAT_INTERP", "resetWithoutSuit": true},
+    "5float_interp_reset": {"type": "FLOAT_INTERP", "resetWithoutSuit": true},
+    "1integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "2integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "3integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "4integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "5integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "6integer_reset": {"type": "INTEGER", "resetWithoutSuit": true},
+    "1string_reset": {"type": "STRING", "resetWithoutSuit": true},
+
+    "dash": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "dash_timer": {"type": "FLOAT", "resetWithoutSuit": true},
+    "dash_play_sound": {"type": "FLOAT", "resetWithoutSuit": true},
+    "did_dash": {"type": "BOOLEAN", "resetWithoutSuit": true},
+    "allow_dash": {"type": "BOOLEAN", "resetWithoutSuit": true}
+  },
+  "damageTypes": {
+      "HOLY": "Holy",
+      "STAKE": "Stake"
+  },
+  "alts": {
+    "fiskheroes:spider_man": {
+      "alt": "Spider-Man",
+      "symbiote": "Symbiote"
+    },
+    "fiskheroes:vision": {
+      "shadows": "Shadows"
+    },
+    "shadows:silver_speed": {
+      "$DEFAULT": {
+        "soundProfile": "SPEEDTSER"
+      }
+    },
+    "shadows:superior_spider": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      }
+    }
+  }
+}

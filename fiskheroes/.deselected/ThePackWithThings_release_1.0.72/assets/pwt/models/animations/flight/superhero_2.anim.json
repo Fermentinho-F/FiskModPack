@@ -1,0 +1,7 @@
+{
+  "inputs": [
+    "pwt:flight/header",
+    "pwt:flight/superhero_1_hover",
+    "pwt:flight/superhero_1_boost_1"
+  ]
+}

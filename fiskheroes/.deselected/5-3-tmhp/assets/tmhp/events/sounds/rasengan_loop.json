@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmhp:main.rasengan_loop",
+  "condition": "entity.getData('fiskheroes:cryo_charge')",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

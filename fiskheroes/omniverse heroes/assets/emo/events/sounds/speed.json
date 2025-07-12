@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "emo:main.speed",
+  "condition": {
+    "start": true,
+    "continue": "entity.getData('fiskheroes:speeding') && entity.getData('fiskheroes:moving')"
+  },
+  "volume": 10,
+  "loop": true,
+  "fadeOut": 5
+}

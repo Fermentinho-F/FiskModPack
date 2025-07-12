@@ -1,0 +1,39 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;data_0 - beam charge
+;data_1 - shooting
+;data_2 - jumping
+;data_3 - sneaking
+;data_4 - tail/idle looper
+
+{charging} = 0.2sin(10*pi{data_0})
+{shooting} = {data_1}
+{jumping} = {data_2}
+{sneaking} = {data_3}
+{idle} = sin(2pi{data_4})
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{base_posY} += 2*{sneaking}
+{pipe_posY} += 2*{sneaking}
+{pipe_posZ} += -12.5{shooting}
+{plate_posZ} += -2.5{shooting}
+{base_rotZ} -= 0.2{charging} + 0.02{movement} 
+{pipe_rotZ} += 0.5{charging} + 0.02{movement} 
+
+{leg1_posX} += -4*{sneaking}
+{leg1_posZ} += -4*{sneaking}
+{leg1_rotX} += 23'*{sneaking} - 43'{movement}  - 25'{jumping}
+{leg1_rotZ} += -31.5'*{sneaking} + 50'{movement} + 30'{jumping}
+{legL1_rotZ} += 26'*{sneaking} - 23'{movement} - 50'{jumping}
+{legW1_rotZ} += {idle}
+
+{leg2_posX} += 4*{sneaking}
+{leg2_posZ} += -4*{sneaking}
+{leg2_rotX} += 23'*{sneaking} + 43'{movement}   - 25'{jumping}
+{leg2_rotZ} += 31.5'*{sneaking} + 50'{movement}  - 30'{jumping}
+{legL2_rotZ} += -26'*{sneaking} - 23'{movement}  + 50'{jumping}
+{legW2_rotZ} -= 1.3{idle}
+
+{claw1_posY} += -3*{sneaking}
+{claw2_posY} += -3*{sneaking}
+{claw1_rotX} += 0.7{movement}
+{claw2_rotX} -= 0.7{movement}

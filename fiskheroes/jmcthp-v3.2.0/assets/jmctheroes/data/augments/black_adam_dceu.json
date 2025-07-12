@@ -1,0 +1,8 @@
+{
+    "attributes": {
+    "DAMAGE_REDUCTION": [2, 4],
+    "PUNCH_DAMAGE": [4, 5],
+    "BASE_SPEED_LEVELS": [2, 4],
+    "SPRINT_SPEED": [2, 4]
+    }
+}

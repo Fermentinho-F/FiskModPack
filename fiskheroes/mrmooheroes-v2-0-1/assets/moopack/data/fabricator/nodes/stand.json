@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Stand",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/stand_arrow.png"
+    }
+    },
+    "requirements": [
+    "moopack:moopack",
+  ],
+    "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 20
+  }
+}

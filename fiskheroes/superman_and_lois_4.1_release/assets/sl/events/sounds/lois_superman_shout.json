@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.lois_superman",
+  "condition": "fiskheroes:beam_charging",
+  "loop": false,
+  "volume": 1.0,
+  "fadeOut": 5
+}

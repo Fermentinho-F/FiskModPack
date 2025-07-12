@@ -1,0 +1,42 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "tmhp:dc/teen_titans/cyborg/layer1",
+    "layer2": "tmhp:dc/teen_titans/cyborg/layer2",
+    "lights": "tmhp:dc/teen_titans/cyborg/lights",
+    "hand": "tmhp:dc/teen_titans/cyborg/hand",
+    "handlights": "tmhp:dc/teen_titans/cyborg/hand_lights"
+  },
+  "lights": {
+    "renderLayer": {
+      "CHESTPLATE": "lights",
+      "HELMET": "lights"
+    },
+    "default": "null"
+  },
+  "custom": {
+    "fiskheroes:metal_heat": {
+      "applicable": ["HELMET", "CHESTPLATE", "LEGGINGS", "BOOTS"],
+      "texture": "null",
+      "data": "fiskheroes:metal_heat"
+    },
+    "fiskheroes:repulsor_blast": {
+      "color": "0xffff11",
+      "anchor": "rightArm",
+      "beams": [
+        {
+          "firstPerson": [-4.5, 3.75, -8.0],
+          "offset": [-0.5, 9.0, 0.0],
+          "size": [1.5, 1.5]
+        }
+      ],
+      "renderer": "fiskheroes:repulsor_blast"
+    },
+    "fiskheroes:overlay": {
+      "applicable": ["CHESTPLATE"],
+      "texture": ["hand", "handlights"],
+      "opacity": 1.0,
+      "data": "fiskheroes:aimed_timer"
+    }
+  }
+}

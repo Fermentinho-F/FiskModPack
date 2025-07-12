@@ -1,0 +1,92 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;data_0 - punch timer
+;data_1 - isPunching
+;data_2 - walking/running(higher motion input + faster loop) + jumping
+;data_3 - jumping
+;data_4 - tail/idle looper
+
+{data_0} = 0.2sin(pi*2{data_0}) + 0.05{movement}
+{punching} = sin(pi{data_1})
+{slide} = curve min(animate2({data_2}, 1.1, 0, 0.8, 0), 1)
+{sneaking} = {data_3}
+{jumping} = {data_4}
+{idle} = sin(2pi{data_5})
+{mask} = {data_6}
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{tail1_rotX} += 2{data_0} + 1.2{slide}
+{tail1_rotZ} -= {data_0}
+{tail1.2_rotX} -= 1.4{data_0} + 1.2{slide}
+{tail1.2_rotZ} += 1.2{data_0}
+{tail2_rotX} -= 4{data_0}
+{tail2_rotZ} += 3{data_0}
+{tail3_rotX} -= 4{data_0}
+{tail3_rotZ} += 4{data_0}
+
+{rArm_rotX} += {movement} - 1.4{punching}+ 0.8{slide} - {sneaking} 
+{rArm_rotZ} += 0.4{punching} + 0.3{jumping} + 0.05{idle}
+{rArm_rotY} -= {slide} - {sneaking} + 0.3{jumping}
+{rArmHand_rotX} += 0.1{punching}
+{rArmHand_rotZ} -= 0.2{punching}
+{lArm_rotX} -= {movement} + {sneaking}
+{lArm_rotZ} -= 0.3{jumping} + 0.05{idle}
+{lArm_rotY} += 0.3{jumping}
+
+{rLeg_rotX} -= {movement} + 0.4{slide} + {sneaking} - 0.4{jumping}
+{lLeg_rotX} += {movement} + 0.5{slide} - {sneaking} + 0.4{jumping}
+{lLeg_rotY} += 0.5{slide}
+{rLeg2_rotX} += 0.7{slide} + {sneaking} - 0.4{jumping}
+{lLeg2_rotX} -= 0.6{slide} - {sneaking} + 0.4{jumping}
+{rLeg3_rotX} += 0.1{slide}
+{lLeg3_rotX} += 0.6{slide}
+
+{body_rotX} -= 0.1{movement} + 1.6{slide} + 0.2{jumping} + 0.005{idle}
+{body_rotY} -= 0.1{movement}
+{body_rotZ} -= 0.4{slide}
+{body_posY} += 14{slide} + 6{sneaking}
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{badge_rotX} = {body_rotX}
+{badge_rotY} = {body_rotY}
+{badge_rotZ} = {body_rotZ}
+{badge_posY} = {body_posY}
+
+
+
+{mask1} = curve min(animate2({mask}, 2, 0, 0.4, 0), 1)
+{mask2} = curve min(animate2({mask}, 2, 0.4, 0.2, 0), 1)
+{mask3} = curve min(animate2({mask}, 2, 0.6, 0.2, 0), 1)
+{mask4} = curve min(animate2({mask}, 2, 0.8, 0.2, 0), 1)
+
+{mask1_posX} @ {mask1} -> 0
+{mask1_posZ} @ {mask1} -> -0.01
+{mask2_posY} @ {mask2} -> 2
+{mask3_posY} @ {mask3} -> 1
+{mask4_posY} @ {mask4} -> 1
+
+{mask5_posX} @ {mask1} -> 0
+{mask5_posZ} @ {mask1} -> -0.01
+{mask6_posY} @ {mask2} -> 2
+{mask7_posY} @ {mask3} -> 1
+{mask8_posY} @ {mask4} -> 1
+
+{chinr_posX} @ {mask4} -> -0.1
+{chinr_posY} @ {mask4} -> -0.1
+{chinr_posZ} @ {mask4} -> -0.1
+{chinl_posX} @ {mask4} -> 0.1
+{chinl_posY} @ {mask4} -> -0.1
+{chinl_posZ} @ {mask4} -> -0.1
+
+{speedPunching} = 7sin(2pi{data_7})
+
+{rArm_rotX} -= 1.4{speedPunching}
+{rArm_rotZ} += 0.4{speedPunching} 
+{rArmHand_rotX} += 0.1{speedPunching}
+{rArmHand_rotZ} -= 0.2{speedPunching}
+
+{lArm_rotX} -= 1.4{speedPunching}
+{lArm_rotZ} += 0.4{speedPunching} 
+{lArmHand_rotX} += 0.1{speedPunching}
+{lArmHand_rotZ} -= 0.2{speedPunching}

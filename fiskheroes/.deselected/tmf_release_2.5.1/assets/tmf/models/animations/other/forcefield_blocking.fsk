@@ -1,0 +1,12 @@
+{data} = curve {data}
+{rightArm_rotX} @ {data} ->-0.8
+{rightArm_rotY} @ {data} -> 0.2
+{rightArm_rotZ} @ {data} -> 1
+
+{leftArm_rotX} @ {data} ->-0.8
+{leftArm_rotY} @ {data} -> -0.2
+{leftArm_rotZ} @ {data} -> -1
+
+out "firstPerson" (true)
+out "rotate" (-20{data}, 0, 1, 0)
+out "rotate" (10{data}, 0, 0, 1)

@@ -1,0 +1,62 @@
+{
+  "name": "Sasuke powers",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9,
+        "types": {
+          "ENERGY": 2.0,
+          "FIRE": -1
+        },
+        "properties": {
+          "EFFECTS": [{
+            "id": "minecraft:nausea",
+            "duration": 100,
+            "amplifier": 3
+          }
+        ],
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "chargeTime": 1,
+      "duration": 90,
+      "cooldownTime": 2,
+      "range": 32.0,
+      "radius": 0.5,
+      "soundEvents": {
+        "CHARGE": "fiskheroes:mysterio_charged_beam_charge",
+        "SHOOT": "fiskheroes:mysterio_charged_beam_start",
+        "SHOOT_STOP": ["fiskheroes:mysterio_charged_beam_stop1", "fiskheroes:mysterio_charged_beam_stop2"],
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+      }
+    },
+  "fiskheroes:blade": {
+  },
+ "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 10,
+          "uses": 9,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 20,
+          "uses": 4
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

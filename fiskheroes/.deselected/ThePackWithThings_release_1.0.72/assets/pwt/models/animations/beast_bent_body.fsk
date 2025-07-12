@@ -1,0 +1,27 @@
+;{data2} = 2.71828^({data}-({data}-0.6)^4*(64)^1.35 -0.75)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.3)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.25)
+
+{body_rotX} @ {data} -> (pi/180)*45
+
+{head_posY} @ {data} -> 0.0
+{headwear_posY} @ {data} -> 0.0
+{head_posZ} @ {data} -> -4.5
+{headwear_posZ} @ {data} -> -4.5
+
+
+
+{rightArm_posX} @ {data} -> -5.0
+{leftArm_posX} @ {data} -> 5.0
+
+{rightArm_posY} @ {data} -> 0.0
+{leftArm_posY} @ {data} -> 0.0
+
+{rightArm_posZ} @ {data} -> -3.0 
+{leftArm_posZ} @ {data} -> -3.0
+
+{rightLeg_posX} @ {data} -> -6.0
+{leftLeg_posX} @ {data} -> 6.0
+
+{rightArm_rotZ} += (pi/180)*65.0 - {data}
+{leftArm_rotZ} -= (pi/180)*65.0 - {data}

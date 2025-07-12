@@ -1,0 +1,9 @@
+{
+  "sound": "tmf:zsSkayr.beam.loop",
+  "condition": "fiskheroes:beam_shooting",
+  "volume": "0.9*entity.getInterpolatedData('fiskheroes:beam_shooting_timer')",
+  "pitch": "1 - 0.15 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 40
+}

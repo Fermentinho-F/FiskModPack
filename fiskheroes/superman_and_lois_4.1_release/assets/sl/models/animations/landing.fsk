@@ -1,0 +1,43 @@
+
+{head_posX} @ {data} -> 0
+{head_posY} @ {data} -> 3.5
+{head_posZ} @ {data} -> -6.5
+{head_rotX} @ {data} -'> 30'
+{head_rotY} @ {data} -'> 0'
+{head_rotZ} @ {data} -'> 0'
+
+{body_posX} @ {data} -> 0
+{body_posY} @ {data} -> 4.5
+{body_posZ} @ {data} -> -11.0
+{body_rotX} @ {data} -'> 45'
+{body_rotY} @ {data} -'> 0'
+{body_rotZ} @ {data} -'> 0'
+
+{rightArm_posX} @ {data} -> -5
+{rightArm_posY} @ {data} -> 5.5
+{rightArm_posZ} @ {data} -> -5.5
+{rightArm_rotX} @ {data} -'> 10'
+{rightArm_rotY} @ {data} -'> 0'
+{rightArm_rotZ} @ {data} -'> 15'
+
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 5.0
+{leftArm_posZ} @ {data} -> -5.5
+{leftArm_rotX} @ {data} -'> 15'
+{leftArm_rotY} @ {data} -'> 0'
+{leftArm_rotZ} @ {data} -'> -20'
+
+{d} = sin(pi{data})
+{rightLeg_posX} @ {data} -> -2.5
+{rightLeg_posY} @ {data} -> 12.5
+{rightLeg_posZ} @ {data} -> -6.4
+{rightLeg_rotX} @ {data} -'> 15'{d}
+{rightLeg_rotY} @ {data} -'> -2'{d}
+{rightLeg_rotZ} @ {data} -'> -2'{d}
+
+{leftLeg_posX} @ {data} -> 2.5
+{leftLeg_posY} @ {data} -> 12.5
+{leftLeg_posZ} @ {data} -> -5.5
+{leftLeg_rotX} @ {data} -'> 15'{d}
+{leftLeg_rotY} @ {data} -'> -2'{d}
+{leftLeg_rotZ} @ {data} -'> -2'{d}

@@ -1,0 +1,32 @@
+{
+  "name": "Venom Symbiote",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "SYMBIOTE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/symbiote",
+        "timerData": "jmctheroes:dyn/symbiote_timer",
+        "time": 17
+      },
+      "soundEvents": {
+        "ENABLE": "jmctheroes:symbiote_transformation",
+        "DISABLE": "jmctheroes:symbiote_transformation"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/symbiote",
+        "cooldownData": "jmctheroes:dyn/symbiote_cooldown",
+        "duration": 12500,
+        "recovery": 5.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/symbiote.png",
+      "data": "jmctheroes:dyn/symbiote_cooldown"
+    }
+  ]
+}

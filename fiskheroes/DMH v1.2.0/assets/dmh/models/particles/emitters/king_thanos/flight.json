@@ -1,0 +1,23 @@
+{
+  "particles": [
+    {
+      "condition": "!entity.isSprinting()",
+      "anchor": "body",
+      "type": "ETERNIUM_AURA",
+      "amount": 16,
+      "offset": [0.0, 24, 0.0],
+      "randOffset": [0.3, 0.3, 0.3]
+    },
+    {
+      "condition": "entity.isSprinting()",
+      "anchor": "body",
+      "type": "DWARF_STAR_ENERGY",
+      "amount": {
+        "tp": 6,
+        "fp": 1
+      },
+      "offset": [0.0, 24, 0.0],
+      "randOffset": [0.3, 0.3, 0.3]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.symbiot.charge",
+  "condition": "fiskheroes:cryo_charging",
+  "volume": 1.0,
+  "pitch": "0.7 + Math.random()*0.3",
+  "fadeOut": 20,
+  "loop": true
+}

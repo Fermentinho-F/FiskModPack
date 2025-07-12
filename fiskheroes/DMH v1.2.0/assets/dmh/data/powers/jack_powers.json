@@ -1,0 +1,141 @@
+{
+  "name": "Mid-Tier Nigh-Omnipotence",
+  "modifiers": {
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "FIRE": 1.0,
+          "ARCHANGEL": 1.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:energy_projection|heal": {
+      "damageProfile": {
+        "damage": 0.001,
+        "types": {},
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:regeneration",
+              "duration": 100,
+              "amplifier": 4,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "knockback": 0.0,
+      "chargeTime": 15,
+      "duration": 200,
+      "cooldownTime": 250,
+      "canDoGriefing": false,
+      "range": 2.0,
+      "radius": 1.0
+    },
+    "fiskheroes:charged_beam|erase-existence": {
+      "damageProfile": {
+        "damage": 175,
+        "types": {
+          "COSMIC": 1,
+          "ARCHANGEL": 1.5
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 64.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": [ "dmh:erase" ]
+      }
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 50
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_immunity|cactus": {
+      "damageType": "CACTUS"
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_immunity|magic": {
+      "damageType": "MAGIC"
+    },
+    "fiskheroes:damage_immunity|electricity": {
+      "damageType": "ELECTRICITY"
+    },
+    "fiskheroes:damage_immunity|atlantean steel": {
+      "damageType": "ATLANTEAN_STEEL"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 17.0
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 150.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": [ "fiskheroes:flight_loop" ],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "name": "Demonic Magic (the devil part time)",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.3,
+      "boostSpeed": 0.26,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:transformation|sword": {
+      "key": "SWORD",
+      "transformation": {
+        "toggleData": "emo:dyn/sword",
+        "timerData": "emo:dyn/sword_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "COSMIC": 9.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 3,
+      "duration": 22222222,
+      "cooldownTime": 3,
+      "range": 52.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mind_stone_start",
+        "BEAM_AMBIENT": "fiskheroes:mind_stone_loop"
+      }
+    },
+    "fiskheroes:transformation|next": {
+      "key": "NEXT",
+      "transformation": {
+        "toggleData": "emo:dyn/next",
+        "timerData": "emo:dyn/next_timer",
+        "time": 0
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 6.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": -1
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 10.9,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": -1
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 9.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 41.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 12,
+          "quantity": 10
+        },
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 10,
+          "duration": 400,
+          "range": 24.0
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 20000.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 2
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:fireball": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "IGNITE": 3
+        }
+      },
+      "radius": 2.5,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "COLD",
+      "factor": 3.0
+    }
+  },
+  "hud": [
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:gravity_manipulation",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

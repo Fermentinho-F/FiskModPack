@@ -1,0 +1,36 @@
+{m} = clamp(-{motY}, -110', 110')
+{m1} = clamp(-{motY}, -110', 35')
+{m2} = clamp({motY}, -10', 110')
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+{x} = {data}curve clamp({vel}, 0, 1)
+{x1} = {data}curve clamp({motY}, 0, 1)
+{b} = {data}curve clamp({vel}, 0, 90)
+
+
+{leftArm_rotZ} @ {data} ->  -0.55{m}
+{leftArm_rotX} @ {data} -> -3.2
+
+{data} *= {vel}
+
+{head_rotY} @ {data} -> pi/3
+{rightArm_rotX} @ {data} -> 0.45{m}
+{rightArm_rotZ} @ {data} -> {m2}
+
+{rightLeg_rotX} @ {data} -> 40'
+{rightLeg_rotY} @ {data} -> 7.5'
+{rightLeg_rotZ} @ {data} -> - 0.37{m}
+{leftLeg_rotX} @ {data} -> 35'
+{leftLeg_rotY} @ {data} -> -5'
+{leftLeg_rotZ} @ {data} -> - 0.34{m}
+
+{rightLeg_posX} @ {data} -> -1.9
+{rightLeg_posY} @ {data} -> 9.5
+{rightLeg_posZ} @ {data} -> -5
+
+{leftLeg_posX} @ {data} -> 3
+{leftLeg_posY} @ {data} -> 9
+{leftLeg_posZ} @ {data} -> -5
+
+out "rotate" ((65{data})+1', 0, 1, 0)

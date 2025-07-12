@@ -1,0 +1,30 @@
+{
+  "name": "Spider Camouflage",
+  "modifiers": {
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:transformation": {
+      "key": "INVIS",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/invis",
+        "timerData": "jmctheroes:dyn/invis_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/invis",
+        "cooldownData": "jmctheroes:dyn/invis_cooldown",
+        "duration": 6500,
+        "recovery": 5.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/invisibility2.png",
+      "data": "jmctheroes:dyn/invis_cooldown"
+    }
+  ]
+}

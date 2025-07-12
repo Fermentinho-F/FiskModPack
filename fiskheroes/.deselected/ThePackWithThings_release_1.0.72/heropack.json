@@ -1,0 +1,307 @@
+{
+  "name": "The Pack With Things",
+  "domain": "pwt",
+  "description": "It's a Heropack with things.",
+  "watermark": "\u00A7b\u00A7lPWT",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "izil0n/Superheroes",
+      "version": 0
+    },
+    "range": {
+      "minigun_beam_loop": 160.0,
+	  
+	   "carnage_suit_enable": 40.0,
+	   
+	  "titan_beam_loop": { "distance": 260.0, "target": "ALL" },
+	  "titan_rage_scream": { "distance": 260.0, "target": "ALL" },
+      "minigun_beam_aim": { "distance": 32.0, "target": "ALL" },
+      "minigun_beam_stop": { "distance": 30.0, "target": "ALL" },
+	  "ninja_vanish_enable": { "distance": 5.0, "target": "ALL" },
+	  "ninja_vanish_disable": { "distance": 5.0, "target": "ALL" },
+	  "ninja_vanish_loop": { "target": "ONLY_SELF" }
+
+    }
+  },
+  "damageTypes": {
+	  "KRYPTONITE": "Kryptonite"
+  },
+  "dataVars": {
+    "idle_timer": "FLOAT_INTERP",
+	"static_timer": "FLOAT_INTERP",
+    "prev_speed_sprint_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+	
+	
+	"punishment":  { "type": "BOOLEAN", "resetWithoutSuit": true },
+	
+	"rewind": "BOOLEAN",
+    "rewind_cooldown": "FLOAT",
+	
+	"venom_scale": "FLOAT",
+	
+	
+	"mjolnir": "BOOLEAN",
+    "mjolnir_timer": "FLOAT_INTERP",
+    "mjolnir_cooldown": "FLOAT",
+	"levitate_timer": "FLOAT_INTERP",
+	
+		"melee": "BOOLEAN",
+		"melee_timer": "FLOAT_INTERP",
+		
+	"crab_cannon": "BOOLEAN",
+    "crab_cannon_timer": "FLOAT_INTERP",
+    "crab_cannon_cooldown": "FLOAT",
+	"repulsor": "BOOLEAN",
+    "repulsor_timer": "FLOAT_INTERP",
+    "repulsor_cooldown": "FLOAT",
+	"gravity_gun": "BOOLEAN",
+    "gravity_gun_timer": "FLOAT_INTERP",
+    "gravity_gun_cooldown": "FLOAT",
+	"charged_beam": "BOOLEAN",
+    "charged_beam_timer": "FLOAT_INTERP",
+    "charged_beam_cooldown": "FLOAT",
+	"web_shooters": "BOOLEAN",
+    "web_shooters_timer": "FLOAT_INTERP",
+    "web_shooters_cooldown": "FLOAT",
+	"emp": "BOOLEAN",
+    "emp_timer": "FLOAT_INTERP",
+    "emp_cooldown": "FLOAT",
+	"stealth": "BOOLEAN",
+    "stealth_timer": "FLOAT_INTERP",
+    "stealth_cooldown": "FLOAT",
+	
+	"positive": "BOOLEAN",
+	"positive_timer": "FLOAT_INTERP",
+    "positive_cooldown": "FLOAT",
+	
+	"negative": "BOOLEAN",
+	"negative_timer": "FLOAT_INTERP",
+    "negative_cooldown": "FLOAT",
+	
+	"safe_mode": "BOOLEAN",
+    "safe_mode_timer": "FLOAT_INTERP",
+    "safe_mode_cooldown": "FLOAT",
+	
+    "powered": "BOOLEAN",
+    "power_timer": "FLOAT_INTERP",
+    "power_cooldown": "FLOAT",
+	"rage": "BOOLEAN",
+    "rage_timer": "FLOAT_INTERP",
+    "rage_cooldown": "FLOAT",
+    "iced": "BOOLEAN",
+    "ice_timer": "FLOAT_INTERP",
+    "ice_cooldown": "FLOAT",
+    "fired": "BOOLEAN",
+    "fire_timer": "FLOAT_INTERP",
+    "fire_cooldown": "FLOAT",
+	"blue_fired": "BOOLEAN",
+    "blue_fire_timer": "FLOAT_INTERP",
+    "blue_fire_cooldown": "FLOAT",
+	"dark_matter_aura": "BOOLEAN",
+    "dark_matter_timer": "FLOAT_INTERP",
+    "dark_matter_cooldown": "FLOAT",
+	"smoked": "BOOLEAN",
+    "smoke_timer": "FLOAT_INTERP",
+    "smoke_cooldown": "FLOAT",
+	"arcane": "BOOLEAN",
+    "arcane_timer": "FLOAT_INTERP",
+    "arcane_cooldown": "FLOAT",
+	"titan": "BOOLEAN",
+    "titan_timer": "FLOAT_INTERP",
+    "titan_cooldown": "FLOAT",
+	"symbiot": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "symbiot_timer": "FLOAT_INTERP",
+    "symbiot_cooldown": "FLOAT",
+		"thorns_timer": "FLOAT_INTERP",
+		"weapon": { "type": "FLOAT", "resetWithoutSuit": true },
+		"claws": "BOOLEAN",
+		"claws_timer": "FLOAT_INTERP",
+		"sword": "BOOLEAN",
+		"sword_timer": "FLOAT_INTERP",
+		"axe": "BOOLEAN",
+		"axe_timer": "FLOAT_INTERP",
+		"flail": "BOOLEAN",
+		"flail_timer": "FLOAT_INTERP",
+	"ability": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "ability_timer": "FLOAT_INTERP",
+    "ability_cooldown": "FLOAT",
+	"jump": "BOOLEAN",
+    "jump_timer": "FLOAT_INTERP",
+    "jump_cooldown": "FLOAT",
+	"kill": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "kill_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "kill_cooldown": { "type": "FLOAT", "resetWithoutSuit": true },
+	"trickster": "BOOLEAN",
+	"offensive": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"defensive": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"evasive": { "type": "BOOLEAN", "resetWithoutSuit": false },
+    "trickster_timer": "FLOAT_INTERP",
+    "trickster_cooldown": "FLOAT",
+	"trickster_protective": "BOOLEAN",
+    "trickster_protective_timer": "FLOAT_INTERP",
+    "trickster_protective_cooldown": "FLOAT",
+	"laser": "BOOLEAN",
+	"laser_timer": "FLOAT_INTERP",
+    "laser_cooldown": "FLOAT",
+
+	"dash": "BOOLEAN",
+	"dash_timer": "FLOAT_INTERP",
+    "dash_cooldown": "FLOAT",
+	
+	"sandevistan": "BOOLEAN",
+	"sandevistan_timer": "FLOAT_INTERP",
+    "sandevistan_cooldown": "FLOAT",
+	
+	"menu": "BOOLEAN",
+	"menu_timer": "FLOAT_INTERP",
+    "menu_cooldown": "FLOAT",
+	"scroll": "BOOLEAN",
+	"scroll_timer": "FLOAT_INTERP",
+    "scroll_cooldown": "FLOAT",
+	"select": "BOOLEAN",
+	"select_timer": "FLOAT_INTERP",
+    "select_cooldown": "FLOAT",
+	
+	"menu_arm": "BOOLEAN",
+	"menu_spine": "BOOLEAN",
+	
+	"ofa_output": "BYTE",
+	"ofa_timer": "FLOAT_INTERP",
+	"float_toggle": "BOOLEAN",
+	"fajin_charge": "FLOAT",
+	
+	"smash_charging": "BOOLEAN",
+	"smash_charge_timer": "FLOAT_INTERP",
+	"smash_charge": "FLOAT_INTERP",
+	"smash_charge_air": "FLOAT_INTERP",
+	"smash_duration": "FLOAT_INTERP",
+	
+	"punch_air_timer": "FLOAT_INTERP",
+	"smash_air": "BOOLEAN",
+	"smash_air_timer": "FLOAT_INTERP",
+	
+	"hacking": "BOOLEAN",
+	"hacking_timer": "FLOAT_INTERP",
+    "hacking_cooldown": "FLOAT",
+	
+	"drain": "BOOLEAN",
+	"drain_timer": "FLOAT_INTERP",
+	"drain_cooldown": "FLOAT",
+	"hearts": { "type": "FLOAT", "resetWithoutSuit": true },
+	
+	"undead": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"undead_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	"centipede": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"centipede_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	"beast": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"beast_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	"judge": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"judge_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+		"trial": { "type": "BOOLEAN", "resetWithoutSuit": true },
+		"trial_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+		"trial_cooldown": { "type": "FLOAT", "resetWithoutSuit": true },
+		"balance": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	"blind": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"blind_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	"void": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	"void_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+	
+	"toggle_1": "BOOLEAN",
+	"toggle_2": "BOOLEAN",
+	"toggle_3": "BOOLEAN",
+	"toggle_4": "BOOLEAN",
+	
+	"archery_cooldown": "FLOAT",
+	"combat_cooldown": "FLOAT",
+	"gun_cooldown": "FLOAT",
+	"acrobatics_cooldown": "FLOAT",
+	
+	"cooldown_1": "FLOAT",
+	"cooldown_2": "FLOAT",
+	"cooldown_3": "FLOAT",
+	"cooldown_4": "FLOAT",
+	"cooldown_5": { "type": "FLOAT", "resetWithoutSuit": true },
+	"cooldown_6": "FLOAT",
+	"cooldown_7": "FLOAT",
+	"cooldown_interp": "FLOAT_INTERP",
+	"cooldown_interp_1": "FLOAT_INTERP",
+	"cooldown_interp_2": "FLOAT_INTERP",
+	"cooldown_interp_3": "FLOAT_INTERP",
+	"cooldown_interp_4": "FLOAT_INTERP",
+	
+	"leap_cooldown": "FLOAT_INTERP",
+	
+	"anim_1": "BOOLEAN",
+	"anim_1_timer": "FLOAT_INTERP",
+    "anim_1_cooldown": "FLOAT",
+	"anim_2": "BOOLEAN",
+	"anim_2_timer": "FLOAT_INTERP",
+    "anim_2_cooldown": "FLOAT",
+	
+	"hovering_glide": "FLOAT_INTERP",
+	"flying_glide": "FLOAT_INTERP",
+	"flying_speed_glide": "FLOAT_INTERP",
+	
+	"flying_1": "FLOAT_INTERP",
+	"flying_2": "FLOAT_INTERP",
+	"flying_3": "FLOAT_INTERP",
+	"flying_4": "FLOAT_INTERP",
+	"flying_5": "FLOAT_INTERP",
+	"flying_6": "FLOAT_INTERP",
+	"swimming_cooldown": "FLOAT_INTERP",
+
+	"x": { "type": "DOUBLE", "resetWithoutSuit": false },
+	"y": { "type": "DOUBLE", "resetWithoutSuit": false },
+	"z": { "type": "DOUBLE", "resetWithoutSuit": false },
+	"dim": { "type": "INTEGER", "resetWithoutSuit": false },
+	"location_set": { "type": "BOOLEAN", "resetWithoutSuit": false },
+	
+	"block_radius": "BOOLEAN",
+	"block_radius_timer": "FLOAT_INTERP",
+	"block_radius_cooldown": "FLOAT",
+	
+	"charge": "FLOAT",
+	"i": "INTEGER",
+	"cycle": "BYTE",
+	"cycle2": "BYTE",
+	"cycle3": "BYTE",
+	"cycle4": "BYTE",
+	"sensitivity": "BYTE",
+	
+	"counter": { "type": "BYTE", "resetWithoutSuit": true },
+	"motion": "FLOAT",
+
+	
+	"trick_toggle": "BOOLEAN",
+	"trick": "BYTE",
+	"trick_cooldown": "FLOAT_INTERP",
+
+	"punch_toggle": "BOOLEAN",
+	"punch": "BYTE",
+	"punch_cooldown": "FLOAT_INTERP",
+	
+	"punch_interp": "FLOAT_INTERP",
+	
+	"id": "INTEGER",
+	"id2": "INTEGER",
+	"suit": "STRING"
+
+  },
+  "alts": {
+      
+	  
+	  
+	  "pwt:riot": {
+		  "$DEFAULT": {
+			"maskToggleTicks": 15
+		}
+	  
+	  },
+	  "pwt:robin_cyberpunk": {
+		"original": "Classic Mask"
+	  }
+	  
+  }
+
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "loriatpack:electro_flight",
+  "override": "fiskheroes:funcs/firestorm_flight_loop",
+  "loop": true
+}

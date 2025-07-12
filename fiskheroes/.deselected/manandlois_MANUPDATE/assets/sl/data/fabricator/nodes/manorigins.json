@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "Man: Origins",
+    "description": "Welcome to the Alsume",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/man.png"
+    }
+  },
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:tick",
+      "description": "Wear a carved pumpkin on your head and start your adventures as Man",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.getWornHelmet().name() == 'minecraft:pumpkin'"
+      }
+    },
+    "requirements": [
+      "sl:sl"
+    ],
+    "price": {
+      "IRID_GOLD": 2,
+      "XP_LEVELS": 15
+    }
+  }
+}

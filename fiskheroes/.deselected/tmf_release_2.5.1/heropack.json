@@ -1,0 +1,128 @@
+{
+  "name": "The Melon Farm",
+  "domain": "tmf",
+  "watermark": "&b&cThe Melon Farm",
+  "minVersion": "2.4.0",
+  "packFormat": 1,
+  "dataVars": {
+    "transformed2":  { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "transform_timer":  { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "transform_cooldown": { "type" : "FLOAT", "resetWithoutSuit": false, "resetOnDeath": true },
+    "stealth": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "stealth_timer":  { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "stealth_cooldown": { "type" : "FLOAT", "resetWithoutSuit": false, "resetOnDeath": true },
+    "armor": { "type" : "FLOAT", "resetWithoutSuit": false, "resetOnDeath": true },
+    "cooldown_1":  { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+
+    "recal": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "recal_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "recalibrating": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "selecting": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "selecting_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "selecting_timer2": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "fusioned": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "selected": { "type" : "BYTE", "resetWithoutSuit": false, "resetOnDeath": true },
+    "selected2": { "type" : "BYTE", "resetWithoutSuit": false, "resetOnDeath": true },
+    "reset_selected": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "playlist": { "type" : "BYTE", "resetWithoutSuit": true, "resetOnDeath": true },
+    "transformed": {
+      "type": "BYTE",
+      "default": -1,
+      "resetOnDeath": true,
+      "resetWithoutSuit": true
+    },
+    "randomTamperOutcomes": { "type" : "FLOAT", "resetWithoutSuit": true, "resetOnDeath": true },
+    "time_worn": { "type" : "SHORT", "resetWithoutSuit": true, "resetOnDeath": true },
+    "levelUp": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "transformation": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "transformation_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "transformation_cooldown": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "timeout": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "timeout2": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "timeout_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "timeout_timer2": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+    "failsafe": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "failsafe_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "zs_skayr": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+
+    "galvan_mod": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "galvan_mod_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "captureMode": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "captureModeTimer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "tamper": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "tampered": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "tamper_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "grey_matter": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "grey_matter_crafting": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+    "upchuck": { "type" : "BOOLEAN", "resetWithoutSuit": false, "resetOnDeath": true },
+
+    "upgrade": { "type" : "STRING", "resetWithoutSuit": true, "resetOnDeath": true },
+    "upgrade_liquified": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "upgrade_liquified_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "upgrade_liquified_cooldown": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "heatblast_tornado": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "heatblast_tornado_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "heatblast_meteor": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "heatblast_meteor_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "xlrate_punch": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "xlrate_punch_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "grey_matter_panther": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "grey_matter_panther_timer": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "p_1": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_1": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_1": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_2": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_2": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_2": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_3": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_3": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_3": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_4": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_4": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_4": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pi_4": { "type" : "INTEGER", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_5": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_5": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_5": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_6": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_6": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_6": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_7": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_7": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_7": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_8": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_8": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_8": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "p_9": { "type" : "BOOLEAN", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pt_9": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "pc_9": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    
+    "cX": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "cY": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "cZ": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+    "c": { "type" : "FLOAT_INTERP", "resetWithoutSuit": true, "resetOnDeath": true },
+
+    "prevDisplayAlien": { "type" : "DOUBLE", "resetWithoutSuit": false, "resetOnDeath": false },
+    "prevDisplayPlaylist": { "type" : "DOUBLE", "resetWithoutSuit": false, "resetOnDeath": false }
+  },
+  "alts": {
+    "tmf:iron_man_stealth_aa": {
+      "mk2": "Mk2"
+	  }
+  },
+  "damageTypes": {
+    "LIGHT": "Light Damage"
+  },
+  "sounds": {
+    "download": {
+      "repository": "FireMelon333/tmf",
+      "version": 9
+      }
+    }
+}

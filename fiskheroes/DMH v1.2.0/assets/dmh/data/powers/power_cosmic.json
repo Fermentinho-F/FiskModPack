@@ -1,0 +1,108 @@
+{
+  "name": "Power Cosmic",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "COSMIC",
+      "transformation": {
+        "toggleData": "dmh:dyn/cosmic",
+        "timerData": "dmh:dyn/cosmic_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 30.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 16.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 60,
+      "duration": 60,
+      "cooldownTime": 20,
+      "range": 32.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "dmh:cgr/gun_shoot"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.4,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop"]
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0xae00ff",
+      "data": "(1 - entity.getInterpolatedData('dmh:dyn/cosmic_penance_cooldown')) * entity.getData('dmh:dyn/cosmic_penance')" 
+    },
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge" 
+    }
+  ]
+}

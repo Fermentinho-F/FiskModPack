@@ -1,0 +1,8 @@
+{
+  "sound": "sabri:suit.kang_the_conqueror.energy_proj.ambient",
+  "condition": "fiskheroes:aiming",
+  "volume": "fiskheroes:aiming_timer",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 20
+}

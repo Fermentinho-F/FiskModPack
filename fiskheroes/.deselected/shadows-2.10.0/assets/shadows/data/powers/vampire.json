@@ -1,0 +1,162 @@
+{
+  "name": "Vampirism",
+  "modifiers": {
+    "fiskheroes:charged_punch|disable_pickup": {
+      "chargeTime": 0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.1,
+      "canBoost": false,
+      "canRoll": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.5,
+      "soundEvents": {
+        "ENABLE": "shadows:vampire/bat_loop"
+      }
+    },
+    "fiskheroes:size_manipulation|bat_form_size": {
+      "isInstant": true,
+      "minSize": 0.2,
+      "maxSize": 1,
+      "soundEvents": {
+        "SHRINK": "shadows:vampire/bat_takeoff",
+        "GROW": "shadows:vampire/bat_takeoff"
+      }
+    },
+    "fiskheroes:transformation|wolf_form": {
+      "transformation": {
+        "toggleData": "shadows:dyn/2boolean_reset",
+        "timerData": "shadows:dyn/1float_reset",
+        "time": 10
+      }
+    },
+    "fiskheroes:size_manipulation|wolf_form_size": {
+      "isInstant": true,
+      "minSize": 0.6,
+      "maxSize": 1,
+      "soundEvents": {
+        "SHRINK": "shadows:vampire/wolf_bark",
+        "GROW": "shadows:vampire/wolf_bark"
+      }
+    },
+    "fiskheroes:telekinesis|hold_to_bite": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": false,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 1.5
+    },
+    "fiskheroes:charged_beam|bat_slam": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "BLUNT": 1.0
+        }
+      },
+      "chargeTime": 40,
+      "duration": 10,
+      "cooldownTime": 25,
+      "range": 16.0,
+      "radius": 0.5,
+      "isToggle": true,
+      "soundEvents": {
+        "CHARGE": "shadows:vampire/bat_loop_slam"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 80.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 60,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "isToggle": false
+    },
+    "fiskheroes:transformation|shadows": {
+      "key": "SHADOWS",
+      "transformation": {
+        "toggleData": "shadows:dyn/4boolean_reset",
+        "timerData": "shadows:dyn/2float_reset",
+        "time": 1
+      },
+      "soundEvents": {
+        "ENABLE": ["shadows:vampire/shadows", "shadows:vampire/shadows_loop"]
+      }
+    },
+    "fiskheroes:hover": {
+      "soundEvents": {
+        "ENABLE": "shadows:vampire/levitate_loop"
+      }
+    },
+    "fiskheroes:flight": {},
+    "fiskheroes:frost_walking": {},
+    "fiskheroes:invisibility": {},
+    "fiskheroes:cooldown|charge_bite_sound": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:grab_id') > -1 && !entity.world().getEntityById(entity.getData('fiskheroes:grab_id')).isUndead()",
+        "cooldownData": "shadows:dyn/4float_reset",
+        "duration": 1,
+        "recovery": 1
+      },
+      "soundEvents": {
+        "START": "shadows:vampire/charge_bite"
+      }
+    },
+    "fiskheroes:damage_weakness|HOLY": {
+      "damageType": "HOLY",
+      "factor": 50.0
+    },
+    "fiskheroes:damage_weakness|HOLY_LESSER": {
+      "damageType": "HOLY",
+      "factor": 25.0
+    },
+    "fiskheroes:damage_weakness|STAKE": {
+      "damageType": "STAKE",
+      "factor": 10.0
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 100,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  },
+  "hud": [{
+      "type": "CIRCLE",
+      "color": "fiskheroes:heat_vision",
+      "data": "shadows:dyn/1float_interp_reset"
+    }, {
+      "type": "CHARGE",
+      "texture": "shadows:textures/gui/bars/vampire/blood.png",
+      "data": "Math.max(0.0001, entity.getWornHelmet().nbt().getFloat('blood'))"
+    }
+  ]
+}

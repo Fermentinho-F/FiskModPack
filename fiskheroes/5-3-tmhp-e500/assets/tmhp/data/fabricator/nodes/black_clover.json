@@ -1,0 +1,14 @@
+{
+  "display": {
+    "name": {
+      "translate": "Black Clover Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/black_clover.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack",
+    "tmhp:knight",
+    "fiskheroes:magic" ]
+}

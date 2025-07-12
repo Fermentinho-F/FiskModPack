@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.aim.trickster.loop",
+  "condition": "entity.getData('fiskheroes:aiming') && !entity.getData('pwt:dyn/ability')",
+  "volume": "0.5 * entity.getInterpolatedData('fiskheroes:aimed_timer')",
+  "pitch": 1,
+  "loop": true,
+  "fadeOut": 20
+}

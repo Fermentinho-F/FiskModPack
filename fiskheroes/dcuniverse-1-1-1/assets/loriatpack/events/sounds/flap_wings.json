@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "loriatpack:flap_wings",
+  "override": "fiskheroes:funcs/firestorm_flight_loop",
+  "loop": true
+}

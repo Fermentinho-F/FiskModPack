@@ -1,0 +1,17 @@
+{
+  "suit": "tmhp:raven",
+  "display": {
+  "description": "\u00A75My mind is a battleground, whipped and ripped asunder, torn from the very fabric of reality."
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap4_5",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:ranged2",
+    "fiskheroes:sorcery",
+    "fiskheroes:teleportation",
+    "tmhp:teen_titans",
+    "tmhp:heropack2"
+  ]
+}

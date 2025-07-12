@@ -1,0 +1,23 @@
+{data} = curve {data}
+
+;open
+{cover_right_rotY} @ {data_0} -> 160'
+{cover_left_rotY} @ {data_0} -> -160'
+
+{page_1_rotY} @ {data_0} -> -140'
+{page_2_rotY} @ {data_0} -> -40'
+
+{page_1_posX} @ {data_0} -> 0.27
+{page_2_posX} @ {data_0} -> -0.13
+
+{page_right_posX} @ {data_0} -> 0.57
+{page_left_posX} @ {data_0} -> -0.63
+
+{cover_left_rotY} @ {data_0} -> -160'
+
+;up/down
+
+{base_posZ} -= 3{data_0} + sin(3.1{data_1})
+
+{base_posX} @ {data_0} -> 2
+{base_rotY} @ {data_0} -> -10'

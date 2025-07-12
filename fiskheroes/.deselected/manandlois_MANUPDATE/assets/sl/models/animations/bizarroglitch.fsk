@@ -1,0 +1,5 @@
+{data} = sin(pi(1 - {data}))^2
+
+{head_rotZ} @ {data} -> {head.rotZ} + 15.1
+
+{head_rotX} @ {data} -> {head.rotX} + 10.05

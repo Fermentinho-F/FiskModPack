@@ -1,0 +1,31 @@
+{
+  "particles": [
+    {
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 100,
+      "offset": [ -0.5, 1.4, -0.5 ],
+      "randOffset": [ 4.1, 0.1, 4.1 ],
+      "motion": [ 1.0, 1.0, 1.0 ],
+      "mirror": true,
+      "lockFPYaw": true
+    },
+    {
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 100,
+      "offset": [ -0.5, 1.4, -0.5 ],
+      "randOffset": [ 4.1, 0.1, 4.1 ],
+      "motion": [ 1.0, 1.0, 1.0 ],
+      "mirror": true,
+      "lockFPYaw": true
+    },
+    {
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 100,
+      "offset": [ -0.5, 1.4, -0.5 ],
+      "randOffset": [ 4.1, 0.1, 4.1 ],
+      "motion": [ 1.0, 1.0, 1.0 ],
+      "mirror": true,
+      "lockFPYaw": true
+    }
+  ]
+}

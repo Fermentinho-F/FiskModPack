@@ -1,0 +1,161 @@
+{
+  "name": "Seraph Angel Physiology",
+  "modifiers": {
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 5.0
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    /** "fiskheroes:transformation|smite": {
+      "key": "CHARGED_BEAM_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    "fiskheroes:transformation|heal": {
+      "key": "ENERGY_PROJECTION_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    }, **/
+    "fiskheroes:transformation|invis": {
+      "key": "STEALTH",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 6
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:vision_intang_on",
+        "DISABLE": "fiskheroes:vision_intang_off"
+      }
+    },
+    "fiskheroes:charged_beam|smite": {
+      "damageProfile": {
+        "damage": 40,
+        "types": {
+          "COSMIC": 1,
+          "ANGEL": 1
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 2.0,
+      "radius": 1.0,
+      "soundEvents": {
+        "SHOOT": [ "dmh:erase" ]
+      }
+    },
+    "fiskheroes:energy_projection|heal": {
+      "damageProfile": {
+        "damage": 0.001,
+        "types": {},
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:regeneration",
+              "duration": 100,
+              "amplifier": 4,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "knockback": 0.0,
+      "chargeTime": 15,
+      "duration": 200,
+      "cooldownTime": 250,
+      "canDoGriefing": false,
+      "range": 2.0,
+      "radius": 1.0
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 250
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_weakness|archangel": {
+      "damageType": "ARCHANGEL"
+    },
+    "fiskheroes:damage_weakness|colt": {
+      "damageType": "THE_COLT"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 8.0
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 150.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": [ "fiskheroes:flight_loop" ],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    }
+  }
+}

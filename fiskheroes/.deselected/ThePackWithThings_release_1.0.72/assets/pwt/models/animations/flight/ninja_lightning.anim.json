@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "fiskheroes:flight/hover/propelled",
+    "fiskheroes:flight/boost/default",
+	"pwt:flight/barrel_roll_2"
+  ]
+}

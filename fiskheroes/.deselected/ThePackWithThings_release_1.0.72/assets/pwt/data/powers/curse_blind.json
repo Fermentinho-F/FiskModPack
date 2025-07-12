@@ -1,0 +1,110 @@
+{
+  "name": "Blind Curse",
+  "modifiers": {
+    "fiskheroes:transformation|beast": {
+	  "transformation": {
+		"toggleData": "pwt:dyn/blind",
+		"timerData": "pwt:dyn/blind_timer",
+		"time": 10
+	  },
+	  "soundEvents": {
+		"ENABLE": "pwt:carnage_tentacle_enable",
+		"DISABLE": "pwt:carnage_tentacle_disable"
+	  }
+   
+	},
+	
+	"fiskheroes:transformation|DOMAIN": {
+	  "key": "DOMAIN",
+	  "transformation": {
+		"toggleData": "pwt:dyn/toggle_2",
+		"timerData": "pwt:dyn/void_timer",
+		"time": 10
+	  },
+	  "soundEvents": {
+		"ENABLE": "pwt:carnage_tentacle_enable",
+		"DISABLE": "pwt:carnage_tentacle_disable"
+	  }
+   
+	},
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:shadowform",
+        "cooldownData": "fiskheroes:dyn/shadowform_cooldown",
+        "duration": 400,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:shadowdome": {
+      "chargeTime": 1,
+      "duration": 5,
+      "radius": 4.0,
+      "soundEvents": {
+        
+      }
+    },
+	"fiskheroes:energy_projection|energy_proj_blind_front": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.0
+        }
+      },
+      "range": 5.0,
+      "radius": 1000000,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:antimatter_beam"
+      }
+    },
+	"fiskheroes:energy_projection|energy_proj_blind_rear": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.0
+        }
+      },
+      "range": -5.0,
+      "radius": 1000000,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:antimatter_beam"
+      }
+    },
+	"fiskheroes:shield": {
+      "shield": {
+        "health": 1.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+      "data": "fiskheroes:dyn/shadowform_cooldown"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "0x33334D",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

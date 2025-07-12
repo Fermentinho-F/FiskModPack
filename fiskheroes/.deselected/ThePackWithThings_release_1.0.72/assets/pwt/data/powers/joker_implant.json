@@ -1,0 +1,178 @@
+{
+  "name": "Joker's Cybernetic Implants",
+  "modifiers": {
+	 "fiskheroes:flight": {
+	 "speed": 0.25
+	 },
+	 "fiskheroes:controlled_flight": {
+      "speed": -0.2,
+      "boostSpeed": -0.2,
+      "canBoost": false,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:manta_flight_enable", "fiskheroes:manta_flight_loop"],
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive"]
+      }
+    },
+	"fiskheroes:transformation|mantis_blade": {
+	"key": "MANTIS_BLADE",
+      "transformation": {
+        "toggleData": "pwt:dyn/sword",
+        "timerData": "pwt:dyn/sword_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:cooldown|mantis_blade_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/sword",
+        "cooldownData": "pwt:dyn/cooldown_7",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:blade": {
+	  "isToggle": true,
+      "soundEvents": {
+      }
+    },
+	"fiskheroes:transformation|reaper": {
+	"isToggle": false,
+	"key": "REAPER_SCYTHE",
+      "transformation": {
+        "toggleData": "pwt:dyn/crab_cannon",
+        "timerData": "pwt:dyn/crab_cannon_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:cooldown|reaper_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/crab_cannon",
+        "cooldownData": "pwt:dyn/crab_cannon_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:energy_projection": {
+	  "isToggle": false,
+	  "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          
+          "BULLET": 1.0
+        },
+        "properties": {
+		  "EFFECTS": [
+			{
+				"id": "minecraft:poison",
+				"duration": 30,
+				"amplifier": 1,
+				"chance": 0.05
+			},
+			{
+				"id": "minecraft:nausea",
+				"duration": 30,
+				"amplifier": 1,
+				"chance": 0.05
+			}
+			],
+		  "REDUCE_KNOCKBACK": 0.75,
+		  "HIT_COOLDOWN": 2
+        }
+      },
+      "range": 35.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "pwt:minigun_beam_loop",
+        "SHOOT_STOP": "pwt:minigun_beam_stop"
+      }
+    },
+	"fiskheroes:transformation|sandevistan": {
+	  "key": "SANDEVISTAN",
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 0
+      },
+      "soundEvents": {
+        "ENABLE": ["pwt:sandevistan_on", "pwt:sandevistan_on_sprint"],
+        "DISABLE": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_sandevistan": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 40,
+        "recovery": 0.1
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+	  "canUseTachyons": false,
+	  "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_shazam_dceu"
+      }
+    },
+	"fiskheroes:slow_motion": {
+    },
+	"fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "BULLET",
+      "factor": 0.9
+    },
+    "fiskheroes:metal_skin": {
+    },
+	"fiskheroes:damage_weakness": {
+      "damageType": "ELECTRICITY",
+      "factor": 0.4
+    }
+  },
+  "hud": [
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/idk_something_for_max.png",
+      "data": "pwt:dyn/ability_cooldown"
+    },
+	{
+      "type": "PROGRESS",
+	  "condition": "entity.getData('pwt:dyn/cooldown_2') == 0",
+      "texture":"pwt:textures/gui/bars/idk_something_for_max.png",
+      "data": "pwt:dyn/sandevistan_cooldown"
+    },
+	{
+      "type": "PROGRESS",
+      "texture":"pwt:textures/gui/bars/heat_cooldown.png",
+      "data": "pwt:dyn/cooldown_5"
+    }
+  ]
+}
+

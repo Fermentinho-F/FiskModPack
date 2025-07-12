@@ -1,0 +1,101 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{sneaking} = {data_4} 
+{idle} = sin(2pi{data_5})
+{spinning} = {data_8} 
+{limbSwingY} = {data_9}
+{flight} = {data_10}
+
+{limbSwingAmount} = min({limbSwingAmount} + abs(3*{motY}*{flight}), 1)
+{limbSwing} = {limbSwing} + {limbSwingY}
+
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{head_rotX} -= {lookY} + 0.3{sneaking}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{body_rotX} += 0.3{sneaking}
+
+{rLeg_rotX} -= (1-0.6{flight})*{movement} + 0.3{sneaking} 
+{lLeg_rotX} += (1-0.6{flight})*{movement} - 0.3{sneaking}
+
+;TEST=====================================================================
+{punch1} = curve {data_0}
+{punch2} = curve {data_1}
+{punch3} = curve {data_2}
+{punch4} = curve {data_3}
+
+{charging} = {data_6}
+{shooting} = {data_7}
+
+{body_rotY} += 0.1sin(min({punch1}+{punch2}+{punch3}+{punch4}, 1) * pi * 2.0)
+{lowerArmsSwing} = 0.05sin((min({punch3}+{punch4},1)) * pi * 2.0)
+{body_rotYVar} = 0.5*{body_rotY}
+
+{punch1} = (1-{data_0})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({data_0} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch2} = (1-{data_1})^3
+{punch2} = 1.0 - {punch2}
+{punch2.1} = sin({punch2} * pi)
+{punch2.2} = sin({data_1} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({rArm_rotX} - ({punch1.1} * 1.2 + {punch1.2})) + {movement} - 120{flight}'
+{rArm_rotY} += {body_rotYVar} * 8.0
+{rArm_rotZ} += (sin({data_0} * pi) * -0.4)
+
+{rArm_rotX} += 2{body_rotYVar} + {spinning}
+{rArm_rotY} += 2{body_rotYVar} 
+{rArm_rotZ} += 0.05{idle} + 0.6*sin(pi*{punch3}) + {spinning} - 50{flight}'
+
+{lArm_rotX} += ({lArm_rotX} - ({punch2.1} * 1.2 + {punch2.2})) - {movement} - 120{flight}'
+{lArm_rotY} -= {body_rotYVar} * 8.0
+{lArm_rotZ} -= (sin({data_1} * pi) * -0.4)
+
+{lArm_rotX} += 2{body_rotYVar} - {spinning}
+{lArm_rotY} -= 2{body_rotYVar}
+{lArm_rotZ} -= 0.05{idle} + 0.6*sin(pi*{punch4}) + {spinning} - 50{flight}'
+
+{punch3} = (1-{data_2})^3
+{punch3} = 1.0 - {punch3}
+{punch3.1} = sin({punch3} * pi)
+{punch3.2} = sin({data_2} * pi) * -({head_rotX} - 0.7) * 0.75
+{punch4} = (1-{data_3})^3
+{punch4} = 1.0 - {punch4}
+{punch4.1} = sin({punch4} * pi)
+{punch4.2} = sin({data_3} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm2_rotX} += ({rArm2_rotX} - ({punch3.1} * 1.2 + {punch3.2})) - 0.5{movement} + 0.6{spinning} - 110{flight}'
+{rArm2_rotY} += ({lowerArmsSwing} * 8.0)
+{rArm2_rotZ} += (sin({data_2} * pi) * -0.4) - 30{flight}'
+
+{lArm2_rotX} += ({lArm2_rotX} - ({punch4.1} * 1.2 + {punch4.2})) + 0.5{movement} - 0.6{spinning} - 110{flight}'
+{lArm2_rotY} -= ({lowerArmsSwing} * 8.0)
+{lArm2_rotZ} -= (sin({data_3} * pi) * -0.4) + 30{flight}'
+
+{rArm2_rotZ} += 0.025{idle} + 0.8{spinning}
+{lArm2_rotZ} -= 0.025{idle} + 0.8{spinning}
+
+
+{rArm_rotX} @ {shooting} -> - 1.2
+{rArm_rotY} @ {shooting} -> -0.7
+{lArm_rotX} @ {shooting} -> - 1.2
+{lArm_rotY} @ {shooting} -> 0.7
+
+{rArm2_rotX}  @ {shooting} -> -1.2
+{lArm2_rotX}  @ {shooting} -> -1.2
+{rArm2_rotY} @ {shooting} -> - 0.8
+{lArm2_rotY} @ {shooting} -> 0.8
+
+{rArm_rotX} @ {charging} -> 1
+{rArm_rotZ} @ {charging} -> 1
+{lArm_rotX} @ {charging} -> 1
+{lArm_rotZ} @ {charging} -> -1
+
+{rArm2_rotX}  @ {charging} -> 0.6
+{lArm2_rotX}  @ {charging} -> 0.6 
+{rArm2_rotZ} @ {charging} -> 0.8
+{lArm2_rotZ} @ {charging} -> -0.8
+
+;=====================================================================

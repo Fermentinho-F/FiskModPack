@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.sand_cloud.loop",
+  "condition": "entity.getData('sabri:dyn/drought_timer') == 0",
+  "override": "sabri:funcs/sandman_raimi_sand_cloud_loop",
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 15
+}

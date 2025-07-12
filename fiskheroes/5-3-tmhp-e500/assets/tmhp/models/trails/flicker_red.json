@@ -1,0 +1,10 @@
+{
+  "fade": 15,
+  "flicker": {
+    "color": 0xFF0000,
+    "density": 80,
+    "differ": 0.8,
+    "opacity": 1.0,
+    "confined": "true"
+  }
+}

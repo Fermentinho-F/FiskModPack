@@ -1,0 +1,8 @@
+{
+  "suit": "jmctheroes:kite_man",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier2_3",
+    "fiskheroes:flight"
+  ]
+}

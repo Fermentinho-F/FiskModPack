@@ -1,0 +1,126 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{loop} = sin(2pi{data_0})
+{punch} = {data_1}
+{sneak} = {data_2}
+{sprint} = 2{data_3}
+{shout} = {data_4}
+
+;Scream==========================================================
+{mouthTR_rotX} -= 38{shout}'
+{mouthTL_rotX} -= 38{shout}'
+{mouthTR_rotY} += 24{shout}'
+{mouthTL_rotY} -= 24{shout}'
+
+{mouthBR_rotX} += 38{shout}'
+{mouthBR2_rotX} += 38{shout}'
+{mouthBR_rotY} += 24{shout}'
+{mouthBR2_rotY} -= 24{shout}'
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8})-{sneak})
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+{lArm_rotX} = if({sprint} != 0, {lArm_rotX} - {sprint}({f7} * 1.2 + {f8})-{sneak}, {lArm_rotX})
+{lArm_rotY} -= {brY} * 2*{sprint}
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+;WalkingAnim==========================================================
+    {body_posZ} -= 8{sprint}{limbSwingAmount}
+    {limbSwing} = {limbSwing}/2.2
+    {movement} = sin({limbSwing})
+    {limbSwingAmount} = 0.6{limbSwingAmount}+{sneak}0.5
+    {rMov1} = min(animate2(if({movement}>= 0 && {movementPrev} <= {movement}, {movement}, 1), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {rMov2} = min(animate2(if({movement}>0 && {movementPrev} > {movement}, 1-{movement}, if({movement}>= 0 && {movementPrev} <= {movement}, 0 , 1)), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {rMov3} = min(animate2(if({movement}<0 && {movementPrev} > {movement}, -{movement}, if({movement}< 0 && {movementPrev} < {movement}, 1 , 0)), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {rMov4} = min(animate2(if({movement}<0 && {movementPrev} < {movement}, 1+{movement}, 0), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+
+        ;0.7 0.4 -0.6 0
+        ;0.3 -0.2 -0.2 0
+        ;0.2 -0.2 -0.2 0
+
+        ;How to animate second leg to have a cycle? Start with final value of where the 3rd frame would start (2nd frame end value) then just slap rest of anims with +2 frame value ez
+    {rLeg_rotX} -= 0.7{rMov1}-0.3{rMov2}-{rMov3} +0.6{rMov4}
+    {rLegLower_rotX} += 0.3{rMov1}-0.5{rMov2} + 0.2{rMov4}
+    {rLegLower2_rotX} -= 0.2{rMov1}-0.4{rMov2} +0.2{rMov4}
+
+
+    {lMov1} = min(animate2(if({movement}>= 0 && {movementPrev} <= {movement}, {movement}, 1), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {lMov2} = min(animate2(if({movement}>0 && {movementPrev} > {movement}, 1-{movement}, if({movement}>= 0 && {movementPrev} <= {movement}, 0 , 1)), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {lMov3} = min(animate2(if({movement}<0 && {movementPrev} > {movement}, -{movement}, if({movement}< 0 && {movementPrev} < {movement}, 1 , 0)), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+    {lMov4} = min(animate2(if({movement}<0 && {movementPrev} < {movement}, 1+{movement}, 0), 2, 0, 1.0, 0.0), 1)* {limbSwingAmount}
+
+    {lLeg_rotX} -= 0.4{limbSwingAmount}- {lMov1}+0.6{lMov2}+0.7{lMov3}-0.3{lMov4}
+    {lLegLower_rotX} += -0.2{limbSwingAmount} + 0.2{lMov2}+0.3{lMov3}-0.5{lMov4}
+    {lLegLower2_rotX} -= -0.2{limbSwingAmount} + 0.2{lMov2}+0.2{lMov3}-0.4{lMov4}
+
+    {body_rotY} += 0.2({rMov1}-{rMov2}-({rMov3}-{rMov4}))
+    {body_lower_rotY} -= 0.1({rMov1}-{rMov2}-({rMov3}-{rMov4}))
+    {head_rotY} -= 0.15({rMov1}-{rMov2}-({rMov3}-{rMov4}))
+
+    {rArm_rotX} += 0.2{movement}{limbSwingAmount}
+
+    {lArm_rotX} -= 0.2{movement}{limbSwingAmount}
+
+;sneak
+{head_rotX} -= 34{sneak}' +48{sprint}'{limbSwingAmount}
+{body_rotX} += 53{sneak}' +64{sprint}'{limbSwingAmount} + 0.1*{sprint}sin(pi{limbSwing}/2){limbSwingAmount}
+{body_lower_rotX} -= 23{sneak}' +22{sprint}'{limbSwingAmount}
+{lLeg_rotX} -= 52{sneak}'
+{lLeg_rotY} -= 5{sneak}'
+{lLeg_rotZ} -= 14{sneak}'
+{rLeg_rotY} += 5{sneak}'
+{rLeg_rotZ} += 14{sneak}'
+{lArm_rotX} -= 87{sneak}' +74{sprint}'sqrt({movement}^2){limbSwingAmount}
+{lArm_rotY} -= 34{sneak}'+22{sprint}'sqrt({movement}^2){limbSwingAmount}
+{rArm_rotX} -= 74{sprint}'sqrt({movement}^2){limbSwingAmount}
+{rArm_rotY} += 22{sprint}'sqrt({movement}^2){limbSwingAmount}
+{body_posY} += 10{sneak} + 7{sprint}{limbSwingAmount}
+;loops
+    {body_rotX} += 0.1sin(pi{data_0})
+    {body_lower_rotX} -= 0.1sin(pi{data_0})
+    {earR_rotX} +=  0.2sin(pi{data_0})
+    {earR_rotY} -=  0.2sin(pi{data_0})
+    {earL_rotX} +=  0.2sin(pi{data_0})
+    {earL_rotY} +=  0.2sin(pi{data_0})
+    {rArm_rotZ} +=  0.15sin(pi{data_0})
+    {rArmLower_rotX} -= 0.08sin(pi{data_0})
+    {lArm_rotZ} -=  0.15sin(pi{data_0})
+    {lArmLower_rotX} += 0.08sin(pi{data_0})
+
+    {rClaw1_rotZ} += 0.1sin(2pi{data_0})
+    {rClaw2_rotZ} -= 0.2sin(2pi{data_0})
+    {rClaw3_rotZ} -= 0.2sin(2pi{data_0})
+
+    {lClaw1_rotZ} -= 0.1sin(2pi{data_0})
+    {lClaw2_rotZ} += 0.2sin(2pi{data_0})
+    {lClaw3_rotZ} += 0.2sin(2pi{data_0})
+    ;TAIL
+    {tail1_rotY} += 0.5sin(pi2{data_0})
+    {tail2_rotY} += 0.5sin(pi2{data_0})
+    {tail4_rotY} -= 0.5sin(pi2{data_0})
+    {tail1_rotX} += 0.3sin(pi2{data_0})
+    {tail2_rotX} += 0.3sin(pi2{data_0})
+    {tail4_rotX} -= 0.3sin(pi2{data_0})
+;Just to make sure -> goes to end
+{movementPrev} = {movement}

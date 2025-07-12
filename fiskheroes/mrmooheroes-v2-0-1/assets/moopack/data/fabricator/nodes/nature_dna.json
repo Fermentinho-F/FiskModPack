@@ -1,0 +1,8 @@
+{
+  "suit": "moopack:nature_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:flight",
+    "moopack:dna_activators"
+  ]
+}

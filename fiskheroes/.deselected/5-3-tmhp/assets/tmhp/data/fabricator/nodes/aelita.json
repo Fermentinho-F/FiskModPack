@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:aelita",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal2",
+    "fiskheroes:ranged",
+    "tmhp:lyoko",
+    "tmhp:heropack2"
+  ]
+}

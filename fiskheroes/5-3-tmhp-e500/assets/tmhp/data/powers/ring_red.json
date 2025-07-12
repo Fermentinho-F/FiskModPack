@@ -1,0 +1,52 @@
+{
+  "name": "Rage",
+  "modifiers": {
+    "fiskheroes:transformation|hammer": {
+      "key": "HAMMER",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "timerData": "fiskheroes:dyn/steel_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.4,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.8
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_beam"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 50,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  }
+}

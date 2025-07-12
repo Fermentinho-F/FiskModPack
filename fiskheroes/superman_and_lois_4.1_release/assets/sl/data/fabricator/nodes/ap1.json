@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 1"
+    },
+    "description": {
+      "translate": "\u00A79Unlock the basic powers and abilities of your superhero."
+    },
+    "icon": {
+      "text": "\u00A7c1"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": true
+}

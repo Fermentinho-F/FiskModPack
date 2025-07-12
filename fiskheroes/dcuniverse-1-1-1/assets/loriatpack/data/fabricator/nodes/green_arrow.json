@@ -1,0 +1,8 @@
+{
+  "suit": "loriatpack:green_arrow",
+  "requirements": [
+    "fiskheroes:tier4_5",
+	"loriatpack:dc_universe",
+    "fiskheroes:archery"
+  ]
+}

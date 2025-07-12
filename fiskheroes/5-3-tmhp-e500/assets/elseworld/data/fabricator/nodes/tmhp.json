@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "\u00A7bThe Mucahid Heropack (Elseworlds)",
+    "description": "\u00A79Thanks for downloading TheMucahid HeroPack!",
+    "icon": {
+      "texture": "elseworld:textures/tmhp.png"
+    },
+    "isLevelable": false
+  },
+  "autoUnlock": false,
+  "requirements": ["tmhp:heropack", "tmhpr:heropack"]
+}

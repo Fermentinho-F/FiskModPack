@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": "Enhanced Swimming",
+    "description": "Simply known as 'walking' to Atlanteans",
+    "icon": {
+      "texture": "loriatpack:textures/gui/nodes/swiming.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:traversal2"
+  ],
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 20
+  }
+}

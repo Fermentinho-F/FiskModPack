@@ -1,0 +1,1035 @@
+{
+  "particles": [
+    {
+      "condition": "entity.getData('tmf:dyn/levelUp') != 0 && entity.getData('tmf:dyn/levelUp') != 1",
+      "type": "minecraft:happyVillager",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          0,
+          1,
+          0
+        ],
+        "fp": [
+          0,
+          0,
+          0
+        ]
+      },
+      "motion": [
+        0.0,
+        -0.35,
+        0.0
+      ],
+      "randOffset": [
+        1,
+        0.2,
+        1
+      ],
+      "randMotion": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flying') && !entity.getData('tmf:dyn/p_2')",
+      "type": "FLAME_BALL",
+      "anchor": "leftArm",
+      "amount": 6,
+      "offset": {
+        "tp": [
+          -1.0,
+          9.5,
+          0.0
+        ],
+        "fp": [
+          -8.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "mirror": "!entity.getData('fiskheroes:aiming')",
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flying') && !entity.getData('tmf:dyn/p_2')",
+      "type": "BIG_SMOKE",
+      "anchor": "leftArm",
+      "amount": 6,
+      "offset": {
+        "tp": [
+          -1.0,
+          9.5,
+          0.0
+        ],
+        "fp": [
+          -8.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        -0.35,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "mirror": "!entity.getData('fiskheroes:aiming')",
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('tmf:dyn/pt_4') != 0",
+      "type": "FLAME_BALL",
+      "anchor": "body",
+      "amount": 6,
+      "offset": {
+        "tp": [
+          0.0,
+          20.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "randOffset": [
+        1.5,
+        0.0,
+        1.5
+      ],
+      "randMotion": [
+        0.02,
+        0.02,
+        0.02
+      ],
+      "mirror": "!entity.getData('fiskheroes:aiming')",
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flight_timer') < 1 && entity.getData('fiskheroes:flying') && entity.getData('tmf:dyn/p_2')",
+      "type": "FLAME_BALL",
+      "anchor": "body",
+      "amount": 40,
+      "offset": {
+        "tp": [
+          -1.0,
+          24.5,
+          -4.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "randMotion": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flying') && entity.getData('tmf:dyn/p_2')",
+      "type": "FLAME_BALL",
+      "anchor": "body",
+      "amount": 8,
+      "offset": {
+        "tp": [
+          -1.0,
+          24.5,
+          -4.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        -0.3
+      ],
+      "randOffset": [
+        0.25,
+        0.0,
+        0.25
+      ],
+      "randMotion": [
+        0.15,
+        0.0,
+        0.15
+      ],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flying') && entity.getData('tmf:dyn/p_2')",
+      "type": "BIG_SMOKE",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          -1.0,
+          24.5,
+          -4.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        -0.15
+      ],
+      "randOffset": [
+        0.4,
+        0.1,
+        0.4
+      ],
+      "randMotion": [
+        0.2,
+        0.1,
+        0.2
+      ],
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('fiskheroes:flying') && entity.getData('tmf:dyn/p_2')",
+      "type": "minecraft:flame",
+      "anchor": "body",
+      "amount": 5,
+      "offset": {
+        "tp": [
+          -1.0,
+          18.5,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        -0.25
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && !firstPerson && entity.isInWater() && entity.getData('tmf:dyn/pc_5') == 0",
+      "type": "SMOKE",
+      "amount": 30,
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion": [
+        0.01,
+        0.1,
+        -0.01
+      ],
+      "randMotion": [
+        0.15,
+        0.2,
+        0.15
+      ]
+    },
+    {
+      "condition": "(entity.getData('tmf:dyn/transformed') == 0 || entity.getData('tmf:dyn/transformed') == 10) && entity.getData('fiskheroes:aiming') && entity.getData('tmf:dyn/pc_5') == 0",
+      "type": "FLAME_BALL",
+      "anchor": "rightArm",
+      "amount": 2,
+      "offset": {
+        "tp": [
+          -1.0,
+          11.5,
+          0.0
+        ],
+        "fp": [
+          4.0,
+          2.0,
+          -10.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "(entity.getData('tmf:dyn/transformed') == 0 || entity.getData('tmf:dyn/transformed') == 10) && entity.getData('fiskheroes:aiming') && entity.getData('tmf:dyn/pc_5') == 0",
+      "type": "minecraft:flame",
+      "anchor": "rightArm",
+      "amount": 3,
+      "offset": {
+        "tp": [
+          -1.0,
+          11.5,
+          0.0
+        ],
+        "fp": [
+          4.0,
+          2.0,
+          -12.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('tmf:dyn/pc_1') >= 0.8 && entity.getData('tmf:dyn/pc_1') != 1 && entity.getData('tmf:dyn/p_5')",
+      "type": "FLAME_BALL",
+      "anchor": "body",
+      "amount": 30,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "randMotion": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('tmf:dyn/pc_1') >= 0.6 && entity.getData('tmf:dyn/pc_1') != 1 && entity.getData('tmf:dyn/p_5')",
+      "type": "minecraft:flame",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('tmf:dyn/pc_1') >= 0.9 && entity.getData('tmf:dyn/pc_1') != 1 && entity.getData('tmf:dyn/p_5')",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 5,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 0 && entity.getData('tmf:dyn/pc_1') >= 0.85 && entity.getData('tmf:dyn/pc_1') <= 0.9 && entity.getData('tmf:dyn/p_5')",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 2,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        2.1,
+        2.1,
+        2.1
+      ],
+      "randMotion": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 3 && Math.sqrt(Math.pow(entity.motionInterpolated().x(),2) + Math.pow(entity.motionInterpolated().z(), 2)) > 1",
+      "type": "BIG_SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "motion": [
+        0,
+        0,
+        -0.5
+      ],
+      "randMotion": [
+        0.15,
+        0.2,
+        0.15
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 3 && entity.getData('tmf:dyn/pc_1') >= 0.5",
+      "type": "BIG_SMOKE",
+      "amount": 40,
+      "offset": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "motion": [
+        0,
+        0,
+        0
+      ],
+      "randMotion": [
+        0.3,
+        0.2,
+        0.4
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 3 && entity.getData('tmf:dyn/pc_1') >= 0.5",
+      "type": "SMOKE",
+      "amount": 20,
+      "offset": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "motion": [
+        0,
+        0,
+        0
+      ],
+      "randMotion": [
+        0.25,
+        0.25,
+        0.4
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 3 && !entity.getInterpolatedData('tmf:dyn/p_1') && entity.getData('fiskheroes:shooting_timer')",
+      "type": "BIG_SMOKE",
+      "anchor": "rightArm",
+      "amount": 3,
+      "offset": {
+        "tp": [
+          -4.0,
+          2.5,
+          0.0
+        ],
+        "fp": [
+          4.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.05,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.01,
+        0.0,
+        0.01
+      ],
+      "randMotion": [
+        0.05,
+        0.05,
+        0.05
+      ],
+      "mirror": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 3 && !entity.getInterpolatedData('tmf:dyn/p_1') && entity.getData('fiskheroes:shooting_timer')",
+      "type": "minecraft:crit",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": {
+        "tp": [
+          -6.0,
+          2.5,
+          0.0
+        ],
+        "fp": [
+          4.0,
+          8.0,
+          4.0
+        ]
+      },
+      "motion": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "mirror": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 5 && entity.getData('fiskheroes:dyn/superhero_landing_timer') != 0",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 2,
+      "randOffset": [
+        0.75,
+        0.6,
+        0.75
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 5 && entity.getData('fiskheroes:dyn/superhero_landing_timer') != 0",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 1,
+      "randOffset": [
+        0.2,
+        0.4,
+        0.2
+      ],
+      "mirror": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 7 && entity.getInterpolatedData('tmf:dyn/pt_3') != 0 && entity.getInterpolatedData('tmf:dyn/pt_3') != 1",
+      "type": "minecraft:bubble",
+      "anchor": "body",
+      "amount": 26,
+      "offset": {
+        "tp": [
+          0.0,
+          24.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          16.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        1,
+        0.0
+      ],
+      "randOffset": [
+        0.5,
+        0.05,
+        0.5
+      ],
+      "randMotion": [
+        0.05,
+        0.15,
+        0.05
+      ]
+    },
+    {
+      "condition": "!firstPerson && entity.getData('tmf:dyn/transformed') == 8 && entity.getData('fiskheroes:shooting_timer') && entity.getData('tmf:dyn/upgrade') == 'fiskheroes:masonry_oven' && entity.getData('tmf:dyn/pc_2') == 1",
+      "type": "FLAME_BALL",
+      "anchor": "body",
+      "amount": 2,
+      "offset": {
+        "tp": [
+          0.0,
+          7.0,
+          -24.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          -24.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "!firstPerson && entity.getData('tmf:dyn/transformed') == 8 && entity.getData('fiskheroes:shooting_timer') && entity.getData('tmf:dyn/upgrade') == 'fiskheroes:masonry_oven' && entity.getData('tmf:dyn/pc_2') == 1",
+      "type": "minecraft:flame",
+      "anchor": "body",
+      "amount": 3,
+      "offset": {
+        "tp": [
+          0.0,
+          7.5,
+          -24.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          -24.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "randOffset": [
+        0.05,
+        0.0,
+        0.05
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 8 && entity.getData('fiskheroes:beam_shooting_timer') && entity.getData('tmf:dyn/upgrade') == 'fiskheroes:masonry_oven'",
+      "type": "BIG_SMOKE",
+      "anchor": "body",
+      "amount": 5,
+      "offset": {
+        "tp": [
+          0.0,
+          7.0,
+          -8.0
+        ],
+        "fp": [
+          0.0,
+          3.0,
+          -8.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "randOffset": [
+        0.15,
+        0.0,
+        0.15
+      ],
+      "randMotion": [
+        0.15,
+        0.0,
+        0.15
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 8 && entity.getData('fiskheroes:beam_shooting_timer') && entity.getData('tmf:dyn/upgrade') == 'fiskheroes:masonry_oven'",
+      "type": "SMOKE",
+      "anchor": "body",
+      "amount": 5,
+      "offset": {
+        "tp": [
+          0.0,
+          7.0,
+          -8.0
+        ],
+        "fp": [
+          0.0,
+          3.0,
+          -8.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "randOffset": [
+        0.15,
+        0.0,
+        0.15
+      ],
+      "randMotion": [
+        0.15,
+        0.0,
+        0.15
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 5 && entity.getData('fiskheroes:heat_vision')",
+      "type": "SMOKE",
+      "amount": 5,
+      "offset": [
+        0.0,
+        0.8,
+        0.0
+      ],
+      "motion": [
+        0,
+        0,
+        0
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 5 && entity.getData('fiskheroes:heat_vision')",
+      "type": "BIG_SMOKE",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          0.0,
+          2.5,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          8.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.15,
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "condition": "!firstPerson && entity.getData('tmf:dyn/transformed') == 2 && entity.getData('tmf:dyn/p_1') && entity.getData('tmf:dyn/pc_2') > 0.2 && entity.getData('tmf:dyn/p_1') && entity.getData('tmf:dyn/pc_2') < 0.6",
+      "type": "minecraft:iconcrack_264_0",
+      "amount": 5,
+      "offset": [
+        0.0,
+        1.4,
+        0.0
+      ],
+      "randOffset": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "motion": [
+        0.0,
+        0.2,
+        0.1
+      ],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 10 && entity.getData('fiskheroes:beam_shooting_timer') != 0",
+      "type": "minecraft:bubble",
+      "anchor": "body",
+      "amount": 10,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "randMotion": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 10 && entity.getData('fiskheroes:beam_shooting_timer') != 0",
+      "type": "minecraft:flame",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 10 && entity.getData('fiskheroes:beam_shooting_timer') != 0",
+      "type": "minecraft:explode",
+      "anchor": "body",
+      "amount": 1,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "randMotion": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "lockFPYaw": false
+    },
+    {
+      "condition": "entity.getData('tmf:dyn/transformed') == 10 && entity.getData('fiskheroes:beam_shooting_timer') != 0",
+      "type": "minecraft:largeexplode",
+      "anchor": "body",
+      "amount": 1,
+      "offset": {
+        "tp": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fp": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "randOffset": [
+        2.1,
+        2.1,
+        2.1
+      ],
+      "randMotion": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "lockFPYaw": false
+    }
+  ]
+}

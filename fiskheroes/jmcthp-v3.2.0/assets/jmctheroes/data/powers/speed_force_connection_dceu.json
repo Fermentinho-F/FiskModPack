@@ -1,0 +1,19 @@
+{
+  "name": "Speed Force Connection",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+   
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.frost_breath_loop",
+  "condition": "fiskheroes:beam_shooting",
+  "loop": true,
+  "pitch": "1.2 - Math.random() * 0.3",
+  "fadeOut": 10,
+  "fadeIn": 10
+}

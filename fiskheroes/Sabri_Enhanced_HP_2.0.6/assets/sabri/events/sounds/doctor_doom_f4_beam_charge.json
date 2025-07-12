@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.doctor_doom_fantastic4.charged_beam.charge",
+  "condition": "fiskheroes:beam_charging",
+  "pitch": "1.1 - Math.random() * 0.2",
+  "fadeOut": 5
+}

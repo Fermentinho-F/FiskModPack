@@ -1,0 +1,34 @@
+{
+  "name": "Excalibur Magic",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 10000.0,
+        "regeneration": 6.0,
+        "recoveryDelay": 100,
+        "cooldown": 1
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.001,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

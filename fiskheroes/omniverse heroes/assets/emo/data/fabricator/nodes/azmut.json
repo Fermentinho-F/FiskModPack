@@ -1,0 +1,18 @@
+{
+  "display": {
+    "name": {
+      "translate": "Azmuth Tech"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/azmuth.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus",
+    "emo:alien"
+  ],
+  "price": {
+    "TUTRIDIUM": 20,
+    "XP_LEVELS": 10
+  }
+}

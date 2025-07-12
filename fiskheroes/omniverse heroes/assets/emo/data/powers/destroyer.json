@@ -1,0 +1,51 @@
+{
+  "name": "Destroyer Armor",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 17.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 20,
+      "duration": 40,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 0.4,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:manta_beam_start",
+        "SHOOT_STOP": "fiskheroes:manta_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:manta_beam_loop",
+        "CHARGE": "fiskheroes:manta_beam_charge"
+      }
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 3.0,
+      "cooldownTime": 40
+  },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

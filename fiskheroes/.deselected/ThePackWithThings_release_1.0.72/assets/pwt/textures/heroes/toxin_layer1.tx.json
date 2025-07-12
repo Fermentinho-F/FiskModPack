@@ -1,0 +1,13 @@
+{
+  "texture": "pwt:animation/toxin_red_<TIMER_RAGE>",
+  "getters": {
+	"TIMER_RAGE": {
+      "key": "entity.isDisplayStand() ? 0 : (Math.ceil(8 * entity.getInterpolatedData('pwt:dyn/ability_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 8
+      }
+
+    }
+  },  "isDynamic": true
+}

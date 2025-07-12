@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:groot",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee2"
+  ]
+}

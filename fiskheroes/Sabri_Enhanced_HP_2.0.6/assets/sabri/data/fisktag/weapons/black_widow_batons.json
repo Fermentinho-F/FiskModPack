@@ -1,0 +1,7 @@
+{
+  "name": "Black Widow's Batons",
+  "holdingPose": "DUAL",
+  "melee": {
+    "attackDamage": 4.5
+  }
+}

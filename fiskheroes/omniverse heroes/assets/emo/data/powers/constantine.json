@@ -1,0 +1,173 @@
+{
+  "name": "Magic",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 5,
+          "damageProfile": {
+            "damage": 6.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": -1
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 5.9,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": -1
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 2,
+          "pushPower": 1.0,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 10,
+          "duration": 400,
+          "range": 24.0
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.16,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:firestorm_flight_enable", "fiskheroes:firestorm_flight_loop"],
+        "BOOST": "fiskheroes:firestorm_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 9,
+      "duration": 40,
+      "cooldownTime": 9,
+      "range": 32.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "CHARGE": "fiskheroes:mysterio_charged_beam_charge",
+        "SHOOT": "fiskheroes:mysterio_charged_beam_start",
+        "SHOOT_STOP": ["fiskheroes:mysterio_charged_beam_stop1", "fiskheroes:mysterio_charged_beam_stop2"],
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 42.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 100,
+        "cooldown": 2
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+  },
+  "fiskheroes:flame_blast": {
+    "damageProfile": {
+      "damage": 9.0,
+      "types": {
+        "FIRE": -1
+      },
+      "properties": {
+        "COOK_ENTITY": true,
+        "HEAT_TRANSFER": 160,
+        "IGNITE": 2
+      }
+    },
+    "range": 10.0
+  },
+  "fiskheroes:blade": {
+    }
+  }
+}

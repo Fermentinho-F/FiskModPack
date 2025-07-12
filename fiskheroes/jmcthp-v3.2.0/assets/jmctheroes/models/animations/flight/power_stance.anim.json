@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "jmctheroes:flight/power_stance"
+  ]
+}

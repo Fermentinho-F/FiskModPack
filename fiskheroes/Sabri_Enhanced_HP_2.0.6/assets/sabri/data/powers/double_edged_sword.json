@@ -1,0 +1,8 @@
+{
+  "name": "Double-Edged Sword",
+  "modifiers": {
+    "fiskheroes:flight": {
+      "speed": 0.1
+    }
+  }
+}

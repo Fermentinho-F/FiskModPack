@@ -1,0 +1,9 @@
+{
+  "suit": "shadows:hue_man",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:ranged2",
+    "fiskheroes:teleportation",
+    "shadows:shadow00dev"
+  ]
+}

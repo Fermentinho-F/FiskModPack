@@ -1,0 +1,57 @@
+{data_0} = {data_0}
+{data_1} = curve{data_1}*(1-{data_0})
+{data_2} = {data_2}
+
+{x1} = sin(4pi{data_0})
+{x2} = sin(4pi{data_0})
+
+{y1} = sin(100pi{data_2})
+{y2} = sin(40pi{data_2})
+{y3} = sin(50pi{data_2})
+{y4} = sin(60pi{data_2})
+
+{body_posX} += 2{x1}
+
+{body_rotY} += 15'{x2}
+
+{neck_1_rotY} += 15'{x2}
+
+{neck_2_rotY} -= 15'{x2}
+
+{head_base_rotY} -= 15'{x2}
+
+{tail_1_rotY} -= 25'{x2}
+
+{rattle_1_rotY} -= 15'{x2}
+
+{rattle_1_rotX} -= 1'{y1}
+{rattle_1_rotY} += 1'{y1}
+{rattle_2_rotX} += 3'{y2}
+{rattle_2_rotY} -= 3'{y2}
+
+{rattle_3_rotX} -= 3'{y2}
+{rattle_3_rotY} += 3'{y2}
+
+{rattle_4_rotX} += 3'{y2}
+{rattle_4_rotY} -= 3'{y2}
+
+{body_rotY} += 95'{data_1}
+
+{neck_1_rotX} -= 15'{data_1}
+{neck_1_rotY} -= 45'{data_1}
+
+{neck_2_rotX} -= 35'{data_1}+(-0.4{lookY})
+{neck_2_rotY} -= 30'{data_1}+0.4({lookZ}{lookX})
+
+;{head_base_rotX} += 50'{data_1}
+;{head_base_rotY} -= 30'{data_1}
+{head_base_rotZ} -= 45'{data_1}
+
+{tail_1_rotY} += 50'{data_1}
+
+{rattle_1_rotX} += 60'{data_1}
+{rattle_1_rotY} += 40'{data_1}
+
+{head_base_rotX} = (50'+(-{lookY})){data_1}
+
+{head_base_rotZ} = {lookZ}{lookX}{data_1}

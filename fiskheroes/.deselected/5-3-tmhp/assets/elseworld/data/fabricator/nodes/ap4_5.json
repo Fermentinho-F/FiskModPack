@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7cAttack Potential 4-5"
+    },
+    "description": {
+      "translate": "\u00A79Suits that can deal damage between 10-15."
+    },
+    "icon": {
+      "text": "\u00A7c4-5"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "elseworld:ap2_3" ],
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "bow": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Tachyon Battery"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:tachyon_battery'"
+      }
+    }
+  }
+}

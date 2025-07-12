@@ -1,0 +1,9 @@
+{data_0} = curve {data_0}
+{data_0} = 1 - {data_0}
+
+{Flying8Ball_posX} += 24*{data_0}
+{Flying8Ball_posY} += 16*{data_0}
+{Flying8Ball_posZ} += 32*{data_0}
+{Flying8BallO_posX} += 24*{data_0}
+{Flying8BallO_posY} += 16*{data_0}
+{Flying8BallO_posZ} += 32*{data_0}

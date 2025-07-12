@@ -1,0 +1,17 @@
+{
+    "suit": "pwt:carnage",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:traversal2",
+        "fiskheroes:defense2",
+        "fiskheroes:melee2",
+        "fiskheroes:ranged2",
+		"fiskheroes:regeneration2",
+		"fiskheroes:object_manipulation",
+        "pwt:symbiotic_life_form",
+		"pwt:venom"
+    ],
+    "display": {
+    "description": "Let There Be ..."
+    }
+}

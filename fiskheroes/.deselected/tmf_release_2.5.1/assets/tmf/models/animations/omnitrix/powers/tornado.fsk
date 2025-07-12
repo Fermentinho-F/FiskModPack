@@ -1,0 +1,7 @@
+{shape1_rotX} += 2'sin(2*pi*{data_0})
+{shape1_rotY} += 360'*{data_0}
+{shape1_rotZ} += 2'sin(2*pi*{data_0})
+
+{shape2_rotX} += 3'cos(2*pi*{data_1})
+{shape2_rotY} += 360'*{data_1}
+{shape2_rotZ} += 3'cos(2*pi*{data_1})

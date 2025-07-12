@@ -1,0 +1,147 @@
+{
+  "name": "Limitless",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "LIMITLESS",
+      "transformation": {
+        "toggleData": "jjkp:dyn/limitless",
+        "timerData": "jjkp:dyn/limitless_timer",
+        "time": 4
+      },
+                  "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jjkp:dyn/limitless",
+        "cooldownData": "jjkp:dyn/limitless_cooldown",
+        "duration": 10000,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:damage_immunity|cursed": {
+      "damageType": "CURSED"
+    },
+    "fiskheroes:damage_immunity|sharp": {
+      "damageType": "SHARP"
+    },
+    "fiskheroes:damage_immunity|blunt": {
+      "damageType": "BLUNT"
+    },
+    "fiskheroes:damage_immunity|energy": {
+      "damageType": "ENERGY"
+    },
+    "fiskheroes:damage_immunity|electricity": {
+      "damageType": "ELECTRICITY"
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_immunity|magic": {
+      "damageType": "MAGIC"
+    },
+    "fiskheroes:damage_immunity|shuriken": {
+      "damageType": "SHURIKEN"
+    },
+    "fiskheroes:damage_immunity|sound": {
+      "damageType": "SOUND"
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither", "minecraft:slowness", "minecraft:weakness"]
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "CANCEL",
+      "factor": 15.0
+    },
+    "fiskheroes:energy_projection": {
+      "knockback": 5.0,
+      "damageProfile": {
+        "damage": 0.5,
+        "types": {
+          "CURSED": 9.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.0
+        }
+      },
+      "range": 64.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:cosmic_beam"
+      }
+    },
+    "fiskheroes:cooldown|energy_projection": {
+      "cooldown": {
+        "toggleData": "fiskheroes:energy_projection",
+        "cooldownData": "jjkp:dyn/space_manip_cooldown",
+        "duration": 10,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": ""
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": false,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": [],
+        "SPRINT": [],
+        "STOP": []
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/space_manip_bar.png",
+      "data": "jjkp:dyn/space_manip_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/limitless_bar.png",
+      "data": "jjkp:dyn/limitless_cooldown"
+    }
+  ]
+}

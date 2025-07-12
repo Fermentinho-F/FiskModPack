@@ -1,0 +1,13 @@
+{
+  "display": {
+    "name":  "The Armory",
+    "description": "Includes suits from Iron Man: Armored Adventures",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/theArmory.png"
+    }
+  },
+  "requirements": [
+    "tmf:tmf"
+  ],
+  "autoUnlock": true
+}

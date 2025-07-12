@@ -1,0 +1,231 @@
+{
+  "name": "Sabri Enhanced Heropack",
+  "description": "\u00A7bv2.0.4 \u00A78- \u00A77Made by \u00A73SSabri \u00A79discord.gg/t5Hs8w2Smj",
+  "domain": "sabri",
+  "packFormat": 1,
+  "watermark": "&b&lSabri Enhanced",
+  "sounds": {
+    "download": {
+      "repository": "Sqbri/Sabri-Enhanced-Heropack",
+      "version": 0
+    },
+    "range": {
+      "black_widow_bite_enable": 20.0,
+      "black_widow_bite_disable": 20.0,
+      "black_widow_bite_shoot": 28.0,
+      "cyclops_xmen_button_click": 8.0,
+      "cyclops_xmen_chaos_blast_stop": { "distance": 52.0, "target": "ALL" },
+      "cyclops_xmen_chaos_blast": { "distance": 52.0, "target": "ALL" },
+      "cyclops_xmen_optic_blast_loop": { "distance": 48.0, "target": "ALL" },
+      "cyclops_xmen_optic_blast_start": { "distance": 48.0, "target": "ALL" },
+      "cyclops_xmen_optic_blast_stop": { "distance": 48.0, "target": "ALL" },
+      "cyclops_xmen_optic_shot_shoot": { "distance": 48.0, "target": "ALL" },
+      "doctor_doom_comics_beam_charge": { "distance": 24.0, "target": "ALL" },
+      "doctor_doom_comics_beam_loop": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_comics_beam_shoot": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_comics_beam_stop": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_comics_forcefield_deflect": { "target": "ALL" },
+      "doctor_doom_comics_forcefield_disarm": { "target": "ALL" },
+      "doctor_doom_comics_forcefield_loop": { "target": "ALL" },
+      "doctor_doom_comics_forcefield_start": { "target": "ALL" },
+      "doctor_doom_comics_telekinesis_grab": { "target": "ALL" },
+      "doctor_doom_comics_telekinesis_loop": { "target": "ALL" },
+      "doctor_doom_comics_telekinesis_release": { "target": "ALL" },
+      "doctor_doom_f4_beam_charge": { "distance": 24.0, "target": "ALL" },
+      "doctor_doom_f4_beam_loop": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_f4_beam_shoot": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_f4_beam_stop": { "distance": 32.0, "target": "ALL" },
+      "doctor_doom_f4_lightning_shoot": { "distance": 64.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_ambient": { "distance": 24.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_blast": { "distance": 48.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_charge": { "distance": 24.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_loop": { "distance": 32.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_shoot": { "distance": 32.0, "target": "ALL" },
+      "kang_the_conqueror_energy_proj_stop": { "distance": 32.0, "target": "ALL" },
+      "kang_the_conqueror_forcefield_deflect": { "target": "ALL" },
+      "kang_the_conqueror_forcefield_disarm": { "target": "ALL" },
+      "kang_the_conqueror_forcefield_loop": { "target": "ALL" },
+      "kang_the_conqueror_platform_loop": 48.0,
+      "kang_the_conqueror_platform_summon": 48.0,
+      "kang_the_conqueror_platform_unsummon": 48.0,
+      "kang_the_conqueror_telekinesis_grab": { "target": "ALL" },
+      "kang_the_conqueror_telekinesis_loop": { "target": "ALL" },
+      "kang_the_conqueror_telekinesis_release": { "target": "ALL" },
+      "mjolnir_hit": 24.0,
+      "mjolnir_lightning_charged_beam_loop": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_lightning_charged_beam_shoot": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_lightning_charged_beam_stop": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_lightning_flicker": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_lightning_hit": 32.0,
+      "mjolnir_spin_loop": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_throw_loop": { "distance": 32.0, "target": "ALL" },
+      "mjolnir_throw": { "distance": 32.0, "target": "ALL" },
+      "namor_flight_wings_loop": { "distance": 48.0, "target": "ALL" },
+      "sandman_raimi_giant_mode_grow": 52.0,
+      "sandman_raimi_giant_mode_loop": 52.0,
+      "sandman_raimi_giant_mode_shrink": 52.0,
+      "sandman_raimi_hit_default": 8.0,
+      "sandman_raimi_hit": 12.0,
+      "sandman_raimi_hurt": 8.0,
+      "sandman_raimi_mud_land": 12.0,
+      "sandman_raimi_mud_puddle_disable": 12.0,
+      "sandman_raimi_mud_puddle_enable": 12.0,
+      "sandman_raimi_recharge": { "target": "ALL" },
+      "sandman_raimi_sand_cloud_enable": { "distance": 24.0, "target": "ALL" },
+      "sandman_raimi_sand_cloud_loop": { "distance": 24.0, "target": "ALL" },
+      "sandman_raimi_sand_disable": { "distance": 20.0, "target": "ALL" },
+      "sandman_raimi_sand_enable": { "distance": 20.0, "target": "ALL" },
+      "sandman_raimi_shield_deflect": 16.0,
+      "sandman_raimi_shield_disarm": 20.0,
+      "sandman_raimi_shield_start": 32.0,
+      "sandman_raimi_shield_stop_loop": 28.0,
+      "sandman_raimi_shield_stop": 28.0,
+      "silver_surfer_cosmic_energy_blast": { "distance": 48.0, "target": "ALL" },
+      "silver_surfer_cosmic_energy_charge": { "distance": 40.0, "target": "ALL" },
+      "silver_surfer_cosmic_energy_loop": { "distance": 40.0, "target": "ALL" },
+      "silver_surfer_intang_off": { "distance": 24.0, "target": "ALL" },
+      "silver_surfer_intang_on": { "distance": 24.0, "target": "ALL" },
+      "silver_surfer_surfboard_loop": { "distance": 48.0, "target": "ALL" },
+      "silver_surfer_surfboard_summon": { "distance": 48.0, "target": "ALL" },
+      "silver_surfer_surfboard_unsummon": { "distance": 48.0, "target": "ALL" },
+      "super_speed_sprint_quicksilver_xmen": 64.0,
+      "sweet_dreams_quicksilver_xmen": {  "target": "ONLY_SELF" },
+      "thor_flight_disable": { "distance": 32.0, "target": "ALL" },
+      "thor_flight_enable": { "distance": 32.0, "target": "ALL" },
+      "thor_lightning_shoot": { "distance": 64.0, "target": "ALL" },
+      "thor_lightning_transformation": { "distance": 128.0, "target": "ALL" },
+      "thor_lightning_super_leap": { "distance": 64.0, "target": "ALL" },
+      "wolverine_xmen_slash": 24.0
+    }
+  },
+  "dataVars": {
+    "flight_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "visor_cooldown": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "teleport": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "teleport_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "superhero_landing_ticks": "BYTE",
+    "superhero_landing_timer": "FLOAT_INTERP",
+    "random": { "type": "INTEGER", "resetWithoutSuit": true },
+    "vibranium_nanites": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "vibranium_nanite_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "vibranium_nanite_cooldown": "FLOAT",
+    "kinetic_energy": { "type": "INTEGER", "resetWithoutSuit": true },
+    "kinetic_energy_pulse": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "kinetic_energy_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "kinetic_energy_effect": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "dry": "BOOLEAN",
+    "drought_timer": "FLOAT_INTERP",
+    "in_water": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "sneak_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "aiming": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "aiming_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "grapple": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "grapple_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "grapple_cooldown": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "baton_change": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "baton_timer":{ "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "baton_cooldown": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+
+    "leap": { "type": "BOOLEAN", "resetWithoutSuit": true },
+	  "leap_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "leap_cooldown": "FLOAT_INTERP",
+    "mjolnir_leap": { "type": "BOOLEAN", "resetWithoutSuit": true },
+	  "mjolnir_leap_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "mjolnir_leap_cooldown": "FLOAT_INTERP",
+
+    "shield_blocking_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "sprint_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "roll": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "roll_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "weapon_cycle": { "type": "BYTE", "resetWithoutSuit": true },
+    "weapon_cycle_cooldown": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "sand": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "sand_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "sand_cooldown": "FLOAT",
+    "sand_castle": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "sand_castle_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "fist_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "hammer_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "mace_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "kang_boost_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "single": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "dual": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "single_hit": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "dual_hit": { "type": "FLOAT_INTERP", "resetWithoutSuit": true }
+  },
+  "damageTypes": {
+    "ADAMANTIUM": "Adamantium"
+  },
+  "alts": {
+    "sabri:quicksilver_xmen": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      },
+      "mcu": {
+        "name": "MCU",
+        "maskToggleTicks": 16,
+        "armor": {
+          "HELMET": "item.superhero_armor.piece.hair",
+          "CHESTPLATE": "Shirt"
+        }
+      }
+    },
+    "sabri:wolverine_xmen": {
+      "driver": {
+        "name": "Driver",
+        "armor": {
+          "CHESTPLATE": "item.superhero_armor.piece.jacket",
+          "BOOTS": "item.superhero_armor.piece.shoes"
+        }
+      },
+      "jacket": {
+        "name": "Jacket",
+        "armor": {
+          "CHESTPLATE": "item.superhero_armor.piece.jacket",
+          "BOOTS": "item.superhero_armor.piece.shoes"
+        }
+      },
+      "tanktop": {
+        "name": "Tanktop",
+        "armor": {
+          "CHESTPLATE": "Tanktop",
+          "BOOTS": "item.superhero_armor.piece.shoes"
+        }
+      }
+    },
+    "sabri:cyclops_xmen": {
+    "$DEFAULT": {
+      "maskToggleTicks": 12
+      }
+    },
+    "sabri:thor": {
+      "$DEFAULT": {
+        "name": "Avengers",
+        "maskToggleTicks": 16
+        },
+      "avengers_sleeveless": {
+        "name": "Avengers (Sleeveless)",
+        "maskToggleTicks": 16
+      },
+      "avengers_sleeve_capeless": {
+        "name": "Avengers (Sleeve- & Capeless)",
+        "maskToggleTicks": 16
+      },
+      "roadworn": {
+        "name": "Roadworn",
+        "maskToggleTicks": 16,
+        "armor": {
+          "CHESTPLATE": "item.superhero_armor.piece.chestpiece",
+          "LEGGINGS": "item.superhero_armor.piece.pants"
+        }
+      }
+    }
+  },
+  "remap": {
+    "sehp:cyclops": "sabri:cyclops_xmen",
+    "sehp:doctor_doom": "sabri:doctor_doom_f4",
+    "sehp:kang_the_conqueror": "sabri:kang_the_conqueror",
+    "sehp:thanos": "sabri:thanos",
+    "sehp:wolverine": "sabri:wolverine_xmen"
+  }
+}

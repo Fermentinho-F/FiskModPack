@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.im_peter_griffin",
+  "condition": {
+    "start": "entity.getWornChestplate().suitType() == 'sl:peter_griffin'",
+    "continue": "entity.isWearingFullSuit() && (entity.getWornChestplate().suitType() == 'sl:peter_griffin')"
+  },
+  "volume": 1.0
+}

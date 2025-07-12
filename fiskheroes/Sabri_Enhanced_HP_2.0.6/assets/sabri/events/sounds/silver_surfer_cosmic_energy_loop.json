@@ -1,0 +1,9 @@
+{
+  "sound": "sabri:suit.silver_surfer_fantastic4.cosmic_energy.loop",
+  "condition": "fiskheroes:aiming",
+  "volume": "0.25 * entity.getData('fiskheroes:aiming_timer')",
+  "loop": true,
+  "delay": 15,
+  "fadeIn": 10,
+  "fadeOut": 20
+}

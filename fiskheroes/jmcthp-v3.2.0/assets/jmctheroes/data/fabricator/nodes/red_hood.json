@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:red_hood",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:object_manipulation"
+  ]
+}

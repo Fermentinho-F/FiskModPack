@@ -1,0 +1,10 @@
+{
+  "particles": [
+	{
+      "type": "MYSTERIO_SMOKE",
+      "amount": 5,
+      "randOffset": [-0.1, -0.1, 0.2],
+	  "randMotion": [0.2, 0.2, -0.2]
+    }
+  ]
+}

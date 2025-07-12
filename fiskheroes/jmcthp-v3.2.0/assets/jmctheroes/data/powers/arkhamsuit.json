@@ -1,0 +1,47 @@
+{
+  "name": "Arkham Knight's Suit",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 30,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 200,
+          "uses": 2
+        },
+        "fiskheroes:grenade": {
+          "cooldown": 170,
+          "uses": 1,
+          "damageProfile": {
+            "damage": 30.0,
+            "types": {
+              "EXPLOSION": 1.0
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 50,
+          "radius": 8.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    }
+  }
+}

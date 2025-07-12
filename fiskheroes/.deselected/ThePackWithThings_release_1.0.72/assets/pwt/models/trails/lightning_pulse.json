@@ -1,0 +1,14 @@
+{
+  "parent": "fiskheroes:velocity_nine",
+  "constants": {
+    "COLOR":0x0059FF
+	},
+  "lightning": {
+
+    "color": 0x0059FF,
+    "density": 30,
+    "differ": 0.4,
+    "opacity": 0.9
+
+  }
+}

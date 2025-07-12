@@ -1,0 +1,49 @@
+{
+  "name": "Tesla gun",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 12,
+  "damage": 2,
+  "activation": {
+    "type": "PRECHARGED",
+    "chargeTime": 12,
+    "moveSlowdown": 0.2
+  },
+  "fisktag": {
+    "sprintShootDelay": 6
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "sneakingFactor": 0.7
+  },
+  "recoil": {
+    "amount": 0.75,
+    "cameraShake": -2.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.0,
+      "range": 32.0,
+      "speed": 256.0,
+      "trail": 6,
+      "hitRadius": 0.3,
+      "impact": {
+        "type": "ARC",
+        "range": 2.5,
+        "rangeOnHit": 8.0,
+        "speed": 6.0,
+        "trail": 4,
+        "maxArcs": 10,
+        "piercing": true
+      }
+    }
+  ],
+  "soundEvents": {
+    "CHARGED": "fisktag:tesla_gun_charged",
+    "SHOOT": "fisktag:tesla_gun_shoot",
+    "START": ["fisktag:tesla_gun_start", "fisktag:tesla_gun_start_loop", "fisktag:tesla_gun_started"]
+  }
+}

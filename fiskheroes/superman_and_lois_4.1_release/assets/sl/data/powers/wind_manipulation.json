@@ -1,0 +1,47 @@
+{
+	"name": "Wind Manipulation",
+	"modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.02,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 1,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "sl:leap",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "sl:whoosh",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "isToggle": true,
+      "damageProfile": {
+          "damage": 4,
+          "properties": {
+              "HIT_COOLDOWN": 10,
+              "ADD_KNOCKBACK": 1
+            }
+      },
+      "chargeTime": 15,
+      "duration": 120,
+      "cooldownTime": 35,
+      "canDoGriefing": false,
+      "range": 20.0,
+      "radius": 2.0,
+      "soundEvents": {
+        "SHOOT": ["sl:tornado_arms", "sl:wind_loop"]
+      }
+    }
+  }
+}

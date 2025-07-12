@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:powerplex",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged3",
+    "moopack:advanced_technology"
+  ]
+}

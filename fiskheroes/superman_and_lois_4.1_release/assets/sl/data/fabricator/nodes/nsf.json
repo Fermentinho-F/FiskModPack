@@ -1,0 +1,21 @@
+{
+  "display": {
+    "name": {
+      "translate": "Negative Speed Force"
+    },
+    "icon": {
+      "texture": "sl:textures/gui/nodes/negative_speed_force.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee",
+    "fiskheroes:intangibility"
+  ],
+  "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 25
+  }
+}

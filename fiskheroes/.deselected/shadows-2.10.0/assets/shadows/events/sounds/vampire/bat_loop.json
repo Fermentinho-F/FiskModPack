@@ -1,0 +1,11 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:vampire.bat.loop",
+    "condition": "fiskheroes:flying",
+    "volume": 0.01,
+    "pitch": "1",
+    "loop": true,
+    "fadeIn": 4,
+    "fadeOut": 4
+  }
+  

@@ -1,0 +1,14 @@
+{
+  "suit": "jmctheroes:bizarro",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:red_hood",
+    "fiskheroes:tier8_9",
+    "jmctheroes:krypton",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:flight"
+  ]
+}

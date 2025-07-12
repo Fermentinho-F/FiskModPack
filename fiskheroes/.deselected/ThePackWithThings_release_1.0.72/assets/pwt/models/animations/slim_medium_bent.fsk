@@ -1,0 +1,21 @@
+;{data2} = 2.71828^({data}-({data}-0.6)^4*(64)^1.35 -0.75)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.3)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.25)
+
+
+
+
+{lower_rotX} @ {data} -> (pi/180)*10.0
+{lower_overlay_rotX} @ {data} -> (pi/180)*10.0
+{lower_posZ} @ {data} -> -0.70
+{lower_overlay_posZ} @ {data} -> -0.70
+{lower_posY} @ {data} -> 6.0
+{lower_overlay_posY} @ {data} -> 6.0
+
+
+{upper_rotX} @ {data} -> (pi/180)*18.0
+{upper_overlay_rotX} @ {data} -> (pi/180)*18.0
+{upper_posZ} @ {data} -> -2.5
+{upper_overlay_posZ} @ {data} -> -2.5
+{upper_posY} @ {data} -> -0.5
+{upper_overlay_posY} @ {data} -> -0.5

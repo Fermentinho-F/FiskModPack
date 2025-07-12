@@ -1,0 +1,2 @@
+{blade_posY} += 12*{data}
+{blade_posZ} += -0.5*{data}

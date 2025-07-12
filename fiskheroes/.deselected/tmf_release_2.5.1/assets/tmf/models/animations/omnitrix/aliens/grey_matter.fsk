@@ -1,0 +1,51 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;TABULA FILE
+
+{sneak} = {data_0}
+{idle} = sin(2pi{data_1})
+{punch} = {data_2}
+{pepsi} = curve min(animate2({data_3}, 2, 0, 0.2, 0), 1)
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{data_4} = curve min(animate2({data_4}, 0.97, 0, 0.1, 0.2), 1)
+{visionHold} = {data_5} 
+
+{head_rotX} -= ({lookY} + {idle}' + 10'{sneak}) * (1-{data_3}) + 6*sin(pi*4*{data_3})'
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})' * (1-{data_3}) + 3*sin(pi*4*{data_3})'
+
+{punch1} = (1-{punch})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({punch} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({rArm_rotX} - ({punch1.1} * 1.2 + {punch1.2})) * (1-{pepsi})
+{rArm_rotY} += {body_chest_rotY} * 8.0
+{rArm_rotZ} += (sin({punch} * pi) * -0.4)
+
+{body_rotX} += 20'{sneak}
+{rLeg_rotX} -= 20'{sneak} + 0.3{movement}
+{lLeg_rotX} -= 20'{sneak} - 0.3{movement}
+
+{rArm_rotX} += 0.3{movement} * (1-{pepsi}-{visionHold}) - 75'{pepsi} - 165'{visionHold}
+{rArm_rotZ} += 3'{idle} - 17'{visionHold}
+
+{lArm_rotX} -= 0.3{movement} * (1-{pepsi}-{visionHold}) + 75'{pepsi} + 170'{visionHold}
+{lArm_rotZ} -= 3'{idle} - 17'{visionHold}
+
+{eyes1_posX} -= 0.1{data_4}
+{eyes1_posY} += 0.3{data_4}
+{eyes2_posX} += 0.1{data_4}
+{eyes2_posY} += 0.3{data_4}
+{eyes3_posX} -= 0.1{data_4}
+{eyes3_posY} -= 0.3{data_4}
+{eyes4_posX} += 0.1{data_4}
+{eyes4_posY} -= 0.3{data_4}
+
+{eyes5_posX} -= 0.1{data_4}
+{eyes5_posY} += 0.3{data_4}
+{eyes6_posX} += 0.1{data_4}
+{eyes6_posY} += 0.3{data_4}
+{eyes7_posX} -= 0.1{data_4}
+{eyes7_posY} -= 0.3{data_4}
+{eyes8_posX} += 0.1{data_4}
+{eyes8_posY} -= 0.3{data_4}

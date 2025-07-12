@@ -1,0 +1,7 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "sabri:flight/hover/silver_surfer_f4",
+    "sabri:flight/boost/silver_surfer_f4"
+  ]
+}

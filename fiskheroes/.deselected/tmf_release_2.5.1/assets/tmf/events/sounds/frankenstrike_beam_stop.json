@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:frankenstrike.beam.end",
+  "volume": 0.45,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

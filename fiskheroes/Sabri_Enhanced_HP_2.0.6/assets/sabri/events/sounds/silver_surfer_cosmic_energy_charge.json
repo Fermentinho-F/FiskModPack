@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.silver_surfer_fantastic4.cosmic_energy.charge",
+  "pitch": "1.1 - Math.random() * 0.2",
+  "volume": 0.25,
+  "fadeOut": 5
+}

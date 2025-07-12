@@ -1,0 +1,76 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -5.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -7.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -9.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -11.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -13.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -15.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -17.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -19.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    },
+    {
+      "type": "minecraft:smoke",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": [1.0, 6.6, -21.0],
+      "motion": [0.0, 0.01, 0.0],
+      "condition": "!firstPerson"
+    }
+  ]
+}

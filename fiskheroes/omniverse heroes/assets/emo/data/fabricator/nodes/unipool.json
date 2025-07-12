@@ -1,0 +1,13 @@
+{
+  "suit": "emo:unipool",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:cosmic",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "emo:cadmus"
+  ]
+}

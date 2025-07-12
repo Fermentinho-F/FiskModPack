@@ -1,0 +1,4 @@
+{data} = curve({data})
+{rightArm_rotX} -= (10'{rightArm_rotX}){data}
+{rightArm_rotY} -= (185'{rightArm_rotY}){data}
+{rightArm_rotZ} -= (60'{rightArm_rotX}+10'{rightArm_rotY}){data}

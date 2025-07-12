@@ -1,0 +1,12 @@
+{
+  "name": "Excalibur",
+  "permission": "USE_EXCALIBUR",
+  "holdingPose": "SINGLE",
+  "cooldown": 1,
+  "damageProfile": {
+    "damage": 2.75,
+    "types": {
+      "EXPLOSION": 1.2
+    }
+  }
+}

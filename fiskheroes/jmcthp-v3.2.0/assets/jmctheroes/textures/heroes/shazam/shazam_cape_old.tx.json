@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:shazam/shazam_cape_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "entity.isDisplayStand() ? 2 : (Math.ceil(2 * entity.getInterpolatedData('jmctheroes:dyn/shazam_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 2
+      }
+    }
+  }
+}

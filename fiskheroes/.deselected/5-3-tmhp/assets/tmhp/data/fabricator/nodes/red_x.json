@@ -1,0 +1,19 @@
+{
+  "suit": "tmhp:red_x",
+  "display": {
+  "description": "\u00A7cKid, \u00A70you are taking life \u00A7lway \u00A70too seriously."
+  },
+  "requirements": [
+    "tmhp:robin",
+    "tmhp:teen_titans",
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:traversal",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:teleportation",
+    "tmhp:heropack2"
+  ]
+}

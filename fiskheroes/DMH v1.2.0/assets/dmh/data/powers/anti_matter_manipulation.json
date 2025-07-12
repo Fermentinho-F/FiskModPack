@@ -1,0 +1,79 @@
+{
+  "name": "Anti-Matter Manipulation",
+  "modifiers": {
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:energy_projection"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 14.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.0,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start"
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 0.0,
+        "types": {
+          "COSMIC": 1.0,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.0
+        }
+      },
+      "chargeTime": 30,
+      "cooldownTime": 100,
+      "range": 0.0,
+      "radius": 0.0
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 400.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    }
+  }
+}

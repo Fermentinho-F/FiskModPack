@@ -1,0 +1,11 @@
+{
+  "suit": "emo:lex",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:cosmic",
+    "emo:cadmus"
+  ]
+}

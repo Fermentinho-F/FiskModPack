@@ -1,0 +1,31 @@
+
+{body_rotX} =0.3
+{body_rotY} = 0
+{body_rotZ} = 0
+
+{body_posY} = 2
+
+{head_posY} = 2
+
+{leftLeg_rotX} = 0
+{leftLeg_rotY} = 0
+{leftLeg_rotZ} = 0
+{leftLeg_posZ} = 0.5
+
+{rightLeg_rotX} = 0.5
+{rightLeg_rotY} = 0
+{rightLeg_rotZ} = 0.35
+{rightLeg_posZ} = 5
+
+{rightArm_rotX} = 1.0
+{rightArm_rotY} = 0.0
+{rightArm_rotZ} = 0.5
+{rightArm_posY} = 2.0
+
+{leftArm_rotX} = 1.0
+{leftArm_rotY} = 0.0
+{leftArm_rotZ} = -0.5
+{leftArm_posY} = 2.0
+
+
+

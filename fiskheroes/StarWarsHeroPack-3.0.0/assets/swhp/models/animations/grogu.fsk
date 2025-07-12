@@ -1,0 +1,6 @@
+; Extension animation
+{root_posY} += 3{data_0}
+{grogu_posY} -= 2{data_0}
+{grogu_posX} -= 2{data_0}
+{grogu_rotZ} @ {data_0} -> 0
+{grogu_rotY} @ {data_0} -> 0

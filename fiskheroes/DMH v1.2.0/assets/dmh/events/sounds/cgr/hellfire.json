@@ -1,0 +1,8 @@
+{
+  "sound": "fiskheroes:modifier.beam.antimatter",
+  "condition": "entity.getData('fiskheroes:aiming')",
+  "volume": "0.3 * entity.getData('fiskheroes:aiming_timer') * 1 - entity.getData('dmh:dyn/cosmic')",
+  "pitch": 1,
+  "loop": true,
+  "fadeOut": 20
+}

@@ -1,0 +1,14 @@
+{
+  "particles": [
+    {
+      "type": "THICK_SMOKE",
+	  "anchor": "body", 
+      "amount": 30,
+      "offset": [0.0, -0.5, -3.0],
+      "motion": [0.0, 0.02, 0.0],
+      "randOffset": [0.01, 0.5, 0.01],
+      "randMotion": [0.05, 0.0, 0.05],
+      "mirror": false
+    }
+  ]
+}

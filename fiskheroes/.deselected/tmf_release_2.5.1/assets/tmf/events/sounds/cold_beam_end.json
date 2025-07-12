@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:heatblast.cold_beam.end",
+  "volume": 0.2
+}

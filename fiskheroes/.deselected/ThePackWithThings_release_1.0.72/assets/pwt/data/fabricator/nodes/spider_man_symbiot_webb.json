@@ -1,0 +1,19 @@
+{
+    "suit": "pwt:spider_man_symbiot_webb",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:traversal2",
+        "fiskheroes:defense2",
+        "fiskheroes:melee",
+        "fiskheroes:ranged2",
+		"fiskheroes:regeneration2",
+		"fiskheroes:object_manipulation",
+		"fiskheroes:spider_man_webb",
+		"fiskheroes:spiderverse",
+        "pwt:symbiotic_life_form"
+    ],
+    "display": {
+    "description": "Lol Gwen died"
+    
+	}
+}

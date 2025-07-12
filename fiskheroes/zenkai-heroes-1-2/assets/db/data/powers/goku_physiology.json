@@ -1,0 +1,185 @@
+{
+  "name": "Saiyan Physiology",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 1
+      },
+      "soundEvents": {
+        "ENABLE": "db:gokussjtransformation",
+        "DISABLE": "db:ssjoff"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "cooldownData": "fiskheroes:dyn/nanite_cooldown",
+        "duration": 6000,
+        "recovery": 3.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "db:null"
+      }
+    },
+    "fiskheroes:transformation|ki": {
+      "key": "KI",
+      "transformation": {
+        "toggleData": "db:dyn/ki",
+        "timerData": "db:dyn/ki_timer",
+        "time": 2
+      },
+      "soundEvents": {
+        "ENABLE": "db:null",
+        "DISABLE": "db:null"
+      }
+    },
+    "fiskheroes:cooldown|ki": {
+      "cooldown": {
+        "toggleData": "db:dyn/ki",
+        "cooldownData": "db:dyn/ki_cooldown",
+        "duration": 2000,
+        "recovery": 0.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "db:null"
+      }
+    },
+    "fiskheroes:transformation|ssjrecharge": {
+      "key": "RECHARGE",
+      "transformation": {
+        "toggleData": "db:dyn/ssjrecharge",
+        "timerData": "db:dyn/ssjrecharge_timer",
+        "time": 2
+      },
+      "soundEvents": {
+        "ENABLE": "db:null",
+        "DISABLE": "db:null"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "db:dyn/ssjrecharge",
+        "cooldownData": "db:dyn/ssjrecharge_cooldown",
+        "duration": 6,
+        "recovery": 2.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "db:null"
+      }
+    },
+    "fiskheroes:transformation|glow": {
+      "key": "GLOW",
+      "transformation": {
+        "toggleData": "db:dyn/glow",
+        "timerData": "db:dyn/glow_timer",
+        "time": 2
+      },
+      "soundEvents": {
+        "ENABLE": "db:null",
+        "DISABLE": "db:null"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "db:dyn/glow",
+        "cooldownData": "db:dyn/glow_cooldown",
+        "duration": 6,
+        "recovery": 200.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "db:null"
+      }
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "db:gokussjtransformation",
+        "DISABLE": "fiskheroes:agent_liberty_blade_disable"
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 12.0
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2],
+      "soundEvents": {
+        "LEAP": "db:jump"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "db:tp"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 20,
+      "duration": 20,
+      "cooldownTime": 10,
+      "range": 62.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": ["db:ha", "db:kamefondo", "db:kameshoot"],
+        "CHARGE": ["db:kame", "db:kamecharge", "db:kamepose"]
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 23.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 62.0,
+      "radius": 0.4
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.06,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "soundEvents": {
+        "ENABLE": "db:volando",
+        "BOOST": "db:startvolando"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "db:textures/gui/bars/nanite_transformation.png",
+      "data": "!entity.getData('fiskheroes:dyn/nanite_timer') && entity.getData('db:dyn/ki_cooldown')"
+      },
+      {
+      "type": "PROGRESS",
+      "texture": "db:textures/gui/bars/ssj_transformation.png",
+      "data": "entity.getData('fiskheroes:dyn/nanite_timer') && entity.getData('db:dyn/ki_cooldown')"
+    }
+  ]
+}

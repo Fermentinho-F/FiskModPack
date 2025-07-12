@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "sl:dyn/inverseabsorb",
+  "sound": "sl:main.bizarrotheme",
+  "fadeOut": 100
+}

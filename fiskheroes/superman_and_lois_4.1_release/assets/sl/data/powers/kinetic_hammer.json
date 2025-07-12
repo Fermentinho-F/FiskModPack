@@ -1,0 +1,62 @@
+{
+  "name": "Kinetic Hammer",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "HAMMER",
+      "transformation": {
+        "toggleData": "sl:dyn/hammer",
+        "timerData": "sl:dyn/hammer_timer",
+        "time": 15
+      },
+      "soundEvents": {
+        "ENABLE": "sl:hammercall"
+      }
+    },
+    "fiskheroes:charged_beam|throw": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 6.5,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 0.3,
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "chargeTime": 18,
+      "duration": 20,
+      "cooldownTime": 5,
+      "range": 32.0,
+      "radius": 0.6,
+      "soundEvents": {
+        "SHOOT": "sl:hammer_throw_loop"
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "ENERGY": 1.0,
+          "ELECTRICITY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.25,
+          "ADD_KNOCKBACK": 4,
+          "HIT_COOLDOWN": 20
+
+        }
+      },
+      "chargeTime": 40,
+      "range":10
+    }
+  }
+}

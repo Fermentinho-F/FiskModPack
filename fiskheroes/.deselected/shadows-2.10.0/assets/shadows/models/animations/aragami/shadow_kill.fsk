@@ -1,0 +1,29 @@
+{data_0} = curve {data_0}
+
+{data_math} = min(max(1.501 * {data_0}- 0.5, 0), 1) 
+{data_pose} = if ({data_1} == 1, {data_math}, 1)
+
+; going up
+{tail_posY} += 155
+{tail_posY} -= {data_0} * 155
+
+; main pose
+{tail1_rotX} += {data_pose} * 0.35
+{tail2_rotX} += {data_pose} * 0.35
+{tail3_rotX} += {data_pose} * 0.35
+{tail4_rotX} += {data_pose} * 0.35
+
+{tail5_rotX} -= {data_pose} * 0.35
+{tail6_rotX} -= {data_pose} * 0.35
+{tail7_rotX} -= {data_pose} * 0.35
+{tail8_rotX} -= {data_pose} * 0.35
+{tail9_rotX} -= {data_pose} * 0.35
+{tail10_rotX} -= {data_pose} * 0.35
+{tail11_rotX} -= {data_pose} * 0.35
+{tail12_rotX} -= {data_pose} * 0.35
+
+{dragonHead_rotX} -= {data_pose} * 0.8
+
+; bite
+{jaw2_rotX} -= 0.15
+{jaw2_rotX} += {data_math} * 0.25

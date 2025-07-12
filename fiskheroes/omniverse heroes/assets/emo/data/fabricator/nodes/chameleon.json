@@ -1,0 +1,11 @@
+{
+    "suit": "emo:chameleon",
+    "requirements": [
+      "fiskheroes:tier2_3",
+      "fiskheroes:traversal",
+      "fiskheroes:ranged2",
+      "emo:kr",
+      "emo:cadmus"
+    ]
+  }
+  

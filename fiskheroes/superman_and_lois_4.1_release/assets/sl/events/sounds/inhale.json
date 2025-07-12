@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.inhalesfx",
+  "volume": 1.0
+}

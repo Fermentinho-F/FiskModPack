@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "shadows:tornado.start",
+  "condition": {
+    "start": "!entity.getData('fiskheroes:shield_blocking')"
+  },
+  "volume": 0.2,
+  "pitch": "0.8 + Math.random() * 0.2",
+  "fadeIn": 4,
+  "fadeOut": 4
+}

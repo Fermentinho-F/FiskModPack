@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:fate/doctor_fate_model_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "(entity.is('DISPLAY') || entity.as('DISPLAY').getDisplayType === 'BOOK_PREVIEW') ? 15 : (Math.ceil(15 * entity.getInterpolatedData('jmctheroes:dyn/fate_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 15
+      }
+    }
+  }
+}

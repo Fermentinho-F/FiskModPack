@@ -1,0 +1,174 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 2/23/25 12:00 PM
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: Unknown data variable: 'sl:dyn/blue_kryptonite'
+	at com.fiskmods.heroes.common.data.var.DataVar.getJSWrappedDataValueUnsafe(DataVar.java:86)
+	at com.fiskmods.heroes.common.data.var.DataVar.lambda$getJSWrappedDataValue$0(DataVar.java:55)
+	at com.fiskmods.heroes.common.data.var.DataVar$$Lambda$917/1276470125.get(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.get(HeroPackLoader.java:80)
+	at com.fiskmods.heroes.common.data.var.DataVar.getJSWrappedDataValue(DataVar.java:55)
+	at com.fiskmods.heroes.pack.accessor.entity.JSEntityLiving.getData(JSEntityLiving.java:426)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$3659$15874AA$\^eval\_.isKeyBindEnabled(<eval>:379)
+	at jdk.nashorn.javaadapters.java.util.function.BiFunction.apply(Unknown Source)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS.lambda$isKeyBindEnabled$9(JSHero.java:597)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS$$Lambda$1029/1145363865.get(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.get(HeroPackLoader.java:80)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS.isKeyBindEnabled(JSHero.java:597)
+	at com.fiskmods.heroes.common.hero.Hero.getKey(Hero.java:261)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator.lambda$translate$0(KeyBindTranslator.java:39)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator$$Lambda$1028/23103158.run(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.ifPresent(HeroPackLoader.java:71)
+	at com.fiskmods.heroes.util.function.Conditional.ifPresent(Conditional.java:14)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator.translate(KeyBindTranslator.java:32)
+	at com.fiskmods.heroes.common.event.ClientEventHandler.onClientTick(ClientEventHandler.java:411)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_100_ClientEventHandler_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:2064)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:973)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.fiskmods.heroes.common.data.var.DataVar.getJSWrappedDataValueUnsafe(DataVar.java:86)
+	at com.fiskmods.heroes.common.data.var.DataVar.lambda$getJSWrappedDataValue$0(DataVar.java:55)
+	at com.fiskmods.heroes.common.data.var.DataVar$$Lambda$917/1276470125.get(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.get(HeroPackLoader.java:80)
+	at com.fiskmods.heroes.common.data.var.DataVar.getJSWrappedDataValue(DataVar.java:55)
+	at com.fiskmods.heroes.pack.accessor.entity.JSEntityLiving.getData(JSEntityLiving.java:426)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$3659$15874AA$\^eval\_.isKeyBindEnabled(<eval>:379)
+	at jdk.nashorn.javaadapters.java.util.function.BiFunction.apply(Unknown Source)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS.lambda$isKeyBindEnabled$9(JSHero.java:597)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS$$Lambda$1029/1145363865.get(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.get(HeroPackLoader.java:80)
+	at com.fiskmods.heroes.pack.JSHero$HeroJS.isKeyBindEnabled(JSHero.java:597)
+	at com.fiskmods.heroes.common.hero.Hero.getKey(Hero.java:261)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator.lambda$translate$0(KeyBindTranslator.java:39)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator$$Lambda$1028/23103158.run(Unknown Source)
+	at com.fiskmods.heroes.pack.HeroPackLoader$1.ifPresent(HeroPackLoader.java:71)
+	at com.fiskmods.heroes.util.function.Conditional.ifPresent(Conditional.java:14)
+	at com.fiskmods.heroes.client.keybinds.KeyBindTranslator.translate(KeyBindTranslator.java:32)
+	at com.fiskmods.heroes.common.event.ClientEventHandler.onClientTick(ClientEventHandler.java:411)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler_100_ClientEventHandler_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at cpw.mods.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:54)
+	at cpw.mods.fml.common.eventhandler.EventBus.post(EventBus.java:140)
+	at cpw.mods.fml.common.FMLCommonHandler.onPostClientTick(FMLCommonHandler.java:330)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Marth299'/120, l='MpServer', x=51.40, y=226.69, z=153.05]]
+	Chunk stats: MultiplayerChunkCache: 610, 672
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (8,64,8), Chunk: (at 8,4,8 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 551687604 game time, 1590000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 2 total; [EntityClientPlayerMP['Marth299'/120, l='MpServer', x=51.40, y=226.69, z=153.05], EntityTrail['unknown'/93988, l='MpServer', x=51.40, y=226.69, z=153.05]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:425)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:927)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2644902056 bytes (2522 MB) / 4944035840 bytes (4715 MB) up to 7456948224 bytes (7111 MB)
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx8000m -Xms256m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 Optifine OptiFine_1.7.10_HD_U_E7 27 mods loaded, 27 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	fiskheroescore{2.4.0} [Fisk's Superheroes Core] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.7.48} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.5.120} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.5.120-universal.jar) 
+	UCHIJAAAA	xaerominimap_core{1.7.10-1.0} [XaeroMinimapCore] (minecraft.jar) 
+	UCHIJAAAA	xaeroworldmap_core{1.7.10-1.0} [XaeroWorldMapCore] (minecraft.jar) 
+	UCHIJAAAA	armourersWorkshop{1.7.10-0.48.5} [Armourer's Workshop] (Armourers-Workshop-1.7.10-0.48.5.jar) 
+	UCHIJAAAA	cosmeticarmorreworked{1.7.10-v7} [CosmeticArmorReworked] (CosmeticArmorReworked-1.7.10-v7.jar) 
+	UCHIJAAAA	customnpcs{1.7.10d} [CustomNpcs] (CustomNPCs_1.7.10d(29oct17).jar) 
+	UCHIJAAAA	fiskheroes{2.4.0} [Fisk's Superheroes] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UCHIJAAAA	fisktag{3.0} [FiskTag] (FiskHeroes-1.7.10-2.4.0.jar) 
+	UCHIJAAAA	FpsReducer{mc1.7.10-1.10.3} [FPS Reducer] (FpsReducer-mc1.7.10-1.10.3.jar) 
+	UCHIJAAAA	iChunUtil{4.2.3} [iChunUtil] (iChunUtil-4.2.3.jar) 
+	UCHIJAAAA	ironbackpacks{1.7.10-1.2.20} [Iron Backpacks] (IronBackpacks-1.7.10-1.2.20.jar) 
+	UCHIJAAAA	RadixCore{2.1.3} [RadixCore] (RadixCore-1.7.10-2.1.3-universal.jar) 
+	UCHIJAAAA	MCA{1.7.10-5.2.2} [Minecraft Comes Alive] (MCA-1.7.10-5.2.2-portugues.jar) 
+	UCHIJAAAA	testdummy{1.0} [MmmMmmMmmMmm] (MmmMmmMmmMmm-1.7.10-1.9.jar) 
+	UCHIJAAAA	MouseTweaks{2.4.4} [Mouse Tweaks] (MouseTweaks-2.4.4-mc1.7.10.jar) 
+	UCHIJAAAA	cfm{3.4.7} [§9MrCrayfish's Furniture Mod] (MrCrayfishFurnitureModv3.4.7(1.7.10).jar) 
+	UCHIJAAAA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	UCHIJAAAA	starwarsmod{1.3.7} [Parzi's Star Wars Mod] (Parzi's Star Wars Mod v1.3.7.jar) 
+	UCHIJAAAA	TwilightForest{2.4.3} [The Twilight Forest] (TwilightForest-2.4.3.jar) 
+	UCHIJAAAA	worldedit{6.1.1} [WorldEdit] (worldedit-forge-mc1.7.10-6.1.1-dist.jar) 
+	UCHIJAAAA	XaeroMinimap{21.10.44} [Xaero's Minimap] (Xaeros_Minimap_21.10.44_Forge_1.7.10.jar) 
+	UCHIJAAAA	XaeroWorldMap{1.14.1.33} [Xaero's World Map] (XaerosWorldMap_1.14.1.33_Forge_1.7.10.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 566.03' Renderer: 'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+	Armourer's Workshop: 
+		Render Type: MODEL_ATTACHMENT
+		Texture Render: false
+		Baking Queue: 0
+		Request Queue: 0
+		Texture Painting: true
+		Multipass Skin Rendering: true
+	Launched Version: forge-10.13.4.1614
+	LWJGL: 2.9.1
+	OpenGL: NVIDIA GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.03, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
+	OptiFine Version: OptiFine_1.7.10_HD_U_E7
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 566.03
+	OpenGlRenderer: NVIDIA GeForce GTX 1050/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 4

@@ -1,0 +1,26 @@
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{swim} = {data_1}sin(pi{data_3}{data_3})
+{wobble2} = {data_1}sin(2pi{data_3})
+{head_rotX} -= 10'{data_1}
+{rightArm_rotX} += 8'{data_1} + 0.5abs({x})
+{rightArm_rotY} += 18'{data_1}
+{rightArm_rotZ} += 12'{data_1} + 3'{wobble2}
+
+{leftArm_rotX} += 8'{data_1} + 0.5abs({x})
+{leftArm_rotY} -= 18'{data_1}
+{leftArm_rotZ} -= 12'{data_1} + 3'{wobble2}
+
+{rightLeg_rotX} -= 5'{data_1} + 0.3{x} - 40'{swim}
+{rightLeg_rotY} += 2'{data_1}
+{rightLeg_rotZ} += 3'{data_1} + 3'{wobble2}
+{leftLeg_rotX} -= 5'{data_1} - 0.3{x} - 33'{swim}
+{leftLeg_rotY} -= 2'{data_1}
+{leftLeg_rotZ} -= 3'{data_1} - 3'{wobble2}
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)

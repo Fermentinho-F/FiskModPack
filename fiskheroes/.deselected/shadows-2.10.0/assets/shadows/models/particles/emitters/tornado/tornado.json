@@ -1,0 +1,16 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:reddust",
+      "amount": 5,
+     "randOffset": [4, 3, 4],
+      "motion": [10, 10, 10]
+    },
+    {
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 1,
+      "randOffset": [4, 3, 4],
+      "motion": [10, 10, 10]
+    }
+  ]
+}

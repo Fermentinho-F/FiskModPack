@@ -1,0 +1,6 @@
+{data_0} %= 360
+{data_1} %= 360
+{data_2} %= 360
+{top_rotY} += 360' * {data_0}
+{middle_rotY} += 360' * {data_1}
+{bottom_rotY} += 360' * {data_2}

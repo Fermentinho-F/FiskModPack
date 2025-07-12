@@ -1,0 +1,15 @@
+{rightArm_rotX} = (1-0.8*{data})*{rightArm_rotX}
+{leftArm_rotX} = (1-0.8*{data})*{leftArm_rotX}
+
+{leftArm_rotX} -= 2.3{data}
+{leftArm_rotY} += 1.1{data}
+{leftArm_rotZ} -= 0.3{data}
+
+{rightArm_rotX} -= 1.3{data}
+{rightArm_rotY} -= 1.1{data}
+{rightArm_rotZ} += 0.3{data}
+
+out "firstPerson" (true)
+out "translate" (-0.6{data}, -0.2{data}, 0)
+out "rotate" (70{data}, 0, 1, 0)
+out "rotate" (-80{data}, 0, 0, 1)

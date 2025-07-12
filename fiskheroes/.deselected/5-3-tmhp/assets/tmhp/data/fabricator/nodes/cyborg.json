@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:cyborg",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap2_3",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "tmhp:teen_titans",
+    "tmhp:heropack2"
+  ]
+}

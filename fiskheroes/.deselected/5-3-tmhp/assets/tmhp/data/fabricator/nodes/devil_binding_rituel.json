@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "Devil Binding Rituel"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/leibe.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:magic" ],
+  "price": {
+    "XP_LEVELS": 50
+  }
+}

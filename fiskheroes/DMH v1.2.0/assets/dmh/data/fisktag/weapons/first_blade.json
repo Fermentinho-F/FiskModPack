@@ -1,0 +1,8 @@
+{
+  "name": "The First Blade",
+  "permission": "MARK_OF_CAIN",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 35.0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Jet Boots",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.05,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    }
+  }
+}

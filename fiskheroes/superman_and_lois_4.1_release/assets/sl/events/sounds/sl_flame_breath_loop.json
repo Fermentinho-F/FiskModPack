@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.sl_heat_breath_loop",
+  "volume": 1.0,
+  "loop": true,
+  "condition": 'entity.getData("fiskheroes:energy_projection") && entity.getData("sl:dyn/heat_breath_level") < 0',
+  "fadeIn": 5,
+  "fadeOut": 5
+}

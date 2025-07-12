@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:sasuke_og",
+  "requirements": [
+    "tmhp:sharingan",
+    "elseworld:ap8_9",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "tmhp:heropack2"
+  ]
+}

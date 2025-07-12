@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:upgrade.transform",
+  "condition": "entity.isAlive()",
+  "volume": 0.75,
+  "pitch": "0.8 + 0.2 * Math.random()"
+}

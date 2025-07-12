@@ -1,0 +1,8 @@
+{
+  "sound": "tmf:four_arms.spin",
+  "condition": "fiskheroes:heat_vision",
+  "volume": "0.6*entity.getInterpolatedData('fiskheroes:heat_vision_timer')",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

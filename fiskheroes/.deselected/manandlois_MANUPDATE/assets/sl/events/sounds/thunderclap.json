@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.thunderclap",
+  "volume": 1.0
+}

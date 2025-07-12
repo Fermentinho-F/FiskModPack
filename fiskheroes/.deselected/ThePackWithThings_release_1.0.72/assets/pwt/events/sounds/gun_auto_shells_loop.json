@@ -1,0 +1,9 @@
+{
+  "sound": "pwt:suit.gun.shells.loop",
+  "condition": "fiskheroes:energy_projection",
+  "volume": "1.0 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",,
+  "pitch": "0.8 + Math.random() * 0.1",
+  "loop": true,
+  "delay": 25,
+  "fadeOut": 50
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.doctor_doom_comics.forcefield.start",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

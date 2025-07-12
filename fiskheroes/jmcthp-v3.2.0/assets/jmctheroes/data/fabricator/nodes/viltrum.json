@@ -1,0 +1,118 @@
+{
+  "display": {
+    "name": {
+      "translate": "Viltrum"
+    },
+    "description": {
+      "translate": "The Strongest"
+    },
+    "icon": {
+      "texture": "jmctheroes:textures/nodes/viltrum.png"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "sword": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a diamond sword"
+      },
+      "condition": {
+        "variables": {
+        "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_sword'"
+      }
+    },
+    "helmet": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a diamond helmet"
+      },
+      "condition": {
+        "variables": {
+        "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_helmet'"
+      }
+    },
+    "chestplate": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a diamond chestplate"
+      },
+      "condition": {
+        "variables": {
+        "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_chestplate'"
+      }
+    },
+    "leggings": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft diamond leggings"
+      },
+      "condition": {
+        "variables": {
+        "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_leggings'"
+      }
+    },
+    "boots": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft diamond boots"
+      },
+      "condition": {
+        "variables": {
+        "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:diamond_boots'"
+      }
+    },
+    "regeneration": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Enhance your regeneration with a potion"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.hasPotionEffect(10)"
+      }
+    },
+    "swiftness": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Enhance your agility with a potion"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.hasPotionEffect(1)"
+      }
+    },
+    "strength": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Enhance your brute force with a potion"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.hasPotionEffect(5)"
+      }
+    }
+  }
+}

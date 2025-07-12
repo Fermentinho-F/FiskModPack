@@ -1,0 +1,5 @@
+{
+  "sound": "db:gokussjgrito",
+  "condition": "entity.getData('fiskheroes:aiming') && entity.getData('fiskheroes:dyn/nanites') > 0",
+  "loop": false
+}

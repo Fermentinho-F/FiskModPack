@@ -1,0 +1,39 @@
+{
+  "name": "Amban Phase Pulse Blaster",
+  "permission": "USE_AMBANPHASE",
+  "holdingPose": "DOUBLE",
+  "cooldown": 50,
+  "damage": 4,
+  "fisktag": {
+    "sprintShootDelay": 6,
+    "sprintDelay": 10
+  },
+  "scope": {
+    "zoom": 1.25,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.0
+  },
+  "recoil": {
+    "amount": 1.0,
+    "cameraShake": 3.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.5,
+      "range": 256.0,
+      "speed": 256.0,
+      "trail": 5
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "swhp:ambanphasepulseblaster_shoot",
+    "SCOPE_START": "fisktag:sniper_scope_start",
+    "SCOPE_STOP": "fisktag:sniper_scope_stop"
+  }
+}

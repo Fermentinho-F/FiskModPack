@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "fiskheroes:flight/hover/default",
+    "jmctheroes:flight/biz/biz_boost",
+    "jmctheroes:flight/biz/biz_super_boost"
+  ]
+}

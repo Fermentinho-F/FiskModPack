@@ -1,0 +1,6 @@
+{data} = curve {data}
+
+{amount} = 15'
+
+{Jaw_rotX} +=  {amount} * {data}
+{JawOverlay_rotX} += {amount} * {data}

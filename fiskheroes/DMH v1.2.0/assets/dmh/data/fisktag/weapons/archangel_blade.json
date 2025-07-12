@@ -1,0 +1,8 @@
+{
+  "name": "Archangel Blade",
+  "permission": "ARCHANGEL_BLADE",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 45.0
+  }
+}

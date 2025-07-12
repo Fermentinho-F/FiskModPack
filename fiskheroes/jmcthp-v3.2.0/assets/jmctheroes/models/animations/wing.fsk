@@ -1,0 +1,5 @@
+
+{shape1_rotY} -= 0.5*{data}
+{shape2_rotY} -= 0.5*{data}
+{shape3_rotY} -= -0.5*{data}
+{shape4_rotY} -= -0.5*{data}

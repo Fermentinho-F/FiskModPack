@@ -1,0 +1,145 @@
+{
+  "name": "Prince Of Hell Physiology",
+  "modifiers": {
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_weakness|archangel": {
+      "damageType": "ARCHANGEL"
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_weakness|colt": {
+      "damageType": "THE_COLT"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 200
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0
+    },
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    "fiskheroes:cooldown|aoe_cooldown": {
+      "cooldown": {
+        "toggleData": "entity.getData('dmh:dyn/fire_timer') > 0.75",
+        "cooldownData": "dmh:dyn/fire_sound",
+        "duration": 2,
+        "recovery": 1.0
+      },
+      "soundEvents": {
+        "START": "fiskheroes:flame_on"
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "FIRE": 1.0,
+          "DEMON": 1.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 35,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:whip": {
+          "sequence": "",
+          "cooldown": 29,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          },
+          "whipBurn": {
+            "frequency": 21,
+            "damageProfile": {
+              "damage": 0.6,
+              "types": {
+                "MAGIC": 1.0
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:atmospheric": {
+          "sequence": "",
+          "cooldown": 39,
+          "pushPower": 10.0,
+          "damageProfile": {
+            "damage": 3.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 59,
+          "range": 35.0,
+          "radius": 10.0,
+          "damageProfile": {
+            "damage": 6.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 39,
+          "quantity": 10
+        },
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 59,
+          "duration": 4000,
+          "range": 24.0
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 150.0
+    }
+  }
+}
+

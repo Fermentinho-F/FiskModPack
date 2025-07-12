@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "JMCT's Heropack",
+    "description": "Thank you for downloading my heropack.",
+    "icon": {
+      "texture": "jmctheroes:textures/nodes/jmcthp.png"
+    }
+  },
+  "requirements": [ ],
+  "price": {
+  }
+}

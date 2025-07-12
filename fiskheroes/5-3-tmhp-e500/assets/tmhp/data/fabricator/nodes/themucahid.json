@@ -1,0 +1,34 @@
+{
+  "suit": "tmhp:themucahid",
+  "display": {
+    "hideUntilAvailable":  true
+  },
+  "requirements": [
+    "fiskheroes:tier10",
+    "elseworld:ap10",
+    "fiskheroes:flight",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense3",
+    "fiskheroes:regeneration2",
+    "fiskheroes:teleportation",
+    "tmhp:black_clover",
+    "tmhp:devil_binding_rituel",
+    "tmhp:swordsman3",
+    "tmhp:heropack2"
+  ],
+  "criteria": {
+    "destroy": {
+      "trigger": "fiskheroes:item_picked_up_by_player",
+      "description": {
+        "translate": "???"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_PICKED_UP"
+        },
+        "check": "item.name() == 'minecraft:dragon_egg'"
+      }
+    }
+  }
+}

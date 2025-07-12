@@ -1,0 +1,213 @@
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{x} = 30{data_8}min(1.5{vel}, 1)
+
+{x} = {data_8}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+
+;================================================;
+
+{data_0} = curve {data_0}
+{data_0} = (1 - {data_0})
+
+{data_1} = curve {data_1}
+{data_1} = sin(pi(1 - {data_1}))^1
+
+{data_2} = curve {data_2}
+{data_2} = sin(pi(1 - {data_2}))^1
+
+{data_3} = curve {data_3}
+{data_3} = sin(pi(1 - {data_3}))^1
+
+{data_4} = curve {data_4}
+{data_4} = sin(pi(1 - {data_4}))^1
+
+{data_5} = curve {data_5}
+{data_5} = sin(pi(1 - {data_5}))^1
+
+{data_6} = curve {data_6}
+{data_6} = sin(pi(1 - {data_6}))^1
+
+{data_7} = curve {data_7}
+{data_7} = sin(pi(1 - {data_7}))^1
+;================================================;
+
+{TailBase0_rotX} @ {data_0} -> -25'
+{TailBase0_rotY} @ {data_0} -> 15'
+{TailBase0_rotZ} @ {data_0} -> -10'
+{Tail0.1_rotX} @ {data_0} -> -20'
+{Tail0.1_rotY} @ {data_0} -> 15'
+
+{TailBase1_rotX} @ {data_0} -> -25'
+{TailBase1_rotY} @ {data_0} -> 15'
+{TailBase1_rotZ} @ {data_0} -> -10'
+{Tail1.1_rotX} @ {data_0} -> -20'
+{Tail1.1_rotY} @ {data_0} -> 15'
+{Tail1.2_rotX} @ {data_0} -> -30'
+{Tail1.2_rotY} @ {data_0} -> -15'
+
+{TailBase2_rotX} @ {data_0} -> -25'
+{TailBase2_rotY} @ {data_0} -> 15'
+{TailBase2_rotZ} @ {data_0} -> -10'
+{Tail2.1_rotX} @ {data_0} -> -20'
+{Tail2.1_rotY} @ {data_0} -> 15'
+{Tail2.2_rotX} @ {data_0} -> -30'
+{Tail2.2_rotY} @ {data_0} -> -15'
+{Tail2.3_rotX} @ {data_0} -> -30'
+{Tail2.3_rotY} @ {data_0} -> -30'
+
+{TailBase3_rotX} @ {data_0} -> -25'
+{TailBase3_rotY} @ {data_0} -> 15'
+{TailBase3_rotZ} @ {data_0} -> -10'
+{Tail3.1_rotX} @ {data_0} -> -20'
+{Tail3.1_rotY} @ {data_0} -> 15'
+{Tail3.2_rotX} @ {data_0} -> -30'
+{Tail3.2_rotY} @ {data_0} -> -15'
+{Tail3.3_rotX} @ {data_0} -> -30'
+{Tail3.3_rotY} @ {data_0} -> -30'
+{Tail3.4_rotX} @ {data_0} -> -30'
+{Tail3.4_rotY} @ {data_0} -> -30'
+{Tail3.4_posX} @ {data_0} -> -0.1
+
+;================================================;
+
+{TailBase0_rotX} @ {data_1} -> -20'
+{TailBase0_rotZ} @ {data_1} -> 50'
+{TailBase1_rotX} @ {data_1} -> -20'
+{TailBase1_rotZ} @ {data_1} -> 50'
+{TailBase2_rotX} @ {data_1} -> -20'
+{TailBase2_rotZ} @ {data_1} -> 50'
+{TailBase3_rotX} @ {data_1} -> -20'
+{TailBase3_rotZ} @ {data_1} -> 50'
+
+;================================================;
+
+{TailBase0_rotX} @ {data_2} -> -2'
+{TailBase0_rotZ} @ {data_2} -> -50'
+{TailBase1_rotX} @ {data_2} -> -2'
+{TailBase1_rotZ} @ {data_2} -> -50'
+{TailBase2_rotX} @ {data_2} -> -2'
+{TailBase2_rotZ} @ {data_2} -> -50'
+{TailBase3_rotX} @ {data_2} -> -2'
+{TailBase3_rotZ} @ {data_2} -> -50'
+
+;================================================;
+
+{TailBase0_rotX} @ {data_3} -> 25'
+{Tail0.1_rotX} @ {data_3} -> 20'
+{TailBase1_rotX} @ {data_3} -> 25'
+{Tail1.1_rotX} @ {data_3} -> 20'
+{Tail1.2_rotX} @ {data_3} -> 40'
+{TailBase2_rotX} @ {data_3} -> 25'
+{Tail2.1_rotX} @ {data_3} -> 20'
+{Tail2.2_rotX} @ {data_3} -> 40'
+{Tail2.3_rotX} @ {data_3} -> 35'
+{TailBase3_rotX} @ {data_3} -> 25'
+{Tail3.1_rotX} @ {data_3} -> 20'
+{Tail3.2_rotX} @ {data_3} -> 40'
+{Tail3.3_rotX} @ {data_3} -> 45'
+{Tail3.4_rotX} @ {data_3} -> 25'
+
+;================================================;
+
+{TailBase0_rotX} @ {data_4} -> -10'
+{TailBase0_rotY} @ {data_4} -> -15'
+{TailBase0_rotZ} @ {data_4} -> 15'
+{Tail0.1_rotX} @ {data_4} -> -35'
+{Tail0.1_rotY} @ {data_4} -> -15'
+
+{TailBase1_rotX} @ {data_4} -> -10'
+{TailBase1_rotY} @ {data_4} -> -15'
+{TailBase1_rotZ} @ {data_4} -> 15'
+{Tail1.1_rotX} @ {data_4} -> -35'
+{Tail1.1_rotY} @ {data_4} -> -15'
+{Tail1.2_rotX} @ {data_4} -> -35'
+{Tail1.2_rotY} @ {data_4} -> 15'
+
+{TailBase2_rotX} @ {data_4} -> -10'
+{TailBase2_rotY} @ {data_4} -> -15'
+{TailBase2_rotZ} @ {data_4} -> 15'
+{Tail2.1_rotX} @ {data_4} -> -35'
+{Tail2.1_rotY} @ {data_4} -> -15'
+{Tail2.2_rotX} @ {data_4} -> -35'
+{Tail2.2_rotY} @ {data_4} -> 15'
+{Tail2.3_rotX} @ {data_4} -> -35'
+{Tail2.3_rotY} @ {data_4} -> 30'
+
+{TailBase3_rotX} @ {data_4} -> -10'
+{TailBase3_rotY} @ {data_4} -> -15'
+{TailBase3_rotZ} @ {data_4} -> 15'
+{Tail3.1_rotX} @ {data_4} -> -35'
+{Tail3.1_rotY} @ {data_4} -> -15'
+{Tail3.2_rotX} @ {data_4} -> -35'
+{Tail3.2_rotY} @ {data_4} -> 15'
+{Tail3.3_rotX} @ {data_4} -> -35'
+{Tail3.3_rotY} @ {data_4} -> 30'
+{Tail3.4_rotX} @ {data_4} -> -35'
+{Tail3.4_rotY} @ {data_4} -> 30'
+{Tail3.4_posX} @ {data_4} -> 0.1 
+
+;================================================;
+
+{TailBase0_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail0.1_rotY} += sin({data_4} - 2{data_5}){data_6}
+
+{TailBase1_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail1.1_rotY} += sin({data_4} - 2{data_5}){data_6}
+{Tail1.2_rotY} += sin({data_4} - 1{data_5}){data_6}
+
+{TailBase2_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail2.1_rotY} += sin({data_4} - 2{data_5}){data_6}
+{Tail2.2_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail2.3_rotY} += sin({data_4} - 3{data_5}){data_6}
+
+{TailBase3_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail3.1_rotY} += sin({data_4} - 2{data_5}){data_6}
+{Tail3.2_rotY} += sin({data_4} - 1{data_5}){data_6}
+{Tail3.3_rotY} += sin({data_4} - 3{data_5}){data_6}
+{Tail3.4_rotY} += sin({data_4} - 3{data_5}){data_6}
+
+;================================================;
+
+{TailBase0_rotY} += 0.5{data_7}
+{Tail0.1_rotY} += 0.5{data_7}
+
+{TailBase1_rotY} += 0.5{data_7}
+{Tail1.1_rotY} += 0.5{data_7}
+{Tail1.2_rotY} += 0.7{data_7}
+
+{TailBase2_rotY} += 0.5{data_7}
+{Tail2.1_rotY} += 0.5{data_7}
+{Tail2.2_rotY} += 0.7{data_7}
+{Tail2.3_rotY} += 1{data_7}
+
+{TailBase3_rotY} += 0.5{data_7}
+{Tail3.1_rotY} += 0.5{data_7}
+{Tail3.2_rotY} += 0.7{data_7}
+{Tail3.3_rotY} += 1.1{data_7}
+{Tail3.4_rotY} += 0.7{data_7}
+
+;================================================;
+
+{TailBase0_rotX} @ {forward} -> 65'
+{Tail0.1_rotX} @ {forward} -> 40'
+{TailBase1_rotX} @ {forward} -> 65'
+{Tail1.1_rotX} @ {forward} -> 40'
+{Tail1.2_rotX} @ {forward} -> 80'
+{TailBase2_rotX} @ {forward} -> 65'
+{Tail2.1_rotX} @ {forward} -> 40'
+{Tail2.2_rotX} @ {forward} -> 80'
+{Tail2.3_rotX} @ {forward} -> 65'
+{TailBase3_rotX} @ {forward} -> 65'
+{Tail3.1_rotX} @ {forward} -> 40'
+{Tail3.2_rotX} @ {forward} -> 80'
+{Tail3.3_rotX} @ {forward} -> 85'
+{Tail3.4_rotX} @ {forward} -> 45'

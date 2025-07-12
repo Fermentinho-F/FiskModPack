@@ -1,0 +1,15 @@
+{
+  "name": "Curse Physiology",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [0.75, 0.1]
+    },
+    "fiskheroes:regeneration": {
+      "factor": 1.5
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "POSITIVE",
+      "factor": 10.0
+    }
+  }
+}

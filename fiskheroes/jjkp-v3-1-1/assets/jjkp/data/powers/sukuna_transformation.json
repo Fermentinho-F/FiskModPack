@@ -1,0 +1,32 @@
+{
+  "name": "Sukuna Transformation",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "SUKUNA_TRANSFORM",
+      "transformation": {
+        "toggleData": "jjkp:dyn/sukuna",
+        "timerData": "jjkp:dyn/sukuna_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jjkp:dyn/sukuna",
+        "cooldownData": "jjkp:dyn/sukuna_cooldown",
+        "duration": 1000,
+        "recovery": 0.5
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/sukuna_transform_bar.png",
+      "data": "jjkp:dyn/sukuna_cooldown"
+    }
+  ]
+}

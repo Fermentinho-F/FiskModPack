@@ -1,0 +1,9 @@
+{data} = curve {data}
+{WingR_rotZ} = 1.5{data}
+{WingR_posX} = 18{data}
+{WingL_rotZ} = 1.5{data}
+{WingL_posX} = -18{data}
+
+
+
+

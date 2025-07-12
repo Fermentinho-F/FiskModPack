@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:assassin_arno",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "tmhp:assassins_creed",
+    "tmhp:swordsman",
+    "tmhp:heropack2"
+  ]
+}

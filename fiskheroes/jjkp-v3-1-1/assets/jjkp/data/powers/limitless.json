@@ -1,0 +1,103 @@
+{
+  "name": "Limitless",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 10000.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "CANCEL",
+      "factor": 100.0
+    },
+    "fiskheroes:energy_projection": {
+      "knockback": 5.0,
+      "damageProfile": {
+        "damage": 0.5,
+        "types": {
+          "CURSED": 9.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.0
+        }
+      },
+      "range": 64.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:cosmic_beam"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:energy_projection",
+        "cooldownData": "jjkp:dyn/space_manip_cooldown",
+        "duration": 10,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": ""
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": false,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": [],
+        "SPRINT": [],
+        "STOP": []
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/space_manip_bar.png",
+      "data": "jjkp:dyn/space_manip_cooldown"
+    }
+  ]
+}

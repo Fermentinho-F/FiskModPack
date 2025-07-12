@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.carnage.climb",
+  "volume": 0.1,
+  "pitch": "0.85 + Math.random() * 0.3"
+}

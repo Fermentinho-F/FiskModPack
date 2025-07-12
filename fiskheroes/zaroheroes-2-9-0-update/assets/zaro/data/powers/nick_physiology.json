@@ -1,0 +1,74 @@
+{
+	"name": "Nick physiology",
+  "modifiers": {
+     "fiskheroes:equipment": {
+      "equipment": {
+	    "fiskheroes:grenade": {
+          "cooldown": 400,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 40.0,
+            "types": {
+              "EXPLOSION": 1.0
+            },
+            "properties": {
+              "EFFECTS": [
+                {
+                  "id": "minecraft:poison",
+                  "duration": 60,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:weakness",
+                  "duration": 80,
+                  "amplifier": 1,
+                  "chance": 0.8
+                }
+              ]
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 50,
+          "radius": 8.0
+        },
+		"fiskheroes:throwing_star": {
+          "cooldown": 60,
+          "uses": 3,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0,
+			  "EFFECTS": [
+                {
+                  "id": "minecraft:nausea",
+                  "duration": 70,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "duration": 100,
+                  "amplifier": 1,
+                  "chance": 0.3
+                }
+              ]
+            }
+          }
+        },
+		"fiskheroes:smoke_pellet": {
+          "cooldown": 100,
+          "uses": 2
+        }
+      },
+	"soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+    }

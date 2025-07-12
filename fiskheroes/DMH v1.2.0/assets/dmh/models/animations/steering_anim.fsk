@@ -1,0 +1,2 @@
+{data} = curve {data}
+{steering_rotY} @ {data} -'> -({bodyYaw} - {yaw})'

@@ -1,0 +1,18 @@
+{
+  "suit": "tmhp:randy_cunningham",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:magic",
+    "fiskheroes:teleportation",
+    "fiskheroes:object_manipulation",
+    "tmhp:swordsman2",
+    "tmhp:ninjanomicon",
+    "tmhp:other",
+    "tmhp:heropack2"
+  ]
+}

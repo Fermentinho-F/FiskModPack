@@ -1,0 +1,20 @@
+{
+    "display": {
+      "name": {
+        "translate": "Cosmic Surfboard"
+      },
+      "icon": {
+        "texture": "sabri:textures/gui/nodes/cosmic_surfboard.png"
+      }
+    },
+    "requirements": [ 
+      "sabri:sehp",
+      "fiskheroes:cosmic",
+      "fiskheroes:flight"
+    ],
+    "price": {
+      "IRID_GOLD": 4,
+      "XP_LEVELS": 30
+    }
+  }
+  

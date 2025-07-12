@@ -1,0 +1,9 @@
+{
+  "sound": "tmf:upgrade.beam",
+  "condition": "fiskheroes:beam_shooting",
+  "volume": "1.0",
+  "pitch": "1.0",
+  "loop": false,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

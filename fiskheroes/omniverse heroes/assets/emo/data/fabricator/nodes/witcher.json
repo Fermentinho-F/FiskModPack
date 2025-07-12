@@ -1,0 +1,10 @@
+{
+  "suit": "emo:witcher",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:ranged2",
+    "fiskheroes:magic",
+    "fiskheroes:defense2",
+    "emo:cadmus"
+  ]
+}

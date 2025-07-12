@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": "Green Lantern Corps",
+    "description": "In brightest day, in blackest night,                 No evil shall escape my sight!                             Let those who worship evil's might,                    Beware my power, Green Lantern's light! ",
+    "icon": {
+      "texture": "loriatpack:textures/gui/nodes/green_lantern_corp.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:cosmic"
+  ],
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 20
+  }
+}

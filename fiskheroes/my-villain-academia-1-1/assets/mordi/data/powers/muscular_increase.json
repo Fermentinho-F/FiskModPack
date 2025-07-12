@@ -1,0 +1,13 @@
+{
+  "name": "Muscle Increase",
+  "modifiers": {
+    "fiskheroes:size_manipulation": {
+      "isInstant": false,
+      "minSize": 1.5,
+      "maxSize": 1.75
+    },
+    "fiskheroes:projectile_immunity": {
+
+  }
+}
+}

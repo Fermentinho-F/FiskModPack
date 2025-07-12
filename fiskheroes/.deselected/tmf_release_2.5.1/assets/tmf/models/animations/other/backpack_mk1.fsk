@@ -1,0 +1,649 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{anim_1} = curve min(animate2({data}, 1, 0.06, 0.06, 0.05), 1)
+{anim_2} = curve min(animate2({data}, 1, 0.12, 0.06, 0.05), 1)
+{anim_3} = curve min(animate2({data}, 1, 0.18, 0.06, 0.05), 1)
+{anim_4} = curve min(animate2({data}, 1, 0.24, 0.06, 0.05), 1)
+{anim_5} = curve min(animate2({data}, 1, 0.30, 0.06, 0.05), 1)
+{anim_6} = curve min(animate2({data}, 1, 0.36, 0.06, 0.05), 1)
+{anim_7} = curve min(animate2({data}, 1, 0.42, 0.06, 0.05), 1)
+{anim_8} = curve min(animate2({data}, 1, 0.48, 0.06, 0.05), 1)
+
+{anim_8.1} = curve min(animate2({data}, 1, 0.48, 0.01, 0.05), 1)
+{anim_8.2} = curve min(animate2({data}, 1, 0.49, 0.01, 0.05), 1)
+{anim_8.3} = curve min(animate2({data}, 1, 0.50, 0.01, 0.05), 1)
+{anim_8.4} = curve min(animate2({data}, 1, 0.51, 0.01, 0.05), 1)
+{anim_8.5} = curve min(animate2({data}, 1, 0.52, 0.01, 0.05), 1)
+{anim_8.6} = curve min(animate2({data}, 1, 0.53, 0.01, 0.05), 1)
+
+{anim_8_11} = curve min(animate2({data}, 1, 0.48, 0.18, 0.05), 1)
+
+{anim_9} = curve min(animate2({data}, 1, 0.54, 0.06, 0.05), 1)
+{anim_10} = curve min(animate2({data}, 1, 0.60, 0.06, 0.05), 1)
+
+{anim_10.1} = curve min(animate2({data}, 1, 0.60, 0.03, 0.05), 1)
+{anim_10.2} = curve min(animate2({data}, 1, 0.63, 0.03, 0.05), 1)
+
+{anim_11} = curve min(animate2({data}, 1, 0.66, 0.06, 0.05), 1)
+{anim_12} = curve min(animate2({data}, 1, 0.72, 0.06, 0.05), 1)
+
+{anim_12.1} = curve min(animate2({data}, 1, 0.72, 0.03, 0.05), 1)
+{anim_12.2} = curve min(animate2({data}, 1, 0.75, 0.03, 0.05), 1)
+
+{anim_13} = curve min(animate2({data}, 1, 0.78, 0.06, 0.05), 1)
+
+{anim_13.1} = curve min(animate2({data}, 1, 0.78, 0.02, 0.05), 1)
+{anim_13.2} = curve min(animate2({data}, 1, 0.80, 0.02, 0.05), 1)
+{anim_13.3} = curve min(animate2({data}, 1, 0.82, 0.02, 0.05), 1)
+
+{anim_14} = curve min(animate2({data}, 1, 0.84, 0.06, 0.05), 1)
+
+{anim_14.1} = curve min(animate2({data}, 1, 0.84, 0.012, 0.05), 1)
+{anim_14.2} = curve min(animate2({data}, 1, 0.852, 0.012, 0.05), 1)
+{anim_14.3} = curve min(animate2({data}, 1, 0.864, 0.012, 0.05), 1)
+{anim_14.4} = curve min(animate2({data}, 1, 0.876, 0.012, 0.05), 1)
+{anim_14.5} = curve min(animate2({data}, 1, 0.888, 0.012, 0.05), 1)
+
+{anim_15} = curve min(animate2({data}, 1, 0.86, 0.06, 0.05), 1)
+
+{data0} = curve min(animate2({data}, 2, 0.00, 0.05, 0.05), 1)
+
+
+{data} = 0
+
+{Backpack_posY} @ {anim_1} -> 6.7
+{neck1_rotX} @ {anim_1} -> 90'
+{neck2_rotX} @ {anim_1} -> -90'
+{neck3_posY} @ {anim_1} -> -0.01
+{neck3_posZ} @ {anim_1} -> -2
+
+{core2_posZ} @ {data0} -> 0
+
+{backpack_lid1_posY} @ {anim_1} -> 2
+{backpack_lid1_posZ} @ {anim_1} -> 1
+{backpack_lid2_posY} @ {anim_1} -> 5.1
+{backpack_lid2_posX} @ {anim_1} -> 2
+{backpack_lid3_posY} @ {anim_1} -> 5.1
+{backpack_lid3_posX} @ {anim_1} -> -2
+{backpack_lid2_posZ} @ {anim_2} -> 1
+{backpack_lid3_posZ} @ {anim_2} -> 1
+
+{Backpack_overlay_posY} @ {anim_1} -> 6.7
+{neck1_overlay_rotX} @ {anim_1} -> 90'
+{neck2_overlay_rotX} @ {anim_1} -> -90'
+
+
+{chest_flapR1_posY} @ {anim_2} -> -6.5
+{chest_flapL1_posY} @ {anim_2} -> -6.5
+{chest_flapR1_posZ} @ {anim_2} -> -0.5
+{chest_flapL1_posZ} @ {anim_2} -> -0.5
+{chest_flapR1_rotX} @ {anim_2} -> 180'
+{chest_flapL1_rotX} @ {anim_2} -> 180'
+{chest_flapR1_rotZ} @ {anim_2} -> -52.17'
+{chest_flapL1_rotZ} @ {anim_2} -> 52.17'
+
+{chest_flapR1_overlay_posY} @ {anim_2} -> -6.5
+{chest_flapL1_overlay_posY} @ {anim_2} -> -6.5
+{chest_flapR1_overlay_posZ} @ {anim_2} -> -0.5
+{chest_flapL1_overlay_posZ} @ {anim_2} -> -0.5
+{chest_flapR1_overlay_rotX} @ {anim_2} -> 180'
+{chest_flapL1_overlay_rotX} @ {anim_2} -> 180'
+{chest_flapR1_overlay_rotZ} @ {anim_2} -> -52.17'
+{chest_flapL1_overlay_rotZ} @ {anim_2} -> 52.17'
+
+
+{shoulder_R1_posX} @ {anim_3} -> -3.6
+{shoulder_R1_posZ} @ {anim_3} -> -1.5
+{shoulder_R1_posY} @ {anim_3} -> -4.7
+{shoulder_R1_rotX} @ {anim_3} -> 36.52'
+{shoulder_R1_rotY} @ {anim_3} -> -90'
+
+{shoulder_L1_posX} @ {anim_3} -> 3.6
+{shoulder_L1_posZ} @ {anim_3} -> -1.5
+{shoulder_L1_posY} @ {anim_3} -> -4.7
+{shoulder_L1_rotX} @ {anim_3} -> 36.52'
+{shoulder_L1_rotY} @ {anim_3} -> 90'
+
+{shoulder_R1_overlay_posX} @ {anim_3} -> -3.6
+{shoulder_R1_overlay_posY} @ {anim_3} -> -4.7
+{shoulder_R1_overlay_rotX} @ {anim_3} -> 36.52'
+{shoulder_R1_overlay_rotY} @ {anim_3} -> -90'
+
+{shoulder_L1_overlay_posX} @ {anim_3} -> 3.6
+{shoulder_L1_overlay_posY} @ {anim_3} -> -4.7
+{shoulder_L1_overlay_rotX} @ {anim_3} -> 36.52'
+{shoulder_L1_overlay_rotY} @ {anim_3} -> 90'
+
+{neck4_posZ} @ {anim_6} -> -4
+
+{body_sideR1_posY} @ {anim_4} -> -2.5
+{body_sideR1_rotY} @ {anim_4} -> -75'
+{body_sideR2_posY} @ {anim_4} -> -0.5
+
+{body_sideR1_overlay_posY} @ {anim_4} -> -2.5
+{body_sideR1_overlay_rotY} @ {anim_4} -> -90'
+
+{body_sideL1_posY} @ {anim_4} -> -2.5
+{body_sideL1_rotY} @ {anim_4} -> 75'
+{body_sideL2_posY} @ {anim_4} -> -0.5
+
+{body_sideL1_overlay_posY} @ {anim_4} -> -2.5
+{body_sideL1_overlay_rotY} @ {anim_4} -> 90'
+
+
+{bodyLower_sideR1_posY} @ {anim_5} -> -0.5
+{bodyLower_sideR1_rotY} @ {anim_5} -> -65';needs to go to 180
+{bodyLower_sideR2_rotY} @ {anim_5} -> 0'
+
+{bodyLower_sideL1_posY} @ {anim_5} -> -0.5
+{bodyLower_sideL1_rotY} @ {anim_5} -> 65';needs to go to 180
+{bodyLower_sideL2_rotY} @ {anim_5} -> 0'
+
+
+{bodyLower2R1_posY} @ {anim_6} -> 2.5
+{bodyLower2R1_rotY} @ {anim_6} -> -50';needs to go to 180
+{bodyLower2R2_rotY} @ {anim_6} -> 0'
+{bodyLower2R3_posY} @ {anim_6} -> 0
+{bodyLower2R4_posY} @ {anim_6} -> 0
+
+{bodyLower2R1_overlay_posY} @ {anim_6} -> 2.5
+{bodyLower2R1_overlay_rotY} @ {anim_6} -> -60'
+
+{bodyLower2L1_posY} @ {anim_6} -> 2.5
+{bodyLower2L1_rotY} @ {anim_6} -> 50';needs to go to 180
+{bodyLower2L2_rotY} @ {anim_6} -> 0'
+{bodyLower2L3_posY} @ {anim_6} -> 0
+{bodyLower2L4_posY} @ {anim_6} -> 0
+
+
+{bodyLower2L1_overlay_posY} @ {anim_6} -> 2.5
+{bodyLower2L1_overlay_rotY} @ {anim_6} -> 60'
+
+{legBackR1_posX} @ {anim_7} -> -3
+{legBackR1_rotX} @ {anim_7} -> -90'
+{legBackR2_rotX} @ {anim_7} -> 0'
+
+{legBackR1_overlay_posX} @ {anim_7} -> -3.0
+{legBackR1_overlay_rotX} @ {anim_7} -> -90'
+{legBackR2_overlay_rotX} @ {anim_7} -> 0'
+
+{legBackL1_posX} @ {anim_7} -> 3
+{legBackL1_rotX} @ {anim_7} -> -90'
+{legBackL2_rotX} @ {anim_7} -> 0'
+
+{legBackL1_overlay_posX} @ {anim_7} -> 3.0
+{legBackL1_overlay_rotX} @ {anim_7} -> -90'
+{legBackL2_overlay_rotX} @ {anim_7} -> 0'
+
+
+{chest_flapR1_posZ} @ {anim_8} -> -5.5
+{chest_flapL1_posZ} @ {anim_8} -> -5.5
+{chest_flapR1_overlay_posZ} @ {anim_8} -> -4.5
+{chest_flapL1_overlay_posZ} @ {anim_8} -> -4.5
+{chest_flapR1_overlay_posX} @ {anim_8} -> -3.5
+{chest_flapL1_overlay_posX} @ {anim_8} -> 3.5
+{chest_flapR1_overlay_posY} @ {anim_8} -> -6
+{chest_flapL1_overlay_posY} @ {anim_8} -> -6
+
+{legBackR1_posX} @ {anim_8} -> -4
+{legBackL1_posX} @ {anim_8} -> 4
+{legBackR1_overlay_posX} @ {anim_8} -> -3
+{legBackL1_overlay_posX} @ {anim_8} -> 3
+
+{back_overlayRTop_posX} @ {anim_8} -> 0
+{back_overlayRTop_posY} @ {anim_8} -> 0
+{back_overlayLTop_posX} @ {anim_8} -> 0
+{back_overlayLTop_posY} @ {anim_8} -> 0
+{back_overlayRBottom_posX} @ {anim_8} -> 0
+{back_overlayRBottom_posY} @ {anim_8} -> 0
+{back_overlayLBottom_posX} @ {anim_8} -> 0
+{back_overlayLBottom_posY} @ {anim_8} -> 0
+
+{shoulderTop_R2_posX} @ {anim_8.2} -> -0.99
+{shoulderTop_R2_posY} @ {anim_8.1} -> -1
+{shoulderTop_R2_posZ} @ {anim_8.1} -> 1
+{shoulderTop_R2_rotZ} @ {anim_8.2} -> -90'
+{shoulderTop_R3_posY} @ {anim_8.2} -> -2
+
+{shoulder_R4_posX} @ {anim_8.3} -> -1
+{shoulder_R4_posY} @ {anim_8.3} -> -1
+{shoulder_R4_posZ} @ {anim_8.3} -> -1
+{shoulder_R4_rotZ} @ {anim_8.3} -> 90'
+{shoulder_R7_posZ} @ {anim_8.3} -> 3
+{shoulder_R8_posZ} @ {anim_8.4} -> 1
+{shoulder_R8_rotY} @ {anim_8.5} -> 90'
+{shoulder_R9_posZ} @ {anim_8.6} -> 1
+{shoulder_R5_posZ} @ {anim_8.3} -> 3
+{shoulder_R6_posZ} @ {anim_8.4} -> 1
+{shoulder_R6_rotY} @ {anim_8.5} -> -90'
+{shoulder_R10_posZ} @ {anim_8.6} -> 1
+
+
+{shoulderTop_L2_posX} @ {anim_8.2} -> 0.99
+{shoulderTop_L2_posY} @ {anim_8.1} -> -1
+{shoulderTop_L2_posZ} @ {anim_8.1} -> 1
+{shoulderTop_L2_rotZ} @ {anim_8.2} -> 90'
+{shoulderTop_L3_posY} @ {anim_8.2} -> -2
+
+{shoulder_L4_posX} @ {anim_8.3} -> 1
+{shoulder_L4_posY} @ {anim_8.3} -> -1
+{shoulder_L4_posZ} @ {anim_8.3} -> -1
+{shoulder_L4_rotZ} @ {anim_8.3} -> -90'
+{shoulder_L7_posZ} @ {anim_8.3} -> 3
+{shoulder_L8_posZ} @ {anim_8.4} -> 1
+{shoulder_L8_rotY} @ {anim_8.5} -> -90'
+{shoulder_L9_posZ} @ {anim_8.6} -> 1
+{shoulder_L5_posZ} @ {anim_8.3} -> 3
+{shoulder_L6_posZ} @ {anim_8.4} -> 1
+{shoulder_L6_rotY} @ {anim_8.5} -> 90'
+{shoulder_L10_posZ} @ {anim_8.6} -> 1
+
+
+{chest_flapR1_rotX} @ {anim_9} -> 360'
+{chest_flapL1_rotX} @ {anim_9} -> 360'
+{chest_flapR1_rotZ} @ {anim_9} -> 0'
+{chest_flapL1_rotZ} @ {anim_9} -> 0'
+
+{chest_flapR1_overlay_rotX} @ {anim_9} -> 360'
+{chest_flapL1_overlay_rotX} @ {anim_9} -> 360'
+{chest_flapR1_overlay_rotZ} @ {anim_9} -> 0'
+{chest_flapL1_overlay_rotZ} @ {anim_9} -> 0'
+
+{chest_flap_overlayR1_posX} @ {anim_9} -> -4
+{chest_flap_overlayR1_posY} @ {anim_9} -> -6
+{chest_flap_overlayR1_posZ} @ {anim_9} -> -2
+{chest_flap_overlayL1_posX} @ {anim_9} -> 4
+{chest_flap_overlayL1_posY} @ {anim_9} -> -6
+{chest_flap_overlayL1_posZ} @ {anim_9} -> -2
+
+{core_posZ} @ {anim_9} -> -1.5
+
+{legBackR1_rotY} @ {anim_9} -> -90'
+{legBackL1_rotY} @ {anim_9} -> 90'
+{legBackR1_overlay_rotY} @ {anim_9} -> -90'
+{legBackL1_overlay_rotY} @ {anim_9} -> 90'
+
+{armBackR1_posY} @ {anim_9} -> 3
+{armBackR1_posZ} @ {anim_9} -> 2
+{armBackR2_posY} @ {anim_9} -> 3
+{armBackR2_posZ} @ {anim_9} -> 2
+
+{armBackL1_posY} @ {anim_9} -> 3
+{armBackL1_posZ} @ {anim_9} -> 2
+{armBackL2_posY} @ {anim_9} -> 3
+{armBackL2_posZ} @ {anim_9} -> 2
+
+
+{legBackR1_posZ} @ {anim_10} -> -3.5
+{legBackL1_posZ} @ {anim_10} -> -3.5
+{legBackR1_overlay_posZ} @ {anim_10} -> -3.5
+{legBackL1_overlay_posZ} @ {anim_10} -> -3.5
+
+{shoulder_R_overlay1_posX} @ {anim_10} -> -4.6
+{shoulder_R_overlay1_posY} @ {anim_10} -> -4
+{shoulder_R_overlay1_posZ} @ {anim_10} -> 0
+{shoulder_R_overlay2_posX} @ {anim_10} -> -4.6
+{shoulder_R_overlay2_posY} @ {anim_10} -> -4
+{shoulder_R_overlay2_posZ} @ {anim_10} -> 0
+
+
+{armSideR1_posZ} @ {anim_10.1} -> 2
+{armSideR1_rotY} @ {anim_10.2} -> -90'
+{armSideR2_posZ} @ {anim_10.2} -> 2
+{armFrontR1_rotY} @ {anim_10.2} -> -90'
+{armFrontR1_posZ} @ {anim_10.2} -> 2
+
+{armSideR3_posZ} @ {anim_10.1} -> -2
+{armSideR3_rotY} @ {anim_10.1} -> 270'
+{armSideR4_posZ} @ {anim_10.2} -> 2
+{armFrontR2_rotY} @ {anim_10.2} -> 90'
+{armFrontR2_posZ} @ {anim_10.2} -> 2
+
+
+{shoulder_L_overlay1_posX} @ {anim_10} -> 4.6
+{shoulder_L_overlay1_posY} @ {anim_10} -> -4
+{shoulder_L_overlay1_posZ} @ {anim_10} -> 0
+{shoulder_L_overlay2_posX} @ {anim_10} -> 4.6
+{shoulder_L_overlay2_posY} @ {anim_10} -> -4
+{shoulder_L_overlay2_posZ} @ {anim_10} -> 0
+
+
+{armSideL1_posZ} @ {anim_10.1} -> 2
+{armSideL1_rotY} @ {anim_10.2} -> 90'
+{armSideL2_posZ} @ {anim_10.2} -> 2
+{armFrontL1_rotY} @ {anim_10.2} -> 90'
+{armFrontL1_posZ} @ {anim_10.2} -> 2
+
+{armSideL3_posZ} @ {anim_10.1} -> -2
+{armSideL3_rotY} @ {anim_10.1} -> -270'
+{armSideL4_posZ} @ {anim_10.2} -> 2
+{armFrontL2_rotY} @ {anim_10.2} -> -90'
+{armFrontL2_posZ} @ {anim_10.2} -> 2
+
+
+{body_sideR1_rotY} @ {anim_8_11} -> -180'
+{body_sideR1_overlay_rotY} @ {anim_8_11} -> -200'
+{body_sideR2_rotY} @ {anim_8_11} -> 0'
+{body_sideR3_posX} @ {anim_8_11} -> -0.05
+{body_sideR3_posY} @ {anim_8_11} -> 1
+{body_sideFrontR4_posZ} @ {anim_8_11} -> 1
+{body_sideFrontR4_rotY} @ {anim_8_11} -> -90'
+{body_sideR2_inner_rotY} @ {anim_8_11} -> 180'
+
+{bodyLower_sideR1_rotY} @ {anim_8_11} -> -180'
+{bodyLower_sideR3_rotY} @ {anim_8_11} -> -90'
+{bodyLower_sideR4_posY} @ {anim_8_11} -> 0
+
+{bodyLower2R1_rotY} @ {anim_8_11} -> -180'
+{bodyLower2R1_overlay_rotY} @ {anim_8_11} -> -200'
+{bodyLower2_FrontR5_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontR5_posY} @ {anim_8_11} -> 1
+{bodyLower2_FrontR5_rotY} @ {anim_8_11} -> -90'
+{bodyLower2_FrontR6_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontR7_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontR8_posZ} @ {anim_8_11} -> 1
+
+{body_sideL1_rotY} @ {anim_8_11} -> 180'
+{body_sideL1_overlay_rotY} @ {anim_8_11} -> 200'
+{body_sideL2_rotY} @ {anim_8_11} -> 0'
+{body_sideL3_posX} @ {anim_8_11} -> 0.05
+{body_sideL3_posY} @ {anim_8_11} -> 1
+{body_sideFrontL4_posZ} @ {anim_8_11} -> 1
+{body_sideFrontL4_rotY} @ {anim_8_11} -> 90'
+{body_sideL2_inner_rotY} @ {anim_8_11} -> -180'
+
+{bodyLower_sideL1_rotY} @ {anim_8_11} -> 180'
+{bodyLower_sideL3_rotY} @ {anim_8_11} -> 90'
+{bodyLower_sideL4_posY} @ {anim_8_11} -> 0
+
+{bodyLower2L1_rotY} @ {anim_8_11} -> 180'
+{bodyLower2L1_overlay_rotY} @ {anim_8_11} -> 200'
+{bodyLower2_FrontL5_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontL5_posY} @ {anim_8_11} -> 1
+{bodyLower2_FrontL5_rotY} @ {anim_8_11} -> 90'
+{bodyLower2_FrontL6_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontL7_posZ} @ {anim_8_11} -> 1
+{bodyLower2_FrontL8_posZ} @ {anim_8_11} -> 1
+
+
+{armpitR_posX} @ {anim_11} -> -4
+{armpitR_posY} @ {anim_11} -> -5
+{armpitL_posX} @ {anim_11} -> 4
+{armpitL_posY} @ {anim_11} -> -5
+
+{armBackR3_posY} @ {anim_11} -> 6
+{armBackR3_posZ} @ {anim_11} -> 2
+{armBackR4_posY} @ {anim_11} -> 6
+{armBackR4_posZ} @ {anim_11} -> 2
+
+{armBackL3_posY} @ {anim_11} -> 6
+{armBackL3_posZ} @ {anim_11} -> 2
+{armBackL4_posY} @ {anim_11} -> 6
+{armBackL4_posZ} @ {anim_11} -> 2
+
+{pack1_posY} @ {anim_11} -> -0.5
+{pack1_posZ} @ {anim_11} -> -5.53
+
+{legBackR4_posX} @ {anim_11} -> 2
+{legFrontR1_posX} @ {anim_11} -> -2
+{legSideR1_posX} @ {anim_11} -> -1
+
+{legBackR4_rotZ} @ {anim_12} -> 90'
+{legBackR5_posZ} @ {anim_12} -> 3
+
+{legFrontR1_rotZ} @ {anim_12} -> 90'
+{legFrontR2_posZ} @ {anim_12} -> 3
+
+{legBackL4_posX} @ {anim_11} -> -2
+{legFrontL1_posX} @ {anim_11} -> 2
+{legSideL1_posX} @ {anim_11} -> 1
+
+{legBackL4_rotZ} @ {anim_12} -> -90'
+{legBackL5_posZ} @ {anim_12} -> 3
+
+{legFrontL1_rotZ} @ {anim_12} -> -90'
+{legFrontL2_posZ} @ {anim_12} -> 3
+
+{pack2_posY} @ {anim_12} -> 1
+
+{arm_R_overlay1_posX} @ {anim_12} -> -5
+{arm_R_overlay1_posZ} @ {anim_12} -> 0
+{arm_R_overlay2_posX} @ {anim_12} -> -5
+{arm_R_overlay2_posZ} @ {anim_12} -> 0
+
+{arm_L_overlay1_posX} @ {anim_12} -> 5
+{arm_L_overlay1_posZ} @ {anim_12} -> 0
+{arm_L_overlay2_posX} @ {anim_12} -> 5
+{arm_L_overlay2_posZ} @ {anim_12} -> 0
+
+{armSideR1.2_rotY} @ {anim_12.2} -> -90'
+{armSideR1.2_posZ} @ {anim_12.1} -> 2
+{armSideR2.2_posZ} @ {anim_12.2} -> 2
+{armFrontR1.2_rotY} @ {anim_12.2} -> -90'
+{armFrontR1.2_posZ} @ {anim_12.2} -> 2
+
+{armSideR3.2_rotY} @ {anim_12.1} -> 270'
+{armSideR3.2_posZ} @ {anim_12.1} -> -2
+{armSideR4.2_posZ} @ {anim_12.2} -> 2
+{armFrontR2.2_rotY} @ {anim_12.2} -> 90'
+{armFrontR2.2_posZ} @ {anim_12.2} -> 2
+
+{armSideL1.2_rotY} @ {anim_12.2} -> 90'
+{armSideL1.2_posZ} @ {anim_12.1} -> 2
+{armSideL2.2_posZ} @ {anim_12.2} -> 2
+{armFrontL1.2_rotY} @ {anim_12.2} -> 90'
+{armFrontL1.2_posZ} @ {anim_12.2} -> 2
+
+{armSideL3.2_rotY} @ {anim_12.1} -> -270'
+{armSideL3.2_posZ} @ {anim_12.1} -> -2
+{armSideL4.2_posZ} @ {anim_12.2} -> 2
+{armFrontL2.2_rotY} @ {anim_12.2} -> -90'
+{armFrontL2.2_posZ} @ {anim_12.2} -> 2
+
+{pack3_posY} @ {anim_13} -> 1
+{legFrontR3_posZ} @ {anim_13} -> 3
+{legBackR6_posZ} @ {anim_13} -> 3
+{legSideR2_posZ} @ {anim_13} -> 3
+{legSideR3_posX} @ {anim_13} -> -1
+
+{legFrontL3_posZ} @ {anim_13} -> 3
+{legBackL6_posZ} @ {anim_13} -> 3
+{legSideL2_posZ} @ {anim_13} -> 3
+{legSideL3_posX} @ {anim_13} -> 1
+
+{armBackR5_posY} @ {anim_13.1} -> 9
+{armBackR5_posZ} @ {anim_13.1} -> 2
+{armSideR1.3_rotY} @ {anim_13.3} -> -90'
+{armSideR1.3_posZ} @ {anim_13.2} -> 2
+{armSideR2.3_posZ} @ {anim_13.3} -> 2
+{armFrontR1.3_rotY} @ {anim_13.3} -> -90'
+{armFrontR1.3_posZ} @ {anim_13.3} -> 2
+
+{armBackR6_posY} @ {anim_13.1} -> 9
+{armBackR6_posZ} @ {anim_13.1} -> 2
+{armSideR3.3_rotY} @ {anim_13.2} -> 270'
+{armSideR3.3_posZ} @ {anim_13.2} -> -2
+{armSideR4.3_posZ} @ {anim_13.3} -> 2
+{armFrontR2.3_rotY} @ {anim_13.3} -> 90'
+{armFrontR2.3_posZ} @ {anim_13.3} -> 2
+
+{ArmFistR3_posY} @ {anim_13.2}-> 3
+{ArmFistR4_posY} @ {anim_13.2} -> 3
+{ArmFistR2_posZ} @ {anim_13.3} -> 2
+{ArmFistR1_posX} @ {anim_13.3} -> -0.99
+{ArmFistR1_posY} @ {anim_13.2} -> 11
+{ArmFistR1_rotZ} @ {anim_13.3} -> 90'
+
+
+{armBackL5_posY} @ {anim_13.1} -> 9
+{armBackL5_posZ} @ {anim_13.1} -> 2
+{armSideL1.3_rotY} @ {anim_13.3} -> 90'
+{armSideL1.3_posZ} @ {anim_13.2} -> 2
+{armSideL2.3_posZ} @ {anim_13.3} -> 2
+{armFrontL1.3_rotY} @ {anim_13.3} -> 90'
+{armFrontL1.3_posZ} @ {anim_13.3} -> 2
+
+{armBackL6_posY} @ {anim_13.1} -> 9
+{armBackL6_posZ} @ {anim_13.1} -> 2
+{armSideL3.3_rotY} @ {anim_13.2} -> -270'
+{armSideL3.3_posZ} @ {anim_13.2} -> -2
+{armSideL4.3_posZ} @ {anim_13.3} -> 2
+{armFrontL2.3_rotY} @ {anim_13.3} -> -90'
+{armFrontL2.3_posZ} @ {anim_13.3} -> 2
+
+{ArmFistL3_posY} @ {anim_13.2}-> 3
+{ArmFistL4_posY} @ {anim_13.2} -> 3
+{ArmFistL2_posZ} @ {anim_13.3} -> 2
+{ArmFistL1_posX} @ {anim_13.3} -> 0.99
+{ArmFistL1_posY} @ {anim_13.2} -> 11
+{ArmFistL1_rotZ} @ {anim_13.3} -> -90'
+
+
+{armRYellowFront1_posX} @ {anim_13.2}-> -5
+{armRYellowFront1_posZ} @ {anim_13.2} -> -3.5
+{armRYellowFront2_posY} @ {anim_13.3} -> 2
+{armRYellowFront2_posX} @ {anim_13.3} -> 0
+
+{armRYellowFront3_posX} @ {anim_13.2}-> -5
+{armRYellowFront3_posZ} @ {anim_13.2} -> -3.5
+{armRYellowFront4_posY} @ {anim_13.3} -> 2
+{armRYellowFront4_posX} @ {anim_13.3} -> 0
+
+{armRYellowBack1_posX} @ {anim_13.2}-> -5
+{armRYellowBack1_posZ} @ {anim_13.2} -> -3.5
+{armRYellowBack2_posY} @ {anim_13.3} -> 2
+{armRYellowBack2_posX} @ {anim_13.3} -> 0
+
+{armRYellowBack3_posX} @ {anim_13.2}-> -5
+{armRYellowBack3_posZ} @ {anim_13.2} -> -3.5
+{armRYellowBack4_posY} @ {anim_13.3} -> 2
+{armRYellowBack4_posX} @ {anim_13.3} -> 0
+
+{armLYellowFront1_posX} @ {anim_13.2}-> 5
+{armLYellowFront1_posZ} @ {anim_13.2} -> -3.5
+{armLYellowFront2_posY} @ {anim_13.3} -> 2
+{armLYellowFront2_posX} @ {anim_13.3} -> 0
+
+{armLYellowFront3_posX} @ {anim_13.2}-> 5
+{armLYellowFront3_posZ} @ {anim_13.2} -> -3.5
+{armLYellowFront4_posY} @ {anim_13.3} -> 2
+{armLYellowFront4_posX} @ {anim_13.3} -> 0
+
+{armLYellowBack1_posX} @ {anim_13.2}-> 5
+{armLYellowBack1_posZ} @ {anim_13.2} -> -3.5
+{armLYellowBack2_posY} @ {anim_13.3} -> 2
+{armLYellowBack2_posX} @ {anim_13.3} -> 0
+
+{armLYellowBack3_posX} @ {anim_13.2}-> 5
+{armLYellowBack3_posZ} @ {anim_13.2} -> -3.5
+{armLYellowBack4_posY} @ {anim_13.3} -> 2
+{armLYellowBack4_posX} @ {anim_13.3} -> 0
+
+
+
+{pack4_posY} @ {anim_14} -> 2
+{legFrontR4_posZ} @ {anim_14} -> 3
+{legBackR7_posZ} @ {anim_14} -> 3
+{legSideR4_posZ} @ {anim_14} -> 3
+{legSideR5_posX} @ {anim_14} -> -1
+
+{legFrontL4_posZ} @ {anim_14} -> 3
+{legBackL7_posZ} @ {anim_14} -> 3
+{legSideL4_posZ} @ {anim_14} -> 3
+{legSideL5_posX} @ {anim_14} -> 1
+
+
+{pack1_overlay_posY} @ {anim_12} -> 0
+{pack1_overlay_posZ} @ {anim_13} -> -2
+{pack2_overlay_posY} @ {anim_14} -> 2
+{pack3_overlay_posY} @ {anim_15} -> 2
+
+{legSideR1_overlay_posX} @ {anim_15} -> -2
+{legSideL1_overlay_posX} @ {anim_15} -> 2
+{bootFrontR1_posX} @ {anim_15} -> 0
+{bootFrontR1_posY} @ {anim_15} -> 0
+{bootFrontR1_posZ} @ {anim_15} -> 0
+
+{bootFrontR2_posX} @ {anim_15} -> 0
+{bootFrontR2_posY} @ {anim_15} -> 0
+{bootFrontR2_posZ} @ {anim_15} -> 0
+
+{bootBackR1_posX} @ {anim_15} -> 0
+{bootBackR1_posY} @ {anim_15} -> 0
+{bootBackR1_posZ} @ {anim_15} -> 0
+
+{bootBackR2_posX} @ {anim_15} -> 0
+{bootBackR2_posY} @ {anim_15} -> 0
+{bootBackR2_posZ} @ {anim_15} -> 0
+
+{bootFrontL1_posX} @ {anim_15} -> 0
+{bootFrontL1_posY} @ {anim_15} -> 0
+{bootFrontL1_posZ} @ {anim_15} -> 0
+
+{bootFrontL2_posX} @ {anim_15} -> 0
+{bootFrontL2_posY} @ {anim_15} -> 0
+{bootFrontL2_posZ} @ {anim_15} -> 0
+
+{bootBackL1_posX} @ {anim_15} -> 0
+{bootBackL1_posY} @ {anim_15} -> 0
+{bootBackL1_posZ} @ {anim_15} -> 0
+
+{bootBackL2_posX} @ {anim_15} -> 0
+{bootBackL2_posY} @ {anim_15} -> 0
+{bootBackL2_posZ} @ {anim_15} -> 0
+
+{legFrontYellow1_posZ} @ {anim_14.1} -> -5.505
+{legFrontYellow2_posY} @ {anim_14.2} -> 1
+{legFrontYellow3_posY} @ {anim_14.3} -> 1
+{legFrontYellow4_posY} @ {anim_14.4} -> 1
+{legFrontYellow5_posY} @ {anim_14.5} -> 1
+
+{legBackYellow1_posZ} @ {anim_14.1} -> -1.505
+{legBackYellow2_posY} @ {anim_14.2} -> 1
+{legBackYellow3_posY} @ {anim_14.3} -> 1
+{legBackYellow4_posY} @ {anim_14.4} -> 1
+{legBackYellow5_posY} @ {anim_14.5} -> 1
+
+
+{head_sideR1_rotZ} @ {anim_11} -> -90'
+{head_sideR1_posX} @ {anim_10} -> 4
+{head_sideR1.2_posX} @ {anim_11} -> 4
+
+{head_sideR2_rotZ} @ {anim_12} -> -90'
+{head_sideR2_posX} @ {anim_11} -> 4
+{head_sideR2.2_posX} @ {anim_12} -> 4
+
+{head_sideR3_posZ} @ {anim_12} -> 2
+{head_sideR3.2_posX} @ {anim_13.1} -> 4
+
+{head_sideR4_posZ} @ {anim_13.1} -> 2
+{head_sideR4.2_posX} @ {anim_13.2} -> 4
+
+{head_sideL1_rotZ} @ {anim_11} -> 90'
+{head_sideL1_posX} @ {anim_10} -> -4
+{head_sideL1.2_posX} @ {anim_11} -> -4
+
+{head_sideL2_rotZ} @ {anim_12} -> 90'
+{head_sideL2_posX} @ {anim_11} -> -4
+{head_sideL2.2_posX} @ {anim_12} -> -4
+
+{head_sideL3_posZ} @ {anim_12} -> 2
+{head_sideL3.2_posX} @ {anim_13.1} -> -4
+
+{head_sideL4_posZ} @ {anim_13.1} -> 2
+{head_sideL4.2_posX} @ {anim_13.2} -> -4
+
+{head_back1_rotX} @ {anim_10} -> 90'
+{head_back1_posZ} @ {anim_9} -> 2
+{head_back2_posZ} @ {anim_10} -> 2
+{head_back3_posZ} @ {anim_11} -> 2
+{head_back4_posZ} @ {anim_12} -> 2
+
+{head_top1_posZ} @ {anim_12} -> 2
+{head_top1_rotX} @ {anim_13.1} -> 90'
+{head_top2_posZ} @ {anim_13.1} -> 2
+{head_top3_posZ} @ {anim_13.2} -> 2
+{head_top4_posZ} @ {anim_13.3} -> 2
+{face2_posZ} @ {anim_13} -> 2
+
+{face1_rotX} @ {anim_13} -> -270'
+{face2_rotX} @ {anim_13} -> 90'

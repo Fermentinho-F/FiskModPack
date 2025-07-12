@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmhp:black_clover/asta/blackform",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "tmachp:black_clover/xor/blackform_<TIMER>"
+      }
+    ],
+    "out": "tmachp:generated/black_clover/asta/blackform_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(13 * entity.getInterpolatedData('tmhp:dyn/blackform_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 13
+      }
+    }
+  },
+  "isDynamic": true
+}

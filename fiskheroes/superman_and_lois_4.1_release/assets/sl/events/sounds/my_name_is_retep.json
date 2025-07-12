@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.my_name_is_retep",
+  "condition": {
+    "start": "entity.getWornChestplate().suitType() == 'sl:peter_griffin/retep'",
+    "continue": "entity.isWearingFullSuit() && (entity.getWornChestplate().suitType() == 'sl:peter_griffin/retep')"
+  },
+  "volume": 1.0
+}

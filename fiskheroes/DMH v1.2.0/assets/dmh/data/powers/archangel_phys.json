@@ -1,0 +1,189 @@
+{
+  "name": "Archangel Physiology",
+  "modifiers": {
+    "fiskheroes:transformation|aim": {
+      "key": "TELEKINESIS_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    /** "fiskheroes:transformation|smite": {
+      "key": "CHARGED_BEAM_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    },
+    "fiskheroes:transformation|heal": {
+      "key": "ENERGY_PROJECTION_AIM",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform",
+        "timerData": "dmh:dyn/transform_timer",
+        "time": 5
+      },
+      "isToggle": false
+    }, **/
+    "fiskheroes:charged_beam|holy_white_light": {
+      "damageProfile": {
+        "damage": 50,
+        "types": {
+          "COSMIC": 1.0,
+          "ARCHANGEL": 1.0
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 24.0,
+      "radius": 6.0,
+      "soundEvents": {
+        "SHOOT": [ "dmh:erase" ]
+      }
+    },
+    "fiskheroes:charged_beam|power_dampen": {
+      "damageProfile": {
+        "damage": 0.01,
+        "types": {
+          "COSMIC": 2
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 2400,
+              "amplifier": 0,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 24.0,
+      "radius": 6.0
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ARCHANGEL": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 2.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 1.0,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start"
+      }
+    },
+    "fiskheroes:energy_projection|heal": {
+      "damageProfile": {
+        "damage": 0.001,
+        "types": {},
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:regeneration",
+              "duration": 100,
+              "amplifier": 4,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "knockback": 0.0,
+      "chargeTime": 15,
+      "duration": 200,
+      "cooldownTime": 250,
+      "canDoGriefing": false,
+      "range": 2.0,
+      "radius": 1.0
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 100
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_immunity|cactus": {
+      "damageType": "CACTUS"
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:damage_immunity|magic": {
+      "damageType": "MAGIC"
+    },
+    "fiskheroes:damage_immunity|electricity": {
+      "damageType": "ELECTRICITY"
+    },
+    "fiskheroes:damage_immunity|atlantean steel": {
+      "damageType": "ATLANTEAN_STEEL"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 8.0
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 150.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": [ "fiskheroes:flight_loop" ],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    }
+  }
+}

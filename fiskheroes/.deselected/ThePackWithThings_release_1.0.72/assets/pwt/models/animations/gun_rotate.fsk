@@ -1,0 +1,7 @@
+{data} = {data}
+
+{barrel_base_rotY} -= (pi/180)* 360 *{data}
+
+{barrel_1_2_posY} -= 1.0*{data}
+{barrel_2_2_posY} -= 1.0*{data}
+{barrel_3_2_posY} -= 1.0*{data}

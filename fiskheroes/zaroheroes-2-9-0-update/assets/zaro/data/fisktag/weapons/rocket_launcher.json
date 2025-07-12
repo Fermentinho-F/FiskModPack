@@ -1,0 +1,44 @@
+{
+  "name": "Rocket Launcher",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "cooldown": 80,
+  "damage": 4,
+  "fisktag": {
+    "sprintShootDelay": 10,
+    "sprintDelay": 10
+  },
+  "scope": {
+    "zoom": 0.7,
+    "allowHeadshots": false
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 2.0,
+    "sneakingFactor": 0.8,
+    "scopingFactor": 0.6
+  },
+  "recoil": {
+    "amount": 8.0,
+    "cameraShake": 8.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 2.5,
+      "speed": 4.0,
+      "trail": 1,
+      "hitRadius": 0.2,
+      "impact": {
+        "type": "EXPLOSION",
+        "radius": 4.0,
+        "affectsUser": true
+      }
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:rocket_launcher_shoot",
+    "SCOPE_START": "fisktag:rocket_launcher_scope_start",
+    "SCOPE_STOP": "fisktag:rocket_launcher_scope_stop"
+  }
+}

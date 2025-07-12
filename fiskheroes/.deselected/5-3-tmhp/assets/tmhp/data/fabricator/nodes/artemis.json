@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:artemis",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:archery",
+    "tmhp:young_justice",
+    "tmhp:teamarrow",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Ghost Physiology",
+  "modifiers": {
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "GRAB": "fnaf:golden_freddy_telekinesis_loop"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fnaf:golden_freddy_teleport"
+      }
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:invisibility": {
+      "soundEvents": {
+        "DISABLE": "fnaf:golden_freddy_glitch"
+      }
+    }
+  }
+}

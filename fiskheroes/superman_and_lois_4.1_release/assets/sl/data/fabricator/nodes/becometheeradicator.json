@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "Become The Eradicator...",
+    "description": "Become the eradicator!",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/eradicator.png"
+    }
+  },
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": "Craft a beacon",
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:beacon'"
+      }
+    }
+  },
+  "requirements": [
+    "sl:talrho"
+  ],
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 15
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:thing",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier8_9",
+    "fiskheroes:melee3",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense3",
+    "fiskheroes:ranged"
+  ]
+}

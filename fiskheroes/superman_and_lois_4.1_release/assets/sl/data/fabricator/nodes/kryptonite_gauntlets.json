@@ -1,0 +1,10 @@
+{
+  "suit": "sl:kryptonite_gauntlets",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:ranged3",
+    "sl:sl",
+    "sl:kryptonite",
+    "sl:ap2_3"
+  ]
+}

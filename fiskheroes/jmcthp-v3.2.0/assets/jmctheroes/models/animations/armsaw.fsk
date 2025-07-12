@@ -1,0 +1,7 @@
+{blade_posY} += 12*{data}
+{blade_posZ} += -1*{data}
+{blade_rotY} += -15'*{data}
+
+{saw_posY} += 12*{data}
+{saw_posZ} += -1*{data}
+{saw_rotY} += -15'*{data}

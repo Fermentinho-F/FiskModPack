@@ -1,0 +1,31 @@
+{
+  "name": "Cyborg",
+  "modifiers": {
+    "fiskheroes:metal_skin": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "range": 32.0,
+      "cooldownTime": 30
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 0.001
+    }
+  }
+}

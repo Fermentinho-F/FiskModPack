@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "Omniverse Heroes",
+    "description": "So you want to be a hero, let's get started",
+    "icon": {
+      "texture": "emo:textures/gui/nodes/cadmus.png"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": true,
+  "requirements": [ ]
+}

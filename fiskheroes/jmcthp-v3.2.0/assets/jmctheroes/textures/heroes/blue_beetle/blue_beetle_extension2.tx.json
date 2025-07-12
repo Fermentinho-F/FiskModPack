@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:blue_beetle/blue_beetle_extension2_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "(entity.is('DISPLAY') || entity.as('DISPLAY').getDisplayType === 'BOOK_PREVIEW') ? 5 : (Math.ceil(5 * entity.getInterpolatedData('jmctheroes:dyn/beetle_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 5
+      }
+    }
+  }
+}

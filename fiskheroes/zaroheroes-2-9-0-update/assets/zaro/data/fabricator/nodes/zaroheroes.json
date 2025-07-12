@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": "ZARO HEROES",
+    "description": "ZAROHEROES \u00A7d\u00A7lZaro Heroes",
+    "icon": {
+      "texture": "zaro:textures/gui/nodes/zaroheroes.png"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ ]
+}

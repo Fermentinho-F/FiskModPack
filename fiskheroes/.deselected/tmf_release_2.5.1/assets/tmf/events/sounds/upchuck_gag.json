@@ -1,0 +1,6 @@
+{
+  "sound": "tmf:upchuck.gag",
+  "pitch": "0.7 - Math.random() * 0.5",
+  "fadeIn": 12,
+  "fadeOut": 12
+}

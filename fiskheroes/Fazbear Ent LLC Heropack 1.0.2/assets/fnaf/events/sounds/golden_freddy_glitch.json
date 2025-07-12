@@ -1,0 +1,12 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fnaf:golden.freddy.glitch",
+  "condition": {
+    "start": "(entity.getWornHelmet().suitType() == 'fnaf:golden_freddy' || entity.getWornHelmet().suitType() == 'fnaf:golden_freddy/movie') && !entity.getData('fiskheroes:invisible')",
+    "continue": "(entity.getWornHelmet().suitType() == 'fnaf:golden_freddy' || entity.getWornHelmet().suitType() == 'fnaf:golden_freddy/movie') && !entity.getData('fiskheroes:invisible')"
+  },
+  "volume": 0.9,
+  "loop" : true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

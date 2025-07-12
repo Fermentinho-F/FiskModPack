@@ -1,0 +1,9 @@
+{data_0} = curve {data_0}
+{data_1} = curve{data_1}
+{leftArm_rotX} @ {data_0} -> {head_rotX} - pi / 2
+{leftArm_rotY} @ {data_0} -'> {head_rotY}
+{leftArm_rotZ} @ {data_0} -> {head_rotZ}
+
+{data_1} = sin(pi{data_1})
+
+{leftArm_posZ} @ {data_1} -> 1

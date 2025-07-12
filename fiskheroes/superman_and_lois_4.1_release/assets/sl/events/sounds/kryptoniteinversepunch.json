@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "sl:dyn/kryptonite",
+  "sound": "sl:main.inversepunch",
+  "volume": 1.0,
+  "fadeOut": 20
+}

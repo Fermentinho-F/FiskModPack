@@ -1,0 +1,58 @@
+{
+  "name": "Moon Knight's Suit",
+  "modifiers": {
+    "fiskheroes:cooldown|day": {
+      "cooldown": {
+        "toggleData": "!entity.isSneaking()",
+        "cooldownData": "jmctheroes:dyn/day",
+        "duration": 2.5,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:cooldown|night": {
+      "cooldown": {
+        "toggleData": "entity.isSneaking()",
+        "cooldownData": "jmctheroes:dyn/night",
+        "duration": 2.55,
+        "recovery": 0.55
+      }
+    },
+    "fiskheroes:shield": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:panther_claws_enable",
+        "DISABLE": "fiskheroes:panther_claws_disable"
+      }
+   },
+    "fiskheroes:gliding": {
+      "isPowered": false,
+      "isControlled": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:cape_open", "fiskheroes:gliding"],
+        "DISABLE": "fiskheroes:cape_close"
+      }
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "ELECTRICITY",
+      "factor": 0.5
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 50,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  }
+}

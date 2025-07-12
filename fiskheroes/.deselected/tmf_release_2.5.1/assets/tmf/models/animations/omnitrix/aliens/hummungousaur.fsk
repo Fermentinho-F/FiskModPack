@@ -1,0 +1,124 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{sneaking} = {data_1} 
+{idle} = sin(2pi{data_2})
+{growth} = 1-{data_3}
+{land} = {data_4}
+{spin} = {data_5}
+
+{movement} = cos({limbSwing} * 0.3662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+{head_rotX} -= min({lookY}, 0.7) + 0.3{sneaking}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{body_rotX} += 0.3{sneaking} + 0.15sin(pi{data_2})
+{lowerBody_rotX} -= 0.15sin(pi{data_2})
+{body_posY} += sin(pi{data_2})
+
+{body_posZ} -= 1.5*sin(pi{data_2})
+
+{rLeg_rotX} -= {movement} + 0.3{sneaking} 
+{lLeg_rotX} += {movement} - 0.3{sneaking}
+
+{punch} = {data_0}
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{lowerBody_rotY} = -sin(sqrt({f6}) * pi * 2.0) * 0.05
+{head_rotY} -= sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+{rArm_rotX} += {movement}
+{rArm_rotZ} += 0.1{idle}
+{rArmLower_rotZ} -= 0.05sin(pi{data_2})
+
+{lArm_rotX} -= {movement}
+{lArm_rotZ} -= 0.1{idle} 
+{lArmLower_rotZ} += 0.05sin(pi{data_2})
+;=====================================================================
+
+{tail1_rotX} += 0.35{idle} - 0.2{motY}
+{tail2_rotX} += 0.25{idle} - 0.1{motY}
+{tail3_rotX} += 0.15{idle} - 0.1{motY}
+
+{tail1_rotY} += 0.4{idle}
+{tail2_rotY} += 0.6{idle}
+{tail3_rotY} += 0.8{idle}
+
+;=====================================================================
+{bodySpike1_posZ} -= 3{growth}
+{bodySpike2_posZ} -= 3{growth}
+{scales_posY} += 3{growth}
+
+{headSpike_posY} += 3{growth}
+{headSpike_posZ} += {growth}
+
+{neckSpike_posY} += 4.5{growth}
+{neckSpike2_posZ} -= 2.1{growth}
+
+{rShoulder1_rotZ} -= 2.5{growth}'
+{rShoulder2_rotZ} -= 2.5{growth}'
+{rShoulder3_rotZ} -= 7.5{growth}'
+
+{rForearm1_rotZ} += 10{growth}'
+{rForearm2_rotZ} += 10{growth}'
+{rForearm3_rotZ} += 10{growth}'
+
+{lShoulder1_rotZ} += 2.5{growth}'
+{lShoulder2_rotZ} += 2.5{growth}'
+{lShoulder3_rotZ} += 7.5{growth}'
+
+{lForearm1_rotZ} -= 10{growth}'
+{lForearm2_rotZ} -= 10{growth}'
+{lForearm3_rotZ} -= 10{growth}'
+
+{tailSpike1_rotX} -= 35.5{growth}'
+{tailSpike1_posX} += 2{growth}
+{tailSpike1_posZ} -= 2{growth}
+
+{tailSpike2_rotX} -= 52.5{growth}'
+{tailSpike2_posX} += 1{growth}
+{tailSpike2_posZ} -= 1{growth}
+
+{tailSpike3_rotX} += 27.5{growth}'
+{tailSpike3_posX} -= 1{growth}
+{tailSpike3_posZ} -= 1{growth}
+
+{tailSpike4_rotX} += 33.5{growth}'
+{tailSpike4_posX} -= 2{growth}
+{tailSpike4_posZ} -= 3{growth}
+
+;=====================================================================
+{body_rotZ} += 1.5{land}
+{lowerBody_rotZ} += 0.4{land}
+{lArm_rotZ} -= 2.5{land}
+
+{body_rotY} += 2pi{spin}
+
+{rArm_rotX} += 30'sin(pi{spin})
+{rArm_rotZ} += 30'sin(pi{spin})
+
+{lArm_rotX} -= 30'sin(pi{spin})
+{lArm_rotZ} -= 30'sin(pi{spin})
+
+{rLeg_rotX} += 20'sin(pi{spin})
+{lLeg_rotX} -= 18'sin(pi{spin})

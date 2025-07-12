@@ -1,0 +1,108 @@
+{
+  "name": "All Black",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "shadows:creetle2",
+        "DISABLE": "shadows:creetle2"
+      }
+    },
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "DISABLE": "fiskheroes:shadowform_disable",
+        "ENABLE": ["fiskheroes:shadowform_enable", "fiskheroes:shadowform_loop"]
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:shadowform",
+        "cooldownData": "fiskheroes:dyn/shadowform_cooldown",
+        "duration": 1000,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:flight": {},
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.7, 0, 0.4],
+        [-0.7, 0, 0.4],
+        [0.65, -0.9, 0.3],
+        [-0.65, -0.9, 0.3],
+        [0.3, 0.5, 0.5],
+        [-0.3, 0.5, 0.5]
+      ],
+      "range": 10.0,
+      "damageProfile": {
+        "damage": 8.5,
+        "types": {
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "climbing": {
+        "speed": 0.1,
+        "range": 10,
+        "tolerance": 15,
+        "minAnchorPoints": 1,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+          ["BOTTOM", "RIGHT", "BACK"],
+          ["BOTTOM", "LEFT", "BACK"]
+        ]
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "shadows:creetle2",
+        "DISABLE": "shadows:creetle2",
+        "ANCHOR": "shadows:creetle3",
+        "UNANCHOR": "shadows:creetle3",
+        "RELEASE": "shadows:creetle1"
+      }
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 30,
+        "cooldown": 80
+      },
+      "coverage": {
+        "yawRadius": 35.0,
+        "pitchRadius": 35.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "BLOCK_START": "shadows:creetle2",
+        "BLOCK_STOP": "shadows:creetle2",
+        "DEFLECT": "shadows:creetle1"
+      },
+      "isToggle": true
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 80,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  },
+  "hud": [{
+      "type": "PROGRESS",
+      "texture": "shadows:textures/gui/bars/necro_sword/bar.png",
+      "data": "fiskheroes:dyn/shadowform_cooldown"
+    }
+  ]
+}

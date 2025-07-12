@@ -1,0 +1,9 @@
+{data} = sin(pi(1 - {data}))^2
+out "rotate" (-1000{data}, 0, 1, 0)
+
+{leftArm_rotX} @ {data} -> {head.rotX} - 0.75
+{leftArm_rotY} @ {data} -> {head.rotY} - 0.55
+{leftArm_rotZ} @ {data} -> {head.rotZ}
+{rightArm_rotX} @ {data} -> {head.rotX} - 0.75
+{rightArm_rotY} @ {data} -> {head.rotY} + 0.55
+{rightArm_rotZ} @ {data} -> {head.rotZ}

@@ -1,0 +1,10 @@
+{data_0} = 2*sin(pi*{data_0})
+
+{base_posY} += {data_0}
+{base_o1_posY} += {data_0}
+{base_o2_posY} += {data_0}
+
+{base_rotY} -= 91'{data_1}
+{base_o1_rotY} -= 91'{data_1}
+{base_o2_rotY} -= 91'{data_1}
+

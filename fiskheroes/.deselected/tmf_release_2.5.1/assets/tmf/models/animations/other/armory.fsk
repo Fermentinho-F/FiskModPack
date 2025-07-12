@@ -1,0 +1,11 @@
+{coffin_posY} @ {data} -> -20
+{coffin_overlay_posY} @ {data} -> -20
+
+{coffin_posZ} @ {data} -> 5
+{coffin_overlay_posZ} @ {data} -> 5
+
+{coffin_rotX} @ {data} -> -10'
+{coffin_overlay_rotX} @ {data} -> -10'
+
+{coffin_lower_rotX} @ {data} -> 40'
+{coffin_lower_overlay_rotX} @ {data} -> 40'

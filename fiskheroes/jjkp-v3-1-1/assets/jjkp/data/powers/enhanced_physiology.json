@@ -1,0 +1,29 @@
+{
+  "name": "Enhanced Physiology",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": false,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": [],
+        "SPRINT": [],
+        "STOP": []
+      }
+    },
+    "fiskheroes:damage_resistance|explosion": {
+      "damageType": "EXPLOSION",
+      "factor": 0.25
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.75, 0.1]
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    }
+  }
+}

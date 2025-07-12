@@ -1,0 +1,26 @@
+{
+  "name": "Flying Machine",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "STEEL_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "timerData": "fiskheroes:dyn/steel_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "cooldownData": "fiskheroes:dyn/steel_cooldown",
+        "duration": 6000,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:gliding": {
+      "isPowered": false,
+      "isControlled": false,
+      "boostSpeed": 0.009
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:naruto_sage",
+  "requirements": [
+    "tmhp:naruto_shippuden",
+    "elseworld:ap8_9",
+    "tmhp:kyuubi",
+    "tmhp:sage_mod",
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "tmhp:heropack2"
+  ]
+}

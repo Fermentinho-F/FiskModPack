@@ -1,0 +1,34 @@
+{m} = clamp(-{motY}, -110', 110')
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+{leftArm_rotX} @ {data} -> -3 + {m}
+
+{mforward}= clamp(-{motY}, -60', 0)
+{mbackward}= clamp(-{motY}, 0, 60')
+
+{data} *= {vel}
+{head_rotY} -=10'{m}
+
+{leftArm_rotZ} @ {data} -> 0.2
+{rightArm_rotX} @ {data} -> 0.7{m}
+{rightArm_rotY} @ {data} -> -0.2 - 0.4{m}
+{rightArm_rotZ} @ {data} -> 0.3
+
+{rightLeg_posX} -= {mbackward}
+{rightLeg_posY} -= 2.5{mbackward}
+{rightLeg_posZ} -= 5.5{mbackward} -{m} + {mforward}
+
+{rightLeg_rotX} @ {data} -> 0.6 + 0.1{mbackward} + 1.5{mforward}
+{rightLeg_rotY} @ {data} -> -0.2{m} + 0.4{mbackward}
+{rightLeg_rotZ} @ {data} -> 0.2
+
+{leftLeg_posX} -= 1.5{mforward}
+{leftLeg_posY} += 2{mforward}
+{leftLeg_posZ} += 4{mforward}
+
+{leftLeg_rotX} @ {data} -> -0.6{m}
+{leftLeg_rotY} @ {data} -> 0.3{mforward}
+{leftLeg_rotZ} @ {data} -> -0.3
+
+out "rotate" (15{m}, 0, -1, 0)

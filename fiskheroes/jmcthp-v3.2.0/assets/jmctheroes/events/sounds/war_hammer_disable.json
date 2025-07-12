@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.ironman.nanotech.mk85.shield.block.stop",
+  "volume": 0.5,
+  "pitch": 0.9
+}

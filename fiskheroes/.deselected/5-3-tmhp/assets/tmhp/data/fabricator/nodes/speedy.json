@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:speedy",
+  "display": {
+  "description": "\u00A74And as for you -- you take another step towards me and your hooded friend gets seriously \u00A7lshafted. \u00A74Get it?"
+  },
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap1",
+    "fiskheroes:archery",
+    "tmhp:teen_titans",
+    "tmhp:teamarrow",
+    "tmhp:heropack2"
+  ]
+}

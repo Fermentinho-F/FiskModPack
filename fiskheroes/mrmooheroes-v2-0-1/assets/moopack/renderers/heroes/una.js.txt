@@ -1,0 +1,25 @@
+extend("fiskheroes:hero_basic");
+loadTextures({
+    "layer1": "moopack:aliens/una_layer1",
+    "layer2": "moopack:aliens/una_layer2"
+});
+
+var utils = implement("fiskheroes:external/utils");
+
+var chest;
+
+function init(renderer) {
+    parent.init(renderer);
+    //renderer.setLights((entity, renderLayer) => renderLayer == "LEGGINGS" ? "layer2_lights" : "layer1_lights");
+}
+
+function initEffects(renderer) {
+    chest = renderer.createEffect("fiskheroes:chest");
+    chest.setExtrude(1).setYOffset(1);
+}
+
+function render(entity, renderLayer, isFirstPersonArm) {
+    if (!isFirstPersonArm && renderLayer == "CHESTPLATE") {
+        chest.render();
+    }
+}

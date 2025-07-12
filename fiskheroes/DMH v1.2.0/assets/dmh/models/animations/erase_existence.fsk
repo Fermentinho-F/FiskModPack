@@ -1,0 +1,19 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+
+{rightArm_rotX} @ {data_0} -> -78'
+{rightArm_rotY} @ {data_0} -'> -73'
+
+{rightArm_rotX} @ {data_1} -> -109'
+{rightArm_rotY} @ {data_1} -'> 65'
+
+
+
+{firstPersonData} = max({data_0}, {data_1})
+out "firstPerson" (true)
+out "translate" (-0.35{firstPersonData}, 0, 0.15{firstPersonData})
+out "rotate" (-27{firstPersonData}, 0, 1, 0)
+out "rotate" (-20{firstPersonData}, 1, 0, 0)
+out "rotate" (-30{firstPersonData}, 0, 0, 1)
+

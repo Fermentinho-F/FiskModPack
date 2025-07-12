@@ -1,0 +1,5 @@
+{leftArm_rotX} @ {data} -> ({head_rotX}) 
+
+{rightArm_rotX} @ {data} -> ({head_rotX})
+
+

@@ -1,0 +1,39 @@
+{
+  "name": "Sniper",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 40,
+  "damage": 3,
+  "fisktag": {
+    "sprintShootDelay": 6
+  },
+  "scope": {
+    "zoom": 1.25,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.0
+  },
+  "recoil": {
+    "amount": 1.5,
+    "cameraShake": 3.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.5,
+      "range": 256.0,
+      "speed": 256.0,
+      "trail": 5
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:sniper_shoot",
+    "SCOPE_START": "fisktag:sniper_scope_start",
+    "SCOPE_STOP": "fisktag:sniper_scope_stop"
+  }
+}

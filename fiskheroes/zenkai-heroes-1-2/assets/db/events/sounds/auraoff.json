@@ -1,0 +1,7 @@
+{
+  "sound": "db:auraoff",
+  "condition": "!entity.getData('db:dyn/glow') > 0",
+  "volume": 0.2,
+  "loop": false,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

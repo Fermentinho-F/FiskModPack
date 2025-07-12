@@ -1,0 +1,6 @@
+{
+  "sound": "pwt:suit.electro.beam.start.light",
+  "condition": "fiskheroes:energy_projection",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

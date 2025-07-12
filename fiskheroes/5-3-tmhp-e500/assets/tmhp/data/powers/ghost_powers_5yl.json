@@ -1,0 +1,188 @@
+{
+  "name": "Ghost Powers (5YL)",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "GHOSTFORM",
+      "transformation": {
+        "toggleData": "tmhp:dyn/ghostform",
+        "timerData": "tmhp:dyn/ghostform_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "tmhp:going_ghost",
+        "DISABLE": "tmhp:going_ghost"
+      }
+    },
+    "fiskheroes:cooldown|ghostform": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/ghostform",
+        "cooldownData": "tmhp:dyn/ghostform_cooldown",
+        "duration": 20000,
+        "recovery": 10.0
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 15.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_beam"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.35,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": true
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "fiskheroes:cryo_charge"
+      }
+    },
+    "fiskheroes:damage_bonus": {
+      "amount": 6.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 5
+      }
+    },
+    "fiskheroes:icicles": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "SHARP": 1.0,
+          "COLD": 0.5
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.2
+        }
+      },
+      "quantity": 5,
+      "spread": 0.5,
+      "cooldownTime": 5
+    },
+    "fiskheroes:regeneration": {
+      "factor": 10
+    },
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 55.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 3.0,
+      "isToggle": true,
+      "soundEvents": {
+        "SHOOT": "tmhp:ghostlywail"
+      }
+    },
+    "fiskheroes:cooldown|ghostly_wail": {
+      "cooldown": {
+        "toggleData": "fiskheroes:sonic_waves",
+        "cooldownData": "tmhp:dyn/ghostly_wail",
+        "duration": 55,
+        "recovery": 0.4
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 50.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 90,
+          "IGNITE": 2
+        }
+      },
+      "chargeTime": 50,
+      "duration": 25,
+      "cooldownTime": 25,
+      "range": 32.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 25.0,
+        "regeneration": 1.0,
+        "recoveryDelay": 50,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "fiskheroes:textures/gui/bars/cryo_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:energy_projection",
+      "data": "tmhp:dyn/ghostly_wail"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "tmhp:textures/gui/ghostform.png",
+      "data": "tmhp:dyn/ghostform_cooldown"
+    }
+  ]
+}

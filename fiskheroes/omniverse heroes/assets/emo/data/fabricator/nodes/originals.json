@@ -1,0 +1,20 @@
+{
+  "display": {
+    "name": {
+      "translate": "The Original Family"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/originals.png"
+    },
+    "isLevelable": true
+  },
+  "requirements": [ 
+    "fiskheroes:traversal",
+    "fiskheroes:magic",
+    "fiskheroes:regeneration2",
+    "emo:cadmus"
+  ],
+  "price": {
+    "XP_LEVELS": 10
+  }
+}

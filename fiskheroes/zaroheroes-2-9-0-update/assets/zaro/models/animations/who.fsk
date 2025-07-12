@@ -1,0 +1,7 @@
+{leftArm_rotX} @ {data_0} -> -1.8
+{leftArm_rotY} @ {data_0} -> 0.9
+{leftArm_rotZ} @ {data_0} -> -1.3
+
+{rightArm_rotX} @ {data_0} -> -1.9
+{rightArm_rotY} @ {data_0} -> -0.8
+{rightArm_rotZ} @ {data_0} -> -0.2

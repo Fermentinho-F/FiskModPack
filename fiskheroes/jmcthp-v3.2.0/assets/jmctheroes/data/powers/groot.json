@@ -1,0 +1,42 @@
+{
+  "name": "Tree Physiology",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "jmctheroes:groot_claws_enable"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.7, 0.2]
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+    "fiskheroes:gliding": {
+      "gliding": {
+        "speed": 1.3,
+        "lift": 1.5,
+        "gravity": 1.25,
+        "stall": 1.0
+      },
+      "isPowered": false,
+      "isControlled": false,
+      "canJumpActivate": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.75,
+      "soundEvents": {
+        "ENABLE": ["jmctheroes:groot_wings_open", "fiskheroes:gliding"]
+      }
+    }
+  }
+}

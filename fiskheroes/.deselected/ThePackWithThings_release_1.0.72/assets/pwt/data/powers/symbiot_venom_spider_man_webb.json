@@ -1,0 +1,174 @@
+{
+  "name": "Venom Symbiote (Webb)",
+  "modifiers": {
+
+    "fiskheroes:cooldown|punch_cooldown": {
+      "cooldown": {
+        "toggleData": "entity.isPunching()",
+        "cooldownData": "pwt:dyn/cooldown_interp",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+	
+
+  "fiskheroes:size_manipulation|small": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.0,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:venom_suit_enable"
+      }
+    },	  
+  "fiskheroes:size_manipulation|giant": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.0,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:venom_suit_enable"
+      }
+    },
+    "fiskheroes:transformation|symbiot": {
+      "transformation": {
+        "toggleData": "pwt:dyn/symbiot",
+        "timerData": "pwt:dyn/symbiot_timer",
+        "time": 50
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:venom_suit_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown|symbiot_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/symbiot",
+        "cooldownData": "pwt:dyn/symbiot_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:cooldown|timer": {
+      "cooldown": {
+        "toggleData": "entity.getData('pwt:dyn/symbiot')",
+        "cooldownData": "pwt:dyn/cooldown_1",
+        "duration": 36000,
+        "recovery": 0.0
+      }
+    },
+	
+    "fiskheroes:transformation|ability": {
+	  "key": "ABILITY",
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 25
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:venom_suit_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown|ability_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 2000,
+        "recovery": 0.5
+      }
+    },
+	
+	"fiskheroes:water_breathing": {
+    },
+	 
+	 "fiskheroes:fire_weakness": {
+      "radius": 2.0,
+      "duration": 100
+    
+	},
+	"fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "factor": 9.0
+    },
+	"fiskheroes:damage_weakness|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 8
+    },
+	"fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "factor": 1.8
+    },
+	"fiskheroes:healing_factor": {
+      "delay": 200,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_blade_toggle",
+        "DISABLE": "pwt:carnage_blade_disable"
+      }
+    },
+    "fiskheroes:web_swinging|symbiot_swing": {
+      "cooldownTime": 4.5,
+      "soundEvents": {
+        "SHOOT": "pwt:web_shoot_symbiot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip|symbiot_zip": {
+      "range": 58.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "pwt:carnage_tentacle_grab"
+      }
+    },
+    "fiskheroes:equipment|symbiot_equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 11,
+          "uses": 8,
+          "dissolveTime": 140,
+		  "soundEvents": {
+			"USE": "pwt:web_shoot_symbiot"
+		  }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 10,
+          "damageProfile": {
+            "damage": 6.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+		  "soundEvents": {
+			"USE": "pwt:web_shoot_symbiot"
+		  }
+        }
+      }
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_blade_toggle",
+        "DISABLE": "pwt:carnage_blade_disable"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/spiderman_venom.png",
+      "data": "pwt:dyn/symbiot_cooldown"
+    }
+  ]
+}

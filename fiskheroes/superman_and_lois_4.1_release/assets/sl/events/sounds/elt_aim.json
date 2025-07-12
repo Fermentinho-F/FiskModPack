@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.elt",
+  "volume": 1.0,
+  "condition": "fiskheroes:aiming",
+  "fadeIn": 10,
+  "fadeOut": 5
+}

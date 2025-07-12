@@ -1,0 +1,61 @@
+{
+  "aspects": [
+    {
+      "type": "LASER",
+      "opacity": 0.3,
+      "scale": 1.0,
+      "spin": 5.0,
+      "pulse": {
+        "length": 0.2,
+        "size": 1.5,
+        "frequency": 0.01
+      },
+      "core": null,
+      "bloom": {
+        "strength": 0.5,
+        "spread": 3.0,
+        "dropoff": 3.0,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    },
+	{
+      "type": "LASER",
+      "opacity": 0.4,
+      "scale": 1.0,
+      "spin": -10.0,
+      "pulse": {
+        "length": 0.2,
+        "size": 2.5,
+        "frequency": 0.03
+      },
+      "core": null,
+      "bloom": {
+        "strength": 0.5,
+        "spread": 2.0,
+        "dropoff": 3.0,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    },
+	{
+      "type": "LASER",
+      "opacity": 0.6,
+      "scale": 1.0,
+      "spin": 15.0,
+      "pulse": {
+        "length": 0.2,
+        "size": 3.5,
+        "frequency": 0.05
+      },
+      "core": null,
+      "bloom": {
+        "strength": 0.5,
+        "spread": 1.0,
+        "dropoff": 3.0,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{hover} = clamp({hover}, -2, 2)
+
+{x} = 15{hover}min(1.5{vel}, 1)
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+
+{x} = {hover}min(2{vel}, 1)
+;{x} = clamp({x}, -2, 0.3)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+
+
+{head_rotX} -= 15'clamp({forward}, -2, 2)
+{rightArm_rotX} += 0.2{forward} + 0.1{strafe}
+{rightArm_rotZ} += 0.1{adz} + 0.2{strafe} + 3'{data_0}
+{leftArm_rotX} += 0.2{forward} - 0.1{strafe}
+{leftArm_rotZ} -= 0.1{adz} - 0.2{strafe} + 3'{data_0}
+{leftLeg_rotX} += 0.2{forward}
+{leftLeg_rotZ} -= 0.05{adz} - 0.4{strafe}
+
+{forward} = clamp({forward}, -2, 1)
+{adzpos} = clamp({forward}, 0, 2)
+{adzneg} = clamp({forward}, -2, 0)
+
+{rightLeg_rotX} += 0.8{forward} - 0.5{adzneg}
+{rightLeg_rotY} += 0.2{forward} - 0.2{adzneg} - 0.1{strafe}
+{rightLeg_rotZ} += 0.05{adz} + 0.4{strafe}
+
+{rightLeg_posX} -= 0.5{adzpos}
+{rightLeg_posY} -= 1.0{adzpos}
+{rightLeg_posZ} -= 3.3{adzpos}

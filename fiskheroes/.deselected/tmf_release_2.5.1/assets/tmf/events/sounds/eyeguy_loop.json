@@ -1,0 +1,8 @@
+{
+  "sound": "tmf:electricity.loop",
+  "condition": "fiskheroes:beam_shooting",
+  "volume": "entity.getInterpolatedData('fiskheroes:beam_shooting_timer')",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

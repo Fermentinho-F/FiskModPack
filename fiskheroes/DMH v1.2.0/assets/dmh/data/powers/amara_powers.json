@@ -1,0 +1,134 @@
+{
+  "name": "Nigh-Omnipotence",
+  "modifiers": {
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 18.0,
+        "types": {
+          "COSMIC": 1.0,
+          "GOD": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 48.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:energy_projection"
+      }
+    },
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "DISABLE": "fiskheroes:shadowform_disable",
+        "ENABLE": [ "fiskheroes:shadowform_enable", "fiskheroes:shadowform_loop" ]
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.3
+    },
+    "fiskheroes:charged_beam|molecular-combustion": {
+      "damageProfile": {
+        "damage": 999999999999999,
+        "types": {
+          "COSMIC": 2,
+          "GOD": 1.0
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 400.0,
+      "radius": 1.0,
+      "soundEvents": {
+        "SHOOT": [ "dmh:erase" ]
+      }
+    },
+    "fiskheroes:charged_beam|power_dampen": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "COSMIC": 2
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 3600,
+              "amplifier": 0,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "chargeTime": 15,
+      "duration": 4,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 400.0,
+      "radius": 0.1
+    },
+    "fiskheroes:water_breathing": {},
+    "fiskheroes:healing_factor": {
+      "delay": 0
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [ "minecraft:poison" ]
+    },
+    "fiskheroes:damage_immunity|sound": {
+      "damageType": "SOUND"
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|bullet": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:projectile_immunity": {},
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 17.0
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 150.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.12,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": [ "fiskheroes:flight_loop" ],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:shape_shifting|item_giver": {}
+  }
+}

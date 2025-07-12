@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": "Inverse Kryptonian Physiology",
+    "description": "Able to absorb red solar radiation in a way humans cannot",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/ikp.png"
+    }
+  },
+  "requirements": [
+    "sl:red_sun_absorption"
+  ],
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 20
+  }
+}

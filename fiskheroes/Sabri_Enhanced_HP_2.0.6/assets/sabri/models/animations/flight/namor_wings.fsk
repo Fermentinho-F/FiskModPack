@@ -1,0 +1,17 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+{loop} = sin(pi({data_0}{data_1}))
+
+{rightWing_rotY} += 0.2*pi*sin(pi*{data_0}) + 1.5
+{leftWing_rotY} -= 0.2*pi*sin(pi*{data_0}) + 1.5
+
+{rightWing_rotX} @ {data_1} -> 0.5
+{rightWing_rotZ} @ {data_1} -> 0.5
+{leftWing_rotX} @ {data_1} -> 0.5
+{leftWing_rotZ} @ {data_1} -> -0.5
+
+{x} = 1 - {data_1}
+
+{rightWing_rotY} @ {x} -> 0.0
+{leftWing_rotY} @ {x} -> 0.0

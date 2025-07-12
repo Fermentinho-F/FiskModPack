@@ -1,0 +1,122 @@
+{
+  "name": "Captain Unipool Powers",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.2,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "canRoll": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 9,
+      "duration": 600,
+      "cooldownTime": 9,
+      "range": 52.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:energy_blast"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ENERGY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 100.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:cosmic_beam"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 1200.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 100,
+        "cooldown": 2
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+  },
+  "fiskheroes:teleportation": {
+    "canReachMoon": true,
+    "range": 1288.0,
+    "soundEvents": {
+      "TELEPORT": "fiskheroes:glow_teleport"
+    }
+  },
+    "fiskheroes:regeneration": {
+      "factor": 3
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

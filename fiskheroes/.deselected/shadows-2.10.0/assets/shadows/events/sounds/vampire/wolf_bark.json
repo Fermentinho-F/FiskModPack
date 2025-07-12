@@ -1,0 +1,9 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:vampire.wolf.bark",
+    "volume": 0.05,
+    "pitch": "1 + (Math.random() * 0.2)",
+    "fadeIn": 4,
+    "fadeOut": 4
+  }
+  

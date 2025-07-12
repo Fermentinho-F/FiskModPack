@@ -1,0 +1,8 @@
+{data} = curve {data}
+
+{rightArm_rotZ} = 0 - sin({data}) * 7
+
+out "firstPerson" (true)
+
+out "rotate" (-5180{data}, 0, 1, 0)
+

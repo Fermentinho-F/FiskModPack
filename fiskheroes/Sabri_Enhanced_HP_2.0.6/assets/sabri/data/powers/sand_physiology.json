@@ -1,0 +1,102 @@
+{
+  "name": "Sand Physiology",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "SAND_TRANSFORM",
+      "transformation": {
+        "toggleData": "sabri:dyn/sand",
+        "timerData": "sabri:dyn/sand_timer",
+        "time": 8
+      },
+      "soundEvents": {
+        "ENABLE": "sabri:sandman_raimi_sand_enable",
+        "DISABLE": "sabri:sandman_raimi_sand_disable"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 20,
+        "cooldown": 10
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "DEFLECT": "sabri:sandman_raimi_shield_deflect",
+        "DISARM": "sabri:sandman_raimi_shield_disarm"
+      }
+    },
+    "fiskheroes:transformation|castle": {
+      "key": "CASTLE",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "sabri:dyn/sand_castle",
+        "timerData": "sabri:dyn/sand_castle_timer",
+        "time": 100
+      },
+      "soundEvents": {
+        "ENABLE": "sabri:sandman_raimi_shield_start",
+        "DISABLE": ["sabri:sandman_raimi_shield_stop", "sabri:sandman_raimi_shield_stop_loop"]
+      }
+    },
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "ENABLE": ["sabri:sandman_raimi_sand_cloud_enable", "sabri:sandman_raimi_mud_puddle_enable"],
+        "DISABLE": "sabri:sandman_raimi_mud_puddle_disable"
+      }
+    },
+    "fiskheroes:size_manipulation": {
+      "isInstant": false,
+      "minSize": 1.0,
+      "maxSize": 8.0,
+      "soundEvents": {
+        "SHRINK": ["sabri:sandman_raimi_giant_mode_shrink", "sabri:sandman_raimi_giant_mode_loop"],
+        "GROW": ["sabri:sandman_raimi_giant_mode_grow", "sabri:sandman_raimi_giant_mode_loop"]
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.1,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "ENABLE": "sabri:sandman_raimi_sand_cloud_loop"
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 40,
+      "soundEvents": {
+        "HEAL": "sabri:sandman_raimi_recharge"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "sabri:textures/gui/bars/sand_cloud.png",
+      "data": "sabri:dyn/sand_cooldown"
+    }
+  ]
+}

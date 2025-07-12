@@ -1,0 +1,10 @@
+{
+    "suit": "sabri:cyclops_xmen",
+    "requirements": [
+      "fiskheroes:tier4_5",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee",
+      "sabri:sehp"
+    ]
+  }
+  

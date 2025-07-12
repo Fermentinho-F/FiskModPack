@@ -1,0 +1,16 @@
+{
+    "display": {
+    "name": "Jade Speed Force",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/jade_speed_force.png"
+    }
+    },
+    "requirements": [
+    "moopack:impure_jade_speed_force",
+    "moopack:speed_force_variations",
+  ],
+    "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 25
+  }
+}

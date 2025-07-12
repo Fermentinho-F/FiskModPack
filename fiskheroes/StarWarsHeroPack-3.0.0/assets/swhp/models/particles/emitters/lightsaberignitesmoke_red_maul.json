@@ -1,0 +1,28 @@
+{
+  "particles": [
+    {
+      "type": "ENERGY_SMOKE",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": {
+        "tp": [0.5, 9.0, -8.0],
+        "fp": [2.0, 6.0, -10.0]
+      },
+      "motion": [1.0, 0.137, 0.176],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    },
+    {
+      "type": "ENERGY_SMOKE",
+      "anchor": "rightArm",
+      "amount": 1,
+      "offset": {
+        "tp": [0.5, 9.0, 8.0],
+        "fp": [15.0, 8.0, -10.0]
+      },
+      "motion": [1.0, 0.137, 0.176],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

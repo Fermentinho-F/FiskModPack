@@ -1,0 +1,15 @@
+{
+  "suit": "dmh:butterstrike",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:defense3",
+        "fiskheroes:melee3",
+        "fiskheroes:ranged2",
+        "fiskheroes:regeneration1",
+        "fiskheroes:magic",
+        "fiskheroes:nanites",
+        "fiskheroes:vibranium",
+        "fiskheroes:speed_force",
+        "dmh:dmhp"
+    ]
+}

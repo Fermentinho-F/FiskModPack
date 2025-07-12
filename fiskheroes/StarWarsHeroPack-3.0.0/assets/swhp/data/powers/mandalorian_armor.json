@@ -1,0 +1,65 @@
+{
+  "name": "Mandalorian Armor",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 200,
+          "uses": 3,
+          "damageProfile": {
+            "damage": 30.0,
+            "types": {
+              "EXPLOSION": 1.0
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 40,
+          "radius": 8.0
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 200,
+          "uses": 2
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "chargeTime": 0,
+      "duration": 40,
+      "cooldownTime": 60,
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["swhp:flamethrower_shooting_start", "swhp:flamethrower_shooting_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 24.0,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "swhp:mandalorian_grapple"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

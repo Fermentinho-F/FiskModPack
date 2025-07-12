@@ -1,0 +1,3 @@
+{data} = sin(4pi(1 - {data}))
+{rightArm_rotZ} += 0.5 + {data} * 0.8
+{leftArm_rotZ} -= 0.5 + {data} * 0.8

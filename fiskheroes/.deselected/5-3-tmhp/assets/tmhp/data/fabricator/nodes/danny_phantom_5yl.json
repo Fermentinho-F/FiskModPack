@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:danny_phantom_5yl",
+  "requirements": [
+    "elseworld:ap8_9",
+    "fiskheroes:melee3",
+    "fiskheroes:tier6_7",
+    "fiskheroes:ranged3",
+    "tmhp:danny_phantom",
+    "tmhp:ghost",
+    "tmhp:swordsman",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "fade": 0,
+  "lightning": {
+    "color": "0xD8D09D",
+    "density": 6,
+    "differ": 0.435,
+    "opacity": 0.0
+  },
+  "particles": {
+    "texture": "secretheroesmarvel:textures/ice.png",
+    "motion": 0.1,
+    "speed": 0.7,
+    "fade": 15,
+    "density": 15,
+    "differ": 0.8,
+    "opacity": 1,
+    "scale": 0.3
+  },
+  "blur": {
+    "color": 0xD8D09D,
+    "opacity": 0.4
+  },
+  "flicker": {
+  "color": 0xD8D09D,
+  "density": 0,
+  "frequency": 0.0,
+  "length": 0.0,
+  "spread": 0.0,
+  "opacity": 0.0,
+  "confined": "true"
+  }
+}

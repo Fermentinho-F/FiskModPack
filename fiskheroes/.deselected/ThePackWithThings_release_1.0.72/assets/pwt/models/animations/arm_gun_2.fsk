@@ -1,0 +1,57 @@
+
+;arm_open
+{mec_rotZ} -= 65'{data_0}
+{hand_2_rotZ} += 65'{data_0}
+{hand_2_2_rotZ} += 85'{data_0}
+
+{hand_2_overlay_rotZ} += 130'{data_0}
+
+{base_L_rotY} -= 15'{data_0}
+{base_R_rotY} += 15'{data_0}
+
+
+;aiming
+
+{cannon_1_posX} -= 2{data_1}
+{cannon_1_2_posX} -= 2{data_1}
+{cannon_2_posX} -= 2{data_1}
+{cannon_3_posX} -= 1.9{data_1}
+
+{hand_3_1_rotY} += 7'{data_2}
+{hand_4_1_rotY} -= 7'{data_2}
+{hand_3_2_rotY} += 12'{data_2}
+{hand_4_2_rotY} -= 12'{data_2}
+
+{hand_3_1_overlay_rotY} += 7'{data_2}
+{hand_4_1_overlay_rotY} -= 7'{data_2}
+{hand_3_2_overlay_rotY} += 12'{data_2}
+{hand_4_2_overlay_rotY} -= 12'{data_2}
+
+
+
+{hand_3_2_posY} -= 0.5{data_3}
+{hand_4_2_posY} -= 0.5{data_3}
+{hand_3_2_overlay_posY} -= 0.5{data_3}
+{hand_4_2_overlay_posY} -= 0.5{data_3}
+
+{cannon_1_2_posY} += 3{data_2}
+{cannon_2_posY} += 7{data_3}
+{cannon_3_posY} -= 2{data_3}
+
+;recoil
+
+{cannon_2_posY} -= 0.75{data_4}
+
+{cannon_1_posY} -= 0.1{data_4}^4
+{cannon_1_2_posY} -= 0.1{data_4}^4
+{cannon_2_posY} -= 0.1{data_4}^4
+{cannon_3_posY} -= 0.1{data_4}^4
+
+{cannon_1_posX} -= 0.025{data_4}^5
+{cannon_1_2_posX} -= 0.025{data_4}^5
+{cannon_2_posX} -= 0.025{data_4}^5
+{cannon_3_posX} -= 0.025{data_4}^5
+
+{mec_rotZ} += 5'{data_4}^4
+{hand_2_rotZ} -= 5'{data_4}^6
+{hand_2_2_rotZ} += 5'{data_4}^4

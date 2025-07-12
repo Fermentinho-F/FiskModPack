@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:modok",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:flight"
+  ]
+}

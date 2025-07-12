@@ -1,0 +1,10 @@
+{
+  "display": {
+    "name":  "The Melon Farm",
+    "description": "Thank you for downloading The Melon Farm Heropack.",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/heropack.png"
+    }
+  },
+  "autoUnlock": true
+}

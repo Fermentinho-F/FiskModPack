@@ -1,0 +1,4 @@
+{data} = sin(pi(1 - {data}))^2
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data}), 0)

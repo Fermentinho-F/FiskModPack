@@ -1,0 +1,65 @@
+{data_0} = {data_0}
+
+{data_1} = {data_1}
+
+{data2} = sin(pi*{data_1})
+
+
+{field_178736_x_posX} @ {data_1} -> 500
+
+{field_178736_x_posX} @ {data2} -> 500
+
+{field_178736_x_posY} @ {data2} -> -100
+
+{field_178736_x_rotY} @ {data2} -> -pi/7
+
+{field_178736_x_posZ} @ {data_1} -> -500
+
+{field_178736_x_posX} -= 500
+
+{field_178736_x_posZ} += 500
+
+{field_178736_x_posZ} @ {data_0} -> -200
+
+
+{field_178736_x_rotX} += 1.5708
+
+{field_178732_b_rotX} -= pi
+
+{field_178723_h_rotX} -= pi
+
+{field_178720_f_rotX} -= 1.5708
+
+{field_78116_c_rotX} -= 1.5708
+
+
+{capemodelanchor_posX} @ {data_1} -> 500
+
+{capemodelanchor_posX} @ {data2} -> 500
+
+{capemodelanchor_posY} @ {data2} -> -100
+
+{capemodelanchor_posZ} @ {data_1} -> -500
+
+{capemodelanchor_posX} -= 500
+
+{capemodelanchor_posZ} += 500
+
+{capemodelanchor_posZ} @ {data_0} -> -200
+
+{capemodelanchor_rotY} @ {data2} -> -pi/7
+
+{capemodelanchor_rotX} += 1.5708
+
+
+
+
+
+
+
+
+
+
+
+
+

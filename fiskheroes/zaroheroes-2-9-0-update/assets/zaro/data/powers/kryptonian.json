@@ -1,0 +1,34 @@
+{
+  "name": "Kryptonia",
+  "modifiers": {
+       "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 80,
+      "duration": 20,
+      "cooldownTime": 4,
+      "range": 52.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start",
+        "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+      }
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "ETERNIUM",
+      "factor": 2.0
+    },
+    "fiskheroes:eternium_weakness": {
+      "radius": 3.0,
+      "duration": 120
+     }
+    }
+  }

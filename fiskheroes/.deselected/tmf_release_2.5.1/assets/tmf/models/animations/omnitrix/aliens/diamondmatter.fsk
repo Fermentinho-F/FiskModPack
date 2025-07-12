@@ -1,0 +1,48 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;TABULA FILE
+
+{sneak} = {data_0}
+{idle} = sin(2pi{data_1})
+{punch} = {data_2}
+{movement} = cos({limbSwing} * 0.6662 + pi) * 2.0 * {limbSwingAmount} * 0.5
+
+
+{head_rotX} -= ({lookY} + {idle}' + 10'{sneak})
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{punch1} = (1-{punch})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({punch} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({rArm_rotX} - ({punch1.1} * 1.2 + {punch1.2}))
+{rArm_rotY} += {body_chest_rotY} * 8.0
+{rArm_rotZ} += (sin({punch} * pi) * -0.4)
+
+{blade1_posY} += 2*{data_3}
+
+{body_rotX} += 20'{sneak}
+{rLeg_rotX} -= 20'{sneak} + 0.3{movement}
+{lLeg_rotX} -= 20'{sneak} - 0.3{movement}
+
+{rArm_rotX} += 0.3{movement} 
+{rArm_rotZ} += 3'{idle} 
+
+{lArm_rotX} -= 0.3{movement} 
+{lArm_rotZ} -= 3'{idle} 
+
+;=========OVERLAYS==================
+
+{bodyB_rotX} = {body_rotX}
+{bodyO_rotX} = {body_rotX}
+
+{headO_rotY} = {head_rotY}
+{headO_rotX} = {head_rotX}
+{rArmO_rotX} = {rArm_rotX}
+{lArmO_rotX} = {lArm_rotX}
+{rLegO_rotX} = {rLeg_rotX}
+{lLegO_rotX} = {lLeg_rotX}
+{rArmO_rotY} = {rArm_rotY} 
+{rArmO_rotZ} = {rArm_rotZ} 
+{lArmO_rotY} = {lArm_rotY} 
+{lArmO_rotZ} = {lArm_rotZ} 

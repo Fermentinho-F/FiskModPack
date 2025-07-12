@@ -1,0 +1,10 @@
+
+
+{rightArm_rotX} = -1.5
+
+{rightArm_rotZ} += sin(2pi{data}) * 10
+{rightArm_rotY} += sin(2pi{data}) * 0.5
+
+out "firstPerson" (true)
+
+out "rotate" (-5180{data}, 0, 1, 0)

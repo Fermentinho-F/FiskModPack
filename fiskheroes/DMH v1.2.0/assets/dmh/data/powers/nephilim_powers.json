@@ -1,0 +1,26 @@
+{
+  "name": "Nephilim Physiology",
+  "modifiers": {
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "SOUND": 2.0,
+          "ARCHANGEL": 1.5
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 60,
+              "amplifier": 0,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "knockback": 0.5,
+      "canBreakGlass": true
+    }
+  }
+}

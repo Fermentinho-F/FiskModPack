@@ -1,0 +1,31 @@
+
+{head_posY} += 2{data}
+{head_posZ} -= 1.5{data}
+
+{headwear_posY} += 2{data}
+{headwear_posZ} -= 1.5{data}
+
+{head_rotX} += 45.0'{data}
+{headwear_rotX} += 45.0'{data}
+
+{rightArm_posX} -= 0.5{data}
+{rightArm_posY} += {data}
+{rightArm_posZ} += {data}
+
+{rightArm_rotX} -= 120.0'{data}
+{rightArm_rotY} -= 15.0'{data}
+{rightArm_rotZ} += 40.0'{data}
+
+{leftArm_posX} += 0.5{data}
+{leftArm_posY} += {data}
+{leftArm_posZ} += {data}
+
+{leftArm_rotX} -= 120.0'{data}
+{leftArm_rotY} += 15.0'{data}
+{leftArm_rotZ} -= 40.0'{data}
+
+{body_posY} += 2{data}
+{body_posZ} -= 2.0{data}
+
+{body_rotX} += 15'{data}
+

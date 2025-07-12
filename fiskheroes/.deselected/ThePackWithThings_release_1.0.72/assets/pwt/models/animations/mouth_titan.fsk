@@ -1,0 +1,21 @@
+{data_0} = {data}
+{jaw_rotX} += 28.0'*{data_0}
+{jaw_overlay_rotX} += 28.0'*{data_0}
+
+{jaw_posY} += 1.0*{data_0}
+{jaw_overlay_posY} += 1.0*{data_0}
+
+{jaw_posZ} += 0.4*{data_0}
+{jaw_overlay_posZ} += 0.4*{data_0}
+
+{mouth_inside_rotX} += 28.0'*{data_0}
+
+
+{mouth_inside_posY} += 0.9*{data_0}
+
+
+{mouth_inside_posZ} -= 1.0*{data_0}
+
+{jaw_rotX} += 5.0'{data_1}
+{jaw_overlay_rotX} += 5.0'{data_1}
+{mouth_inside_rotX} += 5.0'{data_1}

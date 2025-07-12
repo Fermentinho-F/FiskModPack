@@ -1,0 +1,11 @@
+{
+  "display": {
+    "name": "DCUniverse Heropack",
+    "description": "Thank you for downloading DCUniverse Heropack!",
+    "icon": {
+      "texture": "loriatpack:textures/gui/nodes/dcu_logo.png"
+    }
+  },
+  "autoUnlock": true,
+  "requirements": [ ]
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "name": {
+      "translate": "Kryptonite"
+    },
+    "icon": {
+      "texture": "sl:textures/gui/nodes/kryptonite.png"
+    }
+  },
+  "price": {
+    "IRID_GOLD": 4,
+    "XP_LEVELS": 20
+  },
+  "criteria": {
+    "fayetask": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Find trace amounts of Kryptonite inside Extra-Terrestrial minerals"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_BREAKING_BLOCK",
+          "block": "BLOCK_BEING_BROKEN"
+          },
+        "check": "(block.name() == 'fiskheroes:lunar_olivine_ore' && Math.random() < 0.005 && player.world().getDimension(2595))"
+      }
+    }
+  }
+}

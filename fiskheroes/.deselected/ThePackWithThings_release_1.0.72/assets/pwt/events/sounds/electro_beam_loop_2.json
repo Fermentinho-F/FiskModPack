@@ -1,0 +1,8 @@
+{
+  "sound": "pwt:suit.electro.beam.loop.light_2",
+  "condition": "fiskheroes:energy_projection",
+  "volume": "fiskheroes:energy_projection_timer",
+  "pitch": "(0.9 + Math.random() * 0.1) - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "loop": true,
+  "fadeOut": 50
+}

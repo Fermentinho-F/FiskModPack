@@ -1,0 +1,27 @@
+{
+  "display": {
+    "name": "Beskar Upgrade",
+    "icon": {
+      "texture":  "fiskheroes:textures/items/dwarf_star_alloy.png"
+    }
+  },
+  "requirements": ["swhp:swhpdownload", "swhp:mandalorian"],
+  "price": {
+    "IRID_GOLD": 10,
+    "XP_LEVELS": 20
+  },
+  "criteria": {
+    "exist": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Obtain Beskar as The Mandalorian"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+          },
+        "check": "player.getWornChestplate().suitType() == 'swhp:mandalorian' && player.isWearingFullSuit() && (player.getHeldItem().name() == 'fiskheroes:dwarf_star_alloy' && (player.getHeldItem().displayName() == 'Beskar' || player.getHeldItem().displayName() == 'beskar'))"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{data} = curve {data}
+{rightArm_posZ} += sin({data}*pi)
+
+
+out "firstPerson" (true)
+out "translate" (0, 0, 0.15(sin({data}*pi)))

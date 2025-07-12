@@ -1,0 +1,33 @@
+{
+  "name": "Heavenly Restriction",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": false,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": [],
+        "SPRINT": [],
+        "STOP": []
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.75, 0.1]
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:damage_resistance|cursed": {
+      "damageType": "CURSED",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_resistance|positive": {
+      "damageType": "POSITIVE",
+      "factor": 0.5
+    }
+  }
+}

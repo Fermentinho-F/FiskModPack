@@ -1,0 +1,8 @@
+{rightArm_rotZ} @ curve {data} -> 360
+
+{leftArm_rotZ} @ curve {data} -> -360
+
+
+
+
+

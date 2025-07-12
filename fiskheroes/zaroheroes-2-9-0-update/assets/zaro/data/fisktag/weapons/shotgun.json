@@ -1,0 +1,37 @@
+{
+  "name": "Shotgun",
+  "permission": "USE_FISKTAG_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 24,
+  "damage": 1,
+  "fisktag": {
+    "sprintShootDelay": 8
+  },
+  "scope": {
+    "zoom": 0.4,
+    "allowHeadshots": false
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.7
+  },
+  "recoil": {
+    "amount": 2.0,
+    "cameraShake": 6.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "amount": 5,
+      "spread": 6.0,
+      "range": 32.0,
+      "speed": 12.0,
+      "trail": 2
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:shotgun_shoot"
+  }
+}

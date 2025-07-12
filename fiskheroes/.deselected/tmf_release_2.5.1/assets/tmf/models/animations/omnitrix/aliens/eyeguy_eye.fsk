@@ -1,0 +1,11 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{bigEye_posZ} -= 2{data_7}
+{bigEyeStem_posZ} -= 4{data_7}
+
+{data_0} = 0.2{data_7}
+{bigEye_rotX} -= {lookY}{data_7}
+{bigEye_rotY} -= (0.7*({bodyYaw} - {yaw})'){data_7}
+
+{bigEyeStem_rotX} -= {lookY}{data_7}
+{bigEyeStem_rotY} -= (0.7*({bodyYaw} - {yaw})'){data_7}

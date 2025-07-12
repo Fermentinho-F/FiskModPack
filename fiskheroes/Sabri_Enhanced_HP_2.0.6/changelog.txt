@@ -1,0 +1,228 @@
+### Sabri Enhanced Heropack 2.0.6 ###
+
+- Silver Surfer (Fantastic 4) now requires a Cosmic Suit Fabricator
+- Wearing Namor's Earrings will no longer compress hat layer
+- Wearing Quicksilver's Glasses (X-Men) will no longer compress hat layer
+
+- Adamantium node will now only require you to complete the objective once instead of 24 times
+
+### Sabri Enhanced Heropack 2.0.5 ###
+
+- Unobfuscated heropack code cause I realized I don't really care about people using my code (still ask before using)
+
+### Sabri Enhanced Heropack 2.0.4 ###
+
+- Heropack code is now obfuscated
+
+- Added item textures to all weapons (except for guns)
+- Added built-in attack damages to weapons
+- Added "Jacket" and "Tanktop" alternative style to Wolverine
+- Added shield mechanic to Double-Edged Sword (usable while wearing Thanos)
+- Added Knockback Resistance to Sandman when in giant mode or sand castle form
+- Added spread to Dual Glock 26
+- Added Kinetic Energy idle animation Black Panther (Upgraded Habit) when on a holographic display stand 
+
+- Removed watermarks from weapons
+- Removed Kang the Conqueror's idle flight animation
+
+- Changed Dual Glock 26 model
+- Changed all suit item textures (except for Black Panther (Upgraded Habit))
+- Changed Doctor Doom (Comics)'s forcefield to be responsive to hits
+- Changed Kang the Conqueror's forcefield to be responsive to hits
+- Changed Kang the Conqueror's forcefield constructing animation
+- Changed Thor Roadworn's cape color
+- Changed Namor's drought bar to display half droplets
+
+- Renamed Mjolnir to Mjölnir
+- Renamed Namor's boots from Ankle Bracelets to Anklets
+
+- Fixed Black Panther's Kinetic-Energy Pulse attack to deal accurate AOE damage
+- Fixed Thor's Mjölnir ground slam attack to deal accurate AOE damage
+- Fixed layering of suits
+
+- Buffed Dual Glock 26 bulletspeed
+- Buffed Black Widow's widow bite speed
+- Buffed Mjölnir's electricity & damage damage when charged (usable while wearing Thor)
+- Buffed Namor drought weakness (now scales based on how wet you are)
+- Buffed Namor's weapon damage, fall resistance & sprint speed statistics
+- Buffed Silver Surfer's Cosmic Energy Blast to give tutridium poisoning & speed sickness
+
+- Nerfed Dual Glock 26 firerate
+
+
+////////////////// CHECK STATS
+
+
+
+
+
+
+### Sabri Enhanced Heropack 2.0.3 ###
+
+- Added landing animation "Black Panther" suit
+- Added projectile immunity to "Silver Surfer (Fantastic 4)" suit
+- Added projectile immunity to "Thanos" suit
+- Added fire immunity to "Thanos" suit
+- Added 50% "EXPLOSION" damage resistance to "Thanos" suit
+- Added projectile immunity to "Thor" suit
+- Added 50% "FIRE" damage resistance to "Thor" suit
+- Added 50% "EXPLOSION" damage resistance to "Thor" suit
+
+- Changed volume on "Black Widow" suit landing
+- Changed "Sandman (Raimi)" suit "Toggle Castle Form" keybind to "Castle Form"
+- Changed "Sandman (Raimi)" suit sand timer to be replenishable by holding (red) sand
+- Changed "Cyclops (X-Men)" suit "Optic Blast" ability knockback to be dynamic
+
+- Fixed "Thor" suit showing a beam when ground slamming
+- Fixed "Thor" suit cape rendering when wearing leggings
+- Fixed "Thor" suit regeneration modifier not scaling when holding "Mjolnir" weapon
+- Fixed slight Z-fighting on "Vibranium Spear" weapon
+
+- Buffed "Cyclops (X-Men)" suit "Chaos Blast" ability knockback
+
+- Nerfed "Cyclops (X-Men)" suit "Optic Blast" ability knockback
+
+### Sabri Enhanced Heropack 2.0.2 ###
+
+- Added fire immunity to "Silver Surfer (Fantastic 4)" suit
+
+- Fixed false virus detection when downloading the heropack
+- Fixed "Namor" suit flight not adjusting properly when drying out
+
+- Buffed "Namor" suit flight barrel rolls
+
+### Sabri Enhanced Heropack 2.0.1 ###
+
+- Added space breathing to "Silver Surfer (Fantastic 4)"
+
+- Fixed "Sandman (Raimi)" suit layering
+- Fixed "Sandman (Raimi)" suit being able to grow while castle is constructing
+
+### Sabri Enhanced Heropack 2.0 ###
+
+- Added "Black Panther (Upgraded Habit)" suit
+- Added "Black Widow" suit
+- Added "Doctor Doom (Comics)" suit
+- Added "Namor" suit
+- Added "Quicksilver (X-Men)" suit
+- Added "MCU" alternative for "Quicksilver (X-Men)"
+- Added "Sandman (Raimi)" suit
+- Added "Silver Surfer (Fantastic 4)" suit
+- Added "Thor" suit
+- Added "MCU" alternative for "Quicksilver (X-Men)"
+- Added "Roadworn" alternative for "Thor"
+- Added "Avengers (Sleeveless)" alternative for "Thor"
+- Added "Avengers (Sleeve- & Capeless)" alternative for "Thor"
+- Added "Driver" alternative for "Wolverine (X-Men)"
+- Added "Black Widow's Batons" weapon
+- Added "Black Widow's Bo-Staff" weapon
+- Added "Double-Edged Sword" weapon
+- Added "Dual Glock 26" weapon
+- Added "Mjolnir" weapon
+- Added "Vibranium Spear" weapon
+- Added "X-Men" version to "Cyclops" suit
+- Added "Ruby Quartz Visor" power to "Cyclops (X-Men)" suit
+- Added "Optic Shot" ability to "Cyclops (X-Men)" suit
+- Added mask toggle to "Cyclops (X-Men)" suit
+- Added "Fantastic 4" version to "Doctor Doom" suit
+- Added "Cosmic Rays Enhancement" power to "Doctor Doom (Fantastic 4)" suit
+- Added landing animation to "Kang the Conqueror" suit
+- Added animation to "Kang the Conqueror" suit flight platform
+- Added animation to "Kang the Conqueror" suit "Teleport" ability
+- Added "Energy Projection" blast ability to "Kang the Conqueror" suit
+- Added glowing eyes & scars to "Kang the Conqueror" suit when using "Energy Projection" ability
+- Added glowing energy hands to "Kang the Conqueror" suit when using "Energy Projection" ability
+- Added night vision to "Kang the Conqueror" suit when mask is closed
+- Added "X-Men" version to "Wolverine" suit
+- Added slash sound effects to "Wolverine (X-Men)" suit when claws are retracted
+- Added "Healing Factor" power to "Wolverine (X-Men)" suit
+- Added "Slow-Motion Vision" ability to "Wolverine (X-Men)" suit
+- Added charged leaping mechanic to "Wolverine (X-Men)" suit
+- Added leaping animation to "Wolverine (X-Men)" suit
+- Added leaping impact damage to "Wolverine (X-Men)" suit
+- Added "BULLET" damage resistance to "Wolverine (X-Men)" suit
+- Added "SHARP" damage resistance to "Wolverine (X-Men)" suit
+- Added "SHURIKEN" damage resistance to "Wolverine (X-Men)" suit
+- Added "Double-Edged Sword" weapon to "Thanos" suit equipment
+- Added space breathing to "Thanos" suit
+- Added leaping ability to "Thanos" suit
+- Added "ADAMANTIUM" damage type
+- Added "Adamantium" fabricator node
+- Added "Cosmic Surfboard" fabricator node
+- Added "Uru" fabricator node
+- Added changelog.txt file
+- Added credits.txt file
+- Added LICENSE.txt file
+
+- Removed "Endgame" version from "Thanos" suit
+- Removed "No Helmet" alternative from "Thanos" suit
+- Removed "Toggle Double-Edged Sword" ability from "Thanos" suit
+- Removed regeneration ability from "Wolverine (X-Men)" suit
+- Removed poison potion immunity from "Wolverine (X-Men)" suit
+- Removed blocking claws ability from "Wolverine (X-Men)" suit
+
+- Changed heropack logo
+- Changed heropack description
+- Changed heropack domain to "sabri" from "sehp"
+- Changed "Cyclops (X-Men)" suit id to "sabri:cyclops_xmen" from "sehp:cyclops"
+- Changed "Doctor Doom (Fantastic 4)" suit id to "sabri:doctor_doom_f4" from "sehp:doctor_doom"
+- Changed "Kang the Conqueror" suit id to "sabri:kang_the_conqueror" from "sehp:kang_the_conqueror"
+- Changed "Thanos" suit id to "sabri:thanos" from "sehp:thanos"
+- Changed "Wolverine (X-Men)" suit id to "sabri:wolverine_xmen" from "sehp:wolverine"
+- Changed "Cyclops (X-Men)" suit statistics & balancing
+- Changed "Cyclops (X-Men)" suit skin texture
+- Changed "Cyclops (X-Men)" suit item textures
+- Changed "Cyclops (X-Men)" suit "Optic Blast" damage type
+- Changed "Cyclops (X-Men)" suit "Optic Blast" visor glow
+- Changed "Cyclops (X-Men)" suit "Optic Blast" render
+- Changed "Cyclops (X-Men)" suit "Optic Blast" particle emitter
+- Changed "Cyclops (X-Men)" suit "Optic Blast" sound effect
+- Changed "Cyclops (X-Men)" suit "Optic Blast" pose animation
+- Changed "Cyclops (X-Men)" suit "Optic Blast" ability to have adjustable damage, range & heat transfer by scrolling
+- Changed "Doctor Doom (Fantastic 4)" suit statistics & balancing
+- Changed "Doctor Doom (Fantastic 4)" suit skin texture
+- Changed "Doctor Doom (Fantastic 4)" suit item textures
+- Changed "Doctor Doom (Fantastic 4)" suit "Charged Energy Beam" to "Electricity Blast"
+- Changed "Doctor Doom (Fantastic 4)" suit "Electricity Blast" render
+- Changed "Doctor Doom (Fantastic 4)" suit "Electricity Blast" sound effects
+- Changed "Doctor Doom (Fantastic 4)" suit "Electricity Blast" pose animation
+- Changed "Doctor Doom (Fantastic 4)" suit lightning cast render
+- Changed "Doctor Doom (Fantastic 4)" suit lightning cast sound effect
+- Changed "Kang the Conqueror" suit statistics & balancing
+- Changed "Kang the Conqueror" suit skin texture
+- Changed "Kang the Conqueror" suit cape texture
+- Changed "Kang the Conqueror" suit item textures
+- Changed "Kang the Conqueror" suit flight animation
+- Changed "Kang the Conqueror" suit flight platform render
+- Changed "Kang the Conqueror" suit "Energy Projection" ability controls to "Energy Projection" + left click
+- Changed "Kang the Conqueror" suit "Energy Projection" render
+- Changed "Kang the Conqueror" suit "Energy Projection" particle emitter
+- Changed "Kang the Conqueror" suit "Energy Projection" sound effects
+- Changed "Kang the Conqueror" suit "Forcefield" ability animation
+- Changed "Kang the Conqueror" suit "Forcefield" ability to require you to stand on the ground
+- Changed "Kang the Conqueror" suit "Forcefield" ability to allow slight movement
+- Changed "Kang the Conqueror" suit "Forcefield" ability sound effects
+- Changed "Kang the Conqueror" suit "Telekinesis" to "Telekinesis Grab"
+- Changed "Kang the Conqueror" suit "Telekinesis Grab" ability sound effects
+- Changed "Kang the Conqueror" suit teleport render
+- Changed "Kang the Conqueror" suit teleport sound effect
+- Changed "Kang the Conqueror" suit mask toggle animation
+- Changed "Kang the Conqueror" suit mask toggle sound effects
+- Changed "Wolverine (X-Men)" suit statistics & balancing
+- Changed "Wolverine (X-Men)" suit skin texture
+- Changed "Wolverine (X-Men)" suit item textures
+- Changed "Wolverine (X-Men)" suit claw model
+- Changed "Thanos" suit statistics & balancing
+- Changed "Thanos" suit skin texture
+- Changed "Thanos" suit item textures
+- Changed "Thanos" suit height
+- Changed "High Technology Armor" power to "Neuro-Kinetic Armor"
+- Changed "Mutant Physiology (Cyclops)" power to "Optic Force"
+- Changed "Mutant Physiology (Wolverine)" power to "Mutated Physiology"
+
+- Buffed "Doctor Doom (Fantastic 4)" suit "Lightning Cast" ability
+- Buffed "Thanos" suit "Regeneration" ability
+- Buffed "Wolverine (X-Men)" suit "Healing Factor" ability
+
+- Nerfed "Kang the Conqueror" suit "Energy Projection" ability
+- Nerfed "Kang the Conqueror" suit "Forcefield" ability

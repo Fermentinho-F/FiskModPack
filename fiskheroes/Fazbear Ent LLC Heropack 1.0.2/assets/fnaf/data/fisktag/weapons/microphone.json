@@ -1,0 +1,9 @@
+{
+    "name": "Freddy's Microphone",
+    "holdingPose": "SINGLE",
+    "cooldown": 0,
+    "projectiles": [],
+    "melee": {
+        "attackDamage": 2
+    }
+}

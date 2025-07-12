@@ -1,0 +1,24 @@
+{
+	"name": "Martial Arts",
+	"modifiers": {
+    "fiskheroes:charged_beam": {
+      "isToggle": true,
+      "damageProfile": {
+          "damage": 5,
+          "properties": {
+              "HIT_COOLDOWN": 60,
+              "ADD_KNOCKBACK": 1
+            }
+      },
+      "chargeTime": 6,
+      "duration": 8,
+      "cooldownTime": 5,
+      "canDoGriefing": false,
+      "range": 1.0,
+      "radius": 2.0,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:flight_impact_entity", "sl:roadhouse"]
+      }
+    }
+  }
+}

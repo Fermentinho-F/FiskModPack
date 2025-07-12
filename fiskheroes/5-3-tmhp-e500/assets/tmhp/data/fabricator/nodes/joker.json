@@ -1,0 +1,13 @@
+{
+  "suit": "tmhp:joker",
+  "display": {
+  "description": "\u00A72I've proved my point. I've demonstrated there's \u00A7lno difference \u00A72between \u00A7lme \u00A72and everyone \u00A7lelse! \u00A72All it takes is \u00A7lone bad day \u00A72to reduce the sanest man alive \u00A72to lunacy. \u00A7lThat's \u00A72how far the \u00A7lworld \u00A72is from where \u00A7lI \u00A72am. Just \u00A7lone bad day. You \u00A72had a \u00A7lbad day \u00A72once, am I \u00A7lright? \u00A72I \u00A7lknow \u00A72I am. I can \u00A7ltell. \u00A72You had a \u00A7lbad day \u00A72and everything \u00A7lchanged. \u00A72Why \u00A7lelse \u00A72would you dress up like a \u00A7lflying rat? \u00A72You had a \u00A7lbad day, \u00A72and it drove \u00A7lyou \u00A72as \u00A7lcrazy \u00A72as \u00A7leverybody else... \u00A72Only \u00A7lyou \u00A72won't \u00A7ladmit \u00A72it! You have to keep \u00A7lpretending \u00A72that life makes \u00A7lsense, \u00A72that there's some \u00A7lpoint \u00A72to all this \u00A7lstruggling! \u00A72God, you make me want to \u00A7lpuke."
+  },
+  "requirements": [
+    "fiskheroes:tier1",
+    "elseworld:ap1",
+    "fiskheroes:ranged",
+    "tmhp:batfamily",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+    "name": "Cyberware Implants",
+    "icon": {
+        "texture":  "pwt:textures/gui/nodes/cyberware.png"
+		}
+    },
+    "price": {
+    "XP_LEVELS": 10,
+	"TUTRIDIUM": 3
+    },
+	"criteria": {
+    "chrome up": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Construct a Suit Data Drive"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:suit_data_drive'"
+      }
+    }
+  }
+}

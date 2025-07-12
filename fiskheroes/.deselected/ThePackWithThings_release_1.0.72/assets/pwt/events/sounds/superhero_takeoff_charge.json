@@ -1,0 +1,8 @@
+{
+  "sound": "fiskheroes:suit.antimonitor.forcefield",
+  "condition": "entity.getData('pack:dyn/ability_cooldown') > 0",
+  "volume": 0.4,
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

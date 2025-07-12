@@ -1,0 +1,12 @@
+{
+  "suit": "shadows:random",
+  "requirements": [
+    "shadows:aragami",
+    "shadows:hue_man",
+    "shadows:shadow",
+    "shadows:silver_speed",
+    "shadows:superior_spider",
+    "fiskheroes:cosmic",
+    "shadows:shadow00dev"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Kinetic Energy",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flicker_loop_comics",
+        "MOVE": ["fiskheroes:super_speed_move_loop_comics", "fiskheroes:super_speed_move_loop_barry_test"],
+        "SPRINT": "fiskheroes:super_speed_sprint_comics",
+        "STOP": "fiskheroes:super_speed_stop_comics"
+      }
+    },
+    "fiskheroes:speed_disintegration": {
+      "factor": 30
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:slow_motion_enable_comics",
+        "DISABLE": "fiskheroes:slow_motion_disable_comics"
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.05
+        }
+      },
+      "chargeTime": 15,
+      "range": 0.0
+    },
+    "fiskheroes:transformation|kinetic": {
+      "key": "KINETIC",
+      "transformation": {
+        "toggleData": "dmh:dyn/transform2",
+        "timerData": "dmh:dyn/transform2_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:transformation|burst": {
+      "key": "BURST",
+      "transformation": {
+        "toggleData": "dmh:dyn/ignite",
+        "timerData": "dmh:dyn/ignite_timer",
+        "time": 40
+      },
+      "soundEvents": {
+        "ENABLE": ["dmh:butter/kinetic_burst_0", "dmh:butter/kinetic_burst_1"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "dmh:textures/gui/bars/kinetic.png",
+      "data": "dmh:dyn/kinetic"
+    }
+  ]
+}

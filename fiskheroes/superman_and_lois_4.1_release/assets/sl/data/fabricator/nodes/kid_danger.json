@@ -1,0 +1,10 @@
+{
+  "suit": "sl:kid_danger",
+  "requirements": [
+    "sl:sl",
+    "fiskheroes:ranged",
+    "fiskheroes:melee",
+    "fiskheroes:traversal",
+    "sl:ap2_3"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "particles": [
+    {
+      "anchor": "body",
+      "type": "ETERNIUM_AURA",
+      "amount": {
+        "tp": 5,
+        "fp": 1
+      },
+      "offset": [0.0, 15, 0.0],
+      "randOffset": [1, 0.1, 1]
+    },
+    {
+      "anchor": "body",
+      "type": "DWARF_STAR_ENERGY",
+      "amount": {
+        "tp": 2,
+        "fp": 1
+      },
+      "offset": [0.0, 15, 0.0],
+      "randOffset": [1, 0.2, 1]
+    },
+    {
+      "anchor": "body",
+      "type": "minecraft:largeexplode",
+      "amount": 1,
+      "offset": [0.0, 15, 0.0],
+      "randOffset": [1.5, 0.2, 1.5]
+    }
+  ]
+}

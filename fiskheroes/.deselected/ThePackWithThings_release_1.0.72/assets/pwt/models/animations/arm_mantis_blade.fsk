@@ -1,0 +1,151 @@
+{data_0} = curve{data_0}
+{data_1} = curve{data_1}{data_0}
+{data_2} = curve{data_2}{data_1} 
+{data_3} = curve{data_3}{data_2}
+{data_4} = curve{data_4}{data_3}
+{data_5} = curve{data_5}{data_4}
+
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+
+{loop} = sin(2pi{data_6}){data_4}
+
+;arm_open
+
+{hand_back_posY} -= 0.7{data_0}
+{hand_back_overlay_posY} = {hand_back_posY}
+
+{hand_back_rotZ} += 30'{data_0}
+{hand_back_overlay_rotZ} = {hand_back_rotZ}
+
+{hand_1_posX} -= 0.3{data_0}
+
+{hand_1_posY} -= 1.05{data_0}
+
+{hand_1_rotZ} -= 40'{data_0}
+
+{hand_1_rotY} -= 4'{data_0}
+
+{blade_base_size_1_rotZ} = {hand_1_rotZ}{data_0}
+
+;arm_open_2
+
+{hand_4_posX} += 0.3{data_1}
+
+{hand_4_posZ} -= 0.3{data_1}
+
+{hand_4_rotY} -= 10'{data_1}
+
+;blade_extend
+
+;blade_extend_2
+
+{blade_base_size_08_1_posY} -= 4.7{data_2}
+
+;blade_extend_3
+
+{blade_rot_point_rotZ} += 40'{data_3}
+
+;blade_extend_4
+
+{blade_2_posY} += 2{data_4}
+
+{blade_1_size_08_posY} += 1.5{data_4}
+{blade_2_size_08_posY} += 5{data_4}
+
+
+{blade_sharp_base_posY} += 3{data_4}
+{blade_sharp_1_posY} += 4{data_4}
+{blade_sharp_2_posY} += 3{data_4}
+{blade_sharp_3_posY} += 1{data_4}
+
+{blade_sharp_base_rotZ} -= 2'{data_4}
+{blade_sharp_1_rotZ} -= 2'{data_4}
+{blade_sharp_2_rotZ} -= 2'{data_4}
+{blade_sharp_3_rotZ} -= 2'{data_4}
+{blade_sharp_4_rotZ} -= 3'{data_4}
+
+{blade_sharp_back_base_posY} -= 5{data_4}
+
+{blade_sharp_back_base_rotZ} += 4'{data_4}
+{blade_back_sharp_1_rotZ} += 3'{data_4}
+{blade_back_sharp_2_rotZ} += 5'{data_4}
+
+;punch
+
+{data_5} =sin(pi{data_5}) 
+
+{hand_1_rotZ} -= 80'{data_5}
+
+{hand_1_rotY} -= 2'{data_5}
+
+{hand_4_rotY} -= 2'{data_5}
+
+{blade_2_size_08_posY} += 1.95{data_5}
+
+{blade_base_size_08_1_posY} -= 2{data_5}
+
+{blade_base_size_1_rotZ} -= 80'{data_5}
+
+{blade_rot_point_rotZ} +=  40'{data_5}
+{blade_rot_point_rotZ} += 50'sin(pi{data_5})
+
+{blade_sharp_base_posY} += 0.95{data_5}
+{blade_sharp_1_posY} += 0.95{data_5}
+{blade_sharp_2_posY} += 0.95{data_5}
+{blade_sharp_3_posY} += {data_5}
+
+;loop
+
+{hand_1_rotZ} -= 1'+0.1{vel}{loop}
+{blade_base_size_1_rotZ} -= 1'+0.1{vel}{loop}
+
+{blade_rot_point_rotZ} +=  (0.5'+0.05{vel})sin(pi{loop})
+
+{blade_sharp_base_posY} += (0.15+0.1{vel}){loop}
+{blade_sharp_back_base_posY} -= (0.05+0.1{vel}){loop}
+
+;=
+
+{hand_2_posX} = {hand_1_posX}
+
+{hand_1_overlay_posX} = {hand_1_posX}
+{hand_2_overlay_posX} = {hand_1_posX}
+
+{hand_2_posY} = {hand_1_posY}
+
+{hand_1_overlay_posY} = {hand_1_posY}
+{hand_2_overlay_posY} = {hand_1_posY}
+
+{hand_2_rotZ} = {hand_1_rotZ}
+
+{hand_1_overlay_rotZ} = {hand_1_rotZ}
+{hand_2_overlay_rotZ} = {hand_1_rotZ}
+
+{hand_2_rotY} = -{hand_1_rotY}
+
+{hand_1_overlay_rotY} = {hand_1_rotY}
+{hand_2_overlay_rotY} = -{hand_1_rotY}
+
+{hand_5_posX} = {hand_4_posX}
+
+{hand_4_overlay_posX} = {hand_4_posX}
+{hand_5_overlay_posX} = {hand_4_posX}
+
+{hand_5_posZ} = -{hand_4_posZ}
+
+{hand_4_overlay_posZ} = {hand_4_posZ}
+{hand_5_overlay_posZ} = -{hand_4_posZ}
+
+{hand_5_rotY} = -{hand_4_rotY}
+
+{hand_4_overlay_rotY} = {hand_4_rotY}
+{hand_5_overlay_rotY} = -{hand_4_rotY}
+
+{blade_base_size_08_2_posY} = {blade_base_size_08_1_posY}
+
+{blade_rot_point_posY} = {blade_base_size_08_1_posY}-2.5
+{blade_rot_point_size_08_posY} = 1.25{blade_rot_point_posY}
+{blade_base_size_08_rotZ} = {blade_base_size_1_rotZ}
+
+{blade_rot_point_size_08_rotZ} = {blade_rot_point_rotZ}
+{blade_base_size_08_2_posY} = {blade_base_size_08_1_posY}

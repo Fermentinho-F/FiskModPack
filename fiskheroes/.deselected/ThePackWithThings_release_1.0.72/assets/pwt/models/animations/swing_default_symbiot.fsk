@@ -1,0 +1,22 @@
+{m} = clamp(-{motY}, -120', 120')
+{m1} = clamp({motY}, 0, 50')
+{m2} = clamp(-{motY}, 0, 120')
+{m3} = clamp(-{motY}, -120', 0)
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -> -2.5 + {m1} 
+{rightArm_rotY} @ {data} -> -0.5  
+{rightArm_rotZ} @ {data} -> 0.4
+{leftArm_rotX} @ {data} -> -2.5 + {m1} 
+{leftArm_rotY} @ {data} -> 0.5
+{leftArm_rotZ} @ {data} -> -0.4
+
+{data} *= {vel}
+{rightLeg_rotX} @ {data} -> 0.4 + {m}
+{rightLeg_rotY} @ {data} ->  -0.1{m3}
+{rightLeg_rotZ} @ {data} ->  0.1{m3}
+{leftLeg_rotX} @ {data} -> 1.2{m}
+{leftLeg_rotY} @ {data} ->  0.1{m3}
+{leftLeg_rotZ} @ {data} ->  -0.1{m3}

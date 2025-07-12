@@ -1,0 +1,19 @@
+{
+  "display": {
+    "name": {
+      "translate": "Multiversal"
+    },
+    "description": {
+      "translate": "Characters who are above The Multiverse..."
+    },
+    "icon": {
+      "texture": "elseworld:textures/multiverse.png"
+    },
+    "isLevelable": false
+  },
+  "requirements": [ "elseworld:guild" ],
+  "price": {
+    "IRID_GOLD": 500,
+    "XP_LEVELS": 300
+  }
+}

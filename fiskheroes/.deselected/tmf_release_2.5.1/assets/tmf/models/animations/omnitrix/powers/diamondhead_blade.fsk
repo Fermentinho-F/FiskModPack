@@ -1,0 +1,28 @@
+{data} = 0.5tanh(7{data}-2)+0.5
+
+{diamondhead_main_cube_posX} -= 0.5 * {data}
+{diamondhead_main_cube_posY} += 1.0 * {data}
+
+{diamondhead_cube2_posX} -= 0.2 * {data}
+{diamondhead_cube2_posY} += 1.7 * {data}
+
+{diamondhead_cube3_posX} -= 0.4 * {data}
+{diamondhead_cube3_posY} += 5.0 * {data}
+
+{diamondhead_cube4_posY} += 7.0 * {data}
+
+{diamondhead_cube5_posX} += 1.0 * {data}
+{diamondhead_cube5_posY} += 4.0 * {data}
+
+{diamondhead_cube6_posX} += 0.9 * {data}
+{diamondhead_cube6_posY} += 2.4 * {data}
+
+{diamondhead_cube7_posX} += 0.9 * {data}
+{diamondhead_cube7_posY} += 2.4 * {data}
+
+{diamondhead_cube8_posY} += 6.0 * {data}
+
+{diamondhead_cube9_posY} += 7.0 * {data}
+
+{diamondhead_cube10_posX} -= 1.0 * {data}
+{diamondhead_cube10_posY} += 5.0 * {data}

@@ -1,0 +1,18 @@
+{
+  "suit": "moopack:splicer",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:spiderverse",
+    "fiskheroes:object_manipulation",
+    "moopack:advanced_technology",
+    "moopack:symbiote_dna",
+    "moopack:spider_dna",
+    "moopack:speed_dna",
+    "moopack:mutant_dna",
+    "moopack:cosmic_dna",
+    "moopack:nature_dna"
+  ]
+}

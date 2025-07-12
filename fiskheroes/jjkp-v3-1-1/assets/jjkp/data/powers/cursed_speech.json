@@ -1,0 +1,30 @@
+{
+  "name": "Cursed Speech",
+  "modifiers": {
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 0.025,
+      "canBreakGlass": true
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:sonic_waves",
+        "cooldownData": "jjkp:dyn/reverse_cooldown",
+        "duration": 30,
+        "recovery": 0.5
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jjkp:textures/gui/bars/cursed_speech_bar.png",
+      "data": "jjkp:dyn/reverse_cooldown"
+    }
+  ]
+}

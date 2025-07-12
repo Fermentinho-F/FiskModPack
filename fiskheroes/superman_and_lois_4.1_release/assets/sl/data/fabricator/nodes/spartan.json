@@ -1,0 +1,12 @@
+{
+  "suit": "sl:spartan",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:marksmanship",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:arrow",
+    "sl:sl",
+    "sl:ap2_3"
+  ]
+}

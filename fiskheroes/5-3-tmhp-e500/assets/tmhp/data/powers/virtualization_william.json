@@ -1,0 +1,82 @@
+{
+  "name": "Virtualization William",
+  "modifiers": {
+    "fiskheroes:shadowform": {
+      "soundEvents": {
+        "DISABLE": "fiskheroes:shadowform_disable",
+        "ENABLE": ["fiskheroes:shadowform_enable", "fiskheroes:shadowform_loop"]
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 32,
+      "range": 16.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.3,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0.5,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 40.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 60,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "isToggle": false,
+      "knockback": 0.001,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 5.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:shadowchain_loop", "fiskheroes:shadowchain_start"],
+        "RELEASE": "fiskheroes:shadowchain_release"
+      }
+    }
+  }
+}

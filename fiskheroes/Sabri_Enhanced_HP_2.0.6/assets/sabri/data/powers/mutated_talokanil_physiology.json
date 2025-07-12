@@ -1,0 +1,298 @@
+{
+  "name": "Mutated Talokanil Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight|a10": {
+      "speed": 0.08,
+      "boostSpeed": 0.19,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 12,
+        "speed": 0.1,
+        "drag": 0.06
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.3,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a9": {
+      "speed": 0.072,
+      "boostSpeed": 0.171,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 13,
+        "speed": 0.09,
+        "drag": 0.07
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.27,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a8": {
+      "speed": 0.064,
+      "boostSpeed": 0.152,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 14,
+        "speed": 0.08,
+        "drag": 0.08
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.24,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a7": {
+      "speed": 0.056,
+      "boostSpeed": 0.133,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 15,
+        "speed": 0.07,
+        "drag": 0.09
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.21,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a6": {
+      "speed": 0.048,
+      "boostSpeed": 0.114,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 16,
+        "speed": 0.06,
+        "drag": 0.1
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.18,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a5": {
+      "speed": 0.04,
+      "boostSpeed": 0.095,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 17,
+        "speed": 0.05,
+        "drag": 0.11
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.15,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a4": {
+      "speed": 0.032,
+      "boostSpeed": 0.076,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 18,
+        "speed": 0.04,
+        "drag": 0.12
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.12,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a3": {
+      "speed": 0.024,
+      "boostSpeed": 0.057,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 19,
+        "speed": 0.03,
+        "drag": 0.13
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a2": {
+      "speed": 0.016,
+      "boostSpeed": 0.038,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:controlled_flight|a1": {
+      "speed": 0.008,
+      "boostSpeed": 0.019,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "sabri:namor_flight_wings_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "sabri:dyn/dry",
+        "cooldownData": "sabri:dyn/drought_timer",
+        "duration": 7200,
+        "recovery": 50
+      }
+    },
+    "fiskheroes:regeneration|b10": {
+      "factor": 3
+    },
+    "fiskheroes:regeneration|b9": {
+      "factor": 2.8
+    },
+    "fiskheroes:regeneration|b8": {
+      "factor": 2.6
+    },
+    "fiskheroes:regeneration|b7": {
+      "factor": 2.4
+    },
+    "fiskheroes:regeneration|b6": {
+      "factor": 2.2
+    },
+    "fiskheroes:regeneration|b5": {
+      "factor": 2
+    },
+    "fiskheroes:regeneration|b4": {
+      "factor": 1.8
+    },
+    "fiskheroes:regeneration|b3": {
+      "factor": 1.6
+    },
+    "fiskheroes:regeneration|b2": {
+      "factor": 1.4
+    },
+    "fiskheroes:regeneration|b1": {
+      "factor": 1.2
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "COLD",
+      "factor": 0.8
+    }
+  },
+  "hud": 
+  [
+    {
+      "type": "CHARGE",
+      "texture": "sabri:textures/gui/bars/drought.png",
+      "data": "1 - Math.round((Math.round(entity.getData('sabri:dyn/drought_timer') * 81) + 1) / 81 * 20) / 20 * 80 / 81"
+    }
+  ]
+}

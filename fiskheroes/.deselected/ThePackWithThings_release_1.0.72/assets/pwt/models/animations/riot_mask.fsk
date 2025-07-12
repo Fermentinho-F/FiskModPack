@@ -1,0 +1,88 @@
+{jaw_low_right_rotX} += 7.5'{data_0}
+{jaw_low_right_rotY} += 5'{data_0}
+
+{jaw_low_right_overlay_rotX} += 7.5'{data_0}
+{jaw_low_right_overlay_rotY} += 5'{data_0}
+
+{jaw_low_left_rotX} += 5'{data_0}
+{jaw_low_left_rotY} -= 7'{data_0}
+
+{jaw_low_left_overlay_rotX} += 5'{data_0}
+{jaw_low_left_overlay_rotY} -= 7'{data_0}
+
+{jaw_up_right_rotX} -= 95'{data_0}
+{jaw_up_right_rotY} += 0'{data_0}
+
+{jaw_up_right_overlay_rotX} -= 95'{data_0}
+{jaw_up_right_overlay_rotY} += 0'{data_0}
+
+{jaw_up_left_rotX} -= 98'{data_0}
+{jaw_up_left_rotY} += 0'{data_0}
+
+{jaw_up_left_overlay_rotX} -= 98'{data_0}
+{jaw_up_left_overlay_rotY} += 0'{data_0}
+
+{jaw_up_right_2_rotX} -= 90'{data_0}
+{jaw_up_right_2_rotY} -= 5'{data_0}
+
+{jaw_up_right_overlay_2_rotX} -= 90'{data_0}
+{jaw_up_right_overlay_2_rotY} -= 5'{data_0}
+
+
+{jaw_up_left_2_rotX} -= 92'{data_0}
+{jaw_up_left_2_rotY} += 7'{data_0}
+
+{jaw_up_left_overlay_2_rotX} -= 92'{data_0}
+{jaw_up_left_overlay_2_rotY} += 7'{data_0}
+
+;jaw low pos
+{jaw_low_right_posX} -= 0.15{data_0}
+{jaw_low_right_posY} += 0.5{data_0}
+{jaw_low_right_posZ} -= 0.5sin(pi{data_0}) + 0.4{data_0}
+
+{jaw_low_right_overlay_posX} -= 0.15{data_0}
+{jaw_low_right_overlay_posY} += 0.5{data_0}
+{jaw_low_right_overlay_posZ} -= 0.5sin(pi{data_0}) + 0.4{data_0}
+
+{jaw_low_left_posX} += 0.15{data_0}
+{jaw_low_left_posY} += 0.5{data_0}
+{jaw_low_left_posZ} -= 0.5sin(pi{data_0}) + 0.4{data_0}
+
+{jaw_low_left_overlay_posX} += 0.15{data_0}
+{jaw_low_left_overlay_posY} += 0.5{data_0}
+{jaw_low_left_overlay_posZ} -= 0.5sin(pi{data_0}) + 0.4{data_0}
+
+
+;jaw up pos
+{jaw_up_right_posX} -= 0.1sin(pi{data_0}) + 0.5{data_0}
+{jaw_up_right_posY} -= 3sin(pi{data_0}) - 0.7{data_0}
+{jaw_up_right_posZ} -= 3sin(0.8pi{data_0}) - 1.5{data_0}
+
+{jaw_up_right_overlay_posX} -= 0.1sin(pi{data_0}) + 0.5{data_0}
+{jaw_up_right_overlay_posY} -= 3sin(pi{data_0}) - 0.7{data_0}
+{jaw_up_right_overlay_posZ} -= 3sin(0.8pi{data_0})  - 1.5{data_0}
+
+{jaw_up_right_2_posX} -= 0.1sin(pi{data_0})
+{jaw_up_right_2_posY} -= 2sin(pi{data_0}) - {data_0}
+{jaw_up_right_2_posZ} -= 3sin(0.8pi{data_0}) - 0.5{data_0}
+
+{jaw_up_right_overlay_2_posX} -= 0.1sin(pi{data_0})
+{jaw_up_right_overlay_2_posY} -= 2sin(pi{data_0}) - {data_0}
+{jaw_up_right_overlay_2_posZ} -= 3sin(0.8pi{data_0}) - 0.5{data_0}
+
+
+{jaw_up_left_posX} += 0.1sin(pi{data_0}) + 0.5{data_0}
+{jaw_up_left_posY} -= 3sin(pi{data_0}) - 0.7{data_0}
+{jaw_up_left_posZ} -= 3sin(0.8pi{data_0}) - 1.5{data_0}
+
+{jaw_up_left_overlay_posX} += 0.1sin(pi{data_0}) + 0.5{data_0}
+{jaw_up_left_overlay_posY} -= 3sin(pi{data_0}) - 0.7{data_0}
+{jaw_up_left_overlay_posZ} -= 3sin(0.8pi{data_0})  - 1.5{data_0}
+
+{jaw_up_left_2_posX} += 0.1sin(pi{data_0})
+{jaw_up_left_2_posY} -= 2sin(pi{data_0}) - {data_0}
+{jaw_up_left_2_posZ} -= 3sin(0.8pi{data_0}) - 0.5{data_0}
+
+{jaw_up_left_overlay_2_posX} += 0.1sin(pi{data_0})
+{jaw_up_left_overlay_2_posY} -= 2sin(pi{data_0}) - {data_0}
+{jaw_up_left_overlay_2_posZ} -= 3sin(0.8pi{data_0}) - 0.5{data_0}

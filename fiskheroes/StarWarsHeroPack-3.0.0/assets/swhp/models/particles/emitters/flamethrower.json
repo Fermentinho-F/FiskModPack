@@ -1,0 +1,34 @@
+{
+  "particles": [
+    {
+      "maxDistance": 256,
+      "type": "FLAME_BALL",
+      "anchor": "rightArm",
+      "amount": 2,
+      "offset": {
+        "tp": [-1.0, 9.5, 0.0],
+        "fp": [8.0, 8.0, 0.0]
+      },
+      "motion": [0.0, 0.0, 0.5],
+      "randOffset": [0.05, 0.0, 0.05],
+      "randMotion": [0.05, 0.0, 0.05],
+      "mirror": "false",
+      "lockFPYaw": true
+    },
+    {
+      "maxDistance": 256,
+      "type": "BIG_SMOKE",
+      "anchor": "rightArm",
+      "amount": 2,
+      "offset": {
+        "tp": [-1.0, 9.5, 0.0],
+        "fp": [8.0, 8.0, 0.0]
+      },
+      "motion": [0.0, 0.0, 0.6],
+      "randOffset": [0.1, 0.1, 0.1],
+      "randMotion": [0.1, 0.1, 0.1],
+      "mirror": "false",
+      "lockFPYaw": true
+    }
+  ]
+}

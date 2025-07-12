@@ -1,0 +1,10 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+
+{loop} = sin(pi({data_1}{data_0}))
+
+{rightArm_rotX} += -10'{data_0}
+{rightArm_rotZ} += 17.5'{data_0}
+
+{rightArm_rotX} += 5'sin(pi({loop}+0.5))
+{rightArm_rotZ} += 5'sin(pi{loop})

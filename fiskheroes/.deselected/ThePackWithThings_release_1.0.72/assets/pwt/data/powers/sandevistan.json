@@ -1,0 +1,66 @@
+{
+  "name": "Military Grade Sandevistan",
+  "modifiers": {
+	"fiskheroes:transformation|sandevistan": {
+	  "key": "SANDEVISTAN",
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 0
+      },
+      "soundEvents": {
+        "ENABLE": ["pwt:sandevistan_on", "pwt:sandevistan_on_sprint"],
+        "DISABLE": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_sandevistan_upgrade_0": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 120,
+        "recovery": 2.8
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_sandevistan_upgrade_1": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 145,
+        "recovery": 4.6
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:cooldown|cooldown_sandevistan_upgrade_2": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 170,
+        "recovery": 6.1
+      },
+      "soundEvents": {
+        "TIMEOUT": "pwt:advanced_ninja_ability_disable"
+      }
+    },
+	"fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+	  "canUseTachyons": false,
+	  "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_shazam_dceu"
+      }
+    },
+	"fiskheroes:slow_motion": {
+    }
+  },
+  "hud": [
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/idk_something_for_max.png",
+      "data": "pwt:dyn/ability_cooldown"
+    }
+  ]
+}

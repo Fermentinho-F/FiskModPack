@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:symbiote_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:traversal2",
+    "moopack:dna_activators"
+  ]
+}

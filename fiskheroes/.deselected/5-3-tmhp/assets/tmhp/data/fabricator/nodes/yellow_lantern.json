@@ -1,0 +1,9 @@
+{
+  "suit": "tmhp:yellow_lantern",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap6_7",
+    "tmhp:lantern_spectrum",
+    "tmhp:heropack2"
+  ]
+}

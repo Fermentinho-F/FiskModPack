@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "dmh:yt_suits/butterstrike/bs_up_ns",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "dmh:xor/iron_man_prime_suit_<TIMER>"
+      }
+    ],
+    "out": "dmh:generated/butterstrike_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(38 * entity.getInterpolatedData('dmh:dyn/transform_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 38
+      }
+    }
+  },
+  "isDynamic": true
+}

@@ -1,0 +1,15 @@
+{
+  "suit": "emo:lantern",
+  "display": {
+    "description": "\u00A7a2 rings together"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:ranged3",
+    "fiskheroes:melee3",
+    "emo:alien",
+    "emo:cadmus"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.beam.trickster.charge",
+  "volume": 0.9,
+  "pitch": "0.9 + Math.random() * 0.1",
+  "condition": "entity.getData('fiskheroes:beam_charging') && !entity.getData('fiskheroes:beam_shooting')",
+  "fadeOut": 5,
+  "fadeIn": 5
+}

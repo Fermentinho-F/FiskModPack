@@ -1,0 +1,6 @@
+{
+  "sound": "fiskheroes:ambient.flight",
+  "override": "jmctheroes:funcs/flying",
+  "loop": true,
+  "delay": 1
+}

@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": "Cybernetic Enhancement",
+    "description": "Sometimes called 'cyborgs' or 'weapon enhancements', Cybernetic Enhancements allow one or more pieces of a person's anatomy to be substituted with a mechanical replacement.",
+    "icon": {
+      "texture": "loriatpack:textures/gui/nodes/cybernetic.png"
+    }
+  },
+  "requirements": [
+  ],
+  "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 22
+  }
+}

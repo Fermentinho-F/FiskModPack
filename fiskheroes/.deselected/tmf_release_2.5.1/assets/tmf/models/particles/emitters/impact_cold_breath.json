@@ -1,0 +1,19 @@
+{
+  "particles": [
+    {
+      "type": "FREEZE_RAY",
+      "amount": 10,
+      "randOffset": [0.5, 0.2, 0.5]
+    },
+    {
+      "type": "CRYO_SMOKE",
+      "amount": 40,
+      "randOffset": [1.35, 0.35, 1.35]
+    },
+    {
+      "type": "FREEZE_SMOKE",
+      "amount": 10,
+      "randOffset": [0.6, 0.3, 0.6]
+    }
+  ]
+}

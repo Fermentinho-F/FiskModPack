@@ -1,0 +1,138 @@
+{
+  "name": "Man & Lois Heropack",
+  "description": "Version Halloween - MAN",
+  "domain": "sl",
+  "watermark": "\u00A74Man & Lois\u00A7z",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "NyssaGhul/S-L-VFX",
+      "version": 0
+    },
+    "range": {
+      "parasite": { "distance": 48.0, "target": "ALL" },
+      "supercharged": { "distance": 48.0, "target": "ONLY_SELF" },
+      "bizarrotheme": { "distance": 48.0, "target": "ONLY_SELF" },
+      "flashtime": { "distance": 48.0, "target": "ONLY_SELF" }
+    }
+  },
+  "damageTypes": {
+    "KRYPTONITE": "Kryptonite",
+    "XKRYPTONITE": "X-Kryptonite",
+    "SOLAR": "Solar Blast",
+    "REDSOLAR": "Red Solar Blast",
+    "SUPERCHARGED": "Super Solar Charged"
+  },
+  "dataVars": {
+    "bizarroprofile": "BOOLEAN",
+    "invis": "BOOLEAN",
+    "invis_timer": "FLOAT",
+    "construct": "BOOLEAN",
+    "construct_timer": "FLOAT",
+    "hvfloat": "BOOLEAN",
+    "hvint": "INTEGER",
+    "suitup": "BOOLEAN",
+    "suitup_timer": "FLOAT_INTERP",
+    "hammer": "BOOLEAN",
+    "hammer_timer": "FLOAT_INTERP",
+    "hammer_cooldown": "FLOAT",
+    "clap": "BOOLEAN",
+    "clap_timer": "FLOAT_INTERP",
+    "sun": "BOOLEAN",
+    "sun_timer": "FLOAT_INTERP",
+    "absorb": "BOOLEAN",
+    "absorb_timer": "FLOAT_INTERP",
+    "absorb_cooldown": "FLOAT",
+    "inverseabsorb": "BOOLEAN",
+    "inverseabsorb_timer": "FLOAT_INTERP",
+    "inverseabsorb_cooldown": "FLOAT",
+    "steelblade": "BOOLEAN",
+    "steelblade_timer": "FLOAT_INTERP",
+    "steelblade_cooldown": "FLOAT",
+    "sboost": "BOOLEAN",
+    "sboost_timer": "FLOAT_INTERP",
+    "sboost2": "BOOLEAN",
+    "sboost2_timer": "FLOAT_INTERP",
+    "test": "BOOLEAN",
+    "test_timer": "FLOAT_INTERP",
+    "mirage": "BOOLEAN",
+    "mirage_timer": "FLOAT_INTERP",
+    "startedyaw": "INTEGER",
+    "startedclimb": "BOOLEAN",
+    "climb": "FLOAT_INTERP",
+    "climb_bool": "BOOLEAN",
+    "rotationW": "INTEGER",
+    "jump": "BOOLEAN"
+  },
+  "alts": {
+    "sl:bizarro": {
+      "$DEFAULT": {
+        "soundProfile": "BIZARRO",
+        "maskToggleTicks": 20
+      },
+      "normalbizarro": {
+        "name": "Normal",
+        "soundProfile": "nb",
+        "maskToggleTicks": 20
+      },
+      "pixel": {
+        "name": "Pixel",
+        "soundProfile": "BIZARRO",
+        "maskToggleTicks": 20
+      },
+      "pendant": {
+        "name": "\u00A7d\u00A7lPendant\u00A7r",
+        "soundProfile": "BIZARRO",
+        "maskToggleTicks": 20
+      }
+    },
+    "sl:superman": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERMAN",
+        "maskToggleTicks": 20
+      },
+      "normalbizarro": {
+        "ogsuperman": "og",
+        "maskToggleTicks": 20
+      },
+      "s1": {
+        "name": "Season 1",
+        "maskToggleTicks": 20
+      },
+      "black": {
+        "name": "\u00A78\u00A7lBlack Suit\u00A7r",
+        "maskToggleTicks": 20
+      },
+      "ogsuperman": {
+        "name": "OG",
+        "maskToggleTicks": 20
+      }
+    },
+    "sl:steel": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14,
+        "soundProfile": "MK46"
+      }
+    },
+    "sl:onomatopoeia": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      }
+    },
+    "sl:jon_el": {
+      "$DEFAULT": {
+        "maskToggleTicks": 20
+      }
+    },
+    "sl:man": {
+      "$DEFAULT": {
+        "maskToggleTicks": 80
+      }
+    },
+    "sl:cobalt_blue": {
+      "$DEFAULT": {
+        "soundProfile": "NEGATIVE"
+      }
+    }
+  }
+}

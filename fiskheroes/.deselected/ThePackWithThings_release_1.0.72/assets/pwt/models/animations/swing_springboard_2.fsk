@@ -1,0 +1,19 @@
+{x} = curve {data}
+{data} = sin(pi(1 - {data}))^2
+
+{x2} = clamp({data}, -110', 110')
+
+{head_rotX} @ {x2} -> 0.7
+{rightArm_rotX} @ {x2} -> 0.6
+{rightArm_rotY} @ {x2} -> 0.3
+{rightArm_rotZ} @ {x2} -> 0.8
+{leftArm_rotX} @ {x2} -> 0.6
+{leftArm_rotY} @ {x2} -> -0.3
+{leftArm_rotZ} @ {x2} -> -0.8
+
+{rightLeg_rotX} @ {data} -> -0.5
+{leftLeg_rotX} @ {data} -> -0.8
+
+out "pivot" (0, 0.3 + 0.2{data}, 0)
+
+

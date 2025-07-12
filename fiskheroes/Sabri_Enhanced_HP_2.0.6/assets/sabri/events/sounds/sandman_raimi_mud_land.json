@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.mud.land",
+  "condition": "entity.getData('sabri:dyn/drought_timer') == 1",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

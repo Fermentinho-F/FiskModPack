@@ -1,0 +1,41 @@
+{
+  "suit": "tmf:dna_eyeguy_24",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "eye": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 64,
+      "description": {
+        "translate": "Craft some Ender Eyes"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:ender_eye'"
+      }
+    },
+    "yummers": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 32,
+      "description": {
+        "translate": "Get More Eyes Into Your Body by Consuming Spider Eyes"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:spider_eye'"
+      }
+    }
+  }
+}

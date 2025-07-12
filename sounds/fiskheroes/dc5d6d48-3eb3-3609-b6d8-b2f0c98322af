@@ -1,0 +1,314 @@
+{
+  "symbiote.transformation": {
+    "sounds": [
+       "symbiote_transformation"
+    ],
+    "category": "player"
+  },
+  "symbiote.mask": {
+    "sounds": [
+       "symbiote_mask"
+    ],
+    "category": "player"
+  },
+  "symbiote.blade.enable": {
+    "sounds": [
+       "symbiote_blade_enable"
+    ],
+    "category": "player"
+  },
+  "fire.start": {
+    "sounds": [
+       "fire_start"
+    ],
+    "category": "player"
+  },
+  "fire.loop": {
+    "sounds": [
+       "fire_loop"
+    ],
+    "category": "player"
+  },
+  "cold.breath": {
+    "sounds": [
+       "breath"
+    ],
+    "category": "player"
+  },
+  "billyclub.fire": {
+    "sounds": [
+       "fireclub"
+    ],
+    "category": "player"
+  },
+  "lantern.blast": {
+    "sounds": [
+      "energy_blast"
+    ],
+    "category": "player"
+  },
+  "saw.loop": {
+    "sounds": [
+      "chainsaw_loop"
+    ],
+    "category": "player"
+  },
+  "saw.start": {
+    "sounds": [
+      "chainsaw_start"
+    ],
+    "category": "player"
+  },
+  "saw.rev": {
+    "sounds": [
+      "chainsaw_rev"
+    ],
+    "category": "player"
+  },
+  "rock.out": {
+    "category": "player",
+    "sounds": [{
+        "name": "rock_out_1",
+        "weight": 1
+      },
+      {
+        "name": "rock_out_2",
+        "weight": 1
+      },
+      {
+        "name": "rock_out_3",
+        "weight": 1
+      },
+      {
+        "name": "rock_out_4",
+        "weight": 1
+      },
+      {
+        "name": "rock_out_5",
+        "weight": 1
+      },
+      {
+        "name": "rock_out_6",
+        "weight": 1
+      }
+    ]
+  },
+  "landing": {
+    "sounds": [
+      "landing_1"
+    ],
+    "category": "player"
+  },
+  "fire.landing": {
+    "sounds": [
+      "fire_landing_1"
+    ],
+    "category": "player"
+  },
+  "sonic.boom": {
+    "sounds": [
+      "sonic_boom"
+    ],
+    "category": "player"
+  },
+  "comical.punch": {
+    "category": "player",
+    "sounds": [{
+        "name": "punch1",
+        "weight": 1
+      },
+      {
+        "name": "punch2",
+        "weight": 1
+      },
+      {
+        "name": "hammer_punch",
+        "weight": 1
+      }
+    ]
+  },
+  "take.hammer": {
+    "sounds": [
+      "take_hammer"
+    ],
+    "category": "player"
+  },
+  "thor.hammer": {
+    "sounds": [
+      "thor_flight"
+    ],
+    "category": "player"
+  },
+  "gun": {
+    "sounds": [
+       "gun"
+    ],
+    "category": "player"
+  },
+  "beelte.enable": {
+    "sounds": [
+       "beetle_suit_enable"
+    ],
+    "category": "player"
+  },
+  "beelte.disable": {
+    "sounds": [
+       "beetle_suit_disable"
+    ],
+    "category": "player"
+  },
+  "beelte.wings": {
+    "sounds": [
+       "beetle_wings"
+    ],
+    "category": "player"
+  },
+  "groot.claws": {
+    "sounds": [
+       "groot_wings"
+    ],
+    "category": "player"
+  },
+  "groot.wings": {
+    "sounds": [
+       "groot_wings"
+    ],
+    "category": "player"
+  },
+  "moth.start": {
+    "sounds": [
+       "moth_flight_start"
+    ],
+    "category": "player"
+  },
+  "moth.loop": {
+    "sounds": [
+       "moth_flight_loop"
+    ],
+    "category": "player"
+  },
+  "gunshot": {
+    "sounds": [
+       "gunshot"
+    ],
+    "category": "player"
+  },
+  "prowler.stop": {
+    "sounds": [
+       "prowler"
+    ],
+    "category": "player"
+  },
+  "revolver.shoot": {
+    "category": "player",
+    "sounds": [{
+        "name": "revolver_shoot_1",
+        "weight": 1
+      },
+      {
+        "name": "revolver_shoot_0",
+        "weight": 1
+      }
+    ]
+  },
+  "luger.shoot": {
+    "sounds": [
+      "lugerGun"
+    ],
+    "category": "player"
+  },
+  "magic.blast": {
+    "sounds": [
+      "magic_blast"
+    ],
+    "category": "player"
+  },
+  "wheel": {
+    "sounds": [
+       "wheel"
+    ],
+    "category": "player"
+  },
+  "suit.thor.mjolnir.hit": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/hit_1",
+      "suit/thor/mjolnir/hit_2",
+      "suit/thor/mjolnir/hit_3",
+      "suit/thor/mjolnir/hit_4",
+      "suit/thor/mjolnir/hit_5"
+    ]
+  },
+  "suit.thor.mjolnir.lightning.lightning_shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/lightning/lightning_shoot"
+    ]
+  },
+  "suit.thor.flight.enable": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/flight_enable"
+    ]
+  },
+  "suit.thor.flight.disable": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/flight_disable"
+    ]
+  },
+  "suit.thor.super_jump": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/super_jump"
+    ]
+  },
+  "suit.thor.mjolnir.spin.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/spin_loop"
+    ]
+  },
+  "suit.thor.mjolnir.throw": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/throw"
+    ]
+  },
+  "suit.thor.mjolnir.lightning.flicker_loop": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/lightning/flicker_loop"
+    ]
+  },
+  "suit.thor.mjolnir.lightning.charged_beam.shoot": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/lightning/charged_beam_shoot"
+    ]
+  },
+  "suit.thor.mjolnir.lightning.charged_beam.loop": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/lightning/charged_beam_loop"
+    ]
+  },
+  "suit.thor.mjolnir.lightning.charged_beam.stop": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/lightning/charged_beam_stop"
+    ]
+  },
+  "suit.thor.mjolnir.landing": {
+    "category": "player",
+    "sounds": [
+      "suit/thor/mjolnir/landing"
+    ]
+  },
+  "suit.concrete_smash": {
+    "category": "player",
+    "sounds": [
+      "suit/concrete_smash"
+    ]
+  }
+}

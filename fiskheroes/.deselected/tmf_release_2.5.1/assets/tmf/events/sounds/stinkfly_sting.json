@@ -1,0 +1,9 @@
+{
+  "sound": "tmf:stinkfly.sting",
+  "condition": "fiskheroes:beam_shooting",
+  "volume": "1.0",
+  "pitch": "1.0",
+  "loop": false,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

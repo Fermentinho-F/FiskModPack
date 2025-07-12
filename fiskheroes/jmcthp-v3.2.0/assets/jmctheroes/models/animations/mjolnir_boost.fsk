@@ -1,0 +1,13 @@
+{data} = curve {data}
+
+{Handle_rotX} += 1.15*{data}
+{HandleOver_rotX} += 1.15*{data}
+{Head_rotX} += 1.15*{data}
+{HeadOver_rotX} += 1.15*{data}
+{Top_rotX} += 1.15*{data}
+
+{Handle_posZ} += 1.35*{data}
+{HandleOver_posZ} += 1.35*{data}
+{Head_posZ} += 1.35*{data}
+{HeadOver_posZ} += 1.35*{data}
+{Top_posZ} += 1.35*{data}

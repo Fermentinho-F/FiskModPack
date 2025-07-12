@@ -1,0 +1,12 @@
+{
+  "suit": "dmh:king_thanos",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:cosmic",
+    "dmh:dmhp"
+  ]
+}

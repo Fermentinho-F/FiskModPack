@@ -1,0 +1,150 @@
+{
+  "name": "Speed Force",
+  "modifiers": {
+	  "fiskheroes:damage_weakness|cold": {
+      "damageType": "COLD",
+	  "factor": 0.3
+    },
+	"fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+	  "factor": 0.3
+    },
+	"fiskheroes:damage_weakness|flame": {
+      "damageType": "FLAME",
+	  "factor": 0.3
+    },
+	"fiskheroes:damage_immunity|telepat": {
+      "damageType": "TELEPATIC"
+    },
+    "fiskheroes:transformation|kinetic": {
+      "key": "CHARGE_KINETIC",
+      "transformation": {
+        "toggleData": "loriatpack:dyn/charge_kinetic",
+        "timerData": "loriatpack:dyn/charge_kinetic_timer",
+        "time": 40
+      }
+    },
+    "fiskheroes:transformation|vortex": {
+      "key": "VORTEX",
+      "transformation": {
+        "toggleData": "loriatpack:dyn/vortex_active",
+        "timerData": "loriatpack:dyn/vortex_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|vortex": {
+      "cooldown": {
+        "toggleData": "loriatpack:dyn/vortex_active",
+        "cooldownData": "loriatpack:dyn/vortex_cooldown",
+        "duration": 100,
+        "recovery": 0.1
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": ["fiskheroes:super_speed_move_loop_cw"],
+        "SPRINT": ["fiskheroes:super_speed_sprint_barry"],
+        "STOP": ["fiskheroes:super_speed_stop_barry"]
+      }
+    },
+     "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": false,
+	  "soundEvents": {
+        "ENABLE": "fiskheroes:reverse_flash_vibration_loop"
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.1
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "chargeTime": 3,
+      "duration": 100,
+      "cooldownTime": 3,
+      "range": 30.0,
+      "radius": 2.0,
+	   "soundEvents": {
+          "BEAM_AMBIENT": "loriatpack:arm_vortex"
+      }
+    },
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 4.0
+   },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:propelled_flight": {
+    },
+      "fiskheroes:hover": {
+      },
+      "fiskheroes:heat_vision": {
+        "damageProfile": {
+          "damage": 3.0,
+          "types": {
+            "BLUNT": 1.0
+          }
+        },
+        "range": 4.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "BEAM_AMBIENT": "loriatpack:flash_punch"
+        }
+      },
+      "fiskheroes:lightning_cast": {
+        "damageProfile": {
+          "damage": 10.0,
+          "types": {
+          "LIGHTNING": 1.0
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "LIGHTNING_STRIKE": 0.2
+          }
+        },
+        "range": 48.0,
+        "chainRadius": 2.5,
+        "cooldownTime": 20,
+        "soundEvents": {
+          "SHOOT": "fiskheroes:lightning_cast"
+        }
+      },
+"fiskheroes:cooldown": {
+  "cooldown": {
+    "toggleData": "entity.getData('loriatpack:dyn/charge_kinetic_timer') >= 0.1",
+    "cooldownData": "loriatpack:dyn/charge_kinetic_cooldown",
+    "duration": 80,
+    "recovery": 1
+  }
+}
+},
+"hud": [
+{
+  "type": "CHARGE",
+  "texture": "loriatpack:textures/gui/bars/flash.png",
+  "data": "loriatpack:dyn/charge_kinetic_cooldown"
+}
+]
+}
+

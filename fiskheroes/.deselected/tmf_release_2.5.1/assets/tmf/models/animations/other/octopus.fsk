@@ -1,0 +1,28 @@
+{data} = 1.5*sin(3.5*{data})
+
+{tentacle1_rotZ} += {data}*7'^2
+{tentacle1.1_rotZ} -= {data}*7'
+
+{tentacle2_rotZ} += {data}*3'
+{tentacle2.2_rotZ} -= {data}*7'^2
+
+{tentacle3_rotZ} -= {data}*8'
+{tentacle3.3_rotZ} += {data}*3'
+
+{tentacle4_rotZ} -= {data}*3'^2
+{tentacle4.4_rotZ} -= {data}*5'^3
+
+{tentacle5_rotZ} += {data}*7'
+{tentacle5.5_rotZ} -= {data}*5'
+
+{tentacle6_rotZ} += {data}*3'^2
+{tentacle6.6_rotZ} += {data}*6'
+
+{tentacle7_rotZ} += {data}*7'^3
+{tentacle7.7_rotZ} -= {data}*3'
+
+{tentacle8_rotZ} -= {data}*9'
+{tentacle8.8_rotZ} += {data}*4'^2
+
+{octopus_head2_rotX} -= {data}*16'
+{octopus_head2_overlay_rotX} -= {data}*16'

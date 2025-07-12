@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "shadows:tornado.loop",
+  "condition": "fiskheroes:flying",
+  "volume": "0.1 + entity.getData('fiskheroes:flight_boost_timer') * 0.15",
+  "pitch": 1,
+  "loop": true,
+  "fadeIn": 4,
+  "fadeOut": 4
+}

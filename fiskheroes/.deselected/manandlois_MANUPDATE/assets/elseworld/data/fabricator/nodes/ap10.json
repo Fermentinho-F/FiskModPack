@@ -1,0 +1,35 @@
+{
+  "display": {
+    "name": {
+      "translate": "\u00A7dAttack Potential 10"
+    },
+    "description": {
+      "translate": "\u00A79Suits that can deal damage 100+."
+    },
+    "icon": {
+      "text": "\u00A7d10"
+    },
+    "isLevelable": true
+  },
+  "autoUnlock": false,
+  "requirements": [ "elseworld:ap8_9" ],
+  "price": {
+    "IRID_GOLD": 10,
+    "XP_LEVELS": 30 
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:achievement",
+      "ignoreRequirements": true,
+      "description": {
+        "translate": "Finish the Game"
+      },
+      "condition": {
+        "variables": {
+          "id": "ACHIEVEMENT_GAINED"
+        },
+        "check": "id == 'achievement.theEnd2'"
+      }
+    }
+  }
+}

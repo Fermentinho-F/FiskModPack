@@ -1,0 +1,12 @@
+{
+  "suit": "jmctheroes:8ball",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:moon_knight",
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal2",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:flight"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Mr. Cupcake",
+    "holdingPose": "SINGLE",
+    "cooldown": 0,
+    "projectiles": [],
+    "melee": {
+        "attackDamage": 5
+    }
+}

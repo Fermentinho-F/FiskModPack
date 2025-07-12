@@ -1,0 +1,11 @@
+{Right_held_item} = {data_9}*(1-{data_1})
+{Left_held_item} = {data_10}*(1-{data_1})
+
+{rightArm_slim_posY} -= 7*{Right_held_item} + 5{data_1}
+{leftArm_slim_posY} -= 7*{Left_held_item} + 5{data_1}
+
+{loop} = {data_0}*(1-{data_1})
+{jaw} = curve {data_0}*(1-{data_1})
+
+{jaw_rotX} -= 14'sin(pi{jaw}) 
+{jaw_inside_rotX} -= 14'sin(pi{jaw}) 

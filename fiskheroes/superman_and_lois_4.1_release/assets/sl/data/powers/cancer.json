@@ -1,0 +1,9 @@
+{
+  "name": "Cancer",
+    "modifiers": {
+  "fiskheroes:damage_weakness|cancer": {
+    "damageType": "CANCER",
+    "factor": 1.0
+    }
+  }
+}

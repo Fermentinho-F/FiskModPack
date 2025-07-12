@@ -1,0 +1,35 @@
+{data} = curve {data}
+
+{x} = max({motY}, -1)
+
+{body_rotX} @ {data} -> 13'
+{body_rotY} @ {data} -> 17'
+{body_rotY} @ {data} -> -4'
+
+{leftArm_rotX} @ {data} -> 17.5' - 10'{x}
+{leftArm_rotY} @ {data} -> -0.5'
+{leftArm_rotZ} @ {data} -> -30'
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 2
+{leftArm_posZ} @ {data} -> 1
+
+{rightArm_rotX} @ {data} -> -156.5' + 15'{x}
+{rightArm_rotY} @ {data} -> 20.5'
+{rightArm_rotZ} @ {data} -> -9'
+{rightArm_posX} @ {data} -> -5
+{rightArm_posY} @ {data} -> 1
+{rightArm_posZ} @ {data} -> 0
+
+{leftLeg_rotX} @ {data} -> 62' - 10'{x}
+{leftLeg_rotY} @ {data} -> -5'
+{leftLeg_rotZ} @ {data} -> -1.5'
+{leftLeg_posX} @ {data} -> 3
+{leftLeg_posY} @ {data} -> 11
+{leftLeg_posZ} @ {data} -> -4 - {x}
+
+{rightLeg_rotX} @ {data} -> 25.5' - 10'{x}
+{rightLeg_rotY} @ {data} -> 13.5'
+{rightLeg_rotZ} @ {data} -> 6'
+{rightLeg_posX} @ {data} -> -3
+{rightLeg_posY} @ {data} -> 11
+{rightLeg_posZ} @ {data} -> 2.5 + 0.5{x}

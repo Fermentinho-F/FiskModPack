@@ -1,0 +1,46 @@
+{
+  "name": "Enhanced Human Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.05,
+      "boostSpeed": 0.15,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false
+        }
+      },
+      "knockback": 1.2,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop",
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 10.0,
+      "knockback": 0.5,
+      "duration": 60,
+      "cooldownTime": 140
+    }
+  }
+}

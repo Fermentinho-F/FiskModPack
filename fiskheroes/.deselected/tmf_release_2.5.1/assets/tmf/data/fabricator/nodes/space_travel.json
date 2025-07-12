@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": "Space Travel",
+    "description": "Allows the wearer to travel safely to space.",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/space.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:traversal2",
+    "tmf:tmf"
+  ],
+  "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 15
+  }
+}

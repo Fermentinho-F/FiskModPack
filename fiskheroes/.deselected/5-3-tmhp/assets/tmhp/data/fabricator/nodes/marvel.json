@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Marvel Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/marvel.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

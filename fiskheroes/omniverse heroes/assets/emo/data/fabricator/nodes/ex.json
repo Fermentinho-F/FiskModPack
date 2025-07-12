@@ -1,0 +1,20 @@
+{
+  "display": {
+    "name": {
+      "translate": "Excalibur Magic"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/excalibur.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:magic",
+    "emo:cadmus"
+  ],
+  "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 5
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Plot Armor",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 13,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "isToggle": true,
+      "chargeTime": 75,
+      "duration": 10,
+      "cooldownTime": 90,
+      "range": 15.0,
+      "radius": 0.8,
+      "soundEvents": {
+        "SHOOT": "sl:leap",
+        "BEAM_AMBIENT": "fiskheroes:mysterio_charged_beam_loop",
+        "CHARGE": "sl:lois_superman_shout"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 50.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    }
+  }
+}

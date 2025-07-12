@@ -1,0 +1,27 @@
+{
+    "display": {
+    "name": "Halloween Special",
+    "icon": {
+        "texture":  "pwt:textures/gui/nodes/halloween.png"
+    }
+    },
+    "requirements": [
+	
+    ],
+
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:item_consumed_by_player",
+        "description": {
+            "translate": "Eat a Pumpkin Pie"
+        },
+        "condition": {
+            "variables": {
+            "player": "PLAYER_CONSUMING_ITEM",
+			"item": "ITEM_BEING_CONSUMED"
+            },
+            "check": "item.name() == 'minecraft:pumpkin_pie'"
+        }
+        }
+    }
+}

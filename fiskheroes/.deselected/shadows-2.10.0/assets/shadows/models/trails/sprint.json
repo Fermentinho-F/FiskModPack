@@ -1,0 +1,9 @@
+{
+  "fade": 6,
+  "lightning": {
+    "color": "0xFFFFFF",
+    "density": 4,
+    "differ": 0.8,
+    "opacity": 0.3
+  }
+}

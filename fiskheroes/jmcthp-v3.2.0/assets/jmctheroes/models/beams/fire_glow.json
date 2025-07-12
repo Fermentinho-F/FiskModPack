@@ -1,0 +1,18 @@
+{
+  "aspects": [
+    {
+      "type": "LIGHTNING",
+      "opacity": 0.5,
+      "scale": 0.15,
+      "amount": 5,
+      "core":  null,    
+      "bloom": {
+        "strength": 0.85,
+        "spread": 8.5,
+        "dropoff": 1.0,
+        "quality": 2.5,
+        "scaleToSize": true
+      }
+    }
+  ]
+}

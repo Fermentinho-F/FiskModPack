@@ -1,0 +1,6 @@
+{data} = curve {data}
+{WingOne_rotY} @ -{data} -> 1
+{WingTwo_rotY} @ -{data} -> 1
+
+{WingOne_posZ} @ {data} * 1 -> 1
+{WingTwo_posZ} @ {data} * 1 -> 1

@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:vlad_plasmius",
+  "display": {
+  "description": "\u00A72I have experience, my child, and the money and power attained through using those powers for personal gain, you see. I could train you, teach you everything I know, and all you'd have to do is renounce your idiot father!"
+  },
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:traversal2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "tmhp:ghost",
+    "tmhp:heropack2"
+  ]
+}

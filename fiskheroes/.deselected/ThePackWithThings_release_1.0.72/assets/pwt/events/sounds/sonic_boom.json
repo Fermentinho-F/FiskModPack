@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:jump.takeoff.1",
+  "condition": "entity.motion().length()*72 > 300 && entity.getData('fiskheroes:flight_timer') > 0 ",
+  "volume": 1.0,
+  "pitch": "0.8 + Math.random() * 0.2",
+  "fadeOut": 5
+}

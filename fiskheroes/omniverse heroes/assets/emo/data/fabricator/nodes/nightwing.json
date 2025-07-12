@@ -1,0 +1,15 @@
+{
+  "suit": "emo:nightwing",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "emo:cadmus"
+  ],
+    "display": {
+    "description": "I Hate Ninjas"
+    }
+}

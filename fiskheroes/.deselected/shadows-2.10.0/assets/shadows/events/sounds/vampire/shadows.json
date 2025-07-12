@@ -1,0 +1,9 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "fiskheroes:modifier.shadowchain.start",
+    "condition": "shadows:dyn/4boolean_reset",
+    "volume": 0.1,
+    "pitch": 1.0,
+    "fadeOut": 5
+  }
+  

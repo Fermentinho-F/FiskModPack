@@ -1,0 +1,6 @@
+{
+  "sound": "pwt:modifier.sandevistan.on",
+  "pitch": "1.0 + Math.random() * 0.05",
+  "volume": 0.8,
+  "fadeOut": 5
+}

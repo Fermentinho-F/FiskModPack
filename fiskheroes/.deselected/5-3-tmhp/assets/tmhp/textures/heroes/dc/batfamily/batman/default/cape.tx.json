@@ -1,0 +1,9 @@
+{
+  "texture": "tmhp:dc/batfamily/batman/default/cape_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.isInWater() != null > 0",
+      "values": ["true", "false"]
+    }
+  }
+}

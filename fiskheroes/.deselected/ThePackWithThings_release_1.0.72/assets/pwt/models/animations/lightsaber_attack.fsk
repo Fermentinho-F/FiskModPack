@@ -1,0 +1,4 @@
+{data} = curve {data}
+
+{handle_rotX} += 55' * {data}
+{handle_rotY} += -40' * {data}

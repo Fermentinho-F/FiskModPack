@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "dmh:atro_full/transformed",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_mk50_suit_<TIMER>"
+      }
+    ],
+    "out": "dmh:generated/astro_full_suit<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('dmh:dyn/transform_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}

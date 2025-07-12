@@ -1,0 +1,4 @@
+{data} = curve {data}
+{rightArm_rotX} @ {data} -> {head.rotX} - pi / 1
+{rightArm_rotY} @ {data} -> {head.rotX} 0.0
+{rightArm_rotZ} @ {data} -> {head.rotX} 0.0

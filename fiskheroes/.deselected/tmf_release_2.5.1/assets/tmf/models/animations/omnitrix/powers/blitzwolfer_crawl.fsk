@@ -1,0 +1,8 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{bodyRot} = if({data_1}!=0, {data_1}* if(({data_0} - {data_2}) > 180, ({data_0} - {data_2}) -360, {data_0} - {data_2}) , 0)
+
+
+out "rotate" ({bodyRot}, 0, 1, 0)
+out "rotate" (90*{data_1}, 1, 0, 0)
+out "translate" (0, 0, -0.2*{data_1})
+out "rotate" (if(({data_2} < 0) || abs({data_2}) == 180, -1, 1)*{data_1}*10*min({motX}+{motZ}, 1), 0, 0, 1)

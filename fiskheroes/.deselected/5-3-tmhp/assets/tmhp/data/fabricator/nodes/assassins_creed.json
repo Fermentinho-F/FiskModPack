@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Assassin's Creed Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/assassin_creed.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

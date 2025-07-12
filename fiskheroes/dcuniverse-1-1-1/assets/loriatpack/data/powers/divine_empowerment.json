@@ -1,0 +1,116 @@
+{
+  "name": "Divine Empowerment",
+  "modifiers": {
+	  "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 10.0,
+      "knockback": 2.5,
+      "cooldownTime": 120
+    },
+	  "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 1.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+	"fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+	  "fiskheroes:water_breathing": {
+    },
+	  "fiskheroes:fire_immunity": {
+    },
+		"fiskheroes:regeneration": {
+      "factor": 3
+    },
+    "fiskheroes:transformation": {
+      "key": "SHAZAM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+	  "soundEvents": {
+        "ENABLE": "loriatpack:shazam_kid",
+        "DISABLE": "loriatpack:shazam_big"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"]
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+	  "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "LIGHTNING": 1.0,
+          "MAGIC": 1.0
+        }
+      },
+      "range": 24.0,
+      "radius": 0.1,
+	  "soundEvents": {
+        "SHOOT": "loriatpack:shazam_lightning"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "LIGHTNING": 1.0,
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.2
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:lightning_cast"
+      }
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "ETERNIUM",
+      "factor": 2.0
+    },
+    "fiskheroes:eternium_weakness": {
+      "radius": 3.0,
+      "duration": 120
+    }
+  }
+}
+

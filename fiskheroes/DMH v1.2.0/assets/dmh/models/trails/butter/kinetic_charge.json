@@ -1,0 +1,11 @@
+{
+  "flicker": {
+    "color": "0x0059FF",
+    "density": 8,
+    "frequency": 1.0,
+    "length": 0.1,
+    "spread": 1.0,
+    "opacity": 1.0,
+    "confined": true
+  }
+}

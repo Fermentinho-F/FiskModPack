@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "moopack:the_world_dissapear",
+  "volume": 0.5,
+  "pitch": 0.9
+}

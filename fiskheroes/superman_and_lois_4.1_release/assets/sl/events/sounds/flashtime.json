@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.flashtime",
+  "volume": 1.4,
+  "condition": "fiskheroes:slow_motion",
+  "fadeOut": 10000
+}

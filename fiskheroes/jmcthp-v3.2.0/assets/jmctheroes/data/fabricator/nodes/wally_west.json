@@ -1,0 +1,14 @@
+{
+  "suit": "jmctheroes:wally_west",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier8_9",
+    "fiskheroes:nanites",
+    "jmctheroes:pure_sf",
+    "fiskheroes:ranged2",
+    "fiskheroes:defense3",
+    "fiskheroes:kid_flash",
+    "fiskheroes:the_flash",
+    "fiskheroes:savitar"
+  ]
+}

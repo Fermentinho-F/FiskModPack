@@ -1,0 +1,16 @@
+{data} = sin(pi(1 - {data}))^2
+
+{rightArm_rotY} @ {data} -> 30
+
+{leftArm_rotY} @ {data} -> 30
+
+{rightLeg_rotY} @ {data} -> 30
+
+{leftLeg_rotY} @ {data} -> 30
+
+{head_rotY} @ {data} -> 30
+
+{body_rotY} @ {data} -> 30
+
+
+

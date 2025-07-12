@@ -1,0 +1,7 @@
+{
+  "fade": 25,
+  "blur": {
+    "color": "0x74daf4",
+    "opacity": 0.6
+  }
+}

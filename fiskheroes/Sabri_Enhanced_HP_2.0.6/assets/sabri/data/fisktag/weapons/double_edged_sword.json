@@ -1,0 +1,24 @@
+{
+  "name": "Double-Edged Sword",
+  "permission": "USE_THANOS_SWORD",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 9.0
+  },
+  "activation": {
+    "type": "SHIELD",
+    "shield": {
+      "health": 20.0,
+      "regeneration": 10.0,
+      "recoveryDelay": 30,
+      "cooldown": 80
+    },
+    "coverage": {
+      "yawRadius": 35.0,
+      "pitchRadius": 35.0,
+      "yawOffset": 0.0,
+      "pitchOffset": 0.0
+    },
+    "knockback": 0.2
+  }
+}

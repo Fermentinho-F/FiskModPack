@@ -1,0 +1,17 @@
+{
+  "suit": "swhp:ahsoka",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:anakinskywalker",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal",
+    "fiskheroes:object_manipulation"
+  ],
+  "display": {
+  "description": "This is a new day, a new beginning"
+  }
+}

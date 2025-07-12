@@ -1,0 +1,13 @@
+{
+  "particles": [
+    {
+      "type": "SMOKE",
+      "anchor": "rightArm",
+      "amount": 25,
+      "offset": [1.0, 10.0, 0.0],
+      "motion": [0., 0.0, 0.25],
+      "randMotion": [0.0, 0.0, 0.0],
+      "mirror": false
+    }
+  ]
+}

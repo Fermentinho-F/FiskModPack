@@ -1,0 +1,42 @@
+{
+  "parent": "fiskheroes:hero_basic",
+  "resources": {
+    "layer1": "tmhp:marvel/iron_fist/anad/layer1",
+    "layer2": "tmhp:marvel/iron_fist/anad/layer2",
+    "glow": "tmhp:marvel/iron_fist/both_hand",
+    "mask": "tmhp:marvel/iron_fist/anad/mask"
+  }, 
+   "showModel": {
+    "head": ["HELMET", "CHESTPLATE"],
+    "headwear": ["HELMET", "CHESTPLATE"],
+    "body": ["HELMET", "CHESTPLATE", "LEGGINGS"],
+    "rightArm": ["CHESTPLATE"],
+    "leftArm": ["CHESTPLATE"],
+    "rightLeg": ["CHESTPLATE", "LEGGINGS", "BOOTS"],
+    "leftLeg": ["CHESTPLATE", "LEGGINGS", "BOOTS"]
+  },
+    "texture": {
+    "renderLayer": {
+      "HELMET": "mask",
+      "CHESTPLATE": "layer1",
+      "LEGGINGS": "layer2",
+      "BOOTS": "layer1"
+    },
+    "default": "layer1"
+  },
+  "custom": {
+    "fiskheroes:overlay": {
+    "applicable": ["CHESTPLATE"],
+    "texture": ["null", "glow"],
+    "opacity": 1.0,
+      "data": "fiskheroes:cryo_charge"
+    }
+	},
+  "fixHatLayer": ["CHESTPLATE", "HELMET"],
+  "itemIcons": {
+    "HELMET": "%s_0",
+    "CHESTPLATE": "%s_1",
+    "LEGGINGS": "%s_2",
+    "BOOTS": "%s_3"
+  }
+}

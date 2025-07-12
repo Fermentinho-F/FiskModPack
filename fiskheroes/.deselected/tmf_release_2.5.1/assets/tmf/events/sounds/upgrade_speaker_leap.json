@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:upgrade.speaker_leap",
+  "volume": 10,
+  "pitch": "0.9 + Math.random() * 1",
+  "fadeIn": 40,
+  "fadeOut": 40
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+    "name": "Eight Handled Wheel",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/eight_handled_wheel.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jjkp"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 5
+  },
+  "criteria": {
+      "achievement": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+          "translate": "Mine A Gold Block"
+      },
+      "condition": {
+          "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+          },
+          "check": "block.name() == 'minecraft:gold_block' && Math.random() >=0.8"
+      }
+      }
+  }
+}

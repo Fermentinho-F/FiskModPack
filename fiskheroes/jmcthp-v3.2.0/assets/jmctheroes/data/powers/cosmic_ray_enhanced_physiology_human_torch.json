@@ -1,0 +1,96 @@
+{
+  "name": "Cosmic Ray Enhanced Physiology",
+  "modifiers": {
+    "fiskheroes:transformation|torch": {
+      "key": "FLAME_ON",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/torch",
+        "timerData": "jmctheroes:dyn/torch_timer",
+        "time": 5
+      },
+      "soundEvents": {
+        "ENABLE": "jmctheroes:flame_on",
+        "DISABLE": "jmctheroes:flame_off"
+      }
+    },
+    "fiskheroes:cooldown|torch_cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/torch",
+        "cooldownData": "jmctheroes:dyn/torch_cooldown",
+        "duration": 10000,
+        "recovery": 5.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "jmctheroes:flame_off"
+      }
+    },
+    "fiskheroes:fireball": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "IGNITE": 3
+        }
+      },
+      "radius": 2.5,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.15,
+      "canBoost": true,
+      "canRoll": true,
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:firestorm_flight_enable", "fiskheroes:firestorm_flight_loop"],
+        "BOOST": "jmctheroes:human_torch_boost",
+        "DIVE": "fiskheroes:flight_dive_loop"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "COLD",
+      "factor": 2.0
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/fire.png",
+      "data": "jmctheroes:dyn/torch_cooldown"
+    }
+  ]
+}

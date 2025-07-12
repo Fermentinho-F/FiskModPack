@@ -1,0 +1,27 @@
+{
+    "display": {
+        "name": "Final Update (SWHP)",
+        "icon": {
+            "texture": "swhp:textures/gui/nodes/finalupdate.png"
+        }
+    },
+    "requirements": ["swhp:swhpdownload"],
+    "autoUnlock": true,
+    "criteria": {
+	"swhp": {
+		"trigger": "fiskheroes:tick",
+		"description": "The Final Update of the Star Wars HeroPack is here! Thank you to everyone who supported the development of my HeroPacks. This is SymbioteSpidey signing off of FiskHeroes (entirely). 
+
+
+Attack of the Clones: 
+
+Good soldiers follow orders...",
+	"condition": {
+		"variables": {
+			"entity": "PLAYER_TICKING"
+		},
+		"check": "entity.exists() || !entity.exists()"
+			}
+		}
+	}
+}

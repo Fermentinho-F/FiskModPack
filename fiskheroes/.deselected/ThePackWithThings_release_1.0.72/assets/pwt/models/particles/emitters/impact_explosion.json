@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:largeexplode",
+      "amount": 4,
+      "randOffset": [0.55, 0.55, -0.2]
+    },
+	{
+      "type": "minecraft:largesmoke",
+      "amount": 10,
+      "randOffset": [0.7, 0.7, -0.2],
+	  "randMotion": [0.2, 0.2, -0.1]
+    }
+  ]
+}

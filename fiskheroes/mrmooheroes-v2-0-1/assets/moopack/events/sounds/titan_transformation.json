@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "moopack:titan_transformation",
+  "volume": 0.5,
+  "pitch": 1.0
+}

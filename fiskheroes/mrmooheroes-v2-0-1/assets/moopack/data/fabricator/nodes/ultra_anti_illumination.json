@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:ultra_anti_illumination",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:object_manipulation",
+    "moopack:ultra_illumination",
+    "moopack:ultra_dark_powers"
+  ]
+}

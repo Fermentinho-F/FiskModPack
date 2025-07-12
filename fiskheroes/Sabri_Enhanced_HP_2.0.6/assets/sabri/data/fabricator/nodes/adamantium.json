@@ -1,0 +1,33 @@
+{
+    "display": {
+      "name": {
+        "translate": "Adamantium"
+      },
+      "icon": {
+        "texture": "sabri:textures/gui/nodes/adamantium.png"
+      }
+    },
+    "requirements": [ 
+      "sabri:sehp",
+      "fiskheroes:vibranium"
+    ],
+    "price": {
+      "TUTRIDIUM": 4,
+      "XP_LEVELS": 20
+    },
+    "criteria": {
+      "alloy": {
+        "trigger": "fiskheroes:item_smelted",
+        "description": {
+          "translate": "Alloy Raw Vibranium together with some Iron Ingots in an Alloy Smeltery"
+        },
+        "minSuccessCount": 1,
+        "condition": {
+          "variables": {
+            "output": "ITEM_BEING_SMELTED"
+          },
+          "check": "output.name() == 'fiskheroes:vibranium_ingot'"
+        }
+      }
+    }
+  }

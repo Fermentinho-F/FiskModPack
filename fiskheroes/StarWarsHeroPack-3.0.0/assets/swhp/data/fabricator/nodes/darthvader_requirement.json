@@ -1,0 +1,27 @@
+{
+  "display": {
+    "name": "Betrayal",
+    "icon": {
+      "texture":  "swhp:textures/gui/nodes/lava.png"
+    }
+  },
+  "requirements": ["swhp:swhpdownload", "swhp:anakinskywalker"],
+  "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "exist": {
+      "trigger": "fiskheroes:tick",
+      "description": {
+        "translate": "Fall into Lava as Anakin"
+      },
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+          },
+        "check": "player.getWornChestplate().suitType() == 'swhp:anakinskywalker' && player.isWearingFullSuit() && (player.world().blockAt(player.pos()).name() == 'minecraft:lava')"
+      }
+    }
+  }
+}

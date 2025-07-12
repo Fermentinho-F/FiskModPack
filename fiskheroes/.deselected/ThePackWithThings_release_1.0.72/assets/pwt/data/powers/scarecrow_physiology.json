@@ -1,0 +1,35 @@
+{
+  "name": "Scarecrow Physiology",
+  "modifiers": {
+   "fiskheroes:transformation": {
+      "key": "HIDE",
+      "transformation": {
+        "toggleData": "pwt:dyn/powered",
+        "timerData": "pwt:dyn/power_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/powered",
+        "cooldownData": "pwt:dyn/power_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:size_manipulation": {
+      "isInstant": true,
+      "minSize": 2.0,
+      "maxSize": 2.0
+    },
+	"fiskheroes:shape_shifting": {
+    }
+  },
+  "hud": [
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/slm_jetpack_bar.png",
+      "data": "pwt:dyn/leap_cooldown"
+    }
+  ]
+}

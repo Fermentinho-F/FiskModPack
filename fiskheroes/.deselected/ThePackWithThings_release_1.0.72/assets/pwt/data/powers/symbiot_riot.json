@@ -1,0 +1,259 @@
+{
+  "name": "Riot Symbiote",
+  "modifiers": {
+  "fiskheroes:size_manipulation|small": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.0,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:riot_suit_enable"
+      }
+    },	  
+    "fiskheroes:size_manipulation|giant": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.43,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:riot_suit_enable"
+      }
+    },
+	"fiskheroes:size_manipulation|giant_venom": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.8,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:riot_suit_enable"
+      }
+    },
+    "fiskheroes:transformation": {
+      "transformation": {
+        "toggleData": "pwt:dyn/symbiot",
+        "timerData": "pwt:dyn/symbiot_timer",
+        "time": 16
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:riot_suit_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/symbiot",
+        "cooldownData": "pwt:dyn/symbiot_cooldown",
+        "duration": 10000,
+        "recovery": 0.9
+      }
+    },
+	"fiskheroes:transformation|thorns": {
+	  "key": "THORNS",
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 5
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:riot_thorns_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown|thorns_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": -1,
+        "recovery": 6.0
+      }
+    },
+
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [1.3, 0.5, -0.3],
+		
+        [-1.5, -0.2, 0.0],
+		
+        [1.4, -1.3, 0.1],
+
+      ],
+      "climbing": {
+        "speed": 0.15,
+        "range": 4,
+        "tolerance": 5,
+        "minAnchorPoints": 3,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+          ["TOP", "LEFT", "RIGHT", "BACK"],
+   
+        ]
+      },
+      "range": 8.0,
+      "damageProfile": {
+        "damage": 7.5,
+        "types": {
+          "SHARP": 1.0,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_tentacle_enable",
+        "DISABLE": "pwt:carnage_tentacle_disable",
+        "ANCHOR": "pwt:carnage_tentacle_climb",
+        "UNANCHOR": "pwt:carnage_tentacle_unanchor",
+        "RELEASE": "pwt:carnage_tentacle_unanchor",
+        "JAB_START": "pwt:carnage_tentacle_jab",
+        "GRAB_START": "pwt:carnage_tentacle_grab"
+      }
+    },
+	"fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 18,
+          "uses": 6,
+          "dissolveTime": 120
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 9,
+          "damageProfile": {
+            "damage": 5.5,
+            "types": {
+              "BLUNT": 2.0,
+			  "SHARP": 0.8
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        }
+      },
+		  "soundEvents": {
+			"USE": "pwt:web_shoot_symbiot"
+		  }
+        
+      
+    },
+	"fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "pwt:web_shoot_symbiot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "pwt:carnage_tentacle_grab"
+      }
+    },
+	"fiskheroes:water_breathing": {
+    },
+	"fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 0.5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.3]
+    },
+	"fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": "fiskheroes:web_swinging_whoosh"
+      }
+    },
+	 "fiskheroes:fire_weakness": {
+      "radius": 2.0,
+      "duration": 100
+    
+	},
+	"fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "factor": 9.5
+    },
+	"fiskheroes:damage_weakness|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 7
+    },
+	"fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "factor": 1.8
+    },
+	"fiskheroes:healing_factor": {
+      "delay": 200,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_blade_toggle",
+        "DISABLE": "pwt:carnage_blade_disable"
+      }
+    },
+	"fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "pwt:symbiot_charge"
+      }
+    },
+    "fiskheroes:damage_bonus": {
+      "amount": 3.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 5
+      }
+    },
+	"fiskheroes:shield": {
+      "shield": {
+        "health": 10.0,
+        "regeneration": 1.0,
+        "recoveryDelay": 40,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+        "DEFLECT": "pwt:symbiot_hit"
+      }
+    },
+	"fiskheroes:thorns": {
+      "damageProfile": {
+        "types": {
+          "THORNS": 1.0,
+          "SHARP": 1.0
+        }
+      },
+      "factor": 0.75
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/riot_bar.png",
+      "data": "pwt:dyn/symbiot_cooldown"
+    }
+  ]
+}

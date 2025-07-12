@@ -1,0 +1,9 @@
+{
+  "sound": "db:volando",
+  "override": "db:funcs/flight_loop",
+  "volume": 0.7,
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 15,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

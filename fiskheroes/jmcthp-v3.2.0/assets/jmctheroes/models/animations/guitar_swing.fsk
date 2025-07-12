@@ -1,0 +1,42 @@
+
+{GuitarNeck_posX} -= 1.25*{data}
+{GuitarNeck_posY} += 1.5*{data}
+
+{GuitarNeck_rotZ} -= 0.4*{data}
+
+
+{string1_posX} -= 1.25*{data}
+{string1_posY} += 1.5*{data}
+
+{string1_rotZ} -= 0.4*{data}
+
+
+{string2_posX} -= 1.25*{data}
+{string2_posY} += 1.5*{data}
+
+{string2_rotZ} -= 0.4*{data}
+
+
+{string3_posX} -= 1.25*{data}
+{string3_posY} += 1.5*{data}
+
+{string3_rotZ} -= 0.4*{data}
+
+
+{string4_posX} -= 1.25*{data}
+{string4_posY} += 1.5*{data}
+
+{string4_rotZ} -= 0.4*{data}
+
+
+{string5_posX} -= 1.25*{data}
+{string5_posY} += 1.5*{data}
+
+{string5_rotZ} -= 0.4*{data}
+
+
+{string6_posX} -= 1.25*{data}
+{string6_posY} += 1.5*{data}
+
+{string6_rotZ} -= 0.4*{data}
+

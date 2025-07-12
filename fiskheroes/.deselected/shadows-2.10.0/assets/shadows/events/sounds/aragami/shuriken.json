@@ -1,0 +1,10 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:aragami.abilities.shuriken",
+    "volume": 0.8,
+    "pitch": "1 + (Math.random() * 0.2)",
+    "loop": false,
+    "fadeIn": 4,
+    "fadeOut": 4
+  }
+  

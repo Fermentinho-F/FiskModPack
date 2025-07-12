@@ -1,0 +1,29 @@
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{m} = curve(clamp(-{motY}, 0, 2) / 2)
+
+
+{rightArm_rotX} += 15'{data_1} + 1.6{x}
+{rightArm_rotY} += 8'{data_1}
+{rightArm_rotZ} += 17'{data_1} - 0.2{m}
+{leftArm_rotX} += 15'{data_1} - 1.6{x}
+{leftArm_rotY} -= 8'{data_1}
+{leftArm_rotZ} -= 17'{data_1} - 0.2{m}
+{rightLeg_rotX} += 15'{data_1} + 0.7{x} + 0.2{m}
+{rightLeg_rotY} += 10'{data_1}
+{rightLeg_rotZ} += 12'{data_1} - 0.1{m}
+{leftLeg_rotX} += 15'{data_1} - 0.7{x} + 0.2{m}
+{leftLeg_rotY} -= 10'{data_1}
+{leftLeg_rotZ} -= 12'{data_1} - 0.1{m}
+
+
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+
+
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)

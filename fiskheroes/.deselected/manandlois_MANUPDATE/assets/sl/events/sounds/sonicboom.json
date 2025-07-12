@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.sonicboom",
+  "volume": 2.0,
+  "fadeOut": 10,
+  "pitch": "1.0 - Math.random() * 0.3"
+}

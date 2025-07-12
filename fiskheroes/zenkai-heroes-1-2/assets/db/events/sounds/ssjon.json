@@ -1,0 +1,5 @@
+{
+  "sound": "db:ssjon",
+  "loop": false,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

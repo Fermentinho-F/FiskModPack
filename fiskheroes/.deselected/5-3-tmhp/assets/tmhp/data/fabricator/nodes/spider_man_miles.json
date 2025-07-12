@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:spider_man_miles",
+  "display": {
+  "description": "\u00A74A hero isn't the one who always wins. It's the one who always tries."
+  },
+  "requirements": [
+    "fiskheroes:spiderverse",
+    "elseworld:ap4_5",
+    "fiskheroes:melee2",
+    "tmhp:spider_man_comics",
+    "tmhp:marvel",
+    "tmhp:heropack2"
+  ]
+}

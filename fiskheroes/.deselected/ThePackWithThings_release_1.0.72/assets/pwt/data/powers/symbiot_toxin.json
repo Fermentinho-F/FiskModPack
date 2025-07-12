@@ -1,0 +1,247 @@
+{
+  "name": "Toxin Symbiote",
+  "modifiers": {
+	"fiskheroes:size_manipulation|giant": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.1,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:venom_suit_enable"
+      }
+    },
+	"fiskheroes:size_manipulation|giant_rage": {
+      "isInstant": true,
+      "minSize": 1.0,
+      "maxSize": 1.4,
+	  "soundEvents": {
+        "SHRINK": "pwt:venom_suit_disable",
+        "GROW": "pwt:venom_suit_enable"
+      }
+    },
+    "fiskheroes:transformation|symbiot_transformation": {
+      "transformation": {
+        "toggleData": "pwt:dyn/symbiot",
+        "timerData": "pwt:dyn/symbiot_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:venom_suit_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown|symbiot_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/symbiot",
+        "cooldownData": "pwt:dyn/symbiot_cooldown",
+        "duration": 10000,
+        "recovery": 1.1
+      }
+    },
+	"fiskheroes:transformation|ability_transformation": {
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:venom_suit_enable",
+        "DISABLE": "pwt:venom_suit_disable"
+      }
+   
+    },
+    "fiskheroes:cooldown|ability_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 3000,
+        "recovery": 2
+      }
+    },
+	
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.7, 0.7, 0.2],
+		[-0.7, 0.6, 0.3],
+		
+		[0.7, -1.6, 0.1],
+		[-0.7, -1.4, 0.6],
+		
+		[0.5, 0.2, -1.0],
+		[-0.5, 0.2, -1.0],
+		
+		[0.2, 0.6, -1.0],
+		[-0.4, 0.6, -0.7],
+		
+		[0.5, -0.7, -0.7],
+		[-0.5, -0.7, -0.7]
+
+      ],
+      "climbing": {
+        "speed": 0.18,
+        "range": 7,
+        "tolerance": 6.5,
+        "minAnchorPoints": 6,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+		  ["BOTTOM", "RIGHT", "FRONT"],
+          ["BOTTOM", "LEFT", "FRONT"],
+          ["RIGHT", "BACK"],
+          ["LEFT", "BACK"],
+		  ["TOP","RIGHT", "BACK"],
+          ["TOP","LEFT", "BACK"],
+		  ["BOTTOM","RIGHT", "BACK"],
+          ["BOTTOM","LEFT", "BACK"]
+        ]
+      },
+      "range": 10.0,
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "SHARP": 1.0,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 12.0,
+          "types": {
+            "SHARP": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_tentacle_enable",
+        "DISABLE": "pwt:carnage_tentacle_disable",
+        "ANCHOR": "pwt:carnage_tentacle_climb",
+        "UNANCHOR": "pwt:carnage_tentacle_unanchor",
+        "RELEASE": "pwt:carnage_tentacle_unanchor",
+        "JAB_START": "pwt:carnage_tentacle_jab",
+        "GRAB_START": "pwt:carnage_tentacle_grab",
+		"STRIKE_START": "pwt:carnage_tentacle_climb"
+      }
+    },
+	
+	"fiskheroes:water_breathing": {
+    },
+	"fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 0.6
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+	"fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": "fiskheroes:web_swinging_whoosh"
+      }
+    },
+	 "fiskheroes:fire_weakness": {
+      "radius": 1.5,
+      "duration": 100
+    },
+	
+	"fiskheroes:damage_weakness|sound": {
+      "damageType": "SOUND",
+      "factor": 7
+    },
+	"fiskheroes:damage_weakness|electricity": {
+      "damageType": "ELECTRICITY",
+      "factor": 6
+    },
+	"fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "factor": 1.1
+    },
+	"fiskheroes:healing_factor": {
+      "delay": 175,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "pwt:carnage_blade_toggle",
+        "DISABLE": "pwt:carnage_blade_disable"
+      }
+    },
+	"fiskheroes:damage_bonus": {
+      "amount": 1.0,
+      "damageBonus": {
+        "data": "fiskheroes:blade_timer",
+        "uses": 1
+      }
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "pwt:web_shoot_symbiot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 58.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "pwt:carnage_tentacle_grab"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 18,
+          "uses": 10,
+          "dissolveTime": 120
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 7,
+          "damageProfile": {
+            "damage": 6.5,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        }
+      },
+      "soundEvents": {
+        "USE": "pwt:web_shoot_symbiot"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/toxin_bar.png",
+      "data": "entity.getData('pwt:dyn/ability') ? 0 : entity.getData('pwt:dyn/symbiot_cooldown')"
+    },
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/alien_bar.png",
+      "data": "entity.getData('pwt:dyn/ability') ? entity.getData('pwt:dyn/ability_cooldown') : 0"
+    }
+  ]
+}

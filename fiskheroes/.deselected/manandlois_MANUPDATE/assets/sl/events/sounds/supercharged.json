@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "sl:dyn/absorb",
+  "sound": "sl:main.supercharged",
+  "fadeOut": 100
+}

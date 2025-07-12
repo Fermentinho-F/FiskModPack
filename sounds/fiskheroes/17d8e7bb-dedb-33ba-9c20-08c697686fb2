@@ -1,0 +1,86 @@
+{
+  "main.blackform": {
+    "sounds": [
+      "blackform"
+    ],
+    "category": "player"
+  },
+  "main.sword_out": {
+    "sounds": [
+      "sword_out"
+    ],
+    "category": "player"
+  },
+  "main.spirit_dive": {
+    "sounds": [
+      "spirit_dive"
+    ],
+    "category": "player"
+  },
+  "main.grimoire_open": {
+    "sounds": [
+      "grimoire_open"
+    ],
+    "category": "player"
+  },
+  "main.rasengan": {
+    "sounds": [
+      "rasengan"
+    ],
+    "category": "player"
+  },
+  "main.rasengan_loop": {
+    "sounds": [
+      "rasengan_loop"
+    ],
+    "category": "player"
+  },
+  "main.sharingan": {
+    "sounds": [
+      "sharingan"
+    ],
+    "category": "player"
+  },
+  "main.going_ghost": {
+    "sounds": [
+      "going_ghost"
+    ],
+    "category": "player"
+  },
+  "main.ghostlywail": {
+    "sounds": [
+      "ghostlywail"
+    ],
+    "category": "player"
+  },
+  "main.haki": {
+    "sounds": [
+      "haki_coating"
+    ],
+    "category": "player"
+  },
+  "main.lightsaber_deflect": {
+    "sounds": [
+      "lightsaber_deflect"
+    ],
+    "category": "player"
+  },
+  "main.lightsaber_on": {
+    "sounds": [
+      "lightsaber_on"
+    ],
+    "category": "player"
+  },
+  "main.lightsaber_off": {
+    "sounds": [
+      "lightsaber_off"
+    ],
+    "category": "player"
+  },
+  "main.lightsaber_loop": {
+    "sounds": [
+      "lightsaber_loop"
+    ],
+    "category": "player"
+  }
+}

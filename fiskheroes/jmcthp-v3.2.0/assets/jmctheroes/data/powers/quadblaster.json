@@ -1,0 +1,25 @@
+{
+  "name": "Quadblasters",
+  "modifiers": {
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "isExplosive": true,
+      "range": 32.0,
+      "cooldownTime": 10,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk50_cannon_shoot"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    }
+  }
+}

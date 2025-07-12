@@ -1,0 +1,15 @@
+{
+  "suit": "sl:parasite",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:cosmic",
+    "sl:bizarro",
+    "sl:sl",
+    "elseworld:ap8_9"
+  ]
+}

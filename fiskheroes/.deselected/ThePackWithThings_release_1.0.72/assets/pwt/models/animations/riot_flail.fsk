@@ -1,0 +1,23 @@
+{tentacle_1_posY} @ {data_0} -> 4
+{tentacle_2_posY} @ {data_0} -> 4
+{tentacle_3_posY} @ {data_0} -> 4
+{tentacle_4_posY} @ {data_0} -> 4
+{tentacle_5_posY} @ {data_0} -> 4
+{tentacle_6_posY} @ {data_0} -> 4
+{tentacle_7_posY} @ {data_0}-> 4
+
+{tentacle_1_rotX} @ {data_0} -> {rightArm_rotX}/6 - {rightArm_rotZ}/6
+{tentacle_2_rotX} @ {data_0} -> {rightArm_rotX}/5 - {rightArm_rotZ}/5
+{tentacle_3_rotX} @ {data_0} -> {rightArm_rotX}/5 - {rightArm_rotZ}/5
+{tentacle_4_rotX} @ {data_0} -> {rightArm_rotX}/4 - {rightArm_rotZ}/4
+{tentacle_5_rotX} @ {data_0} -> {rightArm_rotX}/4 - {rightArm_rotZ}/4
+{tentacle_6_rotX} @ {data_0} -> {rightArm_rotX}/3 - {rightArm_rotZ}/3
+{tentacle_7_rotX} @ {data_0} -> {rightArm_rotX}/2 - {rightArm_rotZ}/2
+
+{tentacle_1_rotZ} @ {data_0} -> {rightArm_rotZ}/6 
+{tentacle_2_rotZ} @ {data_0} -> {rightArm_rotZ}/5 
+{tentacle_3_rotZ} @ {data_0} -> {rightArm_rotZ}/5 
+{tentacle_4_rotZ} @ {data_0} -> {rightArm_rotZ}/4
+{tentacle_5_rotZ} @ {data_0} -> {rightArm_rotZ}/4 
+{tentacle_6_rotZ} @ {data_0} -> {rightArm_rotZ}/3 
+{tentacle_7_rotZ} @ {data_0} -> {rightArm_rotZ}/2 

@@ -1,0 +1,22 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:portal",
+	  "anchor": "body",
+      "amount": 1,
+      "motion": [-1, -1, -1],
+      "offset": [0.5, 1, 0.5],
+      "randOffset": [4.0, 4.0, 4.0],
+      "mirror": false
+    },
+    {
+      "type": "minecraft:enchantmenttable",
+	  "anchor": "body",
+      "amount": 1,
+      "motion": [-1, -1, -1],
+      "offset": [0.5, 1, 0.5],
+      "randOffset": [4.0, 4.0, 4.0],
+      "mirror": false
+    }
+  ]
+}

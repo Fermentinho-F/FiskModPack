@@ -1,0 +1,52 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim0} = curve min(animate2({data}, 1, 0.0, 0.3, 1), 1)
+{anim1} = curve min(animate2({data}, 2, 0.3, 0.3, 1), 1)
+{anim2} = curve min(animate2({data}, 3, 0.5, 0.5, 1), 1)
+
+{anim0} *= 1 - {anim2}
+{anim1} *= 1 - {anim2}
+
+{head_rotX} @ {anim0} -> 45'
+{head_rotY} -= 35'*{anim0}
+{head_posY} -= -3.5*{anim0}
+{head_posZ} -= 6.5*{anim0}
+
+{body_rotX} @ {anim0} -> 35'
+{body_rotY} -= 3.5'*{anim0}
+{body_posY} -= -3.5*{anim0}
+{body_posZ} -= 6.5*{anim0}
+
+{rightArm_rotX} @ {anim0} -> -85'
+{rightArm_rotY} -= 65'*{anim0}
+{rightArm_posY} -= -3.5*{anim0}
+{rightArm_posZ} -= 6.5*{anim0}
+
+{leftArm_rotX} @ {anim0} -> -75'
+{leftArm_rotY} += 65'*{anim0}
+{leftArm_posY} -= -3.5*{anim0}
+{leftArm_posZ} -= 6.5*{anim0}
+
+{rightLeg_rotX} += 15'*{anim0}
+{rightLeg_rotY} -= 15'*{anim0}
+{rightLeg_posX} -= 0.5*{anim0}
+
+{leftLeg_rotY} -= 15'*{anim0}
+{leftLeg_posX} -= 0.5*{anim0}
+
+{head_rotX} @ {anim1} -> -25'
+{head_rotY} += 75'*{anim1}
+
+{rightLeg_rotY} += 35'*{anim1}
+{rightLeg_posX} += 0.75*{anim1}
+
+{leftLeg_rotX} += 15'*{anim1}
+{leftLeg_rotY} += 30'*{anim1}
+{leftLeg_posX} += 0.55*{anim1}
+
+{body_rotY} += 12.5'*{anim1}
+
+{rightArm_rotX} @ {anim1} -> -85'
+{rightArm_rotY} += 205'*{anim1}
+{leftArm_rotX} @ {anim1} -> -75'
+{leftArm_rotY} -= 205'*{anim1}

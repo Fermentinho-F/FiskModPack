@@ -1,0 +1,41 @@
+
+{x} = curve {data}
+{data} = sin(pi(1 - {data}))^2
+
+
+{head_rotY} += 0.3{data}
+{head_rotZ} -= 0.3{data}
+
+{body_rotY} @ {data} -> 5'
+{body_rotZ} @ {data} -> 5'
+
+{rightArm_posX} @ {data} -> -5
+{rightArm_posY} @ {data} -> 2.2
+{rightArm_posZ} @ {data} -> -0.5
+
+{leftArm_posX} @ {data} -> 6.2
+{leftArm_posZ} @ {data} -> -1
+
+{rightArm_rotX} @ {data} -> -25'
+{rightArm_rotY} @ {data} -> 0.45
+{rightArm_rotZ} @ {data} -> 0.0
+{leftArm_rotX} @ {data} -> -35'
+{leftArm_rotY} @ {data} -> -115'
+{leftArm_rotZ} @ {data} -> -175'
+
+{rightLeg_posX} @ {data} -> -5.5
+{rightLeg_posY} @ {data} -> 11
+{rightLeg_posZ} @ {data} -> -2.5
+
+{rightLeg_rotX} @ {data} -> 20'
+{rightLeg_rotY} @ {data} -> 50'
+{rightLeg_rotZ} @ {data} -> -15'
+
+{leftLeg_rotX} @ {data} -> 0.0
+{leftLeg_rotY} @ {data} -> -10'
+{leftLeg_rotZ} @ {data} -> 0.0 + 0.05{data}
+
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (1.5{data}/1' , 0, -1, 0)
+

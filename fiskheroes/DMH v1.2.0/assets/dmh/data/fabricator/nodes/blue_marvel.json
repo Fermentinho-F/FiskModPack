@@ -1,0 +1,13 @@
+{
+  "suit": "dmh:blue_marvel",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:cosmic",
+    "fiskheroes:magic",
+    "fiskheroes:flight",
+    "dmh:dmhp"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Anti Magic"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/anti_mahou.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:magic" ],
+  "price": {
+    "TUTRIDIUM": 64,
+    "XP_LEVELS": 16
+  }
+}

@@ -1,0 +1,16 @@
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+{body_rotX} @ {data} -> 0.1
+{head_rotX} @ {data} -> 0.4
+
+{rightArm_rotX} @ {data} -> -1.0
+{rightArm_rotY} @ {data} -> -0.4
+
+{leftArm_rotX} @ {data} -> -1.0
+{leftArm_rotY} @ {data} -> 0.4
+
+{rightLeg_rotZ} @ {data} -> 0.15
+{rightLeg_rotX} @ {data} -> -0.1
+{leftLeg_rotZ} @ {data} -> -0.15
+{leftLeg_rotX} @ {data} -> -0.1

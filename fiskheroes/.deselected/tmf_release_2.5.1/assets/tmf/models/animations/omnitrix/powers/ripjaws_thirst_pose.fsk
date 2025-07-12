@@ -1,0 +1,18 @@
+{head_rotX} += 20{data_0}'
+{head_posY} += 4{data_0}
+{head_posZ} += -5{data_0}
+
+{body_rotX} += 37{data_0}'
+{body_posY} += 3{data_0}
+{body_posZ} += -4{data_0}
+
+{rightArm_posY} += 4{data_0}
+{rightArm_posZ} += -3{data_0}
+{leftArm_posY} += 4{data_0}
+{leftArm_posZ} += -3{data_0}
+
+{rightArm_rotX} = {rightArm_rotX}*(1-0.6{data_0})
+{leftArm_rotX} = {leftArm_rotX}*(1-0.6{data_0})
+
+{rightLeg_posZ} += 3{data_0}
+{leftLeg_posZ} += 3{data_0}

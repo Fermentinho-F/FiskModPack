@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:webs/web_large_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(5 * entity.getInterpolatedData('jmctheroes:dyn/symbiote_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 5
+      }
+    }
+  }
+}

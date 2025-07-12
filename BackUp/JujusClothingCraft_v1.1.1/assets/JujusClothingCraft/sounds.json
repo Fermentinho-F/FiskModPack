@@ -1,0 +1,10 @@
+{
+"happybday": {"category": "master","sounds": ["Happy_Birthday_To_You-SoundBible"]},
+"espressomaker": {"category": "master","sounds": ["Making_Espresso-SoundBible"]},
+"hiphop": {"category": "master","sounds": ["35122_zin_hip-hop-beat-1-95"]},
+"beat": {"category": "music","sounds": [{"name": "35122_zin_hip-hop-beat-1-95","stream": true}]},
+"": {"category": "record","sounds": [{"name": "35122_zin_hip-hop-beat-1-95","stream": true}]},
+"uke": {"category": "master","sounds": ["uke"]},
+"saltshaker": {"category": "master","sounds": ["saltshaker"]},
+"saltpour": {"category": "master","sounds": ["saltpour"]}
+}

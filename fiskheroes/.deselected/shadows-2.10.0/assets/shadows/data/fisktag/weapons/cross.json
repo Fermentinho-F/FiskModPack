@@ -1,0 +1,8 @@
+{
+  "name": "Cross",
+  "permission": "USE_CROSS",
+  "holdingPose": "SINGLE",
+  "cooldown": 0,
+  "recoil": null,
+  "projectiles": null
+}

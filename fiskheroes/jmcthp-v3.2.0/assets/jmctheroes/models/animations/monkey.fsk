@@ -1,0 +1,13 @@
+{head_posY} += 4*{data}
+
+{body_posY} += 4*{data}
+
+{rightArm_posY} += 4*{data}
+{rightArm_posZ} += 1*{data}
+
+{leftArm_posY} += 4*{data}
+{leftArm_posZ} += 1*{data}
+
+{rightLeg_posY} += 4.5*{data}
+
+{leftLeg_posY} += 4.5*{data}

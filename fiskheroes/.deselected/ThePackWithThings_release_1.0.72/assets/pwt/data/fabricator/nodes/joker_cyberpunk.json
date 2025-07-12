@@ -1,0 +1,13 @@
+{
+    "suit": "pwt:joker_cyberpunk",
+    "requirements": [
+        "fiskheroes:tier6_7",
+		"fiskheroes:marksmanship",
+		"fiskheroes:traversal2",
+		"fiskheroes:defense2",
+		"fiskheroes:melee3",
+		"fiskheroes:ranged3",
+		"pwt:cyberpsychosis",
+		"pwt:cyberware"
+    ]
+}

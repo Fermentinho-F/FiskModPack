@@ -1,0 +1,73 @@
+{
+  "name": "Ender",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 32.0
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 340
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:heat_vision"
+      }
+    },
+     "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.15,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 8.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 10000.0,
+        "regeneration": 500.0,
+        "recoveryDelay": 100,
+        "cooldown": 10
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "isToggle": false,
+      "knockback": 0.001,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  }
+}

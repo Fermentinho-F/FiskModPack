@@ -1,0 +1,22 @@
+{vel} = sqrt({motX}^2 + {motY}^2 + {motZ}^2)
+{vel} = 1 - curve min(1.5{vel}, 1)
+{data_0} = {vel}curve({data_0})
+{data_1} = 0.2{data_0}sin(2pi{data_1})
+
+{head_rotX} += 2'{data_0}
+
+{x} = {data_0} + {data_1}
+
+{rightArm_posX} += 0.5{data_0}
+{rightArm_posZ} += 1{data_0}
+{rightArm_rotX} += 7'{data_0}
+{rightArm_rotY} += 7'{data_0}
+{rightArm_rotZ} += -25'{data_0}
+
+{leftArm_posX} += -0.5{data_0}
+{leftArm_posZ} += 1{data_0}
+{leftArm_rotX} += 7'{data_0}
+{leftArm_rotY} += -7'{data_0}
+{leftArm_rotZ} += 25'{data_0}
+
+out "pivot" (0, 0.56, 0)

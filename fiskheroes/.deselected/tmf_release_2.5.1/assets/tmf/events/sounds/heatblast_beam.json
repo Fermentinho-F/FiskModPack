@@ -1,0 +1,9 @@
+{
+  "sound": "fiskheroes:suit.firestorm.boost.loop", 
+  "condition": "fiskheroes:heat_vision",
+  "volume": "0.2 * entity.getInterpolatedData('fiskheroes:heat_vision_timer')",
+  "pitch": "1.8 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 50
+}

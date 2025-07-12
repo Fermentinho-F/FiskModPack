@@ -1,0 +1,18 @@
+{
+  "display": {
+    "name": {
+      "translate": "Danny Phantom Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/phantom.png"
+    },
+   "description": "\u00A72He's gonna catch em all 'cause he's Danny Phantom!"
+  },
+  "requirements": [
+    "tmhp:heropack",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility" ],
+  "price": {
+    "XP_LEVELS": 40
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "Swordsman II"
+    },
+    "description": {
+      "translate": "Advanced Sword skills."
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/swordsman2.png"
+    }
+  },
+  "requirements": [
+    "tmhp:swordsman"
+  ],
+  "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 20
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Iron Sword"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:iron_sword'"
+      }
+    }
+  }
+}

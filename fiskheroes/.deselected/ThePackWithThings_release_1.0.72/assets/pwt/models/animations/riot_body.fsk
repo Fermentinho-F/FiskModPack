@@ -1,0 +1,17 @@
+{data} = curve {data}
+
+{head_posZ} -= 0.5{data}
+{headwear_posZ} -= 0.5{data}
+
+
+{head_posY} += 0.1{data}
+{headwear_posY} += 0.1{data}
+
+{rightArm_posX} -= 0.4{data}
+{leftArm_posX} += 0.4{data}
+
+{rightArm_posZ} -= 0.2{data}
+{leftArm_posZ} -= 0.2{data}
+
+{rightArm_posZ} -= 0.1{data}
+{leftArm_posZ} -= 0.1{data}

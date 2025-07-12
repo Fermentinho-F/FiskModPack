@@ -1,0 +1,204 @@
+
+{head_rotX} -= -7.5'*{data_0}
+
+{head_posX} @ {data_0} -> 0
+{head_posY} @ {data_0} -> 11
+{head_posZ} @ {data_0} -> -8
+
+{body_rotX} @ {data_0} -> 0.6
+{body_posX} @ {data_0} -> 0
+{body_posY} @ {data_0} -> 10.25
+{body_posZ} @ {data_0} -> -8
+
+{rightArm_rotX} @ {data_0} -> 0.1
+{rightArm_rotY} @ {data_0} -> -0.5
+{rightArm_rotZ} @ {data_0} -> -0.35
+{rightArm_posX} @ {data_0} -> -4.5
+{rightArm_posY} @ {data_0} -> 12.25
+{rightArm_posZ} @ {data_0} -> -8.75
+
+{leftArm_rotX} @ {data_0} -> 0.1
+{leftArm_rotY} @ {data_0} -> 0.5
+{leftArm_rotZ} @ {data_0} -> 0.35
+{leftArm_posX} @ {data_0} -> 4.5
+{leftArm_posY} @ {data_0} -> 12.25
+{leftArm_posZ} @ {data_0} -> -8.75
+
+{rightLeg_rotX} @ {data_0} -> 0.9
+{rightLeg_rotY} @ {data_0} -> 1.1
+{rightLeg_rotZ} @ {data_0} -> 0.2
+{rightLeg_posX} @ {data_0} -> -8.5
+{rightLeg_posY} @ {data_0} -> 14.5
+{rightLeg_posZ} @ {data_0} -> -6
+
+{leftLeg_rotX} @ {data_0} -> 0.9
+{leftLeg_rotY} @ {data_0} -> -1.1
+{leftLeg_rotZ} @ {data_0} -> -0.2
+{leftLeg_posX} @ {data_0} -> 8.5
+{leftLeg_posY} @ {data_0} -> 14.5
+{leftLeg_posZ} @ {data_0} -> -6
+
+out "translate" (0, 0, 0.1{data_0})
+
+;------------------------------------------;
+
+{head_rotX} -= 75'*{data_1}
+{head_posX} @ {data_1} -> 0
+{head_posY} @ {data_1} -> 0
+{head_posZ} @ {data_1} -> 0
+
+{body_rotX} @ {data_1} -> 0
+{body_rotY} @ {data_1} -> 0
+{body_rotZ} @ {data_1} -> 0
+{body_posX} @ {data_1} -> 0
+{body_posY} @ {data_1} -> 0
+{body_posZ} @ {data_1} -> 0
+
+{rightArm_rotX} @ {data_1} -> 0
+{rightArm_rotY} @ {data_1} -> 0
+{rightArm_rotZ} @ {data_1} -> 0
+{rightArm_posX} @ {data_1} -> -5.7
+{rightArm_posY} @ {data_1} -> 2
+{rightArm_posZ} @ {data_1} -> 0
+
+{leftArm_rotX} @ {data_1} -> 0
+{leftArm_rotY} @ {data_1} -> 0
+{leftArm_rotZ} @ {data_1} -> 0
+{leftArm_posX} @ {data_1} -> 5.7
+{leftArm_posY} @ {data_1} -> 2
+{leftArm_posZ} @ {data_1} -> 0
+
+{rightLeg_rotX} @ {data_1} -> 0
+{rightLeg_rotY} @ {data_1} -> 0
+{rightLeg_rotZ} @ {data_1} -> 0
+{rightLeg_posX} @ {data_1} -> -2
+{rightLeg_posY} @ {data_1} -> 12
+{rightLeg_posZ} @ {data_1} -> -1.5
+
+{leftLeg_rotX} @ {data_1} -> 0
+{leftLeg_rotY} @ {data_1} -> 0
+{leftLeg_rotZ} @ {data_1} -> 0
+{leftLeg_posX} @ {data_1} -> 2
+{leftLeg_posY} @ {data_1} -> 12
+{leftLeg_posZ} @ {data_1} -> -1.5
+
+{f1} = {data_1}(cos(0.6662{limbSwing}) + 1) / 2
+{f2} = {data_1}(cos(0.6662{limbSwing} + pi) + 1) / 2
+{body_rotX} -= 0.1{data_1}
+{body_rotY} -= 0.2{data_1} - 0.4{f1}
+
+{rightArm_rotX} -= 0.9{data_1} + 1.5{f2}
+{rightArm_rotY} += 0.2{data_1} - 0.5{f2}
+{rightArm_rotZ} += 0.2{f2}
+{rightArm_posX} += 0.2{f2}
+{rightArm_posY} += {data_1} - {f2}
+{rightArm_posZ} += 1{data_1} - 3.5{f2}
+
+{leftArm_rotX} -= 0.9{data_1} + 1.5{f1}
+{leftArm_rotY} -= 0.2{data_1} - 0.5{f1}
+{leftArm_rotZ} -= 0.2{f1}
+{leftArm_posX} -= 0.2{f1}
+{leftArm_posY} -= {data_1} - {f1}
+{leftArm_posZ} += 1{data_1} - 3.5{f1}
+
+{rightLeg_rotX} -= 0.4{f2}
+{rightLeg_rotX} -= 0.2{f1}
+{rightLeg_rotY} += 0.2{f1}
+{rightLeg_rotZ} -= 0.2{f1}
+
+{leftLeg_rotX} -= 0.4{f1}
+{leftLeg_rotX} -= 0.2{f2}
+{leftLeg_rotY} -= 0.2{f2}
+{leftLeg_rotZ} += 0.2{f2}
+
+{rightLeg_posX} -= 2{f1}
+{rightLeg_posY} -= 5{f1}
+{rightLeg_posZ} -= 2.5{f1}
+{leftLeg_posX} += 2{f2}
+{leftLeg_posY} -= 5{f2}
+{leftLeg_posZ} -= 2.5{f2}
+
+out "translate" (0, 0.6{data_1}, 1{data_1})
+out "rotate" (-90{data_1}, 1, 0, 0)
+
+;------------------------------------------;
+
+{data_2} = curve {data_2}
+
+out "translate" (0, 0{data_2}, 0)
+out "rotate" (0{data_2}, 1, 0, 0)
+
+{head_posX} @ {data_2} -> 0
+{head_posY} @ {data_2} -> 0
+{head_posZ} @ {data_2} -> 0
+
+{body_rotX} @ {data_2} -> 0
+{body_rotY} @ {data_2} -> 0
+{body_rotZ} @ {data_2} -> 0
+{body_posX} @ {data_2} -> 0
+{body_posY} @ {data_2} -> 0
+{body_posZ} @ {data_2} -> 0
+
+{rightArm_rotX} @ {data_2} -> 0
+{rightArm_rotY} @ {data_2} -> 0
+{rightArm_rotZ} @ {data_2} -> 0
+{rightArm_posX} @ {data_2} -> -5.5
+{rightArm_posY} @ {data_2} -> 1
+{rightArm_posZ} @ {data_2} -> 0
+
+{leftArm_rotX} @ {data_2} -> 0
+{leftArm_rotY} @ {data_2} -> 0
+{leftArm_rotZ} @ {data_2} -> 0
+{leftArm_posX} @ {data_2} -> 5.5
+{leftArm_posY} @ {data_2} -> 1
+{leftArm_posZ} @ {data_2} -> 0
+
+{rightLeg_rotX} @ {data_2} -> 0
+{rightLeg_rotY} @ {data_2} -> 0
+{rightLeg_rotZ} @ {data_2} -> 0
+{rightLeg_posX} @ {data_2} -> -2
+{rightLeg_posY} @ {data_2} -> 12
+{rightLeg_posZ} @ {data_2} -> 0
+
+{leftLeg_rotX} @ {data_2} -> 0
+{leftLeg_rotY} @ {data_2} -> 0
+{leftLeg_rotZ} @ {data_2} -> 0
+{leftLeg_posX} @ {data_2} -> 2
+{leftLeg_posY} @ {data_2} -> 12
+{leftLeg_posZ} @ {data_2} -> 0
+
+{head_rotX} @ {data_2} -> -{head_rotX} - pi / 3
+{head_rotY} @ {data_2} -'> -{head_rotY}
+
+{f1} = {data_2}(cos(0.6662{limbSwing}) + 1) / 2
+{f2} = {data_2}(cos(0.6662{limbSwing} + pi) + 1) / 2
+{body_rotY} -= 0.1{data_2} - 0.2{f1}
+
+{rightArm_rotX} -= 0.9{data_2} + 1.5{f2}
+{rightArm_rotY} += 0.2{data_2} - 0.5{f2}
+{rightArm_rotZ} += 0.2{f2}
+{rightArm_posY} += {data_2} - {f2}
+{rightArm_posZ} += 2{data_2} - 3.5{f2}
+
+{leftArm_rotX} -= 0.9{data_2} + 1.5{f1}
+{leftArm_rotY} -= 0.2{data_2} - 0.5{f1}
+{leftArm_rotZ} -= 0.2{f1}
+{leftArm_posY} -= {data_2} - {f1}
+{leftArm_posZ} += 2{data_2} - 3.5{f1}
+
+{rightLeg_rotY} += 0.2{f1}
+{rightLeg_rotZ} -= 0.2{f1}
+{leftLeg_rotY} -= 0.2{f2}
+{leftLeg_rotZ} += 0.2{f2}
+
+{rightLeg_posX} -= 2{f1}
+{rightLeg_posY} -= 5{f1}
+{rightLeg_posZ} -= 3{f1}
+{leftLeg_posX} += 2{f2}
+{leftLeg_posY} -= 5{f2}
+{leftLeg_posZ} -= 3{f2}
+
+out "pivot" (0, 0.5{data_2}, 0)
+out "translate" (0, 0.6{data_2}, 0.25{data_2})
+out "rotate" (-105{data_2}, 1, 0, 0)
+out "rotate" (180{data_2}, 0, 1, 0)

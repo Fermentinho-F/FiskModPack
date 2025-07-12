@@ -1,0 +1,62 @@
+;data_0 = hit
+
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+;-------------------------------------------------;
+
+{data_0} = curve {data_0}
+{anim1} = curve min(animate2({data_0}, 1, 0.01, 0.7, 0.0), 1)
+{anim2} = curve min(animate2({data_0}, 1, 0.5, 0.5, 0.0), 1)
+
+{base1_posY} += 2*{anim1}
+{base0_posY} += 2*{anim1}
+
+{tentacle0_posY} += 3.75*{anim1}
+
+{tentacle1_posY} += 7.5*{anim1}
+{tentacle1_rotX} += -2'*{anim1}
+
+{tentacle2_posY} += 3.8*{anim1}
+{tentacle2_rotX} += -5'*{anim1}
+
+{tentacle3_posY} += 10*{anim1}
+{tentacle3_posZ} += -0.5*{anim1}
+{tentacle3_rotX} += -12.5'*{anim1}
+
+{tentacle4_posY} += 4.8*{anim1}
+{tentacle4_rotX} += -10'*{anim1}
+
+{spikes0_posX} += -0.5*{anim1}
+{spikes0_posY} += -10*{anim1}
+{spikes0_posZ} += -2*{anim1}
+{spikes0_rotX} += 15'*{anim1}
+
+{blade0_rotX} += -25'*{anim1}
+
+;-------------------------------------------------;
+
+{base0_rotX} += -25'*{anim2}
+{base0_rotY} += 25'*{anim2}
+
+{base1_rotX} += -22'*{anim2}
+{base1_rotY} += 25'*{anim2}
+
+{tentacle0_rotX} += -2'*{anim2}
+
+{tentacle1_rotX} += -2'*{anim2}
+
+{tentacle2_rotX} += -7'*{anim2}
+
+{tentacle3_posZ} += 0.2*{anim2}
+{tentacle3_rotX} += -12.5'*{anim2}
+
+{tentacle4_rotX} += -10'*{anim2}
+
+{spikes0_posX} += -0.5*{anim2}
+{spikes0_posY} += 0.5*{anim2}
+{spikes0_posZ} += -1.5*{anim2}
+{spikes0_rotX} += 25'*{anim2}
+
+{blade0_rotX} += -25'*{anim2}
+
+;-------------------------------------------------;

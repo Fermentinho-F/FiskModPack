@@ -1,0 +1,122 @@
+{
+  "main.destiny_transform_1": {
+    "sounds": [
+      "destiny_transform_1"
+    ],
+    "category": "player"
+  },
+  "main.destiny_transform_2": {
+    "sounds": [
+      "destiny_transform_2"
+    ],
+    "category": "player"
+  },
+  "main.symbiotetransform": {
+    "sounds": [
+      "symbiotetransform"
+    ],
+    "category": "player"
+  },
+  "main.arms": {
+    "sounds": [
+      "arms"
+    ],
+    "category": "player"
+  },
+  "main.omnitransform": {
+    "sounds": [
+      "omnitransform"
+    ],
+    "category": "player"
+  },
+  "main.omnidetransform": {
+    "sounds": [
+      "omnidetransform"
+    ],
+    "category": "player"
+  },
+  "main.omninext": {
+    "sounds": [
+      "omninext"
+    ],
+    "category": "player"
+  },
+  "main.destiny_kal_el": {
+    "sounds": [
+      "destiny_kal_el"
+    ],
+    "category": "player"
+  },
+  "main.destiny_wayne": {
+    "sounds": [
+      "destiny_wayne"
+    ],
+    "category": "player"
+  },
+  "main.destiny_speak1": {
+    "sounds": [
+      "destiny_speak1"
+    ],
+    "category": "player"
+  },
+  "main.rider": {
+    "sounds": [
+      "rider"
+    ],
+    "category": "player"
+  },
+  "main.nanitrex": {
+    "sounds": [
+      "nanitrex"
+    ],
+    "category": "player"
+  },
+  "main.red": {
+    "category": "player",
+    "sounds": [
+      "red"
+    ]
+  },
+  "main.speed": {
+    "category": "player",
+    "sounds": [
+      "speed"
+    ]
+  },
+  "main.hope": {
+    "sounds": [
+      "hope"
+    ],
+    "category": "player"
+  },
+  "main.haha": {
+    "sounds": [
+      "haha"
+    ],
+    "category": "player"
+  },
+  "main.lazer": {
+    "sounds": [
+      "lazer"
+    ],
+    "category": "player"
+  },
+  "main.lazer1": {
+    "sounds": [
+      "lazer1"
+    ],
+    "category": "player"
+  },
+  "main.jump1": {
+    "sounds": [
+      "jump1"
+    ],
+    "category": "player"
+  },
+  "main.runing": {
+    "sounds": [
+      "runing"
+    ],
+    "category": "player"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "name": "Umbrakinesis",
+  "modifiers": {
+    "fiskheroes:cooldown|dash_cooldown": {
+      "cooldown": {
+        "toggleData": "shadows:dyn/dash",
+        "cooldownData": "shadows:dyn/dash_timer",
+        "duration": 13,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:cooldown|dash_play_sound": {
+      "cooldown": {
+        "toggleData": "entity.getData('shadows:dyn/dash')",
+        "cooldownData": "shadows:dyn/dash_play_sound",
+        "duration": 1,
+        "recovery": 1
+      },
+      "soundEvents": {
+        "START": "shadows:aragami/dash"
+      }
+    },
+    "fiskheroes:leaping|dash_leap": {
+      "leapAmount": [2, 0.2]
+    },
+    "fiskheroes:leaping|after_dash_leap": {
+      "leapAmount": [0.5, 0.05]
+    },
+    "fiskheroes:controlled_flight|dash_controlled_flight": {
+      "speed": 0,
+      "boostSpeed": 0.18,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0
+    },
+    "fiskheroes:shield|dash_shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 0,
+        "cooldown": 0
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0,
+      "isToggle": false
+    },
+    "fiskheroes:cooldown|double_jump": {
+      "cooldown": {
+        "toggleData": "entity.getData('shadows:dyn/1boolean_reset')",
+        "cooldownData": "shadows:dyn/2float_interp_reset",
+        "duration": 10,
+        "recovery": 10
+      },
+      "soundEvents": {
+        "START": "shadows:aragami/double_jump"
+      }
+    },
+    "fiskheroes:cooldown|double_jump_start": {
+      "cooldown": {
+        "toggleData": "!entity.isOnGround() && !entity.isInWater()",
+        "cooldownData": "shadows:dyn/3float_reset",
+        "duration": 20,
+        "recovery": 25
+      }
+    },
+    "fiskheroes:propelled_flight|double_jump_propelled_flight": {},
+    "fiskheroes:flight|double_jump_flight": {
+      "speed": 0.05
+    },
+    "fiskheroes:flight|double_jump_flight_slow": {
+      "speed": -0.03
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.25
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 20.0,
+      "radius": 0.1
+    },
+    "fiskheroes:cooldown|shadow_pull_cooldown": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:grab_id') > -1 && entity.getData('shadows:dyn/1string_reset') == 'Sneaking'",
+        "cooldownData": "shadows:dyn/shadow_pull_timer",
+        "duration": 12,
+        "recovery": 0.2
+      }
+    },
+    "fiskheroes:telekinesis|shadow_pull_telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 30.0,
+      "soundEvents": {
+        "GRAB": "shadows:aragami/shadow_pull"
+      }
+    },
+    "fiskheroes:equipment|throwing_star": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 40,
+          "uses": 3,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "shadows:aragami/quicker_use",
+        "USE": "shadows:aragami/shuriken"
+      }
+    },
+    "fiskheroes:transformation|wraith_transformation": {
+      "key": "WRAITH",
+      "transformation": {
+        "toggleData": "shadows:dyn/6boolean_reset",
+        "timerData": "shadows:dyn/3float_interp_reset",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "shadows:aragami/invisible_start",
+        "DISABLE": "shadows:aragami/invisible_stop"
+      }
+    },
+    "fiskheroes:cooldown|wraith_cooldown": {
+      "cooldown": {
+        "toggleData": "shadows:dyn/6boolean_reset",
+        "cooldownData": "shadows:dyn/wraith",
+        "duration": 180,
+        "recovery": 1
+      },
+      "soundEvents": {
+        "TIMEOUT": "shadows:aragami/invisible_stop"
+      }
+    },
+    "fiskheroes:invisibility": {},
+    "fiskheroes:telekinesis|warp_strike_telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": false,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 30.0
+    },
+    "fiskheroes:cooldown|warp_strike_cooldown": {
+      "cooldown": {
+        "toggleData": "shadows:dyn/warp_strike",
+        "cooldownData": "shadows:dyn/warp_strike_timer",
+        "duration": 40,
+        "recovery": 0.6
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 200,
+          "duration": 1200,
+          "range": 24.0
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 400,
+          "quantity": 1
+        }
+      },
+      "soundEvents": {
+        "CAST": "shadows:aragami/use"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "SHARP": 0.5,
+          "MAGIC": 0.5
+        },
+        "properties": {
+          "EFFECTS": [{
+              "id": "minecraft:slowness",
+              "duration": 100,
+              "amplifier": 255
+            }, {
+              "id": "minecraft:jump_boost",
+              "duration": 100,
+              "amplifier": 228
+            }, {
+              "id": "minecraft:weakness",
+              "duration": 100,
+              "amplifier": 200
+            }
+          ],
+          "REDUCE_KNOCKBACK": 1
+        }
+      },
+      "chargeTime": 30,
+      "duration": 5,
+      "cooldownTime": 20,
+      "isToggle": true,
+      "range": 4.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "CHARGE": "shadows:aragami/shadow_kill"
+      }
+    },
+    "fiskheroes:cooldown|water": {
+      "cooldown": {
+        "toggleData": "entity.isInWater() && !entity.as('PLAYER').isCreativeMode()",
+        "cooldownData": "shadows:dyn/1float_reset",
+        "duration": 300,
+        "recovery": 300
+      }
+    },
+    "fiskheroes:transformation|blood_smoke": {
+      "key": "BLOOD_SMOKE",
+      "transformation": {
+        "toggleData": "shadows:dyn/2boolean_reset",
+        "timerData": "shadows:dyn/5float_reset",
+        "time": 100
+      },
+      "soundEvents": {
+        "ENABLE": "shadows:aragami/use",
+        "DISABLE": "shadows:aragami/use"
+      }
+    },
+    "fiskheroes:transformation|blood_smoke_activated": {
+      "transformation": {
+        "toggleData": "shadows:dyn/3boolean_reset",
+        "timerData": "shadows:dyn/4float_interp_reset",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|blood_smoke_cooldown": {
+      "cooldown": {
+        "toggleData": "shadows:dyn/3boolean_reset",
+        "cooldownData": "shadows:dyn/blood_smoke_cooldown",
+        "duration": 200,
+        "recovery": 20
+      }
+    },
+    "fiskheroes:cooldown|sprinting": {
+      "cooldown": {
+        "toggleData": "entity.isSprinting() && (entity.getData('shadows:dyn/dash') || entity.getData('shadows:dyn/did_dash')) && !entity.getData('shadows:dyn/stamina_out')",
+        "cooldownData": "shadows:dyn/stamina",
+        "duration": 200,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:transformation|whisper": {
+      "transformation": {
+        "toggleData": "shadows:dyn/5boolean_reset",
+        "timerData": "shadows:dyn/5float_interp_reset",
+        "time": 10
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 0.0
+    },
+    "fiskheroes:cooldown|teleport_sound": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:teleport_timer') > 0",
+        "cooldownData": "shadows:dyn/6float_reset",
+        "duration": 10,
+        "recovery": 10
+      },
+      "soundEvents": {
+        "START": "shadows:aragami/use"
+      }
+    }
+  },
+  "hud": [{
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "shadows:dyn/wraith"
+    }, {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+      "data": "entity.getInterpolatedData('shadows:dyn/warp_strike_timer') == 0 ? 0 : Math.max(-entity.getInterpolatedData('shadows:dyn/warp_strike_timer')+1, 0.000000001)"
+    },{
+      "type": "PROGRESS",
+      "texture": "shadows:textures/gui/bars/aragami/stamina.png",
+      "data": "shadows:dyn/stamina"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim0} = curve min(animate2({data}, 1, 0.0, 0.2, 3), 1)
+{anim1} = curve min(animate2({data}, 1, 0.15, 0.3, 2), 1)
+{anim2} = curve min(animate2({data}, 1, 0.25, 0.4, 0), 1)
+
+{anim3} = curve min(animate2({data}, 1, 0.75, 0.25, 0), 1)
+
+{anim0} *= 1 - {anim3}
+{anim1} *= 1 - {anim3}
+{anim2} *= 1 - {anim3}
+
+{head_posX} @ {anim0} -> -1.4
+{head_posY} @ {anim0} -> 3.8
+{head_posZ} @ {anim0} -> -9
+
+{head_rotX} @ {anim0} -> -25'
+
+{body_posX} @ {anim0} -> -1.4
+{body_posY} @ {anim0} -> 2.8
+{body_posZ} @ {anim0} -> -9
+
+{body_rotX} @ {anim0} -> 40'
+{body_rotY} @ {anim0} -> 10'
+
+{rightArm_posX} @ {anim0} -> -6.2
+{rightArm_posY} @ {anim0} -> 5
+{rightArm_posZ} @ {anim0} -> -7
+
+{rightArm_rotX} @ {anim0} -> 65'
+{rightArm_rotY} @ {anim0} -> -15'
+{rightArm_rotZ} @ {anim0} -> 15'
+
+{leftArm_posX} @ {anim0} -> 3.8
+{leftArm_posY} @ {anim0} -> 6
+{leftArm_posZ} @ {anim0} -> -8.5
+
+{leftArm_rotX} @ {anim0} -> -25'
+{leftArm_rotY} @ {anim0} -> 15'
+{leftArm_rotZ} @ {anim0} -> -25'
+
+{rightLeg_posX} @ {anim0} -> -2.5
+{rightLeg_rotY} @ {anim0} -> 7.5'
+{rightLeg_posZ} @ {anim0} -> -1
+
+{rightLeg_rotX} @ {anim0} -> 5'
+
+{leftLeg_posX} @ {anim0} -> 2
+{leftLeg_posY} @ {anim0} -> 12
+{leftLeg_posZ} @ {anim0} -> -3
+
+{leftLeg_rotX} @ {anim0} -> -5'
+
+
+{head_rotX} @ {anim1} -> 15'
+{head_rotY} @ {anim1} -> 5'
+
+{body_rotX} @ {anim1} -> 35'
+
+{rightArm_rotX} @ {anim1} -> 15'
+
+{leftArm_rotX} @ {anim1} -> -5'
+
+
+
+{head_posX} @ {anim2} -> 0
+{head_posY} @ {anim2} -> 0.5
+{head_posZ} @ {anim2} -> 1.75
+{head_rotX} @ {anim2} -> -22.5'
+{head_rotY} @ {anim2} -> 0'
+{head_rotZ} @ {anim2} -> 0'
+
+{body_posX} @ {anim2} -> 0
+{body_posY} @ {anim2} -> 0.5
+{body_posZ} @ {anim2} -> 2
+{body_rotX} @ {anim2} -> -10'
+{body_rotY} @ {anim2} -> 7.5'
+{body_rotZ} @ {anim2} -> 0'
+
+{rightArm_posX} @ {anim2} -> -5
+{rightArm_posY} @ {anim2} -> 2.25
+{rightArm_posZ} @ {anim2} -> 2
+{rightArm_rotX} @ {anim2} -> 15'
+{rightArm_rotY} @ {anim2} -> 0'
+{rightArm_rotZ} @ {anim2} -> 10'
+
+{leftArm_posX} @ {anim2} -> 5
+{leftArm_posY} @ {anim2} -> 2.25
+{leftArm_posZ} @ {anim2} -> 1
+{leftArm_rotX} @ {anim2} -> 15'
+{leftArm_rotY} @ {anim2} -> 0'
+{leftArm_rotZ} @ {anim2} -> -10'
+
+{rightLeg_posX} @ {anim2} -> -2.5
+{rightLeg_posY} @ {anim2} -> 12
+{rightLeg_posZ} @ {anim2} -> 0.5
+{rightLeg_rotX} @ {anim2} -> 7.5'
+{rightLeg_rotY} @ {anim2} -> 5'
+{rightLeg_rotZ} @ {anim2} -> 0'
+
+{leftLeg_posX} @ {anim2} -> 2
+{leftLeg_posY} @ {anim2} -> 12
+{leftLeg_posZ} @ {anim2} -> 0
+{leftLeg_rotX} @ {anim2} -> 0'
+{leftLeg_rotY} @ {anim2} -> 0'
+{leftLeg_rotZ} @ {anim2} -> 0'

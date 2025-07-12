@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:assassin_ghost",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:flight",
+    "fiskheroes:defense",
+    "fiskheroes:melee3",
+    "fiskheroes:intangibility",
+    "moopack:unstable_molecules"
+  ]
+}

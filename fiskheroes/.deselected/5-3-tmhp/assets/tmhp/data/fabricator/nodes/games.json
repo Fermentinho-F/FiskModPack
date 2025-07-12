@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Game Chracters"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/games.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

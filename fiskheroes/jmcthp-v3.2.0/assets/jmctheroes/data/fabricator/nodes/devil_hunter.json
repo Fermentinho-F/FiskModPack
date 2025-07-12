@@ -1,0 +1,162 @@
+{
+  "display": {
+    "name": {
+      "translate": "Devil Hunter"
+    },
+    "description": {
+      "translate": "Kill one of every hostile mob to prove your talented enough to join the Devil Hunters "
+    },
+    "icon": {
+      "item": "minecraft:iron_axe"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp"
+  ],
+  "price": {
+    "TUTRIDIUM": 6,
+    "XP_LEVELS": 10
+  },
+  "criteria": {
+    "creeper": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Creeper"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Creeper'"
+      }
+    },
+    "skeleton": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Skeleton"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Skeleton'"
+      }
+    },
+    "spider": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Spider"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Spider'"
+      }
+    },
+    "zombie": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Zombie"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Zombie'"
+      }
+    },
+    "ghast": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Ghast"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Ghast'"
+      }
+    },
+    "zombiepigman": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Zombie PigMan"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'PigZombie'"
+      }
+    },
+    "enderman": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill an Enderman"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Enderman'"
+      }
+    },
+    "cavespider": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Cave Spider"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'CaveSpider'"
+      }
+    },
+    "blaze": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Blaze"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Blaze'"
+      }
+    },
+    "creetle": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Creetle"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'fiskheroes.Creetle'"
+      }
+    }
+  }
+}

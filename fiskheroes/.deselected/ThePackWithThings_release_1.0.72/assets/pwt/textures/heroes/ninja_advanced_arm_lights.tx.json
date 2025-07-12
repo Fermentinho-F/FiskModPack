@@ -1,0 +1,12 @@
+{
+  "texture": "pwt:ninja_advanced_arm_<PROJECTILE>",
+  "getters": {
+  "PROJECTILE": {
+	  "key": "entity.getData('pwt:dyn/cycle2') | 0",
+	  "values": {
+		"min": 0,
+		"max": 3
+	  }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "sound": "pwt:modifier.sandevistan.on.sprint",
+  "condition": "entity.isSprinting()",
+  "pitch": "1.0 + Math.random() * 0.05",
+  "volume": 0.8,
+  "fadeOut": 5
+}

@@ -1,0 +1,8 @@
+{rightHand_rotY} @ curve {data} -> 360
+
+{leftHand_rotY} @ curve {data} -> -360
+
+
+
+
+

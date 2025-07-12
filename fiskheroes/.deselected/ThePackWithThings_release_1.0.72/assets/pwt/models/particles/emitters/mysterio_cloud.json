@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+      "type": "ENERGY_SMOKE",
+      "amount": 20,
+      "offset": [0.0, -1.5, 0.0],
+      "motion": [0.27, 0.52, 0.29],
+      "randOffset": [0.9, -0.5, 0.9],
+      "randMotion": [0.0, 0.0, 0.0],
+      "mirror": true,
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

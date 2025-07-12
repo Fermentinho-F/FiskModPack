@@ -1,0 +1,104 @@
+{
+  "name": "Iron Spider Armor",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_enable",
+        "DISABLE": "fiskheroes:mk50_disable"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.2,
+      "boostSpeed": 0.20,
+      "canBoost": true,
+      "canRoll": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:repulsor_blast"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "ENERGY": 5.0,
+          "FIRE": 4.25
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 2,
+      "duration": 90,
+      "cooldownTime": 3,
+      "range": 32.0,
+      "radius": 0.6,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mk85_beam_start",
+        "SHOOT_STOP": "fiskheroes:mk85_beam_stop",
+        "BEAM_AMBIENT": "fiskheroes:mk85_beam_loop",
+        "CHARGE": "fiskheroes:mk85_beam_charge"
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    }
+  }
+}

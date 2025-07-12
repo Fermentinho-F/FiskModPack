@@ -1,0 +1,16 @@
+{
+  "suit": "swhp:anakinskywalker",
+  "requirements": [
+    "swhp:swhpdownload",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal",
+    "fiskheroes:object_manipulation"
+  ],
+  "display": {
+  "description": "This is where the Fun Begins"
+  }
+}

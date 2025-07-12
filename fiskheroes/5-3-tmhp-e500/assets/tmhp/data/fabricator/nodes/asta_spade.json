@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:asta_spade",
+  "requirements": [
+    "tmhp:asta",
+    "fiskheroes:tier8_9",
+    "elseworld:ap8_9",
+    "fiskheroes:defense3",
+    "tmhp:anti_mahou",
+    "tmhp:devil_binding_rituel",
+    "tmhp:swordsman3",
+    "tmhp:black_clover",
+    "tmhp:heropack2"
+  ]
+}

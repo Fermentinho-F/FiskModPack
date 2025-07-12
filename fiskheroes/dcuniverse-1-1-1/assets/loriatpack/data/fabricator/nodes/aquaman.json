@@ -1,0 +1,14 @@
+{
+  "suit": "loriatpack:aquaman",
+  "requirements": [
+    "fiskheroes:tier8_9",
+	"loriatpack:dc_universe",
+	"fiskheroes:melee2",
+    "fiskheroes:defense",
+	"loriatpack:swim",
+	"fiskheroes:traversal2",
+	"fiskheroes:ranged2",
+    "fiskheroes:object_manipulation"
+    
+  ]
+}

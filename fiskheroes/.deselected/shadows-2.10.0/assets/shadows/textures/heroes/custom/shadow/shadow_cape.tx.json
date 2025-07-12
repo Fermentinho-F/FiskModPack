@@ -1,0 +1,24 @@
+{
+  "texture": {
+    "in": "shadows:custom/shadow/shadow_cape",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "shadows:custom/shadow/xor_cape/<TIMER>"
+      }
+    ],
+    "out": "fiskheroes:generated/shadows:shadows_cape<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('fiskheroes:flight_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}
+
+

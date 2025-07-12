@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:arkham_knight",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:object_manipulation"
+  ]
+}

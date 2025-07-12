@@ -1,0 +1,57 @@
+{rightArm_rotX} @ {data_0} -> 0
+{rightArm_rotY} @ {data_0} -> 0
+{rightArm_rotZ} @ {data_0} -> 0
+{rightArm_posX} @ {data_0} -> -5
+{rightArm_posY} @ {data_0} -> 2
+{rightArm_posZ} @ {data_0} -> 0
+
+{body_rotX} @ {data_0} -> 0
+{body_rotY} @ {data_0} -> 0
+{body_rotZ} @ {data_0} -> 0
+{body_posX} @ {data_0} -> 0
+{body_posY} @ {data_0} -> 0
+{body_posZ} @ {data_0} -> 0
+
+{leftArm_rotX} @ {data_0} -> 0
+{leftArm_rotY} @ {data_0} -> 0
+{leftArm_rotZ} @ {data_0} -> 0
+{leftArm_posX} @ {data_0} -> 5
+{leftArm_posY} @ {data_0} -> 2
+{leftArm_posZ} @ {data_0} -> 0
+
+{leftLeg_rotX} @ {data_0} -> 0
+{leftLeg_rotY} @ {data_0} -> 0
+{leftLeg_rotZ} @ {data_0} -> 0
+{leftLeg_posX} @ {data_0} -> 2
+{leftLeg_posY} @ {data_0} -> 12
+{leftLeg_posZ} @ {data_0} -> 0
+
+{rightLeg_rotX} @ {data_0} -> 0
+{rightLeg_rotY} @ {data_0} -> 0
+{rightLeg_rotZ} @ {data_0} -> 0
+{rightLeg_posX} @ {data_0} -> -2
+{rightLeg_posY} @ {data_0} -> 12
+{rightLeg_posZ} @ {data_0} -> 0
+
+
+{body_rotX}+=-7.5'{data_0}
+{body_posZ}+=1{data_0}
+
+{rightArm_rotX}+=-80'{data_0}
+{rightArm_rotY}+=12'{data_0}
+{rightArm_rotZ}+=-5'{data_0}
+
+{leftArm_rotX}+=-80'{data_0}
+{leftArm_rotY}+=-12'{data_0}
+{leftArm_rotZ}+=5'{data_0}
+
+{rightLeg_rotX}+=-45.5'{data_0}
+{rightLeg_rotY}+=13'{data_0}
+{rightLeg_rotZ}+=4'{data_0}
+
+{leftLeg_rotX}+=-9'{data_0}
+{leftLeg_rotY}+=1'{data_0}
+{leftLeg_rotZ}+=-12'{data_0}
+{leftLeg_posX}+=1{data_0}
+{leftLeg_posY}+=-4{data_0}
+{leftLeg_posZ}+=-3{data_0}

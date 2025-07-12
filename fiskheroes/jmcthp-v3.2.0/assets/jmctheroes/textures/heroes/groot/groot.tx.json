@@ -1,0 +1,13 @@
+{
+  "texture": "jmctheroes:groot/groot_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "(Math.ceil(4 * entity.getInterpolatedData('fiskheroes:blade_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 4
+      }
+    }
+  },
+  "isDynamic": true
+}

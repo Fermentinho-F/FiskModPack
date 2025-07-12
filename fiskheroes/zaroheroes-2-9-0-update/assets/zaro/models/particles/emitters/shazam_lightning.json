@@ -1,0 +1,12 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:dyn/nanite_timer') > 0.210 && entity.getData('fiskheroes:dyn/nanite_timer') > 3",
+      "type": "FIREWORK_BACKGROUND",
+      "offset": [ 0.0, 0.5, 0.0 ],
+      "motion": [ 0.97, 0.87, 0.19 ],
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

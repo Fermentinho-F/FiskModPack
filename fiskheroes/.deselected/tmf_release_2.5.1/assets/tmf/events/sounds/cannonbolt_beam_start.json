@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:cannonbolt.beam.start",
+  "volume": "1.0 * entity.getInterpolatedData('fiskheroes:beam_charge')",
+  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+  "pitch": "1.1 - Math.random() * 0.2",
+  "fadeOut": 5
+}

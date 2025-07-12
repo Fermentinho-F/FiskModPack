@@ -1,0 +1,155 @@
+{
+  "name": "Kyuubi Chakra",
+  "modifiers": {
+    "fiskheroes:transformation|rage1": {
+      "key": "RAGE",
+      "transformation": {
+        "toggleData": "tmhp:dyn/rage",
+        "timerData": "tmhp:dyn/rage_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|rage2": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/rage",
+        "cooldownData": "tmhp:dyn/rage_cooldown",
+        "duration": 1000,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:transformation|one_tail1": {
+      "key": "ONE_TAIL",
+      "transformation": {
+        "toggleData": "tmhp:dyn/one_tailed",
+        "timerData": "tmhp:dyn/one_tail_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|one_tail2": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/one_tailed",
+        "cooldownData": "tmhp:dyn/one_tail_cooldown",
+        "duration": 700,
+        "recovery": 1.5
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3
+    },
+    "fiskheroes:regeneration|regen_kyuubi": {
+      "factor": 6
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 200,
+          "uses": 15,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+	},
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 500,
+          "uses": 3
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+   },
+    "fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "tmhp:rasengan"
+      }
+    },
+    "fiskheroes:damage_bonus|rasengan": {
+      "amount": 20.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:damage_bonus|oodama_rasengan": {
+      "amount": 35.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:damage_bonus|sage_rasengan": {
+      "amount": 70.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:damage_bonus|rasengan_one_tail": {
+      "amount": 50.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 70.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 50,
+      "duration": 15,
+      "cooldownTime": 300,
+      "range": 128.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.2]
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "aw",
+          "cooldown": 0,
+          "quantity": 8
+        }
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "tmhp:textures/gui/chi_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/nanite_transformation.png",
+      "data": "tmhp:dyn/rage_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "tmhp:dyn/one_tail_cooldown"
+    }
+  ]
+}

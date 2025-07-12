@@ -1,0 +1,12 @@
+{
+  "texture": "shadows:custom/mage/health_bar/<AMMOUNT>",
+  "getters": {
+    "AMMOUNT": {
+      "key": "Math.min(entity.getHealth(), 21) | 0",
+      "values": {
+        "min": 0,
+        "max": 21
+      }
+    }
+  }
+}

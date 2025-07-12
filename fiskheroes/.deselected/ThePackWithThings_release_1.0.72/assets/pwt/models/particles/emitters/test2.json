@@ -1,0 +1,17 @@
+{
+  "particles": [
+    {
+      "type": "FREEZE_RAY",
+      "amount": 30,
+      "offset": {
+        "tp": [-6.0, -2.0, 14.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.3, 0.0, 0.0],
+      "randMotion": [0.3, 0.0, 0.0],
+      "mirror": "!firstPerson",
+      "lockFPRot": false,
+      "lockFPYaw": false
+    }
+  ]
+}

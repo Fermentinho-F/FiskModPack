@@ -1,0 +1,7 @@
+{
+  "name": "Galvanic Modulator",
+  "permission": "USE_NOT",
+  "holdingPose": "SINGLE",
+  "cooldown": 0,
+  "projectiles": null
+}

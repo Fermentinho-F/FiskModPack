@@ -1,0 +1,38 @@
+{
+  "name": "Demon Physiology",
+  "modifiers": {
+    "fiskheroes:cooldown|charging": {
+      "cooldown": {
+        "toggleData": "entity.isSprinting()",
+        "cooldownData": "jmctheroes:dyn/moving_timer",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.3]
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:earthquake": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 15.0,
+      "knockback": 1.5,
+      "duration": 65,
+      "cooldownTime": 230
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3
+    }
+  }
+}

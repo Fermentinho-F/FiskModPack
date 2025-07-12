@@ -1,0 +1,41 @@
+{
+  "suit": "tmf:dna_blitzwolfer_18",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "ete": {
+      "trigger": "fiskheroes:item_crafted",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Craft a block of Eternium"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:eternium_block'"
+      }
+    },
+    "woofwoof": {
+      "trigger": "fiskheroes:entity_hurt_by_player",
+      "minSuccessCount": 100,
+      "description": {
+        "translate": "Get some Wolf Blood by Dealing Damage to a Wolf"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "dmg": "ENTITY_HURT"
+        },
+        "check": "dmg.getName() == 'Wolf'"
+      }
+    }
+  }
+}

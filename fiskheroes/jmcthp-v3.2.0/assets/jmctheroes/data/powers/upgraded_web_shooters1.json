@@ -1,0 +1,46 @@
+{
+  "name": "Upgraded Web Shooters",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_shoot_raimi",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 96.0,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_raimi"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 18,
+          "uses": 12,
+          "dissolveTime": 120
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 3,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        }
+      },
+      "soundEvents": {
+        "USE": "fiskheroes:web_shoot_raimi"
+      }
+    }
+  }
+}

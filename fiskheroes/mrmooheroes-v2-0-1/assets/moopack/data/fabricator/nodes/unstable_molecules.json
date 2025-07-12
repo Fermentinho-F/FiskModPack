@@ -1,0 +1,28 @@
+{
+    "display": {
+    "name": "Unstable Molecules",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/unstable_molecules.png"
+    }
+    },
+    "requirements": [
+    "moopack:advanced_technology",
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:block_broken_by_player",
+        "description": {
+            "translate": "Retrieve Some Unstable Molecules"
+        },
+        "condition": {
+            "variables": {
+            "block": "BLOCK_BEING_BROKEN"
+            },
+            "check": "block.name() == 'fiskheroes:unstable_quantum_matter' && Math.random() >=0.9"
+        }
+        }
+    }
+}

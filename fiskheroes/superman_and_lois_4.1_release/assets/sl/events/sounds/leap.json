@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.leap",
+  "volume": 1,
+  "fadeOut": 1000,
+  "pitch": "1.0 + Math.random() * 0.2 + entity.getData('sl:dyn/sboost_timer') * 0.2"
+}

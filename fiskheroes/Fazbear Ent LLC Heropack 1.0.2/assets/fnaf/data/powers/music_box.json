@@ -1,0 +1,17 @@
+{
+  "name": "Music Box",
+  "modifiers": {
+    "fiskheroes:transformation|music_box": {
+      "key": "MUSIC_BOX",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "fnaf:dyn/music_box",
+        "timerData": "fnaf:dyn/music_box_timer",
+        "time": 3
+      },
+      "soundEvents": {
+        "ENABLE": ["fnaf:music_box_loop", "fnaf:whispering_loop"]
+      }
+    }
+  }
+}

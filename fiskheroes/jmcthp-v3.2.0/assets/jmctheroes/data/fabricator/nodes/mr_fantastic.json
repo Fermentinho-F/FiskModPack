@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:mr_fantastic",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense"
+  ]
+}

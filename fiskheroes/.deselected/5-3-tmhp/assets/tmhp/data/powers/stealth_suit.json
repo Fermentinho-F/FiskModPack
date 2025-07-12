@@ -1,0 +1,21 @@
+{
+  "name": "Stealth Suit",
+  "modifiers": {
+    "fiskheroes:transformation|white": {
+      "key": "ARTIC_STEALTH_MOD",
+      "transformation": {
+        "toggleData": "tmhp:dyn/artic_stealth",
+        "timerData": "tmhp:dyn/artic_stealth_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:transformation|black": {
+      "key": "STEALTH_MOD",
+      "transformation": {
+        "toggleData": "tmhp:dyn/stealth",
+        "timerData": "tmhp:dyn/stealth_timer",
+        "time": 4
+      }
+    }
+  }
+}

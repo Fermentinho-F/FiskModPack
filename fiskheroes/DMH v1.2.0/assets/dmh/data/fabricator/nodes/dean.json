@@ -1,0 +1,19 @@
+{
+  "suit": "dmh:dean",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged",
+    "fiskheroes:magic",
+    "fiskheroes:cosmic",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:marksmanship",
+    "dmh:dmhp"
+  ],
+  "price": {
+    "IRID_GOLD": 32,
+    "XP_LEVELS": 50
+  }
+}

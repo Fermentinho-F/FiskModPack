@@ -1,0 +1,20 @@
+{body_rotX} = 0
+{body_rotY} = 0
+{body_rotZ} = 0
+
+{body_posX} = 0
+{body_posY} = 0
+{body_posZ} = 0
+
+{rightArm_rotX} = 0
+{rightArm_rotY} = 0
+{rightArm_rotZ} = 0
+
+{rightArm_posX} = 0
+{rightArm_posY} = 1000
+{rightArm_posZ} = 0
+
+{data_1} = curve min({data_1} * 2, 2)
+{data_1} @ {data_1} * {data_0} -> 1
+out "firstPerson" (true)
+out "rotate" (-45{data_1}, 1, 0, 1)

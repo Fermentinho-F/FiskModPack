@@ -1,0 +1,42 @@
+{
+  "name": "Noir's Luger P08",
+  "permission": "USE_LUGER",
+  "holdingPose": "SINGLE",
+  "cooldown": 10,
+  "damageProfile": {
+    "damage": 3.5,
+    "types": {
+      "BULLET": 1
+    }
+  },
+  "fisktag": {
+    "sprintShootDelay": 4,
+    "sprintDelay": 2
+  },
+  "scope": {
+    "zoom": 0.25,
+    "allowHeadshots": true,
+    "damageBonus": 1.5,
+    "headshotDamageBonus": 2.2
+  },
+  "spread": {
+    "sprintingFactor": 1.3,
+    "fallingFactor": 1.4,
+    "scopingFactor": 0.6
+  },
+  "recoil": {
+    "amount": 0.3,
+    "cameraShake": 1.2
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "range": 20.0,
+      "spread": 0.25,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "jmctheroes:luger"
+  }
+}

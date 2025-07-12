@@ -1,0 +1,81 @@
+{
+  "name": "Santoryuu (3 Sword Style)",
+  "modifiers": {
+    "fiskheroes:charged_beam|rashomon": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 15,
+      "duration": 3,
+      "cooldownTime": 25,
+      "range": 32.0,
+      "radius": 1.0
+    },
+    "fiskheroes:charged_beam|rashomon_haki": {
+      "damageProfile": {
+        "damage": 90.0,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 30,
+      "duration": 5,
+      "cooldownTime": 25,
+      "range": 124.0,
+      "radius": 4.0
+    },
+    "fiskheroes:energy_manipulation|pandaho": {
+      "damageProfile": {
+        "damage": 7.5,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 5,
+      "range": 16.0
+    },
+    "fiskheroes:energy_manipulation|pandoho_haki": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 5,
+      "range": 32.0
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:blade": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 40.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 60,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "isToggle": false,
+      "knockback": 0.001,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

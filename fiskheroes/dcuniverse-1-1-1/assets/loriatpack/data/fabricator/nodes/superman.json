@@ -1,0 +1,12 @@
+{
+  "suit": "loriatpack:superman",
+  "requirements": [	
+    "fiskheroes:tier8_9",
+	"loriatpack:dc_universe",
+	"fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "loriatpack:krytponian"
+  ]
+}

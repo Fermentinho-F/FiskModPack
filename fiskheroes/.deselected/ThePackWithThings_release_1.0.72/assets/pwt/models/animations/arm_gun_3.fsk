@@ -1,0 +1,91 @@
+{data_0} = curve{data_0}
+{data_1} = curve{data_1}{data_0}
+{data_2} = curve{data_2}{data_1} 
+{data_3} = curve{data_3}{data_2}
+{data_4} = curve{data_4}{data_3}
+{data_5} = curve{data_5}{data_4}
+;arm_open
+
+{hand_3_overlay_posY} -= 1{data_0}
+
+{hand_1_posY} += 0.01{data_0}
+{hand_2_posY} += 0.01{data_0}
+
+{hand_1_overlay_posY} -= 0.7{data_0}
+{hand_2_overlay_posY} = {hand_1_overlay_posY}
+
+{hand_1_rotY} -= 27'{data_0}
+{hand_1_overlay_rotY} = {hand_1_rotY} 
+{hand_2_rotY} = -{hand_1_rotY} 
+{hand_2_overlay_rotY} = -{hand_1_rotY} 
+
+{hand_1_2_rotY} -= 30'{data_0}
+{hand_1_2_overlay_rotY} -= 30'{data_0}
+{hand_2_2_rotY} = -{hand_1_2_rotY}
+{hand_2_2_overlay_rotY} = -{hand_1_2_overlay_rotY}
+
+{hand_1_2_posX} -= 0.85{data_0}
+{hand_1_2_posY} -= 1{data_0}
+
+{hand_2_2_posX} = {hand_1_2_posX}
+{hand_2_2_posY} = {hand_1_2_posY}
+
+{hand_1_2_overlay_posX} = {hand_1_2_posX}
+{hand_1_2_overlay_posY} = {hand_1_2_posY}
+
+{hand_2_2_overlay_posX} = {hand_1_2_posX}
+{hand_2_2_overlay_posY} = {hand_1_2_posY}
+
+;open_2
+
+{cannon_base_1_posX} += 0.2{data_1}
+{cannon_base_1_posZ} -= 0.68{data_1}
+
+{cannon_base_2_posX} = {cannon_base_1_posX}
+{cannon_base_2_posZ} = -{cannon_base_1_posZ}
+
+{cannon_base_1_rotY} -= 30'{data_1}
+{cannon_base_2_rotY} = -{cannon_base_1_rotY}
+
+{cannon_base_4_posX} -= 0.2{data_1}
+{cannon_base_4_posY} -= 0.2{data_1}
+
+{cannon_base_4_rotZ} -= 10'{data_1}
+
+;open_canon_1
+
+{cannon_1_overlay_posX} -= 1.7{data_2}
+{cannon_1_overlay_2_posX} = {cannon_1_overlay_posX}
+
+{cannon_1_posX} -= 1.7{data_2}
+{cannon_2_posX} -= 1.7{data_2}
+{cannon_3_posX} -= 1.4{data_2}
+
+{cannon_4_posX} -= 1.0{data_2}
+
+;open_canon_2
+
+{cannon_1_overlay_posY} -= 0.8{data_3}
+{cannon_1_overlay_2_posY} -= 1.75{data_3}
+
+;open_canon_3
+
+{cannon_1_posY} -= 1.9{data_4}
+{cannon_2_posY} += 0.6{data_4}
+{cannon_3_posY} -= 0.9{data_4}
+
+{iron_sight_posX} -= 0.3{data_4}
+{iron_sight_rotZ} += 20'{data_4}
+
+;shell
+
+{cannon_1_overlay_posX} -= 0.5{data_5}
+{cannon_1_overlay_2_posX} -= 0.5{data_5}
+
+{cannon_1_posX} -= 0.5{data_5}
+{cannon_2_posX} -= 0.5{data_5}
+{cannon_3_posX} -= 0.5{data_5}
+{cannon_4_posX} -= 0.5{data_5}
+
+{shell_rotY} += 360'{data_5} 
+{shell_posX} -= 3.4{data_5}

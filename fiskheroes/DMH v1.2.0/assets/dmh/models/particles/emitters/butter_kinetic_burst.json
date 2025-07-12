@@ -1,0 +1,13 @@
+{
+  "particles": [
+    {
+      "maxDistance": 256,
+      "condition": "!firstPerson && entity.getData('dmh:dyn/ignite') && entity.getData('dmh:dyn/ignite_timer') > 0.4 && entity.getData('dmh:dyn/ignite_timer') < 0.6",
+      "type": "FIREWORK_BACKGROUND",
+      "amount": 1,
+      "offset": [0.0, 0.5, 0.0],
+      "motion": [0.2627450980392157, 0.5607843137254902, 1.0],
+      "mirror": false
+    }
+  ]
+}

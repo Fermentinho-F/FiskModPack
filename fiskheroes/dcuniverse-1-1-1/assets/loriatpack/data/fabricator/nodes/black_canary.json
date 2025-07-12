@@ -1,0 +1,10 @@
+{
+  "suit": "loriatpack:black_canary",
+  "requirements": [
+    "fiskheroes:tier4_5",
+	"loriatpack:dc_universe",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+	"fiskheroes:defense"
+  ]
+}

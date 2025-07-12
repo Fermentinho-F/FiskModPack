@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.soft_landing_sound",
+  "volume": 1.0,
+  "fadeOut": 20
+}

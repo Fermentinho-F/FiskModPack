@@ -1,0 +1,47 @@
+{punch} = {data_0}
+{sneak} = {data_1}
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+;Sneak==========================================================
+{body_posY} += 2{sneak}
+
+{head_rotX} -= 0.5{sneak}
+{body_rotX} += 0.5{sneak}
+{rArm_rotX} -= 0.2{sneak}
+{lArm_rotX} -= 0.2{sneak}
+{rLeg_rotX} -= 0.5{sneak}
+{lLeg_rotX} -= 0.5{sneak}
+;WalkingAnim==========================================================
+    {movement} = cos({limbSwing} * 0.6662 + pi) * {limbSwingAmount}
+    {rLeg_rotX} -= {movement}
+    {lLeg_rotX} += {movement} 
+
+    {rArm_rotX} += {movement}
+    {lArm_rotX} -= {movement}

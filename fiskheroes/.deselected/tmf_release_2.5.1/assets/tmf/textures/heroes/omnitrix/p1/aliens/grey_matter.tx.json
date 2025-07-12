@@ -1,0 +1,26 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p1/aliens/anim/grey_matter_black_panther_<TIMER>",
+    "transform": [
+      {
+        "operation": "OR",
+        "supply": "tmf:omnitrix/p1/aliens/grey_matter_bp_claws_<TYPE>"
+      }
+    ],
+    "out": "tmf:generated/omnitrix/p1/aliens/grey_matter_bp_<TIMER>_<TYPE>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(17 * (1-entity.getInterpolatedData('tmf:dyn/grey_matter_panther_timer')) + 5*entity.getData('fiskheroes:mask_open_timer2')) | 0",
+      "values": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    "TYPE": {
+      "key": "entity.getData('fiskheroes:blade') ? 1 : 0",
+      "values": [0,1]
+    }
+  },
+  "isDynamic": true
+}

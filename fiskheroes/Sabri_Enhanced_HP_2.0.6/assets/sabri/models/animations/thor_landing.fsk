@@ -1,0 +1,43 @@
+{data} = curve {data}
+
+{head_rotX} @ {data} -> 15'
+{head_rotY} @ {data} -> -5'
+{head_rotZ} @ {data} -> -1.25'
+{head_posX} @ {data} -> -0.25
+{head_posY} @ {data} -> 3
+{head_posZ} @ {data} -> -3
+
+{body_rotX} @ {data} -> 22.5'
+{body_rotY} @ {data} -> -5'
+{body_rotZ} @ {data} -> -2'
+{body_posX} @ {data} -> -0.25
+{body_posY} @ {data} -> 3
+{body_posZ} @ {data} -> -3
+
+{leftArm_rotX} @ {data} -> 68.5'
+{leftArm_rotY} @ {data} -> 35.5'
+{leftArm_rotZ} @ {data} -> -13'
+{leftArm_posX} @ {data} -> 3.5
+{leftArm_posY} @ {data} -> 5
+{leftArm_posZ} @ {data} -> -0.5
+
+{rightArm_rotX} @ {data} -> -10.5'
+{rightArm_rotY} @ {data} -> -48'
+{rightArm_rotZ} @ {data} -> 25'
+
+{rightArm_posY} @ {data} -> 5.5
+{rightArm_posZ} @ {data} -> -2
+
+{leftLeg_rotX} @ {data} -> 7.5'
+{leftLeg_rotY} @ {data} -> 7.5'
+{leftLeg_rotZ} @ {data} -> 1'
+{leftLeg_posZ} @ {data} -> -3
+
+{rightLeg_rotX} @ {data} -> 47.5'
+{rightLeg_rotY} @ {data} -> 5'
+{rightLeg_rotZ} @ {data} -> 5.5'
+{rightLeg_posX} @ {data} -> -2.5
+{rightLeg_posY} @ {data} -> 14
+{rightLeg_posZ} @ {data} -> 1
+
+out "translate" (0, -0.05{data}, 0)

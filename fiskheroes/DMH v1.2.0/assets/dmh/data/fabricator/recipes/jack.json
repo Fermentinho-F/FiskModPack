@@ -1,0 +1,15 @@
+{
+  "isCosmic": true,
+  "items": {
+    "fiskheroes:tutridium_block": 32,
+    "fiskheroes:eternium_block": 12,
+    "fiskheroes:supercharged_eternium": 8,
+    "fiskheroes:vibranium_block": 32,
+    "fiskheroes:dwarf_star_block": 12,
+    "fiskheroes:unstable_quantum_matter": 15,
+    "fiskheroes:crystalline_tutrite_block": 12,
+    "fiskheroes:gold_titanium_block": 32,
+    "fiskheroes:iridescent_gold_block": 48,
+    "fiskheroes:radiant_olivine_block": 10
+  }
+}

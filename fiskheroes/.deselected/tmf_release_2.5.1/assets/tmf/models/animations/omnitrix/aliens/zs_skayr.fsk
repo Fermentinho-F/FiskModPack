@@ -1,0 +1,167 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{sneaking} = {data_0} 
+{idle} = sin(pi{data_1})
+{idle1} = sin(2pi{data_2})
+{tail} = 0.2sin(pi{data_2})
+{powerMode} = {data_4}
+
+;FullPowerMode=====================================================================
+{tentacle1_rotX} += {idle1}0.15
+{tentacle2_rotX} += {idle1}0.25
+{tentacle3_rotX} -= {idle1}0.3
+{tentacle4_rotX} -= {idle1}0.35
+{tentacle5_rotX} -= {idle1}0.15
+{tentacle6_rotX} -= {idle1}0.25
+{tentacle7_rotX} += {idle1}0.3
+{tentacle8_rotX} += {idle1}0.35
+{tentacle9_rotX} += {idle}0.15
+{tentacle10_rotX} += {idle}0.25
+{tentacle11_rotX} -= {idle}0.3
+{tentacle12_rotX} -= {idle}0.35
+{tentacle13_rotX} -= {idle}0.15
+{tentacle14_rotX} -= {idle}0.25
+{tentacle15_rotX} += {idle}0.3
+{tentacle16_rotX} += {idle}0.35
+{tentacle17_rotX} += {idle1}0.15
+{tentacle18_rotX} += {idle1}0.25
+{tentacle19_rotX} -= {idle1}0.3
+{tentacle20_rotX} -= {idle1}0.35
+
+{tentacle1_rotY} += {idle}0.15
+{tentacle2_rotY} += {idle}0.25
+{tentacle3_rotY} -= {idle}0.3
+{tentacle4_rotY} -= {idle}0.35
+{tentacle5_rotY} += {idle1}0.15
+{tentacle6_rotY} += {idle1}0.25
+{tentacle7_rotY} -= {idle1}0.3
+{tentacle8_rotY} -= {idle1}0.35
+{tentacle9_rotY} += {idle}0.15
+{tentacle10_rotY} += {idle}0.25
+{tentacle11_rotY} -= {idle}0.3
+{tentacle12_rotY} -= {idle}0.35
+{tentacle13_rotY} -= {idle1}0.15
+{tentacle14_rotY} -= {idle1}0.25
+{tentacle15_rotY} += {idle1}0.3
+{tentacle16_rotY} += {idle1}0.35
+{tentacle17_rotY} -= {idle}0.15
+{tentacle18_rotY} -= {idle}0.25
+{tentacle19_rotY} += {idle}0.3
+{tentacle20_rotY} += {idle}0.35
+
+;FullPowerMode=====================================================================
+{spikeR1_posX} += 0.5{powerMode}
+{spikeR1_posY} += 6{powerMode}
+{spikeR1_rotZ} @ {powerMode} -> 90'
+
+{spikeR2_posY} += 5{powerMode}
+{spikeR2_posZ} += {powerMode}
+{spikeR2_rotZ} @ {powerMode} -> 95'
+
+{spikeR3_posY} += 5{powerMode}
+{spikeR3_rotY} @ {powerMode} -> -5'
+{spikeR3_rotZ} @ {powerMode} -> 100'
+
+{spikeR4_posX} += {powerMode}
+{spikeR5_posX} += {powerMode}
+
+{spikeR6_posZ} @ {powerMode} -> -2
+{spikeR7_posZ} @ {powerMode} -> -2
+{spikeR8_posZ} @ {powerMode} -> -2
+
+{spikeL1_posX} -= 0.5{powerMode}
+{spikeL1_posY} += 6{powerMode}
+{spikeL1_rotZ} @ {powerMode} -> -90'
+
+{spikeL2_posY} += 5{powerMode}
+{spikeL2_posZ} += {powerMode}
+{spikeL2_rotZ} @ {powerMode} -> -95'
+
+{spikeL3_posY} += 5{powerMode}
+{spikeL3_rotY} @ {powerMode} -> -5'
+{spikeL3_rotZ} @ {powerMode} -> -100'
+
+{spikeL4_posX} -= {powerMode}
+{spikeL5_posX} -= {powerMode}
+
+{spikeL6_posZ} @ {powerMode} -> -2
+{spikeL7_posZ} @ {powerMode} -> -2
+{spikeL8_posZ} @ {powerMode} -> -2
+;=====================================================================
+{movement} = sqrt({motX}^2 + {motZ}^2)
+
+{neck_rotX} -= {lookY} + 0.3{sneaking}
+{neck_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{body_rotX} += 0.3{sneaking}
+{body_rotY} += 0.05sin((sqrt({punch1}) * pi * 2.0))
+{body_posY} += 0.5{idle1} 
+
+{bodyLower1_rotX} += 0.5{tail} 
+{bodyLower2_rotX} -= 0.2{tail} 
+{bodyLower3_rotX} += 0.3{tail} 
+{bodyLower4_rotX} -= 0.2{tail} 
+{bodyLower5_rotX} -= 0.3{tail} 
+{bodyLower6_rotX} += {tail} 
+
+{bodyLower1_rotY} += 0.5{tail} 
+{bodyLower2_rotY} -= 0.2{tail} 
+{bodyLower3_rotY} += 0.3{tail} 
+{bodyLower4_rotY} -= 0.4{tail} 
+{bodyLower5_rotY} += 0.2{tail} 
+{bodyLower6_rotY} -= 0.3{tail} 
+
+{punch1} = (1-{data_3})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({data_3} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({Rarm_rotX} - ({punch1.1} * 1.2 + {punch1.2}))
+{rArm_rotY} += {body_rotY} * 8.0
+{rArm_rotZ} += (sin({data_3} * pi) * -0.4)
+
+{rArm_rotX} += 2{body_rotY}
+{rArm_rotY} += 2{body_rotY} 
+{rArm_rotZ} += 0.05{idle}
+
+{lArm_rotZ} -= 0.05{idle} 
+;FlightMotion=====================================================================
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = 1
+
+{x} = 45{hover}min(1.5{vel}, 1)
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+{body_rotX} += {x}clamp({forward}, -2, 2)'
+{body_rotZ} += {x}clamp({strafe}, -2, 2)'
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{neck_rotX} -= 15'clamp({forward}, -2, 2)
+{rArm_rotX} += 0.1{forward} + 0.1{strafe}
+{rArm_rotZ} += 0.1{adz} + 0.2{strafe}
+{lArm_rotX} += 0.1{forward} - 0.1{strafe}
+{lArm_rotZ} -= 0.1{adz} - 0.2{strafe}
+
+{bodyLower1_rotX} += 0.3{forward}
+{bodyLower1_rotZ} += 0.05{adz} + 0.4{strafe}
+{bodyLower2_rotX} += 0.2{forward}
+{bodyLower2_rotZ} += 0.05{adz} + 0.4{strafe}
+{bodyLower3_rotX} += 0.1{forward}
+{bodyLower3_rotZ} += 0.05{adz} + 0.4{strafe}
+{bodyLower4_rotX} += 0.1{forward}
+{bodyLower4_rotZ} += 0.1{adz} + 0.6{strafe}
+{bodyLower5_rotX} -= 0.2{forward}
+{bodyLower5_rotZ} -= 0.2{adz} + 0.6{strafe}
+{bodyLower6_rotX} -= 0.2{forward}
+{bodyLower6_rotZ} -= 0.2{adz} + 0.6{strafe}

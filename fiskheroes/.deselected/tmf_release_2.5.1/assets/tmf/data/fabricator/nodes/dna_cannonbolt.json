@@ -1,0 +1,27 @@
+{
+  "suit": "tmf:dna_cannonbolt_16",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "fall": {
+      "trigger": "fiskheroes:player_hurt",
+      "minSuccessCount": 100,
+      "description": {
+        "translate": "Pretend you're a ball and try to bounce off ground"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "damage.name() == 'fall'"
+      }
+    }
+  }
+}

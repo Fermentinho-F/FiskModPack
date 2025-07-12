@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:stinkfly.spit",
+  "volume": 0.5,
+  "pitch": "0.9 + Math.random() * 0.1"
+}

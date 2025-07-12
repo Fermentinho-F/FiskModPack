@@ -1,0 +1,50 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{data_2} = {data_2}{data_1}
+
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+{m} = clamp({horVel}, 0, 0.5)*2
+
+{x} = {data_1}(1 - {m})
+
+{head_rotX} -= 40'{data_0}
+
+{rightArm_rotX} -= 20'{data_0}
+{rightArm_rotY} -= 15'{data_0}
+{rightArm_rotZ} += 20'{data_0} + 10'{x}
+
+{leftArm_rotX} -= 20'{data_0}
+{leftArm_rotY} += 15'{data_0}
+{leftArm_rotZ} -= 20'{data_0} + 10'{x}
+
+{head_rotX} += 40'{data_1} - 5'{x}
+{head_posY} += 2{data_1}
+{head_posZ} -= 2{data_1}
+
+{head_rotX} += 3'*sin({data_2}*300)
+{head_rotY} -= 3'*sin({data_2}*300)
+
+{rightArm_rotX} += 50'{data_1}
+{rightArm_rotZ} -= 15'{data_0}
+{leftArm_rotX} += 50'{data_1}
+{leftArm_rotZ} += 15'{data_0}
+
+;{rightLeg_rotX} -= 0.1{x}
+;{leftLeg_rotX} -= 0.1{x}
+{rightLeg_rotY} += 0.5{x}
+{leftLeg_rotY} -= 0.5{x}
+{rightLeg_rotZ} += 0.1{x}
+{leftLeg_rotZ} -= 0.1{x}
+
+{rightLeg_posY} -= 2{x}
+{leftLeg_posY} -= 2{x}
+{rightLeg_posX} -= 0.5{x}
+{leftLeg_posX} += 0.5{x}
+
+{rightLeg_posZ} -= 1.5{x}
+{leftLeg_posZ} -= 1.5{x}
+
+out "pivot" (0, 0.6, 0)
+
+out "rotate" (-5{x}, 1, 0, 0)
+out "translate" (0, -0.1{x}, 0)

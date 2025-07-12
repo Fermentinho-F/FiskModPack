@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Other Universe's"
+    },
+    "icon": {
+      "texture": "tmhp:textures/items/heroes/randy_cunningham_0.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

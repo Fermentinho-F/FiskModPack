@@ -1,0 +1,13 @@
+{
+    "suit": "pwt:david_martinez_pre",
+    "requirements": [
+        "fiskheroes:tier2_3",
+        "fiskheroes:traversal2",
+		"fiskheroes:melee",
+        "fiskheroes:marksmanship",
+		"pwt:cyberware"
+    ],
+    "display": {
+    "description": "Time to Chrome The F* Up"
+    }
+}

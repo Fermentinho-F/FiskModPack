@@ -1,0 +1,10 @@
+{
+  "suit": "jmctheroes:hit_monkey",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier2_3",
+    "fiskheroes:marksmanship",
+    "fiskheroes:traversal",
+    "fiskheroes:melee2"
+  ]
+}

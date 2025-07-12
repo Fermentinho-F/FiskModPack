@@ -1,0 +1,229 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{loop} = sin(2pi{data_0})
+{punch} = {data_1}
+{sneak} = {data_2}
+{motY} = {data_3} - 2{data_6}
+{charge} = {data_4}
+{shoot} = {data_5}
+{pt1} = curve min(animate2({data_6}, 2, 0, 0.6, 0), 1)
+{loop2} = 0.15sin(2pi{data_7}){pt1}
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+{head_rotX} -= min(0.6,max({lookY}, -0.6))
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+;Unravel==========================================================
+{rShoulder_rotZ} += {pt1} + {loop2}
+{rArm_rotZ} -= 4{loop2}
+{rArmLower_rotZ} += 6{loop2}
+
+{lShoulder_rotZ} -= {pt1} - {loop2}
+{lArm_rotZ} -= 4{loop2}
+{lArmLower_rotZ} += 6{loop2}
+
+{main_rotY} += 0.3{loop2}
+{main_posY} += 12{data_6}
+;ChargedPunch==========================================================
+{charge} = max({charge}-{shoot},0)
+{body_rotY} += 0.1{charge}
+{rArm_rotX} -= 0.7{charge}
+{rArmLower_rotX} -= 2{charge}
+
+{lArm_rotX} -= 0.2{charge}
+{lArmLower_rotX} -= {charge}
+
+{rFinger2_rotZ} -= {charge}
+{rFinger3_rotZ} -= {charge}
+{rFinger4_rotZ} -= {charge}
+
+{rShoulder_rotX} @ {shoot} -> {head_rotX} - pi / 2
+{rShoulder_rotY} @ {shoot} -'> {head_rotY}
+{rShoulder_rotZ} @ {shoot} -> {head_rotZ}
+{rArm_rotY} -= 0.7{shoot}
+
+{bandage1_posY} += 8{shoot}
+{bandage2_posY} += 8{shoot}
+{bandage3_posY} += 8{shoot}
+{bandage4_posY} += 8{shoot}
+{bandage5_posY} += 8{shoot}
+{bandage6_posY} += 8{shoot}
+{bandage7_posY} += 8{shoot}
+{bandage8_posY} += 8{shoot}
+{bandage9_posY} += 8{shoot}
+{bandage10_posY} += 8{shoot}
+{bandage11_posY} += 8{shoot}
+{bandage12_posY} += 8{shoot}
+{bandage13_posY} += 8{shoot}
+{bandage14_posY} += 8{shoot}
+{bandage15_posY} += 8{shoot}
+{bandage16_posY} += 8{shoot}
+{bandage17_posY} += 8{shoot}
+{bandage18_posY} += 8{shoot}
+{bandage19_posY} += 8{shoot}
+{bandage20_posY} += 8{shoot}
+{bandage21_posY} += 8{shoot}
+{bandage22_posY} += 8{shoot}
+{bandage23_posY} += 8{shoot}
+{bandage24_posY} += 8{shoot}
+{bandage25_posY} += 8{shoot}
+{bandage26_posY} += 8{shoot}
+{bandage27_posY} += 8{shoot}
+{bandage28_posY} += 8{shoot}
+{bandage29_posY} += 8{shoot}
+{bandage30_posY} += 8{shoot}
+{bandage31_posY} += 8{shoot}
+{bandage32_posY} += 8{shoot}
+{bandage33_posY} += 8{shoot}
+{bandage34_posY} += 8{shoot}
+{bandage35_posY} += 8{shoot}
+{bandage36_posY} += 8{shoot}
+{bandage37_posY} += 8{shoot}
+{bandage38_posY} += 8{shoot}
+{bandage39_posY} += 8{shoot}
+{bandage40_posY} += 8{shoot}
+{bandage41_posY} += 8{shoot}
+{bandage42_posY} += 8{shoot}
+{bandage43_posY} += 8{shoot}
+{bandage44_posY} += 8{shoot}
+{bandage45_posY} += 8{shoot}
+{bandage46_posY} += 8{shoot}
+{bandage47_posY} += 8{shoot}
+{bandage48_posY} += 8{shoot}
+;WalkingAnim==========================================================
+    {movement} = (sin({limbSwing}* 0.6662 + pi){limbSwingAmount}+2{limbSwingAmount}{sneaking})*(1-{data_9})
+
+    {rLeg_rotX} -= 0.3{movement}
+    {legFlapR_rotX} -= 0.2{movement} 
+    {rLeg2_rotX} += 0.2{movement} 
+
+    {lLeg_rotX} += 0.3{movement} 
+    {legFlapL_rotX} += 0.2{movement} 
+    {lLeg2_rotX} -= 0.2{movement} 
+
+    {legFlapFront_rotX} -= 0.2sqrt({movement}^2)
+    {legFlapBack_rotX} += 0.2sqrt({movement}^2)
+
+    {rArm_rotX} += 0.2{movement}
+    {rArmLower_rotX} += 0.2{movement}
+
+    {lArm_rotX} -= 0.2{movement}
+    {lArmLower_rotX} -= 0.2{movement}
+
+;sneak
+    {head_rotX} -= 0.4{sneak}
+    {body_rotX} += 0.6{sneak}
+    {bodyLower_rotX} -= 0.4{sneak}
+
+    {body_posY} += 2{sneak}
+
+    {rLeg_rotX} -= 0.6{sneak}
+    {legFlapR_rotX} -= 0.6{sneak} 
+    {rLeg2_rotX} += 0.5{sneak} 
+
+    {lLeg_rotX} -= 0.6{sneak}
+    {legFlapL_rotX} -= 0.6{sneak} 
+    {lLeg2_rotX} += 0.5{sneak} 
+
+    {legFlapFront_rotX} -= 0.7{sneak}
+    {legFlapBack_rotX} -= 0.2{sneak}
+
+    {rShoulder_rotX} -= {sneak}
+    {lShoulder_rotX} -= {sneak}
+;loops
+    {rHeadFlap1_rotX} -= 0.05{loop}
+    {rHeadFlap2_rotX} += 0.1{loop}
+    {lHeadFlap1_rotX} -= 0.05{loop}
+    {lHeadFlap2_rotX} += 0.1{loop}
+    {rHeadFlap1_rotZ} += 0.025{loop}
+    {lHeadFlap1_rotZ} -= 0.025{loop}
+
+    {body_rotX} += 0.025{loop}
+    {bodyLower_rotX} -= 0.025{loop}
+
+    {rShoulder_rotZ} -= 0.05{loop}
+    {lShoulder_rotZ} += 0.05{loop}
+
+    {rArm_rotZ} += 0.025{loop}
+    {lArm_rotZ} -= 0.025{loop}
+
+    {backBandageR1_rotX} += 0.05{loop}+0.1{movement} - max(min({motY}, 0.1), -2)
+    {motY} = 0.2{motY}
+    {backBandageR2_rotX} -= 0.1{loop}+0.2{movement}+0.3{sneak}- max(min({motY}, 0.1), -0.2)
+    {backBandageR3_rotX} += 0.05{loop}+0.1{movement}-0.3{sneak}- max(min({motY}, 0.1), -0.2)
+    {backBandageR4_rotX} -= 0.1{loop}+0.2{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR5_rotX} += 0.05{loop}+0.1{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR6_rotX} -= 0.1{loop}+0.2{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR7_rotX} += 0.05{loop}+0.1{movement}- max(min({motY}, 0.1), -0.2)
+
+
+    {backBandageR8_rotX} += 0.05{loop}+0.1{movement} - max(min(5*{motY}, 0.1), -2)
+    {backBandageR9_rotX} -= 0.1{loop}+0.2{movement}+0.3{sneak}- max(min({motY}, 0.1), -0.2)
+    {backBandageR10_rotX} += 0.05{loop}+0.1{movement}-0.3{sneak}- max(min({motY}, 0.1), -0.2)
+    {backBandageR11_rotX} -= 0.1{loop}+0.2{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR12_rotX} += 0.05{loop}+0.1{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR13_rotX} -= 0.1{loop}+0.2{movement}- max(min({motY}, 0.1), -0.2)
+    {backBandageR14_rotX} += 0.05{loop}+0.1{movement}- max(min({motY}, 0.1), -0.2)
+;Just to make sure -> goes to end
+{movementPrev} = {movement}
+
+{data_8} = curve {data_9}
+
+; ==============================================
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = {data_8}
+
+out "pivot" (0, 0.56{hover}, 0)
+
+{x} = 45{hover}min(1.5{vel}, 1)
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+{body_rotX} += {x}clamp({forward}, -2, 2)'
+{body_rotZ} += {x}clamp({strafe}, -2, 2)'
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{head_rotX} -= 15'clamp({forward}, -2, 2)
+{rArm_rotX} += 0.1{forward} + 0.1{strafe}
+{rArm_rotZ} += 0.1{adz} + 0.2{strafe} + 3'{data_8}
+{lArm_rotX} += 0.1{forward} - 0.1{strafe}
+{lArm_rotZ} -= 0.1{adz} - 0.2{strafe} + 3'{data_8}
+{rLeg_rotX} += 0.3{forward}
+{rLeg_rotZ} += 0.05{adz} + 0.4{strafe}
+{lLeg_rotX} += 0.2{forward}
+{lLeg_rotZ} -= 0.05{adz} - 0.4{strafe}

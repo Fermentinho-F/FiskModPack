@@ -1,0 +1,14 @@
+{
+  "suit": "zaro:deadpool",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:ranged2",
+    "fiskheroes:traversal",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+     "zaro:zaroheroes"
+  ]
+}

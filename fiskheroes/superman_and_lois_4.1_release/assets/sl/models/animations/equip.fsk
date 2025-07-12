@@ -1,0 +1,5 @@
+{data} = curve {data}
+{rightArm_rotX} @ {data} -> 0.5({body_rotX} - pi / 3)
+{rightArm_rotY} @ {data} -> - 1.5
+{rightArm_posZ} @ {data} -> - 0.9
+{rightArm_rotZ} @ {data} -> - 0.9

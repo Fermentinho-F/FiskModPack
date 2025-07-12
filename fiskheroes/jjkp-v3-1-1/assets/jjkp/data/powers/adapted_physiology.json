@@ -1,0 +1,69 @@
+{
+  "name": "Adapted Physiology",
+  "modifiers": {
+    "fiskheroes:damage_immunity|cursed": {
+      "damageType": "CURSED"
+    },
+    "fiskheroes:damage_immunity|sharp": {
+      "damageType": "SHARP"
+    },
+    "fiskheroes:damage_immunity|blunt": {
+      "damageType": "BLUNT"
+    },
+    "fiskheroes:damage_immunity|energy": {
+      "damageType": "ENERGY"
+    },
+    "fiskheroes:damage_immunity|electricity": {
+      "damageType": "ELECTRICITY"
+    },
+    "fiskheroes:damage_immunity|cold": {
+      "damageType": "COLD"
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "jjkp:blade",
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3.5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither", "minecraft:slowness", "minecraft:weakness"]
+    },
+    "fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 3.0,
+      "cooldownTime": 40,
+      "canDoGriefing": true
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.75, 0.1]
+    },
+    "fiskheroes:size_manipulation": {
+      "isInstant": false,
+      "minSize": 2.0,
+      "maxSize": 7.0,
+      "soundEvents": {
+        "GROW": ["fiskheroes:anti_grow_roar", "fiskheroes:anti_grow", "fiskheroes:anti_grow_antimatter"],
+        "GROW_STOP": "fiskheroes:anti_grow_stop",
+        "SHRINK": "fiskheroes:anti_shrink"
+      }
+    }
+  }
+}

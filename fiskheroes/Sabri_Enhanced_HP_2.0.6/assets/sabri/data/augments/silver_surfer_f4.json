@@ -1,0 +1,8 @@
+{
+  "attributes": {
+    "PUNCH_DAMAGE": [4, 5],
+    "SPRINT_SPEED": [0, 5],
+    "JUMP_HEIGHT": [3, 5],
+    "KNOCKBACK": [3, 5]
+  }
+}

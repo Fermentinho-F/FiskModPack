@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:omnitrix.recal.activation",
+  "condition": "entity.getWornChestplate().nbt().getString('HeroType') == 'tmf:omni_recal' && !entity.getData('tmf:dyn/transformation')",
+  "volume": 1.2
+}

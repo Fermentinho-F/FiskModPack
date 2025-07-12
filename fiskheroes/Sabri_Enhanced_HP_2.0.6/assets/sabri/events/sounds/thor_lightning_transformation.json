@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.lightning_transformation",
+  "pitch": "1.05 - Math.random() * 0.1",
+  "fadeOut": 10
+}

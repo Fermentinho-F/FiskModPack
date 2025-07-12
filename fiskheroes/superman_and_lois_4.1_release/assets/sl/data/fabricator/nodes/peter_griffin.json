@@ -1,0 +1,11 @@
+{
+  "suit": "sl:peter_griffin",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:teleportation",
+    "fiskheroes:object_manipulation",
+    "sl:ap2_3"
+  ]
+}

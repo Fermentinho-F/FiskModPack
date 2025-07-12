@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.super_speed_end",
+  "condition": {
+    "start": "!entity.isInWater() && !entity.getData('fiskheroes:speeding')"
+  },
+  "volume": "Math.min(0.1 + (entity.getData('fiskheroes:speed') - 1) * 0.35, 1)",
+  "fadeOut": 5
+}

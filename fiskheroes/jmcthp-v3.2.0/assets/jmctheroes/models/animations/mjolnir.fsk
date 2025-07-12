@@ -1,0 +1,8 @@
+{Handle_rotX} += 2pi*{data}
+{HandleOver_rotX} += 2pi*{data}
+{Head_rotX} += 2pi*{data}
+{HeadOver_rotX} += 2pi*{data}
+{Top_rotX} += 2pi*{data}
+{lace1_rotX} += 2pi*{data}
+{lace2_rotX} += 2pi*{data}
+{lacebase_rotX} += 2pi*{data}

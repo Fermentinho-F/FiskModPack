@@ -1,0 +1,9 @@
+{
+  "texture": "jmctheroes:war/patriot/iron_patriot_mask_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.getData('fiskheroes:mask_open_timer2') > 0",
+      "values": ["true", "false"]
+    }
+  }
+}

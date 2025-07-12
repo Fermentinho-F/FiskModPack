@@ -1,0 +1,3 @@
+{leftArm_rotX} = {rightArm_rotX}
+{leftArm_rotY} = -{rightArm_rotY}
+{leftArm_rotZ} = -{rightArm_rotZ}

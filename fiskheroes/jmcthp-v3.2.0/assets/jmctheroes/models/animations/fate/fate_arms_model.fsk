@@ -1,0 +1,33 @@
+{data_0} = curve {data_0}
+
+{rightArm2_rotY} += 55'{data_0}
+{rightArm2_rotZ} += 75'{data_0}
+
+{rightArm3_rotY} += 55'{data_0}
+{rightArm3_rotZ} += 75'{data_0}
+
+
+{leftArm2_rotY} -= 55'{data_0}
+{leftArm2_rotZ} -= 75'{data_0}
+
+{leftArm3_rotY} -= 55'{data_0}
+{leftArm3_rotZ} -= 75'{data_0}
+
+{data_1} = curve {data_1}
+
+{rightArm2_posY} -= 2{data_1}
+{rightArm2_posX} -= 0.5{data_1}
+{rightArm3_posY} += 2.5{data_1}
+{rightArm3_posX} -= 0.5{data_1}
+
+{rightArm2_rotZ} += 35'{data_1}
+{rightArm3_rotZ} -= 35'{data_1}
+
+
+{leftArm2_posY} -= 2{data_1}
+{leftArm2_posX} += 0.5{data_1}
+{leftArm3_posY} += 2.5{data_1}
+{leftArm3_posX} += 0.5{data_1}
+
+{leftArm2_rotZ} -= 35'{data_1}
+{leftArm3_rotZ} += 35'{data_1}

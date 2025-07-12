@@ -1,0 +1,41 @@
+{
+  "name": "Spirit Of Vengeance",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "PENANCE_STARE",
+      "transformation": {
+        "toggleData": "dmh:dyn/ignite",
+        "timerData": "dmh:dyn/ignite_timer",
+        "time": 1
+      },
+      "isToggle": false
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flame_on", "fiskheroes:agent_liberty_blade_enable"],
+        "DISABLE": ["fiskheroes:flame_off", "fiskheroes:agent_liberty_blade_disable"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0xff7300",
+      "data": "dmh:dyn/penance_timer" 
+    }
+  ]
+}

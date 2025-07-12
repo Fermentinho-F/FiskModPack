@@ -1,0 +1,12 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:weapon.z6.stop",
+  "condition": {
+    "start": "entity.getData('fiskheroes:weapon_animation_timer') > 0.8",
+    "continue": "entity.getHeldItem().name() == 'fisktag:weapon' && !entity.as('PLAYER').isUsingItem()"
+  },
+  "volume": 0.4,
+  "pitch": "0.9 - Math.random() * 0.2",
+  "fadeIn": 3,
+  "fadeOut": 5
+}

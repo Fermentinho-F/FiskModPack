@@ -1,0 +1,7 @@
+{
+  "sound": "sl:main.icevision_charge",
+  "condition": "fiskheroes:aiming",
+  "volume": "fiskheroes:aiming_timer",
+  "fadeOut": 10,
+  "fadeIn": 10
+}

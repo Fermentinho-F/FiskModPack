@@ -1,0 +1,76 @@
+{
+  "particles": [
+    {
+	  "condition": "entity.getData('fiskheroes:shield') && entity.getData('fiskheroes:shield_blocking_timer') > 0",
+      "type": "SHORT_FLAME",
+	  "anchor": "rightArm",
+      "amount": 70,
+      "offset": {
+        "tp": [0.0, -0.5, 1.2],
+        "fp": [0.0, -0.5, 1.0]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.60, 0.60, 0.06],
+      "randMotion": [0.20, 0.00, 0.20],
+      "lockFPRot": false,
+      "lockFPYaw": false
+    },
+	{
+	  "condition": "entity.getData('fiskheroes:shield') && entity.getData('fiskheroes:shield_blocking_timer') == 0",
+      "type": "SHORT_FLAME",
+	  "anchor": "rightArm",
+      "amount": {
+        "tp": 20,
+        "fp": 10
+      },
+      "offset": {
+        "tp": [1.0, 9.0, 0.0],
+        "fp": [6.0, 3.0, -2.0]
+      },
+      "motion": [0.0, 0.05, 0.0],
+      "randOffset": [0.05, -0.02, 0.05],
+      "randMotion": [0.00, 0.02, 0.00],
+      
+      "lockFPRot": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "entity.getData('fiskheroes:punchmode') && entity.getData('fiskheroes:punch_charge') > 0 ",
+      "type": "SHORT_FLAME",
+	  "anchor": "rightArm",
+      "amount": {
+        "tp": 20,
+        "fp": 10
+      },
+      "offset": {
+        "tp": [1.0, 9.0, 0.0],
+        "fp": [6.0, 3.0, -2.0]
+      },
+      "motion": [0.0, 0.03, 0.0],
+      "randOffset": [0.05, -0.02, 0.05],
+      "randMotion": [0.00, 0.01, 0.00],
+      
+      "lockFPRot": false,
+      "lockFPYaw": true
+    },
+	{
+	  "condition": "entity.getData('fiskheroes:blade_timer') > 0 ",
+      "type": "BLUE_FLAME",
+	  "anchor": "rightArm",
+      "amount": {
+        "tp": 20,
+        "fp": 10
+      },
+      "offset": {
+        "tp": [1.0, 9.0, 0.0],
+        "fp": [6.0, 3.0, -2.0]
+      },
+      "motion": [0.0, 0.03, 0.0],
+      "randOffset": [0.05, -0.02, 0.05],
+      "randMotion": [0.00, 0.01, 0.00],
+      
+      "lockFPRot": false,
+      "lockFPYaw": true
+    }
+  ]
+}

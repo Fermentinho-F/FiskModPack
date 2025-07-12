@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:weapon.ambanphasepulseblaster.charge",
+  "volume": 0.8,
+  "pitch": "1.3 - Math.random() * 0.3"
+}

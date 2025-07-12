@@ -1,0 +1,33 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+;{anim0} = curve min(animate2({data}, 0.5, 0.0, 0.1, 0.4), 1)
+
+{anim0} = sin(2pi( min(animate2({data}, 1.0, 0.0, 0, 1), 1)))
+{anim1} = sin(2pi( min(animate2({data}, 0.9, 0.1, 0, 1), 1)))
+{anim2} = sin(2pi( min(animate2({data}, 0.8, 0.2, 0, 1), 1)))
+{anim3} = sin(2pi( min(animate2({data}, 0.7, 0.3, 0, 1), 1)))
+{anim4} = sin(2pi( min(animate2({data}, 0.6, 0.4, 0, 1), 1)))
+
+{head_posX} += 0.69{anim2}
+{head_rotY} += 22.56'{anim2}
+
+{neck_posX} += 0.55{anim1}
+{neck_rotY} += 8.92'{anim1}
+{neck_overlay_posX} += {neck_posX}
+{neck_overlay_rotY} = {neck_rotY}
+
+{body_rotY} += 8.63'{anim0}
+{body_overlay_rotY} = {body_rotY}
+
+{tail_1_posX} += 0.71{anim1}
+{tail_1_rotY} += 17.7'{anim1}
+
+{tail_2_posX} += 0.76{anim2}
+{tail_2_rotY} += 21.42'{anim2}
+{tail_2_overlay_posX} = {tail_2_posX} 
+{tail_2_overlay_rotY} = {tail_2_rotY}
+
+{tail_3_posX} += 0.5{anim3}
+{tail_3_rotY} += 15.5'{anim3}
+
+{tail_4_posX} += 1.51{anim4}
+{tail_4_rotY} -= 1.18'{anim4}

@@ -1,0 +1,8 @@
+{
+
+  "sound": "pwt:suit.mosquito.flight.loop",
+  "override": "pwt:funcs/mosquito_flight_loop",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

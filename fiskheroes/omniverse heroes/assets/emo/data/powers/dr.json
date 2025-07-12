@@ -1,0 +1,146 @@
+{
+  "name": "Pure God Form",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:earth_swallowing": {
+          "sequence": "",
+          "cooldown": 8,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 12,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+   "fiskheroes:charged_beam": {
+    "damageProfile": {
+      "damage": 20.0,
+      "types": {
+        "COSMIC": 5.0
+      },
+      "properties": {
+        "COOK_ENTITY": true,
+        "HEAT_TRANSFER": 20
+      }
+    },
+    "chargeTime": 1,
+    "duration": 10,
+    "cooldownTime": 1,
+    "range": 52.0,
+    "radius": 0.2,
+    "soundEvents": {
+      "SHOOT": "fiskheroes:antimatter_blast_start",
+      "BEAM_AMBIENT": "fiskheroes:antimatter_blast_loop"
+    }
+  },
+  "fiskheroes:telekinesis": {
+    "telekinesis": {
+      "crushMelons": true,
+      "crushThrowables": true,
+      "squeezeChickens": true,
+      "explodeCreepers": true,
+      "destroyInanimates": true
+    },
+    "canGrab": {
+      "mobs": true,
+      "items": true,
+      "projectiles": true,
+      "inanimates": true
+    },
+    "range": 10.0,
+    "soundEvents": {
+      "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+    }
+  },
+  "fiskheroes:teleportation": {
+    "canReachMoon": true,
+    "range": 1288.0,
+    "soundEvents": {
+      "TELEPORT": "fiskheroes:glow_teleport"
+    }
+  },
+  "fiskheroes:shield": {
+    "shield": {
+      "health": 90000000.0,
+      "regeneration": 20.0,
+      "recoveryDelay": 100,
+      "cooldown": 2
+    },
+    "coverage": {
+      "yawRadius": 180.0,
+      "pitchRadius": 180.0,
+      "yawOffset": 0.0,
+      "pitchOffset": 0.0
+    },
+    "knockback": 0.0,
+    "isToggle": false,
+    "soundEvents": {
+      "BLOCK_START": "fiskheroes:anti_forcefield",
+      "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+    }
+},
+  "fiskheroes:intangibility": {
+    "isAbsolute": false
+  },
+  "fiskheroes:regeneration": {
+    "factor": 8
+  },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:water_breathing": {
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+      "data": "fiskheroes:dyn/shadowform_cooldown"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "0xFF0000",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

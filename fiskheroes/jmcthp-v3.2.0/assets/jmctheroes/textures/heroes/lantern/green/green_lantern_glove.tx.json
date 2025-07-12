@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:lantern/green/green_lantern_glove_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "Math.ceil(10 * entity.getInterpolatedData('fiskheroes:blade_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}

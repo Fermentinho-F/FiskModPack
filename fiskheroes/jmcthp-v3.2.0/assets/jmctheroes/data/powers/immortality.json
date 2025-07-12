@@ -1,0 +1,14 @@
+{
+  "name": "Immortality",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 5
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 60,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    }
+  }
+}

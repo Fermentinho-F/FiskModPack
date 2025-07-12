@@ -1,0 +1,54 @@
+{
+  "name": "Armored Monowheel",
+  "modifiers": {
+    "fiskheroes:cooldown|charging": {
+      "cooldown": {
+        "toggleData": "entity.isSprinting() && entity.isOnGround() && entity.getHeldItem().isEmpty()",
+        "cooldownData": "jmctheroes:dyn/1_timer",
+        "duration": 7,
+        "recovery": 0.7
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "EXPLOSION",
+      "factor": 0.5
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 25.0,
+        "regeneration": 2.0,
+        "recoveryDelay": 100,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 5.5,
+        "types": {
+          "BLUNT": 1.0,
+          "SHARP": 0.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 3
+        }
+      },
+      "range": 2,
+      "radius": 0.8
+    }
+  }
+}

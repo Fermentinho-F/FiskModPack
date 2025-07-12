@@ -1,0 +1,28 @@
+{
+  "name": "Ryuk's emissary",
+  "modifiers": {
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 8000.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "range": 3222.0,
+      "radius": 0.1,
+      "isToggle": true
+    },
+    "fiskheroes:transformation": {
+      "key": "BOOK",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      }
+    }
+  }
+}

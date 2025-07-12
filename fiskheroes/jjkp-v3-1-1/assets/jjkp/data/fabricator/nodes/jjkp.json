@@ -1,0 +1,14 @@
+{
+    "display": {
+    "name": "Jujutsu Kaisen Heropack",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/jjkp.png"
+    }
+    },
+    "requirements": [
+
+  ],
+    "price": {
+
+  }
+}

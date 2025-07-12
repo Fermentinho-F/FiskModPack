@@ -1,0 +1,86 @@
+{
+  "name": "Ultron Prime's Armor",
+  "modifiers": {
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.2
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 16.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:ultron_beam_start",
+        "SHOOT_STOP": "fiskheroes:manta_beam_stop",
+        "BEAM_AMBIENT": "jmctheroes:ultron_beam_loop"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 16.0,
+      "soundEvents": {
+        "GRAB": ["fiskheroes:telekinesis_start", "fiskheroes:telekinesis_loop"]
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.05,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "canRoll": true,
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:iron_man_flight_roll",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive"]
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:metal_skin": {
+    },
+    "fiskheroes:cooldown|0": {
+      "cooldown": {
+        "toggleData": "entity.getInterpolatedData('fiskheroes:telekinesis')",
+        "cooldownData": "jmctheroes:dyn/0_timer",
+        "duration": 2,
+        "recovery": 0.5
+      }
+    }
+  }
+}

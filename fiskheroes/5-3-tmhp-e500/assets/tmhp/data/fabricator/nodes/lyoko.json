@@ -1,0 +1,31 @@
+{
+  "display": {
+    "name": {
+      "translate": "Lyoko Warriors"
+    },
+  "display": {
+    "description": "\u00A79Characters from Code Lyoko."
+   },
+    "icon": {
+      "text": "Lyoko"
+    }
+  },
+  "requirements": [ "tmhp:other" ],
+  "price": {
+    "XP_LEVELS": 5
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Radiant Olivine Dust."
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:radiant_olivine_dust'"
+      }
+    }
+  }
+}

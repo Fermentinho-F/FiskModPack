@@ -1,0 +1,9 @@
+{
+  "texture": "tmhp:phantoms/vlad/cape_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.getInterpolatedData('tmhp:dyn/ghostform_timer') > 0 || entity.isDisplayStand()",
+      "values": ["true", "false"]
+    }
+  }
+}

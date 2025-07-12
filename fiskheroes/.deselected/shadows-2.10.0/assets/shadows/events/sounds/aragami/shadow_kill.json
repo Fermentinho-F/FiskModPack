@@ -1,0 +1,10 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:aragami.abilities.shadow_kill",
+    "condition": "entity.getData('fiskheroes:aiming_timer') == 1 && entity.isOnGround() && entity.getHeldItem().isEmpty()",
+    "volume": 0.5,
+    "pitch": 1,
+    "fadeIn": 4,
+    "fadeOut": 4
+  }
+  

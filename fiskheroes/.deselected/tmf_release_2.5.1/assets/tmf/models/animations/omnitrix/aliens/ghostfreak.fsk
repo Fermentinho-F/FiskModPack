@@ -1,0 +1,118 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{sneaking} = {data_0} 
+{idle} = sin(pi{data_1})
+{idle1} = sin(2pi{data_2})
+{tail} = 0.2sin(pi{data_2})
+
+{anim1} = curve min(animate2({data_4}, 2, 0, 0.3, 0), 1)
+{anim2} = curve min(animate2({data_4}, 1, 0.3, 0.6, 0), 1)
+
+{movement} = sqrt({motX}^2 + {motZ}^2)
+
+{head_rotX} -= {lookY} + 0.3{sneaking}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{thing_posZ} += -{data_4}
+
+{body_rotX} += 0.3{sneaking}
+{body_rotY} += 0.05sin((sqrt({punch1}) * pi * 2.0))
+{body_posY} += 0.5{idle1} 
+
+{body1_rotX} += 0.5{tail} 
+{body2_rotX} -= 0.2{tail} 
+{body3_rotX} += 0.3{tail} 
+{body4_rotX} -= 0.2{tail} 
+{body1_rotY} += 0.5{tail} 
+{body2_rotY} -= 0.2{tail} 
+{body3_rotY} += 0.3{tail} 
+{body4_rotY} -= 0.4{tail} 
+
+{punch1} = (1-{data_3})^3
+{punch1} = 1.0 - {punch1}
+{punch1.1} = sin({punch1} * pi)
+{punch1.2} = sin({data_3} * pi) * -({head_rotX} - 0.7) * 0.75
+
+{rArm_rotX} += ({Rarm_rotX} - ({punch1.1} * 1.2 + {punch1.2}))
+{rArm_rotY} += {body_rotY} * 8.0
+{rArm_rotZ} += (sin({data_3} * pi) * -0.4)
+
+{rArm_rotX} += 2{body_rotY} -{anim1} - 0.4{anim2}
+{rArm_rotY} += 2{body_rotY} -{anim1} + {anim2}
+{rArm_rotZ} += 0.05{idle}
+
+{lArm_rotX} += - {anim1} - 0.4{anim2}
+{lArm_rotY} -=  - {anim1} + {anim2}
+{lArm_rotZ} -= 0.05{idle} 
+;FlightMotion=====================================================================
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = 1
+
+{x} = 45{hover}min(1.5{vel}, 1)
+out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+{body_rotX} += {x}clamp({forward}, -2, 2)'
+{body_rotZ} += {x}clamp({strafe}, -2, 2)'
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{head_rotX} -= 15'clamp({forward}, -2, 2)
+{rArm_rotX} += 0.1{forward} + 0.1{strafe}
+{rArm_rotZ} += 0.1{adz} + 0.2{strafe}
+{lArm_rotX} += 0.1{forward} - 0.1{strafe}
+{lArm_rotZ} -= 0.1{adz} - 0.2{strafe}
+
+{body1_rotX} += 0.3{forward}
+{body1_rotZ} += 0.05{adz} + 0.4{strafe}
+{body2_rotX} += 0.2{forward}
+{body2_rotZ} += 0.05{adz} + 0.4{strafe}
+{body3_rotX} += 0.1{forward}
+{body3_rotZ} += 0.05{adz} + 0.4{strafe}
+{body4_rotX} += 0.1{forward}
+{body4_rotZ} += 0.1{adz} + 0.6{strafe}
+
+;OVERLAYS=====================================================================
+{bodyO_rotX} = {body_rotX}
+{bodyO_rotY} = {body_rotY}
+{bodyO_rotZ} = {body_rotZ}
+{bodyO_posY} = {body_posY}
+{headO_rotX} = {head_rotX}
+{headO_rotY} =  {head_rotY} 
+
+{b_rotX} = {body_rotX}
+{b_rotY} = {body_rotY}
+{b_rotZ} = {body_rotZ}
+{b_posY} = {body_posY}
+
+{rArmO_rotX} = {rArm_rotX}
+{rArmO_rotY} = {rArm_rotY}
+{rArmO_rotZ} = {rArm_rotZ}
+{lArmO_rotX} = {lArm_rotX}
+{lArmO_rotY} = {lArm_rotY}
+{lArmO_rotZ} = {lArm_rotZ}
+
+{body1O_rotX} = {body1_rotX}
+{body1O_rotY} = {body1_rotY}
+{body2O_rotX} = {body2_rotX}
+{body2O_rotY} = {body2_rotY}
+{body3O_rotX} = {body3_rotX}
+{body3O_rotY} = {body3_rotY}
+{body4O_rotX} = {body4_rotX}
+{body4O_rotY} = {body4_rotY}
+{body1O_rotZ} = {body1_rotZ}
+{body2O_rotZ} = {body2_rotZ}
+{body3O_rotZ} = {body3_rotZ}
+{body4O_rotZ} = {body4_rotZ}
+{body1.1O_rotX} = {body1.1_rotX}
+{body1.1O_rotY} = {body1.1_rotY}

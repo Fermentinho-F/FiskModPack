@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.mjolnir.hit",
+  "condition": "entity.getHeldItem().nbt().getString('WeaponType') == 'sabri:mjolnir' && entity.getData('sabri:dyn/mjolnir_leap_cooldown') > 0.5",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

@@ -1,0 +1,191 @@
+{
+  "name": "Upgraded Symbiote",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "emo:symbiotetransform",
+        "DISABLE": "emo:symbiotetransform"
+      }
+    },
+    "fiskheroes:transformation|sword": {
+      "key": "SWORD",
+      "transformation": {
+        "toggleData": "emo:dyn/sword",
+        "timerData": "emo:dyn/sword_timer",
+        "time": 4
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_switch",
+        "DISABLE": "fiskheroes:web_switch"
+      }
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "fiskheroes:web_shoot_ps4",
+        "RELEASE": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"],
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"],
+        "IMPACT": "fiskheroes:flight_impact_entity"
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_ps4"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 13,
+          "uses": 6,
+          "dissolveTime": 120,
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot_ps4"
+          }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 15,
+          "uses": 8,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot_ps4"
+          }
+        },
+        "fiskheroes:rapid_webs": {
+          "cooldown": 50,
+          "uses": 1,
+          "quantity": 5,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 0.5,
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "SHOOT": "fiskheroes:web_shoot_ps4"
+          }
+        },
+        "fiskheroes:ricochet_web": {
+          "cooldown": 15,
+          "uses": 5,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_shoot_ps4"
+          }
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:web_switch"
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 6
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.70]
+    },
+    "fiskheroes:damage_weakness": {
+      "damageType": "SOUND",
+      "factor": 1.0
+    },
+    "fiskheroes:fire_weakness": {
+      "radius": 2.5,
+      "duration": 100
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.7, 0, 0.4],
+        [-0.7, 0, 0.4],
+        [0.65, -0.9, 0.3],
+        [-0.65, -0.9, 0.3]
+      ],
+      "climbing": {
+        "speed": 0.3,
+        "range": 20,
+        "tolerance": 22,
+        "minAnchorPoints": 2,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+          ["BOTTOM", "RIGHT", "BACK"],
+          ["BOTTOM", "LEFT", "BACK"]
+        ]
+      },
+      "range": 8.0,
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "SHARP": 0.5,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 17.0,
+          "types": {
+            "SHARP": 1.0
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "emo:arms",
+        "DISABLE": "emo:arms"
+      }
+    }
+  }
+}

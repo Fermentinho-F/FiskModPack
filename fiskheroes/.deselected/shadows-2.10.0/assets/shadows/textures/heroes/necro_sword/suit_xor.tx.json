@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "shadows:necro_sword/suit",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "shadows:necro_sword/xor/<TIMER>"
+      }
+    ],
+    "out": "fiskheroes:generated/shadows:necro_sword<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(entity.is('DISPLAY') && entity.as('DISPLAY').getDisplayType() != 'BOOK_PREVIEW' ? 17 : 17 * (entity.getData('fiskheroes:tentacle_extend_timer')  > 0 && entity.getData('fiskheroes:blade_timer') == 1 ? 1 + (0 - 1) * entity.getInterpolatedData('fiskheroes:tentacle_extend_timer') : entity.getInterpolatedData('fiskheroes:blade_timer'))) | 0",
+      "values": {
+        "min": 0,
+        "max": 17
+      }
+    }
+  },
+  "isDynamic": true
+}

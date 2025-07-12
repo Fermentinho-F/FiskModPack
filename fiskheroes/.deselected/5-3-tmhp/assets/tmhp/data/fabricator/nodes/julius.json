@@ -1,0 +1,15 @@
+{
+  "suit": "tmhp:julius",
+  "requirements": [
+    "elseworld:tier11",
+    "elseworld:ap10",
+    "fiskheroes:flight",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration2",
+    "fiskheroes:teleportation",
+    "tmhp:black_clover",
+    "tmhp:time_magic",
+    "tmhp:heropack2"
+  ]
+}

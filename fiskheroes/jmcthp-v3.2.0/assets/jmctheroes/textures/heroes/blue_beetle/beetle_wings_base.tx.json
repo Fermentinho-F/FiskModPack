@@ -1,0 +1,12 @@
+{
+  "texture": "jmctheroes:blue_beetle/beetle_wings_base_<TIMER>",
+"getters": {
+    "TIMER": {
+      "key": "entity.isDisplayStand() ? 10 : (Math.ceil(10 * entity.getInterpolatedData('fiskheroes:flight_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}

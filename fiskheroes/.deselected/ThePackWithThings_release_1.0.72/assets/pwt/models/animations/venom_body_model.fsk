@@ -1,0 +1,27 @@
+
+{right_arm_up_rotX} @ {data_0} -> 20.0'
+{right_arm_up_rotZ} @ {data_0} -> 5.0'
+{right_arm_bottom_rotX} @ {data_0} -> -45.0'
+{right_arm_bottom_rotY} @ {data_0} -> -5.0'
+{right_arm_bottom_rotZ} @ {data_0} -> -10.0'
+
+{left_arm_up_rotX} @ {data_0} -> 20.0'
+{left_arm_up_rotZ} @ {data_0} -> -5.0'
+{left_arm_bottom_rotX} @ {data_0} -> -45.0'
+{left_arm_bottom_rotY} @ {data_0} -> 5.0'
+{left_arm_bottom_rotZ} @ {data_0} -> 10.0'
+
+{body_bottom_rotX} @ {data_0} -> 5.0'
+{body_torso_rotX} @ {data_0} -> 10.0'
+
+{left_leg_up_rotX} @ {data_0} -> -10.0'
+{left_leg_up_rotY} @ {data_0} -> -5.0'
+{left_leg_up_rotZ} @ {data_0} -> -5.0'
+{left_leg_bottom_rotX} @ {data_0} -> 15.0'
+{left_leg_bottom_rotZ} @ {data_0} -> 5.0'
+
+{right_leg_up_rotX} @ {data_0} -> -10.0'
+{right_leg_up_rotY} @ {data_0} -> 5.0'
+{right_leg_up_rotZ} @ {data_0} -> 5.0'
+{right_leg_bottom_rotX} @ {data_0} -> 15.0'
+{right_leg_bottom_rotZ} @ {data_0} -> -5.0'

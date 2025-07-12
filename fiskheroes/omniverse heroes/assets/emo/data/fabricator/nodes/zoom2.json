@@ -1,0 +1,9 @@
+{
+  "suit": "emo:zoom2",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:the_flash_hunter",
+    "fiskheroes:speed_force",
+    "emo:cadmus"
+  ]
+}

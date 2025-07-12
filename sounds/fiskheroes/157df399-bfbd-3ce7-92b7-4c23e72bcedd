@@ -1,0 +1,551 @@
+{
+  "suit.lightsaber.unholster": {
+    "sounds": [
+      "suit/lightsaber_unholster"
+    ],
+    "category": "player"
+  },
+  "suit.lightsaber.holster": {
+    "sounds": [
+      "suit/lightsaber_holster"
+    ],
+    "category": "player"
+  },
+  "suit.anakin.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_anakin_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_kenobi_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.vader.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_vader_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.windu.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_windu_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.ahsoka.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_ahsoka_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.maul.lightsaber.ignite": {
+    "sounds": [
+      "suit/lightsaber_maul_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.darksaber.ignite": {
+    "sounds": [
+      "suit/darksaber_ignite"
+    ],
+    "category": "player"
+  },
+  "suit.anakin.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_anakin_retract"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_kenobi_retract"
+    ],
+    "category": "player"
+  },
+  "suit.vader.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_vader_retract"
+    ],
+    "category": "player"
+  },
+  "suit.windu.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_windu_retract"
+    ],
+    "category": "player"
+  },
+  "suit.ahsoka.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_ahsoka_retract"
+    ],
+    "category": "player"
+  },
+  "suit.maul.lightsaber.retract": {
+    "sounds": [
+      "suit/lightsaber_maul_retract"
+    ],
+    "category": "player"
+  },
+  "suit.darksaber.retract": {
+    "sounds": [
+      "suit/darksaber_retract"
+    ],
+    "category": "player"
+  },
+  "suit.anakin.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_anakin_hum"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_kenobi_hum"
+    ],
+    "category": "player"
+  },
+  "suit.vader.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_vader_hum"
+    ],
+    "category": "player"
+  },
+  "suit.windu.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_windu_hum"
+    ],
+    "category": "player"
+  },
+  "suit.ahsoka.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_ahsoka_hum"
+    ],
+    "category": "player"
+  },
+  "suit.maul.lightsaber.hum": {
+    "sounds": [
+      "suit/lightsaber_maul_hum"
+    ],
+    "category": "player"
+  },
+  "suit.darksaber.hum": {
+    "sounds": [
+      "suit/darksaber_hum"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.lightsaber.block": {
+    "sounds": [
+      "suit/lightsaber_kenobi_block"
+    ],
+    "category": "player"
+  },
+  "suit.windu.lightsaber.block": {
+    "sounds": [
+      "suit/lightsaber_windu_block"
+    ],
+    "category": "player"
+  },
+  "suit.maul.lightsaber.block": {
+    "sounds": [
+      "suit/lightsaber_maul_block"
+    ],
+    "category": "player"
+  },
+  "suit.lightsaber.deflect": {
+    "sounds": [
+      "suit/lightsaber_deflect_1",
+      "suit/lightsaber_deflect_2"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.lightsaber.swing": {
+    "sounds": [
+      "suit/lightsaber_kenobi_swing_1",
+      "suit/lightsaber_kenobi_swing_2",
+      "suit/lightsaber_kenobi_swing_3"
+    ],
+    "category": "player"
+  },
+  "suit.windu.lightsaber.swing": {
+    "sounds": [
+      "suit/lightsaber_windu_swing_1",
+      "suit/lightsaber_windu_swing_2",
+      "suit/lightsaber_windu_swing_3"
+    ],
+    "category": "player"
+  },
+  "suit.ahsoka.lightsaber.swing": {
+    "sounds": [
+      "suit/lightsaber_ahsoka_swing_1",
+      "suit/lightsaber_ahsoka_swing_2",
+      "suit/lightsaber_ahsoka_swing_3"
+    ],
+    "category": "player"
+  },
+  "suit.maul.lightsaber.swing": {
+    "sounds": [
+      "suit/lightsaber_maul_swing_1",
+      "suit/lightsaber_maul_swing_2",
+      "suit/lightsaber_maul_swing_3"
+    ],
+    "category": "player"
+  },
+  "suit.lightsaber.swing": {
+    "sounds": [
+      "suit/lightsaber_swing_1",
+      "suit/lightsaber_swing_2",
+      "suit/lightsaber_swing_3",
+      "suit/lightsaber_swing_4"
+    ],
+    "category": "player"
+  },
+  "suit.darksaber.swing": {
+    "sounds": [
+      "suit/darksaber_swing_1",
+      "suit/darksaber_swing_2",
+      "suit/darksaber_swing_3"
+    ],
+    "category": "player"
+  },
+  "suit.lightsaber.throw": {
+    "sounds": [
+      "suit/lightsaber_throw_loop"
+    ],
+    "category": "player"
+  },
+  "suit.lightsaber.doublebladed.throw": {
+    "sounds": [
+      "suit/lightsaber_doublebladed_throw_loop"
+    ],
+    "category": "player"
+  },
+  "suit.anakin.voiceline": {
+    "sounds": [
+      "suit/voice_line_anakin_1",
+      "suit/voice_line_anakin_2",
+      "suit/voice_line_anakin_3",
+      "suit/voice_line_anakin_4",
+      "suit/voice_line_anakin_5",
+      "suit/voice_line_anakin_6"
+    ],
+    "category": "player"
+  },
+  "suit.kenobi.voiceline": {
+    "sounds": [
+      "suit/voice_line_kenobi_1",
+      "suit/voice_line_kenobi_2",
+      "suit/voice_line_kenobi_3",
+      "suit/voice_line_kenobi_4",
+      "suit/voice_line_kenobi_5",
+      "suit/voice_line_kenobi_6"
+    ],
+    "category": "player"
+  },
+  "suit.windu.voiceline": {
+    "sounds": [
+      "suit/voice_line_windu_1",
+      "suit/voice_line_windu_2",
+      "suit/voice_line_windu_3",
+      "suit/voice_line_windu_4"
+    ],
+    "category": "player"
+  },
+  "suit.vader.voiceline": {
+    "sounds": [
+      "suit/voice_line_vader_1",
+      "suit/voice_line_vader_2",
+      "suit/voice_line_vader_3",
+      "suit/voice_line_vader_4",
+      "suit/voice_line_vader_5",
+      "suit/voice_line_vader_6"
+    ],
+    "category": "player"
+  },
+  "suit.maul.voiceline": {
+    "sounds": [
+      "suit/voice_line_maul_1",
+      "suit/voice_line_maul_2",
+      "suit/voice_line_maul_3",
+      "suit/voice_line_maul_4",
+      "suit/voice_line_maul_5",
+      "suit/voice_line_maul_6"
+    ],
+    "category": "player"
+  },
+  "suit.ahsoka.voiceline": {
+    "sounds": [
+      "suit/voice_line_ahsoka_1",
+      "suit/voice_line_ahsoka_2",
+      "suit/voice_line_ahsoka_3",
+      "suit/voice_line_ahsoka_4",
+      "suit/voice_line_ahsoka_5",
+      "suit/voice_line_ahsoka_6"
+    ],
+    "category": "player"
+  },
+  "suit.mandalorian.voiceline": {
+    "sounds": [
+      "suit/voice_line_mandalorian_1",
+      "suit/voice_line_mandalorian_2",
+      "suit/voice_line_mandalorian_3",
+      "suit/voice_line_mandalorian_4",
+      "suit/voice_line_mandalorian_5",
+      "suit/voice_line_mandalorian_6"
+    ],
+    "category": "player"
+  },
+  "suit.darthvader.breathing": {
+    "sounds": [
+      "suit/darthvader_breathing"
+    ],
+    "category": "player"
+  },
+  "suit.darthvader.activate": {
+    "sounds": [
+      "suit/mechanicalsuit_activate"
+    ],
+    "category": "player"
+  },
+  "suit.mandalorian.grapple": {
+    "sounds": [
+      "suit/mandalorian_grapple"
+    ],
+    "category": "player"
+  },
+  "suit.mandalorian.grogusummon": {
+    "sounds": [
+      "suit/grogu_summon"
+    ],
+    "category": "player"
+  },
+  "suit.mandalorian.grogupod": {
+    "sounds": [
+      "suit/grogu_pod"
+    ],
+    "category": "player"
+  },
+  "suit.mandalorian.grogulaugh": {
+    "sounds": [
+      "suit/grogu_laugh"
+    ],
+    "category": "player"
+  },
+  "suit.forcegrab": {
+    "sounds": [
+      "suit/forcegrab"
+    ],
+    "category": "player"
+  },
+  "suit.forcegrab.loop": {
+    "sounds": [
+      "suit/forcegrab_loop"
+    ],
+    "category": "player"
+  },
+  "suit.jedi.forcepush.charge": {
+    "sounds": [
+      "suit/forcepush_jedi_charge_1",
+      "suit/forcepush_jedi_charge_2"
+    ],
+    "category": "player"
+  },
+  "suit.sith.forcepush.charge": {
+    "sounds": [
+      "suit/forcepush_sith_charge_1",
+      "suit/forcepush_sith_charge_2"
+    ],
+    "category": "player"
+  },
+  "suit.jedi.forcepush": {
+    "sounds": [
+      "suit/forcepush_jedi_1",
+      "suit/forcepush_jedi_2"
+    ],
+    "category": "player"
+  },
+  "suit.sith.forcepush": {
+    "sounds": [
+      "suit/forcepush_sith_1",
+      "suit/forcepush_sith_2",
+      "suit/forcepush_sith_3",
+      "suit/forcepush_sith_4"
+    ],
+    "category": "player"
+  },
+  "suit.heroicmight.charge": {
+    "sounds": [
+      "suit/heroicmight_charge"
+    ],
+    "category": "player"
+  },
+  "suit.heroicmight": {
+    "sounds": [
+      "suit/heroicmight"
+    ],
+    "category": "player"
+  },
+  "suit.jedimindtrick": {
+    "sounds": [
+      "suit/jedimindtrick_1",
+      "suit/jedimindtrick_2"
+    ],
+    "category": "player"
+  },
+  "suit.shatterpoint.charge": {
+    "sounds": [
+      "suit/shatterpoint_charge"
+    ],
+    "category": "player"
+  },
+  "suit.shatterpoint": {
+    "sounds": [
+      "suit/shatterpoint"
+    ],
+    "category": "player"
+  },
+  "suit.fury.charge": {
+    "sounds": [
+      "suit/fury_charge"
+    ],
+    "category": "player"
+  },
+  "suit.fury.start": {
+    "sounds": [
+      "suit/fury_start"
+    ],
+    "category": "player"
+  },
+  "suit.fury.loop": {
+    "sounds": [
+      "suit/fury_loop"
+    ],
+    "category": "player"
+  },
+  "suit.forcelightning.charge": {
+    "sounds": [
+      "suit/forcelightning_charge"
+    ],
+    "category": "player"
+  },
+  "suit.forcelightning.shoot": {
+    "sounds": [
+      "suit/forcelightning_shoot"
+    ],
+    "category": "player"
+  },
+  "suit.forcelightning.stop": {
+    "sounds": [
+      "suit/forcelightning_stop"
+    ],
+    "category": "player"
+  },
+  "suit.doublebladespin": {
+    "sounds": [
+      "suit/doublebladespin"
+    ],
+    "category": "player"
+  },
+  "suit.clonetrooper.voiceline": {
+    "sounds": [
+      "suit/voice_line_clone_trooper_1",
+      "suit/voice_line_clone_trooper_2",
+      "suit/voice_line_clone_trooper_3",
+      "suit/voice_line_clone_trooper_4"
+    ],
+    "category": "player"
+  },
+  "weapon.ambanphasepulseblaster.shoot": {
+    "sounds": [
+      "weapon/ambanphasepulseblaster_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.ambanphasepulseblaster.charge": {
+    "sounds": [
+      "weapon/ambanphasepulseblaster_charge"
+    ],
+    "category": "player"
+  },
+  "weapon.ib94.shoot": {
+    "sounds": [
+      "weapon/ib94_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.ib94.shoot.rapid": {
+    "sounds": [
+      "weapon/ib94_shoot_rapid"
+    ],
+    "category": "player"
+  },
+  "weapon.ib94.ready": {
+    "sounds": [
+      "weapon/ib94_ready"
+    ],
+    "category": "player"
+  },
+  "weapon.dc17.shoot": {
+    "sounds": [
+      "weapon/dc17_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.dc17m.shoot": {
+    "sounds": [
+      "weapon/dc17m_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.dc15a.shoot": {
+    "sounds": [
+      "weapon/dc15a_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.dc15s.shoot": {
+    "sounds": [
+      "weapon/dc15s_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.rps6.shoot": {
+    "sounds": [
+      "weapon/rps6_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.rps6.explode": {
+    "sounds": [
+      "weapon/rps6_explode"
+    ],
+    "category": "player"
+  },
+  "weapon.z6.start": {
+    "sounds": [
+      "weapon/z6_start"
+    ],
+    "category": "player"
+  },
+  "weapon.z6.start.loop": {
+    "sounds": [
+      "weapon/z6_start_loop"
+    ],
+    "category": "player"
+  },
+  "weapon.z6.shoot": {
+    "sounds": [
+      "weapon/z6_shoot"
+    ],
+    "category": "player"
+  },
+  "weapon.z6.stop": {
+    "sounds": [
+      "weapon/z6_stop"
+    ],
+    "category": "player"
+  }
+}

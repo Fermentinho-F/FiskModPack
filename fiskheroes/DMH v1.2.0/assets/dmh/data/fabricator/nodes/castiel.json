@@ -1,0 +1,21 @@
+{
+  "suit": "dmh:castiel",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:magic",
+    "fiskheroes:flight",
+    "fiskheroes:cosmic",
+    "fiskheroes:regeneration2",
+    "fiskheroes:marksmanship",
+    "fiskheroes:object_manipulation",
+    "dmh:dmhp"
+  ],
+  "price": {
+    "IRID_GOLD": 48,
+    "XP_LEVELS": 60
+  }
+}

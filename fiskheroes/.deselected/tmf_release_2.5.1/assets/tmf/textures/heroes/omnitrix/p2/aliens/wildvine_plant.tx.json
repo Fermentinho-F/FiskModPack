@@ -1,0 +1,14 @@
+{
+  "texture": "tmf:omnitrix/p2/aliens/wildvine_plant<MODEL>",
+
+  "getters": {
+    "MODEL": {
+      "key": "Math.ceil(entity.getInterpolatedData('tmf:dyn/pc_1')) | 0",
+      "values": {
+        "min": 0,
+        "max": 3
+      }
+    }
+  },
+  "isDynamic": true
+}

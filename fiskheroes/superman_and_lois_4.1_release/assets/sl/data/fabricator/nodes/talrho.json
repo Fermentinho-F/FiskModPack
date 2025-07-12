@@ -1,0 +1,17 @@
+{
+  "suit": "sl:talrho",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:kryptonian_physiology",
+    "sl:sl",
+    "sl:ap8_9"
+  ],
+  "display": {
+    "description": "Tal-Rho, son of Zeta-Rho"
+  }
+}

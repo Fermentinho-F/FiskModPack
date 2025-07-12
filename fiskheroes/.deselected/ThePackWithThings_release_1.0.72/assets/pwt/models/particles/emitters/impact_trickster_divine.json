@@ -1,0 +1,21 @@
+{
+  "particles": [
+	{
+      "type": "SPARK",
+      "amount": 10,
+      "randOffset": [2.6, 2.6, 2.6]
+    },
+	{
+      "type": "DWARF_STAR_ENERGY",
+      "amount": 30,
+      "randOffset": [2.0, 2.0, 2.0],
+	  "randMotion": [1.2, -0.2, 1.2]
+    },
+	{
+      "type": "minecraft:largeexplode",
+      "amount": 4,
+      "randOffset": [1.7, 1.7, 1.7],
+	  "randMotion": [0.3, -0.2, -0.3]
+    }
+  ]
+}

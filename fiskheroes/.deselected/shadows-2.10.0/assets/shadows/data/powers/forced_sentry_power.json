@@ -1,0 +1,66 @@
+{
+  "name": " ",
+  "modifiers": {
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": false,
+        "projectiles": false,
+        "inanimates": false
+      },
+      "range": 10.0
+    },
+    "fiskheroes:cooldown|ForceSentry": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:grab_id') > -1",
+        "cooldownData": "shadows:dyn/forced_sentry_timer",
+        "duration": 5,
+        "recovery": 0.01
+      }
+    },
+    "fiskheroes:cooldown|DomeForceSentry": {
+      "cooldown": {
+        "toggleData": "entity.getData('shadows:dyn/2boolean_reset')",
+        "cooldownData": "shadows:dyn/dome_forced_sentry_timer",
+        "duration": 400,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 0.0
+    },
+    "fiskheroes:shadowdome": {
+      "chargeTime": 0,
+      "duration": 0.1,
+      "radius": 24.0
+    },
+    "fiskheroes:transformation|charge": {
+      "key": "SHADOW_DOME",
+      "transformation": {
+        "toggleData": "shadows:dyn/2boolean_reset",
+        "timerData": "shadows:dyn/1float_interp_reset",
+        "time": 1
+      },
+      "isToggle": false
+    }
+  },
+  "hud": [{
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/intangibility.png",
+      "data": "entity.getData('shadows:dyn/dome_forced_sentry_timer') > 0  ? Math.max(Math.min(1 - entity.getData('shadows:dyn/dome_forced_sentry_timer'), 0.99), 0.00000001) : 0"
+    }, {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "entity.getData('shadows:dyn/forced_sentry') ? entity.getData('shadows:dyn/forced_sentry_timer') : 0"
+    }
+
+  ]
+}

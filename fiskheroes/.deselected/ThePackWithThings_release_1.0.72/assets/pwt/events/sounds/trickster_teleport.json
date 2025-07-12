@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.trickster.enderman.tp",
+  "volume": 1.0,
+  "delay": 14.0,
+  "pitch": "0.9 + Math.random() * 0.2"
+}

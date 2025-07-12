@@ -1,0 +1,18 @@
+{
+  "particles": [
+    {
+	  "conditionals": "entity.ticksExisted() % 3 >= 0 && entity.ticksExisted() % 3 < 1 && entity.getData('fiskheroes:energy_projection_timer') <=1",
+      "type": "SPARK",
+      "amount": 3,
+      "randOffset": [0.1, 0.1, 0.1],
+      "randMotion": [0.1, 0.1, 0.0]
+    },
+	{
+	  "conditionals": "entity.ticksExisted() % 3 >= 0 && entity.ticksExisted() % 3 < 1 && entity.getData('fiskheroes:energy_projection_timer') <=1",
+      "type": "minecraft:explode",
+      "amount": 3,
+      "randOffset": [0.0, 0.0, 0.0],
+      "randMotion": [0.0, 0.0, 0.0]
+    }
+  ]
+}

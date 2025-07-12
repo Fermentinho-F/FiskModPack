@@ -1,0 +1,13 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "shadows:aragami.abilities.movement.double_jump",
+  "condition": {
+    "start": "entity.getData('shadows:dyn/1boolean_reset') && entity.getData('shadows:dyn/2float_interp_reset') < 0.2 && !entity.isSprinting()",
+    "continue": "entity.getData('shadows:dyn/1boolean_reset') && entity.getData('shadows:dyn/2float_interp_reset') < 1 && !entity.isSprinting()"
+  },
+  "volume": 0.5,
+  "pitch": "1 + (Math.random() * 0.2)",
+  "loop": false,
+  "fadeIn": 4,
+  "fadeOut": 4
+}

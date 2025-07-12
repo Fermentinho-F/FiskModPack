@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "entity.getData('fiskheroes:moving') && entity.isOnGround()",
+  "sound": "jmctheroes:wheel",
+  "volume": 0.4,
+  "pitch": "0.9 + Math.random() * 0.3",
+  "fadeOut": 5,
+  "loop": true
+}

@@ -1,0 +1,10 @@
+{
+  "attributes": {
+    "DAMAGE_REDUCTION": [0, 4],
+    "PUNCH_DAMAGE": [1, 3],
+    "WEAPON_DAMAGE": [0, 2],
+    "JUMP_HEIGHT": [1, 2],
+    "FALL_RESISTANCE": [0, 3],
+    "SPRINT_SPEED": [2, 4]
+  }
+}

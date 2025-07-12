@@ -1,0 +1,349 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+{punch} = {data_0}*(1-{data_11})
+{sneak} = {data_1}*(1-{data_11})
+{idle} = sin(pi{data_2})
+
+{x} = curve {data_9}
+{data_9} = sin(pi(1 - {data_9}))^2
+
+{main_rotY} += 360{data_10}'
+
+{head_rotX} @ {data_9} -> 75'
+{body_rotX} += 360{x}'
+{rArm_rotX} @ {data_9} -> -85'
+{lArm_rotX} @ {data_9} -> -85'
+{rLeg_rotX} @ {data_9} -> -75'
+{lLeg_rotX} @ {data_9} -> -75'
+
+{head_rotX} -= {lookY}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.1
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+
+{rArm_rotZ} += 0.05{idle}
+{lArm_rotZ} -= 0.05{idle}
+;Sneak==========================================================
+{body_posY} += 2{sneak}
+
+{head_rotX} -= 0.5{sneak}
+{body_rotX} += 0.5{sneak}
+{rArm_rotX} -= 0.2{sneak} + 88{data_11}'
+{lArm_rotX} -= 0.2{sneak} + 85{data_11}'
+{rLeg_rotX} -= 0.5{sneak}
+{lLeg_rotX} -= 0.5{sneak}
+{rLeg_posY} -= {sneak}
+{lLeg_posY} -= {sneak}
+;WalkingAnim==========================================================
+    {movement} = cos({limbSwing} * 0.6662 + pi) * {limbSwingAmount} * (1-{data_11})
+    {rLeg_rotX} -= {movement}
+    {lLeg_rotX} += {movement} 
+
+    {rArm_rotX} += {movement}
+    {lArm_rotX} -= {movement}
+
+;Dupes==========================================================
+    ;Dupe1==========================================================
+    {head2_rotX} = {head_rotX}
+    {head2_rotY} = {head_rotY}
+    {body2_rotX} = {body_rotX}
+    {body2_rotY} = {body_rotY}
+    {body2_posY} = {body_posY}
+
+    {rArm2_rotX} = {rArm_rotX}
+    {rArm2_rotY} = {rArm_rotY}
+    {rArm2_rotZ} = {rArm_rotZ}
+    {rArm2_posX} = {rArm_posX}
+    {rArm2_posZ} = {rArm_posZ}
+
+    {lArm2_rotX} = {lArm_rotX}
+    {lArm2_rotY} = {lArm_rotY}
+    {lArm2_rotZ} = {lArm_rotZ} 
+    {lArm2_posX} = {lArm_posX}
+    {lArm2_posZ} = {lArm_posZ}
+
+    {rLeg2_rotX} = {rLeg_rotX}
+    {rLeg2_posY} = {rLeg_posY}
+
+    {lLeg2_rotX} = {lLeg_rotX}
+    {lLeg2_posY} = {lLeg_posY}
+
+    ;Dupe2==========================================================
+    {head3_rotX} = {head_rotX}
+    {head3_rotY} = {head_rotY}
+    {body3_rotX} = {body_rotX}
+    {body3_rotY} = {body_rotY}
+    {body3_posY} = {body_posY}
+    {rArm3_rotX} = {rArm_rotX}
+    {rArm3_rotY} = {rArm_rotY}
+    {rArm3_rotZ} = {rArm_rotZ}
+    {rArm3_posX} = {rArm_posX}
+    {rArm3_posZ} = {rArm_posZ}
+    {lArm3_rotX} = {lArm_rotX}
+    {lArm3_rotY} = {lArm_rotY}
+    {lArm3_rotZ} = {lArm_rotZ} 
+    {lArm3_posX} = {lArm_posX}
+    {lArm3_posZ} = {lArm_posZ}
+    {rLeg3_rotX} = {rLeg_rotX}
+    {rLeg3_posY} = {rLeg_posY}
+    {lLeg3_rotX} = {lLeg_rotX}
+    {lLeg3_posY} = {lLeg_posY}
+
+    ;Dupe3==========================================================
+    {head4_rotX} = {head_rotX}
+    {head4_rotY} = {head_rotY}
+    {body4_rotX} = {body_rotX}
+    {body4_rotY} = {body_rotY}
+    {body4_posY} = {body_posY}
+    {rArm4_rotX} = {rArm_rotX}
+    {rArm4_rotY} = {rArm_rotY}
+    {rArm4_rotZ} = {rArm_rotZ}
+    {rArm4_posX} = {rArm_posX}
+    {rArm4_posZ} = {rArm_posZ}
+    {lArm4_rotX} = {lArm_rotX}
+    {lArm4_rotY} = {lArm_rotY}
+    {lArm4_rotZ} = {lArm_rotZ} 
+    {lArm4_posX} = {lArm_posX}
+    {lArm4_posZ} = {lArm_posZ}
+    {rLeg4_rotX} = {rLeg_rotX}
+    {rLeg4_posY} = {rLeg_posY}
+    {lLeg4_rotX} = {lLeg_rotX}
+    {lLeg4_posY} = {lLeg_posY}
+
+;Dupe4==========================================================
+    {head5_rotX} = {head_rotX}
+    {head5_rotY} = {head_rotY}
+    {body5_rotX} = {body_rotX}
+    {body5_rotY} = {body_rotY}
+    {body5_posY} = {body_posY}
+    {rArm5_rotX} = {rArm_rotX}
+    {rArm5_rotY} = {rArm_rotY}
+    {rArm5_rotZ} = {rArm_rotZ}
+    {rArm5_posX} = {rArm_posX}
+    {rArm5_posZ} = {rArm_posZ}
+    {lArm5_rotX} = {lArm_rotX}
+    {lArm5_rotY} = {lArm_rotY}
+    {lArm5_rotZ} = {lArm_rotZ} 
+    {lArm5_posX} = {lArm_posX}
+    {lArm5_posZ} = {lArm_posZ}
+    {rLeg5_rotX} = {rLeg_rotX}
+    {rLeg5_posY} = {rLeg_posY}
+    {lLeg5_rotX} = {lLeg_rotX}
+    {lLeg5_posY} = {lLeg_posY}
+;Dupe5==========================================================
+    {head6_rotX} = {head_rotX}
+    {head6_rotY} = {head_rotY}
+    {body6_rotX} = {body_rotX}
+    {body6_rotY} = {body_rotY}
+    {body6_posY} = {body_posY}
+    {rArm6_rotX} = {rArm_rotX}
+    {rArm6_rotY} = {rArm_rotY}
+    {rArm6_rotZ} = {rArm_rotZ}
+    {rArm6_posX} = {rArm_posX}
+    {rArm6_posZ} = {rArm_posZ}
+    {lArm6_rotX} = {lArm_rotX}
+    {lArm6_rotY} = {lArm_rotY}
+    {lArm6_rotZ} = {lArm_rotZ} 
+    {lArm6_posX} = {lArm_posX}
+    {lArm6_posZ} = {lArm_posZ}
+    {rLeg6_rotX} = {rLeg_rotX}
+    {rLeg6_posY} = {rLeg_posY}
+    {lLeg6_rotX} = {lLeg_rotX}
+    {lLeg6_posY} = {lLeg_posY}
+;Dupe6==========================================================
+    {head7_rotX} = {head_rotX}
+    {head7_rotY} = {head_rotY}
+    {body7_rotX} = {body_rotX}
+    {body7_rotY} = {body_rotY}
+    {body7_posY} = {body_posY}
+    {rArm7_rotX} = {rArm_rotX}
+    {rArm7_rotY} = {rArm_rotY}
+    {rArm7_rotZ} = {rArm_rotZ}
+    {rArm7_posX} = {rArm_posX}
+    {rArm7_posZ} = {rArm_posZ}
+    {lArm7_rotX} = {lArm_rotX}
+    {lArm7_rotY} = {lArm_rotY}
+    {lArm7_rotZ} = {lArm_rotZ} 
+    {lArm7_posX} = {lArm_posX}
+    {lArm7_posZ} = {lArm_posZ}
+    {rLeg7_rotX} = {rLeg_rotX}
+    {rLeg7_posY} = {rLeg_posY}
+    {lLeg7_rotX} = {lLeg_rotX}
+    {lLeg7_posY} = {lLeg_posY}
+;Dupe7==========================================================
+    {head8_rotX} = {head_rotX}
+    {head8_rotY} = {head_rotY}
+    {body8_rotX} = {body_rotX}
+    {body8_rotY} = {body_rotY}
+    {body8_posY} = {body_posY}
+    {rArm8_rotX} = {rArm_rotX}
+    {rArm8_rotY} = {rArm_rotY}
+    {rArm8_rotZ} = {rArm_rotZ}
+    {rArm8_posX} = {rArm_posX}
+    {rArm8_posZ} = {rArm_posZ}
+    {lArm8_rotX} = {lArm_rotX}
+    {lArm8_rotY} = {lArm_rotY}
+    {lArm8_rotZ} = {lArm_rotZ} 
+    {lArm8_posX} = {lArm_posX}
+    {lArm8_posZ} = {lArm_posZ}
+    {rLeg8_rotX} = {rLeg_rotX}
+    {rLeg8_posY} = {rLeg_posY}
+    {lLeg8_rotX} = {lLeg_rotX}
+    {lLeg8_posY} = {lLeg_posY}
+;Dupe8==========================================================
+    {head9_rotX} = {head_rotX}
+    {head9_rotY} = {head_rotY}
+    {body9_rotX} = {body_rotX}
+    {body9_rotY} = {body_rotY}
+    {body9_posY} = {body_posY}
+    {rArm9_rotX} = {rArm_rotX}
+    {rArm9_rotY} = {rArm_rotY}
+    {rArm9_rotZ} = {rArm_rotZ}
+    {rArm9_posX} = {rArm_posX}
+    {rArm9_posZ} = {rArm_posZ}
+    {lArm9_rotX} = {lArm_rotX}
+    {lArm9_rotY} = {lArm_rotY}
+    {lArm9_rotZ} = {lArm_rotZ} 
+    {lArm9_posX} = {lArm_posX}
+    {lArm9_posZ} = {lArm_posZ}
+    {rLeg9_rotX} = {rLeg_rotX}
+    {rLeg9_posY} = {rLeg_posY}
+    {lLeg9_rotX} = {lLeg_rotX}
+    {lLeg9_posY} = {lLeg_posY}
+
+
+;Dupe1=============================================
+{dupe1} = curve min(animate2({data_3}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_3}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_3}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_3}, 2, 0.8, 0.2, 0), 1)
+
+    {rLeg2_rotZ} @ {dupe1} -> 10'
+
+    {body2_rotZ} @ {dupe2} -> 10'
+
+    {body2_posX} @ {dupe2.2} -> -16
+    {body2_posZ} @ {dupe2.2} -> -4
+
+    {rLeg2_rotZ} @ {dupe3} -> 0
+    {body2_rotZ} @ {dupe3} -> 0
+    {body2_rotY} @ {dupe3} -> -10'
+    ;Dupe1Spin=============================================
+        {head2_rotX} -= 100{data_11}'
+        {body2_posY} += 5{data_11}
+        {body2_posZ} -= 16.5{data_11}
+        {body2_rotX} += 100{data_11}'
+        {body2_rotY} -= 190{data_11}'
+        {rArm2_rotX} -= 110{data_11}'
+        {lArm2_rotX} -= 113{data_11}'
+
+;Dupe2=============================================
+{dupe1} = curve min(animate2({data_4}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_4}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_4}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_4}, 2, 0.8, 0.2, 0), 1)
+
+    {lLeg3_rotZ} @ {dupe1} -> -10'
+
+    {body3_rotZ} @ {dupe2} -> -10'
+
+    {body3_posX} @ {dupe2.2} -> 18
+    {body3_posZ} @ {dupe2.2} -> -3
+
+    {lLeg3_rotZ} @ {dupe3} -> 0
+    {body3_rotZ} @ {dupe3} -> 0
+    {body3_rotY} @ {dupe3} -> 10'
+    ;Dupe2Spin=============================================
+        {head3_rotX} -= 100{data_11}'
+        {body3_posY} += 6{data_11}
+        {body3_posZ} -= 38.5{data_11}
+        {body3_rotX} += 100{data_11}'
+        {body3_rotY} += 170{data_11}'
+        {rArm3_rotX} -= 110{data_11}'
+        {lArm3_rotX} -= 113{data_11}'
+        {rArm3_rotZ} += 10{data_11}'
+        {lArm3_rotZ} -= 8{data_11}'
+;Dupe3=============================================
+{dupe1} = curve min(animate2({data_5}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_5}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_5}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_5}, 2, 0.8, 0.2, 0), 1)
+
+    {rLeg4_rotZ} @ {dupe1} -> 10'
+
+    {body4_rotZ} @ {dupe2} -> 10'
+
+    {body4_posX} @ {dupe2.2} -> -31
+    {body4_posZ} @ {dupe2.2} -> -6
+
+    {rLeg4_rotZ} @ {dupe3} -> 0
+    {body4_rotZ} @ {dupe3} -> 0
+    {body4_rotY} @ {dupe3} -> -25'
+;Dupe4=============================================
+{dupe1} = curve min(animate2({data_6}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_6}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_6}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_6}, 2, 0.8, 0.2, 0), 1)
+
+    {lLeg5_rotZ} @ {dupe1} -> -10'
+
+    {body5_rotZ} @ {dupe2} -> -10'
+
+    {body5_posX} @ {dupe2.2} -> 32
+    {body5_posZ} @ {dupe2.2} -> -7
+
+    {lLeg5_rotZ} @ {dupe3} -> 0
+    {body5_rotZ} @ {dupe3} -> 0
+    {body5_rotY} @ {dupe3} -> 32'
+;Dupe5=============================================
+{dupe1} = curve min(animate2({data_7}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_7}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_7}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_7}, 2, 0.8, 0.2, 0), 1)
+
+    {rLeg6_rotX} -= {dupe1}*20'
+
+    {body6_rotZ} @ {dupe2} -> 5'
+
+    {body6_posX} @ {dupe2.2} -> -5
+    {body6_posZ} @ {dupe2.2} -> -8
+
+    {rLeg6_rotX} += {dupe1}*20'
+    {body6_rotZ} @ {dupe3} -> 0
+;Dupe6=============================================
+{dupe1} = curve min(animate2({data_8}, 2, 0, 0.5, 0), 1)
+{dupe2} = curve min(animate2({data_8}, 2, 0.5, 0.3, 0), 1)
+{dupe2.2} = curve min(animate2({data_8}, 2, 0.5, 0.5, 0), 1)
+{dupe3} = curve min(animate2({data_8}, 2, 0.8, 0.2, 0), 1)
+
+    {lLeg7_rotX}  -= {dupe1}*20'
+
+    {body7_rotZ} @ {dupe2} -> -5'
+
+    {body7_posX} @ {dupe2.2} -> 8
+    {body7_posZ} @ {dupe2.2} -> -9
+    
+    {lLeg7_rotX} += {dupe1}*20'
+    {body7_rotZ} @ {dupe3} -> 0

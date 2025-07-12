@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.onomo2",
+  "volume": 1.0,
+  "condition": "fiskheroes:aiming",
+  "pitch": "1.2 - Math.random() * 0.3",
+  "fadeIn": 10,
+  "fadeOut": 10
+}

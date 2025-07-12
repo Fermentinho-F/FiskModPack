@@ -1,0 +1,11 @@
+{
+    "suit": "emo:hulk",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:traversal",
+      "fiskheroes:defense2",
+      "fiskheroes:melee2",
+      "emo:cadmus"
+    ]
+  }
+  

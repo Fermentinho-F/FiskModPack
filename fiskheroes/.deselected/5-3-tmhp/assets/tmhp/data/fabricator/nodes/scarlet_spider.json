@@ -1,0 +1,19 @@
+{
+  "suit": "tmhp:scarlet_spider",
+  "display": {
+  "description": "\u00A74Kaine came down here to get away from the insanity of Spider-Man's world. But then he put on a costume and fought crime anyway. He wanted all the power, and none of the responsibility. But he took it on anyway. He found a home here. He had friends here. A city that counted on him. And while he may not have liked it... turns out Kaine is every bit the hero that I am. Wherever he is... I hope my brother has found peace. \u00A7c-\u00A7oPeter Parker"
+  },
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap6_7",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "tmhp:spider_man_comics",
+    "tmhp:marvel",
+    "tmhp:heropack2"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "shadows:vampire.wolf.step",
+  "condition": "shadows:dyn/2boolean_reset",
+  "volume": 0.5,
+  "pitch": "1 + (Math.random() * 0.2)",
+  "fadeIn": 4,
+  "fadeOut": 4
+}

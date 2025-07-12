@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.mjolnir.throw",
+  "condition": "entity.getData('fiskheroes:flying')",
+  "pitch": "1.1 - Math.random() * 0.2",
+  "fadeOut": 5
+}

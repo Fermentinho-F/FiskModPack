@@ -1,0 +1,23 @@
+;{data2} = 2.71828^({data}-({data}-0.6)^4*(64)^1.35 -0.75)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.3)
+;{data} = 2.71828^({data}-({data}-0.3)^4*(64)^1.8 -0.25)
+
+
+
+{head_posY} @ {data} -> -3.0
+{headwear_posY} @ {data} -> -3.0
+
+{head_posZ} @ {data} -> -2.0
+{headwear_posZ} @ {data} -> -2.0
+
+{rightArm_posX} -= 1.5
+{leftArm_posX} += 1.5
+
+{rightArm_posY} -= 3
+{leftArm_posY} -= 3
+
+{rightArm_posZ} -= 1
+{leftArm_posZ} -= 1
+
+{rightLeg_posY} -= 3
+{leftLeg_posY} -= 3

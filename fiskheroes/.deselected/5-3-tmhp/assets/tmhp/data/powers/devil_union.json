@@ -1,0 +1,79 @@
+{
+  "name": "Devil Union",
+  "modifiers": {
+    "fiskheroes:transformation|blackform2": {
+      "key": "BLACKFORM2",
+      "transformation": {
+        "toggleData": "tmhp:dyn/blackform2",
+        "timerData": "tmhp:dyn/blackform2_timer",
+        "time": 3
+      },
+      "soundEvents": {
+        "ENABLE": "tmhp:blackform"
+      }
+    },
+    "fiskheroes:cooldown|blackform2_cooldown": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/blackform2",
+        "cooldownData": "tmhp:dyn/blackform2_cooldown",
+        "duration": 6000000000,
+        "recovery": 6000000000.0
+      }
+    },
+    "fiskheroes:transformation|devil_union": {
+      "key": "DEVILUNION",
+      "transformation": {
+        "toggleData": "tmhp:dyn/devil_union",
+        "timerData": "tmhp:dyn/devil_union_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:firestorm_flight_enable"
+      }
+    },
+    "fiskheroes:cooldown|devil_union_cooldown": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/devil_union",
+        "cooldownData": "tmhp:dyn/devil_union_cooldown",
+        "duration": 1000000000,
+        "recovery": 1000000000.0
+      }
+    },
+    "fiskheroes:transformation|devil_union2": {
+      "key": "DEVILUNION2",
+      "transformation": {
+        "toggleData": "tmhp:dyn/devil_union2",
+        "timerData": "tmhp:dyn/devil_union2_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:firestorm_flight_enable"
+      }
+    },
+    "fiskheroes:cooldown|devil_union2_cooldown": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/devil_union2",
+        "cooldownData": "tmhp:dyn/devil_union2_cooldown",
+        "duration": 1000000000,
+        "recovery": 1000000000.0
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "tmhp:textures/gui/devilunion.png",
+      "data": "tmhp:dyn/devil_union_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "tmhp:textures/gui/devilunion.png",
+      "data": "tmhp:dyn/devil_union2_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "tmhp:textures/gui/blackform.png",
+      "data": "tmhp:dyn/blackform2_cooldown"
+    }
+  ]
+}

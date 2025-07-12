@@ -1,0 +1,44 @@
+{
+  "name": "Special: Jedi Mind Trick",
+  "modifiers": {
+    "fiskheroes:charged_beam|jedimindtrick": {
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+		"EFFECTS": [
+          {
+              "id": "minecraft:nausea",
+              "duration": 40,
+              "amplifier": 2,
+              "chance": 1.0
+          },
+          {
+              "id": "minecraft:blindness",
+              "duration": 40,
+              "amplifier": 2,
+              "chance": 0.25
+          }
+      ]
+        }
+      },
+      "chargeTime": 10,
+      "duration": 10,
+      "cooldownTime": 60,
+      "range": 10.0,
+      "radius": 10.0,
+      "soundEvents": {
+        "SHOOT": "swhp:jedimindtrick"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

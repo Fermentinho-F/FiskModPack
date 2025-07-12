@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": "Shadow Movement",
+    "icon": {
+      "texture": "shadows:textures/gui/nodes/shadow_movement.png"
+    }
+  },
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 25
+  },
+  "requirements": [
+    "fiskheroes:traversal2",
+    "shadows:shadow00dev"
+  ]
+}

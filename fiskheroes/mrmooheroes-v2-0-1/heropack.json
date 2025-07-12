@@ -1,0 +1,79 @@
+{
+  "name": "\u00A7b\u00A7lMrMoo Heroes",
+  "domain": "moopack",
+  "watermark": "&bMrMoo Heroes",
+  "packFormat": 1,
+  "description": "By MrMoo",
+"sounds": {
+    "download": {
+      "repository": "MrMoo626/moopack",
+    "version": 0
+    },
+    "range": {
+    "the_world_summon": { "distance": 32.0, "sendToAll": true },
+    "the_world_time_stop": { "distance": 32.0, "sendToAll": true },
+    "the_world_dissapear": { "distance": 32.0, "sendToAll": true },
+    "star_platinum_summon": { "distance": 32.0, "sendToAll": true },
+    "stand_summon": { "distance": 32.0, "sendToAll": true },
+    "the_hand_effect": { "distance": 32.0, "sendToAll": true },
+    "sharingan_activate": { "distance": 32.0, "sendToAll": true },
+    "chidori_charge": { "distance": 32.0, "sendToAll": true },
+    "attack_roar": { "distance": 32.0, "sendToAll": true },
+    "titan_footstep": { "distance": 32.0, "sendToAll": true },
+    "titan_transformation": { "distance": 32.0, "sendToAll": true }
+    }
+  },
+  "dataVars": {
+    "stones": "INTEGER",
+    "stone_select": { "type": "INTEGER", "resetWithoutSuit": true },
+    "prev_stone_select": { "type": "INTEGER", "resetWithoutSuit": true },
+    "stone_select_slot": { "type": "INTEGER", "resetWithoutSuit": true },
+    "stone_selecting": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "phase_active": "BOOLEAN",
+    "phase_timer": "FLOAT_INTERP",
+    "helmet_active": "BOOLEAN",
+    "helmet_timer": "FLOAT_INTERP",
+    "spider_dna_active": "BOOLEAN",
+    "spider_dna_timer": "FLOAT_INTERP",
+    "symbiote_dna_active": "BOOLEAN",
+    "symbiote_dna_timer": "FLOAT_INTERP",
+    "mutant_dna_active": "BOOLEAN",
+    "mutant_dna_timer": "FLOAT_INTERP",
+    "cosmic_dna_active": "BOOLEAN",
+    "cosmic_dna_timer": "FLOAT_INTERP",
+    "nature_dna_active": "BOOLEAN",
+    "nature_dna_timer": "FLOAT_INTERP",
+    "speed_dna_active": "BOOLEAN",
+    "speed_dna_timer": "FLOAT_INTERP",
+    "cycle_active": "BOOLEAN",
+    "cycle_timer": "FLOAT_INTERP",
+    "titan": "BOOLEAN",
+    "titan_timer": "FLOAT_INTERP",
+    "invis": "BOOLEAN",
+    "invis_timer": "FLOAT_INTERP",
+    "invis_cooldown": "FLOAT"
+  },
+  "alts": {
+    "moopack:fiskfille": {
+      "og": "OG"
+      },
+    "moopack:powerplex": {
+      "nr": "No Rivets",
+      "blue": "Blue",
+      "nr_blue": "Blue No Rivets"
+      },
+    "moopack:assassin_ghost": {
+      "white": "White Suit",
+      "whitered": "Red LEDs, White Suit",
+      "redled": "Red LEDs"
+      },
+      "moopack:slipstream": {
+        "$DEFAULT": {
+          "maskToggleTicks": 12
+      }
+      },
+      "moopack:odmgear": {
+        "whitetop": "White Shirt"
+        }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:deadshot",
+  "requirements": [
+    "fiskheroes:tier1",
+    "elseworld:ap2_3",
+    "fiskheroes:ranged2",
+    "fiskheroes:marksmanship",
+    "tmhp:batfamily",
+    "tmhp:heropack2"
+  ]
+}

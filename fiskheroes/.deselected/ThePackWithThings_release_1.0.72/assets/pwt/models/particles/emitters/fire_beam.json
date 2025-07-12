@@ -1,0 +1,23 @@
+{
+  "particles": [
+    {
+      "type": "THICK_SMOKE",
+      "amount": 3,
+      "offset": [0.0, -0.5, -0.5],
+      "motion": [0.0, 0.02, -0.4],
+	  
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": false
+    },
+	 {
+      "type": "SPARK",
+      "amount": 20,
+      "offset": [0.0, -0.5, 0.5],
+      "motion": [0.0, -0.25, -0.4],
+	  
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": false
+    }
+	
+  ]
+}

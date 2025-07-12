@@ -1,0 +1,14 @@
+{m} = clamp(-{motY}, -360', 360')
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -> -2.5
+{rightArm_rotY} @ {data} -> -0.5
+{rightArm_rotZ} @ {data} -> 0.4
+{leftArm_rotX} @ {data} -> -2.5
+{leftArm_rotY} @ {data} -> 0.5
+{leftArm_rotZ} @ {data} -> -0.4
+
+{rightLeg_rotX} @ {data} -> -0.5 + {m}
+{leftLeg_rotX} @ {data} -> -0.5 + {m}
+{rightLeg_rotZ} @ {data} -> 0.75
+{leftLeg_rotZ} @ {data} -> -0.75

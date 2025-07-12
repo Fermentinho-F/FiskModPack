@@ -1,0 +1,76 @@
+
+
+{tail_1_rotX} -=45'{data_0}
+{tail_2_rotX} +=15'{data_0}
+{tail_3_rotX} +=10'{data_0}
+{tail_4_rotX} +=5'{data_0}
+
+{tail_1_rotX} +=10'{data_1}
+
+{tail_1_rotX} +=20'{data_2}
+
+{tail_1_rotY} = 15'{data_4}
+{tail_2_rotY} = 20'{data_4}
+{tail_3_rotY} = 25'{data_4}
+{tail_4_rotY} = 25'{data_4}
+
+{lower_rotX} @ {data_0} -> 2.5'
+{lower_overlay_rotX} @ {data_0} -> 2.5'
+{lower_posZ} @ {data_0} -> -0.30
+{lower_overlay_posZ} @ {data_0} -> -0.30
+{lower_posY} @ {data_0} -> 6.0
+{lower_overlay_posY} @ {data_0} -> 6.0
+
+
+{upper_rotX} @ {data_0} -> 6.0'
+{upper_overlay_rotX} @ {data_0} -> 6.0'
+{upper_posZ} @ {data_0} -> -1.0
+{upper_overlay_posZ} @ {data_0} -> -1.0
+{upper_posY} @ {data_0} -> -0.5
+{upper_overlay_posY} @ {data_0} -> -0.5
+
+{lower_rotX} @ {data_1} -> 5.0'
+{lower_overlay_rotX} @ {data_1} -> 5.0'
+{lower_posZ} @ {data_1} -> -0.60
+{lower_overlay_posZ} @ {data_1} -> -0.60
+{lower_posY} @ {data_1} -> 6.0
+{lower_overlay_posY} @ {data_1} -> 6.0
+
+
+{upper_rotX} @ {data_1} -> 12.0'
+{upper_overlay_rotX} @ {data_1} -> 12.0'
+{upper_posZ} @ {data_1} -> -2.0
+{upper_overlay_posZ} @ {data_1} -> -2.0
+{upper_posY} @ {data_1} -> -0.5
+{upper_overlay_posY} @ {data_1} -> -0.5
+
+
+{lower_rotX} @ {data_2} -> 10.0'
+{lower_overlay_rotX} @ {data_2} -> 10.0'
+{lower_posZ} @ {data_2} -> -1.20
+{lower_overlay_posZ} @ {data_2} -> -1.20
+{lower_posY} @ {data_2} -> 6.0
+{lower_overlay_posY} @ {data_2} -> 6.0
+
+
+{upper_rotX} @ {data_2} -> 24.0'
+{upper_overlay_rotX} @ {data_2} -> 24.0'
+{upper_posZ} @ {data_2} -> -4.0
+{upper_overlay_posZ} @ {data_2} -> -4.0
+{upper_posY} @ {data_2} -> 0.5
+{upper_overlay_posY} @ {data_2} -> 0.5
+
+
+{lower_rotX} += 1.25'{data_3}
+{lower_overlay_rotX} += 1.25'{data_3}
+{lower_posZ} -= 0.15{data_3}
+{lower_overlay_posZ} -= 0.15{data_3}
+
+
+
+{upper_rotX} += 3'{data_3}
+{upper_overlay_rotX} += 3'{data_3}
+{upper_posZ} -= 0.5{data_3}
+{upper_overlay_posZ} -= 0.5{data_3}
+{upper_posY} += 0.25{data_3}
+{upper_overlay_posY} += 0.25{data_3}

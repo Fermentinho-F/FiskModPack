@@ -1,0 +1,13 @@
+This license agreement is an agreement between you, the user, and me (HotMelonEnjoyer/FireMelon). By downloading and using this pack you agree to all terms of this license.
+
+1.You cannot make any modifications to the heropack and repost it in any way.
+
+2.You can include this heropack in a modpack as long as you give credit, link the heropack page and ask for permission on Discord (which will be given 100% of the time, it's just for me to track and see what my work is being used for). You also can not modify the pack on your server, as stated in point 1.
+
+3.If you wish to use the heropack on a private server with your friends the following does not apply to you.
+	If you are using the heropack on a public server you must ask for a permission via discord 	beforehand, and based on the server quality I'll make my decision.
+	You must also give credit, not modify the files etc
+
+4.DO NOT STEAL any of the assets, the code is to be learned from, not copied. Same applies to any other of the packs resources. 
+
+If this license does not answer some of your questions feel free to contact the owner via Discord.

@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.onomo",
+  "condition": "fiskheroes:beam_shooting",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

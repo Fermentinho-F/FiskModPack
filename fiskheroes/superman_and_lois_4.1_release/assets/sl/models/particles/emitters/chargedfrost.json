@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+      "type": "FREEZE_SMOKE",
+      "amount": 6,
+      "motion": [0.0, 0.0, -0.1],
+      "randOffset": [1.25, 0.05, 1.25],
+      "randMotion": [0.3, 0.3, 0.3]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{rightArm_rotX} = -90' * {data}
+{rightArm_rotY} = -15'
+
+out "firstPerson" (true)
+out "translate" (-0.4{data}, 0, 0.2{data})
+out "rotate" (-26{data}, 0, 1, 0)
+out "rotate" (-21{data}, 1, 0, 0)
+out "rotate" (-29{data}, 0, 0, 1)

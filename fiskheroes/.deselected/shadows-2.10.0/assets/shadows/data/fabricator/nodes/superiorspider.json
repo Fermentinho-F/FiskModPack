@@ -1,0 +1,15 @@
+{
+  "suit": "shadows:superior_spider",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:stark",
+    "fiskheroes:spiderverse",
+    "fiskheroes:nanites",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:object_manipulation",
+    "shadows:shadow00dev"
+  ]
+}

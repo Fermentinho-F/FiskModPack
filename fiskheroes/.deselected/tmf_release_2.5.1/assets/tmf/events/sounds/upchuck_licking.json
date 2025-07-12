@@ -1,0 +1,9 @@
+{
+  "sound": "tmf:upchuck.lick",
+  "condition": "fiskheroes:heat_vision",
+  "volume": "3*entity.getInterpolatedData('fiskheroes:heat_vision_timer')",
+  "pitch": "0.95 + Math.random() * 0.1",
+  "loop": true,
+  "fadeIn": 6,
+  "fadeOut": 6
+}

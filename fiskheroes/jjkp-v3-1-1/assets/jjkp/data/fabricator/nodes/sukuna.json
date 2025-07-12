@@ -1,0 +1,12 @@
+{
+  "suit": "jjkp:sukuna",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "jjkp:curse",
+    "jjkp:domain_expansion",
+    "jjkp:reverse_cursed_technique"
+  ]
+}

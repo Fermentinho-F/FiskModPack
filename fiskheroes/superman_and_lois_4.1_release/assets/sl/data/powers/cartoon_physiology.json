@@ -1,0 +1,10 @@
+{
+	"name": "Cartoon Physiology",
+	"modifiers": {
+		"fiskheroes:teleportation": {
+			"canReachMoon": false,
+			"range": 200.0,
+			"soundEvents": {}
+		}
+	}
+}

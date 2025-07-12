@@ -1,0 +1,31 @@
+{
+    "display": {
+    "name": "Inventory Curse",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/inventory_curse_node.png"
+    }
+    },
+    "requirements": [
+    "jjkp:curse"
+  ],
+    "price": {
+      "IRID_GOLD": 1,
+      "XP_LEVELS": 3
+  },
+  "criteria": {
+    "silverfish": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "description": {
+        "translate": "Kill a Silverfish"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Silverfish'"
+      }
+    }
+  }
+}

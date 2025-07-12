@@ -1,0 +1,105 @@
+
+
+{head_posY} -= 1.0{data_0}
+{headwear_posY} -= 1.0{data_0}
+
+{head_posZ} @ {data_0} -> -3.0
+{headwear_posZ} @ {data_0} -> -3.0
+
+;{head_posY} -= 1.0{data_1}
+;{headwear_posY} -= 1.0{data_1}
+
+
+{head_posZ} @ {data_1} -> -4.0
+{headwear_posZ} @ {data_1} -> -4.0
+
+{head_posZ} -= 2{data_4}
+{headwear_posZ} -= 2{data_4}
+
+
+
+{rightArm_posX} @ {data_0} -> -7.5 
+{leftArm_posX} @ {data_0} -> 7.5
+
+{rightArm_posY} @ {data_0} -> 0.5
+{leftArm_posY} @ {data_0} -> 0.5
+
+
+
+{rightArm_posY} @ {data_1} -> 0.0
+{leftArm_posY} @ {data_1} -> 0.0
+
+{rightArm_posZ} @ {data_0} -> -1.0 
+{leftArm_posZ} @ {data_0} -> -1.0
+
+{rightArm_posZ} @ {data_1} -> -2.0 
+{leftArm_posZ} @ {data_1} -> -2.0
+
+{rightLeg_posX} @ {data_0} -> -2.65
+{leftLeg_posX} @ {data_0} -> 2.65
+
+
+{rightArm_posY} += 0.25{data_3}
+{leftArm_posY} += 0.25{data_3}
+
+{rightArm_posZ} -= 0.5{data_3}
+{leftArm_posZ} -= 0.5{data_3}
+
+{head_posY} += 0.5{data_3}
+{headwear_posY} += 0.5{data_3}
+
+{head_posZ} -= 0.5{data_3}
+{headwear_posZ} -= 0.5{data_3}
+
+;sprint
+
+{data_2} = curve {data_2}
+{limbSwingAmount} *= {data_2}
+
+{head_posY} @ {data_2} -> 0.5
+{headwear_posY} @ {data_2} -> 0.5
+
+
+{head_posZ} @ {data_2} -> -6.0
+{headwear_posZ} @ {data_2} -> -6.0
+
+{rightArm_posY} @ {data_2} -> 1.0
+{leftArm_posY} @ {data_2} -> 1.0
+
+{rightArm_posZ} @ {data_2} -> -5.0 
+{leftArm_posZ} @ {data_2} -> -5.0
+
+{rightArm_posX} @ {data_2} -> -8.0 
+{leftArm_posX} @ {data_2} -> 8.0
+
+{rightArm_rotX} += 15'{data_2}
+{leftArm_rotX} += 15'{data_2}
+
+{rightArm_rotY} -= 7'{data_2}
+{leftArm_rotY} += 7'{data_2}
+
+{rightArm_rotZ} += 7'{data_2}
+{leftArm_rotZ} -= 7'{data_2}
+
+{rightArm_rotZ} -= 0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{leftArm_rotZ} -= 0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{rightArm_rotX} += 0.3{limbSwingAmount}cos(0.6662{limbSwing} + pi)
+{leftArm_rotX} += 0.3{limbSwingAmount}cos(0.6662{limbSwing})
+
+{f} = {limbSwingAmount}cos(0.6662{limbSwing} - 0.3)
+{body_rotY} -= 0.1{f}
+{rightArm_posZ} -= 3.0{f}
+{leftArm_posZ} += 3.0{f}
+
+{rightArm_posX} += 0.8{f}
+{leftArm_posX} += 0.8{f}
+
+{head_posX} += 0.3{f}
+
+{data_5} = clamp({data_5}, 5, 50)
+
+{rightArm_rotX} *= 0.2{data_5}
+{leftArm_rotX} *= 0.2{data_5}
+
+{rightLeg_rotX} *= 0.2{data_5}
+{leftLeg_rotX} *= 0.2{data_5}

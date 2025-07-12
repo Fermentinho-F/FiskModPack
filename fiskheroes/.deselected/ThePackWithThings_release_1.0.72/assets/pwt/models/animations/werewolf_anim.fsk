@@ -1,0 +1,22 @@
+
+{head_posY} @ {data_0} -> -7.0
+
+{leftLeg_posX} += 3{data_0}
+{rightLeg_posX} -= 3{data_0}
+
+{leftLeg_posY} -= 4{data_0}
+{rightLeg_posY} -= 4{data_0}
+
+{leftArm_posY} @ {data_0} -> -5.0
+{rightArm_posY} @ {data_0} -> -5.0
+
+{head_rotX} -= 40'{data_0}
+
+{leftArm_rotX} -= 40'{data_0}
+{rightArm_rotX} -= 40'{data_0}
+
+{leftLeg_rotX} -= 40'{data_0}
+{rightLeg_rotX} -= 40'{data_0}
+
+out "rotate" (-40{data_0}, 1, 0, 0)
+out "translate" (-{data_0}, 0, 0, 1)

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "emo:spider",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "emo:spider/xor/ghost_<TIMER>"
+      }
+    ],
+    "out": "emo:generated/spider/xor/ghost_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(16 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 16
+      }
+    }
+  },
+  "isDynamic": true
+}

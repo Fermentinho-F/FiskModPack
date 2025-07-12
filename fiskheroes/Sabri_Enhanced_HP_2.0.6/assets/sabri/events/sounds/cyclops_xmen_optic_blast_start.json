@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "fiskheroes:beam_charging",
+  "sound": "sabri:suit.cyclops_xmen.optic_blast.start",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

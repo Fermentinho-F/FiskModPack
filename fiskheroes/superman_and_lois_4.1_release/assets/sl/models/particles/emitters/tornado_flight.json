@@ -1,0 +1,13 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "type": "BIG_SMOKE",
+      "amount": 400,
+      "offset": [ 0.0, 1.5, 0.0 ],
+      "randOffset": [0.075, 0.3, 0.075],
+      "randMotion": [ 0.075, 0.1, 0.075 ],
+      "mirror": false
+    }
+  ]
+}

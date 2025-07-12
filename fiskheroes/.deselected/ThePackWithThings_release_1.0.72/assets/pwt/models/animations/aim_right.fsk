@@ -1,0 +1,3 @@
+{leftArm_rotX} @ {data} -> ({head_rotX} - pi / 2) * 0.9
+{leftArm_rotY} @ {data} -> {head_rotY} + 0.2
+{leftArm_rotZ} @ {data} ->  (pi/180)*25.0

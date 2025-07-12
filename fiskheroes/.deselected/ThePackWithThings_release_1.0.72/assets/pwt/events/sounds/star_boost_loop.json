@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:modifier.beam.star.loop",
+  "condition": "fiskheroes:flying",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

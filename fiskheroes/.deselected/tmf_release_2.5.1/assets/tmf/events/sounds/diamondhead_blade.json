@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:diamondhead.blade",
+  "fadeOut": 2
+}

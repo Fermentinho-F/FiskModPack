@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "swhp:suit.forcelightning.charge",
+  "condition": "fiskheroes:beam_charging",
+  "delay": 0
+}

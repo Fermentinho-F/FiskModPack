@@ -1,0 +1,14 @@
+{
+  "suit": "sl:jon_el",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:inverse_kryptonian_physiology",
+    "sl:sl",
+    "elseworld:ap6_7"
+  ]
+}

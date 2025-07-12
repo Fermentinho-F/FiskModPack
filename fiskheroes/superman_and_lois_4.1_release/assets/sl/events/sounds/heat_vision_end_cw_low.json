@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.heat_vision_end_cw",
+  "fadeIn": 12,
+  "volume": 0.3,
+  "condition": "fiskheroes:mask_open"
+}

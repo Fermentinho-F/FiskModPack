@@ -1,0 +1,11 @@
+{data} = sin(pi(1 - {data}))^2
+
+{inhaler_glass_inner_rotZ} @ {data} -> 1
+
+{inhaler_top_rotZ} @ {data} -> 1
+
+{inhaler_mouth_piece_rotZ} @ {data} -> 1
+
+{inhaler_glass_outer_rotZ} @ {data} -> 1
+
+{inhaler_base_rotZ} @ {data} -> 1

@@ -1,0 +1,9 @@
+{
+  "texture": "tmf:omnitrix/p1/aliens/ghostfreak<TYPE>",
+  "getters": {
+    "TYPE": {
+      "key": "entity.getData('fiskheroes:intangible') ? 2 : 1",
+      "values": [1, 2]
+    }
+  }
+}

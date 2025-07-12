@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Primus Planet"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/primus.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "TUTRIDIUM": 10,
+    "XP_LEVELS": 7
+  }
+}

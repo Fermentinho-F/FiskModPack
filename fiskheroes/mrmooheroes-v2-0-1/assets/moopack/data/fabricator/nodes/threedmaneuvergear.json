@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:threedmaneuvergear",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:melee2",
+    "fiskheroes:traversal2",
+    "moopack:advanced_technology"
+  ]
+}

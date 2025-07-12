@@ -1,0 +1,31 @@
+{
+  "suit": "jmctheroes:pork_grind",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier6_7",
+    "jmctheroes:spider_ham",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation"
+  ],
+  "criteria": {
+    "pigs": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 100,
+      "description": {
+        "translate": "Kill 100 Pigs"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED",
+          "player": "PLAYER_KILLING",
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "entity.getEntityName() == 'Pig'"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Nature DNA Activator",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NATURE_DNA",
+      "transformation": {
+        "toggleData": "moopack:dyn/nature_dna_active",
+        "timerData": "moopack:dyn/nature_dna_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": true,
+      "minGravity": 0.1,
+      "maxGravity": 8.0,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "SWITCH": "fiskheroes:gravity_manip_switch",
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 50.0,
+        "regeneration": 8.0,
+        "recoveryDelay": 10,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 60.0,
+        "pitchRadius": 35.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:falcon_shield_block_start",
+        "BLOCK_STOP": "fiskheroes:falcon_shield_block_stop",
+        "DEFLECT": "fiskheroes:falcon_shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "moopack:textures/gui/bars/vulture_boost.png",
+      "data": "fiskheroes:dyn/super_boost_cooldown"
+    },
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:gravity_manipulation",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

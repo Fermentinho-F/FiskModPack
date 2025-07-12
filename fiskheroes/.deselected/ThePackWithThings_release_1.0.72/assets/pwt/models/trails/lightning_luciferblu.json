@@ -1,0 +1,12 @@
+{
+
+	"fade": 10,
+  "lightning": {
+
+    "color": 0x0BF4F4,
+    "density": 20,
+    "differ": 1.0,
+    "opacity": 1.0
+
+  }
+}

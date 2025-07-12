@@ -1,0 +1,33 @@
+{
+  "name": "Ruby-Quartz Visor",
+  "modifiers": {
+    "fiskheroes:gravity_manipulation": {
+      "affectsUser": false,
+      "minGravity": 0.0,
+      "maxGravity": 0.0,
+      "range": 0.0,
+      "radius": 0.0,
+      "soundEvents": {
+        "SWITCH": "sabri:cyclops_xmen_button_click"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "C_AIM",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "sabri:dyn/aiming",
+        "timerData": "sabri:dyn/aiming_timer",
+        "time": 7
+      }
+    }
+  },
+  "hud": 
+  [
+    {
+      "type": "DIAL",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:gravity_amount",
+      "condition": "fiskheroes:gravity_manip"
+    }
+  ]
+}

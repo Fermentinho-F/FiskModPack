@@ -1,0 +1,18 @@
+{
+  "name": "Transformation",
+  "modifiers": {
+    "fiskheroes:transformation|bbgumtransform": {
+      "key": "BBGUM_TRANSFORM",
+      "isToggle": true,
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "timerData": "fiskheroes:dyn/steel_timer",
+        "time": 120
+      },
+      "soundEvents": {
+        "ENABLE": "sl:kid_danger_transform",
+        "DISABLE": "sl:kid_danger_transform"
+      }
+    }
+  }
+}

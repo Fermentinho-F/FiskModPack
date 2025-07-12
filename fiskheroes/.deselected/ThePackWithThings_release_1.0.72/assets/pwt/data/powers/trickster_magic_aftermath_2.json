@@ -1,0 +1,658 @@
+{
+  "name": "Rune Magic",
+  "modifiers": {
+	  "fiskheroes:transformation|menu": {
+		  "key": "MENU",
+		  "transformation": {
+			"toggleData": "pwt:dyn/menu",
+			"timerData": "pwt:dyn/menu_timer",
+			"time": 20
+		  },
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:mysterio_beam_stop",
+			"DISABLE": "fiskheroes:mysterio_beam_stop"
+		  }
+		},
+		"fiskheroes:cooldown|cooldown_menu": {
+		  "cooldown": {
+			"toggleData": "pwt:dyn/menu",
+			"cooldownData": "pwt:dyn/menu_cooldown",
+			"duration": -1,
+			"recovery": 1.0
+		  }
+		},
+		"fiskheroes:transformation|scroll": {
+		  "key": "func_SCROLL",
+		  "transformation": {
+			"toggleData": "pwt:dyn/scroll",
+			"timerData": "pwt:dyn/scroll_timer",
+			"time": 10
+		  }
+		},
+		"fiskheroes:cooldown|cooldown_scroll": {
+		  "cooldown": {
+			"toggleData": "pwt:dyn/scroll",
+			"cooldownData": "pwt:dyn/scroll_cooldown",
+			"duration": 10,
+			"recovery": 1.0
+		  }
+		},
+		"fiskheroes:transformation|select": {
+		  "key": "SELECT",
+		  "transformation": {
+			"toggleData": "pwt:dyn/select",
+			"timerData": "pwt:dyn/select_timer",
+			"time": 10
+		  }
+		},
+		"fiskheroes:cooldown|cooldown_select": {
+		  "cooldown": {
+			"toggleData": "pwt:dyn/select",
+			"cooldownData": "pwt:dyn/select_cooldown",
+			"duration": 10,
+			"recovery": 1.0
+		  }
+		},
+  
+  
+  "fiskheroes:transformation|drain": {
+      "key": "DRAIN",
+      "transformation": {
+        "toggleData": "pwt:dyn/ability",
+        "timerData": "pwt:dyn/ability_timer",
+        "time": 5
+      },
+	  "isToggle": false
+    },
+  
+  
+    "fiskheroes:cooldown|cooldown_drain": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/ability",
+        "cooldownData": "pwt:dyn/ability_cooldown",
+        "duration": 125,
+        "recovery": 1.0
+      }
+    },
+  
+  "fiskheroes:transformation|power": {
+      "key": "TRANSFORM",
+      "transformation": {
+        "toggleData": "pwt:dyn/trickster",
+        "timerData": "pwt:dyn/trickster_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/trickster",
+        "cooldownData": "pwt:dyn/trickster_cooldown",
+        "duration": 2000,
+        "recovery": 0.1
+      }
+    },
+	
+	"fiskheroes:transformation|protective": {
+      "key": "PROTECTIVE_SPELL",
+      "transformation": {
+        "toggleData": "pwt:dyn/trickster_protective",
+        "timerData": "pwt:dyn/trickster_protective_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|cooldown_protective": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/trickster_protective",
+        "cooldownData": "pwt:dyn/trickster_protective_cooldown",
+        "duration": 2000,
+        "recovery": 0.1
+      }
+    },
+	
+	"fiskheroes:cooldown|power_cooldown_2": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/trickster",
+        "cooldownData": "pwt:dyn/trickster_cooldown",
+        "duration": 1000,
+        "recovery": 2.0
+      }
+    },
+	"fiskheroes:cooldown|power_cooldown_3": {
+      "cooldown": {
+        "toggleData": "entity.hasStatusEffect('fiskheroes:eternium')",
+        "cooldownData": "pwt:dyn/trickster_cooldown",
+        "duration": 500,
+        "recovery": 0.0
+      }
+    },
+	
+	"fiskheroes:cooldown|cooldown_kill": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/kill",
+        "cooldownData": "pwt:dyn/kill_cooldown",
+        "duration": 1,
+        "recovery": 1000.0
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:earth_swallowing": {
+          "sequence": "wwadsw",
+          "cooldown": 800,
+          "range": 48.0,
+          "radius": 6.0,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "MAGIC": 1.0
+            }
+          }
+        },
+
+		"fiskheroes:whip": {
+          "sequence": "wssds",
+          "cooldown": 50,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "MAGIC": 1.0,
+              "FIRE": 1.0
+            }
+          },
+          "whipBurn": {
+            "frequency": 20,
+            "damageProfile": {
+              "damage": 0.5,
+              "types": {
+                "MAGIC": 1.0,
+                "FIRE": 1.0
+              },
+              "properties": {
+                "REDUCE_KNOCKBACK": 1.0
+              }
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "ddaas",
+          "cooldown": 120,
+          "quantity": 7
+        },
+        "fiskheroes:blindness": {
+          "sequence": "ssda",
+          "cooldown": 100,
+          "duration": 400
+        }
+      },
+      "soundEvents": {
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+
+    "fiskheroes:energy_projection|energy_proj_Offensive": {
+	  "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+		  "EFFECTS": [
+			{
+				"id": "fiskheroes:disable_phasing",
+				"duration": 40,
+				"amplifier": 0,
+				"chance": 0.8
+			},
+			{
+				"id": "fiskheroes:eternium",
+				"duration": 35,
+				"amplifier": 0,
+				"chance": 1.0
+			},
+			{
+				"id": "minecraft:nausea",
+				"duration": 60,
+				"amplifier": 0,
+				"chance": 0.5
+			}
+		]
+        }
+      },
+      "range": 45.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mysterio_beam_start",
+		"BEAM_AMBIENT": "pwt:trickster_beam_loop",
+		"SHOOT_STOP": "pwt:trickster_beam_stop_2"
+      }
+	},
+	"fiskheroes:energy_projection|energy_proj_Defensive": {
+	  "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+		  "EFFECTS": [
+			{
+				"id": "minecraft:regeneration",
+				"duration": 140,
+				"amplifier": 2,
+				"chance": 1.0
+			},
+			{
+				"id": "minecraft:instant_health",
+				"duration": 40,
+				"amplifier": 1,
+				"chance": 1.0
+			},
+			{
+				"id": "minecraft:health_boost",
+				"duration": 1200,
+				"amplifier": 2,
+				"chance": 0.8
+			}
+		]
+        }
+      },
+      "range": 45.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:mysterio_beam_start",
+		"BEAM_AMBIENT": "pwt:trickster_beam_loop_defense",
+		"SHOOT_STOP": "pwt:trickster_beam_stop_2"
+      }
+	},
+	"fiskheroes:charged_beam|charged_beam_Offensive": {
+	    "canDoGriefing": false,
+		"damageProfile": {
+			"damage": 9.0,
+			"types": {
+				"ENERGY": 0.5,
+				"MAGIC": 1.0
+			},
+			"properties": {
+				"EFFECTS": [
+			  {
+				"id": "fiskheroes:disable_phasing",
+				"duration": 100,
+				"amplifier": 0,
+				"chance": 1.0
+			  },
+			  {
+				"id": "fiskheroes:eternium",
+				"duration": 80,
+				"amplifier": 0,
+				"chance": 1.0
+			  },
+			  {
+				"id": "minecraft:weakness",
+				"duration": 50,
+				"amplifier": 0,
+				"chance": 0.5
+			  },
+			  {
+				"id": "minecraft:nausea",
+				"duration": 50,
+				"amplifier": 0,
+				"chance": 0.3
+			  }
+        ]
+			}
+		},
+		"chargeTime": 20,
+		"duration": 100,
+		"cooldownTime": 40,
+		"range": 32.0,
+		"radius": 0.6,
+		"soundEvents": {
+			"SHOOT": "fiskheroes:mysterio_charged_beam_start",
+			"BEAM_AMBIENT": "pwt:trickster_charged_beam_loop",
+			"SHOOT_STOP": ["pwt:trickster_beam_stop_2", "fiskheroes:mysterio_beam_stop"],
+			"CHARGE": "pwt:trickster_beam_charge"
+		}
+	},
+	"fiskheroes:charged_beam|charged_beam_Defensive": {
+	    "canDoGriefing": false,
+		"damageProfile": {
+			"damage": 0.1,
+			"types": {
+				"ENERGY": 0.5,
+				"MAGIC": 1.0
+			},
+			"properties": {
+				"EFFECTS": [
+				{
+					"id": "minecraft:resistance",
+					"duration": 1600,
+					"amplifier": 2,
+					"chance": 1.0
+				},
+				{
+					"id": "minecraft:fire_resistance",
+					"duration": 1600,
+					"amplifier": 1,
+					"chance": 0.8
+				},
+				{
+					"id": "minecraft:strength",
+					"duration": 1200,
+					"amplifier": 2,
+					"chance": 0.8
+				},
+				{
+					"id": "minecraft:haste",
+					"duration": 1800,
+					"amplifier": 1,
+					"chance": 0.7
+				}
+				]
+			}
+		},
+		"chargeTime": 20,
+		"duration": 100,
+		"cooldownTime": 40,
+		"range": 32.0,
+		"radius": 0.6,
+		"soundEvents": {
+			"SHOOT": "fiskheroes:mysterio_charged_beam_start",
+			"BEAM_AMBIENT": "pwt:trickster_charged_beam_loop",
+			"SHOOT_STOP": ["pwt:trickster_beam_stop_2", "fiskheroes:mysterio_beam_stop"],
+			"CHARGE": "pwt:trickster_beam_charge"
+		}
+	},
+	
+	
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 140.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mysterio_beam_stop",
+        "DISABLE": "fiskheroes:mysterio_beam_stop",
+		"BLOCK_START": "pwt:trickster_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+	
+    "fiskheroes:shield|powered": {
+      "shield": {
+        "health": 300.0,
+        "regeneration": 20.0,
+        "recoveryDelay": 120,
+        "cooldown": 280
+      },
+      "coverage": {
+        "yawRadius": 324.0,
+        "pitchRadius": 324.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.4,
+      "isToggle": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mysterio_beam_stop",
+        "DISABLE": "fiskheroes:mysterio_beam_stop",
+		"BLOCK_START": "pwt:trickster_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    
+	},
+    "fiskheroes:shadowdome": {
+      "chargeTime": 100,
+      "duration": 1200,
+      "radius": 50.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    
+	},
+    "fiskheroes:shadowdome|shadowdome_power": {
+      "chargeTime": 200,
+      "duration": 1200,
+      "radius": 100.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    },
+	
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 14.0,
+      "soundEvents": {
+        "GRAB": ["pwt:trickster_telekinesis_loop", "pwt:trickster_telekinesis_start"],
+        "RELEASE": "fiskheroes:shadowchain_release"
+      }
+    },
+	"fiskheroes:gravity_manipulation": {
+      "affectsUser": false,
+      "minGravity": 0.0,
+      "maxGravity": 1.5,
+      "range": 24.0,
+      "radius": 16.0,
+      "soundEvents": {
+        "WAVE": "fiskheroes:gravity_manip_wave"
+      }
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:vision_intang_on",
+        "DISABLE": "fiskheroes:vision_intang_off"
+      }
+    },
+	"fiskheroes:water_breathing": {
+	},
+    "fiskheroes:controlled_flight|flight_base": {
+      "speed": 0.08,
+      "boostSpeed": 0.1,
+      "canBoost": false,
+	  "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+	"fiskheroes:controlled_flight|boost": {
+      "speed": 0.08,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+	  "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop", "fiskheroes:mysterio_boost_enable"],
+		"BOOST": "fiskheroes:mysterio_boost_loop"
+      },
+      "knockback": 0.4
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 200.0,
+      "soundEvents": {
+        "TELEPORT": ["pwt:trickster_teleport", "pwt:trickster_teleport_ambient"]
+      }
+    },
+	"fiskheroes:potion_immunity": {
+      "potionEffects": [2, 4, 9, 15, 17, 18, 19, 20]
+    },
+	"fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+	},	
+	"fiskheroes:thorns": {
+      "damageProfile": {
+        "types": {
+          "MAGIC": 1.0
+        },
+		"properties": {
+			"ADD_KNOCKBACK": 0.8
+        }
+      },
+      "factor": 1.0
+    },
+    "fiskheroes:eternium_weakness": {
+      "radius": 6.0,
+      "duration": 120
+    },
+	"fiskheroes:energy_projection|energy_proj_Divine": {
+      "damageProfile": {
+        "damage": 35,
+        "types": {
+          "ELECTRICITY": 0.7,
+		   "MAGIC": 1.0
+        },
+        "properties": {
+		  "COOK_ENTITY": true,
+		  "HEAT_TRANSFER": 120,
+		  "LIGHTNING_STRIKE" : 1,
+		  "EFFECTS": [
+			{
+			  "id": "fiskheroes:disable_phasing",
+			  "duration": 100,
+			  "amplifier": 0,
+			  "chance": 1.0
+			},
+			{
+			  "id": "fiskheroes:tutridium",
+			  "duration": 80,
+			  "amplifier": 0,
+			  "chance": 1.0
+			}
+		]
+        }
+      },
+      "range": 160.0,
+      "radius": 0.9,
+      "soundEvents": {
+        "SHOOT_STOP": "pwt:electro_beam_stop",
+        "SHOOT": "pwt:electro_beam_start",
+		"BEAM_AMBIENT": "pwt:electro_beam_loop"
+      }
+	},
+	"fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 20.0,
+        "types": {
+		  "ELECTRICITY": 0.6,
+		  "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+			"HEAT_TRANSFER": 120,
+			"LIGHTNING_STRIKE" : 1
+		  
+        }
+      },
+      "range": 70.0,
+      "chainRadius": 4.0,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:lightning_cast"
+      }
+    },
+	"fiskheroes:charged_beam|charged_beam_Divine": {
+		"damageProfile": {
+			"damage": 65.0,
+			"types": {
+				"ENERGY": 0.5,
+				"ELECTRICITY": 0.7,
+				"MAGIC": 1.0
+			},
+			"properties": {
+			"COOK_ENTITY": true,
+			"HEAT_TRANSFER": 120,
+			"LIGHTNING_STRIKE" : 1,
+				"EFFECTS": [
+			  {
+				"id": "fiskheroes:disable_phasing",
+				"duration": 100,
+				"amplifier": 0,
+				"chance": 1.0
+			  },
+			  {
+				"id": "fiskheroes:tutridium",
+				"duration": 80,
+				"amplifier": 0,
+				"chance": 1.0
+			  }
+			]
+			}
+		},
+		"chargeTime": 20,
+		"duration": 100,
+		"cooldownTime": 40,
+		"range": 185.0,
+		"radius": 1.2,
+		"soundEvents": {
+			"SHOOT": "pwt:electro_beam_start_heavy",
+			"BEAM_AMBIENT": "pwt:electro_beam_loop_heavy",
+			"SHOOT_STOP": "pwt:electro_beam_stop_heavy",
+			"CHARGE": "pwt:trickster_beam_charge"
+		}
+	}
+	
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/trickster_aftermath_bar.png",
+      "data": "pwt:dyn/trickster_cooldown"
+    },
+	{
+      "type": "PROGRESS",
+      "texture": "pwt:textures/gui/bars/pink.png",
+      "data": "pwt:dyn/trickster_protective_cooldown"
+    },
+	{
+      "type": "CIRCLE",
+      "color": "0xcd64ff",
+      "data": "pwt:dyn/ability_cooldown"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+	{
+      "type": "CIRCLE",
+      "color": "0x53269f",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

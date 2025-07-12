@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.electro.beam.start.heavy",
+  "pitch": "1.0 - Math.random() * 0.3"
+}

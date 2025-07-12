@@ -1,0 +1,128 @@
+{
+  "name": "Reach Scarab Armour",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "BEETLE",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/beetle",
+        "timerData": "jmctheroes:dyn/beetle_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "jmctheroes:beetle_enable",
+        "DISABLE": "jmctheroes:beetle_disable"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "key": "BEETLE",
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/beetle",
+        "cooldownData": "jmctheroes:dyn/beetle_cooldown",
+        "duration": 12500,
+        "recovery": 5.0
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "ENERGY": 1.0,
+          "FIRE": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 20,
+      "duration": 40,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:mk85_beam_start", "fiskheroes:mk85_beam_loop"]
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.5, 0.2]
+    },
+    "fiskheroes:healing_factor": {
+      "delay": 80,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+      "fiskheroes:repulsor_blast": {
+        "damageProfile": {
+          "damage": 12.0,
+          "types": {
+            "ENERGY": 1.0
+          },
+          "properties": {
+            "ADD_KNOCKBACK": 1.0,
+            "HIT_COOLDOWN": 0.0
+          }
+        },
+        "range": 48.0,
+        "speed": 20.0,
+        "spread": 0.0,
+        "radius": 0.1,
+        "cooldownTime": 30,
+        "soundEvents": {
+          "SHOOT": "fiskheroes:repulsor_blast"
+        }
+      },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:cap_sam_flight_loop", "fiskheroes:cap_sam_flight_ambient_loop", "jmctheroes:beetle_wings"]
+      }
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:shield": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_shield_enable",
+        "DISABLE": "fiskheroes:mk50_shield_disable",
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "jmctheroes:textures/timers/bars/beetle.png",
+      "data": "if (entity.getData('jmctheroes:dyn/beetle') == true) {1 - entity.getData('jmctheroes:dyn/beetle_cooldown')}"
+    }
+  ]
+}

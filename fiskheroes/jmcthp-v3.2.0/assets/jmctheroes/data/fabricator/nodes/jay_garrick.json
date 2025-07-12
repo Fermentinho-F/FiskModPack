@@ -1,0 +1,8 @@
+{
+  "suit": "jmctheroes:jay_garrick",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "fiskheroes:speed_force"
+  ]
+}

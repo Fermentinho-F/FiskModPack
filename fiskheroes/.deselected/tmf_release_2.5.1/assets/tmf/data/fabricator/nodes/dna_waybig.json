@@ -1,0 +1,27 @@
+{
+  "suit": "tmf:dna_waybig_25",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "fall": {
+      "trigger": "fiskheroes:player_hurt",
+      "minSuccessCount": 100,
+      "description": {
+        "translate": "Look for a Cosmic Storm in the Void"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "damage": "DAMAGE_SOURCE"
+        },
+        "check": "damage.name() == 'outOfWorld'"
+      }
+    }
+  }
+}

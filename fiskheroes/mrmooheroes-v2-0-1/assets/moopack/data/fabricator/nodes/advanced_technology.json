@@ -1,0 +1,16 @@
+{
+    "display": {
+    "name": "Advanced Technology",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/advanced_technology.png"
+    }
+    },
+    "requirements": [
+    "fiskheroes:stark",
+    "moopack:moopack",
+  ],
+    "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 15
+  }
+}

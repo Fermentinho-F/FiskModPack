@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.black_panther.nanites.enable",
+  "volume": 0.8
+}

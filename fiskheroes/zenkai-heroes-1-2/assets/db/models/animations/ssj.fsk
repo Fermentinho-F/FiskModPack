@@ -1,0 +1,45 @@
+{animation.model.new_time}={data}
+{animation.model.new_0}=curve animate2({animation.model.new_time},0.9487179487,0,0.4957264957,0.452991453)
+{animation.model.new_1}=curve animate2({animation.model.new_time},0.4871794872,0.49572649572649574,0.452991453,0.0341880342)
+{animation.model.new_2}=curve animate2({animation.model.new_time},10.7512820513,0.9487179487179489,0.0341880342,10.7170940171)
+{animation.model.new_3}=curve animate2({animation.model.new_time},11.7,0,1,10.7)
+{animation.model.new_4}=curve animate2({animation.model.new_time},0.9487179487,0,0.4871794872,0.4615384615)
+{animation.model.new_5}=curve animate2({animation.model.new_time},11.2128205128,0.48717948717948717,0.4615384615,10.7512820513)
+{animation.model.new_6}=curve animate2({animation.model.new_time},0.9658119658,0,0.7948717949,0.1709401709)
+{animation.model.new_7}=curve animate2({animation.model.new_time},10.9051282051,0.7948717948717949,0.1709401709,10.7341880342)
+
+{head_rotX}+=22.5'{animation.model.new_0}
+{head_rotX}+=-4.87'{animation.model.new_1}
+{head_rotX}+=-7.5'{animation.model.new_2}
+
+{body_rotX}+=-7.5'{animation.model.new_3}
+
+{rightArm_rotX}+=-55.4110258193'{animation.model.new_4}
+{rightArm_rotY}+=5.7161661314'{animation.model.new_4}
+{rightArm_rotZ}+=-8.2188816071'{animation.model.new_4}
+{rightArm_rotX}+=-35.3271595526'{animation.model.new_5}
+{rightArm_rotY}+=33.3526693156'{animation.model.new_5}
+{rightArm_rotZ}+=-2.4670231539'{animation.model.new_5}
+
+{leftArm_rotX}+=-55.411'{animation.model.new_4}
+{leftArm_rotY}+=-5.7162'{animation.model.new_4}
+{leftArm_rotZ}+=8.2189'{animation.model.new_4}
+{leftArm_rotX}+=-35.3271610155'{animation.model.new_5}
+{leftArm_rotY}+=-33.3526974953'{animation.model.new_5}
+{leftArm_rotZ}+=2.4670052483'{animation.model.new_5}
+
+{rightLeg_rotX}+=1.0599048964'{animation.model.new_6}
+{rightLeg_rotY}+=11.9382583181'{animation.model.new_6}
+{rightLeg_rotZ}+=5.1108262691'{animation.model.new_6}
+{rightLeg_rotX}+=1.5871099102'{animation.model.new_7}
+{rightLeg_rotY}+=11.8805047796'{animation.model.new_7}
+{rightLeg_rotZ}+=7.6651492927'{animation.model.new_7}
+{rightLeg_posZ}+=-2{animation.model.new_3}
+
+{leftLeg_rotX}+=1.0599048964'{animation.model.new_6}
+{leftLeg_rotY}+=-11.9382583181'{animation.model.new_6}
+{leftLeg_rotZ}+=-5.1108262691'{animation.model.new_6}
+{leftLeg_rotX}+=2.1110284278'{animation.model.new_7}
+{leftLeg_rotY}+=-11.7998242905'{animation.model.new_7}
+{leftLeg_rotZ}+=-10.2181747133'{animation.model.new_7}
+{leftLeg_posZ}+=-2{animation.model.new_3}

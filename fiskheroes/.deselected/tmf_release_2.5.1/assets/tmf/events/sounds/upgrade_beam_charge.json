@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:upgrade.charge",
+  "condition": "fiskheroes:beam_charging",
+  "volume": 0.75
+}

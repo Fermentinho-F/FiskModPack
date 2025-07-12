@@ -1,0 +1,18 @@
+{
+  "suit": "sl:steel",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:superman",
+    "sl:sl",
+    "sl:kryptonite",
+    "sl:ap6_7"
+  ],
+  "display": {
+    "description": "Forged in fire, strong as steel."
+  }
+}

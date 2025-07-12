@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.heatbreathstart",
+  "volume": 0.8,
+  "condition": "fiskheroes:beam_charging",
+  "pitch": "1.2 - Math.random() * 0.3"
+}

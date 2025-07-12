@@ -1,0 +1,31 @@
+{
+  "suit": "tmhp:sub_zero",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap6_7",
+    "fiskheroes:teleportation",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee2",
+    "fiskheroes:regeneration2",
+    "tmhp:games",
+    "tmhp:heropack2"
+  ],
+  "display": {
+  "description": "\u00A73Machine or man, you have a warrior's soul. As long as I am Grandmaster, the Lin Kuei will welcome you."
+  },
+  "criteria": {
+    "ore": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Broke a Packet Ice"
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'minecraft:packed_ice'"
+      }
+    }
+  }
+}

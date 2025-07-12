@@ -1,0 +1,16 @@
+{
+	"fade": 2,
+  "flicker": {
+    "color": 0x003DDD,
+    "density": 16,
+    "frequency": 2.0,
+    "length": 0.1,
+    "spread": 1.0,
+    "opacity": 0.9,
+    "confined": "true"
+	},
+  "blur": {
+    "color": 0x4884FF,
+    "opacity": 0.3
+  }
+}

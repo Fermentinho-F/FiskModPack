@@ -1,0 +1,13 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:reddust",
+      "anchor": "body",
+      "amount": 100,
+      "offset": [-0.5, 60, -10],
+      "randOffset": [1.5, 2.7, 1.5],
+      "motion": [-1, -1, -1],
+      "mirror": false
+    }
+  ]
+}

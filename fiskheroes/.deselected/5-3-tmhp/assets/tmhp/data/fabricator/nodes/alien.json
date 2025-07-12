@@ -1,0 +1,33 @@
+{
+  "display": {
+    "name": {
+      "translate": "Alien Chracters"
+    },
+  "display": {
+    "description": "\u00A79This characters either an alien or using alien tech."
+   },
+    "icon": {
+      "text": "Aliens"
+    }
+  },
+  "requirements": [ 
+    "fiskheroes:flight" ],
+  "price": {
+    "TUTRIDIUM": 16,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Go to Moon and break a Lunar Rock."
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'fiskheroes:lunar_rock'"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "sound": "pwt:suit.fire.beam.start",
+  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+  "fadeIn": 2,
+  "fadeOut": 5,
+  "pitch": "0.8 + Math.random() * 0.2"
+}

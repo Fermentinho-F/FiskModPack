@@ -1,0 +1,22 @@
+{
+    "texture": {
+      "in": "sl:shade_sun_1",
+      "transform": [
+        {
+          "operation": "XOR",
+          "supply": "sl:xor/supercharged/supercharged_lights1_<TIMER>"
+        }
+      ],
+      "out": "sl:generated/supercharged/supercharged_lights1_<TIMER>"
+    },
+    "getters": {
+      "TIMER": {
+        "key": "Math.ceil( 47.0* entity.getInterpolatedData('sl:dyn/light')) | 0",
+        "values": {
+          "min": 0,
+          "max": 47
+        }
+      }
+    },
+    "isDynamic": true
+  }

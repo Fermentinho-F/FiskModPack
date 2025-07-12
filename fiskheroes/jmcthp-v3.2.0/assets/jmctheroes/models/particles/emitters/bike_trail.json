@@ -1,0 +1,68 @@
+{
+  "particles": [
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": {
+        "tp": 50,
+        "fp": 0
+      },
+      "offset": {
+        "tp": [0.0, 20.0, 10.0],
+        "fp": [0.0, 20.0, 10.0]
+      },
+      "motion": [0.0, -0.25, 0.0],
+      "randOffset": [0.01, 0.0, 0.01],
+      "randMotion": [0.01, 0.0, 0.01],
+      "lockFPYaw": true
+    },
+    {
+      "type": "SHADOW_SMOKE",
+      "anchor": "body",
+      "amount": {
+        "tp": 70,
+        "fp": 0
+      },
+      "offset": {
+        "tp": [0.0, 20.0, 10.0],
+        "fp": [0.0, 20.0, 10.0]
+      },
+      "motion": [0.0, -0.25, 0.0],
+      "randOffset": [0.01, 0.0, 0.01],
+      "randMotion": [0.01, 0.0, 0.01],
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": {
+        "tp": 50,
+        "fp": 0
+      },
+      "offset": {
+        "tp": [0.0, 20.0, -20.0],
+        "fp": [0.0, 20.0, 10.0]
+      },
+      "motion": [0.0, -0.25, 0.0],
+      "randOffset": [0.01, 0.0, 0.01],
+      "randMotion": [0.01, 0.0, 0.01],
+      "lockFPYaw": true
+    },
+    {
+      "type": "SHADOW_SMOKE",
+      "anchor": "body",
+      "amount": {
+        "tp": 70,
+        "fp": 0
+      },
+      "offset": {
+        "tp": [0.0, 20.0, -20.0],
+        "fp": [0.0, 20.0, 10.0]
+      },
+      "motion": [0.0, -0.25, 0.0],
+      "randOffset": [0.01, 0.0, 0.01],
+      "randMotion": [0.01, 0.0, 0.01],
+      "lockFPYaw": true
+    }
+  ]
+}

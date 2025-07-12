@@ -1,0 +1,136 @@
+{
+  "name": "\u00A76\u00A7lStar Wars \u00A7b\u00A7lHeroPack\u00A7r",
+  "watermark": "\u00A76\u00A7lStar Wars\u00A7r",
+  "description": "\u00A76A long time ago in a galaxy far, far away....\u00A7r",
+  "domain": "swhp",
+  "packFormat": 1,
+  "minVersion": "2.4.0",
+  "sounds": {
+    "download": {
+      "repository": "SymbioteSpidey/StarWarsHeroPack",
+      "version": 2
+    },
+    "range": {
+      "voicelines_anakin": { "distance": 16.0, "target": "ALL" },
+      "voicelines_kenobi": { "distance": 16.0, "target": "ALL" },
+      "voicelines_windu": { "distance": 16.0, "target": "ALL" },
+      "voicelines_vader": { "distance": 16.0, "target": "ALL" },
+      "voicelines_maul": { "distance": 16.0, "target": "ALL" },
+      "voicelines_ahsoka": { "distance": 16.0, "target": "ALL" },
+      "voicelines_mandalorian": { "distance": 16.0, "target": "ALL" },
+      "voicelines_clonetrooper": { "distance": 16.0, "target": "ALL" },
+      "darthvader_breathing": { "distance": 16.0, "target": "ALL" },
+      "mechanicalsuit_activate": { "distance": 16.0, "target": "ALL" },
+      "grogu_summon": { "distance": 12.0, "target": "ALL" },
+      "grogu_pod": { "distance": 12.0, "target": "ALL" },
+      "grogu_laugh": { "distance": 12.0, "target": "ALL" },
+      "lightsaber_swing": 12.0,
+      "lightsaber_swing_kenobi": 12.0,
+      "lightsaber_swing_windu": 12.0,
+      "lightsaber_swing_maul": 12.0,
+      "lightsaber_swing_ahsoka": 12.0,
+      "darksaber_swing": 12.0,
+      "lightsaber_throw": { "distance": 32.0, "target": "ALL" },
+      "lightsaber_doublebladed_throw": { "distance": 32.0, "target": "ALL" },
+      "forcepush_jedi_charge": 32.0,
+      "forcepush_sith_charge": 32.0,
+      "forcepush_jedi": { "distance": 32.0, "target": "ALL" },
+      "forcepush_sith": { "distance": 32.0, "target": "ALL" },
+      "fury_charge": 32.0,
+      "fury": { "distance": 32.0, "target": "ALL" },
+      "fury_loop": { "distance": 32.0, "target": "ALL" },
+      "heroicmight_charge": 32.0,
+      "heroicmight": { "distance": 32.0, "target": "ALL" },
+      "shatterpoint_charge": 32.0,
+      "shatterpoint": { "distance": 32.0, "target": "ALL" },
+      "jedimindtrick": { "distance": 32.0, "target": "ALL" },
+      "forcelightning_charge": 32.0,
+      "forcelightning_shoot": { "distance": 32.0, "target": "ALL" },
+      "forcelightning_stop": 32.0,
+      "forcegrab_loop": { "target": "ALL" },
+      "doublebladespin": { "distance": 32.0, "target": "ALL" },
+      "ambanphasepulseblaster_shoot": 64.0,
+      "ib94_shoot": 16.0,
+      "dc17_shoot": 16.0,
+      "dc17m_shoot": 32.0,
+      "dc15a_shoot": 32.0,
+      "dc15s_shoot": 32.0,
+      "rps6_shoot": 64.0,
+      "z6_shoot": 48.0,
+      "z6_start_loop": { "distance": 24.0, "target": "ALL" }
+    }
+  },
+  "dataVars": {
+    "lightsaber": "BOOLEAN",
+    "lightsaber_timer": "FLOAT_INTERP",
+    "lightsaberignite": "BOOLEAN",
+    "lightsaberignite_timer": "FLOAT_INTERP",
+    "lightsaberthrowanimation": "BOOLEAN",
+    "lightsaberthrowanimation_timer": "FLOAT_INTERP",
+    "mechanicalsuit": "BOOLEAN",
+    "mechanicalsuit_timer": "FLOAT_INTERP",
+    "jetpack_cooldown": "FLOAT_INTERP",
+    "forcegrab_cooldown": "FLOAT_INTERP",
+    "forcecrush_cooldown": "FLOAT_INTERP",
+    "forcechoke_cooldown": "FLOAT_INTERP",
+    "jedi_ability_cycle": { "type": "BYTE", "resetWithoutSuit": true },
+    "sith_ability_cycle": { "type": "BYTE", "resetWithoutSuit": true }
+  },
+  "damageTypes": {
+    "FORCE": "damage_type.force.name"
+  },
+  "alts": {
+    "swhp:anakinskywalker": {
+      "general": "General"
+    },
+    "swhp:kenobi": {
+      "general": "General",
+      "ben": "Ben"
+    },
+    "swhp:mandalorian": {
+      "grogudarthmaul": "Darth Maul Grogu Variant"
+    },
+    "swhp:mandalorian_beskar": {
+      "grogudarthmaul": "Darth Maul Grogu Variant"
+    },
+    "swhp:captain_rex": {
+      "phase2": "Phase II"
+    },
+    "swhp:clone_trooper_phase1": {
+      "bombsquad": "Bomb Squad",
+      "captain": "Captain",
+      "commander": "Commander",
+      "lieutenant": "Lieutenant",
+      "sergeant": "Sergeant"
+    },
+    "swhp:clone_trooper_phase2": {
+      "13thbattalion": "13th Battalion",
+      "41stelite": "41st Elite",
+      "87thsentinalcorps": "87th Sentinal Corps",
+      "91stmobilereconcorps": "91st Mobile Recon Corps",
+      "181starmoreddivision": "181st Armored Division",
+      "187thbattalion": "187th Battalion",
+      "187thlegion": "187th Legion",
+      "212thbattalion": "212th Battalion",
+      "327thstarcorps": "327th Star Corps",
+      "332ndcompany": "332nd Company",
+      "442ndsiegebattalion": "442nd Siege Battalion",
+      "501stlegion": "501st Legion",
+      "kaminoguard": "Kamino Guard",
+      "shockcorps": "Shock Corps",
+      "wolfpack": "Wolf Pack"
+    },
+    "swhp:clone_jet_trooper": {
+      "phase2": "Phase 2",
+      "501stlegion": "501st Legion"
+    },
+    "swhp:republic_commando": {
+      "atin": "Atin",
+      "fixer": "Fixer",
+      "boss": "Boss",
+      "gregor": "Gregor",
+      "scorch": "Scorch",
+      "sev": "Sev"
+    }
+  }
+}

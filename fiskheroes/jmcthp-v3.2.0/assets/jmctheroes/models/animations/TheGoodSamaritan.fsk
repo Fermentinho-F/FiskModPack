@@ -1,0 +1,4 @@
+; data = weapon_animation_spin_timer
+
+{Chamber_rotZ} -= 45'{data}
+{ChamberO_rotZ} -= 45'{data}

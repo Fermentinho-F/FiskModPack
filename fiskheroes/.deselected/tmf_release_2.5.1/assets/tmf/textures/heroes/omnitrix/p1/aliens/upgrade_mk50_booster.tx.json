@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p1/aliens/upgrade_mk50_booster",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "tmf:omnitrix/xor/upgrade_mk50_booster_<TIMER>"
+      }
+    ],
+    "out": "tmf:generated/upgrade_mk50_booster_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(11 * entity.getInterpolatedData('tmf:dyn/pt_3')) | 0",
+      "values": {
+        "min": 1,
+        "max": 11
+      }
+    }
+  },
+  "isDynamic": true
+}

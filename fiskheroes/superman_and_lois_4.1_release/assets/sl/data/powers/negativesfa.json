@@ -1,0 +1,301 @@
+{
+  "name": "Negative Speed Force Avatar",
+  "modifiers": {
+ "fiskheroes:propelled_flight": {
+ },
+"fiskheroes:energy_projection": {
+  "damageProfile": {
+    "damage": 1.8,
+    "types": {
+      "ENERGY": 0.2,
+      "ELECTRICITY": 1.0
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "HEAT_TRANSFER": 2,
+      "REDUCE_KNOCKBACK": 1.0,
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 5,
+              "amplifier": 3
+            }
+          ]
+        }
+      },
+  "range": 16.0,
+  "radius": 0.2,
+  "soundEvents": {
+    "SHOOT": "fiskheroes:black_lightning_lightning_cast",
+    "BEAM_AMBIENT": "sl:lightning_beam"
+  }
+},
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 100.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 60,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:black_lightning_lightning_cast",
+        "DISARM": "fiskheroes:lightning_cast"
+      }
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [ 0.7, 0, 0.4 ],
+        [ -0.7, 0, 0.4 ]
+      ],
+      "climbing": {
+        "speed": 0.5,
+        "range": 1,
+        "tolerance": 2,
+        "minAnchorPoints": 1,
+        "anchorPointZones": [
+          [ "FRONT", "FRONT", "FRONT" ],
+          [ "FRONT", "FRONT", "FRONT" ]
+        ]
+      }
+    },
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 0.0,
+        "types": {
+          "SOUND": 0.2
+        }
+      },
+      "knockback": 2.0
+   },
+    "fiskheroes:charged_beam": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          "SOUND": 0.2
+        },
+        "properties": {
+          "COOK_ENTITY": false
+        }
+      },
+      "chargeTime": 5,
+      "duration": 120,
+      "cooldownTime": 5,
+      "range": 26.0,
+      "radius": 2.0,
+      "soundEvents": {
+        "SHOOT": ["sl:tornado_arms", "sl:wind_loop"]
+      }
+    },
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:transformation|MIRAGE": {
+      "key": "MIRAGE",
+      "transformation": {
+        "toggleData": "sl:dyn/mirage",
+        "timerData": "sl:dyn/mirage_timer",
+        "time": 10.0
+      },
+      "soundEvents": {
+        "ENABLE": "sl:phase"
+      }
+    },
+    "fiskheroes:transformation|INVIS": {
+      "key": "INVIS",
+      "transformation": {
+        "toggleData": "sl:dyn/invis",
+        "timerData": "sl:dyn/invis_timer",
+        "time": 10.0
+      },
+      "soundEvents": {
+        "ENABLE": "sl:phase"
+      }
+    },
+    "fiskheroes:transformation|CONSTRUCT": {
+      "key": "CONSTRUCT",
+      "transformation": {
+        "toggleData": "sl:dyn/construct",
+        "timerData": "sl:dyn/construct_timer",
+        "time": 10.0
+      },
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:black_lightning_lightning_cast", "sl:lightning_idle"],
+        "DISABLE": "sl:lightning_stop_negative"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:intangible",
+        "cooldownData": "fiskheroes:dyn/intangibility_cooldown",
+        "duration": 10,
+        "recovery": 0.1
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.01
+    },
+    "fiskheroes:intangibility": {
+      "isAbsolute": true,
+      "soundEvents": {
+        "ENABLE": "sl:phase"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 256,
+      "soundEvents": {
+        "TELEPORT": "sl:breach"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.15
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 18,
+      "soundEvents": {
+        "SHOOT": "sl:lightningthrow"
+      }
+    },
+    "fiskheroes:energy_manipulation|slow": {
+      "damageProfile": {
+        "damage": 100.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.05
+        }
+      },
+      "chargeTime": 600,
+      "range": 48.0,
+  "soundEvents": {
+    "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+    "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+  }
+},
+"fiskheroes:energy_manipulation|fast": {
+  "damageProfile": {
+    "damage": 100.0,
+    "types": {
+      "ENERGY": 1.0
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "LIGHTNING_STRIKE": 0.05
+    }
+  },
+  "chargeTime": 400,
+  "range": 48.0,
+  "soundEvents": {
+    "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+    "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+  }
+},
+"fiskheroes:energy_manipulation|faster": {
+  "damageProfile": {
+    "damage": 100.0,
+    "types": {
+      "ENERGY": 1.0
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "LIGHTNING_STRIKE": 0.05
+    }
+  },
+  "chargeTime": 320,
+  "range": 48.0,
+  "soundEvents": {
+    "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+    "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+  }
+},
+"fiskheroes:energy_manipulation|fastest": {
+  "damageProfile": {
+    "damage": 100.0,
+    "types": {
+      "ENERGY": 1.0
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "LIGHTNING_STRIKE": 0.05
+    }
+  },
+  "chargeTime": 270,
+  "range": 48.0,
+  "soundEvents": {
+    "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+    "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+  }
+},
+"fiskheroes:energy_manipulation|godspeed": {
+  "damageProfile": {
+    "damage": 100.0,
+    "types": {
+      "ENERGY": 1.0
+    },
+    "properties": {
+      "COOK_ENTITY": true,
+      "LIGHTNING_STRIKE": 0.05
+    }
+  },
+  "chargeTime": 150,
+  "range": 48.0,
+  "soundEvents": {
+    "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+    "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+  }
+},
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": ["fiskheroes:super_speed_sprint_negative", "fiskheroes:super_speed_sprint_negative_roar"],
+        "STOP": ["fiskheroes:super_speed_stop_negative", "fiskheroes:super_speed_stop_negative_roar"]
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+        "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+      }
+    },
+    "fiskheroes:arrow_catching": {},
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "fiskheroes:textures/gui/bars/cryo_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/intangibility.png",
+      "data": "fiskheroes:dyn/intangibility_cooldown"
+    }
+  ]
+}

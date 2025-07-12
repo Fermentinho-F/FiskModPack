@@ -1,0 +1,7 @@
+{
+  "name": "Black Widow's Bo-Staff",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 5.5
+  }
+}

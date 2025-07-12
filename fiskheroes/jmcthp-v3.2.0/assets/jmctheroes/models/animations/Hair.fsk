@@ -1,0 +1,15 @@
+{data} = curve {data}
+
+;====================================================;
+
+{Hair1_rotX} += 30'{data}
+{Hair2_rotX} += 5'{data}
+{Hair3_rotX} += 5'{data}
+{Hair4_rotX} += 5'{data}
+{Hair5_rotX} += 5'{data}
+{Hair6_rotX} += 5'{data}
+{Hair7_rotX} += 5'{data}
+{Hair8_rotX} += 5'{data}
+{Hair9_rotX} += 5'{data}
+
+;====================================================;

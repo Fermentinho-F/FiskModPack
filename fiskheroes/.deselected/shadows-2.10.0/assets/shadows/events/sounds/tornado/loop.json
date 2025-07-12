@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "shadows:tornado.loop",
+  "condition": "shadows:dyn/1boolean_reset",
+  "volume": "0.2",
+  "pitch": 1,
+  "loop": true,
+  "fadeIn": 4,
+  "fadeOut": 4
+}

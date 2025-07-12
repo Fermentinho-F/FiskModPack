@@ -1,0 +1,14 @@
+{
+    "suit": "emo:match",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:flight",
+      "fiskheroes:traversal",
+      "fiskheroes:defense2",
+      "fiskheroes:melee2",
+      "fiskheroes:ranged2",
+      "emo:copy",
+      "emo:cadmus"
+    ]
+  }
+  

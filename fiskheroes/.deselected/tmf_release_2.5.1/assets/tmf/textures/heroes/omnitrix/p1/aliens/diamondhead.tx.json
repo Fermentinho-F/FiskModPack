@@ -1,0 +1,9 @@
+{
+  "texture": "tmf:omnitrix/p1/aliens/diamondhead_<TYPE>",
+  "getters": {
+    "TYPE": {
+      "key": "entity.getHealth() > 15 ? 1 : (entity.getHealth() > 10 ? 2 : (entity.getHealth() > 5 ? 3 : 4))",
+      "values": [1, 2, 3, 4]
+    }
+  }
+}

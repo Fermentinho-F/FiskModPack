@@ -1,0 +1,47 @@
+{head_posX} @ {data} -> 0
+{head_posY} @ {data} -> 2.5
+{head_posZ} @ {data} -> -7.0
+{head_rotX} @ {data} -'> 15'
+{head_rotY} @ {data} -'> 0'
+{head_rotZ} @ {data} -'> 0'
+
+{body_posX} @ {data} -> 0.0
+{body_posY} @ {data} -> 2.5
+{body_posZ} @ {data} -> -7.5
+{body_rotX} @ {data} -'> 35'
+{body_rotY} @ {data} -'> 0'
+{body_rotZ} @ {data} -'> 0'
+
+{rightArm_posX} @ {data} -> -5
+{rightArm_posY} @ {data} -> 4.5
+{rightArm_posZ} @ {data} -> -7.3
+{rightArm_rotX} @ {data} -'> 0'
+{rightArm_rotY} @ {data} -'> -37'
+{rightArm_rotZ} @ {data} -'> 40'
+
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 4.5
+{leftArm_posZ} @ {data} -> -6.3
+{leftArm_rotX} @ {data} -'> -15'
+{leftArm_rotY} @ {data} -'> 10'
+{leftArm_rotZ} @ {data} -'> -80'
+
+{rightLeg_posX} @ {data} -> -2.0
+{rightLeg_posY} @ {data} -> 13.0
+{rightLeg_posZ} @ {data} -> -2.5
+{rightLeg_rotX} @ {data} -'> 18'
+{rightLeg_rotY} @ {data} -'> 10'
+{rightLeg_rotZ} @ {data} -'> 18'
+
+{leftLeg_posX} @ {data} -> 2.5
+{leftLeg_posY} @ {data} -> 12.0
+{leftLeg_posZ} @ {data} -> -2.0
+{leftLeg_rotX} @ {data} -'> 20'
+{leftLeg_rotY} @ {data} -'> -4'
+{leftLeg_rotZ} @ {data} -'> -8'
+
+out "rotate" (15{data}, 0, 0, 1)
+out "rotate" (90{data}, 0, 1, 0)
+
+
+

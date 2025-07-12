@@ -1,0 +1,8 @@
+{
+  "dataFormat": "CIRCLES",
+  "maxAngle": 360,
+  "shapes": [
+    [3, 1.5],
+
+  ]
+}

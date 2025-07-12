@@ -1,0 +1,25 @@
+;{data} = sin(pi(1 - {data}))^2
+;{rightArm_rotX} @ {data} -> -2.4
+;{rightArm_rotY} *= 1 - {data}
+;{rightArm_rotZ} *= 1 - {data}
+
+{data} = curve {data}
+{x} = {data}(1 - {limbSwingAmount})
+
+
+{rightArm_rotX} -=  1.05{x}
+{rightArm_rotY} += 0.09{x}
+{rightArm_rotZ} -= 0.5{x}
+
+{leftArm_rotX} -= 1.05{x}
+{leftArm_rotY} += 1.05{x}
+
+{leftArm_posZ} -= 1{x}
+
+
+
+out "firstPerson" (true)
+out "rotate" (95{data}, 0, 1, 0)
+out "rotate" (0, 1, 0, 0)
+out "rotate" (0, 0, 0, 1)
+out "translate" (0.5{data}, 0.0, -0.4{data})

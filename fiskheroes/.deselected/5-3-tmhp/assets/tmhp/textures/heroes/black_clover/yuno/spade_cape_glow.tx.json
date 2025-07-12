@@ -1,0 +1,9 @@
+{
+  "texture": "tmhp:black_clover/yuno/spade_cape_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.getInterpolatedData('tmhp:dyn/spiritdive2_timer') > 0",
+      "values": ["true", "false"]
+    }
+  }
+}

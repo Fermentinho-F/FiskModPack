@@ -1,0 +1,82 @@
+{
+  "name": "Daredevil Physiology",
+  "modifiers": {
+      "fiskheroes:equipment": {
+      "equipment": {
+	    "fiskheroes:grenade": {
+          "cooldown": 400,
+          "uses": 8,
+          "damageProfile": {
+            "damage": 40.0,
+            "types": {
+              "EXPLOSION": 1.0
+            },
+            "properties": {
+              "EFFECTS": [
+                {
+                  "id": "minecraft:poison",
+                  "duration": 60,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:weakness",
+                  "duration": 80,
+                  "amplifier": 1,
+                  "chance": 0.8
+                }
+              ]
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 50,
+          "radius": 8.0
+        }
+      },
+	"soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+      "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "fiskheroes:web_shoot",
+        "RELEASE": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"],
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"],
+        "IMPACT": "fiskheroes:flight_impact_entity"
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip"
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    }
+  }
+}

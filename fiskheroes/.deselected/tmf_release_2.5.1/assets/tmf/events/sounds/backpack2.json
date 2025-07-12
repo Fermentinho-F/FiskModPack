@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "condition": "entity.getData('tmf:dyn/transform_timer') != 0",
+  "sound": "tmf:armory.backpack2",
+  "volume": "0.2 + 0.2*(1-entity.getData('tmf:dyn/transform_timer'))",
+  "fadeOut": 5
+}

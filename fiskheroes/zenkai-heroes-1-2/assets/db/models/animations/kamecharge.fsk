@@ -1,0 +1,57 @@
+{charge_time}={data}
+{charge_0}=curve animate2({charge_time},14.5,0,0.3735632184,14.1264367816)
+{charge_1}=curve animate2({charge_time},0.1666666667,0,0.0689655172,0.0977011494)
+{charge_2}=curve animate2({charge_time},0.1264367816,0.06896551724137931,0.0977011494,0.0287356322)
+{charge_3}=curve animate2({charge_time},0.2068965517,0.16666666666666669,0.0287356322,0.1781609195)
+{charge_4}=curve animate2({charge_time},14.3045977011,0.19540229885057472,0.1781609195,14.1264367816)
+
+{head_rotX}+=36.2945299362'{charge_0}
+{head_rotY}+=15.2954087693'{charge_0}
+{head_rotZ}+=-5.270707008'{charge_0}
+{head_posX}+=-1{charge_0}
+{head_posY}+=3{charge_0}
+{head_posZ}+=-3{charge_0}
+
+{body_rotX}+=10'{charge_0}
+{body_rotY}+=40'{charge_0}
+{body_posX}+=-1{charge_0}
+{body_posY}+=2{charge_0}
+{body_posZ}+=-2{charge_0}
+
+{rightArm_rotX}+=47.2259556784'{charge_0}
+{rightArm_rotY}+=9.0214566574'{charge_0}
+{rightArm_rotZ}+=8.0482437363'{charge_0}
+{rightArm_posY}+=3{charge_0}
+
+{RightArm2_rotX}+=-107.5'{charge_0}
+
+{leftArm_rotX}+=-2.8727054834'{charge_1}
+{leftArm_rotY}+=5.5009285577'{charge_1}
+{leftArm_rotZ}+=-6.3876579034'{charge_1}
+{leftArm_rotX}+=-29.1694155894'{charge_2}
+{leftArm_rotY}+=13.6214610469'{charge_2}
+{leftArm_rotZ}+=9.6566640285'{charge_2}
+{leftArm_rotX}+=-33.3782480361'{charge_3}
+{leftArm_rotY}+=16.32830521'{charge_3}
+{leftArm_rotZ}+=15.0047713392'{charge_3}
+{leftArm_rotX}+=-7.0715763028'{charge_4}
+{leftArm_rotY}+=31.7959861418'{charge_4}
+{leftArm_rotZ}+=45.5653845429'{charge_4}
+{leftArm_posX}+=-2{charge_0}
+{leftArm_posY}+=4{charge_0}
+{leftArm_posZ}+=-5{charge_0}
+
+{LeftArm2_rotX}+=-10.8277685742'{charge_0}
+{LeftArm2_rotY}+=-19.8430245056'{charge_0}
+{LeftArm2_rotZ}+=29.3994204563'{charge_0}
+
+{rightLeg_rotX}+=38.8059284537'{charge_0}
+{rightLeg_rotY}+=-10.6051351543'{charge_0}
+{rightLeg_rotZ}+=16.5210192527'{charge_0}
+{rightLeg_posY}+=2{charge_0}
+{rightLeg_posZ}+=1{charge_0}
+
+{leftLeg_rotX}+=0.5785726812'{charge_0}
+{leftLeg_rotY}+=-17.4735923478'{charge_0}
+{leftLeg_rotZ}+=-0.5249976455'{charge_0}
+{leftLeg_posZ}+=-5{charge_0}

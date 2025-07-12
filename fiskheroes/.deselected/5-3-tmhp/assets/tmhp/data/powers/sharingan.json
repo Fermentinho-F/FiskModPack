@@ -1,0 +1,150 @@
+{
+  "name": "Sharingan",
+  "modifiers": {
+    "fiskheroes:transformation|sharingan1": {
+      "key": "SHARINGAN",
+      "transformation": {
+        "toggleData": "tmhp:dyn/sharingan",
+        "timerData": "tmhp:dyn/sharingan_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "tmhp:sharingan"
+      }
+    },
+    "fiskheroes:cooldown|sharingan2": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/sharingan",
+        "cooldownData": "tmhp:dyn/sharingan_cooldown",
+        "duration": 1300,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:transformation|mark1": {
+      "key": "CURSE_MARK",
+      "transformation": {
+        "toggleData": "tmhp:dyn/curse_mark",
+        "timerData": "tmhp:dyn/curse_mark_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|mark2": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/curse_mark",
+        "cooldownData": "tmhp:dyn/curse_mark_cooldown",
+        "duration": 300,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "HELLFIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 320,
+          "REDUCE_KNOCKBACK": 1.0
+        }
+      },
+      "chargeTime": 5,
+      "duration": 20,
+      "cooldownTime": 25,
+      "range": 4.0,
+      "radius": 0.4,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:cryo_charge": {
+      "isToggle": true,
+      "soundEvents": {
+        "CHARGE": "tmhp:lightning_loop"
+      }
+    },
+    "fiskheroes:damage_bonus|chidori": {
+      "amount": 20.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:damage_bonus|onyx_chidori": {
+      "amount": 35.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "damageProfile": {
+        "damage": 25.0,
+        "types": {
+          "ENERGY": 0.8,
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 1.0
+        }
+      },
+      "chargeTime": 1,
+      "range": 32.0
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:throwing_star": {
+          "cooldown": 200,
+          "uses": 15,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+		  },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 500,
+          "uses": 3
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+   },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.2]
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "tmhp:textures/gui/chi_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/nanite_transformation.png",
+      "data": "tmhp:dyn/sharingan_cooldown"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+      "data": "tmhp:dyn/curse_mark_cooldown"
+    }
+  ]
+}

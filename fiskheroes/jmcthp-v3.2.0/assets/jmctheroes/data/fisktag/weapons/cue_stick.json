@@ -1,0 +1,12 @@
+{
+  "name": "Cue Stick",
+  "permission": "USE_STICK",
+  "holdingPose": "SINGLE",
+  "cooldown": 1,
+  "damageProfile": {
+    "damage": 2.75,
+    "types": {
+      "EXPLOSION": 1.2
+    }
+  }
+}

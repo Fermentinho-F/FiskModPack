@@ -1,0 +1,8 @@
+
+{R.Cube.1_posX} -= -36*{data}
+{R.Cube.2_posX} -= -40*{data}
+{R.Cube.3_posX} -= -44*{data}
+
+{L.Cube.1_posX} -= 36*{data}
+{L.Cube.2_posX} -= 40*{data}
+{L.Cube.3_posX} -= 44*{data}

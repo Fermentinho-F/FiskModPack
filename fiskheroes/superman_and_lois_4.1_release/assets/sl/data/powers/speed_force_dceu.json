@@ -1,0 +1,52 @@
+{
+  "name": "Speed-Force (DCEU)",
+  "modifiers": {
+ "fiskheroes:propelled_flight": {
+ },
+    "fiskheroes:transformation|brake": {
+      "key": "BRAKE",
+      "transformation": {
+        "toggleData": "sl:dyn/brake",
+        "timerData": "sl:dyn/brake_timer",
+        "time": 10.0
+      }
+    },
+    "fiskheroes:hover": {
+      "isToggle": false
+    },
+    "fiskheroes:intangibility": {
+      "isToggle": false,
+      "isAbsolute": true,
+      "soundEvents": {
+        "ENABLE": "sl:phase"
+      }
+    },
+    "fiskheroes:flight": {
+      "speed": 0.01
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "canUseTachyons": true,
+      "soundEvents": {
+        "ENABLE": "sl:flicker_loop",
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_comics",
+        "SPRINT": "fiskheroes:super_speed_sprint_comics",
+        "STOP": "fiskheroes:super_speed_stop_comics"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+        "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+      }
+    },
+    "fiskheroes:arrow_catching": {},
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  }
+}

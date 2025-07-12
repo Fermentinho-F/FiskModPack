@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": "Superman's Blood",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/blood.png"
+    }
+  },
+  "requirements": [
+    "sl:superman"
+  ],
+  "price": {
+    "IRID_GOLD": 2,
+    "XP_LEVELS": 15
+  }
+}

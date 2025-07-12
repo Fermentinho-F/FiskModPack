@@ -1,0 +1,32 @@
+{
+    "display": {
+      "name": {
+        "translate": "Fazbear Ent. Animatronics"
+      },
+      "description": {
+        "translate": "Welcome to your new job at Fazbear Entertainment!\n\nBy reading this you acknowledge that Fazbear Ent. is not responsible for any mental distress, headaches, nausea, nightmares, injuries, or death caused by Fazbear Ent. branded animatronics."
+      },
+      "icon": {
+        "texture": "fnaf:textures/gui/nodes/fnaf.png"
+      }
+    },
+    "requirements": [],
+    "price": {
+      "TUTRIDIUM": 2,
+      "XP_LEVELS": 10
+    },
+    "criteria": {
+      "food": {
+        "trigger": "fiskheroes:block_placed_by_player",
+        "description": {
+          "translate": "Before you get started, try some of our delicious pizza available at one of our many Freddy Fazbear's Pizza locations!"
+        },
+        "condition": {
+          "variables": {
+            "item": "BLOCK_BEING_PLACED"
+          },
+          "check": "item.name() == 'fiskheroes:pizza' || item.name() == 'fiskheroes:boxed_pizza'"
+        }
+      }
+    }
+}

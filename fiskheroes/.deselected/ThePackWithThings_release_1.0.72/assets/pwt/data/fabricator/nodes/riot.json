@@ -1,0 +1,15 @@
+{
+    "suit": "pwt:riot",
+    "requirements": [
+        "fiskheroes:tier8_9",
+        "fiskheroes:traversal2",
+        "fiskheroes:defense2",
+        "fiskheroes:melee3",
+        "fiskheroes:ranged",
+		"fiskheroes:regeneration2",
+        "pwt:symbiotic_life_form"
+    ],
+    "display": {
+    "description": "That Is The Uggliest Looking Thing I Have Ever Seen "
+    }
+}

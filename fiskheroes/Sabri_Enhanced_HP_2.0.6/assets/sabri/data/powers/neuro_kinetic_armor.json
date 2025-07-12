@@ -1,0 +1,109 @@
+{
+  "name": "Neuro-Kinetic Armor",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.06,
+      "boostSpeed": 0.10,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_cape_loop", "sabri:kang_the_conqueror_platform_summon", "sabri:kang_the_conqueror_platform_loop"],
+        "DISABLE": "sabri:kang_the_conqueror_platform_unsummon"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "range": 24.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "sabri:kang_the_conqueror_energy_proj_shoot",
+        "SHOOT_STOP": "sabri:kang_the_conqueror_energy_proj_stop",
+        "BEAM_AMBIENT": "sabri:kang_the_conqueror_energy_proj_loop"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 7.5,
+      "spread": 0.3,
+      "radius": 0.1,
+      "cooldownTime": 25,
+      "soundEvents": {
+        "SHOOT": "sabri:kang_the_conqueror_energy_proj_blast"
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 12.0,
+      "soundEvents": {
+        "GRAB": ["sabri:kang_the_conqueror_telekinesis_grab", "sabri:kang_the_conqueror_telekinesis_loop"],
+        "RELEASE": "sabri:kang_the_conqueror_telekinesis_release"
+      }
+    },
+	"fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "sabri:kang_the_conqueror_teleport"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 180.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "sabri:kang_the_conqueror_forcefield_loop",
+        "DEFLECT": "sabri:kang_the_conqueror_forcefield_deflect",
+        "DISARM": "sabri:kang_the_conqueror_forcefield_disarm"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    }
+  }
+}

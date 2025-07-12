@@ -1,0 +1,28 @@
+{
+    "display": {
+    "name": "Symbiotic Life Form",
+    "icon": {
+        "texture":  "pwt:textures/gui/nodes/symbiot_container.png"
+    }
+    },
+    "requirements": [
+	
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:block_broken_by_player",
+        "description": {
+            "translate": "Break Some Lunar Soil"
+        },
+        "condition": {
+            "variables": {
+            "block": "BLOCK_BEING_BROKEN"
+            },
+            "check": "block.name() == 'fiskheroes:lunar_soil' && Math.random() >=0.9"
+        }
+        }
+    }
+}

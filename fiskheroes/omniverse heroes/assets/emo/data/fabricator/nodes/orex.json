@@ -1,0 +1,9 @@
+{
+  "suit": "emo:orex",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "emo:omega",
+    "emo:rex",
+    "emo:cadmus"
+  ]
+}

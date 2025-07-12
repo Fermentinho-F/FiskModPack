@@ -1,0 +1,12 @@
+{
+  "suit": "tmhp:red_lantern",
+  "display": {
+    "description": "\u00A7cWith blood and rage of crimson red, ripped from a corpse so freshly dead, together with our hellish hate, we'll burn you all, that is your Fate!"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "elseworld:ap6_7",
+    "tmhp:lantern_spectrum",
+    "tmhp:heropack2"
+  ]
+}

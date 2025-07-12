@@ -1,0 +1,11 @@
+{
+  "suit": "sabri:namor",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee3",
+    "sabri:sehp"
+  ]
+}

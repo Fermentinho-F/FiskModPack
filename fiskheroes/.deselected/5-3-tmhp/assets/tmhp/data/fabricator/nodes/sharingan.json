@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Sharingan Dojutsu"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/sharingan.png"
+    }
+  },
+  "requirements": [
+    "tmhp:chakra" ],
+  "price": {
+    "IRID_GOLD": 3,
+    "XP_LEVELS": 45
+  }
+}

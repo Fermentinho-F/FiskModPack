@@ -1,0 +1,14 @@
+{
+    "particles": [
+      {
+        "type": "minecraft:hugeexplosion",
+        "anchor": "body",
+        "amount": 1,
+        "offset": [0, 10, -30],
+        "randOffset": [0, 0, 0],
+        "motion": [0,0,0],
+        "lockFPYaw": true
+      }
+    ]
+  }
+  

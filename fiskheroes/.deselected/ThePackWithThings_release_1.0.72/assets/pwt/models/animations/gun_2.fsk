@@ -1,0 +1,8 @@
+{data} = {data}
+{barrel_1_posY} += 4.0*{data}
+{barrel_2_posY} += 4.0*{data}
+{barrel_3_posY} += 4.0*{data}
+
+{barrel_1_2_posY} += 2.0*{data}
+{barrel_2_2_posY} += 2.0*{data}
+{barrel_3_2_posY} += 2.0*{data}

@@ -1,0 +1,13 @@
+Update 4.1 - 
+Updated the pack to be compatible with fiskheroes 2.4.0
+Fixed node problems and redundant code as a result of 2.4.0 update
+Elseworlds nodes are no longer shared between heropacks, it is now exclusively for Superman & Lois Heropack
+Changed Steel's superspeed to an ability rather than a passive stat
+Steel's boosters now activate when using superspeed
+Removed superhearing ability
+Changed Superboy (Jordan)'s goggles to be more accurate
+Removed Firestorm (Jax)'s transmutation ability
+Fixed Jon-El's punch sound
+Updated heropack icon inside the fabricator
+Renamed Vaporlock to Starlight
+Fixed an issue causing The Flash (DCEU) to play bits of wall running animation while phasing

@@ -1,0 +1,104 @@
+{
+  "name": "Red Death Armor",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 1,
+          "quantity": 5
+        }
+      },
+      "soundEvents": {
+        "CAST": "fiskheroes:spell_cast",
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "EFFECTS": [{
+              "id": "fiskheroes:disable_speed",
+            "duration": 100,
+            "amplifier": 3
+            }
+          ],
+          "COOK_ENTITY": false,
+          "LIGHTNING_STRIKE": 5.15
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "EFFECTS": [{
+              "id": "fiskheroes:disable_speed",
+            "duration": 100,
+            "amplifier": 3
+            }
+          ],
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 48.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.1,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:black_lightning_lightning_cast"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flicker_loop_comics",
+        "DISABLE": [],
+        "MOVE": "fiskheroes:super_speed_move_loop_cw",
+        "SPRINT": ["fiskheroes:super_speed_sprint_savitar", "fiskheroes:super_speed_sprint_savitar_noise"],
+        "STOP": ["fiskheroes:super_speed_stop_savitar", "fiskheroes:super_speed_stop_savitar_noise"]
+      }
+    },
+    "fiskheroes:sentry_mode": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "COLD",
+      "factor": 0.5
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:slow_motion_enable_cw",
+        "DISABLE": "fiskheroes:slow_motion_disable_cw"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:metal_skin": {
+    }
+  }
+}

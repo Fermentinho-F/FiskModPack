@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.super_jump",
+  "pitch": "0.9 + Math.random() * 0.2"
+}

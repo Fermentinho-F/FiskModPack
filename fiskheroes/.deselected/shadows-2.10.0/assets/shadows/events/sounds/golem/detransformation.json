@@ -1,0 +1,7 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "shadows:golem.detransform",
+    "volume": 1,
+    "pitch": 1
+  }
+  

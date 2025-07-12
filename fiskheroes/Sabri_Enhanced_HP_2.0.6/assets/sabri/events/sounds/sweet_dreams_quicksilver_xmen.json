@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:modifier.superspeed.sweet_dreams.quicksilver_xmen",
+  "override": "sabri:funcs/sweet_dreams_quicksilver_xmen",
+  "condition": {
+    "start": "entity.getData('fiskheroes:mask_open_timer2') == 1"
+  },
+  "volume": 1.25,
+  "loop": true,
+  "fadeOut": 10
+}

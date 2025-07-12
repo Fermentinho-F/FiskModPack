@@ -1,0 +1,7 @@
+{
+  "inputs": [
+    "sabri:flight/thor_header",
+    "sabri:flight/hover/thor",
+    "sabri:flight/boost/thor"
+  ]
+}

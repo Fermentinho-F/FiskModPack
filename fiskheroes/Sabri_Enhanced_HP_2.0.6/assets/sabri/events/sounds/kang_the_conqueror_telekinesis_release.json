@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.kang_the_conqueror.telekinesis.release",
+  "fadeOut": 10
+}

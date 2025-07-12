@@ -1,0 +1,51 @@
+{
+  "name": "Cursed",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage":25.0,
+        "types": {
+          "SHARP": 1.0
+        }
+      },
+      "chargeTime": 40,
+      "duration": 5,
+      "cooldownTime": 25,
+      "range": 8.0,
+      "radius": 360,
+      "isToggle": true,
+      "soundEvents": {
+        "CHARGE": "shadows:golem/shatter"
+      }
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "BLUNT": 1.0
+        }
+      },
+      "range": 1.0,
+      "radius": 1
+    },
+    "fiskheroes:transformation|punch": {
+      "transformation": {
+        "toggleData": "shadows:dyn/1boolean_reset",
+        "timerData": "shadows:dyn/2float_interp_reset",
+        "time": 40
+      }
+    },
+    "fiskheroes:transformation|transform": {
+      "key": "CURSED",
+      "transformation": {
+        "toggleData": "shadows:dyn/2boolean_reset",
+        "timerData": "shadows:dyn/4float_interp_reset",
+        "time": 80
+      },
+      "soundEvents": {
+        "ENABLE": "shadows:golem/transformation",
+        "DISABLE": "shadows:golem/detransformation"
+      }
+    }
+  }
+}

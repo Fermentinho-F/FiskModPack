@@ -1,0 +1,75 @@
+{
+  "name": "Milk Physiology",
+  "modifiers": {
+    "fiskheroes:invisibility": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:vision_intang_off",
+        "DISABLE": "fiskheroes:vision_intang_off"
+      }
+    },
+    "fiskheroes:cooldown|invisibility": {
+      "cooldown": {
+        "toggleData": "fiskheroes:invisible",
+        "cooldownData": "fiskheroes:dyn/shadowform_cooldown",
+        "duration": 20,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.5, -0.2, 0.15],
+        [-0.5, -0.2, 0.15]
+      ],
+      "climbing": {
+        "speed": 0.1,
+        "range": 5,
+        "tolerance": 7,
+        "minAnchorPoints": 2,
+        "anchorPointZones": [
+          ["TOP", "RIGHT", "FRONT"],
+          ["TOP", "LEFT", "FRONT"],
+          ["BOTTOM", "RIGHT", "BACK"],
+          ["BOTTOM", "LEFT", "BACK"]
+        ]
+      },
+      "range": 8.0,
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "SHARP": 0.5,
+          "BLUNT": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+      "canBreakGlass": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:ock_enable",
+        "DISABLE": "fiskheroes:ock_disable",
+        "ANCHOR": "fiskheroes:ock_climb",
+        "UNANCHOR": "fiskheroes:ock_unanchor",
+        "RELEASE": "fiskheroes:ock_unanchor",
+        "JAB_START": "fiskheroes:ock_jab",
+        "GRAB_START": "fiskheroes:ock_grab",
+        "STRIKE_START": "fiskheroes:ock_strike",
+        "STRIKE_CHARGED": "fiskheroes:ock_strike_charged"
+      }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "EXPLOSION",
+      "factor": 0.5
+    }
+  },
+    "hud": [{
+            "type": "PROGRESS",
+            "texture": "moopack:textures/gui/bars/milk_bar.png",
+            "data": "fiskheroes:dyn/shadowform_cooldown"
+        }
+    ]
+}

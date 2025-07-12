@@ -1,0 +1,12 @@
+{
+  "texture": "db:goku/gokussj_<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "entity.isDisplayStand() ? 2 : (Math.ceil(2 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0)",
+      "values": {
+        "min": 0,
+        "max": 2
+      }
+    }
+  }
+}

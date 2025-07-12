@@ -1,0 +1,15 @@
+{
+    "suit": "sabri:doctor_doom_comics",
+    "requirements": [
+      "fiskheroes:tier8_9",
+      "fiskheroes:object_manipulation",
+      "fiskheroes:flight",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee2",
+      "fiskheroes:defense3",
+      "fiskheroes:teleportation",
+      "fiskheroes:magic",
+      "sabri:sehp"
+    ]
+  }
+  

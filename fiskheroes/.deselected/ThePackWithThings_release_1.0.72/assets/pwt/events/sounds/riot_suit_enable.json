@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.riot.symbiot.enable",
+  "condition": "entity.getData('pwt:dyn/symbiot')",
+  "volume": 0.5
+}

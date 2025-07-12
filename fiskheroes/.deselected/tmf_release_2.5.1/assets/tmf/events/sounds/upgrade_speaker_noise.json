@@ -1,0 +1,7 @@
+{
+  "sound": "tmf:upgrade.speaker_noise",
+  "condition": "fiskheroes:heat_vision",
+  "volume": "10 * entity.getInterpolatedData('fiskheroes:heat_vision_timer')",
+  "pitch": "1 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "loop": true
+}

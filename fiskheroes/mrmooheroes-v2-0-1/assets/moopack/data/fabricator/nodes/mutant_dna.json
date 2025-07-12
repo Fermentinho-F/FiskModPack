@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:mutant_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:flight",
+    "fiskheroes:teleportation",
+    "moopack:dna_activators"
+  ]
+}

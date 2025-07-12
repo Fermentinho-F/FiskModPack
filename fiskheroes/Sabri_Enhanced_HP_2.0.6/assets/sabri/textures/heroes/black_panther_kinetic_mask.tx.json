@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "sabri:black_panther_kinetic_charge_mask",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "sabri:xor/black_panther_kinetic_mask_<TIMER>"
+      }
+    ],
+    "out": "sabri:generated/black_panther_kinetic_mask_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(27 * entity.getInterpolatedData('fiskheroes:mask_open_timer2')) | 0",
+      "values": {
+        "min": 1,
+        "max": 27
+      }
+    }
+  },
+  "isDynamic": true
+}

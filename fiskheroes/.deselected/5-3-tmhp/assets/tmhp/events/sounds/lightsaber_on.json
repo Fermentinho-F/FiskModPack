@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmhp:main.lightsaber_on",
+  "volume": 0.8
+}

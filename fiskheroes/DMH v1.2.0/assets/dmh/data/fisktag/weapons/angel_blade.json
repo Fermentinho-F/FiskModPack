@@ -1,0 +1,8 @@
+{
+  "name": "Angel Blade",
+  "permission": "ANGEL_BLADE",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 25.0
+  }
+}

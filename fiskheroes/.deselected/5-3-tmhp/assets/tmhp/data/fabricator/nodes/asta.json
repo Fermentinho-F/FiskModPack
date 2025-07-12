@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:asta",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "elseworld:ap6_7",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "tmhp:anti_mahou",
+    "tmhp:black_clover",
+    "tmhp:swordsman3",
+    "tmhp:heropack2"
+  ]
+}

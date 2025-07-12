@@ -1,0 +1,19 @@
+{
+  "display": {
+    "name": {
+      "translate": "Nightwing"
+    },
+    "description": "\u00A71We fall because someone pushes us. We get up to \u00A7lpush back.",
+    "icon": {
+      "texture": "tmhp:textures/gui/nightwing.png"
+    }
+  },
+  "requirements": [
+    "tmhp:robin",
+    "tmhp:batfamily"
+ ],
+  "price": {
+    "IRID_GOLD": 1,
+    "XP_LEVELS": 15
+  }
+}

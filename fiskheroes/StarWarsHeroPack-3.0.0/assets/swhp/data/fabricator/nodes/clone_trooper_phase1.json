@@ -1,0 +1,14 @@
+{
+  "suit": "swhp:clone_trooper_phase1",
+  "requirements": [
+    "swhp:swhpdownload",
+    "swhp:finalupdate",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration"
+  ],
+  "display": {
+  "description": "Good soldiers follow orders..."
+  }
+}

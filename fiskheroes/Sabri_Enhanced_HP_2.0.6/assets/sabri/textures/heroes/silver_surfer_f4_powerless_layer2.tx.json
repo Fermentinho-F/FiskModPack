@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "sabri:silver_surfer_f4_powerless_layer2",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "sabri:xor/silver_surfer_powerless_<TIMER>"
+      }
+    ],
+    "out": "sabri:generated/silver_surfer_f4_powerless_layer2_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(50 * entity.getInterpolatedData('fiskheroes:dyn/steel_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 50
+      }
+    }
+  },
+  "isDynamic": true
+}

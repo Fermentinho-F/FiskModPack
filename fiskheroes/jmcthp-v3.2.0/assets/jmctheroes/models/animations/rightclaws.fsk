@@ -1,0 +1,7 @@
+{data} = {data}
+
+{Claws1_posY} += 6.5*{data}
+
+{Claws2_posY} += 6.3*{data}
+
+{Claws3_posY} += 6.3*{data}

@@ -1,0 +1,12 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.ironman.boost.loop",
+  "condition": {
+    "start": "(!entity.is('DISPLAY') || !entity.as('DISPLAY').getDisplayType === 'BOOK_PREVIEW') && (entity.getWornChestplate().suitType() == 'jmctheroes:modok' || entity.getWornChestplate().suitType() == 'jmctheroes:modok/superior')",
+    "continue": "(!entity.is('DISPLAY') || !entity.as('DISPLAY').getDisplayType === 'BOOK_PREVIEW') && (entity.getWornChestplate().suitType() == 'jmctheroes:modok' || entity.getWornChestplate().suitType() == 'jmctheroes:modok/superior')"
+  },
+  "loop": true,
+  "volume": 0.25,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

@@ -1,0 +1,15 @@
+{data} = sin(pi(1 - {data}))^2
+
+{leftArm_rotX} @ {data} -> {head.rotX} - 1.9
+{leftArm_rotY} @ {data} -> {head.rotY} + 0.8
+{leftArm_rotZ} @ {data} -> {head.rotZ}
+
+{head_rotX} @ {data} -> 0.0
+{head_rotY} @ {data} -> 0.0
+{head_rotZ} @ {data} -> 0.0
+
+out "firstPerson" (true)
+out "translate" (-0.35{data}, 0, 0.15{data})
+out "rotate" (130{data}, 0, 1, 0)
+out "rotate" (-20{data}, 1, 0, 0)
+out "rotate" (-40{data}, 0, 0, 1)

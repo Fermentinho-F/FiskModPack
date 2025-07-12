@@ -1,0 +1,26 @@
+{
+  "color": {
+    "red": {
+	  "start": 0.18,
+      "end": {
+        "base": 0.18,
+        "rand": 0.05
+	  }
+    },
+	"green": {
+	  "start": 0.28,
+      "end": {
+        "base": 0.55,
+        "rand": 0.05
+	  }
+	},
+    "blue": {
+	  "start": 0.23,
+      "end": {
+	    "base": 0.34,
+        "rand": 0.05
+	  }
+	}
+	
+  }
+}

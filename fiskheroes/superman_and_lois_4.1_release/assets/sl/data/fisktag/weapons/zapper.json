@@ -1,0 +1,50 @@
+{
+    "name": "Kid Danger's Zapper",
+  "permission": "USE_ZAPPER",
+  "holdingPose": "SINGLE",
+  "isHidden": false,
+  "damage": 0.0,
+  "cooldown": 8,
+  "damageProfile": {
+    "damage": 1.0,
+    "types": {
+      "ENERGY": 1.0
+      },
+      "properties": {
+        "HIT_COOLDOWN": 0.75,
+        "REDUCE_KNOCKBACK": 0.5
+      }
+    
+  },
+  "fisktag": {
+    "sprintShootDelay": 0.2,
+    "sprintDelay": 0.2
+  },
+  "activation": {
+    "type": "NORMAL",
+    "rate": 1,
+    "windup": 1,
+    "maxDuration": 1 
+  },
+  "spread": {
+    "sprintingFactor": 2,
+    "fallingFactor": 1.8,
+    "scopingFactor": 0.55
+  },
+  "recoil": {
+    "amount": 0.3,
+    "cameraShake": 0.8
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "amount": 1,
+      "spread": 1,
+      "trail": 3,
+      "range": 16.0
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "sl:zapper_shoot"
+  }
+}

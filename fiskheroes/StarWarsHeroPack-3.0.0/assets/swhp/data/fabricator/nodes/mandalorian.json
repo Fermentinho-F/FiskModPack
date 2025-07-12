@@ -1,0 +1,13 @@
+{
+  "suit": "swhp:mandalorian",
+  "requirements": [
+    "swhp:swhpdownload",
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:regeneration"
+  ],
+  "display": {
+  "description": "This is the way"
+  }
+}

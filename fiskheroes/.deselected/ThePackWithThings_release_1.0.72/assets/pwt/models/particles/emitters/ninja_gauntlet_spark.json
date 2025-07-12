@@ -1,0 +1,15 @@
+{
+  "particles": [
+    {
+	  "condition": "entity.getData('fiskheroes:dyn/superhero_landing_ticks')>0",
+      "type": "BULLET_SPARK",
+	  "anchor": "leftArm",
+      "amount": 1,
+	  "offset": {
+        "tp": [-1.0, 9.0, 0.0],
+        "fp": [-8.0, 8.0, 4.0]
+      },
+	  "randMotion": [-0.6, 0.1, -0.6]
+    }
+  ]
+}

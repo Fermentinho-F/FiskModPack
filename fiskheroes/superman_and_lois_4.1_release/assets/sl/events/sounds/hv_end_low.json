@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.hv_end",
+  "volume": 0.3,
+  "condition": 'entity.getData("fiskheroes:mask_open")'
+}

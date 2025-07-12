@@ -1,0 +1,151 @@
+{
+  "name": "Atlantean Physiology",
+  "modifiers": {
+	"fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+	  "factor": 0.7
+    },
+	"fiskheroes:ground_smash": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 1.0
+        }
+      },
+      "radius": 3.0,
+      "knockback": 2.5,
+      "cooldownTime": 80
+    },
+	  "fiskheroes:tentacles": {
+      "tentacles": [
+        [3.0, -0.5, 2.5],
+        [-3.0, -0.5, 2.5],
+		[0.5, 3.0, 2.5]
+      ],
+      "range": 64.0,
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "SHARP": 0.5
+        },
+        "properties": {
+          "DAMAGE_DROPOFF": 0.6,
+          "HIT_COOLDOWN": 0
+        }
+      },
+	  "tentacleStrike": {
+        "chargeTime": 20,
+        "damageProfile": {
+          "damage": 10.0,
+          "types": {
+            "SHARP": 0.5
+          },
+          "properties": {
+            "HIT_COOLDOWN": 0
+          }
+        }
+      },
+      "canBreakGlass": true
+    },
+	  "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:manta_blade_enable",
+        "DISABLE": "fiskheroes:manta_blade_disable"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "MAGIC": 1.0
+        }
+      },
+      "chargeTime": 60,
+      "duration": 58,
+      "cooldownTime": 80,
+      "range": 32.0,
+      "radius": 0.1,
+	  "soundEvents": {
+        "BEAM_AMBIENT": "loriatpack:water_beam"
+      }
+    },
+	"fiskheroes:controlled_flight": {
+      "speed": 0.15,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+	  "soundEvents": {
+        "ENABLE": "loriatpack:water_flight"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+	"fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "MAGIC": 1.0
+        }
+      },
+      "knockback": 4.0
+   },
+   "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 0.1,
+        "types": {
+          "SCREAM": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "range": 25.0,
+      "radius": 0.2,
+	  "soundEvents": {
+		"SHOOT": "loriatpack:water_vortex"
+      }
+    },
+	"fiskheroes:regeneration": {
+      "factor": 2
+    },
+	"fiskheroes:leaping|1": {
+      "leapAmount": [0.9, 0.4]
+    },
+    "fiskheroes:leaping|2": {
+      "leapAmount": [2.5, 1.6]
+      },
+	 "fiskheroes:cooldown": {
+        "cooldown": {
+          "toggleData": "entity.getData('loriatpack:dyn/leap_timer') == 1",
+          "cooldownData": "loriatpack:dyn/leap_cooldown",
+          "duration": 50,
+          "recovery": 1
+        }
+    }
+},
+"hud": [
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/aquaman_jump.png",
+    "data": "loriatpack:dyn/leap_cooldown"
+  },
+  {
+    "type": "CHARGE",
+    "texture": "loriatpack:textures/gui/bars/aquaman_beam.png",
+    "data": "fiskheroes:beam_charge"
+  }
+]
+}
+
+

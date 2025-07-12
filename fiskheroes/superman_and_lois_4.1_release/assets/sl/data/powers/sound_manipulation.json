@@ -1,0 +1,56 @@
+{
+  "name": "Sound Manipulation",
+  "modifiers": {
+    "fiskheroes:sonic_waves": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "knockback": 0.001,
+      "soundEvents": {
+        "SHOOT": "sl:onomo"
+      }
+    },
+
+    "fiskheroes:charged_beam": {
+      "canDoGriefing": false,
+      "damageProfile": {
+        "damage": 10,
+        "types": {
+          "SOUND": 1.5
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 3,
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 0.0,
+              "amplifier": 2
+            }
+          ],
+          "COOK_ENTITY": false
+        }
+      },
+      "canBreakGlass": true,
+      "chargeTime": 25,
+      "duration": 8,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 2.2,
+      "soundEvents": {
+        "SHOOT": ["sl:onomocharge", "sl:leap"],
+        "BEAM_AMBIENT": "sl:frost_breath_loop",
+        "CHARGE": "sl:onomo2charge"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

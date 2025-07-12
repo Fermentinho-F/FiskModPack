@@ -1,0 +1,24 @@
+{
+  "texture": {
+
+    "in": "sl:kid_danger/kiddanger/both",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "sl:kid_danger/xor/iu_<TIMER>"
+      }
+    ],
+    "out": "sl:generated/iu<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(32-entity.getInterpolatedData('fiskheroes:dyn/steel_timer')) | 0",
+
+      "values": {
+        "min": 0,
+        "max": 32
+      }
+    }
+  },
+  "isDynamic": true
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Cryomancer",
+  "modifiers": {
+    "fiskheroes:cryo_charge": {
+      "soundEvents": {
+        "CHARGE": "fiskheroes:cryo_charge"
+      }
+    },
+    "fiskheroes:damage_bonus|blade": {
+      "amount": 25.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 1
+      }
+    },
+    "fiskheroes:damage_bonus|hand": {
+      "amount": 5.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 25
+      }
+    },
+    "fiskheroes:icicles": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "SHARP": 1.0,
+          "COLD": 0.5
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.2
+        }
+      },
+      "quantity": 1,
+      "spread": 0.5,
+      "cooldownTime": 5
+    },
+    "fiskheroes:cryoball": {
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 16.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:cryo_charge"
+      }
+    },
+    "fiskheroes:frost_walking": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 15
+    },
+    "fiskheroes:damage_weakness|fire": {
+      "damageType": "FIRE",
+      "factor": 0.5
+    },
+    "fiskheroes:damage_weakness|hellfire": {
+      "damageType": "HELLFIRE",
+      "factor": 2.0
+    },
+    "fiskheroes:damage_resistance": {
+      "damageType": "COLD",
+      "factor": 5.0
+    },
+    "fiskheroes:blade": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "fiskheroes:textures/gui/bars/cryo_charge.png",
+      "data": "fiskheroes:cryo_charge"
+    }
+  ]
+}

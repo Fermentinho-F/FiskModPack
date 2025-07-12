@@ -1,0 +1,28 @@
+{
+  "display": {
+    "name": "Lucky",
+    "description": "Really lucky?",
+    "icon": {
+      "texture": "sl:textures/gui/nodes/lucky.png"
+    }
+  },
+  "criteria": {
+    "test": {
+      "trigger": "fiskheroes:player_struck_by_lightning",
+      "description": "Get struck by lightning",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_STRUCK"
+        },
+        "check": "player"
+      }
+    },
+    "requirements": [
+      "sl:sl"
+    ],
+    "price": {
+      "IRID_GOLD": 2,
+      "XP_LEVELS": 15
+    }
+  }
+}

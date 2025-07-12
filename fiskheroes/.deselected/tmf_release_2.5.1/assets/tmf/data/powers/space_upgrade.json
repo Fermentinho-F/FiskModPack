@@ -1,0 +1,9 @@
+{
+  "name": "Space Upgrade",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+        "canReachMoon": true,
+        "range": 128.0
+    }
+  }
+}

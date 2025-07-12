@@ -1,0 +1,35 @@
+{
+  "name": "Cooking Cleave",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 30.0,
+        "types": {
+          "CURSED": 0.5,
+          "POSITIVE": 0.5,
+          "CANCEL": 0.5,
+          "FIRE": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 20,
+      "duration": 5,
+      "cooldownTime": 30,
+      "range": 64.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "SHOOT": "jjkp:slash"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

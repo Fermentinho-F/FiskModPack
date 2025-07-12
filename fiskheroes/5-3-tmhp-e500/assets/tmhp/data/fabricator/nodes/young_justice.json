@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Young Justice"
+    },
+    "description": "\u00A74It's simple.Get on board or get out of the way. \u00A70-\u00A7oSuperboy",
+    "icon": {
+      "text": "YJ"
+    }
+  },
+  "requirements": [
+    "tmhp:dc"],
+  "price": {
+    "XP_LEVELS": 15
+  }
+}

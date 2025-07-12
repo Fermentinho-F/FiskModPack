@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:heatblast.bomb",
+  "condition": {
+    "continue": "entity.getData('tmf:dyn/pc_1') != 0 && entity.isSneaking() && entity.getWornChestplate().nbt().getByte('heatblast') >= 15"
+  },
+  "volume": "entity.getInterpolatedData('tmf:dyn/pc_1')",
+  "pitch": "1 - Math.random() * 0.2",
+  "fadeOut": 10
+}

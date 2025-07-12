@@ -1,0 +1,11 @@
+{
+  "suit": "tmhp:william",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "elseworld:ap4_5",
+    "fiskheroes:traversal2",
+    "tmhp:swordsman",
+    "tmhp:lyoko",
+    "tmhp:heropack2"
+  ]
+}

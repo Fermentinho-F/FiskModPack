@@ -1,0 +1,780 @@
+{
+    "silence": {
+      "sounds": [
+        "suits/silence"
+      ],
+      "category": "player"
+    },
+	"psi_beam": {
+      "sounds": [
+        "suits/psi_beam"
+      ],
+      "category": "player"
+    },
+	"psi_field": {
+      "sounds": [
+        "suits/psi_field"
+      ],
+      "category": "player"
+    },
+	"wind_storm": {
+      "sounds": [
+        "suits/wind_storm"
+      ],
+      "category": "player"
+    },
+	"lightning": {
+      "sounds": [
+        "suits/lightning"
+      ],
+      "category": "player"
+    },
+    "lightning_spell": {
+      "sounds": [
+        "suits/lightning_spell"
+      ],
+      "category": "player"
+    },
+	"teleport": {
+      "sounds": [
+        "suits/teleport"
+      ],
+      "category": "player"
+    },
+    "doorman_suitup": {
+      "sounds": [
+        "suits/doorman_suitup"
+      ],
+      "category": "player"
+    },
+	"doorman_unsuit": {
+      "sounds": [
+		"suits/doorman_unsuit"
+      ],
+      "category": "player"
+    },
+	"ironman_charge": {
+		"sounds": [
+			"suits/ironman_charge"
+	 ],
+	"category": "player"
+	},
+	"ironman_shoot": {
+		"sounds": [
+			"suits/ironman_shoot"
+	],
+	"category": "player"
+	},
+	"mjolnir": {
+		"sounds": [
+			"suits/mjolnir"
+	],
+	"category": "player"
+	},
+	"widow_bite": {
+		"sounds": [
+			"suits/widow_bite"
+	],
+	"category": "player"
+	},
+	"kang_beam": {
+		"sounds": [
+			"suits/kang_beam"
+	],
+	"category": "player"
+	},
+	"nightcrawler_port":{
+		"sounds": [
+			"suits/nightcrawler_port"
+	],
+	"category": "player"
+	},
+	"apocalypse_blast":{
+		"sounds": [
+			"suits/apocalypse_blast"
+	],
+	"category": "player"
+	},
+	"apocalypse_beam": {
+		"sounds": [
+			"suits/apocalypse_beam"
+	],
+	"category": "player"
+	},
+	"iceman_beam": {
+		"sounds": [
+			"suits/iceman_beam"
+	],
+	"category": "player"
+	},
+	"iceman_flight": {
+		"sounds": [
+			"suits/iceman_flight"
+	],
+	"category": "player"
+	},
+	"electro_blast": {
+		"sounds": [
+			"suits/electro_blast"
+	],
+	"category": "player"
+	},
+	"electro_beam": {
+		"sounds": [
+			"suits/electro_beam"
+	],
+	"category": "player"
+	},
+	"electro_lightning": {
+		"sounds": [
+			"suits/electro_lightning"
+	],
+	"category": "player"
+	},
+	"electro_flight": {
+		"sounds": [
+			"suits/electro_flight"
+	],
+	"category": "player"
+	},
+	"electro_charge": {
+		"sounds": [
+			"suits/electro_charge"
+	],
+	"category": "player"
+	},
+	"vibro_beam": {
+		"sounds": [
+			"suits/vibro_beam"
+	],
+	"category": "player"
+	},
+	"lizard_out": {
+		"sounds": [
+			"suits/lizard_out"
+	],
+	"category": "player"
+	},
+	"lizard_punch": {
+		"sounds":[
+			"suits/lizard_punch"
+	],
+	"category": "player"
+	},
+	"lizard_punch2": {
+		"sounds":[
+			"suits/lizard_punch2"
+	],
+	"category": "player"
+	},
+	"sand_cloud": {
+		"sounds":[
+			"suits/sand_cloud"
+	],
+	"category": "player"
+	},
+	"giant_start": {
+		"sounds":[
+			"suits/giant_start"
+	],
+	"category": "player"
+	},
+	"giant_end": {
+		"sounds": [
+			"suits/giant_end"
+	],
+	"category": "player"
+	},
+	"sand_mace": {
+		"sounds": [
+			"suits/sand_mace"
+	],
+	"category": "player"
+	},
+	"sand_cloud_start": {
+		"sounds": [
+			"suits/sand_cloud_start"
+	],
+	"category": "player"
+	},
+	"quake_beam": {
+		"sounds": [
+			"suits/quake_beam"
+	],
+	"category": "player"
+	},
+	"nova_beam": {
+		"sounds": [
+			"suits/nova_beam"
+	],
+	"category": "player"
+	},
+	"nova_blast": {
+		"sounds": [
+			"suits/nova_blast"
+	],
+	"category": "player"
+	},
+	"flame_on": {
+		"sounds": [
+			"suits/flame_on"
+	],
+	"category": "player"
+	},
+	"galactus_charge":{
+		"sounds": [
+			"suits/galactus_charge"
+	],
+	"category": "player"
+	},
+	"falcon_jetpack":{
+		"sounds": [
+			"suits/jetpack_loop"
+	],
+	"category": "player"
+	},
+	"cosmic_beam":{
+		"sounds": [
+			"suits/cosmic_beam"
+	],
+	"category": "player"
+	},
+	"magic_blast":{
+		"sounds": [
+			"suits/magic_blast"
+	],
+	"category": "player"
+	},
+	"spray":{
+		"sounds": [
+			"suits/spray"
+	],
+	"category": "player"
+	},
+	"hell_ambient":{
+		"sounds": [
+			"suits/hell_ambient"
+	],
+	"category": "player"
+	},
+	"rider_speach":{
+		"sounds": [
+			"suits/rider_speach"
+	],
+	"category": "player"
+	},
+	"fire_on":{
+		"sounds": [
+			"suits/fire_on"
+	],
+	"category": "player"
+	},
+	"energy_blast":{
+		"sounds": [
+			"suits/energy_blast"
+	],
+	"category": "player"
+	},
+	"spell_blast":{
+		"sounds": [
+			"suits/spell_blast"
+	],
+	"category": "player"
+	},
+	"graple":{
+		"sounds": [
+			"suits/graple"
+	],
+	"category": "player"
+	},
+	"fire_breath":{
+		"sounds": [
+			"suits/fire_breath"
+	],
+	"category": "player"
+	},
+	"bzzz":{
+		"sounds": [
+			"suits/bzzz"
+	],
+	"category": "player"
+	},
+	"flap_wings":{
+		"sounds": [
+			"suits/flap_wings"
+	],
+	"category": "player"
+	},
+	"creetle_fly":{
+		"sounds": [
+			"suits/creetle_fly"
+	],
+	"category": "player"
+	},
+	"creetle_fly_bosnia":{
+		"sounds": [
+			"suits/creetle_fly_bosnia"
+	],
+	"category": "player"
+	},
+	"tp_enderman":{
+		"sounds": [
+			"suits/tp_enderman"
+	],
+	"category": "player"
+	},
+	"bike_idle":{
+		"sounds": [
+			"suits/bike_idle"
+	],
+	"category": "player"
+	},
+	"bike_moving":{
+		"sounds": [
+			"suits/bike_moving"
+	],
+	"category": "player"
+	},
+	"bike_off":{
+		"sounds": [
+			"suits/bike_off"
+	],
+	"category": "player"
+	},
+	"jake_lockley":{
+		"sounds": [
+			"suits/jake_lockley"
+	],
+	"category": "player"
+	},
+	"water_beam":{
+		"sounds": [
+			"suits/water_beam"
+	],
+	"category": "player"
+	},
+	"water_flight":{
+		"sounds": [
+			"suits/water_flight"
+	],
+	"category": "player"
+	},
+	"switch":{
+		"sounds": [
+			"suits/switch"
+	],
+	"category": "player"
+	},
+	"shoot4":{
+		"sounds": [
+			"suits/shoot4"
+	],
+	"category": "player"
+	},
+	"morbin_time":{
+		"sounds": [
+			"suits/morbin_time"
+	],
+	"category": "player"
+	},
+	"morbin_bite":{
+		"sounds": [
+			"suits/morbin_bite"
+	],
+	"category": "player"
+	},
+	"diamond_on":{
+		"sounds": [
+			"suits/diamond_on"
+	],
+	"category": "player"
+	},
+	"psionic_blast":{
+		"sounds": [
+			"suits/psionic_blast"
+	],
+	"category": "player"
+	},
+	"psionic_beam":{
+		"sounds": [
+			"suits/psionic_beam"
+	],
+	"category": "player"
+	},
+	"dino_rawr":{
+		"sounds": [
+			"suits/dino_rawr"
+	],
+	"category": "player"
+	},
+	"frog_phonk":{
+		"sounds": [
+			"suits/frog_phonk"
+	],
+	"category": "player"
+	},
+	"banshee":{
+		"sounds": [
+			"suits/banshee"
+	],
+	"category": "player"
+	},
+	"super_clap":{
+		"sounds": [
+			"suits/super_clap"
+	],
+	"category": "player"
+	},
+	"shazam_big":{
+		"sounds": [
+			"suits/shazam_big"
+	],
+	"category": "player"
+	},
+	"shazam_kid":{
+		"sounds": [
+			"suits/shazam_kid"
+	],
+	"category": "player"
+	},
+	"laser_gun":{
+		"sounds": [
+			"suits/laser_gun"
+	],
+	"category": "player"
+	},
+	
+	"apocalypse_aim":{
+		"sounds": [
+			"suits/apocalypse_aim"
+	],
+	"category": "player"
+	},
+	"canary_beam":{
+		"sounds": [
+			"suits/canary_beam"
+	],
+	"category": "player"
+	},
+	"canary_wave":{
+		"sounds": [
+			"suits/canary_wave"
+	],
+	"category": "player"
+	},
+	"grapling_zip":{
+		"sounds": [
+			"suits/grapling_zip"
+	],
+	"category": "player"
+	},
+	"lantern_aim":{
+		"sounds": [
+			"suits/lantern_aim"
+	],
+	"category": "player"
+	},
+	"lantern_beam":{
+		"sounds": [
+			"suits/lantern_beam"
+	],
+	"category": "player"
+	},
+	"night_vivsion":{
+		"sounds": [
+			"suits/night_vivsion"
+	],
+	"category": "player"
+	},
+	"shazam_lightning":{
+		"sounds": [
+			"suits/shazam_lightning"
+	],
+	"category": "player"
+	},
+	"water_vortex":{
+		"sounds": [
+			"suits/water_vortex"
+	],
+	"category": "player"
+	},
+	"flash_punch":{
+		"sounds": [
+			"suits/flash_punch"
+	],
+	"category": "player"
+	},
+	"arm_vortex":{
+		"sounds": [
+			"suits/arm_vortex"
+	],
+	"category": "player"
+	},
+	"grapling_swing":{
+		"sounds": [
+			"suits/grapling_swing"
+	],
+	"category": "player"
+	},
+	"barrett82_shoot":{
+		"sounds": [
+			"suits/barrett82_shoot"
+	],
+	"category": "player"
+	},
+	"m4_shoot":{
+		"sounds": [
+			"suits/m4_shoot"
+	],
+	"category": "player"
+	},
+	"mac10_shoot":{
+		"sounds": [
+			"suits/mac10_shoot"
+	],
+	"category": "player"
+	},
+	
+	"magneto_hit":{
+		"sounds": [
+			"suits/magneto_hit"
+	],
+	"category": "player"
+	},
+	"magneto_jam":{
+		"sounds": [
+			"suits/magneto_jam"
+	],
+	"category": "player"
+	},
+	"magneto_scrap_summon":{
+		"sounds": [
+			"suits/magneto_scrap_summon"
+	],
+	"category": "player"
+	},
+	"magneto_shield":{
+		"sounds": [
+			"suits/magneto_shield"
+	],
+	"category": "player"
+	},
+	"magneto_shiled_ipmact":{
+		"sounds": [
+			"suits/magneto_shiled_ipmact"
+	],
+	"category": "player"
+	},
+	"spas_12":{
+		"sounds": [
+			"suits/spas_12"
+	],
+	"category": "player"
+	},
+	"lightning_delay_4s":{
+		"sounds": [
+			"suits/lightning_delay_4s"
+	],
+	"category": "player"
+	},
+	"whip_zip":{
+		"sounds": [
+			"suits/whip_zip"
+	],
+	"category": "player"
+	},
+	"hack_aim":{
+		"sounds": [
+			"suits/hack_aim"
+	],
+	"category": "player"
+	},
+	"hack_shoot":{
+		"sounds": [
+			"suits/hack_shoot"
+	],
+	"category": "player"
+	},
+	"shoot1":{
+		"sounds": [
+			"suits/shoot1"
+	],
+	"category": "player"
+	},
+	"batwing_invis":{
+		"sounds": [
+			"suits/batwing_invis"
+	],
+	"category": "player"
+	},
+	"batwing_shield":{
+		"sounds": [
+			"suits/batwing_shield"
+	],
+	"category": "player"
+	},
+	"batwing_shield_off":{
+		"sounds": [
+			"suits/batwing_shield_off"
+	],
+	"category": "player"
+	},
+	"batwing_shield_on":{
+		"sounds": [
+			"suits/batwing_shield_on"
+	],
+	"category": "player"
+	},
+	"dart":{
+		"sounds": [
+			"suits/dart"
+	],
+	"category": "player"
+	},
+	"signal_tp":{
+		"sounds": [
+			"suits/signal_tp"
+	],
+	"category": "player"
+	},
+	"spawn_tp":{
+		"sounds": [
+			"suits/spawn_tp"
+	],
+	"category": "player"
+	},
+	"spawn_aim":{
+		"sounds": [
+			"suits/spawn_aim"
+	],
+	"category": "player"
+	},
+	"muds":{
+		"sounds": [
+			"suits/mud_1",
+			"suits/mud_2",
+			"suits/mud_3",
+			"suits/mud_4"
+	],
+	"category": "player"
+	},
+	"whips":{
+		"sounds": [
+			"suits/whip_1",
+			"suits/whip_2",
+			"suits/whip_3"
+	],
+	"category": "player"
+	},
+	"haha":{
+		"sounds": [
+			"suits/haha_1",
+			"suits/haha_2",
+			"suits/haha_3"
+	],
+	"category": "player"
+	},
+	"chains_grab":{
+		"sounds": [
+			"suits/chains_grab"
+	],
+	"category": "player"
+	},
+	"chains_jab":{
+		"sounds": [
+			"suits/chains_jab"
+	],
+	"category": "player"
+	},
+	"chains_srtike":{
+		"sounds": [
+			"suits/chains_srtike"
+	],
+	"category": "player"
+	},
+	"chains_start":{
+		"sounds": [
+			"suits/chains_start"
+	],
+	"category": "player"
+	},
+	"umbrella_shoot":{
+		"sounds": [
+			"suits/umbrella_shoot"
+	],
+	"category": "player"
+	},
+	"spawn_off":{
+		"sounds": [
+			"suits/spawn_off"
+	],
+	"category": "player"
+	},
+	"spawn_on":{
+		"sounds": [
+			"suits/spawn_on"
+	],
+	"category": "player"
+	},
+	"hood_helmet_off":{
+		"sounds": [
+			"suits/hood_helmet_off"
+	],
+	"category": "player"
+	},
+	"hood_helmet_on":{
+		"sounds": [
+			"suits/hood_helmet_on"
+	],
+	"category": "player"
+	},
+	"water_pipe":{
+		"sounds": [
+			"suits/water_pipe"
+	],
+	"category": "player"
+	},
+	"equip_hood_gloves":{
+		"sounds": [
+			"suits/equip_hood_gloves"
+	],
+	"category": "player"
+	},
+	"ledger_off":{
+		"sounds": [
+			"suits/ledger_off"
+	],
+	"category": "player"
+	},
+	"ledger_on":{
+		"sounds": [
+			"suits/ledger_on"
+	],
+	"category": "player"
+	},
+	"tentackel_ivy_on":{
+		"sounds": [
+			"suits/tentackel_ivy_on"
+	],
+	"category": "player"
+	},
+	"ivy_kiss":{
+		"sounds": [
+			"suits/ivy_kiss"
+	],
+	"category": "player"
+	},
+	"ivy_jab":{
+		"sounds": [
+			"suits/ivy_jab"
+	],
+	"category": "player"
+	},
+	"block_ivy":{
+		"sounds": [
+			"suits/block_ivy"
+	],
+	"category": "player"
+	}
+	
+}

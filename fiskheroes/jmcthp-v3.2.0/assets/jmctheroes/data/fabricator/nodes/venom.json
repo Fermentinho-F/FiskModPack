@@ -1,0 +1,14 @@
+{
+  "suit": "jmctheroes:venom",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier8_9",
+    "jmctheroes:spider_man",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation"
+  ]
+}

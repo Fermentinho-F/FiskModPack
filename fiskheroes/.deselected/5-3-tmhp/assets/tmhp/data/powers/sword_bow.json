@@ -1,0 +1,25 @@
+{
+  "name": "Sword and Bow",
+  "modifiers": {
+    "fiskheroes:archery": {
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 10.0,
+        "regeneration": 5.0,
+        "recoveryDelay": 100,
+        "cooldown": 100
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.001,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  }
+}

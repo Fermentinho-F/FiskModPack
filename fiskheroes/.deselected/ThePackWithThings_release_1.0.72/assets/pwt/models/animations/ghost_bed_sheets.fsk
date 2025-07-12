@@ -1,0 +1,59 @@
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{vel_uni} = sqrt({motX}^2 + {motY}^2+ {motZ}^2)
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{forward} = -clamp({forward}, -2, 2)
+
+{idle} = {data_0}
+{sprint} = {data_1}
+{punch} = sin(pi{data_2})
+
+{fp_cancel} = {data_4}
+{fp_play} = {data_5}
+
+{rightArm_rotX} @ 1 -> -86'
+{leftArm_rotX} @ 1 -> -93'
+{rightArm_rotY} @ 1 -> 0
+{leftArm_rotY} @ 1 -> 0
+{rightArm_rotZ} @ 1 -> 0
+{leftArm_rotZ} @ 1 -> 0
+
+{rightArm_rotX} -= 7'sin(2pi{idle})
+{leftArm_rotX} += 6'sin(2pi{idle})
+
+{rightArm_rotZ} += 5'sin(4pi{idle})
+{leftArm_rotZ} -= 4'sin(4pi{idle})
+
+out "pivot" (0, 0.6, 0)
+out "translate" (-0.05sin(2pi{data_0}){fp_cancel}, 0, 0)
+out "rotate" (-3sin(2pi{data_0}){fp_cancel}, 0, 0, 1)
+
+
+{rightArm_rotX} -= 13'{sprint}
+{leftArm_rotX} -= 13'{sprint}
+{rightArm_rotY} += 20'{sprint}
+{leftArm_rotY} -= 20'{sprint}
+{rightArm_rotZ} += 12'{sprint}
+{leftArm_rotZ} -= 12'{sprint}
+
+{rightArm_rotX} -= 13'{punch}
+{leftArm_rotX} -= 13'{punch}
+
+{rightArm_rotY} += 18'{punch}
+{leftArm_rotY} -= 18'{punch}
+
+{rightArm_rotZ} += 12'{punch}
+{leftArm_rotZ} -= 12'{punch}
+
+{rightArm_rotX} += 20'{forward}{fp_cancel}
+{leftArm_rotX} += 20'{forward}{fp_cancel}
+
+{body_posZ} += 10{fp_play}
+
+out "rotate" (20{forward}{fp_cancel}, 1, 0, 0)
+out "rotate" (20{strafe}{fp_cancel}, 0, 0, 1)

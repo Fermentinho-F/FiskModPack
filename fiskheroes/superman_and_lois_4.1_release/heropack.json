@@ -1,0 +1,342 @@
+{
+  "name": "Superman & Lois Heropack",
+  "description": "Version 4.0 - Release 4.0",
+  "domain": "sl",
+  "watermark": "\u00A74\u00A7lSuperman & Lois\u00A7z",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "NyssaGhul/S-L-VFX",
+      "version": 1
+    },
+    "range": {
+      "parasite": { "distance": 48.0, "target": "ALL" },
+      "supercharged": { "distance": 48.0, "target": "ONLY_SELF" },
+      "bizarrotheme": { "distance": 48.0, "target": "ONLY_SELF" },
+      "flashtime": { "distance": 48.0, "target": "ONLY_SELF" },
+      "superhearingsound": { "distance":1.0, "sendToAll":false, "target": "ONLY_SELF" }
+    }
+  },
+  "damageTypes": {
+    "BLUE_KRYPTONITE": "Blue Kryptonite",
+    "KRYPTONITE": "Kryptonite",
+    "XKRYPTONITE": "X-Kryptonite",
+    "SOLAR": "Solar Blast",
+    "REDSOLAR": "Red Solar Blast",
+    "SUPERCHARGED": "Super Solar Charged",
+    "CANCER": "Cancer",
+    "COCAINE": "Cocaine",
+    "WIND": "Wind",
+    "HEAT": "Heat"
+  },
+  "dataVars": {
+    "parasite_glitch_ticks": "FLOAT",
+    "parasite_glitch_timer": "FLOAT",
+    "helicopter_flight": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "helicopter_flight_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "petercopter": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "petercopter_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "es_key_ready": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "isAttackKryptoniteInfused": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "heat_breath_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "prev_heat_breath_level": { "type": "FLOAT", "resetWithoutSuit": true },
+    "transmutation": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "new_item_timer": { "type": "FLOAT", "resetWithoutSuit": true },
+    "new_item": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "playparticle_timer": { "type": "FLOAT", "resetWithoutSuit": true },
+    "blue_kryptonite": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "heat_breath_level": { "type": "FLOAT", "resetWithoutSuit": true },
+    "heat_vision": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "heat_vision_charge": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "heat_breath": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "heat_breath_charge": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "heat_breath_profile": { "type": "FLOAT", "resetWithoutSuit": true },
+    "boolean": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "boolean2": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "punch_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "regeneration": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "equip_timer": "FLOAT",
+    "kryptonite_sickness": "BOOLEAN",
+    "kryptonite_sickness_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "peia_anim_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "printchat": "BOOLEAN",
+    "eradicator": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "eradicator_timer": "FLOAT_INTERP",
+    "eradicator_cooldown": "FLOAT",
+    "hammer_pose_timer": "FLOAT_INTERP",
+    "playclicksound": "BOOLEAN",
+    "greenlight": "BOOLEAN",
+    "isgunfrozen": "BOOLEAN",
+    "isreadytoshoot": "BOOLEAN",
+    "playcbendsound": "BOOLEAN",
+    "brake_timer": "FLOAT_INTERP",
+    "brake": "BOOLEAN",
+    "anim_bool": "BOOLEAN",
+    "kryptonite_on": "BOOLEAN",
+    "light": "FLOAT_INTERP",
+    "lightonoff": "BOOLEAN",
+    "steelchargedata": "FLOAT_INTERP",
+    "playsound": "BOOLEAN",
+    "dometimer": "FLOAT",
+    "wasdomeused": "BOOLEAN",
+    "heard": "BOOLEAN",
+    "inhale_anim_ticks": "FLOAT",
+    "inhale_anim_timer": "FLOAT_INTERP",
+    "soft_landing_timer": "FLOAT_INTERP",
+    "soft_landing_ticks": "FLOAT",
+    "playparticle": "BOOLEAN",
+    "xkryptonite": "BOOLEAN",
+    "xkryptonite_timer": "FLOAT_INTERP",
+    "xkryptonite_cooldown": "FLOAT",
+    "newaimingtimer": "FLOAT",
+    "steelcooldown": "BOOLEAN",
+    "speed": "STRING",
+    "speedup_ticks": "FLOAT",
+    "speedup_timer": "FLOAT_INTERP",
+    "notonmoon": "BOOLEAN",
+    "throw_ticks": "FLOAT",
+    "throw_timer": "FLOAT",
+    "es_charge": "FLOAT",
+    "oxygen": "FLOAT",
+    "inhaler_animation_timer": "FLOAT",
+    "inhaler_animation": "FLOAT",
+    "hammer_profile": "BOOLEAN",
+    "clap_animation_cooldown": "BOOLEAN",
+    "abilities_cycle": "BYTE",
+    "suitcooldown_cooldown": "FLOAT",
+    "speed_ticks": "FLOAT",
+    "speed_timer": "FLOAT_INTERP",
+    "inhaler_breathe_timer": "FLOAT",
+    "inhaler_breathe": "FLOAT",
+    "heatVisionSet": "BOOLEAN",
+    "isCryoChargeSet": "BOOLEAN",
+    "inhaler": "BOOLEAN",
+    "inhaler_timer": "FLOAT_INTERP",
+    "kryptonite": "BOOLEAN",
+    "kryptonite_timer": "FLOAT_INTERP",
+    "kryptonite_cooldown": "FLOAT",
+    "bizarroprofile": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "invis": "BOOLEAN",
+    "invis_timer": "FLOAT",
+    "construct": "BOOLEAN",
+    "construct_timer": "FLOAT_INTERP",
+    "hvfloat": "BOOLEAN",
+    "hvint": "INTEGER",
+    "suitup": "BOOLEAN",
+    "suitup_timer": "FLOAT_INTERP",
+    "hammer": "BOOLEAN",
+    "hammer_timer": "FLOAT_INTERP",
+    "hammer_cooldown": "FLOAT",
+    "clap": "BOOLEAN",
+    "clap_timer": "FLOAT_INTERP",
+    "sun": "BOOLEAN",
+    "sun_timer": "FLOAT_INTERP",
+    "absorb": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "absorb_timer": "FLOAT_INTERP",
+    "absorb_cooldown": "FLOAT",
+    "inverseabsorb": "BOOLEAN",
+    "inverseabsorb_timer": "FLOAT_INTERP",
+    "inverseabsorb_cooldown": "FLOAT",
+    "steelblade": "BOOLEAN",
+    "steelblade_timer": "FLOAT_INTERP",
+    "steelblade_cooldown": "FLOAT",
+    "sboost": "BOOLEAN",
+    "sboost_timer": "FLOAT_INTERP",
+    "sboost2": "BOOLEAN",
+    "sboost2_timer": "FLOAT_INTERP",
+    "test": "BOOLEAN",
+    "test_timer": "FLOAT_INTERP",
+    "test2": "BOOLEAN",
+    "test2_timer": "FLOAT_INTERP",
+    "mirage": "BOOLEAN",
+    "mirage_timer": "FLOAT_INTERP",
+    "startedyaw": "INTEGER",
+    "startedclimb": "BOOLEAN",
+    "climb": "FLOAT_INTERP",
+    "climb_bool": "BOOLEAN",
+    "rotationW": "INTEGER",
+    "jump": "BOOLEAN"
+  },
+  "alts": {
+    "sl:bizarro_cw": {
+      "$DEFAULT": {
+        "soundProfile": "BIZARRO_CW",
+        "maskToggleTicks": 14
+      },
+      "normalcwbizarro": {
+        "name": "Kara",
+        "soundProfile": "nb",
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:bizarro": {
+      "$DEFAULT": {
+        "soundProfile": "BIZARRO",
+        "maskToggleTicks": 20
+      },
+      "normalbizarro": {
+        "name": "Normal",
+        "soundProfile": "nb",
+        "maskToggleTicks": 20
+      },
+      "pendant": {
+        "name": "\u00A7d\u00A7lPendant\u00A7r",
+        "soundProfile": "BIZARRO",
+        "maskToggleTicks": 20
+      }
+    },
+    "sl:talrho": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:superboy_jordan": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:superman": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERMAN",
+        "maskToggleTicks": 14
+      },
+      "s1": {
+        "name": "Season 1",
+        "maskToggleTicks": 14
+      },
+      "black2": {
+        "name": "\u00A78\u00A7lEarth-TUD22\u00A7r",
+        "maskToggleTicks": 14
+      },
+      "ogsuperman": {
+        "name": "Fleischer's Suit",
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:superman_of_america": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      },
+      "female": {
+        "name": "Female",
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:superman_supercharged": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERMAN",
+        "maskToggleTicks": 14
+      },
+      "s1": {
+        "name": "Season 1",
+        "maskToggleTicks": 14
+      },
+      "black2": {
+        "name": "\u00A78\u00A7lEarth-TUD22\u00A7r",
+        "maskToggleTicks": 14
+      },
+      "ogsuperman": {
+        "name": "OG",
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:supergirl_cw": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERGIRL",
+        "maskToggleTicks": 14
+     },
+      "s1": {
+        "name": "Season 1",
+        "maskToggleTicks": 14
+      },
+      "overgirl": {
+        "name": "Overgirl (Earth-X)",
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:superman_cw": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERMAN",
+        "maskToggleTicks": 12
+      },
+      "elseworlds": {
+        "name": "Elseworlds",
+        "maskToggleTicks": 12
+      }
+    },
+    "sl:peter_griffin": {
+      "$DEFAULT": {
+        "soundProfile": "peter"
+      },
+      "retep": {
+        "name": "reteP",
+        "soundProfile": "retepsound"
+      }
+    },
+    "sl:supergirl_dceu": {
+      "$DEFAULT": {
+        "soundProfile": "SUPERGIRL",
+        "maskToggleTicks": 12
+      }
+    },
+    "sl:anderson": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:lana_rho": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:vaporlock": {
+      "$DEFAULT": {
+        "maskToggleTicks": 7,
+        "soundProfile": "MK46"
+      }
+    },
+    "sl:steel": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14,
+        "soundProfile": "MK46"
+      }
+    },
+    "sl:onomatopoeia": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      }
+    },
+    "sl:jon_el": {
+      "$DEFAULT": {
+        "maskToggleTicks": 20
+      }
+    },
+    "sl:cobalt_blue": {
+      "$DEFAULT": {
+        "soundProfile": "NEGATIVE"
+      }
+    },
+    "sl:man": {
+      "$DEFAULT": {
+        "maskToggleTicks": 80
+      }
+    },
+    "sl:snowflame": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:kid_danger": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "sl:the_flash_dceu": {
+      "$DEFAULT": {
+        "maskToggleTicks": 10,
+        "soundProfile": "COMICS"
+      }
+    }
+  }
+}

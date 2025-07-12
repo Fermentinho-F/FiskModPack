@@ -1,0 +1,1 @@
+extend("sl:superman_s1");

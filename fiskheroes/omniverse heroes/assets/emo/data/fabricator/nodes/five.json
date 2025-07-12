@@ -1,0 +1,8 @@
+{
+  "suit": "emo:five",
+  "requirements": [
+    "fiskheroes:tier1",
+    "emo:tp",
+    "emo:cadmus"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "name": "Optic Force",
+  "modifiers": {
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 0.25,
+          "HIT_COOLDOWN": 0.0,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 40
+        }
+      },
+      "range": 36.0,
+      "speed": 20.0,
+      "spread": 0.0,
+      "radius": 0.3,
+      "cooldownTime": 10,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_shot_shoot"
+      }
+    },
+    "fiskheroes:charged_beam|1": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 1.0,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 40
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 20.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:charged_beam|2": {
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.9,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 45
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 22.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:charged_beam|3": {
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.8,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 50
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 24.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:charged_beam|4": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.7,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 55
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 26.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop",
+        "SHOOT_STOP": "sabri:cyclops_xmen_optic_blast_stop"
+      }
+    },
+    "fiskheroes:charged_beam|5": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.6,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 60
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 28.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:charged_beam|6": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.5,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 65
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 30.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:charged_beam|7": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.4,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 70
+        }
+      },
+      "chargeTime": 0,
+      "duration": 999999999999,
+      "cooldownTime": 0,
+      "range": 32.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "SHOOT": "sabri:cyclops_xmen_optic_blast_start",
+        "BEAM_AMBIENT": "sabri:cyclops_xmen_optic_blast_loop"
+      }
+    },
+    "fiskheroes:heat_vision": {
+      "damageProfile": {
+        "damage": 7.5,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 50
+        }
+      },
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": []
+      }
+    }
+  }
+}

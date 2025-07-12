@@ -1,0 +1,53 @@
+{
+  "name": "Electrokinesis",
+  "modifiers": {
+    "fiskheroes:lightning_cast": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "LIGHTNING_STRIKE": 0.2
+        }
+      },
+      "range": 48.0,
+      "chainRadius": 2.5,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "sabri:doctor_doom_f4_lightning_shoot"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+      "duration": 40,
+      "cooldownTime": 25,
+      "range": 32.0,
+      "radius": 0.4,
+      "soundEvents": {
+        "CHARGE": "sabri:doctor_doom_f4_beam_charge",
+        "SHOOT": "sabri:doctor_doom_f4_beam_shoot",
+        "BEAM_AMBIENT": "sabri:doctor_doom_f4_beam_loop",
+        "SHOOT_STOP": "sabri:doctor_doom_f4_beam_stop"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

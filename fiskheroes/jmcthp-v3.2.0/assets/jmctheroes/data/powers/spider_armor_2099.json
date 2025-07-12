@@ -1,0 +1,125 @@
+{
+  "name": "SpiderArmor 2099",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.25,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost",
+        "IMPACT_BLOCK": "fiskheroes:flight_impact_block",
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity",
+        "ROLL": "fiskheroes:iron_man_flight_roll",
+        "DIVE": ["fiskheroes:flight_dive_loop", "fiskheroes:iron_man_flight_dive"]
+      }
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_shoot_raimi",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 116.0,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:web_zip_raimi"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_shazam_dceu",
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:potion_immunity": {
+        "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+      },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:damage_immunity": {
+      "damageType": "BULLET"
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.75
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:panther_claws_enable",
+        "DISABLE": "fiskheroes:panther_claws_disable"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 13,
+          "uses": 10,
+          "dissolveTime": 120,
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 13,
+          "uses": 5,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        },
+        "fiskheroes:rapid_webs": {
+          "cooldown": 30,
+          "uses": 3,
+          "quantity": 5,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 0.5,
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "fiskheroes:web_zip_raimi"
+          }
+        }
+      }
+    }
+  }
+}

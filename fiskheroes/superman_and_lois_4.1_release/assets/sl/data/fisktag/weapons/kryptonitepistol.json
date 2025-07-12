@@ -1,0 +1,50 @@
+{
+  "name": "\u00A7n\u00A7aLt. Anderson's Kryptonite Pistol",
+  "permission": "USE_KRYPTONITE_GUN",
+  "holdingPose": "SINGLE",
+  "isHidden": false,
+  "cooldown": 7,
+  "damageProfile": {
+    "damage": 5.0,
+    "types": {
+      "KRYPTONITE": 0.15
+    },
+    "properties": {
+      "HIT_COOLDOWN": 1,
+      "EFFECTS": [{
+          "id": "minecraft:nausea",
+          "duration": 20,
+          "amplifier": 0
+      }]
+    }
+  },
+  "fisktag": {
+    "sprintShootDelay": 7,
+    "sprintDelay": 8
+  },
+  "scope": {
+    "zoom": 0.45,
+    "allowHeadshots": true,
+    "headshotDamageBonus": 1
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.8
+  },
+  "recoil": {
+    "amount": 0.2,
+    "cameraShake": 1.5
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.75,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "fisktag:pistol_shoot",
+    "START": ["fisktag:tesla_gun_start", "fisktag:tesla_gun_start_loop", "fisktag:tesla_gun_started"]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "suit": "jjkp:itadori",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "jjkp:jujutsu_sorcerer",
+    "jjkp:black_flash"
+  ]
+}

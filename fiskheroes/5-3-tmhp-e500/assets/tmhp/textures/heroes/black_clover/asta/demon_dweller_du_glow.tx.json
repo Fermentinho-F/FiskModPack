@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmhp:black_clover/asta/demon_dweller_red_du_glow",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<TIMER>"
+      }
+    ],
+    "out": "tmhp:generated/black_clover/asta/demon_dweller_du_glow_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "(entity.ticksExisted() * 6 % 360) | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 6
+      }
+    }
+  }
+}

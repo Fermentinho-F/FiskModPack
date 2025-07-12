@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Another Alien"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/alien.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "XP_LEVELS": 15
+  }
+}

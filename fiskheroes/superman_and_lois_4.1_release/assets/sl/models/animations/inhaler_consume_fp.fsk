@@ -1,0 +1,11 @@
+{data} = sin(pi(1 - {data}))^2
+
+{inhaler_glass_inner_posX} @ {data} -> 10
+
+{inhaler_top_posX} @ {data} -> 10
+
+{inhaler_mouth_piece_posX} @ {data} -> 10
+
+{inhaler_glass_outer_posX} @ {data} -> 10
+
+{inhaler_base_posX} @ {data} -> 10

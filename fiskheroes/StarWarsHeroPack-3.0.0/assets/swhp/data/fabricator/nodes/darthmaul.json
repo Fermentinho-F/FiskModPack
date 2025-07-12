@@ -1,0 +1,16 @@
+{
+  "suit": "swhp:darthmaul",
+  "requirements": [
+    "swhp:swhpdownload",
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal",
+    "fiskheroes:object_manipulation"
+  ],
+  "display": {
+  "description": "Always remember, I am fear! Always remember, I am hunter! Always remember, I am filth! Always remember, I am nothing!"
+  }
+}

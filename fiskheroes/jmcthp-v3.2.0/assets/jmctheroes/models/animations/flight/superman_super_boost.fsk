@@ -1,0 +1,23 @@
+{x} = min({vel}, 1){data_3}{d1}{d} / 2.5
+
+{head_rotX} += -5'{data_3}
+
+{leftArm_rotX} += -167.5'{data_3}
+{leftArm_rotY} += -40'{data_3}
+{leftArm_rotZ} += 0'{data_3}
+
+{rightLeg_rotX} += 10'{data_3}
+{rightLeg_rotY} += 0'{data_3}
+{rightLeg_rotZ} += -3.5'{data_3}
+
+{rightLeg_posX} += -1{data_3}
+{rightLeg_posY} += -3{data_3}
+{rightLeg_posZ} += -2{data_3}
+
+{leftLeg_rotX} += 0'{data_3}
+{leftLeg_rotY} += 3'{data_3}
+{leftLeg_rotZ} += 2'{data_3}
+
+{leftLeg_posX} += 0.5{data_3}
+{leftLeg_posY} += 0{data_3}
+{leftLeg_posZ} += 0{data_3}

@@ -1,0 +1,34 @@
+{
+  "name": "Omega Force",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "OMEGA": 5,
+          "ENERGY": 1.0,
+          "FIRE": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+      "duration": 35,
+      "cooldownTime": 50,
+      "range": 32.0,
+      "radius": 0.4,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:heat_beam_loop"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

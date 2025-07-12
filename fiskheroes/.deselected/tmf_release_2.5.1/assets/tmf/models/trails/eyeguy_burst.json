@@ -1,0 +1,15 @@
+{
+
+  "constants": {
+    "COLOR": "0x60B42A"
+  },
+  "flicker": {
+    "color": "0x60B42A",
+    "density": 45,
+    "frequency": 2.5,
+    "length": 2.0,
+    "spread": 8.0,
+    "opacity": 0.9,
+    "confined": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "suit": "jmctheroes:katana_man",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:chainsaw_man",
+    "fiskheroes:tier4_5",
+    "fiskheroes:regeneration",
+    "fiskheroes:marksmanship",
+    "fiskheroes:traversal",
+    "fiskheroes:melee3"
+  ]
+}

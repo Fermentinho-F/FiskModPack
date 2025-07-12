@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.doctor_doom_comics.telekinesis.loop",
+  "condition": "entity.getData('fiskheroes:telekinesis') && entity.getData('fiskheroes:grab_id') > -1",
+  "loop": true,
+  "fadeIn": 8,
+  "fadeOut": 10
+}

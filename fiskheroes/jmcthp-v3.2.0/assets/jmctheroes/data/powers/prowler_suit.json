@@ -1,0 +1,32 @@
+{
+  "name": "Prowler's Suit",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:mk85_shield_enable","fiskheroes:panther_claws_enable"],
+        "DISABLE": ["fiskheroes:mk85_shield_disable", "fiskheroes:panther_claws_disable"]
+      }
+    },
+    "fiskheroes:cooldown|speedjump": {
+      "cooldown": {
+        "toggleData": "!entity.isOnGround() && entity.getData('fiskheroes:speed_sprinting')",
+        "cooldownData": "jmctheroes:dyn/jumping",
+        "duration": 10,
+        "recovery": 1
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [2.0, 0.2]
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu",
+        "STOP": "jmctheroes:prowler_stop"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    }
+  }
+}

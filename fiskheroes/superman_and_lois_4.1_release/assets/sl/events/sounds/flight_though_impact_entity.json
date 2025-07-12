@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:modifier.flight.impact.entity",
+  "pitch": "1.0 - Math.random() * 0.4"
+}

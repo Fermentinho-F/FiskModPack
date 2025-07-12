@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.heat_vision_start_cw",
+  "volume": 1.0,
+  "condition": "fiskheroes:aiming",
+  "pitch": "1.2 - Math.random() * 0.3",
+  "fadeIn": 10,
+  "delay": 5,
+  "fadeOut": 8
+}

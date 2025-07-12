@@ -1,0 +1,9 @@
+{
+  "suit": "moopack:ultra_illumination",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:teleportation",
+    "moopack:illumination",
+    "moopack:ultra_light_powers"
+  ]
+}

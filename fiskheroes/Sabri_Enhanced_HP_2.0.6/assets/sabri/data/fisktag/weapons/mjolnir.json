@@ -1,0 +1,8 @@
+{
+  "name": "\u00A7bMj\u00F6lnir",
+  "permission": "USE_MJOLNIR",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 8.0
+  }
+}

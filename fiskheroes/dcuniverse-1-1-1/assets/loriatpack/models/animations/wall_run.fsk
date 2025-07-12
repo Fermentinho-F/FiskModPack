@@ -1,0 +1,4 @@
+{data} = curve {data}
+
+out "rotate" (80{data}, 1, 0, 0)
+out "translate" (0, 0, -1{data})

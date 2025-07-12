@@ -1,0 +1,26 @@
+{
+  "suit": "jmctheroes:chainsaw_man",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "jmctheroes:devil_hunter",
+    "fiskheroes:regeneration",
+    "fiskheroes:traversal",
+    "fiskheroes:melee3"
+  ],
+  "criteria": {
+    "wood": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "minSuccessCount": 300,
+      "description": {
+        "translate": "Break 300 Wood Logs"
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'minecraft:log' || block.name() == 'minecraft:log2'"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "display": {
+      "name": {
+        "translate": "I see other dimension"
+      },
+      "icon": {
+        "texture": "emo:textures/gui/nodes/x.png"
+      }
+    },
+    "requirements": [ 
+      "emo:cadmus"
+    ],
+    "price": {
+      "TUTRIDIUM": 14,
+      "XP_LEVELS": 20
+    }
+  }
+  

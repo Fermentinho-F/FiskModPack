@@ -1,0 +1,47 @@
+{
+  "name": "Hover-board",
+  "modifiers": {
+	"fiskheroes:transformation": {
+	  "key" : "HOVERBOARD",
+      "transformation": {
+        "toggleData": "pwt:dyn/dash",
+        "timerData": "pwt:dyn/dash_timer",
+        "time": 8
+      },
+      "soundEvents": {
+        "ENABLE": "pwt:hoverboard_call"
+      }
+   
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/dash",
+        "cooldownData": "pwt:dyn/dash_cooldown",
+        "duration": -1,
+        "recovery": 1
+      }
+    },
+	"fiskheroes:shadowform": {
+    },
+	"fiskheroes:propelled_flight": {
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.13,
+      "boostSpeed": 0.18,
+	  "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop"
+      }
+    }
+  }
+}

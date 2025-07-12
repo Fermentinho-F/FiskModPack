@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:modifier.repulsor.powerdown",
+  "volume": 0.8,
+  "fadeOut": 5
+}

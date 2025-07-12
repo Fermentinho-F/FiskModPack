@@ -1,0 +1,4 @@
+{data} = curve {data}
+
+{rightArm_posX} -= 0.1{data}
+{leftArm_posX} += 0.1{data}

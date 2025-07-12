@@ -1,0 +1,26 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p1/lights/upgrade_<TYPE>_lights",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      }
+    ],
+    "out": "tmf:omnitrix/p1/lights/upgrade_<TYPE>_lights_<HUE>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "(entity.getWornChestplate().nbt().getInteger('Color')) | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 30
+      }
+    },
+    "TYPE": {
+      "key": "entity.getData('tmf:dyn/upgrade') == 'minecraft:piston' ? 'piston' : (entity.getData('tmf:dyn/upgrade') == 'minecraft:anvil' ? 'anvil' : (entity.getData('tmf:dyn/upgrade') == 'fiskheroes:masonry_oven' ? 'candy' : 'speaker'))",
+      "values": ["piston", "speaker", "anvil", "candy"]
+    }
+  }
+}

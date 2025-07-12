@@ -1,0 +1,19 @@
+[
+{
+  "modid": "JujusClothingCraft",
+  "name": "JujusClothingCraft",
+  "description": "",
+  "version": "1.1.1",
+  "credits": "Created by mod maker MCreator and JujuAwesomeBeans",
+  "logoFile": "/logo.png",
+  "mcversion": "1.7.10",
+  "url": "http://mcreator.pylo.si/",
+  "updateUrl": "",
+  "authors": [ "JujuAwesomeBeans" , "MCreator" ],
+  "parent": "",
+  "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
+}
+]

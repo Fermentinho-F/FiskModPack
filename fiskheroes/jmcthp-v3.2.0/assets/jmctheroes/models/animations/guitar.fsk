@@ -1,0 +1,6 @@
+{data} = sin(pi(1 - {data}))^1
+
+{leftArm_rotX} @ {data} -> -50'
+{leftArm_rotY} += 80'*{data}
+{leftArm_rotZ} += 50'*{data}
+

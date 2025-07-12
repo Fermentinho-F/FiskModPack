@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "Time Magic"
+    },
+    "icon": {
+      "item": "minecraft:clock"
+    }
+  },
+  "requirements": [
+    "fiskheroes:magic" ],
+  "price": {
+    "XP_LEVELS": 500
+  }
+}

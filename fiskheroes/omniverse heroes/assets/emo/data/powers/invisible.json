@@ -1,0 +1,11 @@
+{
+  "name": "Kryptonite Invisible Power",
+  "modifiers": {
+    "fiskheroes:invisibility": {
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    }
+  }
+}
+

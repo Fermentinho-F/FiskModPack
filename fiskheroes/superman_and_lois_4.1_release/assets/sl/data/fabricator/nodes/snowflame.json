@@ -1,0 +1,9 @@
+{
+  "suit": "sl:snowflame",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:melee1",
+    "sl:sl",
+    "sl:ap2_3"
+  ]
+}

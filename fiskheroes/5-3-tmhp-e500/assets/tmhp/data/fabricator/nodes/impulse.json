@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:impulse",
+  "display": {
+  "description": "\u00A77I \u00A7lam \u00A77normal. It's the \u00A7lrest \u00A77of the world that's weird."
+  },
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "elseworld:ap1",
+    "fiskheroes:speed_force",
+    "tmhp:young_justice",
+    "tmhp:flashfamily",
+    "tmhp:heropack2"
+  ]
+}

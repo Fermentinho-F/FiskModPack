@@ -1,0 +1,11 @@
+;arm_pos_normal
+{rightArm_rotX} @ {data_0} -> -10'
+{rightArm_rotY} @ {data_0} -> 100'
+{leftArm_rotX}  @ {data_0} -> -10'
+{leftArm_rotY}  @ {data_0} -> -100'
+
+;flap
+{rightArm_rotY} -= 2{data} + sin(3.1{data_1})
+{leftArm_rotY} += 2{data} + sin(3.1{data_1})
+
+

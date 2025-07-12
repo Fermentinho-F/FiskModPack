@@ -1,0 +1,6 @@
+{
+  "sound": "pwt:ambient.flight.6",
+  "override": "pwt:funcs/gliding_flight",
+  "loop": true,
+  "delay": 20
+}

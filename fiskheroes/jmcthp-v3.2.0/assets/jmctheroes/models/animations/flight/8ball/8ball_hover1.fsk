@@ -1,0 +1,65 @@
+{data_0} = curve {data_0}
+out "translate" (0, 0.5{data_0}, 0)
+
+{head_posX} @ {data_0} -> -0.5 
+{head_posY} @ {data_0} -> 3
+{head_posZ} @ {data_0} -> -3.5
+
+{body_rotX} @ {data_0} -> 60'
+{body_rotY} @ {data_0} -> 15'
+{body_rotZ} @ {data_0} -> 15'
+
+{body_posX} @ {data_0} -> -0.5
+{body_posY} @ {data_0} -> 3
+{body_posZ} @ {data_0} -> -3.5
+
+{rightArm_rotX} @ {data_0} -> 0'
+{rightArm_rotY} @ {data_0} -> 25'
+{rightArm_rotZ} @ {data_0} -> 85'
+
+{rightArm_posX} @ {data_0} -> -5
+{rightArm_posY} @ {data_0} -> 4
+{rightArm_posZ} @ {data_0} -> -2
+
+{leftArm_rotX} @ {data_0} -> 0'
+{leftArm_rotY} @ {data_0} -> 75'
+{leftArm_rotZ} @ {data_0} -> 7.5'
+
+{leftArm_posX} @ {data_0} -> 3
+{leftArm_posY} @ {data_0} -> 6.5
+{leftArm_posZ} @ {data_0} -> -2.5
+
+{rightLeg_rotX} @ {data_0} -> 45'
+{rightLeg_rotY} @ {data_0} -> 20'
+{rightLeg_rotZ} @ {data_0} -> 25'
+
+{rightLeg_posX} @ {data_0} -> -5
+{rightLeg_posY} @ {data_0} -> 7.5
+{rightLeg_posZ} @ {data_0} -> 0
+
+{leftLeg_rotX} @ {data_0} -> 20'
+{leftLeg_rotY} @ {data_0} -> -15'
+{leftLeg_rotZ} @ {data_0} -> 2.5'
+
+{leftLeg_posX} @ {data_0} -> 5
+{leftLeg_posY} @ {data_0} -> 7
+{leftLeg_posZ} @ {data_0} -> 0
+
+;-----------------------------------------------------------------;
+
+{vel} = sqrt({motX}^2 + {motZ}^2) + (0.3{motY})^2
+{vel} = 1 - curve min(1.5{vel}, 1)
+{data_1} = {vel}curve({data_1})
+{data_1} = 0.2{data_0}sin(pi(1 - {data_1}))^1
+
+{body_rotZ} @ {data_1} -> 20'
+
+{rightArm_rotZ} @ {data_1} -> 95'
+
+{leftArm_rotZ} @ {data_1} -> -15'
+
+{rightLeg_posX} @ {data_1} -> -5.5
+
+{leftLeg_rotX} @ {data_1} -> 25'
+{leftLeg_posX} @ {data_1} -> 5.5
+

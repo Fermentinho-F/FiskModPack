@@ -1,0 +1,16 @@
+{
+  "suit": "tmhp:ender",
+  "display": {
+  "description": "A custom Super Hero for Ender."
+  },
+  "requirements": [
+    "tmhp:custom",
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:teleportation",
+    "fiskheroes:flight",
+    "fiskheroes:ranged2",
+    "fiskheroes:defense3",
+    "tmhp:heropack2"
+  ]
+}

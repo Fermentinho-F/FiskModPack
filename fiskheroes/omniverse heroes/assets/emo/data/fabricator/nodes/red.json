@@ -1,0 +1,10 @@
+{
+  "suit": "emo:red",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:speed_force",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "emo:cadmus"
+  ]
+}

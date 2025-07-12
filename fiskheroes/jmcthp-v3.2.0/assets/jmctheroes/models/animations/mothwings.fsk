@@ -1,0 +1,47 @@
+;------------------------------------------;
+
+{WingTL_posX} -= 50'{data_0}
+{WingTL_posY} += 50'{data_0}
+{WingTL_posZ} += 50'{data_0}
+
+{WingTL_rotX} -= 27.5'{data_0}
+{WingTL_rotY} -= 0.5'{data_0}
+{WingTL_rotZ} -= 30'{data_0}
+
+{WingBL_rotX} += 7.5'{data_0}
+{WingBL_rotZ} += 15'{data_0}
+
+{WingTR_posX} += 50'{data_0}
+{WingTR_posY} += 50'{data_0}
+{WingTR_posZ} += 50'{data_0}
+
+{WingTR_rotX} -= 27.5'{data_0}
+{WingTR_rotY} += 0.5'{data_0}
+{WingTR_rotZ} += 30'{data_0}
+
+{WingBR_rotX} += 7.5'{data_0}
+{WingBR_rotZ} -= 15'{data_0}
+
+;------------------------------------------;
+
+{WingTL_posX} -= 50'{data_1}
+{WingTL_posY} += 50'{data_1}
+{WingTL_posZ} += 50'{data_1}
+
+{WingTL_rotX} -= 27.5'{data_1}
+{WingTL_rotY} -= 0.5'{data_1}
+{WingTL_rotZ} -= 30'{data_1}
+
+{WingBL_rotX} += 7.5'{data_1}
+{WingBL_rotZ} += 15'{data_1}
+
+{WingTR_posX} += 50'{data_1}
+{WingTR_posY} += 50'{data_1}
+{WingTR_posZ} += 50'{data_1}
+
+{WingTR_rotX} -= 27.5'{data_1}
+{WingTR_rotY} += 0.5'{data_1}
+{WingTR_rotZ} += 30'{data_1}
+
+{WingBR_rotX} += 7.5'{data_1}
+{WingBR_rotZ} -= 15'{data_1}

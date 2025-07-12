@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.carnage.unanchor",
+  "volume": 1.0,
+  "pitch": "0.85 + Math.random() * 0.3"
+}

@@ -1,0 +1,16 @@
+{
+  "suit": "emo:x",
+  "requirements": [
+    "fiskheroes:tier10",
+    "fiskheroes:cosmic",
+    "fiskheroes:teleportation",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:intangibility",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "emo:dimension",
+    "emo:cadmus"
+  ]
+}

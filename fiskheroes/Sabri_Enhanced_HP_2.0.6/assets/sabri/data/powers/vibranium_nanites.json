@@ -1,0 +1,58 @@
+{
+    "name": "Vibranium Nanites",
+    "modifiers": {
+      "fiskheroes:transformation": {
+        "key": "NANITE_TRANSFORM",
+        "transformation": {
+          "toggleData": "sabri:dyn/vibranium_nanites",
+          "timerData": "sabri:dyn/vibranium_nanite_timer",
+          "time": 30
+        },
+        "soundEvents": {
+          "ENABLE": "sabri:black_panther_nanites_enable",
+          "DISABLE": "sabri:black_panther_nanites_disable"
+        }
+      },
+      "fiskheroes:cooldown": {
+        "cooldown": {
+          "toggleData": "sabri:dyn/vibranium_nanites",
+          "cooldownData": "sabri:dyn/vibranium_nanite_cooldown",
+          "duration": 9000,
+          "recovery": 5.0
+        },
+        "soundEvents": {
+          "TIMEOUT": "fiskheroes:mk50_disable"
+        }
+      },
+      "fiskheroes:projectile_immunity": {
+      },
+      "fiskheroes:blade": {
+        "soundEvents": {
+          "ENABLE": "fiskheroes:panther_claws_enable",
+          "DISABLE": "fiskheroes:panther_claws_disable"
+        }
+      },
+
+      "fiskheroes:water_breathing": {
+      },
+      "fiskheroes:fire_immunity": {
+      },
+      "fiskheroes:damage_resistance|explosion": {
+        "damageType": "EXPLOSION",
+        "factor": 1.0
+      }
+    },
+    "hud": [
+      {
+        "type": "PROGRESS",
+        "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+        "data": "sabri:dyn/vibranium_nanite_cooldown"
+      },
+      {
+        "type": "PROGRESS",
+        "texture": "sabri:textures/gui/bars/kinetic_energy.png",
+        "data": "entity.getData('sabri:dyn/vibranium_nanite_timer') == 1 ? entity.getData('sabri:dyn/kinetic_energy_timer') == 1 ? 0.0000000000000001 : 1 - entity.getData('sabri:dyn/kinetic_energy_timer') : 0"
+      }
+    ]
+  }
+  

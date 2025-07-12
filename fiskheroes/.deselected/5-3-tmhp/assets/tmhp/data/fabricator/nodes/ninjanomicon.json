@@ -1,0 +1,15 @@
+{
+  "display": {
+    "name": {
+      "translate": "NinjaNomicon"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/ninjanomicon.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:magic" ],
+  "price": {
+    "XP_LEVELS": 15
+  }
+}

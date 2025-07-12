@@ -1,0 +1,4 @@
+{data} = {data}
+
+{rightArm_rotX} += 2.0*{data}
+{rightArm_rotY} += 0.0*{data}

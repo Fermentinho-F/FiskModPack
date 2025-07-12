@@ -1,0 +1,71 @@
+{
+  "name": "The Force",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [0.4, 0.4],
+      "soundEvents": {
+        "LEAP": ["fiskheroes:web_swinging_whoosh", "fiskheroes:web_swinging_fall_loop"]
+      }
+    },
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": false,
+        "crushThrowables": false,
+        "squeezeChickens": false,
+        "explodeCreepers": false,
+        "destroyInanimates": false
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": false
+      },
+      "range": 5.0,
+      "soundEvents": {
+        "GRAB": ["swhp:forcegrab", "swhp:forcegrab_loop"]
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:telekinesis",
+        "cooldownData": "swhp:dyn/forcegrab_cooldown",
+        "duration": 100,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:charged_beam|forcepush": {
+      "damageProfile": {
+        "damage": 1.0,
+        "types": {
+          "BLUNT": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "chargeTime": 30,
+      "duration": 15,
+      "cooldownTime": 40,
+      "range": 10.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "CHARGE": "swhp:forcepush_jedi_charge",
+        "SHOOT": "swhp:forcepush_jedi"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+        "type": "PROGRESS",
+        "texture": "swhp:textures/gui/bars/jedi_cooldown.png",
+        "data": "swhp:dyn/forcegrab_cooldown"
+    }
+  ]
+}

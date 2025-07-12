@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:batman_fp",
+  "requirements": [
+    "tmhp:batfamily",
+    "fiskheroes:tier4_5",
+    "elseworld:ap2_3",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:ranged",
+    "tmhp:heropack2"
+  ]
+}

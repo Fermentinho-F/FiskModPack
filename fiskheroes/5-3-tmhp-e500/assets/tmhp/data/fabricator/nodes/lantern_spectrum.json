@@ -1,0 +1,20 @@
+{
+  "display": {
+    "name": {
+      "translate": "Lantern Spectrum"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/light_spectrum.png"
+    }
+  },
+  "requirements": [
+    "tmhp:dc",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:ranged3",
+    "fiskheroes:melee3",
+    "tmhp:alien"],
+  "price": {
+    "XP_LEVELS": 50
+  }
+}

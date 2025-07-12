@@ -1,0 +1,29 @@
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{x} = 30{data_1}min(1.5{vel}, 1)
+
+{x} = {data_1}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+
+{data_0} = curve {data_0}
+{data_0} = sin(pi(1 - {data_0}))^1
+
+{1_rotX} += 0.5'{data_0}
+{2_rotX} += 0.75'{data_0}
+{3_rotX} += 1.0'{data_0}
+
+{1_rotX} += 5'{forward}
+{2_rotX} += 30'{forward}
+{3_rotX} += 10'{forward}
+
+{1_rotZ} += 10'{strafe}
+{2_rotY} -= 30'{strafe}
+{3_rotY} -= 15'{strafe}

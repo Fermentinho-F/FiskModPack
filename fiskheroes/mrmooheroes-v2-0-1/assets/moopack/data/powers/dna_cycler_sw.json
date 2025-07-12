@@ -1,0 +1,17 @@
+{
+  "name": "DNA Cycler",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "CYCLE",
+      "transformation": {
+        "toggleData": "moopack:dyn/cycle_active",
+        "timerData": "moopack:dyn/cycle_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    }
+  }
+}

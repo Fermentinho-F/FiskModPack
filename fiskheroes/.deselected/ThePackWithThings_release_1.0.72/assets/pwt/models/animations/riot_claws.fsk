@@ -1,0 +1,5 @@
+
+{claw_1_rotY} @ {data_0} ->  4'sin(2pi{data_0})
+{claw_1_rotZ} @ {data_0} -> 4'sin(2pi{data_0})
+
+{claw_2_rotZ} @ {data_0} -> 5'sin(2pi{data_0})

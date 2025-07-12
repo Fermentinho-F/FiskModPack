@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.hit.default",
+  "condition": "(entity.getData('fiskheroes:blade') || entity.getData('sabri:dyn/sand')) && entity.getData('fiskheroes:scale') == 1",
+  "pitch": "1.1 - Math.random() * 0.2"
+}

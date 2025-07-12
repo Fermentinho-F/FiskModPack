@@ -1,0 +1,5 @@
+{powerMode} = {data_0}
+
+{spikeR6_posZ} @ {powerMode} -> -2
+{spikeR7_posZ} @ {powerMode} -> -2
+{spikeR8_posZ} @ {powerMode} -> -2

@@ -1,0 +1,15 @@
+{
+  "suit": "emo:albedo",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:ranged2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration2",
+    "emo:primus",
+    "emo:azmut",
+    "emo:cadmus"
+  ]
+}

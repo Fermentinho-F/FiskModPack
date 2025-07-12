@@ -1,0 +1,5 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)'
+
+;CHARGE
+{head_overlay2_rotX} @ {data_0} -> pi/7 -pi/7{data_1}
+{insides2_rotX} @ {data_0} -> pi/7 -pi/7{data_1}

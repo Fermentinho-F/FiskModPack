@@ -1,0 +1,12 @@
+{
+  "suit": "sl:deadline",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee1",
+    "fiskheroes:intangibility",
+    "sl:blood",
+    "sl:sl",
+    "sl:kryptonite",
+    "sl:ap2_3"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Bonnie's Guitar",
+    "holdingPose": "DOUBLE",
+    "cooldown": 0,
+    "projectiles": [],
+    "melee": {
+        "attackDamage": 4
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "moopack:fiskfille/crazy_creetle_reverse_base",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_mk50_suit_<TIMER>"
+      }
+    ],
+    "out": "moopack:generated/crazy_creetle_reverse_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}

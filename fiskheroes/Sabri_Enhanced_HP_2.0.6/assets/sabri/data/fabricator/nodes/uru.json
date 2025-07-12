@@ -1,0 +1,42 @@
+{
+  "display": {
+    "name": {
+      "translate": "Uru"
+    },
+    "icon": {
+      "texture": "sabri:textures/gui/nodes/uru.png"
+    }
+  },
+  "requirements": [ 
+    "sabri:sehp"
+  ],
+  "price": {
+    "XP_LEVELS": 25
+  },
+  "criteria": {
+    "iron": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Dig some Lunar Iron Ore from under the moon surface"
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'fiskheroes:lunar_iron_ore'"
+      }
+    },
+    "titanium": {
+      "trigger": "fiskheroes:block_broken_by_player",
+      "description": {
+        "translate": "Dig some Lunar Titanium Ore from under the moon surface"
+      },
+      "condition": {
+        "variables": {
+          "block": "BLOCK_BEING_BROKEN"
+        },
+        "check": "block.name() == 'fiskheroes:lunar_titanium_ore'"
+      }
+    }
+  }
+}

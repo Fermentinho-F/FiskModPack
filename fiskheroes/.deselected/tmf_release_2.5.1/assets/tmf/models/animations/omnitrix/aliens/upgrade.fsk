@@ -1,0 +1,49 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{idle} = sin(2pi{data_0})
+{punching1} = curve min(animate2({data_1}, 0.8, 0, 0.65, 0.1), 1)
+{punching2} = curve min(animate2({data_1}, 0.3, 0.7, 0.3, 0), 1)
+{punching} = sin(pi{data_1})
+{sneaking} = 0.3*{data_2}
+{gliding} = {data_3}
+
+{movement} = cos({limbSwing} * 0.6662 + pi) * 1.5 * {limbSwingAmount} * 0.5 * (1-{gliding})
+
+{rightArm_rotX} += {movement} - 1.5*{punching} -0.5{sneaking}
+{rightArm_rotZ} += 0.05{idle} + 0.2*{gliding}
+{rightArm_rotY} -= {slide}
+{rightArmLower_rotX} += -0.75{punching} 
+{rightArmLower_rotZ} -= 0
+{leftArm_rotX} -= {movement} + 1.5*{punching} +0.5{sneaking}
+{leftArm_rotZ} -= 0.05{idle}  + 0.2*{gliding}
+{leftArmLower_rotX} += -0.75{punching} 
+
+{rightLeg_rotX} -= {movement} + {sneaking}
+{leftLeg_rotX} += {movement} - {sneaking}
+
+{head_rotX} -= max(0.7*{lookY}, -0.45) -0.5{sneaking}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{body_rotX} += {sneaking}
+
+{badge_rotX} = {body_rotX}
+{badge_rotY} = {body_rotY}
+{badge_rotZ} = {body_rotZ}
+{badge_posZ} -= 3{sneaking}
+{badge_posY} = {body_posY} + {main_posY} + 1.5{sneaking}
+
+{headO_rotX} = {head_rotX}
+{headO_rotY} = {head_rotY}
+{rightLegO_rotX} = {rightLeg_rotX}
+{leftLegO_rotX} = {leftLeg_rotX}
+{rightArmO_rotX} = {rightArm_rotX}
+{rightArmO_rotY} = {rightArm_rotY}
+{rightArmO_rotZ} = {rightArm_rotZ}
+{rightArmLowerO_rotX} = {rightArmLower_rotX}
+{rightArmLowerO_rotZ} = {rightArmLower_rotZ}
+{leftArmO_rotX} = {leftArm_rotX}
+{leftArmO_rotY} = {leftArm_rotY}
+{leftArmO_rotZ} = {leftArm_rotZ}
+{leftArmLowerO_rotX} = {leftArmLower_rotX}
+{leftArmLowerO_rotZ} = {leftArmLower_rotZ}
+{bodyO_rotX} = {body_rotX}

@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+      "type": "THICK_SMOKE",
+      "amount": 20,
+      "randOffset": [1.0, 1.0, 0.0],
+      "randMotion": [0.0, 0.0, -0.5],
+	  "motion": [0.0, 0.0, 0.28]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.trickster.portal_ambient",
+  "condition": "entity.getData('fiskheroes:teleport_timer') > 0",
+  "volume": "fiskheroes:teleport_timer",
+  "loop": true,
+  "fadeOut": 10
+}

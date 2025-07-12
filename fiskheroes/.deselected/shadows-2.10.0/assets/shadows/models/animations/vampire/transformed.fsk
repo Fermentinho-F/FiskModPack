@@ -1,0 +1,11 @@
+{body_rotX} = 0
+{body_rotY} = 0
+{body_rotZ} = 0
+
+{body_posX} = 0
+{body_posY} = 0
+{body_posZ} = 0
+
+{rightArm_posX} = 0
+{rightArm_posY} = 1000
+{rightArm_posZ} = 0

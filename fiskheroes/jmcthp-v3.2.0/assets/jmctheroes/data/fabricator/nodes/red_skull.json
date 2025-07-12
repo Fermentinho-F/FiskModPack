@@ -1,0 +1,12 @@
+{
+  "suit": "jmctheroes:red_skull",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "fiskheroes:tier4_5",
+    "fiskheroes:captain_america",
+    "fiskheroes:marksmanship",
+    "fiskheroes:traversal",
+    "fiskheroes:regeneration",
+    "fiskheroes:defense2"
+  ]
+}

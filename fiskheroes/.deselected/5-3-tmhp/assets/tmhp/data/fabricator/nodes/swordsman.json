@@ -1,0 +1,33 @@
+{
+  "display": {
+    "name": {
+      "translate": "Swordsman"
+    },
+    "description": {
+      "translate": "Basic sword skills."
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/swordsman.png"
+    },
+    "isLevelable": true
+  },
+  "requirements": [ ],
+  "price": {
+    "TUTRIDIUM": 7,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a Gold Sword"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:golden_sword'"
+      }
+    }
+  }
+}

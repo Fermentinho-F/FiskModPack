@@ -1,0 +1,14 @@
+{
+  "suit": "tmhp:spider_man_comics",
+  "display": {
+  "description": "\u00A74Hope you were watching, Uncle Ben. 'Cause I did that for you. Kept everyone safe. Kept them from being scared. And I made it fun. It doesn't matter that most of 'em wouldn't have lifted a finger for Peter Parker. That's not why you do it. You do it 'cause it's the right thing to do. Because it's what you would've done. You were more than a father to me, Ben Parker. More than a role model...You were my hero. Now it's my turn. Because from now on, I'm going to be yours! You'll see. I'm going to give it my all! We'll have fun! I'll never quit--and it's going to be amazing! "
+  },
+  "requirements": [
+    "tmhp:spider_man_hm",
+    "fiskheroes:tier6_7",
+    "elseworld:ap4_5",
+    "fiskheroes:spiderverse",
+    "tmhp:marvel",
+    "tmhp:heropack2"
+  ]
+}

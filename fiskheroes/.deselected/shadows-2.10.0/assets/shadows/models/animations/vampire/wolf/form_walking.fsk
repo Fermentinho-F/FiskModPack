@@ -1,0 +1,13 @@
+{head_rotX} = max({pitch}', -15')
+{head_rotY} = -({bodyYaw} - {yaw})'
+
+{walk} = cos({limbSwing}pi * 0.2)0.6 * {limbSwingAmount}
+{front_left_leg_rotX} -= {walk}
+{front_right_leg_rotX} += {walk}
+{back_left_leg_rotX} += {walk}
+{back_right_leg_rotX} -= {walk}
+
+{tail} = cos({limbSwing}pi * 0.15)0.6 * {limbSwingAmount}
+{tail_rotX} = 46'
+{tail_rotY} += {tail}1.3
+{tail_rotZ} -= {tail}0.3

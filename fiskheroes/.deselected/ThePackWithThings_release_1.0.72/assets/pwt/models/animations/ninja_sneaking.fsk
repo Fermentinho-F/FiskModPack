@@ -1,0 +1,25 @@
+{data_0} = curve({data_0})
+{data_1} = curve({data_1}){data_0}
+
+{head_rotX} -= 10'{data_0}
+
+{rightArm_rotX} -= 20'{data_0}
+{rightArm_rotX} -= 10'{data_1}
+{leftArm_rotX} -= 20'{data_0}
+
+{leftLeg_rotX} += 50'{data_0}
+{leftLeg_rotZ} -= 7'{data_0}
+
+{rightLeg_rotY} += 10'{data_0}
+
+{rightLeg_posX} -= 0.5{data_0}
+{rightLeg_posY} -= 2.5{data_0}
+{rightLeg_posZ} -= 3{data_0}
+
+;{leftLeg_posY} -= 1.0{data_0}
+{leftLeg_posY} += 1.0{data_0}
+{leftLeg_posZ} -= 3.0{data_0}
+
+
+out "rotate" (10{data_0}, -1, 0, 0)
+out "translate" (0, -0.175{data_0}, 0.1{data_0})

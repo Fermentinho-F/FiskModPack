@@ -1,0 +1,4 @@
+{data_0} = {data_0}
+
+{cube_water_rotX} += 360'{data_0}
+{cube_water_rotY} += 360'{data_0}^2

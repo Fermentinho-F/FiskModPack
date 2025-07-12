@@ -1,0 +1,70 @@
+{
+  "name": "Pyrokinesis",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "PYRO",
+      "transformation": {
+        "toggleData": "jmctheroes:dyn/pyro",
+        "timerData": "jmctheroes:dyn/pyro_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flame_on",
+        "DISABLE": "fiskheroes:flame_off"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "jmctheroes:dyn/pyro",
+        "cooldownData": "jmctheroes:dyn/pyro_cooldown",
+        "duration": 12500,
+        "recovery": 5.0
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.04,
+      "boostSpeed": 0.08,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.7,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:firestorm_flight_enable", "fiskheroes:firestorm_flight_loop"],
+        "BOOST": "fiskheroes:firestorm_boost"
+      }
+    },
+    "fiskheroes:fire_immunity": {},
+    "fiskheroes:damage_weakness": {
+      "damageType": "COLD",
+      "factor": 2.0
+    }
+  },
+  "hud": [{
+      "type": "PROGRESS",
+      "texture": "jmctheroes:textures/timers/bars/magic.png",
+      "data": "jmctheroes:dyn/pyro_cooldown"
+    }
+  ]
+}

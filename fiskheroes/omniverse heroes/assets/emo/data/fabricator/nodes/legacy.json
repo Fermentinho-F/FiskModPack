@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Jupiter's Legacy"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/legacy.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "TUTRIDIUM": 3,
+    "XP_LEVELS": 9
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Dark Magic",
+  "modifiers": {
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "range": 12.0,
+      "soundEvents": {
+        "GRAB": ["sabri:doctor_doom_comics_telekinesis_grab", "sabri:doctor_doom_comics_telekinesis_loop"],
+        "RELEASE": "sabri:doctor_doom_comics_telekinesis_release"
+      }
+    }
+  }
+}

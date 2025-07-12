@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "sl:steel_lights_layer2",
+    "transform": [
+      {
+        "operation": "OR",
+        "supply": "sl:steel_lights_layer1"
+      },
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_suit_<TIMER>"
+      }
+    ],
+    "out": "sl:generated/steel_lights_suit<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "fiskheroes:suit_open_timer",
+      "values": [1, 2, 3, 4, 5]
+    }
+  }
+}

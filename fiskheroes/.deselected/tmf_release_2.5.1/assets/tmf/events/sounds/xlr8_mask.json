@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:xlr8.mask",
+  "condition": "entity.getData('tmf:dyn/transformed') == 3",
+  "volume": 0.75,
+  "pitch": "0.8 + 0.2 * Math.random()"
+}

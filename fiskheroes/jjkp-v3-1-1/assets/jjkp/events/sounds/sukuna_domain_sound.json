@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "jjkp:sukuna_domain_sound",
+  "volume": 1.0,
+  "pitch": 1.0
+}

@@ -1,0 +1,147 @@
+{
+  "display": {
+    "name": {
+      "translate": "Dna Samples"
+    },
+    "description": "Collect the following DNA samples (by killing the mobs)",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/dna_sample.png"
+    }
+  },
+  "requirements": [
+    "tmf:tmf",
+    "tmf:omnitrix_heropack"
+  ],
+  "criteria": {
+    "creeper": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Creeper"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Creeper'"
+      }
+    },
+    "skeleton": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Skeleton"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Skeleton'"
+      }
+    },
+    "enderman": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Enderman"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Enderman'"
+      }
+    },
+    "spider": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Spider"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Spider'"
+      }
+    },
+    "cactus": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Cactus"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Cactus'"
+      }
+    },
+    "creetle": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Creetle"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Creetle'"
+      }
+    },
+    "villager": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Villager"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Villager'"
+      }
+    },
+    "witch": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Witch"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Witch'"
+      }
+    },
+    "silverfish": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 20,
+      "description": {
+        "translate": "Silverfish"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Silverfish'"
+      }
+    },
+    "wither": {
+      "trigger": "fiskheroes:entity_killed_by_player",
+      "minSuccessCount": 1,
+      "description": {
+        "translate": "Wither"
+      },
+      "condition": {
+        "variables": {
+          "entity": "ENTITY_KILLED"
+        },
+        "check": "entity.getName() == 'Wither'"
+      }
+    }
+  }
+}

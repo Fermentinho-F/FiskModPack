@@ -1,0 +1,29 @@
+{
+  "display": {
+    "name": "Vampirism",
+    "icon": {
+      "texture": "shadows:textures/gui/nodes/vampirism.png"
+    }
+  },
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 25
+  },
+  "requirements": [
+    "shadows:shadow00dev"
+  ],
+  "criteria": {
+    "HalfHeart": {
+      "trigger": "fiskheroes:tick",
+      "minSuccessCount": 6000,
+      "description": "Be at half a heart for 5 minutes",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        
+        "check": "Math.ceil(player.getHealth()) == 1.0"
+      }
+    }
+  }
+}

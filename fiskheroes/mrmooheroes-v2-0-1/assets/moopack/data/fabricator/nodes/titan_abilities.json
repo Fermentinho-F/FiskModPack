@@ -1,0 +1,28 @@
+{
+    "display": {
+    "name": "Titan Abilities",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/titan_abilities.png"
+    }
+    },
+    "requirements": [
+    "moopack:superhuman_abilities"
+    ],
+    "price": {
+    "XP_LEVELS": 10
+    },
+    "criteria": {
+        "achievement": {
+        "trigger": "fiskheroes:block_broken_by_player",
+        "description": {
+            "translate": "Mine Some Iceburst Stone"
+        },
+        "condition": {
+            "variables": {
+            "block": "BLOCK_BEING_BROKEN"
+            },
+            "check": "block.name() == 'fiskheroes:tutridium_ore' && Math.random() >=0.9"
+        }
+        }
+    }
+}

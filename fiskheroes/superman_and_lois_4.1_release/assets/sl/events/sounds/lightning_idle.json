@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:modifier.superspeed.move.loop.cw",
+  "volume": 0.1,
+  "loop": true,
+  "condition": "sl:dyn/construct",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

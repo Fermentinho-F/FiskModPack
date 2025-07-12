@@ -1,0 +1,53 @@
+{
+  "name": "Sage Mod",
+  "modifiers": {
+    "fiskheroes:transformation|sage1": {
+      "key": "SAGE",
+      "transformation": {
+        "toggleData": "tmhp:dyn/sage_mod",
+        "timerData": "tmhp:dyn/sage_mod_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|sage2": {
+      "cooldown": {
+        "toggleData": "tmhp:dyn/sage_mod",
+        "cooldownData": "tmhp:dyn/sage_mod_cooldown",
+        "duration": 600,
+        "recovery": 0.5
+      }
+    },
+    "fiskheroes:charged_beam|rasenshuriken": {
+      "damageProfile": {
+        "damage": 50.0,
+        "types": {
+          "MAGIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 20
+        }
+      },
+      "chargeTime": 10,
+      "duration": 5,
+      "cooldownTime": 10,
+      "range": 32.0,
+      "radius": 5.0,
+      "soundEvents": {
+        "SHOOT": ["fiskheroes:antimatter_blast_start", "fiskheroes:antimatter_blast_loop"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    },
+    {
+      "type": "PROGRESS",
+      "texture": "tmhp:textures/gui/sage_mod.png",
+      "data": "tmhp:dyn/sage_mod_cooldown"
+    }
+  ]
+}

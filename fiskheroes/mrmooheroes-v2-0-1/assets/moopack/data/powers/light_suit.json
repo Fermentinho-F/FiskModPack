@@ -1,0 +1,11 @@
+{
+  "name": "Tron Light Suit",
+  "modifiers": {
+    "fiskheroes:shield_throwing": {
+      "cooldownTime": 40,
+      "soundEvents": {
+        "THROW": "fiskheroes:shield_throw"
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "name": "Cybernetic Implants",
+  "modifiers": {
+   "fiskheroes:transformation|gun": {
+	"key": "GUN",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:cooldown|gun_cooldown": {
+      "cooldown": {
+        "toggleData": "entity.getData('fiskheroes:energy_projection')",
+        "cooldownData": "fiskheroes:dyn/nanite_cooldown",
+        "duration": 1000,
+        "recovery": 2.0
+      }
+    },
+	
+	"fiskheroes:transformation|mantis_blade": {
+	"key": "MANTIS_BLADE",
+      "transformation": {
+        "toggleData": "pwt:dyn/sword",
+        "timerData": "pwt:dyn/sword_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:cooldown|mantis_blade_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/sword",
+        "cooldownData": "pwt:dyn/cooldown_7",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:blade": {
+	  "isToggle": true,
+      "soundEvents": {
+      }
+    },
+	"fiskheroes:transformation|reaper": {
+	"key": "REAPER_SCYTHE",
+      "transformation": {
+        "toggleData": "pwt:dyn/crab_cannon",
+        "timerData": "pwt:dyn/crab_cannon_timer",
+        "time": 20
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_blade_enable",
+        "DISABLE": "fiskheroes:mk50_blade_disable"
+      }
+    },
+    "fiskheroes:cooldown|reaper_cooldown": {
+      "cooldown": {
+        "toggleData": "pwt:dyn/crab_cannon",
+        "cooldownData": "pwt:dyn/crab_cannon_cooldown",
+        "duration": -1,
+        "recovery": 1.0
+      }
+    },
+	"fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+          
+          "BULLET": 1.0
+        },
+        "properties": {
+		  "REDUCE_KNOCKBACK": 0.75,
+		  "HIT_COOLDOWN": 2
+        }
+      },
+      "range": 35.0,
+      "radius": 0.3,
+	  "canDoGriefing": false,
+      "soundEvents": {
+        "SHOOT": "pwt:minigun_beam_loop",
+        "SHOOT_STOP": "pwt:minigun_beam_stop"
+      }
+    },
+    "fiskheroes:energy_bolt": {
+      "damageProfile": {
+        "damage": 15.0,
+        "types": {
+          "EXPLOSION": 0.5,
+		  "BULLET": 1.0
+        }
+      },
+      "isExplosive": true,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "pwt:gun_launch_dart"
+      }
+    },
+	"fiskheroes:repulsor_blast|stunt": {
+	  "spread": 1.4,
+	  "radius": 0.1,
+	  "range": 45.0,
+      "damageProfile": {
+        "damage": 6.5,
+        "types": {
+          "ELECTRICITY": 0.7,
+		  "BULLET": 1.0
+        },
+		"properties": {
+				"EFFECTS": [
+				{
+					"id": "fiskheroes:disable_phasing",
+					"duration": 100,
+					"amplifier": 0,
+					"chance": 0.7
+				},
+				{
+					"id": "fiskheroes:tutridium",
+					"duration": 100,
+					"amplifier": 0,
+					"chance": 0.8
+				},
+				{
+					"id": "minecraft:slowness",
+					"duration": 100,
+					"amplifier": 4,
+					"chance": 0.9
+				},
+				{
+					"id": "minecraft:mining_fatigue",
+					"duration": 100,
+					"amplifier": 3,
+					"chance": 0.9
+				}
+				]
+		}	
+      },
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "pwt:gun_launch_dart"
+      }
+    },
+	"fiskheroes:repulsor_blast|sleeping": {
+	   "spread": 0.6,
+	   "radius": 0.1,
+	   "range": 35.0,
+      "damageProfile": {
+        "damage": 2.0,
+        "types": {
+		  "BULLET": 1.0
+        },
+      "properties": {
+				"EFFECTS": [
+				{
+					"id": "minecraft:slowness",
+					"duration": 300,
+					"amplifier": 10,
+					"chance": 0.9
+				},
+				{
+					"id": "minecraft:mining_fatigue",
+					"duration": 300,
+					"amplifier": 10,
+					"chance": 0.9
+				},
+				{
+					"id": "minecraft:blindness",
+					"duration": 300,
+					"amplifier": 10,
+					"chance": 0.9
+				},
+				{
+					"id": "minecraft:night_vision",
+					"duration": 300,
+					"amplifier": 10,
+					"chance": 0.9
+				}
+				]
+		}	
+      },
+      "cooldownTime": 50,
+      "soundEvents": {
+        "SHOOT": "pwt:gun_launch_dart"
+      }
+    },
+	"fiskheroes:repulsor_blast|poison": {
+	  "spread": 1.1,
+	  "radius": 0.1,
+	  "range": 65.0,
+      "damageProfile": {
+        "damage": 3.0,
+        "types": {
+		  "BULLET": 1.0
+        },
+      "properties": {
+				"EFFECTS": [
+				{
+					"id": "minecraft:poison",
+					"duration": 200,
+					"amplifier": 2,
+					"chance": 0.9
+				},
+				{
+					"id": "minecraft:nausea",
+					"duration": 200,
+					"amplifier": 1,
+					"chance": 0.7
+				}
+				]
+		}	
+      },
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "pwt:gun_launch_dart"
+      }
+    },
+	"fiskheroes:repulsor_blast|kriptonite": {
+	  "spread": 0.4,
+	  "radius": 0.1,
+	  "range": 65.0,
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+		  "BULLET": 1.0,
+		  "KRYPTONITE": 1.0
+        }
+      },
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "pwt:gun_launch_dart"
+      }
+    }
+  },
+  "hud": [
+	
+	
+	{
+      "type": "PROGRESS",
+	  "condition": "entity.getData('pwt:dyn/cooldown_2') == 0",
+      "texture":"pwt:textures/gui/bars/idk_something_for_max.png",
+      "data": "pwt:dyn/sandevistan_cooldown"
+    },
+	{
+      "type": "PROGRESS",
+      "texture":"pwt:textures/gui/bars/heat_cooldown.png",
+      "data": "pwt:dyn/cooldown_5"
+    }
+  ]
+}
+

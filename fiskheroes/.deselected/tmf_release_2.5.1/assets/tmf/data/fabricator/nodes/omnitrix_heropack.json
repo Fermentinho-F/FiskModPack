@@ -1,0 +1,13 @@
+{
+  "display": {
+    "name": "Omniverse",
+    "description": "Includes suits from the Omniverse",
+    "icon": {
+      "texture": "tmf:textures/gui/nodes/omnitrix_hp.png"
+    }
+  },
+  "requirements": [
+    "tmf:tmf"
+  ],
+  "autoUnlock": true
+}

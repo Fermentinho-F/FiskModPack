@@ -1,0 +1,10 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "fiskheroes:modifier.shadowform.loop",
+    "condition": "entity.getData('fiskheroes:aiming') && entity.getHeldItem().nbt().getString('WeaponType') == 'shadows:cross'",
+    "volume": 0.1,
+    "pitch": 0.7,
+    "loop": true,
+    "fadeIn": 10,
+    "fadeOut": 15
+}

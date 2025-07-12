@@ -1,0 +1,14 @@
+{
+  "texture": "tmf:omnitrix/p2/lights/anim/waybig_beam<MODEL>",
+
+  "getters": {
+    "MODEL": {
+      "key": "Math.ceil(11 * Math.max(8*entity.getInterpolatedData('fiskheroes:beam_charge')-6, 0)) | 0",
+      "values": {
+        "min": 0,
+        "max": 22
+      }
+    }
+  },
+  "isDynamic": true
+}

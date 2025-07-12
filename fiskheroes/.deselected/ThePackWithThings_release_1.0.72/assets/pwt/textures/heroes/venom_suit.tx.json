@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "pwt:venom_suit",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "pwt:xor/symbiot_suit_<TIMER>"
+      }
+    ],
+    "out": "pwt:generated/venom_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(12 * entity.getInterpolatedData('pwt:dyn/symbiot_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 12
+      }
+    }
+  },
+  "isDynamic": true
+}

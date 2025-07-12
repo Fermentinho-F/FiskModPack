@@ -1,0 +1,12 @@
+{
+    "display": {
+      "name": {
+        "translate": "Sabri Enhanced Heropack"
+      },
+      "icon": {
+        "texture": "sabri:textures/gui/nodes/sehp.png"
+      }
+    },
+    "autoUnlock": true
+  }
+  

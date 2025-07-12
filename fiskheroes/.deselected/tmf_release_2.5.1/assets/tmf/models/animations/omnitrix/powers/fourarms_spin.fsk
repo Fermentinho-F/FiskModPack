@@ -1,0 +1,11 @@
+{trail1_rotX} += 0.1sin(2pi{data_1})
+{trail1_rotY} += 2pi{data_1}
+{trail1_rotZ} += 0.1sin(2pi{data_1})
+
+{trail2_rotX} += 0.2sin(2pi{data_1})
+{trail2_rotY} += 2pi{data_1}
+{trail2_rotZ} += 0.2sin(2pi{data_1})
+
+{trail3_rotX} += 0.3sin(2pi{data_1})
+{trail3_rotY} += 2pi{data_1}
+{trail3_rotZ} += 0.3sin(2pi{data_1})

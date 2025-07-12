@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.superman0",
+  "condition": "(entity.getUUID() == '7630ded1-eecb-4ab9-8f85-bc7f5ac5bde2' && entity.getData(\"fiskheroes:speeding\")) || (entity.getUUID() == '07fed8f8-f88f-477b-9b1e-9012ce0edc3d' && entity.getData(\"fiskheroes:speeding\"))",
+  "volume": 2.0
+}

@@ -1,0 +1,14 @@
+{
+  "suit": "emo:unkars",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:intangibility",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged2",
+    "fiskheroes:speed_force",
+    "emo:alien",
+    "emo:yt",
+    "emo:cadmus"
+  ]
+}

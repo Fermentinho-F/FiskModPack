@@ -1,0 +1,8 @@
+{
+    "inputs": [
+      "shadows:golem/transform",
+      "shadows:golem/header",
+      "shadows:golem/punch",
+      "shadows:golem/ground_shatter"
+    ]
+  }

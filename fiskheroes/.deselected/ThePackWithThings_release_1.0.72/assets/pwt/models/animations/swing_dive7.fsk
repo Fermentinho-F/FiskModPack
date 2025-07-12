@@ -1,0 +1,33 @@
+{m} = curve(clamp(-{motY}, 0, 2) / 2)
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+{pitch} = atan2({motY}, {horVel})
+{data} = curve {data}
+
+{x} = {data}curve clamp(-{motY}, 0, 1)
+{head_rotX} @ {x} -> -max(0.6{pitch}, -30')
+;{head_rotY} @ {data} -> -{head_rotY}
+
+{rightArm_posX} @ {x} -> -5.5
+{leftArm_posX} @ {x} -> 5.5
+{rightArm_posY} @ {x} -> 1.5
+{leftArm_posY} @ {x} -> 1.5
+{rightArm_posZ} @ {x} -> -1
+{leftArm_posZ} @ {x} -> -1
+
+{rightArm_rotX} @ {x} -> -0.5 - 1.6{m} - sin(2pi{x}) + 0.4{head_rotY}
+{rightArm_rotY} @ {m} -> 0.9 
+{rightArm_rotZ} @ {m} -> -0.1 + sin(2pi{x}) 
+{leftArm_rotX} @ {x} -> -0.5 - 1.7{m} + sin(2pi{x}) - 0.4{head_rotY}
+{leftArm_rotY} @ {m} -> -1.1
+{leftArm_rotZ} @ {m} -> 0.1 - sin(2pi{x})
+
+{rightLeg_rotX} @ {x} -> -0.05 - 0.7{m} + 0.7sin(2pi{x}) + 0.4{head_rotY}
+{rightLeg_rotY} @ {m} -> 10' + 0.5{m} - 0.7sin(2pi{x})
+{rightLeg_rotZ} @ {m} -> 6' +0.3{m}
+{leftLeg_rotX} @ {x} -> -0.1 - 0.5{m} - 0.7sin(2pi{x}) - 0.4{head_rotY}
+{leftLeg_rotY} @ {m} -> -12' - 0.5{m} +0.7sin(2pi{x})
+{leftLeg_rotZ} @ {m} -> -3' - 0.3{m}
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (10{head_rotY}, 0, 0, -1)
+out "rotate" (-0.8{m}{data}({pitch}-30') / 1', 1, 0, 0)

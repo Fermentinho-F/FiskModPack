@@ -1,0 +1,38 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}*{data_0}
+
+{jaw_posY} += 0.5{data_0}
+{jaw_overlay_posY} += 0.5{data_0}
+
+{jaw_posZ} -= 0.7{data_0}
+{jaw_overlay_posZ} -= 0.7{data_0}
+
+{jaw_rotX} += 35'{data_0}
+{jaw_overlay_rotX} += 35'{data_0}
+
+{tounge_root_posY} += 0.5{data_0}
+{tounge_root_posZ} -= 0.5{data_0}
+{tounge_2_posZ} -= 2.9{data_0}
+{tounge_3_posZ} -= 1.9{data_0}
+{tounge_4_posZ} -= 1.9{data_0}
+
+
+{tounge_root_rotX} += 20'{data_0}
+
+{tounge_2_rotX} -= 20'{data_0}
+{tounge_3_rotX} += 10'{data_0}
+{tounge_4_rotX} -= 20'{data_0}
+
+{jaw_rotX} += 2'sin(2pi{data_1})^3
+{jaw_overlay_rotX} += 2'sin(2pi{data_1})^3
+
+{tounge_root_rotX} += 5'sin(2pi{data_1})
+
+{tounge_2_rotX} -= 40'sin(2pi{data_1})
+{tounge_3_rotX} -= 35'sin(2pi{data_1})
+{tounge_4_rotX} -= 40'sin(2pi{data_1})
+
+{tounge_1_rotY} += 10'sin(2pi{data_1})^4
+{tounge_2_rotY} += 15'sin(2pi{data_1})
+{tounge_3_rotY} += 20'sin(2pi{data_1})
+{tounge_3_rotY} += 15'sin(2pi{data_1})

@@ -1,0 +1,7 @@
+{
+  "sound": "pwt:suit.beam.trickster.loop",
+  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+  "volume": "fiskheroes:beam_shooting_timer",
+  "pitch": "0.9 - 0.1 * Math.min(entity.getInterpolatedData('fiskheroes:heat_vision_length'), 2)",
+  "fadeOut": 10
+}

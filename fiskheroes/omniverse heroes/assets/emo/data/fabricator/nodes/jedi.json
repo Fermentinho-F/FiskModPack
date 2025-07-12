@@ -1,0 +1,9 @@
+{
+  "suit": "emo:jedi",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:defense",
+    "emo:cadmus"
+  ]
+}

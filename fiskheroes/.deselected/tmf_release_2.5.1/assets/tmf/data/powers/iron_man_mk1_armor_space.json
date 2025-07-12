@@ -1,0 +1,91 @@
+{
+  "name": "Iron Man Armor",
+  "modifiers": {
+    "fiskheroes:controlled_flight|default": {
+      "speed": 0.2,
+      "boostSpeed": 0.35,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.3,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:iron_man_flight_loop",
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    },
+    "fiskheroes:controlled_flight|boosted": {
+      "speed": 0.3,
+      "boostSpeed": 0.5,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:iron_man_flight_loop",
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 11.0,
+        "types": {
+          "ENERGY": 1.0
+        }
+      },
+      "range": 26.0,
+      "cooldownTime": 30,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:repulsor_blast"
+      }
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 40.0,
+        "regeneration": 6.0,
+        "recoveryDelay": 100,
+        "cooldown": 220
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0,
+	  "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": 0xFFA11E,
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

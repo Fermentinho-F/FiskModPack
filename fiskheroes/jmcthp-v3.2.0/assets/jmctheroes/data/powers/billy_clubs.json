@@ -1,0 +1,26 @@
+{
+  "name": "Daredevil's Billy Clubs",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:web_swinging": {
+      "range": 22.5,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:club_shoot",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 22.5,
+      "cooldownTime": 17,
+      "soundEvents": {
+        "SHOOT": "jmctheroes:club_zip"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "name": {
+      "translate": "Infinity Stones"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/stone.png"
+    },
+    "isLevelable": true
+  },
+  "requirements": [ 
+    "fiskheroes:anti_monitor",
+    "fiskheroes:spectre",
+    "fiskheroes:the_monitor",
+    "emo:cadmus"
+  ],
+  "price": {
+    "XP_LEVELS": 30
+  }
+}

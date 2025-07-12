@@ -1,0 +1,6 @@
+{
+  "sound": "pwt:modifier.beam.star.loop.4",
+  "override": "pwt:funcs/star_gliding",
+  "loop": true,
+  "delay": 10
+}

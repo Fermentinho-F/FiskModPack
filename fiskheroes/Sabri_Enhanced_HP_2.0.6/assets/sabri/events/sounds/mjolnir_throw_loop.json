@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.mjolnir.throw.loop",
+  "condition": "entity.getData('fiskheroes:flight_boost_timer') > 0",
+  "loop": true,
+  "volume": 0.2,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

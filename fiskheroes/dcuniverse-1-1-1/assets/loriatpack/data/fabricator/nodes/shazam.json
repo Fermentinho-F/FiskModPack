@@ -1,0 +1,12 @@
+{
+  "suit": "loriatpack:shazam",
+  "requirements": [	
+    "fiskheroes:tier8_9",
+	"loriatpack:dc_universe",
+   "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged2",
+    "fiskheroes:magic"
+  ]
+}

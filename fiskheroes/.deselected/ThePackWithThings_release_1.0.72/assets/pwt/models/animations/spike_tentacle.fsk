@@ -1,0 +1,37 @@
+;loop
+
+{root_1_rotX} -= 24' * sin(2pi{data_0})
+{root_1_rotY} += 26' * sin(pi{data_0})
+{root_1_rotZ} -= 8' * sin(3pi{data_0})
+
+{spike1_rotX} -= 12' * sin(2pi{data_0})
+{spike1_rotY} += 13' * sin(pi{data_0})
+{spike1_rotZ} -= 5' * sin(3pi{data_0})
+
+{spike2_rotX} -= 10' * sin(2pi{data_0})
+{spike2_rotY} += 12' * sin(pi{data_0})
+{spike2_rotZ} -= 4' * sin(3pi{data_0})
+
+{spike1_2_rotX} -= 13' * sin(4pi{data_0})
+{spike1_2_rotY} -= 15' * sin(2pi{data_0})
+{spike1_2_rotZ} += 13' * sin(3pi{data_0})
+
+{spike2_2_rotX} -= 9' * sin(4pi{data_0})
+{spike2_2_rotY} -= 10' * sin(2pi{data_0})
+{spike2_2_rotZ} += 8' * sin(3pi{data_0})
+
+{spike1_3_rotY} += 28' * sin(pi{data_0})
+{spike1_3_rotY} += 7' * sin(4pi{data_0})
+{spike1_3_rotZ} -= 10' * sin(2pi{data_0})
+
+;punch
+{data_1} = curve {data_1}
+
+{root_posY} -= 3{data_1}^2
+{root_1_posY} -= 4.5{data_1}^2
+{spike1_posY} -= 5{data_1}^2
+{spike2_posY} -= 3.5{data_1}^2
+{spike1_2_posY} -= 3.5{data_1}^2
+{spike2_2_posY} -= 3.5{data_1}^2
+{spike_1_3_posY} -= 3.5{data_1}^2
+{spike_1_3_1_posY} -= 6.5{data_1}

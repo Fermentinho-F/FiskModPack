@@ -1,0 +1,25 @@
+{head_rotZ} @ {data} -> 180'
+{headwear_rotZ} @ {data} -> 180'
+
+{body_rotZ} @ {data} -> 180'
+
+{rightArm_rotZ} @ {data} -> 180'
+{leftArm_rotZ} @ {data} -> 180'
+
+{rightLeg_rotZ} @ {data} -> 180'
+{leftLeg_rotZ} @ {data} -> 180'
+
+{head_posY} @ {data} -> 14
+{headwear_posY} @ {data} -> 14
+
+{body_posY} @ {data} -> 14
+
+{rightArm_posY} @ {data} -> 14
+{rightArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 14
+{leftArm_posX} @ {data} -> -5
+
+{rightLeg_posX} @ {data} -> 2
+{rightLeg_posY} @ {data} -> 2
+{leftLeg_posX} @ {data} -> -2
+{leftLeg_posY} @ {data} -> 2

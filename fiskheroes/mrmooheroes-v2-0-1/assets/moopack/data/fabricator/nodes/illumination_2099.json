@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:illumination_2099",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:intangibility",
+    "moopack:unstable_molecules"
+  ]
+}

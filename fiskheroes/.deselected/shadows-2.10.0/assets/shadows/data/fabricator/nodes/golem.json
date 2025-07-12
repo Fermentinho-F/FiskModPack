@@ -1,0 +1,27 @@
+{
+  "suit": "shadows:golem",
+  "display": {
+    "icon": {
+      "texture": "shadows:textures/gui/nodes/golem.png"
+    }
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:melee",
+    "fiskheroes:ranged",
+    "shadows:shadow00dev"
+  ],
+  "criteria": {
+    "EncasedAndFire": {
+      "trigger": "fiskheroes:tick",
+      "description": "Be encased in a mix and match of 'Block of Redstone' and 'Cobblestone' and also be on fire",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        
+        "check": "(player.world().getBlock(player.pos().add(0,1,0)) == 'minecraft:redstone_block' && player.world().getBlock(player.pos()) == 'minecraft:cobblestone' || player.world().getBlock(player.pos().add(0,1,0)) == 'minecraft:cobblestone' && player.world().getBlock(player.pos()) == 'minecraft:redstone_block') && player.isBurning()"
+      }
+    }
+  }
+}

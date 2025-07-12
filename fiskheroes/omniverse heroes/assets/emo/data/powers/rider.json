@@ -1,0 +1,153 @@
+{
+  "name": "Cosmic Power",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COSMIC": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "EFFECTS": [{
+            "id": "minecraft:nausea",
+            "duration": 100,
+            "amplifier": 3
+           },
+           {
+            "id": "fiskheroes:disable_speed",
+          "duration": 100,
+          "amplifier": 3
+        },
+        {
+          "id": "minecraft:slowness",
+          "duration": 100,
+          "amplifier": 3  
+        },
+        {
+          "id": "minecraft:wither",
+          "duration": 100,
+          "amplifier": 3            }
+        ]
+        }
+      },
+      "chargeTime": 3,
+      "duration": 80,
+      "cooldownTime": 3,
+      "range": 2.0,
+      "soundEvents": {
+        "CHARGE": "emo:rider"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": "fiskheroes:super_speed_move_loop_shazam_dceu",
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "COSMIC": 1.0,
+          "ENERGY": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 80
+        }
+      },
+      "range": 100.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "BEAM_AMBIENT": "fiskheroes:cosmic_beam"
+      }
+    },
+    
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 20000.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 2
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:fireball": {
+      "damageProfile": {
+        "damage": 18.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 20,
+          "IGNITE": 3
+        }
+      },
+      "radius": 2.5,
+      "cooldownTime": 5,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:fireball"
+      }
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 18.0,
+        "types": {
+          "FIRE": -1
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+    "fiskheroes:shadowdome": {
+      "chargeTime": 40,
+      "duration": 1200,
+      "radius": 24.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:water_breathing": {
+    }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "fiskheroes:textures/gui/bars/shadowform.png",
+      "data": "fiskheroes:dyn/shadowform_cooldown"
+    },
+    {
+      "type": "CIRCLE",
+      "color": "0xFF5500",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.cyclops_xmen.button_click",
+  "condition": "fiskheroes:gravity_manip",
+  "pitch": "1.2 - 0.2 * entity.getInterpolatedData('fiskheroes:gravity_amount')",
+  "fadeOut": 5
+}

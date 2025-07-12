@@ -1,0 +1,6 @@
+{data} = curve {data}
+
+{vibranium_spear_posY} -= 1{data}
+{vibranium_spear_posZ} -= 1{data}
+
+{vibranium_spear_rotX} -= 40'{data}

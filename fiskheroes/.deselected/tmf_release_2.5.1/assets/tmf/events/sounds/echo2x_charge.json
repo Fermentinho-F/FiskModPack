@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:echo2x.scream.charge",
+  "volume": 0.3,
+  "condition": "fiskheroes:beam_charging"
+}

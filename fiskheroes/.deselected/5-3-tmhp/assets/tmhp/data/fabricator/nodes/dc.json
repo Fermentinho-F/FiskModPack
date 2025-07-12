@@ -1,0 +1,12 @@
+{
+  "display": {
+    "name": {
+      "translate": "Dc Universe"
+    },
+    "icon": {
+      "texture": "tmhp:textures/gui/dc_universe.png"
+    }
+  },
+  "requirements": [
+    "tmhp:heropack" ]
+}

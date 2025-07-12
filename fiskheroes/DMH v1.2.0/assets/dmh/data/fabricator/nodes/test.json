@@ -1,0 +1,6 @@
+{
+  "suit": "dmh:test",
+  "requirements": [
+    "dmh:uuid_lock"
+  ]
+}

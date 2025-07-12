@@ -1,0 +1,12 @@
+{
+  "suit": "loriatpack:flash",
+  "requirements": [
+    "fiskheroes:tier4_5",
+	"loriatpack:dc_universe",
+	"fiskheroes:melee2",
+    "fiskheroes:defense",
+	"fiskheroes:speed_force",
+	"fiskheroes:ranged"
+    
+  ]
+}

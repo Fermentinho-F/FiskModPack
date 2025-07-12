@@ -1,0 +1,18 @@
+{
+    "display": {
+    "name": "Atomic Size Manipulation",
+    "icon": {
+        "texture":  "moopack:textures/gui/nodes/atomic_size_manipulation.png"
+    }
+    },
+    "requirements": [
+    "fiskheroes:size_manipulation",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense2",
+    "moopack:advanced_technology",
+  ],
+    "price": {
+    "IRID_GOLD": 5,
+    "XP_LEVELS": 15
+  }
+}

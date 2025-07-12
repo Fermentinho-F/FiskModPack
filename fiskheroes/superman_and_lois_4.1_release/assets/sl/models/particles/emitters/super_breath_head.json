@@ -1,0 +1,12 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson",
+      "type": "SMOKE_SMALL",
+      "anchor": "head",
+      "amount": 1,
+      "offset": [0.0, -1.2, -4.2],
+      "randMotion": [ 0.1, 0.06, -0.1]
+    }
+  ]
+}

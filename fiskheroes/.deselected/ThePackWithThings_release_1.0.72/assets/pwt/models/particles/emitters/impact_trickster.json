@@ -1,0 +1,24 @@
+{
+  "particles": [
+	{
+      "type": "minecraft:reddust",
+      "amount": 3,
+      "randOffset": [0.4, 0.4, 0.2],
+      "randMotion": [0.12, 0.19, 0.02],
+	  "motion": [0.64, 0.46, 0.95]
+    },
+	{
+      "type": "ENERGY_SMOKE",
+      "amount": 3,
+      "randOffset": [-0.3, -0.3, 0.2],
+      "randMotion": [0.12, 0.19, 0.02],
+	  "motion": [0.64, 0.46, 0.95]
+    },
+	{
+      "type": "SHADOW_SMOKE",
+      "amount": 20,
+      "randOffset": [-0.3, -0.3, 0.2],
+	  "randMotion": [1.1, 1.1, -0.2]
+    }
+  ]
+}

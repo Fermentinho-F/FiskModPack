@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/p2/lights/snare_oh_lights",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      }
+    ],
+    "out": "tmf:omnitrix/p2/lights/snare_oh_lights_<HUE>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "(entity.getWornChestplate().nbt().getInteger('Color')) | 0",
+      "values": {
+        "min": 0,
+        "max": 360,
+        "step": 30
+      }
+    }
+  }
+}

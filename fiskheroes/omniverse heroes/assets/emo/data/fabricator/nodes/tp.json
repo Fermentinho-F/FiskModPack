@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Five Teleport Power"
+    },
+    "icon": {
+      "texture": "emo:textures/gui/nodes/ender.png"
+    }
+  },
+  "requirements": [ 
+    "emo:cadmus"
+  ],
+  "price": {
+    "TUTRIDIUM": 1,
+    "XP_LEVELS": 3
+  }
+}

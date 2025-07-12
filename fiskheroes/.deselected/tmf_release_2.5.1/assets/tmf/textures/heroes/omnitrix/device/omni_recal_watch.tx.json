@@ -1,0 +1,31 @@
+{
+  "texture": {
+    "in": "tmf:omnitrix/device/omnitrix_recal",
+    "transform": [
+      {
+        "operation": "HUE",
+        "supply": "<HUE>"
+      },
+      {
+        "operation": "OR",
+        "supply": "tmf:omnitrix/device/omnitrix_recal<LAST>"
+      }
+    ],
+    "out": "tmf:generated/omnitrix_recal_<HUE>_<LAST>"
+  },
+  "getters": {
+    "HUE": {
+      "key": "entity.getWornChestplate().nbt().getInteger('Color') == 0 || entity.getWornChestplate().nbt().getInteger('Color') == 360 ? 0 : (entity.getWornChestplate().nbt().getInteger('Color')-30) | 0",
+      "values": {
+        "min": -30,
+        "max": 330,
+        "step": 30
+      }
+    },
+    "LAST": {
+      "key": "entity.getWornChestplate().nbt().getInteger('Color') == 360 ? 3 : 2",
+      "values": [2, 3]
+    }
+  },
+  "isDynamic": false
+}

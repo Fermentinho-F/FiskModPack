@@ -1,0 +1,12 @@
+{
+    "particles": [
+      {
+        "type": "BULLET_SPARK",
+        "amount": 10,
+        "motion": [0.05, 0.05, 0.05],
+        "randOffset": [0.08, 0.08, 0.08],
+        "randMotion": [0.2, 0.05, 0.0]
+      }
+    ]
+  }
+  

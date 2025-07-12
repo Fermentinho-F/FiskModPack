@@ -1,0 +1,9 @@
+{
+  "suit": "jjkp:mahoraga",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "jjkp:eight_handled_wheel"
+  ]
+}

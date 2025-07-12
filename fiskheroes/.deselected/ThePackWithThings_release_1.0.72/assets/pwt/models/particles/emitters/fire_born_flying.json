@@ -1,0 +1,30 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && !entity.getData('fiskheroes:hovering')",
+      "type": "SMOKE",
+      "amount": 2,
+      "offset": [-0.375, -0.81, 0.0],
+      "motion": [0.0, -0.25, 0.0],
+      "randMotion": [0.025, 0.0, 0.025],
+      "mirror": true
+    },
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:hovering') && entity.getData('fiskheroes:suit_open_timer') == 0",
+      "type": "SMOKE",
+      "amount": 2,
+      "offset": [0.175, -0.55, -0.175],
+      "motion": [0.0, -0.1, 0.0],
+      "mirror": true
+    },
+    {
+      "type": "SMOKE",
+      "amount": 2,
+      "offset": [0.125, -1.62, 0],
+      "motion": [0.0, -0.25, 0.0],
+      "randMotion": [0.0125, 0.0, 0.025],
+      "mirror": true,
+      "lockFPYaw": true
+    }
+  ]
+}

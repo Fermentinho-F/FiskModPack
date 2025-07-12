@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sl:main.heatbreath",
+  "volume": 2.5,
+  "loop": true,
+  "condition": "fiskheroes:beam_shooting",
+  "fadeIn": 5,
+  "fadeOut": 5
+}

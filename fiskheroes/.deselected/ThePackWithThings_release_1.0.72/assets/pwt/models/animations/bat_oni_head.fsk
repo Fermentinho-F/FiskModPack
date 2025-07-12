@@ -1,0 +1,33 @@
+;{data_0} = curve {data_0}
+;{data_1} = curve {data_1}
+;{data_3} = curve {data_3}
+
+; ==============================================
+;{data_2} = if({data_2} > 0, {data_2}^0.25, 1)
+;{motX} /= {data_2}
+;{motY} /= {data_2}
+;{motZ} /= {data_2}
+;{data_2} = 0
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{x} = min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+
+{hair_back_rotX} += 65'clamp({lookY}, 0, 1) + 0.4{forward}
+{hair_back_L_rotX} += 60'clamp({lookY}, 0, 1) + 0.2{forward}
+{hair_back_R_rotX} += 55'clamp({lookY}, 0, 1) + 0.2{forward}
+
+{hair_back_L_rotZ} += 0.4{strafe}
+{hair_back_R_rotZ} += 0.4{strafe}
+

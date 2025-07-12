@@ -1,0 +1,22 @@
+{
+  "name": "Infinite Void",
+  "modifiers": {
+    "fiskheroes:shadowdome": {
+      "chargeTime": 40,
+      "duration": 1200,
+      "radius": 24.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0x33334D",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

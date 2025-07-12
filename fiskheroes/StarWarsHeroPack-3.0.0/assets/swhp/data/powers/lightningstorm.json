@@ -1,0 +1,35 @@
+{
+  "name": "Special: Lightning Storm",
+  "modifiers": {
+    "fiskheroes:charged_beam|lightningstorm": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "BLUNT": 1.0,
+          "EXPLOSION": 0.25
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 3.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "chargeTime": 30,
+      "duration": 30,
+      "cooldownTime": 60,
+      "range": 8.5,
+      "radius": 0.0,
+      "soundEvents": {
+        "CHARGE": "swhp:forcelightning_charge",
+        "SHOOT": ["swhp:forcelightning_shoot", "swhp:fury_loop"],
+        "SHOOT_STOP": "swhp:forcelightning_stop"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

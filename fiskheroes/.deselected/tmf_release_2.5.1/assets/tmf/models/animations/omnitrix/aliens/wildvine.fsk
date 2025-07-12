@@ -1,0 +1,106 @@
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{idle} = sin(2pi{data_0})
+{punch} = {data_1}
+{MotY} = 0.65*max(-0.7, min({data_2} + {underground}, 0.7))
+{underground} = {data_3}
+
+{head_rotX} -= {lookY} + 0.7{underground}
+{head_rotY} -= 0.7*({bodyYaw} - {yaw})'
+
+{rArm_rotZ} += 0.025{idle}
+{lArm_rotZ} -= 0.025{idle}
+
+{flapR_rotZ} -= 0.02{idle} -0.3{underground}
+{flapL_rotZ} += 0.02{idle} -0.3{underground}
+{rArmForearm_rotX} -= 0.04{idle} + {underground}
+{lArmForearm_rotX} -= 0.04{idle} + {underground}
+
+{body_rotX} += 3{underground}
+{body_posY} += 36{underground}
+
+;Punching==========================================================
+{f6} = {punch}
+{body_rotY} = sin(sqrt({f6}) * pi * 2.0) * 0.05
+{brY} = sin(sqrt({f6}) * pi * 2.0) * 0.2
+
+{rArm_posX} += -cos({brY})+1
+{rArm_posZ} += sin({brY}) * 5.0
+
+{lArm_posX} += cos({brY})-1
+{lArm_posZ} += -sin({brY}) * 5.0
+
+{rArm_rotY} += {brY}
+{lArm_rotX} += {brY}
+{lArm_rotY} += {brY}
+
+{f6} = 1.0 - {punch}
+{f6} *= {f6}
+{f6} *= {f6}
+{f6} = 1.0 - {f6}
+{f7} = sin({f6} * pi)
+{f8} = sin({punch} * pi) * -({bipedHead_rotX} - 0.7) * 0.75
+{rArm_rotX} = ({rArm_rotX} - ({f7} * 1.2 + {f8}))
+{rArm_rotY} += {brY} * 2.0
+{rArm_rotZ} = sin({punch} * pi) * -0.4
+;WalkingAnim==========================================================
+{movement} = cos({limbSwing} * 0.4662 + pi) * {limbSwingAmount} 
+
+{rArm_rotX} += 0.35*{movement} - 2{underground}
+{lArm_rotX} -= 0.35*{movement} + 2{underground}
+
+{rLeg} = cos({limbSwing} * 0.4662 + pi) *{limbSwingAmount}
+{lLeg} = cos({limbSwing} * 0.42 + 2pi) * {limbSwingAmount}
+{rLegBack} = sin({limbSwing} * 0.56662 + 1.3*pi) * {limbSwingAmount} 
+{lLegBack} = cos({limbSwing} * 0.4262 + 2.5*pi) * {limbSwingAmount} 
+{midback} = 0.85*cos({limbSwing} * 0.3662 + pi) * {limbSwingAmount} 
+
+{rf1_rotX} -= 0.25{rLeg} - {MotY}
+{rf2_rotX} += 0.2{rLeg} - {MotY}
+{rf3_rotX} -= 0.15{rLeg}
+{rf4_rotX} += 0.1{rLeg}
+
+{lf1_rotX} -= 0.25{lLeg} - {MotY}
+{lf2_rotX} += 0.2{lLeg} - {MotY}
+{lf3_rotX} -= 0.15{lLeg}
+{lf4_rotX} += 0.1{lLeg}
+
+{rb1_rotX} -= 0.15{rLegBack} + 0.5*{MotY}
+{rb1_rotZ} -= 0.075{rLegBack} + 0.3*{MotY}
+{rb2_rotX} += min(-0.05, 0.05{rLegBack}) + {MotY}
+{rb3_rotX} -= 0.2{rLegBack}
+{rb4_rotX} += 0.2{rLegBack}
+
+{lb1_rotX} -= 0.15{lLegBack} + 0.5*{MotY}
+{lb1_rotZ} += 0.075{lLegBack} + 0.3*{MotY}
+{lb2_rotX} += min(-0.05, 0.05{lLegBack}) + {MotY}
+{lb3_rotX} -= 0.21{lLegBack}
+{lb4_rotX} += 0.2{lLegBack}
+
+{mb1_rotY} -= min(0 , max(-0.4, 0.15{midback})) + {MotY}
+{mb2_rotX} -= 0.15{midback} + {MotY}
+{mb3_rotX} += 0.15{midback}
+{mb4_rotX} += 0.15{midback}
+;OVERLAYS=====================================================================
+{headO_rotX} = {head_rotX}
+{headO_rotY} = {head_rotY}
+{rArmO_rotX} = {rArm_rotX}
+{rArmO_rotY} = {rArm_rotY}
+{rArmO_rotZ} = {rArm_rotZ}
+{lArmO_rotX} = {lArm_rotX}
+{lArmO_rotY} = {lArm_rotY}
+{lArmO_rotZ} = {lArm_rotZ}
+{flapRO_rotZ}= {flapR_rotZ}
+{flapLO_rotZ}= {flapL_rotZ}
+{rArmForearmO_rotX} = {rArmForearm_rotX}
+{lArmForearmO_rotX} = {lArmForearm_rotX}
+{bodyO_rotX} = {body_rotX}
+{body1_rotX} = {body_rotX}
+{bodyO_rotY} = {body_rotY}
+{body1_rotY} = {body_rotY}
+{bodyO_posY} = {body_posY}
+{body1_posY} = {body_posY}
+{rArmO_posX} = {rArm_posX}
+{rArmO_posZ} = {rArm_posZ}
+{lArmO_posX} = {lArm_posX}
+{lArmO_posZ} = {lArm_posZ}

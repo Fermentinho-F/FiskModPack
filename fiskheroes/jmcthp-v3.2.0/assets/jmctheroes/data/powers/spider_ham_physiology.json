@@ -1,0 +1,32 @@
+{
+  "name": "Spider Pig Physiology",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "jmctheroes:take_hammer"
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.75],
+      "soundEvents": {
+        "LEAP": "fiskheroes:web_swinging_whoosh"
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    }
+  }
+}

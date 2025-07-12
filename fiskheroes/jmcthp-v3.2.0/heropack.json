@@ -1,0 +1,302 @@
+{
+  "name": "\u00A7o\u00A7d\u00A7lJMCT Heroes\u00A7r",
+  "watermark": "\u00A75\u00A7lJMCT Heroes\u00A7r",
+  "description": "\u00A75\u00A7lReborn\n\u00A7rBy JMCT",
+  "domain": "jmctheroes",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "JMCT13/jmctheroes",
+      "version": 0
+    },
+    "range": {
+      "comical_punch": { "distance": 25.0, "sendToAll": true },
+      "rock_out": { "distance": 25.0, "sendToAll": true },
+      "symbiote_blade": { "distance": 25.0, "sendToAll": true },
+      "symbiote_mask": { "distance": 25.0, "sendToAll": true },
+      "symbiote_transformation": { "distance": 25.0, "sendToAll": true },
+      "thunder": { "distance": 25.0, "sendToAll": true },
+      "fire_loop": { "distance": 32.0, "target": "ALL" },
+      "fire_start": { "distance": 25.0, "sendToAll": true }
+    }
+  },
+  "dataVars": {
+    "boolean_reset": {
+      "type": "BOOLEAN",
+      "resetWithoutSuit": true
+    },
+    "float_interp_reset": {
+      "type": "FLOAT_INTERP",
+      "resetWithoutSuit": true
+    },
+    "suit_open": "FLOAT_INTERP",
+    
+    "1boolean_reset": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "1float_interp_reset": { "type": "FLOAT_INTERP", "resetOnDeath": false },
+    "1integer_reset": { "type": "INTEGER", "resetWithoutSuit": true },
+    "2integer_reset": { "type": "INTEGER", "resetWithoutSuit": true },
+    "3integer_reset": { "type": "INTEGER", "resetWithoutSuit": true },
+
+    "thor_animation": {"type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "suit_animation": {"type": "INTEGER", "resetWithoutSuit": true },
+    "suit_animation_frame_control": { "type": "INTEGER", "resetWithoutSuit": true },
+    "suit_animation_pause": {"type": "BOOLEAN", "resetWithoutSuit": true },
+
+    "moon": {"type": "BOOLEAN", "resetWithoutSuit": false },
+    "moon_timer": {"type": "FLOAT_INTERP", "resetWithoutSuit": false },
+    "moon_cooldown": "FLOAT",
+
+    "flight_super_boost_timer": {"type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "random": {"type": "INTEGER", "resetWithoutSuit": true},
+
+    "equip": "BOOLEAN",
+    "equip_timer": "FLOAT_INTERP",
+    "equip_cooldown": "FLOAT",
+    "stone": "BOOLEAN",
+    "stone_timer": "FLOAT_INTERP",
+    "stone_cooldown": "FLOAT",
+
+    "0_timer": "FLOAT_INTERP",
+    "1_timer": "FLOAT_INTERP",
+    "2_timer": "FLOAT_INTERP",
+    "3_timer": "FLOAT_INTERP",
+
+    "day": "FLOAT_INTERP",
+    "night": "FLOAT_INTERP",
+    "running": "FLOAT_INTERP",
+    "jumping": "FLOAT_INTERP",
+    "hit_timer": "FLOAT_INTERP",
+    "dash_timer": "FLOAT_INTERP",
+    "pose_timer": "FLOAT_INTERP",
+    "moving_timer": "FLOAT_INTERP",
+    "sneaking_timer": "FLOAT_INTERP",
+    "sneaking_moving_timer": "FLOAT_INTERP",
+    
+    "space": {"type": "BOOLEAN", "resetWithoutSuit": false },
+    "space_timer": {"type": "FLOAT_INTERP", "resetWithoutSuit": false },
+    "space_cooldown": "FLOAT",
+
+    "wheel_timer": "FLOAT_INTERP",
+
+    "jump": "BOOLEAN",
+    "double_jump": "BOOLEAN",
+    "jump_timer": "FLOAT_INTERP",
+    "jump_animation": "FLOAT_INTERP",
+    "choose_jump_animation": "INTEGER",
+    "web_swing": { "type": "FLOAT", "resetWithoutSuit": true },
+    
+    "charged_jump": "BOOLEAN",
+    "charged_jump_timer": "FLOAT_INTERP",
+    "charged_jump_complete": "BOOLEAN",
+
+    "random_repulsor": "FLOAT",
+    "random_charge": "FLOAT",
+
+    "chaos": "BOOLEAN",
+    "chaos_timer": "FLOAT_INTERP",
+    "chaos_cooldown": "FLOAT",
+
+    "stones": "INTEGER",
+    "stone_select": { "type": "INTEGER", "resetWithoutSuit": true },
+    "prev_stone_select": { "type": "INTEGER", "resetWithoutSuit": true },
+    "stone_select_slot": { "type": "INTEGER", "resetWithoutSuit": true },
+    "stone_selecting": { "type": "BOOLEAN", "resetWithoutSuit": true },
+
+    "goggles": "BOOLEAN",
+    "goggles_timer": "FLOAT_INTERP",
+    "goggles_cooldown": "FLOAT",
+
+    "flight": "BOOLEAN",
+    "flight_timer": "FLOAT_INTERP",
+    "flight_cooldown": "FLOAT",
+
+    "gamma": "BOOLEAN",
+    "gamma_timer": "FLOAT_INTERP",
+    "gamma_cooldown": "FLOAT",
+
+    "symbiote": "BOOLEAN",
+    "symbiote_timer": "FLOAT_INTERP",
+    "symbiote_cooldown": "FLOAT",
+
+    "nova": "BOOLEAN",
+    "nova_timer": "FLOAT_INTERP",
+    "nova_cooldown": "FLOAT",
+
+    "invis": "BOOLEAN",
+    "invis_timer": "FLOAT_INTERP",
+    "invis_cooldown": "FLOAT",
+
+    "torch": "BOOLEAN",
+    "torch_timer": "FLOAT_INTERP",
+    "torch_cooldown": "FLOAT",
+
+    "fate": "BOOLEAN",
+    "fate_timer": "FLOAT_INTERP",
+    "fate_cooldown": "FLOAT",
+
+    "pyro": "BOOLEAN",
+    "pyro_timer": "FLOAT_INTERP",
+    "pyro_cooldown": "FLOAT",
+
+    "blade": "BOOLEAN",
+    "blade_timer": "FLOAT_INTERP",
+
+    "vengeance": "BOOLEAN",
+    "vengeance_timer": "FLOAT_INTERP",
+    "vengeance_cooldown": "FLOAT",
+    
+    "magic": "BOOLEAN",
+    "magic_timer": "FLOAT_INTERP",
+    "magic_cooldown": "FLOAT",
+
+    "beetle": "BOOLEAN",
+    "beetle_timer": "FLOAT_INTERP",
+    "beetle_cooldown": "FLOAT",
+
+    "shazam": "BOOLEAN",
+    "shazam_timer": "FLOAT_INTERP",
+    "shazam_cooldown": "FLOAT",
+
+    "mjolnir": "BOOLEAN",
+    "mjolnir_timer": "FLOAT_INTERP",
+    "mjolnir_cooldown": "FLOAT",
+
+    "thunder": "BOOLEAN",
+    "thunder_timer": "FLOAT_INTERP",
+    "thunder_cooldown": "FLOAT",
+
+    "vibrate": "BOOLEAN",
+    "vibrate_timer": "FLOAT_INTERP",
+    "vibrate_cooldown": "FLOAT",
+
+    "suit": "BOOLEAN",
+    "suit_timer": "FLOAT_INTERP",
+    "suit_cooldown": "FLOAT",
+
+    "gun": "INTEGER",
+    "gun_bool": "BOOLEAN",
+    "gun_timer": "FLOAT_INTERP",
+    "gun_mag": "FLOAT",    
+    "gun_mag_int": "INTEGER",
+    "reloading": "BOOLEAN",
+    "barell": "INTEGER",
+
+    "gun2": "INTEGER",
+    "gun_bool2": "BOOLEAN",
+    "gun_timer2": "FLOAT_INTERP",
+    "gun_mag2": "FLOAT",    
+    "gun_mag_int2": "INTEGER",
+    "reloading2": "BOOLEAN",
+    "barell2": "INTEGER",
+
+    "rebreather": "BOOLEAN",
+    "rebreather_timer": "FLOAT_INTERP",
+    "rebreather_cooldown": "FLOAT"
+  },
+  "damageTypes": {
+    "OMEGA": "Omega Beams",
+    "BLUE_KRYPTONITE": "Blue_Kryptonite",
+    "KRYPTONITE": "Kryptonite",
+    "SOUND_BLAST": "Sound"
+  },
+  "alts": {
+    "jmctheroes:chainsaw_man": {
+      "shirtless": "Shirtless"
+    },
+    "jmctheroes:8ball": {
+      "ballin": {
+        "name": "Ballin'",
+        "vanity": "achievement.fiskheroes.allSuits"
+      }
+    },
+    "jmctheroes:daredevil": {
+      "yellow": "Yellow Suit",      
+      "black": {
+        "name": "The Devil Of Hell's Kitchen",
+        "armor": {
+          "HELMET": "Mask"
+        }
+      },
+      "white": {
+        "name": "The Angel Of Hell's Kitchen",
+        "armor": {
+          "HELMET": "Mask",
+          "CHESTPLATE": "Trenchcoat",
+          "BOOTS": "Shoes"
+        }
+      }
+    },
+    "jmctheroes:spider_man_noir": {
+      "comics": "Comics",
+      "bw": "Black & White"
+    },
+    "jmctheroes:spider_man": {
+      "tasm2": "Tasm 2",
+      "ff": "Future Foundation",
+      "bag": "Bombastic Bag-Man"
+    },
+    "jmctheroes:spider_miles": {
+      "atsv": "Across the Spider-Verse",
+      "itsv": "Into the Spider-Verse",
+      "jacket": {
+        "name": "Into the Spider-Verse w/Jacket",
+        "armor": {
+          "CHESTPLATE": "Jacket",
+          "BOOTS": "Shoes"
+        }
+      },
+      "10th": {
+        "name": "10th Anniversary",
+        "armor": {
+          "CHESTPLATE": "Sweater",
+          "BOOTS": "Shoes"
+        }
+      }
+    },
+    "jmctheroes:modok": {
+      "superior": {
+        "name": "Superior M.O.D.O.K.",
+        "vanity": "achievement.fiskheroes.allDebuffs"
+      }
+    },
+    "jmctheroes:war_machine_mk2": {
+      "patriot": "Iron Patriot"
+    },
+    "jmctheroes:flash_dceu": {
+      "knightmare": "Knightmare"
+    },
+    "jmctheroes:arkham_knight": {
+      "red_hood": "Red Hood"
+    },
+    "jmctheroes:batman_comics": {
+      "$DEFAULT": {
+        "name": "\u00A78\u00A7lBlack Suit"
+      },
+      "blue": "\u00A73\u00A7lBlue Suit",
+      "rainbow": "\u00A7l\u00A7cR\u00A76a\u00A7e\u00A72\u00A7a\u00A7b\u00A73i\u00A71n\u00A79b\u00A7d\u00A75o\u00A74w \u00A7cS\u00A76u\u00A7ei\u00A72t"
+    },
+    "jmctheroes:bizarro": {
+      "hat": {
+        "name": "Hat",
+        "vanity": "achievement.fiskheroes.moon"
+      }
+    },
+    "jmctheroes:superman_dceu": {
+      "snyder": "\u00A78\u00A7lSnyder Cut"
+    },
+    "jmctheroes:wally_west": {
+      "new52": "New-52"
+    },
+    "jmctheroes:red_hood": {
+        "$DEFAULT": {
+          "maskToggleTicks": 24
+      }
+    },
+    "skarredheroes:gwenpool": {
+      "modok": {
+        "name": "M.O.D.O.K. Backpack",
+        "vanity": "achievement.fiskheroes.allDebuffs"
+      }
+    }
+  }
+}

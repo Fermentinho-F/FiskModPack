@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:armory.invisibility_start",
+  "volume": 0.75,
+  "fadeOut": 5
+}

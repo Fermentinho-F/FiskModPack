@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.black_widow.bite.enable",
+  "pitch": "1.05 - Math.random() * 0.1",
+  "fadeOut": 5
+}

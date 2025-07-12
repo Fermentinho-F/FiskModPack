@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.thor.mjolnir.lightning.charged_beam.shoot",
+  "pitch": "1.1 - Math.random() * 0.2",
+  "fadeOut": 10
+}

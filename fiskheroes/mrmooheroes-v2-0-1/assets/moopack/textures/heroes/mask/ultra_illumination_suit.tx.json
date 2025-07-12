@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "moopack:ultra_illumination/ultra_illumination_base",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "fiskheroes:xor/iron_man_mk50_suit_<TIMER>"
+      }
+    ],
+    "out": "moopack:generated/ultra_illumination_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0",
+      "values": {
+        "min": 1,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}

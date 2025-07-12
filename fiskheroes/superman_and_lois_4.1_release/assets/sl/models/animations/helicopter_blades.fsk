@@ -1,0 +1,30 @@
+{data_0} = {data_0}
+
+{data_1} = {data_1}
+
+{data2} = sin(pi*{data_1})
+
+{BackR_rotZ} @ {data_0} -> 10
+
+{FrontR_rotY} @ {data_0} -> 10
+
+
+{bone_posX} @ {data_1} -> 500
+
+{bone_posX} @ {data2} -> 500
+
+{bone_posY} @ {data2} -> -100
+
+{bone_posZ} @ {data_1} -> -500
+
+{bone_posX} -= 500
+
+{bone_posZ} += 500
+
+
+
+
+
+
+
+

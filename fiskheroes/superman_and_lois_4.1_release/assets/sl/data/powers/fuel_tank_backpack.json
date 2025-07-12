@@ -1,0 +1,29 @@
+{
+  "name": "Fuel Tank Backpack",
+  "modifiers": {
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 5.0,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 180,
+          "IGNITE": 4
+        }
+      },
+      "range": 10.0,
+      "soundEvents": {
+        "SHOOT": ["sl:flamethrower_loop", "sl:flamethrower_start"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "sl:textures/gui/bars/fuel_bar.png",
+      "data": "if (entity.getData('sl:dyn/oxygen') > 0) {1 - entity.getData('sl:dyn/oxygen')}"
+    }
+  ]
+}

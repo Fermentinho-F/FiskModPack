@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+      "type": "minecraft:reddust",
+      "amount": 16,
+      "randOffset": [0.15, 0.15, 0.15],
+      "motion": [2.29, 1.77, 0.97],
+      "randMotion": [0.1, 0.1, 0.1]
+    }
+  ]
+}

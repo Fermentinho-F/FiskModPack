@@ -1,0 +1,40 @@
+{
+  "suit": "tmf:dna_wildvine_17",
+  "requirements": [
+    "tmf:omnitrix",
+    "tmf:omnitrix_heropack",
+    "tmf:tmf"
+  ],
+  "display": {
+    "description": "Container of an Unknown Alien Dna Sample"
+  },
+  "criteria": {
+    "swamp": {
+      "trigger": "fiskheroes:location",
+      "description": {
+        "translate": "Find a swampy place"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "location": "LOCATION_PLAYER_IS_IN"
+        },
+        "check": "location.biome() == 'Swampland' || location.biome() == 'Swampland M'"
+      }
+    },
+    "yummers": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "minSuccessCount": 3,
+      "description": {
+        "translate": "Try out some of grandpa's delicious mushroom stew"
+      },
+      "ignoreRequirements": false,
+      "condition": {
+        "variables": {
+          "food": "ITEM_BEING_CONSUMED"
+        },
+        "check": "food.name() == 'minecraft:mushroom_stew'"
+      }
+    }
+  }
+}

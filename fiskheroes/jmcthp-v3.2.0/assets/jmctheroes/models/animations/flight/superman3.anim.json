@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "fiskheroes:flight/hover/default",
+    "jmctheroes:flight/beetle_boost",
+    "jmctheroes:flight/superman3_boost"
+  ]
+}

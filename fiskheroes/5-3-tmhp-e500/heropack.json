@@ -1,0 +1,259 @@
+{
+  "name": "\u00A76\u00A7oTheMucahid HeroPack 5.3",
+  "description": "\u00A79Thanks for Downloading",
+  "domain": "tmhp",
+  "watermark": "\u00A76\u00A7oTheMucahid HP",
+  "packFormat": 1,
+
+  "damageTypes": {
+  "HELLFIRE":"Hellfire",
+  "TIME":"Time"
+  },
+
+  "sounds": {
+    "download": {
+      "repository": "Muciwara/tmhp",
+      "version": 0
+    },
+    "range": {
+      "grimoire_open": { "distance": 20.0, "target": "ALL" },
+      "sword_out": { "distance": 20.0, "target": "ALL" },
+      "spirit_dive": { "distance": 20.0, "target": "ALL" },
+      "blackform": { "distance": 20.0, "target": "ALL" },
+
+      "sharingan": { "distance": 20.0, "target": "ALL" },
+      "rasengan": { "distance": 20.0, "target": "ALL" },
+      "rasengan_loop": { "distance": 20.0, "target": "ALL" },
+
+      "going_ghost": { "distance": 20.0, "target": "ALL" },
+      "ghostlywail": { "distance": 20.0, "target": "ALL" },
+
+      "lightsaber_on": { "distance": 20.0, "target": "ALL" },
+      "lightsaber_off": { "distance": 20.0, "target": "ALL" },
+      "lightsaber_loop": { "distance": 20.0, "target": "ALL" },
+      "lightsaber_deflect": { "distance": 20.0, "target": "ALL" },
+
+      "haki": { "distance": 20.0, "target": "ALL" }
+    }
+  },
+
+  "dataVars": {
+//Young Justice
+    "stealth": "BOOLEAN",
+    "stealth_timer": "FLOAT_INTERP",
+    "artic_stealth": "BOOLEAN",
+    "artic_stealth_timer": "FLOAT_INTERP",
+
+    "electrical": "BOOLEAN",
+    "electrical_timer": "FLOAT_INTERP",
+    "electrical_cooldown": "FLOAT",
+//Green Lantern
+    "lantern": "BOOLEAN",
+    "lantern_timer": "FLOAT_INTERP",
+    "lantern_cooldown": "FLOAT",
+    "mecha": "BOOLEAN",
+    "mecha_timer": "FLOAT_INTERP",
+    "mecha_cooldown": "FLOAT",
+    "beam": "BOOLEAN",
+    "beam_timer": "FLOAT_INTERP",
+    "beam_cooldown": "FLOAT",
+//Flash
+    "formula": "BOOLEAN",
+    "formula_timer": "FLOAT_INTERP",
+    "formula_cooldown": "FLOAT",
+//Black Clover
+    "grimoire": "BOOLEAN",
+    "grimoire_timer": "FLOAT_INTERP",
+    "blackform": "BOOLEAN",
+    "blackform_timer": "FLOAT_INTERP",
+    "blackform_cooldown": "FLOAT",
+    "blackform2": "BOOLEAN",
+    "blackform2_timer": "FLOAT_INTERP",
+    "blackform2_cooldown": "FLOAT",
+    "devil_union": "BOOLEAN",
+    "devil_union_timer": "FLOAT_INTERP",
+    "devil_union_cooldown": "FLOAT",
+    "devil_union2": "BOOLEAN",
+    "devil_union2_timer": "FLOAT_INTERP",
+    "devil_union2_cooldown": "FLOAT",
+    "spiritdive": "BOOLEAN",
+    "spiritdive_timer": "FLOAT_INTERP",
+    "spiritdive_cooldown": "FLOAT",
+    "spiritdive2": "BOOLEAN",
+    "spiritdive2_timer": "FLOAT_INTERP",
+    "spiritdive2_cooldown": "FLOAT",
+    "regen": "BOOLEAN",
+    "regen_timer": "FLOAT_INTERP",
+    "regen_cooldown": "FLOAT",
+//Phantoms
+    "ghostform": "BOOLEAN",
+    "ghostform_timer": "FLOAT_INTERP",
+    "ghostform_cooldown": "FLOAT",
+    "ghostray": "FLOAT_INTERP",
+    "ghostly_wail": "FLOAT_INTERP",
+//Haki
+    "haki": "BOOLEAN",
+    "haki_timer": "FLOAT_INTERP",
+    "haki_cooldown": "FLOAT",
+//Narutooo
+    "one_tailed": "BOOLEAN",
+    "one_tail_timer": "FLOAT_INTERP",
+    "one_tail_cooldown": "FLOAT",
+    "rage": "BOOLEAN",
+    "rage_timer": "FLOAT_INTERP",
+    "rage_cooldown": "FLOAT",
+    "sage_mod": "BOOLEAN",
+    "sage_mod_timer": "FLOAT_INTERP",
+    "sage_mod_cooldown": "FLOAT",
+
+    "sharingan": "BOOLEAN",
+    "sharingan_timer": "FLOAT_INTERP",
+    "sharingan_cooldown": "FLOAT",
+    "curse_mark": "BOOLEAN",
+    "curse_mark_timer": "FLOAT_INTERP",
+    "curse_mark_cooldown": "FLOAT",
+//Randy
+    "ninja": "BOOLEAN",
+    "ninja_timer": "FLOAT_INTERP",
+    "ninja_cooldown": "FLOAT",
+    "flame_mod": "BOOLEAN",
+    "flame_mod_timer": "FLOAT_INTERP",
+    "flame_mod_cooldown": "FLOAT"
+  },
+    "alts": {
+    "tmhp:batman": {
+      "c27": "DComics-27",
+      "gaslight": "Gotham by Gaslight",
+      "inj2": "Injustice 2",
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:assassin": {
+      "conner": "Conner Kenway",
+      "edward": "Edward Kenway",
+      "yusuf": "Yusuf Tazim"
+    },
+    "tmhp:nightwing": {
+      "new52": "New 52",
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:robin_demian": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:robin_yj": {
+      "tt": "Teen Titans"
+    },
+    "tmhp:red_robin": {
+      "classic": "Classic"
+    },
+    "tmhp:impulse": {
+      "smallville": "Smallville"
+    },
+    "tmhp:the_flash": {
+      "s6": "Season 6",
+      "s6_black": "Season 6 (Black)"
+    },
+    "tmhp:the_flash_wally": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:green_arrow": {
+      "bbab": "Batman:The Brave and The Bold"
+    },
+    "tmhp:artemis": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:green_lantern": {
+      "guy_gardner": "Guy Gardner",
+      "john_stewart": "John Stewart",
+      "kyle_rayner": "Kyle Rayner",
+      "simon_bazz": "Simon Bazz",
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design"
+    },
+    "tmhp:sub_zero": {
+      "inj2": "Injustice 2"
+    },
+    "tmhp:naruto_og": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:naruto_shippuden": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:naruto_sage": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:sasuke_og": {
+      "pre_chunin": "Pre Chunin Exam",
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:kakashi_og": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:yuno": {
+      "start": "Begining of the Series",
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:yuno_spade": {
+      "start": "Pre Spade Raid"
+    },
+    "tmhp:asta": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:asta_spade": {
+      "rgb": "RGB",
+      "part1": "Begining of Spade Arc",
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:julius": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:zoro": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:zoro_ats": {
+      "no_outfit": "No Outfit"
+    },
+    "tmhp:spider_man_comics": {
+      "2099": "2099",
+      "anad": "All New All Diffrent",
+      "aot": {
+        "name": "Attack on Titan(Custom)",
+        "vanity": "achievement.fiskheroes.landing"
+      }
+    },
+    "tmhp:spider_man_game": {
+      "black": "Black Version(Custom)",
+      "superior": "Superior Spider-Man",
+      "anti_ock": "Anti Ock Suit",
+      "tls": "The Last Stand",
+      "scarlet": "Scarlet Spider"
+    },
+    "tmhp:spider_man_ff": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design",
+      "tmsd_v2": "\u00A76\u00A7oAnother TheMucahid's Suit Design"
+    },
+    "tmhp:spider_man_miles": {
+      "hooded": "Hooded Version from Movie"
+    },
+    "tmhp:spider_gwen": {
+      "marvel": "Marvel's Spider-Man(2017) Animated Show"
+    },
+    "tmhp:iron_fist": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design",
+      "anad": "All New All Diffrent",
+      "v1": "USP First Version",
+      "new_avengers": "New Avengers"
+    },
+    "tmhp:randy_cunningham": {
+      "tmsd": "\u00A76\u00A7oTheMucahid's Suit Design",
+      "heidi": "\u00A75Heidi/Custom Version"
+    },
+    "tmhp:aragami": {
+      "blue": "Blue Version"
+    },
+    "tmhp:knight": {
+      "black": "Black Version"
+    },
+    "tmhp:samurai": {
+      "blue": "Blue Version"
+    }
+  }
+}

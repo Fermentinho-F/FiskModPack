@@ -1,0 +1,12 @@
+{
+  "suit": "sl:man",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "sl:manorigins"
+  ]
+}

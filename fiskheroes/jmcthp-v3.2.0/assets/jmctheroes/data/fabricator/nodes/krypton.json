@@ -1,0 +1,34 @@
+{
+  "display": {
+    "name": {
+      "translate": "Krypton"
+    },
+    "description": {
+      "translate": "A familiar type of destruction"
+    },
+    "icon": {
+      "texture": "jmctheroes:textures/nodes/krypton.png"
+    }
+  },
+  "requirements": [
+    "jmctheroes:jmcthp"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 15
+  },
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:player_killed",
+      "description": {
+        "translate": "Join all the other Kryptonians by blowing up"
+      },
+      "condition": {
+        "variables": {
+          "dmg": "DAMAGE_SOURCE"
+        },
+        "check": "dmg.getEntity() && dmg.isExplosion()"
+      }
+    }
+  }
+}

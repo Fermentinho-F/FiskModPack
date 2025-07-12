@@ -1,0 +1,23 @@
+{
+  "suit": "tmhp:basic_storage_suit",
+  "requirements": [
+    "fiskheroes:tier1",
+    "elseworld:ap1",
+    "fiskheroes:traversal",
+    "tmhp:heropack2"
+  ],
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Craft a chest."
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'minecraft:chest'"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "suit": "emo:subat",
+  "display": {
+    "hideUntilAvailable":  true
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "emo:kryptonian",
+    "emo:cadmus"
+  ],
+  "criteria": {
+    "achievement": {
+      "trigger": "fiskheroes:achievement",
+      "description": {
+        "translate": "node.fiskheroes.spodermen.achievement.desc"
+      },
+      "ignoreRequirements": true,
+      "condition": {
+        "variables": {
+          "id": "ACHIEVEMENT_GAINED"
+        },
+        "check": "id == 'achievement.fiskheroes.spodermen'"
+      }
+    }
+  }
+}

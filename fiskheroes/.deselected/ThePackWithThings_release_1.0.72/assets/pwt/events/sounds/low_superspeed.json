@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "pwt:suit.speedster.spint.1",
+  "override": "pwt:funcs/low_superspeed",
+  "loop": true,
+  "fadeOut": 15
+}

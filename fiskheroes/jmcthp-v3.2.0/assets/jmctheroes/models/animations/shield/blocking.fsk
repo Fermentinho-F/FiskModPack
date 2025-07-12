@@ -1,0 +1,20 @@
+{data} = curve {data}
+
+{head_rotY} -= 15'*{data}
+
+{rightArm_rotX} -= 105'*{data}
+{rightArm_rotY} += 55'*{data}
+{rightArm_rotZ} += 5'*{data}
+
+{leftArm_rotX} -= 105'*{data}
+{leftArm_rotY} -= 55'*{data}
+{leftArm_rotZ} -= 5'*{data}
+
+{rightLeg_rotY} += 5'*{data}
+{rightLeg_posX} -= 15'*{data}
+
+{leftLeg_rotY} -= 25'*{data}
+{leftLeg_posX} += 25'*{data}
+{leftLeg_posZ} -= 5'*{data}
+
+out "rotate" (-20{data}, 0, 1, 0)

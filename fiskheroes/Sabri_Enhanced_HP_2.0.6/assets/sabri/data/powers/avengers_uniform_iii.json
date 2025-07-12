@@ -1,0 +1,61 @@
+{
+  "name": "Avengers Uniform (III)",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 120,
+      "soundEvents": {
+        "SHOOT": "sabri:black_widow_grapple_shoot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+              "id": "minecraft:slowness",
+              "duration": 30,
+              "amplifier": 2,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "range": 28.0,
+      "speed": 16.0,
+      "spread": 0.5,
+      "radius": 0.2,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "sabri:black_widow_bite_shoot"
+      }
+    },
+    "fiskheroes:transformation|bite": {
+      "key": "WIDOWS_BITE",
+      "isToggle": true,
+      "transformation": {
+        "toggleData": "sabri:dyn/aiming",
+        "timerData": "sabri:dyn/aiming_timer",
+        "time": 3
+      },
+      "soundEvents": {
+        "ENABLE": "sabri:black_widow_bite_enable",
+        "DISABLE": "sabri:black_widow_bite_disable"
+      }
+    },
+    "fiskheroes:transformation|grapple": {
+      "key": "GRAPPLE",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "sabri:dyn/grapple",
+        "timerData": "sabri:dyn/grapple_timer",
+        "time": 4
+      }
+    }
+  }
+}

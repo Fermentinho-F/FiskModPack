@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "jmctheroes:lantern/red_suit",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "jmctheroes:xor/lantern_suit_<TIMER>"
+      }
+    ],
+    "out": "jmctheroes:generated/lantern/red_suit_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(10 * entity.getInterpolatedData('jmctheroes:dyn/suit_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  },
+  "isDynamic": true
+}

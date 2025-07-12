@@ -1,0 +1,19 @@
+{
+  "name": "Reversal Red",
+  "modifiers": {
+    "fiskheroes:energy_bolt": {
+      "damageProfile": {
+        "damage": 7.0,
+        "types": {
+          "CURSED": 0.5,
+          "POSITIVE": 1.0
+        }
+      },
+      "isExplosive": true,
+      "cooldownTime": 40,
+      "soundEvents": {
+        "SHOOT": "fiskheroes:antimatter_blast_start"
+      }
+    }
+  }
+}

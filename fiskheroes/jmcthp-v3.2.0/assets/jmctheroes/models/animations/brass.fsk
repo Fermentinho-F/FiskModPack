@@ -1,0 +1,12 @@
+{data} = sin(pi(1 - {data}))^2
+
+{rightArm_rotX} @ {data} -> 45'
+{rightArm_rotY} += 47'*{data}
+{rightArm_rotZ} += 0'*{data}
+
+{leftArm_rotX} @ {data} -> 45'
+{leftArm_rotY} -= 43'*{data}
+{leftArm_rotZ} += 0'*{data}
+
+out "firstPerson" (true)
+out "translate" (0, -(curve {data}), 0)

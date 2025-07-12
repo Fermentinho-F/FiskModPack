@@ -1,0 +1,29 @@
+{
+  "name": "omen",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:blindness": {
+          "sequence": "w",
+          "cooldown": 1,
+          "duration": 400,
+          "range": 24.0
+        }
+      },
+      "soundEvents": {
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:invisibility": {
+    }
+  }
+}

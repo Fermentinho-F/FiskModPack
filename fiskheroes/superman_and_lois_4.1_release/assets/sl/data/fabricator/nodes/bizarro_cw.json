@@ -1,0 +1,19 @@
+{
+  "suit": "sl:bizarro_cw",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:regeneration",
+    "sl:inverse_kryptonian_physiology",
+    "sl:kryptonite",
+    "sl:sl",
+    "sl:ap8_9",
+    "sl:supergirl"
+  ],
+  "display": {
+    "description": "leetS fO lriG"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "sound": "db:ssjoff",
+  "volume": 0.7,
+  "loop": false,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

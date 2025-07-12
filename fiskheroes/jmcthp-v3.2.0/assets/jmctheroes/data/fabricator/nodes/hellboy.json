@@ -1,0 +1,11 @@
+{
+  "suit": "jmctheroes:hellboy",
+  "requirements": [
+    "jmctheroes:jmcthp",
+    "jmctheroes:hell",
+    "fiskheroes:tier8_9",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:marksmanship"
+  ]
+}

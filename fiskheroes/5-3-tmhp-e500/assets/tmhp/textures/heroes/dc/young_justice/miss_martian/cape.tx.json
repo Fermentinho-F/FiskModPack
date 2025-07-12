@@ -1,0 +1,9 @@
+{
+  "texture": "tmhp:dc/young_justice/miss_martian/cape_<OPEN>",
+  "getters": {
+    "OPEN": {
+      "key": "entity.getData('fiskheroes:disguise') != null > 0",
+      "values": ["true", "false"]
+    }
+  }
+}

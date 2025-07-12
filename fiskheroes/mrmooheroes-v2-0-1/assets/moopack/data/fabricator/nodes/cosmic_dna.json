@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:cosmic_dna",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:cosmic",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense",
+    "moopack:dna_activators"
+  ]
+}

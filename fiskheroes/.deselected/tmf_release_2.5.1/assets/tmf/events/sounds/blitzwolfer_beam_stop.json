@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:blitzwolfer.beam.end",
+  "volume": 0.7
+}

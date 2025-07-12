@@ -1,0 +1,16 @@
+{
+  "name": "Red Hood's gear",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 190,
+          "uses": 3
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

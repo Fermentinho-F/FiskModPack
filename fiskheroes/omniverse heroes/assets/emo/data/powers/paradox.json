@@ -1,0 +1,41 @@
+{
+  "name": "Professor Paradox Power",
+  "modifiers": {
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 1000.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:glow_teleport"
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:slow_motion": {
+    },
+    "fiskheroes:size_manipulation": {
+      "isInstant": true,
+      "minSize": 0.0625,
+      "maxSize": 1.0,
+      "soundEvents": {
+        "SHRINK": "fiskheroes:atom_shrink",
+        "GROW": "fiskheroes:atom_grow"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    }
+  }
+}

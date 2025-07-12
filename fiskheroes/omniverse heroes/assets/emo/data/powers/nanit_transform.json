@@ -1,0 +1,28 @@
+{
+  "name": "Suit Transform",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "NANITE_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "fiskheroes:mk50_enable",
+        "DISABLE": "fiskheroes:mk50_disable"
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "cooldownData": "fiskheroes:dyn/nanite_cooldown",
+        "duration": -1,
+        "recovery": 3.0
+      },
+      "soundEvents": {
+        "TIMEOUT": "fiskheroes:mk50_disable"
+      }
+    }
+  }
+}

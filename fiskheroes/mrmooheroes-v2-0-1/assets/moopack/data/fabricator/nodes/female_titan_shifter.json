@@ -1,0 +1,11 @@
+{
+  "suit": "moopack:female_titan_shifter",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense",
+    "fiskheroes:melee3",
+    "fiskheroes:traversal2",
+    "moopack:titan_abilities"
+  ]
+}

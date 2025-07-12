@@ -1,0 +1,14 @@
+{
+    "suit": "emo:son_of_utopian",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:flight",
+      "fiskheroes:traversal",
+      "fiskheroes:defense2",
+      "fiskheroes:melee2",
+      "fiskheroes:ranged2",
+      "emo:legacy",
+      "emo:cadmus"
+    ]
+  }
+  

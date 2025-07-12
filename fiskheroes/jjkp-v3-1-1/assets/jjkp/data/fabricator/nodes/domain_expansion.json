@@ -1,0 +1,15 @@
+{
+    "display": {
+    "name": "Domain Expansion",
+    "icon": {
+        "texture":  "jjkp:textures/gui/nodes/domain_expansion.png"
+    }
+    },
+    "requirements": [
+    "jjkp:jjkp"
+  ],
+    "price": {
+      "IRID_GOLD": 5,
+      "XP_LEVELS": 10
+  }
+}

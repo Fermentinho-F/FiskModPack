@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Teen Titans"
+    },
+    "description": "\u00A73And that's what \u00A7lwe \u00A73are-- not just a \u00A7lteam, \u00A73but a \u00A7lfamily. \u00A73One day we might be the \u00A7lJustice League-- \u00A73But for today, we're \u00A7lTeen Titans. \u00A74-\u00A7oRed Robin",
+    "icon": {
+      "text": "TT"
+    }
+  },
+  "requirements": [
+    "tmhp:dc"],
+  "price": {
+    "XP_LEVELS": 15
+  }
+}

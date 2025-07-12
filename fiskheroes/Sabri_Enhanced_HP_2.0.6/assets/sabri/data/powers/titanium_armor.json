@@ -1,0 +1,47 @@
+{
+  "name": "Titanium Armor",
+  "modifiers": {
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.15,
+        "drag": 0.06
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:iron_man_flight_enable", "fiskheroes:iron_man_flight_loop"],
+        "BOOST": "fiskheroes:iron_man_boost"
+      }
+    },
+    "fiskheroes:water_breathing": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    }
+  },
+  "fiskheroes:thorns": {
+    "damageProfile": {
+      "types": {
+        "ELECTRICITY": 1.0
+      }
+    },
+    "factor": 0.25
+  }
+}
+  

@@ -1,0 +1,13 @@
+{
+  "particles": [
+    {
+	  "condition": "entity.getData('fiskheroes:teleport_delay')>0",
+      "type": "minecraft:portal",
+	  "anchor": "body",
+      "amount": 5,
+      "offset": [0.0, 6.0, 0.0],
+      "randMotion": [1.0, 0.8, 1.0],
+      "mirror": false
+    }
+  ]
+}

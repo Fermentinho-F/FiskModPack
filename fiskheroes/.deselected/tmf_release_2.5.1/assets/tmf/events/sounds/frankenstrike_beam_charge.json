@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "tmf:frankenstrike.beam.charge",
+  "condition": "fiskheroes:beam_charging"
+}

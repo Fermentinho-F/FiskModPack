@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "jmctheroes:fate/doctor_fate",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "jmctheroes:xor/fate/suit_<TIMER>"
+      }
+    ],
+    "out": "jmctheroes:generated/fate/doctor_fate_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(32 * entity.getInterpolatedData('jmctheroes:dyn/fate_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 32
+      }
+    }
+  },
+  "isDynamic": true
+}

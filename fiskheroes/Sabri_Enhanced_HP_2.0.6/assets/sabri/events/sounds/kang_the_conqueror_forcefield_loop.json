@@ -1,0 +1,7 @@
+{
+  "sound": "sabri:suit.kang_the_conqueror.forcefield.loop",
+  "condition": "fiskheroes:shield_blocking",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

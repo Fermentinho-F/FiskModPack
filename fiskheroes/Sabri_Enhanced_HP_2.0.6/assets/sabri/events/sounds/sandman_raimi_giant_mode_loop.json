@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "sabri:suit.sandman_raimi.giant_mode.loop",
+  "condition": "entity.getData('fiskheroes:size_state') != 0",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 10
+}

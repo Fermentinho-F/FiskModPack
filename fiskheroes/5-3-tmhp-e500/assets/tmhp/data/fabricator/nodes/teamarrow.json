@@ -1,0 +1,16 @@
+{
+  "display": {
+    "name": {
+      "translate": "Team Arrow"
+    },
+    "description": "\u00A7aHe can't kill me... without killing \u00A7lus. \u00A7aBecause Green Arrow isn't \u00A7lone \u00A7aman. We're a family. We're a forest. We're a quiver. And together, we make our own light. -\u00A7oGreen Arrow",
+    "icon": {
+      "texture": "tmhp:textures/gui/teamarrow.png"
+    }
+  },
+  "requirements": [
+    "tmhp:dc"],
+  "price": {
+    "XP_LEVELS": 5
+  }
+}

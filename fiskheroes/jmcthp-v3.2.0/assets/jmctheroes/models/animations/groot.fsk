@@ -1,0 +1,5 @@
+{head_posY} -= 0.5*{data}
+{rightArm_posX} -= 0.5*{data}
+{rightArm_posY} -= 0.5*{data}
+{leftArm_posX} += 0.5*{data}
+{leftArm_posY} -= 0.5*{data}

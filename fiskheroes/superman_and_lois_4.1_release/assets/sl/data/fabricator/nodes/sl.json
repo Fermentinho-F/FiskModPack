@@ -1,0 +1,23 @@
+{
+    "display": {
+        "name": "Superman & Lois",
+        "description": "Download the Superman & Lois Heropack!",
+        "icon": {
+            "texture": "elseworld:textures/sl.png"
+        }
+    },
+    "autoUnlock": true,
+    "requirements": [],
+    "criteria": {
+        "sl": {
+            "trigger": "fiskheroes:tick",
+            "description": "Thanks for downloading Superman & Lois HP!",
+            "condition": {
+                "variables": {
+                    "entity": "PLAYER_TICKING"
+                },
+                "check": "entity.exists()"
+            }
+        }
+    }
+}

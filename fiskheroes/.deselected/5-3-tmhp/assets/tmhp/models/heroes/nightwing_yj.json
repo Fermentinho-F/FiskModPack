@@ -1,0 +1,43 @@
+{
+  "resources": {
+    "layer1": "tmhp:dc/batfamily/nightwing/yj/layer1",
+    "layer2": "tmhp:dc/batfamily/nightwing/yj/layer2"
+  },
+  "showModel": {
+    "head": ["HELMET"],
+    "headwear": ["HELMET"],
+    "body": ["CHESTPLATE", "LEGGINGS"],
+    "rightArm": ["CHESTPLATE"],
+    "leftArm": ["CHESTPLATE"],
+    "rightLeg": ["LEGGINGS", "BOOTS"],
+    "leftLeg": ["LEGGINGS", "BOOTS"]
+  },
+    "texture": {
+    "renderLayer": {
+      "HELMET": "layer1",
+      "CHESTPLATE": "layer1",
+      "LEGGINGS": "layer2",
+      "BOOTS": "layer1"
+    },
+    "default": "layer1"
+  },
+  "custom": {
+    "fiskheroes:equipped_item": {
+      "applicable": ["CHESTPLATE"],
+      "items": [
+        {
+          "anchor": "body",
+          "scale": 0.7,
+          "offset": [-4.5, 10.5, 0.5],
+          "rotation": [100.0, 5.0, 0.0]
+        }
+      ]
+    }
+  },
+  "itemIcons": {
+    "HELMET": "%s_0",
+    "CHESTPLATE": "%s_1",
+    "LEGGINGS": "%s_2",
+    "BOOTS": "%s_3"
+  }
+}

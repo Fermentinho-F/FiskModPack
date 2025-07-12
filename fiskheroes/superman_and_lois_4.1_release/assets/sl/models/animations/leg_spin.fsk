@@ -1,0 +1,7 @@
+{data} = sin(pi(1 - {data}))^2
+
+{rightLeg_rotY} @ {data} -> 30
+
+{leftLeg_rotY} @ {data} -> 30
+
+

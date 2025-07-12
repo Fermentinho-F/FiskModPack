@@ -1,0 +1,7 @@
+{data} = curve {data}
+
+
+{data} *= {vel}
+
+out "translate" (2, 0, 0)
+out "rotate" (360{data}, 0, 1, 0)

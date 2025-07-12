@@ -1,0 +1,7 @@
+{
+  "attributes": {
+    "JUMP_HEIGHT": [0, 2],
+    "FALL_RESISTANCE": [0, 5],
+    "SPRINT_SPEED": [0, 2]
+  }
+}
