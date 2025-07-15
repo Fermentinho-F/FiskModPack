@@ -56,21 +56,21 @@ function initEffects(renderer) {
     utils.bindCloud(renderer, "fiskheroes:teleportation", "tmhp:raven");
 
     var forcefield = renderer.bindProperty("fiskheroes:forcefield");
-    forcefield.color.set(0x0000FF);
+    forcefield.color.set(0xFFFFFF);
     forcefield.setShape(36, 18).setOffset(0.0, 6.0, 0.0).setScale(1.25);
     forcefield.setCondition(entity => {
         forcefield.opacity = entity.getInterpolatedData("fiskheroes:shield_blocking_timer") * 0.15;
         return true;
     });
-    utils.bindBeam(renderer, "fiskheroes:energy_projection", "fiskheroes:energy_projection", "rightArm", 0x0000FF, [
+    utils.bindBeam(renderer, "fiskheroes:energy_projection", "fiskheroes:energy_projection", "rightArm", 0xFFFFFF, [
         { "firstPerson": [-4.50, 3.75, -8.0], "offset": [-0.5, 9.0, 0.0], "size": [3.0, 3.0] }
     ]).setParticles(renderer.createResource("PARTICLE_EMITTER", "fiskheroes:impact_energy_projection"));
 
-    utils.bindBeam(renderer, "fiskheroes:charged_beam", "fiskheroes:energy_projection", "rightArm", 0xB3FFFF, [
+    utils.bindBeam(renderer, "fiskheroes:charged_beam", "fiskheroes:energy_projection", "rightArm", 0xFFFFFF, [
         { "firstPerson": [0.0, 6.0, 0.0], "offset": [0.0, 5.0, -4.0], "size": [6.0, 6.0] }
     ]).setParticles(renderer.createResource("PARTICLE_EMITTER", "fiskheroes:impact_antimatter"));
 
-    var color = 0x0000FF;
+    var color = 0xFFFFFF;
     var tao_mandala = renderer.createResource("SHAPE", "fiskheroes:tao_mandala");
     var beam = renderer.createResource("BEAM_RENDERER", "fiskheroes:line");
     spell = renderer.createEffect("fiskheroes:lines").setShape(tao_mandala).setRenderer(beam);

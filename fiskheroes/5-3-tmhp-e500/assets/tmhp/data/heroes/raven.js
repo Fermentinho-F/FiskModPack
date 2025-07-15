@@ -17,7 +17,7 @@ function init(hero) {
     hero.addKeyBind("TELEPORT", "key.teleport", 1);
     //hero.addKeyBind("SHIELD", "key.forcefield", 5);
 
-    hero.setDefaultScale(0.89);
+    //hero.setDefaultScale(1.0);
     hero.setHasProperty(hasProperty);
     hero.addAttributeProfile("STOP", stopProfile);
     hero.setAttributeProfile(getProfile);
